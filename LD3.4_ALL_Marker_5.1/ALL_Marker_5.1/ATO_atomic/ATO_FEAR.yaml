@@ -26,6 +26,11 @@ examples:
     - "Ich habe Furcht."
     - "Ich mache mir Sorgen."
     - "Ich bin ängstlich."
+    - "Ich habe ein schlechtes Gefühl."
+    - "Mir macht das Angst."
+    - "Ich traue mich nicht."
+    - "Ich bekomme Herzklopfen vor Angst."
+    - "Ich zittere vor Furcht."
   negative: []
 tags:
 - emotion

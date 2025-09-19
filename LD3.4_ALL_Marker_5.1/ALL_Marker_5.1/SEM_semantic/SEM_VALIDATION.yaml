@@ -1,0 +1,23 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_VALIDATION
+frame:
+  signal: ["validation"]
+  concept: "Validierung/Bestärkung"
+  pragmatics: "Beziehungsstützung"
+  narrative: "prosocial"
+tags: [validation, prosocial]
+composed_of:
+  any_of:
+    - ATO_SUPPORTIVE_LANGUAGE
+    - ATO_SUPPORT_MESSAGE
+    - ATO_ACKNOWLEDGE
+activation:
+  rule: "ANY 1"
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Verstanden, ich bin da für dich."
+  - "Notiert – wir schaffen das."
+  - "Gesehen, danke fürs Teilen."
+  - "Ich unterstütze dich – passt so."
+  - "Ok, hab’s – du schaffst das."

@@ -25,6 +25,11 @@ examples:
   - "Entschuldige bitte, das war nicht okay."
   - "Tut mir leid, das war unprofessionell."
   - "Mein Fehler, ich korrigiere das."
+  - "Es tut mir aufrichtig leid."
+  - "Bitte verzeih mir."
+  - "Ich übernehme die Verantwortung."
+  - "Das war nicht in Ordnung von mir, sorry."
+  - "Ich hätte das anders machen sollen – Entschuldigung."
 tags: [atomic, apology, text]
 metadata:
   repair_log:

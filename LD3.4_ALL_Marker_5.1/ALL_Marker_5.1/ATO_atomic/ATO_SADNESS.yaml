@@ -27,6 +27,11 @@ examples:
     - "Ich bin untröstlich."
     - "Ich bin verzweifelt."
     - "Ich bin am Boden zerstört."
+    - "Mir kommen die Tränen."
+    - "Ich könnte nur noch weinen."
+    - "Es zieht mich runter."
+    - "Alles fühlt sich schwer an."
+    - "Mir fehlt die Kraft."
   negative: []
 tags:
 - sadness

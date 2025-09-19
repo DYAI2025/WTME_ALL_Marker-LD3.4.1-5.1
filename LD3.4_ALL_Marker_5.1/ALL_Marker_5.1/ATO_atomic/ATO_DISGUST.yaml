@@ -21,6 +21,11 @@ examples:
     - "Bäh!"
     - "Iiih!"
     - "Mir wird schlecht."
+    - "Das ist abstoßend."
+    - "Mir wird davon übel."
+    - "Das packe ich nicht an."
+    - "Ekelhaftes Zeug."
+    - "Ich könnte mich übergeben."
   negative: []
 pattern:
 - (?i)ekelhaft

@@ -25,6 +25,11 @@ examples:
   - "Nie hört hier jemand zu."
   - "Wir gewinnen immer, ohne Ausnahme."
   - "Das ist auf jeden Fall falsch."
+  - "Du bist nie für mich da."
+  - "Das ist immer dasselbe mit dir."
+  - "Ich habe ständig das Gefühl, gegen eine Wand zu reden."
+  - "Wir müssen das auf jeden Fall heute klären."
+  - "Es gibt nie eine einfache Lösung."
 tags: [atomic, absolutizer, text]
 metadata:
   repair_log:
