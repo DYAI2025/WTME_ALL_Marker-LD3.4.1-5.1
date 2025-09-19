@@ -1,0 +1,21 @@
+id: SEM_CONTEXT_SWITCH
+version: "3.4"
+schema: "LeanDeep"
+frame:
+  signal: ["context_switch"]
+  concept: "Explizites Umschalten des Rahmens"
+  pragmatics: "Meta-Navigation"
+  narrative: "interaction"
+tags: [context, meta]
+composed_of:
+  - ATO_STYLE_REFERENCE
+  - ATO_SHARED_CONTEXT
+activation:
+  rule: "ANY 2 IN 2 messages"
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Anderes Thema – wie verabredet…"
+  - "Im Kontext von gestern…"
+  - "Stilwechsel: kurz & direkt…"
+  - "Zurück zur Roadmap…"
+  - "Switch auf Zahlenebene…"
