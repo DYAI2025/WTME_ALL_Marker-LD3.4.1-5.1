@@ -1,0 +1,39 @@
+id: SEM_PROCESS_STRUCTURE
+frame:
+  signal:
+  - erstens
+  - nächster punkt
+  - zusammenfassend
+  - abschließend
+  - schritt für schritt
+  concept: Ablaufstruktur
+  pragmatics: Meta-Kommunikation
+  narrative: Strukturierung
+composed_of:
+- ATO_PLACEHOLDER
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- Erstens sollten wir die Anforderungen klären.
+- Nächster Punkt auf der Agenda ist das Budget.
+- Zusammenfassend haben wir Phase eins abgeschlossen.
+- Step by step, wir implementieren den Plan.
+- Abschließend möchte ich sagen, dass...
+- First, let's review the objectives.
+- To summarize, we've finished stage one.
+- "Zuerst analysieren wir die Daten, dann entwickeln wir die Strategie, und schließlich setzen wir sie um."
+- "Der erste Schritt ist die Planung, gefolgt von der Umsetzung, und am Ende steht die Evaluierung."
+- "Um das Ganze zu strukturieren, beginnen wir mit einer Bestandsaufnahme, gehen dann zur Problemanalyse über und erarbeiten Lösungen."
+- "Wir werden das Thema Punkt für Punkt durchgehen, um sicherzustellen, dass nichts übersehen wird."
+- "Zusammenfassend lässt sich sagen, dass wir einen klaren Fahrplan haben, der uns Schritt für Schritt zum Ziel führt."
+- "Die Agenda sieht vor, dass wir zuerst die Herausforderungen identifizieren, dann die Optionen bewerten und schließlich eine Entscheidung treffen."
+- "Wir werden das Projekt in Phasen unterteilen: Konzeption, Entwicklung, Test und Rollout."
+- "Um einen Überblick zu bekommen, gliedern wir die Präsentation in Einleitung, Hauptteil und Fazit."
+- "Der Prozess ist klar definiert: Sammeln, Sortieren, Analysieren und Präsentieren der Ergebnisse."
+- "Abschließend möchte ich betonen, dass wir einen systematischen Ansatz verfolgen, um die bestmöglichen Ergebnisse zu erzielen."
+tags:
+- meta_communication
+- structuring

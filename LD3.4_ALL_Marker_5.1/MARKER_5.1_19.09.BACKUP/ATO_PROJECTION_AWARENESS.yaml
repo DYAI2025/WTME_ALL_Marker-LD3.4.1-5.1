@@ -1,0 +1,30 @@
+id: ATO_PROJECTION_AWARENESS
+version: "3.3"
+frame:
+  signal: ["ich projiziere", "übertrage ich", "spiegelt sich"]
+  concept: "Projektionsbewusstsein"
+  pragmatics: "Psychodynamische Einsicht"
+  narrative: "insight"
+pattern:
+  - "(?i)\\b(ich projiziere|projiziere ich)\\b"
+  - "(?i)\\b(übertrage ich|ich übertrage)\\b"
+  - "(?i)\\b(spiegelt sich|sich spiegelt)\\b"
+  - "(?i)\\b(mein eigenes thema|meine eigene)\\b"
+examples:
+  - "Vielleicht projiziere ich da auch was aus alten Sachen"
+  - "Ich weiß nicht, ob das überhaupt mit dir zu tun hat oder mit mir"
+  - "Das spiegelt sich in meinem Verhalten"
+  - "Das ist mein eigenes Thema, nicht deins"
+  - "Ich übertrage meine Ängste auf dich"
+  - "Ich merke, dass ich hier vielleicht meine eigenen Unsicherheiten projiziere."
+  - "Es könnte sein, dass meine Reaktion mehr über mich aussagt als über dich."
+  - "Ich frage mich, ob ich hier gerade meine eigenen Erwartungen übertrage."
+  - "Das, was mich an dir stört, spiegelt vielleicht etwas in mir wider."
+  - "Ich bin mir bewusst, dass ich dazu neige, meine Ängste auf andere zu projizieren."
+  - "Ich erkenne, dass dies ein Muster von mir ist, meine eigenen Themen zu sehen."
+  - "Es ist wichtig für mich zu prüfen, ob das meine Projektion oder die Realität ist."
+  - "Ich reflektiere gerade, ob ich hier meine eigenen ungelösten Konflikte sehe."
+  - "Ich versuche zu verstehen, inwiefern meine Wahrnehmung durch meine eigenen Erfahrungen gefärbt ist."
+  - "Ich sehe, dass ich hier meine eigenen unbewussten Muster auf die Situation übertrage."
+tags: [atomic, projektion, psychodynamik, awareness]
+schema_version: "3.3"

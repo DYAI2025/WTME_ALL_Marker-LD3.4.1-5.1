@@ -1,0 +1,33 @@
+id: SEM_GUILT_APPEAL_NEEDINESS
+version: "3.3"
+lang: de
+frame:
+  signal:
+    - "Schuldappell + Abhängigkeit"
+  concept: "Guilt-Appeal (Neediness)"
+  pragmatics: "Nähe erzwingen"
+  narrative: "guilt_neediness_bind"
+composed_of:
+  - ATO_GUILT_APPEAL_SUPPORT
+  - ATO_HELPLESSNESS_DEPENDENCY
+activation:
+  rule: "ANY 1 IN 25 messages"
+window:
+  messages: 25
+scoring:
+  base: 2.9
+  weight: 0.8
+  decay: 0.01
+  formula: "logistic"
+examples:
+  - "Ich dachte, du wärst für mich da – ohne dich schaffe ich es nicht."
+  - "Du lässt mich im Stich, ich kann das nicht allein."
+  - "Ich hätte das von dir erwartet, ich schaffe das nicht ohne dich."
+  - "Du bist sonst für mich da – jetzt krieg ich das allein nicht hin."
+  - "Ich zähle auf dich, ohne dich geht es nicht."
+  - "Ich hatte gehofft, du stehst zu mir – allein schaffe ich das nicht."
+  - "Du lässt mich hängen – ich kann das unmöglich allein."
+  - "Dachte, ich könnte mich auf dich verlassen – ohne dich bin ich hilflos."
+  - "Du wendest dich von mir ab – ich brauche dich doch."
+  - "Ich zählte darauf, dass du da bist – allein krieg ich das nicht hin."
+tags: [sem, guilt, neediness]

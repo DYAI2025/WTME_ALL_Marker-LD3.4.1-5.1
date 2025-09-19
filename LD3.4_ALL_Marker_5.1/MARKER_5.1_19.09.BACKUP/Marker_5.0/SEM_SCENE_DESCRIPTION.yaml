@@ -1,0 +1,31 @@
+id: EMO_SCENE_DESCRIPTION
+lang: de
+category: SEMANTIC
+description: "Beschreibung einer Umgebung oder Szene mit emotionalem Unterton."
+frame:
+  signal: ["es riecht nach", "der Himmel ist", "umgeben von"]
+  concept: "Emotional gefärbte Szenerie"
+  pragmatics: "Transport von Stimmung über Umgebung"
+  narrative: "stimmungsbild"
+composed_of:
+  - ATO_SCENE_ELEMENT
+  - ATO_EMOTIONAL_TONE
+activation_logic: "ANY 2 IN 3 messages"
+scoring: { base: 1.4, weight: 1.1 }
+examples:
+  - "Der Himmel ist heute sanft rosa."
+  - "Es riecht nach frischem Brot und Kaffee."
+  - "Umgeben von Kerzenlicht und leiser Musik."
+  - "Das Meer glitzert wie tausend kleine Sterne."
+  - "Die Straßen sind still, nur der Regen klopft."
+  - "Die Sonne taucht den Raum in ein warmes Licht, und ich fühle mich geborgen."
+  - "Der Wind streicht sanft durch die Bäume, und eine friedliche Stille umgibt mich."
+  - "Die alten Bücherregale verströmen einen Duft von Wissen und Nostalgie."
+  - "Das sanfte Rauschen des Flusses begleitet meine Gedanken, und ich fühle mich ruhig."
+  - "Die Stadt erwacht langsam, und eine aufgeregte Energie liegt in der Luft."
+  - "Der Geruch von frischem Regen erfüllt die Luft, und ich fühle mich erfrischt."
+  - "Die Sterne funkeln am dunklen Himmel, und ich bin erfüllt von Ehrfurcht."
+  - "Das Knistern des Kamins schafft eine gemütliche Atmosphäre, und ich fühle mich entspannt."
+  - "Die bunten Blätter tanzen im Wind, und eine melancholische Schönheit liegt über der Landschaft."
+  - "Das Lachen der Kinder erfüllt den Park, und ich fühle mich von Freude umgeben."
+tags: [semantic, emotional, description]

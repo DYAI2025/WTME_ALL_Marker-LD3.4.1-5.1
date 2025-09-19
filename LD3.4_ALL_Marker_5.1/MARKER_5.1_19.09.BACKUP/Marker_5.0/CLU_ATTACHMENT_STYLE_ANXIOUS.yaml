@@ -1,0 +1,43 @@
+id: CLU_ATTACHMENT_STYLE_ANXIOUS
+version: "3.3"
+frame:
+  signal: ["ängstliche Bindungshinweise", "Unsicherheits- und Verlassensangst-Sprache"]
+  concept: "Bindungsstil: ängstlich"
+  pragmatics: "Nähe-Suche bei gleichzeitiger Alarmierung"
+  narrative: "Sehnsucht und Sorge"
+composed_of:
+  - type: semantic
+    marker_ids: ["ANXIOUS_CHILDHOOD_REFERENCE"]
+activation:
+  rule: "COUNT(ANXIOUS_CHILDHOOD_REFERENCE) >= 2 IN 20"
+  window:
+    messages: 20
+examples:
+  - "Der Sprecher verwendet häufig Worte wie 'Angst', 'unsicher', 'nie gewusst'."
+  - "Erinnerungen zeigen große Stimmungsschwankungen der Eltern."
+  - "Zuneigung wird als unberechenbar beschrieben."
+  - "Versprechen wurden gegeben und gebrochen – Trauer folgt."
+  - "Der Sprecher erwartet instinktiv Ablehnung."
+  - "Emotionale Nähe wird ersehnt, aber zugleich gefürchtet."
+  - "Kleinste Zeichen von Distanz lösen Sorge aus."
+  - "Schlafprobleme werden mit elterlichen Streits verknüpft."
+  - "Erinnerungen an entschuldigungs­getriebenes Verhalten ('Es tut mir leid, dass ich existiere')."
+  - "Bindungen wirken abhängig und überbetont."
+  - "Körperliche Symptome (Bauchweh) vor familiären Ereignissen."
+  - "Vorfreude und Enttäuschung wechseln abrupt."
+  - "Erwachsenen­beziehungen spiegeln ängstliche Muster wider."
+  - "Eltern werden zugleich idealisiert und kritisiert."
+  - "Fazit: 'Ich brauche Nähe, aber traue ihr nicht.'"
+  # +5 neu
+  - "Wenn du nicht sofort antwortest, denke ich, du ziehst dich zurück."
+  - "Ich habe Angst, nicht wichtig genug zu sein."
+  - "Ein kleines Schweigen fühlt sich wie ein Abschied an."
+  - "Ich suche Bestätigung, sonst kippt meine Ruhe."
+  - "Ich lese zwischen den Zeilen und finde dort Gefahr."
+  - "Ich brauche ständig die Gewissheit, dass du mich liebst."
+  - "Jede kleine Veränderung in deinem Verhalten macht mich nervös."
+  - "Ich habe Angst, dass du mich plötzlich verlässt."
+  - "Ich klammere mich an dich, weil ich Angst habe, allein zu sein."
+  - "Ich interpretiere jedes Signal als möglichen Verlust."
+tags: [needs_review, cluster, attachment, anxious]
+meta:

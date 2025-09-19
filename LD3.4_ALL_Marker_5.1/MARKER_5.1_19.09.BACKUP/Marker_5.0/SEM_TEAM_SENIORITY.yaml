@@ -1,0 +1,22 @@
+id: SEM_TEAM_SENIORITY
+version: "3.4"
+frame:
+  signal: ["team", "seniority"]
+  concept: "team_seniority_commitment"
+  pragmatics: "credibility"
+  narrative: "team"
+examples:
+  - "Unser CTO war früher bei SAP und wir sind alle Vollzeit dran."
+  - "Ex-Google Engineer und das Team ist all-in."
+  - "Die Gründer haben 10 Jahre Erfahrung und haben ihre Jobs gekündigt."
+  - "Senior Product Lead (ex-Amazon) plus committed Co-Founder Team."
+  - "Wir sind ein erfahrenes Kernteam, 100% fokussiert."
+composed_of:
+  - ATO_TEAM_EXPERIENCE
+  - ATO_COMMITMENT_PHRASE
+activation:
+  rule: "BOTH_IN_4_messages"
+scoring:
+  base: 1.0
+  weight: 1.5
+tags: [team, credibility, seniority]

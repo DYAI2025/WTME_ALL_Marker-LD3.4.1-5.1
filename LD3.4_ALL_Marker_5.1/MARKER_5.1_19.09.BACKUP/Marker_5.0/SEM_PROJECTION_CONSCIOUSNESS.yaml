@@ -1,0 +1,30 @@
+id: SEM_PROJECTION_CONSCIOUSNESS
+version: "3.3"
+frame:
+  signal: ["Bewusstes Erkennen eigener Projektionen"]
+  concept: "Projektionsbewusstsein"
+  pragmatics: "Psychodynamische Klarheit"
+  narrative: "awareness"
+composed_of:
+  - ATO_PROJECTION_AWARENESS
+  - ATO_SELF_OBSERVATION
+activation:
+  rule: "ALL 2 IN 2 messages"
+examples:
+  - "Mir fällt auf, dass ich da was projiziere"
+  - "Ich merke, ich übertrage meine alten Themen auf dich"
+  - "Mir wird klar, das spiegelt mein eigenes Problem"
+  - "Ich beobachte, wie ich meine Ängste auf dich projiziere"
+  - "Ich erkenne, dass das mein Thema ist, nicht deins"
+  - "Ich merke, dass meine Wut auf dich eigentlich eine Projektion meiner eigenen Frustration ist, und das ist eine wichtige Erkenntnis für mich."
+  - "Mir wird klar, dass ich meine Ängste auf diese Situation projiziere, und ich beobachte an mir, wie ich darauf reagiere."
+  - "Ich erkenne, dass meine Kritik an dir oft eine Projektion meiner eigenen Unsicherheiten ist, und das ist ein Muster, das ich an mir wahrnehme."
+  - "Ich beobachte an mir, wie ich meine eigenen unerfüllten Bedürfnisse auf andere projiziere, und mir wird bewusst, wie das meine Beziehungen beeinflusst."
+  - "Mir fällt auf, dass meine Abneigung gegen bestimmte Eigenschaften bei anderen oft eine Projektion meiner eigenen Schattenseiten ist, und das ist eine schmerzhafte, aber notwendige Selbstreflexion."
+  - "Ich merke, dass meine Erwartungen an dich oft eine Projektion meiner eigenen Wünsche sind, und ich erkenne, wie ich dadurch Druck auf dich ausübe."
+  - "Mir wird klar, dass meine Angst vor Ablehnung oft eine Projektion meiner eigenen Selbstzweifel ist, und ich beobachte, wie ich mich dadurch zurückziehe."
+  - "Ich erkenne, dass meine Eifersucht oft eine Projektion meiner eigenen Unsicherheit in der Beziehung ist, und das ist ein Gefühl, das ich an mir wahrnehme."
+  - "Ich beobachte an mir, wie ich meine eigenen ungelösten Konflikte auf andere projiziere, und mir wird bewusst, wie ich dadurch unnötige Dramen erzeuge."
+  - "Mir fällt auf, dass meine Idealvorstellungen von anderen oft eine Projektion meiner eigenen unerfüllten Träume sind, und das ist eine wichtige Erkenntnis für mein persönliches Wachstum."
+tags: [semantic, projektion, bewusstsein, psychodynamik]
+schema_version: "3.3"

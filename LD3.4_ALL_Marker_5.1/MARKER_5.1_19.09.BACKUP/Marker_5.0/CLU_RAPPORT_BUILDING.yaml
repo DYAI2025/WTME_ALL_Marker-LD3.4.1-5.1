@@ -1,0 +1,63 @@
+id: CLU_RAPPORT_BUILDING
+version: "3.4"
+category: CLUSTER
+description: "Nachhaltige unterstützende Bewegungen und responsive Offenheit"
+frame:
+  signal: ["sustained supportive moves by therapist and responsive openness"]
+  concept: "working alliance in session"
+  pragmatics: "safety + exploration"
+  narrative: "engaged collaboration"
+composed_of:
+  - SEM_RAPPORT_SUPPORT_MOVE
+  - SEM_VALIDATED_DISCLOSURE
+activation:
+  rule: "COUNT(SEM_RAPPORT_SUPPORT_MOVE)+COUNT(SEM_VALIDATED_DISCLOSURE) >= 3 IN 20"
+  window:
+    messages: 20
+scoring:
+  weight: 1.4
+examples:
+  - "Open question + reflection + validation wiederholt, Patient öffnet sich mehrfach."
+  - "Repeated: 'What was that like?' + 'It sounds like…' + 'That makes sense' → disclosure."
+  - "Therapist validates → patient adds new personal detail."
+  - "We-phrasing + clarification → plan formed."
+  - "Mehrfacher Wechsel aus Spiegeln und Bestätigen, gefolgt von neuen Infos."
+  - "Alignment checks führen zu längeren Antworten."
+  - "Sichtbare Ko-Konstruktion von nächsten Schritten."
+  - "Therapeut spiegelt Emotion → Patient teilt tiefere Ebene."
+  - "Validation cycle: 'That makes sense' leads to 'I've never told anyone…'"
+  - "Offene Fragen werden mit persönlichen Details beantwortet."
+  - "Reflexion der Gefühle führt zu neuen Erkenntnissen."
+  - "Patient beginnt, eigene Lösungsansätze zu entwickeln."
+  - "Gemeinsame Sprache entsteht durch wiederholte Validierung."
+  - "Trust builds through consistent empathic responses."
+  - "Patient korrigiert und erweitert therapeutische Reflexionen."
+  - "Mehrere 'Aha-Momente' durch gezielte Spiegelung."
+  - "Therapeut und Patient bauen gemeinsam an der Problemdefinition."
+  - "Increasing self-disclosure follows therapist's attuned reflections."
+  - "Therapist's reflective statements lead to patient's deeper emotional sharing."
+  - "Consistent validation creates space for patient to explore vulnerable topics."
+  - "We-language establishes collaborative framework for problem-solving."
+  - "Patient responds to open questions with increasingly personal details."
+  - "Therapeutic mirroring helps patient gain new insights about their experience."
+  - "Validation of feelings leads to patient sharing previously undisclosed information."
+  - "Joint exploration of triggers results in patient-generated coping strategies."
+  - "Rapport building evident in patient's willingness to challenge therapist's reflections."
+  - "Consistent empathic responses create foundation for therapeutic breakthroughs."
+  - "Patient builds on therapist's reflections to develop self-understanding."
+  - "Shared language emerges through repeated cycles of validation and disclosure."
+  - "Therapist's attunement enables patient to access and articulate deeper emotions."
+  - "Collaborative problem definition leads to patient taking ownership of solutions."
+  - "Trust manifests in patient's ability to disagree respectfully with therapist."
+  - "Emotional safety established through consistent therapeutic support moves."
+  - "Patient demonstrates growing self-awareness through reflective dialogue."
+  - "Alliance strengthens as patient increasingly engages in joint meaning-making."
+  - "Therapeutic collaboration results in patient initiating new topics for exploration."
+  - "Rapport evident in patient's comfort with therapeutic vulnerability."
+  - "Working alliance supports patient in developing insight and change motivation."
+  - "Consistent therapeutic presence enables patient's progressive self-disclosure."
+  - "Therapist's empathy creates safe space for deep emotional exploration"
+  - "Patient's trust grows through consistent therapeutic attunement"
+  - "Collaborative dialogue builds stronger therapeutic relationship"
+  - "Mutual understanding deepens through shared therapeutic journey"
+tags: [cluster, rapport, alliance, safety]

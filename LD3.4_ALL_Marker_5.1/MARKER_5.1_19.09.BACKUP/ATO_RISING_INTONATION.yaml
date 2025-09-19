@@ -1,0 +1,30 @@
+id: ATO_RISING_INTONATION
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for rising intonation at phrase end"
+frame:
+  signal: ["F0 Rise > Threshold"]
+  concept: "fragend"
+  pragmatics: "Intonation"
+  narrative: "audio"
+detect_class:
+  module: prosody.intonation
+  params: { rise_semitones_min: 3, phrase_end_window_ms: 500 }
+examples:
+  - "[Steigende Satzmelodie]"
+  - "[Frageintonation]"
+  - "[Unsicherheit in der Betonung]"
+  - "[Uptalk-Muster]"
+  - "[Suchende Tonführung]"
+  - "[Fragender Tonfall am Satzende]"
+  - "[Betonung mit steigender Melodie]"
+  - "[Unsichere Stimmführung]"
+  - "[Ansteigende Tonhöhe]"
+  - "[Fragezeichen in der Stimme]"
+  - "[Zweifelnde Intonation]"
+  - "[Offene Satzmelodie]"
+  - "[Erhöhte Tonlage am Ende]"
+  - "[Implizite Frage durch Intonation]"
+  - "[Suchender Ausdruck in der Stimme]"
+tags: [intonation, audio, atomic]

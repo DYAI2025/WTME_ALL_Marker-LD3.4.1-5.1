@@ -1,0 +1,19 @@
+id: ATO_SELF_OBSERVATION
+version: "3.3"
+frame:
+  signal: ["ich merke", "mir fällt auf", "ich beobachte an mir"]
+  concept: "Selbstwahrnehmung"
+  pragmatics: "Metakognitive Reflexion"
+  narrative: "awareness"
+pattern:
+  - "(?i)\\b(ich merke|mir fällt auf|ich beobachte)\\b"
+  - "(?i)\\b(ich erkenne an mir|ich nehme wahr)\\b"
+  - "(?i)\\b(mir wird (gerade )?klar)\\b"
+examples:
+  - "Mir fällt auf, dass ich in den letzten Tagen versuchst, dich mehr zu öffnen"
+  - "Ich merke auch, dass es dir nicht leicht fällt"
+  - "Ich beobachte an mir selbst diese Tendenz"
+  - "Mir wird gerade klar, warum ich so reagiere"
+  - "Ich erkenne an mir dieses Muster wieder"
+tags: [atomic, selbstwahrnehmung, metakognition, introspection]
+schema_version: "3.3"

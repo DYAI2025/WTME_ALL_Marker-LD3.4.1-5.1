@@ -1,0 +1,42 @@
+id: ATO_OFFENDED_SILENCE
+version: "3.3"
+frame:
+  signal: ["einsilbige/nonverbale Antwort", "Silent-Treatment-Hinweise"]
+  concept: "angekränkte Zurücknahme"
+  pragmatics: "Konfliktvermeidung durch Minimalreaktion"
+  narrative: "Rückzug"
+pattern:
+  - "..."
+  - "mhm"
+  - "aha"
+  - "^k\\.?$"
+  - "^ja\\.?$"
+  - "^nee\\.?$"
+  - "\\*wendet sich ab\\*"
+activation:
+  rule: "ANY in 1 message"
+examples:
+  # bereits vorhanden (beispiele)
+  - "A: 'Ist alles okay bei dir?' B: '...'"
+  - "A: 'Können wir reden?' B: 'k.'"
+  - "A: 'Ich hab das Essen gemacht.' B: 'aha'"
+  - "A: 'Ich liebe dich.' B: 'mhm'"
+  - "Passt schon. *wendet sich ab*"
+  - "A: 'Magst du kurz reden?' B: '…'"
+  - "A: 'Können wir das klären?' B: 'passt.'"
+  - "A: 'Was ist los?' B: 'hm.'"
+  - "*Schulterzucken*"
+  - "B: 'ja.' (tonlos)"
+  - 'A: "Ist alles okay bei dir?" B: "..."'
+  - 'A: "Können wir reden?" B: "k."'
+  - 'A: "Ich hab das Essen gemacht." B: "aha"'
+  - 'A: "Ich liebe dich." B: "mhm"'
+  - 'A: "Passt schon." (wendet sich ab)'
+  - 'A: "Alles klar?" B: (kein Wort)'
+  - "(dreht sich um und schweigt)"
+  - '"?…" (keine Antwort)'
+  - 'A: "Hast du das gelesen?" B: "..."'
+  - "(lehnt Kopf ab und bleibt stumm)"
+tags:
+- passive_aggression
+- silence

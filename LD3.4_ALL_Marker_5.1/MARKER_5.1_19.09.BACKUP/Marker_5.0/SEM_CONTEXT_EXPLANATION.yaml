@@ -1,0 +1,31 @@
+id: ACT_CONTEXT_EXPLANATION
+lang: de
+category: SEMANTIC
+description: "Erklärung für eine verspätete Antwort."
+frame:
+  signal: ["war beschäftigt", "hatte keine Zeit", "bin nicht zum Antworten gekommen"]
+  concept: "Begründung für Verzögerung"
+  pragmatics: "Wahrung der Beziehung durch Kontextgabe"
+  narrative: "rechtfertigung"
+composed_of:
+  - ATO_DELAY_REASON
+  - ATO_RESPONSE_REFERENCE
+activation_logic: "ANY 2 IN 3 messages"
+scoring: { base: 1.4, weight: 1.1 }
+examples:
+  - "Sorry, war den ganzen Tag unterwegs."
+  - "Ich hatte einfach keine Gelegenheit, zu schreiben."
+  - "Bin erst jetzt zum Antworten gekommen."
+  - "War im Meeting-Marathon, sorry."
+  - "Hab’s erst jetzt gesehen, war voll im Stress."
+  - "Entschuldige die späte Antwort, ich war in den letzten Tagen sehr eingespannt und kam nicht dazu, dir zu schreiben."
+  - "Ich habe deine Nachricht gesehen, konnte aber erst jetzt antworten, da ich viel um die Ohren hatte."
+  - "Es tut mir leid, dass ich mich nicht früher gemeldet habe, ich war beruflich stark eingebunden."
+  - "Ich habe deine Nachricht nicht ignoriert, ich war einfach nicht in der Lage, sofort zu reagieren."
+  - "Ich wollte dir schon längst antworten, aber ich hatte eine sehr stressige Woche."
+  - "Ich habe deine Nachricht gelesen, aber ich musste mich erst um andere Dinge kümmern, bevor ich dir schreiben konnte."
+  - "Verzeih die Verzögerung, ich war in den letzten Tagen sehr beschäftigt und kam nicht dazu, dir zu antworten."
+  - "Ich habe deine Nachricht erhalten, aber ich konnte erst jetzt darauf eingehen, da ich unterwegs war."
+  - "Es tut mir leid, dass ich so lange gebraucht habe, um zu antworten, ich hatte einfach keine Zeit."
+  - "Ich habe deine Nachricht nicht vergessen, ich war einfach in einer Situation, in der ich nicht antworten konnte."
+tags: [semantic, action, explanation]

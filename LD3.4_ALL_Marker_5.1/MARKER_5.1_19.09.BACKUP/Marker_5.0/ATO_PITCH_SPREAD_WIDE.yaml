@@ -1,0 +1,20 @@
+id: ATO_PITCH_SPREAD_WIDE
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for wide pitch range"
+frame:
+  signal: ["F0 Range ≫ Baseline"]
+  concept: "melodisch"
+  pragmatics: "Tonhöhe"
+  narrative: "audio"
+detect_class:
+  module: prosody.pitch_spread
+  params: { range_factor_min: 1.8 }
+examples:
+  - "[Ausgedehnte Tonhöhenvariation]"
+  - "[Melodische Sprechweise]"
+  - "[Große F0-Dynamik]"
+  - "[Lebhafte Intonation]"
+  - "[Expressives Sprechen]"
+tags: [pitch, audio, atomic]

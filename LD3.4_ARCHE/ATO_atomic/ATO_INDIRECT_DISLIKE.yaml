@@ -1,0 +1,34 @@
+id: ATO_INDIRECT_DISLIKE
+frame:
+  signal:
+  - interessant
+  - na toll
+  - och nee
+  - ach wirklich
+  - wie originell
+  concept: indirekte Abneigung
+  pragmatics: Missfallen andeuten
+  narrative: versteckte Kritik
+pattern:
+- (?i)\binteressant\b
+- (?i)\bna toll\b
+- (?i)\boch nee\b
+activation:
+  rule: ANY 1
+examples:
+- Interessant, dass du das so siehst.
+- Na toll, schon wieder ich?
+- Och nee, das wollte ich nicht hören.
+- Ach wirklich? Wie originell.
+- Das überrascht mich wenig.
+- Fascinating perspective.
+- How original of you.
+- Aha...echt spannend...nicht!
+- Hör mal, ich kann echt nicht so lange, komm mal zum Punkt!
+- Na toll, das hätte ich jetzt nicht gedacht.
+- Och nee, das ist jetzt nicht dein Ernst.
+- Ehrlich gesagt, ich mag dich nicht sonderlich.
+- Alter, du kannst schon einem auf den Sack gehen!
+tags:
+- dislike
+- indirect

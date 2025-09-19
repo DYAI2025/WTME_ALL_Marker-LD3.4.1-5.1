@@ -1,0 +1,39 @@
+id: ATO_FULL_STRESS
+frame:
+  signal:
+  - voll im Stress
+  - mega Stress
+  - stressig
+  - total gestresst
+  concept: Stress als Entschuldigung
+  pragmatics: Verfügbarkeitsausrede
+  narrative: stress_excuse
+pattern:
+- (?i)\b(voll|total|mega)\s+(im\s+)?stress\b
+- (?i)\b(echt|super|total)\s+stressig\b
+- (?i)\b(total|voll|mega)\s+gestresst\b
+- (?i)\bstress\s+(pur|total|grad)\b
+examples:
+- Bin grad voll im Stress
+- Ist echt stressig momentan
+- Hab mega Stress diese Woche
+- Total gestresst grad
+- Stress pur bei mir
+- "Ich bin gerade total überfordert, der Stress ist enorm."
+- "Die letzten Tage waren super stressig, ich komme kaum hinterher."
+- "Ich stecke bis zum Hals im Stress, kann mich kaum konzentrieren."
+- "Gerade ist alles mega stressig, ich brauche dringend eine Pause."
+- "Ich bin momentan vollkommen gestresst, mein Kopf raucht."
+- "Der Druck ist immens, ich bin total im Stress."
+- "Es ist gerade echt stressig, ich weiß nicht, wo mir der Kopf steht."
+- "Ich bin am Limit, der Stress ist einfach zu viel."
+- "Diese Phase ist extrem stressig, ich sehne mich nach Ruhe."
+- "Ich bin komplett gestresst, fühle mich wie ausgebrannt."
+- "Oh ich bin so fertig!"
+- "Ich hab so viel um die Ohren!"
+- "Ich bin total überfordert!"
+- "Ich hab einfach zu viel zu tun!"
+- "Ich bin echt durch!"
+tags:
+- stress_signal
+- excuse

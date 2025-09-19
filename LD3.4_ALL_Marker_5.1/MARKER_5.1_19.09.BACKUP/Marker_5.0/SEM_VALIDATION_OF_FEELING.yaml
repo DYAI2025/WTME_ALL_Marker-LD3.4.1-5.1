@@ -1,0 +1,33 @@
+id: SEM_VALIDATION_OF_FEELING
+version: "3.3"
+lang: de
+level: SEM
+frame:
+  signal:
+    - "Gefühl des Gegenübers explizit spiegeln/anerkennen"
+    - "Druck rausnehmen, Sicherheit geben"
+  concept: "Validierung von Emotion"
+  pragmatics: "Deeskalation durch Anerkennung"
+  narrative: "Verbundenheit trotz Konflikt"
+pattern:
+  - '(?i)\b(das|dein|euer)\s*(gefühl|unsicherheit|verletzung)\s*(kommt|kommt.*) (an|bei mir an)\b'
+  - '(?i)\bich\s*(sehe|verstehe|erkenne)\s*(dein|euer)\s*(gefühl|schmerz|angst)\b'
+  - '(?i)\b(tut\s+mir\s+leid|ich\s+weiß,\s+dass\s+das\s+wehtut)\b'
+  - '(?i)\b(lass\s+uns\s+schauen|wir\s+schauen)\s*,?\s*(was|wie)\s+dir\s*(hilft|guttut)\b'
+examples:
+  - "Deine Unsicherheit kommt an. Lass uns schauen, was dir Klarheit gibt."
+  - "Ich sehe, dass dich das verletzt hat."
+  - "Es tut mir leid, dass du dich so fühlst."
+  - "Ich erkenne deine Angst und nehme sie ernst."
+  - "Danke, dass du das teilst – ich höre dich."
+  - "Ich verstehe, dass du dich wütend fühlst, und das ist absolut in Ordnung."
+  - "Ich sehe deinen Schmerz, und es tut mir leid, dass du das durchmachst."
+  - "Deine Enttäuschung ist nachvollziehbar, und ich bin für dich da."
+  - "Ich kann gut nachempfinden, wie frustriert du bist, und ich höre dir zu."
+  - "Deine Angst ist berechtigt, und ich bin an deiner Seite."
+  - "Ich erkenne deine Traurigkeit an, und ich möchte dich unterstützen."
+  - "Ich verstehe, dass du dich überfordert fühlst, und wir finden eine Lösung."
+  - "Deine Sorgen sind gültig, und ich nehme sie ernst."
+  - "Ich sehe deine Hilflosigkeit, und ich bin hier, um dir beizustehen."
+  - "Deine Gefühle sind wichtig, und ich bin hier, um sie anzuhören."
+tags: [validation, empathy, deescalation, semantics]

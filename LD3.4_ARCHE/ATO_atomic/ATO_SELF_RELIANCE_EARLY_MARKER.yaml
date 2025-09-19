@@ -1,0 +1,19 @@
+id: ATO_SELF_RELIANCE_EARLY_MARKER
+frame:
+  signal:
+  - brauche Abstand
+  - muss allein
+  - keine Zeit
+  concept: Vermeidende Bindung
+  pragmatics: Distanz schaffen
+  narrative: withdrawal
+pattern:
+- (?i)\\bhabe\ ich\\b
+examples:
+- Schon mit zehn habe ich mich selbst um mein Abendessen gekümmert.
+- Mit zwölf habe ich meine kleinen Geschwister versorgt.
+- Urlaub organisierte ich mir als Teenager alleine.
+- Hausaufgaben? Da habe ich nie Hilfe erwartet.
+- Selbst Geburtstagsfeiern habe ich geplant, nicht meine Eltern.
+tags:
+- attachment

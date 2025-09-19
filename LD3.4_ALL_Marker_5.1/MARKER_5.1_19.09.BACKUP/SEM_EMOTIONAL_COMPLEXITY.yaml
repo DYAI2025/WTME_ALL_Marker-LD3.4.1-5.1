@@ -1,0 +1,30 @@
+id: SEM_EMOTIONAL_COMPLEXITY
+version: "3.3"
+frame:
+  signal: ["Differenzierte Gefühlswahrnehmung mit Selbstbeobachtung"]
+  concept: "Emotionale Komplexität"
+  pragmatics: "Gefühlsdifferenzierung"
+  narrative: "complexity"
+composed_of:
+  - ATO_EMOTIONAL_GRANULARITY
+  - ATO_SELF_OBSERVATION
+activation:
+  rule: "ALL 2 IN 2 messages"
+examples:
+  - "Ich merke, es fühlt sich an wie eine Mischung aus Angst und Sehnsucht"
+  - "Mir fällt auf, ich spüre etwas zwischen Wut und Traurigkeit"
+  - "Ich beobachte diese schwer zu beschreibende Emotion in mir"
+  - "Mir wird klar, es ist nicht genau Eifersucht, eher eine Art Verlustangst"
+  - "Ich erkenne, da ist eine komplexe Gefühlslage in mir"
+  - "Ich merke, dass ich nicht nur traurig bin, sondern auch eine tiefe Enttäuschung und eine leise Hoffnung spüre."
+  - "Mir fällt auf, dass meine Wut eine Mischung aus Frustration über die Situation und Angst vor Kontrollverlust ist."
+  - "Ich beobachte an mir, dass meine Freude nicht nur Glück ist, sondern auch eine gewisse Melancholie über das Vergehen des Moments."
+  - "Mir wird klar, dass meine Unsicherheit nicht nur Zweifel ist, sondern auch eine Sehnsucht nach Klarheit und eine Angst vor dem Unbekannten."
+  - "Ich erkenne, dass meine Liebe nicht nur Zuneigung ist, sondern auch eine tiefe Verbundenheit und die Furcht vor Verlust."
+  - "Ich merke, dass meine Erleichterung auch eine Spur von Schuld enthält, weil ich mich über etwas freue, das für andere schwierig ist."
+  - "Mir fällt auf, dass meine Gelassenheit auch eine Form von Resignation sein kann, ein Akzeptieren dessen, was ich nicht ändern kann."
+  - "Ich beobachte an mir, dass meine Neugier auch eine Angst vor dem Unbekannten birgt, ein Wunsch, alles zu verstehen, aber auch eine Furcht vor dem, was ich finden könnte."
+  - "Mir wird klar, dass meine Dankbarkeit auch eine Demut enthält, ein Bewusstsein dafür, dass nicht alles selbstverständlich ist."
+  - "Ich erkenne, dass meine Verwirrung nicht nur Unklarheit ist, sondern auch eine Suche nach Sinn und eine Frustration über das Fehlen von Antworten."
+tags: [semantic, emotion, komplexität, differenzierung]
+schema_version: "3.3"

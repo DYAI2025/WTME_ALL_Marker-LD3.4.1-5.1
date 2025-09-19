@@ -1,0 +1,85 @@
+# A_CRITICISM_ATTACK_MARKER - Semantic Marker
+id: SEM_CRITICISM_PERSONAL_ATTACK
+lang: de
+category: SEMANTIC
+description: "Erfasst Ad-hominem-Kritik, die den Charakter oder die Persönlichkeit einer Person angreift, anstatt sich auf ein spezifisches Verhalten zu beziehen. Folgt Gottman's Konzept der 'Criticism'."
+frame:
+  signal:      ["Kombination aus direkter Anschuldigung (z.B. 'Du bist...') und einer generalisierenden, negativen Charaktereigenschaft."]
+  concept:     "Persönlicher Angriff (Gottman: Criticism)"
+  pragmatics:  "Eskalationspotenzial, dient der Abwertung des Gegenübers, verhindert konstruktive Konfliktlösung."
+  narrative:   "accusation / character assassination"
+composed_of:
+  - ATO_DIRECT_ACCUSATION
+  - ATO_NEGATIVE_JUDGEMENT
+activation:
+  rule: "ALL in 1 message"
+scoring: { base: 1.8, weight: 1.3, formula: "logistic" }
+examples:
+  # Übernommene und kuratierte Beispiele
+  - "Du bist wie ein schwarzes Loch für jede gute Stimmung."
+  - "Red nicht von Respekt, du kennst das Wort nicht mal."
+  - "Du brauchst ständig Drama, sonst fühlst du dich nicht lebendig, oder?"
+  - "Wie kann man so kalt und gleichzeitig so needy sein?"
+  - "Immer wenn's schwierig wird, haust du ab – typisch!"
+  - "Du bist so unfassbar unreif, es ist traurig."
+  - "Du drehst dir eh immer alles so hin, wie’s dir passt."
+  - "Dein Verhalten ist einfach nur peinlich."
+  - "Du kannst halt keine fünf Minuten normal sein."
+  - "Du versaust einfach alles mit deinem Ego-Trip."
+  - "Du hörst nie zu, weil du nur dich selbst reden hören willst."
+  - "Boah, du bist so der Inbegriff von Chaos."
+  - "Man kann sich echt auf niemanden weniger verlassen als auf dich."
+  - "Ganz ehrlich? Du bist einfach nur anstrengend."
+  - "Du bist so faul, ich kann nicht mehr!"
+  # 10 neu hinzugefügte Beispiele
+  - "Deine ganze Art ist einfach nur verletzend."
+  - "Warum bist du immer so negativ und ziehst alles runter?"
+  - "Du bist einfach ein Meister darin, anderen die Laune zu verderben."
+  - "Es ist dein Egoismus, der immer wieder alles kaputt macht."
+  - "Du bist so unglaublich unzuverlässig, es ist zum Verzweifeln."
+  - "Mal wieder eine typische Aktion von dir, du denkst einfach nie mit."
+  - "Du bist in deiner eigenen Welt gefangen und merkst gar nichts mehr."
+  - "Es ist sinnlos, mit dir zu reden, du bist beratungsresistent."
+  - "Du bist so ein Kontrollfreak, das ist nicht mehr normal."
+  - "Deine Unfähigkeit, Verantwortung zu übernehmen, ist das eigentliche Problem."
+  - "👿 angry face with horns"
+  - "😠 angry face"
+  - "😤 face with look of triumph"
+  - "🤬 face with symbols on mouth"
+  - "😡 face with steam from nose"
+  - "😡 WUT & FRUSTRATION"
+  - "😬 grimacing face"
+  - "😑 expressionless face"
+  - "🙄 face with rolling eyes"
+  - "😒 unamused face"
+  - "😒 GENERVT & PASSIV-AGGRESSIV"
+  - "Du bist wie ein schwarzes Loch für jede gute Stimmung."
+  - "Wow, wieder mal alles um dich – bravo."
+  - "Red nicht von Respekt, du kennst das Wort nicht mal."
+  - "Du brauchst ständig Drama, sonst fühlst du dich nicht lebendig, oder?"
+  - "Wie kann man so kalt und gleichzeitig so needy sein?"
+  - "Immer wenn's schwierig wird, haust du ab – typisch!"
+  - "Du bist so unfassbar unreif, es ist traurig."
+  - "Du drehst dir eh immer alles so hin, wie’s dir passt."
+  - "Mit deinem ständigen Gekränktsein macht das echt keinen Spaß mehr."
+  - "Dein Verhalten ist einfach nur peinlich."
+  - "Du kannst halt keine fünf Minuten normal sein."
+  - "Du versaust einfach alles mit deinem Ego-Trip."
+  - "Du hörst nie zu, weil du nur dich selbst reden hören willst."
+  - "Boah, du bist so der Inbegriff von Chaos."
+  - "Man kann sich echt auf niemanden weniger verlassen als auf dich."
+  - "Mit dir ist jede Kleinigkeit gleich ein Drama."
+  - "Du checkst es halt einfach nie, oder?"
+  - "Ey, was stimmt eigentlich nicht mit dir?"
+  - "Typisch du, wieder null Mitdenken, wie immer."
+  - "Ganz ehrlich? Du bist einfach nur anstrengend."
+
+semantische_grabber_id: AUTO_SEM_20250718_944A
+
+metadata:
+  created_at: 2025-07-18T02:36:13.580894
+  created_by: FRAUSAR_GUI_v2
+  version: 1.0
+  tags: [neu_erstellt, needs_review]
+
+kategorie: UNCATEGORIZED

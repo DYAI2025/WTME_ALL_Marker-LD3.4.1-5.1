@@ -1,0 +1,59 @@
+id: SEM_REALITY_DISTORTION_FIELD
+version: "3.3"
+frame:
+  signal: ["Graduelle Veränderung geteilter Realität"]
+  concept: "Linguistische Realitätsverzerrungsfelder"
+  pragmatics: "Kontrolle durch Realitätskonstruktion"
+  narrative: "gaslighting_progression"
+gaslighting_progression:
+  stage_1_slight_modification:
+    markers: ["vielleicht", "ungefähr", "sowas wie", "etwa", "irgendwie"]
+    description: "Erste subtile Veränderungen"
+  stage_2_alternative_interpretation:
+    markers: ["du hast verstanden", "war klar dass", "offensichtlich", "natürlich"]
+    description: "Umdeutung der ursprünglichen Bedeutung"
+  stage_3_complete_revision:
+    markers: ["nie gesagt", "immer gemeint", "habe ich erklärt", "wir haben besprochen"]
+    description: "Vollständige Realitätsrevision"
+activation:
+  rule: "PROGRESSION DETECTED"
+window:
+  messages: 50
+  temporal_window: "7d"
+scoring:
+  base: 3.3
+  weight: 0.93
+  decay: 0.005
+  formula: "logistic"
+psychological_indicators:
+  - gaslighting
+  - narcissistic_reality_construction
+  - control_through_confusion
+  - reality_revision
+examples:
+  - "Ich erwähnte, dass ich vielleicht zu spät komme → Du wusstest, dass ich noch andere Sachen hatte"
+  - "Wir haben über eine Pause gesprochen → Du hast zugestimmt, dass wir Abstand brauchen"
+  - "Ich sagte ungefähr sechs Uhr → War doch klar, dass das nicht genau gemeint war"
+  - "Sowas wie zusammenziehen → Wir haben das doch ausführlich besprochen"
+  - "Ich meinte vielleicht so um 5, aber du wusstest ja, dass es später wird."
+  - "Wir haben das doch besprochen, oder? Es war klar, dass ich das nicht so meinte."
+  - "Ungefähr das, was ich sagte, aber natürlich hast du es falsch verstanden."
+  - "Ich habe nie gesagt, dass es definitiv ist, du hast das angenommen."
+  - "Sowas wie eine Pause, aber wir haben zugestimmt, es ist endgültig."
+  - "Etwa dann, aber offensichtlich meinte ich etwas anderes."
+  - "Ich erklärte es, du hast es nur nicht richtig gehört."
+  - "Immer gemeint, dass es flexibel ist, nicht fest."
+  - "War klar, dass das nicht wörtlich war."
+  - "Wir besprachen es, aber du erinnerst dich falsch."
+  - "Ich habe nie gesagt, dass ich das verspreche, du hast das einfach so verstanden, und es war doch klar, dass ich das nicht so gemeint habe."
+  - "Wir haben das doch besprochen, oder? Es war offensichtlich, dass ich das nicht wörtlich nahm, und du erinnerst dich falsch."
+  - "Ich meinte vielleicht so um 5, aber du wusstest ja, dass es später wird, und ich habe es dir erklärt, du hast nur nicht zugehört."
+  - "Sowas wie zusammenziehen, aber wir haben das doch ausführlich besprochen, und es war immer klar, dass es nur eine Idee war."
+  - "Ich habe nie gesagt, dass ich dich liebe, du hast das interpretiert, und es war doch offensichtlich, dass ich das nicht so empfinde."
+  - "Wir haben das doch besprochen, dass ich keine Zeit habe, und du hast es einfach ignoriert, und jetzt tust du so, als wäre ich schuld."
+  - "Ich habe vielleicht angedeutet, dass ich helfen könnte, aber du hast das als Versprechen genommen, und es war doch klar, dass ich das nicht leisten kann."
+  - "Sowas wie eine Verabredung, aber du wusstest ja, dass ich noch andere Pläne hatte, und ich habe es dir erklärt, du hast nur nicht zugehört."
+  - "Ich habe nie gesagt, dass ich dich heiraten will, du hast das geträumt, und es war doch offensichtlich, dass ich das nicht so meine."
+  - "Wir haben das doch besprochen, dass ich meine Ruhe brauche, und du hast es einfach nicht respektiert, und jetzt tust du so, als wäre ich das Problem."
+tags: [semantic, gaslighting, reality_distortion, manipulation]
+schema_version: "3.3"

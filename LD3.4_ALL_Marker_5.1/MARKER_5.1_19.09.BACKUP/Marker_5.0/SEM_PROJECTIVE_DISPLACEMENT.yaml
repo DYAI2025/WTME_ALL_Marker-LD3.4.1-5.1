@@ -1,0 +1,34 @@
+id: SEM_PROJECTIVE_DISPLACEMENT
+version: "3.3"
+frame:
+  signal: ["Du bist immer so", "Sie werden wieder", "Du machst alles"]
+  concept: "Projektive Verschiebung"
+  pragmatics: "Unbewusste Abwehrprojektion"
+  narrative: "displacement"
+composed_of:
+  - ATO_BLAME_ATTRIBUTION
+  - ATO_VICTIM_POSITIONING
+activation:
+  rule: "ALL 2 IN 3 messages"
+pattern:
+  - "(?i)\\b(du|Sie)\\s+(bist|sind|wirst|werden)\\s+(immer|wieder|schon wieder|ständig)"
+  - "(?i)\\bmachst\\s+alles\\s+zu\\s+(dein|ihr)"
+  - "(?i)\\b(du|Sie)\\s+.+\\s+(wenn|aber)\\s+ich"
+examples:
+  - "Du bist immer so defensiv wenn ich nur helfen will"
+  - "Sie werden wieder manipulativ aber ich versuche nur zu verstehen"
+  - "Du machst alles zu deinem Problem, dabei will ich nur reden"
+  - "Du wirst so wütend, wenn ich meine Gefühle ausdrücke"
+  - "Sie sind so kontrollierend, ich kann nicht mal ehrlich sein"
+  - "Du bist immer so kritisch, dabei versuche ich doch nur, dir zu helfen."
+  - "Du machst alles zu deinem Problem, obwohl ich doch nur das Beste für dich will."
+  - "Du bist so empfindlich, dabei habe ich doch nur meine Meinung gesagt."
+  - "Du bist immer so negativ, dabei versuche ich doch nur, dich aufzumuntern."
+  - "Du bist so unzuverlässig, dabei habe ich mich doch auf dich verlassen."
+  - "Du bist immer so dramatisch, dabei versuche ich doch nur, die Situation zu beruhigen."
+  - "Du bist so egoistisch, dabei opfere ich mich doch für dich auf."
+  - "Du bist immer so abweisend, dabei versuche ich doch nur, dir näherzukommen."
+  - "Du bist so kontrollierend, dabei versuche ich doch nur, dir Freiraum zu geben."
+  - "Du bist immer so misstrauisch, dabei versuche ich doch nur, ehrlich zu sein."
+tags: [semantic, projektion, abwehr, manipulation]
+schema_version: "3.3"

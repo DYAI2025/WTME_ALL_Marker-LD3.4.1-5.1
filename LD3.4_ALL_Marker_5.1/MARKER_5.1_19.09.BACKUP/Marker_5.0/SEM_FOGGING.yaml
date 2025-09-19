@@ -1,0 +1,32 @@
+id: SEM_FOGGING
+frame:
+  signal:
+  - ich weiß selbst nicht mehr
+  - alles ist irgendwie kompliziert
+  - es ist schwer zu erklären
+  - nichts ist so eindeutig
+  - es ist alles so verworren
+  concept: Fogging
+  pragmatics: Unklarheit und Ausweichen
+  narrative: Nebel-Taktik
+composed_of:
+- ATO_FOGGING
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- Ich weiß selbst nicht mehr, was los ist.
+- Alles ist irgendwie kompliziert geworden.
+- Es ist schwer zu erklären, ich komme da selbst nicht mehr mit.
+- Nichts ist so eindeutig, wie es scheint.
+- Es ist alles so verworren.
+- Ich kann es dir gerade nicht erklären, es ist zu komplex.
+- Die Situation ist völlig unübersichtlich.
+- Es fühlt sich alles wie Nebel an.
+- Da sind viele Dinge, die ich selbst nicht verstehe.
+- Es ist alles einfach nur diffus.
+tags:
+- fogging
+- confusion

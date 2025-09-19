@@ -1,0 +1,30 @@
+id: ATO_PAUSE_LONG
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for long speech pauses (≥600ms)"
+frame:
+  signal: ["Pause ≥ 600 ms"]
+  concept: "Sprechpause (lang)"
+  pragmatics: "Segmentierung"
+  narrative: "audio"
+detect_class:
+  module: prosody.pause_long
+  params: { min_ms: 600 }
+examples:
+  - "[.. 720 ms Stille ..]"
+  - "[.. 850 ms Pause ..]"
+  - "[.. 1200 ms Schweigen ..]"
+  - "[.. 650 ms Unterbrechung ..]"
+  - "[.. 900 ms Stockung ..]"
+  - "[.. 1500 ms Stille ..]"
+  - "[.. 1000 ms Pause ..]"
+  - "[.. 2000 ms Schweigen ..]"
+  - "[.. 700 ms Unterbrechung ..]"
+  - "[.. 1100 ms Stockung ..]"
+  - "[.. 600 ms Denkpause ..]"
+  - "[.. 1300 ms Atemholen ..]"
+  - "[.. 950 ms Zögern ..]"
+  - "[.. 1800 ms Nachdenken ..]"
+  - "[.. 750 ms Innehalten ..]"
+tags: [pause, audio, atomic]

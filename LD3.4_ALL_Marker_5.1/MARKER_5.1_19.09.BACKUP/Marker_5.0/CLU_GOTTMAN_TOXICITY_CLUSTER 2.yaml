@@ -1,0 +1,40 @@
+id: CLU_GOTTMAN_TOXICITY_CLUSTER
+display_title: "Gottman: Toxizitäts-Cluster"
+version: "3.3"
+lang: de
+category: CLUSTER
+description: "Cluster toxischer Kommunikationsmuster nach Gottman."
+frame:
+  signal: ["Multiple Gottman-Destruktoren"]
+  concept: "Gottman: Toxizitäts-Cluster"
+  pragmatics: "Akkumulation beziehungsschädigender Kommunikation"
+  narrative: "Destruktive Beziehungsdynamik"
+combination:
+  type: "AND"
+  components:
+    - marker_id: "SEM_GOTTMAN_CONFLICT_ESCALATION"
+      weight: 0.6
+    - marker_id: "ATO_GOTTMAN_CRITICISM"
+      weight: 0.4
+    - marker_id: "ATO_GOTTMAN_CONTEMPT"
+      weight: 0.5
+    - marker_id: "ATO_GOTTMAN_DEFENSIVENESS"
+      weight: 0.3
+    - marker_id: "ATO_GOTTMAN_STONEWALLING"
+      weight: 0.4
+  threshold: 0.8
+activation:
+  rule: "WEIGHTED_AND"
+window:
+  messages: 50
+scoring:
+  base: 2.0
+  weight: 0.8
+  decay: 0.05
+  formula: "logistic"
+examples:
+  - "Du machst immer alles falsch! Du bist wirklich dumm! Das stimmt nicht! Ich will nicht mehr reden!"
+tags: [cluster, gottman, toxicity, destructive, escalation, severe]
+detect_class: "E"
+criteria: "Häufung mehrerer Gottman-Destruktoren in kurzer Zeit"
+updated_at: "2025-08-19T10:30:00Z"

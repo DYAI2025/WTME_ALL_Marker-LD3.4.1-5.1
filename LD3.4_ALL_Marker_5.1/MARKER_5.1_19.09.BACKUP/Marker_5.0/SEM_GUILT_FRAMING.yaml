@@ -1,0 +1,32 @@
+id: SEM_GUILT_FRAMING
+frame:
+  signal:
+  - wegen dir ist alles kaputt
+  - du bist schuld
+  - hättest du nicht
+  - du hast mich dazu gebracht
+  - ich kann nichts dafür
+  concept: Schuldumkehr
+  pragmatics: Verantwortungsverlagerung
+  narrative: emotionale Kontrolle
+composed_of:
+- ATO_GUILT_FRAMING
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- Wegen dir ist alles kaputt.
+- Du bist schuld, dass wir jetzt Streit haben.
+- Hättest du nicht so gehandelt, wäre das nie passiert.
+- Du hast mich dazu gebracht, so zu reagieren.
+- Ich kann nichts dafür, du provozierst mich ständig.
+- Wenn du dich anders verhalten würdest, müsste ich nicht so reagieren.
+- Du bist der Grund, warum es mir schlecht geht.
+- Ich habe nur so gehandelt, weil du mich verletzt hast.
+- Immer bist du der Auslöser für unsere Probleme.
+- Es wäre nie so weit gekommen, wenn du mehr auf mich achten würdest.
+tags:
+- guilt_framing
+- blame

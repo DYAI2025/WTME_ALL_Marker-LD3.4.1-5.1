@@ -1,0 +1,36 @@
+id: CLU_INTUITION_SUPPORT
+version: "3.4"
+frame:
+  signal: ["intuition","weak-aggregation"]
+  concept: "Vorahnung: Unterstützung/Bindung"
+  pragmatics: "Ressourcenfokus, Verstärkung"
+  narrative: "hypothesis"
+tags: [intuition, support, bonding, learning]
+composed_of:
+  - SEM_SUPPORT_VALIDATION
+  - SEM_TRUST_SIGNALING
+  - SEM_EMOTIONAL_SUPPORT
+activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 6 messages" }
+scoring: { base: 0.5, weight: 1.0 }
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 6
+    confirm_rule: "AT_LEAST 1 of [SEM_SUPPORT_VALIDATION, SEM_EMOTIONAL_SUPPORT] IN confirm_window"
+    multiplier_on_confirm: 1.75
+    decay_window: 8
+  telemetry_keys:
+    counter_confirmed: "INT_SUPPORT.confirmed"
+    counter_retracted: "INT_SUPPORT.retracted"
+    ewma_precision: "INT_SUPPORT.ewma_precision"
+examples:
+  - "… 'ich bin da' + Dank …"
+  - "… Validierung + Ermutigung …"
+  - "… Trost + Vertrauen andeuten …"
+  - "… wiederholte Caring-Phrasen …"
+  - "… 'gemeinsam' + 'schaffst das' …"
+  - "… 'wie kann ich helfen?' + Zusage …"
+  - "… 'bin stolz auf dich' + Umarmungs-Emoji …"
+  - "… Ressourcen teilen + 'melde dich jederzeit' …"
+  - "… aktives Zuhören + Paraphrase …"
+  - "… 'wir kriegen das hin' + Teamframe …"

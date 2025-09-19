@@ -1,0 +1,51 @@
+id: SEM_BOUNDARY_SETTING
+schema_version: LD-3.3
+lang: en
+category: SEMANTIC
+description: Semantic pattern for healthy boundary setting
+frame:
+  signal: ["limit establishment"]
+  concept: "Boundary Setting"
+  pragmatics: "micro pattern recognition"
+  narrative: "intent"
+composed_of:
+  - ATO_BOUNDARY_SETTING
+  - ATO_EMOTIONAL_REGULATION
+  - ATO_SELF_REFLECTION
+activation_logic: "ANY 2"
+window:
+  messages: 2
+examples:
+  - "I need some space to process this. I realize my emotions are too high right now."
+  - "I won't continue this conversation today. I'm feeling overwhelmed and need to breathe."
+  - "I can't discuss this anymore tonight. I understand we both need to calm down first."
+  - "That's my limit for today. I see that we're both getting triggered and need a break."
+  - "I'm not comfortable with this direction. I notice I'm getting defensive and should step back."
+  - "I need to set a clear boundary here about what I will and won't discuss."
+  - "I won't engage with personal attacks. I realize we need to find a better way."
+  - "I can't handle this level of intensity right now. Perhaps we should revisit this later."
+  - "That crosses a line for me. I understand you're upset but I need respect too."
+  - "I'm not willing to continue if we can't speak to each other civilly."
+  - "I need to pause this conversation. I feel my stress levels rising."
+  - "Ich brauche heute Ruhe und werde jetzt offline gehen."
+  - "So möchte ich nicht mehr angesprochen werden."
+  - "If you raise your voice, I'll end the call."
+  - "Ich komme nur mit, wenn wir spätestens um neun zurück sind."
+  - "Ab hier ist für mich die Grenze erreicht."
+  - "Ich nehme mir jetzt Zeit für mich."
+  - "Das ist mir zu viel – ich stoppe das hier."
+  - "I will not continue this conversation right now."
+  - "Bitte respektiere, dass ich das nicht teilen möchte."
+  - "Ich brauche einen Abstand von diesem Thema."
+negative:
+  - "Vielleicht sollten wir später reden."
+  - "Ich weiß nicht, ob das okay ist."
+  - "Man könnte es so oder so sehen."
+  - "Ich fühle mich unwohl, aber mach du mal."
+  - "Ich möchte nicht, aber gut…"
+  - "I guess it's fine."
+  - "Könnten wir vielleicht?"
+  - "Ich wäre eventuell dafür."
+  - "Das passt mir nicht so, aber na gut."
+  - "Mal schauen, wie es wird."
+tags: [semantic, v3.4, boundaries]

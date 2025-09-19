@@ -1,0 +1,48 @@
+id: SEM_FRAGMENTED_SELF_NARRATIVE
+version: "3.3"
+frame:
+  signal: ["Widersprüchliche Selbstaussagen ohne Integration"]
+  concept: "Fragmentierte Selbstnarrative"
+  pragmatics: "Kognitive Dissonanz beim Empfänger"
+  narrative: "self_contradiction"
+contradiction_detection:
+  window: 500  # characters
+  opposing_pairs:
+    - ["immer", "nie"]
+    - ["ehrlich", "musste lügen"]  
+    - ["hasse Konflikt", "muss gesagt werden"]
+    - ["für alle da", "kann nicht helfen"]
+    - ["spiele keine Spiele", "werde nicht antworten"]
+    - ["direkt", "kann es nicht sagen"]
+activation:
+  rule: "CONTRADICTION DETECTED"
+window:
+  messages: 30
+  character_window: 500
+scoring:
+  base: 2.7
+  weight: 0.82
+  decay: 0.01
+  formula: "logistic"
+psychological_indicators:
+  - splitting_defense
+  - unstable_self_concept
+  - narcissistic_organization
+  - cognitive_dissonance
+examples:
+  - "Ich bin immer für alle da → Ich weiß nicht, warum Leute erwarten, dass ich ihre Probleme löse"
+  - "Ich spiele keine Spielchen in Beziehungen → Ich werde einfach nicht antworten, wenn man mich so behandelt"
+  - "Ich bin total ehrlich → Ich musste lügen, um deine Gefühle zu schonen"
+  - "Ich hasse Konflikte → Manchmal muss die Wahrheit einfach gesagt werden"
+  - "Ich bin ein sehr offener Mensch, aber ich kann dir das nicht erzählen."
+  - "Ich bin immer pünktlich, aber heute bin ich zu spät, weil ich verschlafen habe."
+  - "Ich bin sehr geduldig, aber manchmal platzt mir einfach der Kragen."
+  - "Ich bin sehr selbstbewusst, aber ich zweifle oft an meinen Entscheidungen."
+  - "Ich bin ein Teamplayer, aber ich arbeite am liebsten alleine."
+  - "Ich bin sehr organisiert, aber mein Schreibtisch ist immer ein Chaos."
+  - "Ich bin sehr ehrlich, aber manchmal muss ich lügen, um niemanden zu verletzen."
+  - "Ich bin sehr stark, aber ich fühle mich oft hilflos."
+  - "Ich bin sehr unabhängig, aber ich brauche oft die Bestätigung anderer."
+  - "Ich bin sehr entspannt, aber ich mache mir ständig Sorgen."
+tags: [semantic, contradiction, self_concept, splitting]
+schema_version: "3.3"

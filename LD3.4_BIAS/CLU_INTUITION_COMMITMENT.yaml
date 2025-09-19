@@ -1,0 +1,36 @@
+id: CLU_INTUITION_COMMITMENT
+version: "3.4"
+frame:
+  signal: ["intuition","weak-aggregation"]
+  concept: "Vorahnung: Zusage vs. Aufschub"
+  pragmatics: "Flow steuern, Blockaden erkennen"
+  narrative: "hypothesis"
+tags: [intuition, commitment, procrastination, learning]
+composed_of:
+  - SEM_CLEAR_COMMITMENT
+  - SEM_DELAYING_MOVE
+  - SEM_PROCRASTINATION_BEHAVIOR
+activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+scoring: { base: 0.5, weight: 1.0 }
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_CLEAR_COMMITMENT, SEM_DELAYING_MOVE] IN confirm_window"
+    multiplier_on_confirm: 1.5
+    decay_window: 7
+  telemetry_keys:
+    counter_confirmed: "INT_COMMIT.confirmed"
+    counter_retracted: "INT_COMMIT.retracted"
+    ewma_precision: "INT_COMMIT.ewma_precision"
+examples:
+  - "… 'mach ich heute' + 'morgen besser' …"
+  - "… Einladung + später relativiert …"
+  - "… Zusage, dann Vertagen …"
+  - "… konkrete Aktion + 'später' …"
+  - "… 'gleich' + 'keine Zeit' …"
+  - "… 'bin dran' + keine Folgeaktion …"
+  - "… 'Deadline passt' + 'verschieben wir' …"
+  - "… 'erst nach dem Meeting' + Aufschub …"
+  - "… Task akzep­tiert + Prioritäts-Switch …"
+  - "… 'Commit' + 'sobald ich Luft habe' …"

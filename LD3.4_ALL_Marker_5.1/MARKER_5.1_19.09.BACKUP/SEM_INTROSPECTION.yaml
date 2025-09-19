@@ -1,0 +1,37 @@
+id: SEM_INTROSPECTION
+frame:
+  signal:
+  - I wonder
+  - upon reflection
+  - I realized
+  - I have noticed
+  - I question
+  concept: introspection
+  pragmatics: self-reflection
+  narrative: inner exploration
+composed_of:
+- ATO_PLACEHOLDER
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- I wonder why I reacted so strongly just now.
+- Upon reflection, I realize I could have been more patient.
+- Ich habe gerade bemerkt, dass ich oft unterbrochen habe.
+- I question whether my approach was appropriate.
+- Mir ist aufgefallen, dass ich in letzter Zeit sehr gestresst reagiere.
+- "Ich frage mich, warum ich in dieser Situation so emotional geworden bin, und merke, dass es mit alten Mustern zusammenhängt."
+- "Nach reiflicher Überlegung ist mir klar geworden, dass meine Reaktion nicht nur auf dich, sondern auch auf meine eigenen Unsicherheiten zurückzuführen ist."
+- "Ich habe bemerkt, dass ich dazu neige, mich zurückzuziehen, wenn ich mich überfordert fühle, und das ist ein Muster, das ich ändern möchte."
+- "Ich hinterfrage meine eigenen Motive in dieser Angelegenheit und erkenne, dass ich auch eigene Ängste habe."
+- "Mir ist aufgefallen, dass meine Kritik an anderen oft eine Projektion meiner eigenen Unzufriedenheit ist, und das ist ein komplexes Gefühl."
+- "Ich reflektiere über mein Verhalten und sehe, dass ich manchmal zu impulsiv reagiere, was ich gerne ändern würde."
+- "Ich habe erkannt, dass meine Angst vor Ablehnung oft aus meiner eigenen Unsicherheit resultiert, und das ist ein schmerzhafter Prozess."
+- "Mir wird bewusst, dass ich meine eigenen Erwartungen auf andere projiziere, und das führt zu Enttäuschungen."
+- "Ich beobachte an mir, dass ich dazu neige, zu viel zu analysieren, und das hindert mich manchmal daran, einfach zu sein."
+- "Ich frage mich, wie meine Kindheitserfahrungen mein heutiges Verhalten beeinflussen, und das ist eine tiefe Einsicht."
+tags:
+- introspection
+- self_reflection

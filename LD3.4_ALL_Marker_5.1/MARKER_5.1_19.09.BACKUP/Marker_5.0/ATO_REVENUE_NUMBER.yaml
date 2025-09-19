@@ -1,0 +1,17 @@
+id: ATO_REVENUE_NUMBER
+version: "3.4"
+frame:
+  signal: ["revenue", "numeric"]
+  concept: "revenue_amount"
+  pragmatics: "fact_claim"
+  narrative: "evidence"
+examples:
+  - "Wir machen 120.000 € MRR."
+  - "Der Jahresumsatz betrug 1.2M EUR."
+  - "Unser ARR liegt bei 850k €."
+  - "Wir stehen bei 45k monatlichem Umsatz."
+  - "Aktuell 300k€ Run Rate."
+pattern:
+  - "\\b(\\d{1,3}(?:[.,]\\d{3})*(?:[.,]\\d+)?\\s*(EUR|€|USD|\\$))\\b"
+  - "\\b(MRR|ARR|Run Rate)\\b"
+tags: [finance, revenue, numeric]

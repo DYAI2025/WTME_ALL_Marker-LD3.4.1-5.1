@@ -1,0 +1,55 @@
+id: SEM_COMMITMENT_REQUEST
+version: "3.3"
+lang: de
+level: SEM
+frame:
+  signal:
+    - "klare Absprache/Verbindlichkeit erbitten"
+  concept: "Commitment-Rahmen"
+  pragmatics: "Überraschungen vermeiden"
+  narrative: "Planbarkeit/Respekt"
+pattern:
+  - '(?i)\b(absprache|vereinbarung|abmachung)\b'
+  - '(?i)\b(verbindlich(keit)?|verlässlich(keit)?)\b'
+  - '(?i)\b(wenn\s+wir\s+uns\s+trennen)\s+und\s+wieder\s+daten\b'
+  - '(?i)\b(sag(en)?\s+wir\s+es\s+einander)\b'
+examples:
+  - "Mir ist eine Absprache wichtig."
+  - "Lass uns das verbindlich klären."
+  - "Wenn so etwas passiert, sagen wir es einander."
+  - "Ich brauche Verlässlichkeit."
+  - "Ich möchte eine klare Vereinbarung."
+  - "Können wir eine verbindliche Absprache treffen, damit wir beide wissen, woran wir sind?"
+  - "Ich brauche deine Verlässlichkeit in dieser Sache, damit ich planen kann."
+  - "Lass uns eine klare Vereinbarung treffen, damit es keine Missverständnisse gibt."
+  - "Ich möchte, dass wir uns gegenseitig versichern, dass wir uns an diese Abmachung halten."
+  - "Es ist mir wichtig, dass wir uns auf eine gemeinsame Linie einigen und diese auch einhalten."
+  - "Können wir uns darauf festlegen, damit ich mich darauf verlassen kann?"
+  - "Ich brauche eine klare Zusage von dir, damit ich mich sicher fühlen kann."
+  - "Lass uns das schriftlich festhalten, damit es verbindlich ist."
+  - "Ich möchte, dass wir uns gegenseitig versprechen, dass wir das durchziehen."
+  - "Es ist mir wichtig, dass wir uns auf eine gemeinsame Strategie einigen und diese auch umsetzen."
+  - "Kannst du mir versprechen, dass du morgen kommst?"
+  - "Ich brauche eine klare Zusage."
+  - "Committen wir uns darauf, das wöchentlich zu machen?"
+  - "Bist du bereit, dich darauf festzulegen?"
+  - "Können wir verbindlich vereinbaren, dass…"
+  - "Please commit to being on time from now on."
+  - "Can you promise me you'll call tonight?"
+  - "Ich möchte, dass du dich jetzt entscheidest."
+  - "Lass uns das verbindlich festhalten."
+  - "Kann ich mich darauf verlassen?"
+
+negative:
+  - "Vielleicht klappt es morgen."
+  - "Mal sehen, wie es wird."
+  - "Ich versuche es, aber ohne Garantie."
+  - "Ich melde mich irgendwann."
+  - "Schauen wir mal, ob wir Zeit finden."
+  - "I'd like to, but I'm not sure."
+  - "We could think about it."
+  - "Unverbindlich können wir drüber sprechen."
+  - "Ich möchte erstmal nur darüber nachdenken."
+  - "Es wäre schön, aber ich verspreche nichts."
+
+tags: [commitment, clarity, semantics]

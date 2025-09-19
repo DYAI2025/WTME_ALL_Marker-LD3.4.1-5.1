@@ -1,0 +1,51 @@
+id: ATO_EMOTIONAL_INVALIDATION
+lang: de
+category: ATOMIC
+description: "Erkennt kommunikative Muster der emotionalen Entwertung, bei denen Gefühle des Gegenübers abgetan, herabgesetzt oder in Frage gestellt werden."
+frame:
+  signal:      ["Herabsetzende oder abwehrende Sprache bezüglich Gefühlen"]
+  concept:     "Emotionale Entwertung"
+  pragmatics:  "Untergräbt die Realitätswahrnehmung des anderen, entmutigt emotionalen Ausdruck."
+  narrative:   "token / gaslighting"
+pattern:
+  - "(?i)nur in deinem kopf"
+  - "(?i)überreagier(st|t)"
+  - "(?i)zu empfindlich"
+  - "(?i)stell dich nicht so an"
+  - "(?i)alles persönlich"
+  - "(?i)\\bdrama\\b"
+  - "(?i)kein grund"
+  - "(?i)bildest dir ein"
+  - "(?i)nicht so schlimm"
+  - "(?i)mach dich nicht lächerlich"
+  - "(?i)aus einer mücke einen elefanten"
+examples:
+  # Übernommene und kuratierte Beispiele
+  - "Das ist doch alles nur in deinem Kopf."
+  - "Wieder mal überreagierst du total."
+  - "Du bist einfach zu empfindlich."
+  - "So schlimm ist es doch gar nicht, stell dich nicht so an."
+  - "Warum nimmst du immer alles persönlich?"
+  - "Du machst aus allem ein Drama."
+  - "Du übertreibst maßlos, ehrlich."
+  - "Das bildest du dir bloß ein."
+  - "Reiß dich zusammen, so schlimm ist das nicht."
+  - "Dafür gibt es wirklich keinen Grund zu weinen."
+  - "Das ist doch kein Weltuntergang."
+  - "Du machst aus einer Mücke einen Elefanten."
+  - "Sei doch nicht so hypersensibel."
+  - "Ich glaube, du dramatisierst das Ganze nur."
+  - "Du suchst Probleme, wo keine sind."
+  # 10 neu hinzugefügte Beispiele
+  - "Jetzt sei doch nicht gleich so eine Mimose."
+  - "Du bist nicht traurig, du suchst nur Aufmerksamkeit."
+  - "Hör auf, dich da so reinzusteigern."
+  - "Das ist doch lächerlich, deswegen so ein Gesicht zu ziehen."
+  - "Andere haben echte Probleme."
+  - "Du interpretierst da viel zu viel hinein."
+  - "So emotional zu sein, bringt dich nicht weiter."
+  - "Es gibt keinen objektiven Grund, so verletzt zu sein."
+  - "Beruhige dich mal, das ist doch eine Lappalie."
+  - "Du musst lernen, nicht wegen jeder Kleinigkeit an die Decke zu gehen."
+tags: [atomic, emotional_invalidation, gaslighting, manipulation, token, v3.3-compliant]
+schema_version: "3.3"

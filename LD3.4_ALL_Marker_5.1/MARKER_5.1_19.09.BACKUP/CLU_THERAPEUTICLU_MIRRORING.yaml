@@ -1,0 +1,50 @@
+id: CLU_THERAPEUTIC_MIRRORING
+lang: en
+category: CLUSTER
+description: "Development via reflective distance + external mirroring while negotiating boundaries."
+frame:
+  signal: ["outside view", "mirroring requested", "boundaries set"]
+  concept: "Therapeutic mirroring"
+  pragmatics: "Self-clarification, co-regulation"
+  narrative: "Growth through reflection"
+composed_of:
+  - SEM_REFLECTIVE_BOUNDARY_SETTING
+  - SEM_MIRRORING_REQUEST
+activation_logic: "AT_LEAST 2 IN 10 messages"
+scoring: { base: 1.6, weight: 1.1, decay: 0.005 }
+window: { messages: 10 }
+examples:
+  - "Self-analysis + mirroring request without advice."
+  - "Outside perspective stated; depth boundaries set."
+  - "Reflection + clear 'no coaching' rule."
+  - "Feeling labeled; distance agreed."
+  - "Observation + ask for neutral feedback."
+  - "Meta-talk about impact + dosage of closeness."
+  - "Projection noticed + boundary to intimacy."
+  - "Mirroring requested + autonomy emphasized."
+  - "Distance formula + later check-in on impact."
+  - "Analytical recap + scope setting."
+  - "A beschreibt distanziert eigene Gefühle („Wenn ich das von außen betrachte, sehe ich …“) und setzt dabei klare Grenzen („Ich möchte keine Ratschläge, nur Feedback, wie das wirkt“)."
+  - "B reflektiert vergangene Reaktionen analytisch und fragt: „Spiegelt das, was ich sage, meine Verantwortung oder projiziere ich?“ — gleichzeitig legt er fest, was er teilen möchte."
+  - "Im Chat mit Coach: detaillierte Selbstanalyse, gefolgt von Bitten um neutrales Spiegeln anstatt emotionaler Unterstützung; B betont persönliche Autonomiegrenzen."
+  - "Sitzungstranskript: Klient formuliert Beobachtung über das eigene Verhalten, bittet Therapeuten um Spiegelung, lehnt aber Beziehungsangebote („Ich brauche Abstand, keine Nähe“) ab."
+  - "Diskurs: „Ich erkenne, dass ich hier Angst projiziere; bestätige mir bitte, ob das nachvollziehbar klingt.“ Gleichzeitig verhandelt A, wie viel Tiefe das Gespräch haben darf."
+  # +5 neu
+  - "Bitte spiegel nur, was ankommt – keine Tipps."
+  - "Von außen betrachtet erkenne ich meinen Anteil."
+  - "Ich setze hier eine Grenze: Analyse ja, Intimität nein."
+  - "Hilf mir zu sehen, nicht zu fühlen."
+  - "Ich will Struktur im Feedback, keine Intervention."
+  - "Ich möchte nur eine neutrale Beobachtung, keine Bewertung meiner Gefühle."
+  - "Spiegel mir bitte mein Verhalten, aber lass deine eigenen Emotionen außen vor."
+  - "Ich brauche eine klare Rückmeldung, wie meine Worte wirken, ohne dass du interpretierst."
+  - "Hilf mir, meine Muster zu erkennen, aber respektiere meine Grenzen der Offenheit."
+  - "Ich suche eine objektive Perspektive, um mich selbst besser zu verstehen, ohne emotionale Verstrickung."
+tags: [needs_review, cluster, reflection, boundaries]
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+id: SEM_PROTECTIVE_PATTERN
+version: "3.3"
+frame:
+  signal: ["Erkanntes Schutzmuster"]
+  concept: "Bewusster Selbstschutz"
+  pragmatics: "Abgrenzungsstrategie"
+  narrative: "boundary"
+composed_of:
+  - ATO_PROTECTIVE_DISTANCING
+  - ATO_PATTERN_RECOGNITION
+activation:
+  rule: "ALL 2 IN 3 messages"
+examples:
+  - "Das ist mein typisches Muster - ich ziehe mich aus Selbstschutz zurück"
+  - "Immer wieder brauche ich diesen Abstand zum Schutz"
+  - "Ich kenne das von mir, diese Grenzen zu setzen"
+  - "Mal wieder muss ich mich schützen vor solchen Dynamiken"
+  - "Mein altes Muster: Distanz als Schutzraum"
+  - "Ich merke, dass ich mich wieder zurückziehe, das ist mein Schutzmuster, wenn es mir zu viel wird."
+  - "Mir fällt auf, dass ich immer dann Abstand brauche, wenn ich mich überfordert fühle, das ist ein bekanntes Muster von mir."
+  - "Ich erkenne, dass meine Tendenz zur Distanzierung ein Schutzmechanismus ist, den ich schon lange anwende."
+  - "Ich beobachte an mir, dass ich in Konfliktsituationen in mein Schutzmuster verfalle und mich abgrenze."
+  - "Mir wird klar, dass mein Bedürfnis nach Raum ein wiederkehrendes Muster ist, um mich vor emotionaler Überlastung zu schützen."
+  - "Ich ziehe mich bewusst zurück, weil ich dieses Muster an mir erkenne, um mich selbst zu schützen."
+  - "Ich bemerke, dass ich meine Grenzen setze, das ist mein Weg, mich vor negativen Einflüssen zu schützen."
+  - "Ich erkenne, dass mein Rückzug eine bewusste Entscheidung ist, die auf einem erkannten Schutzmuster basiert."
+  - "Mir ist bewusst, dass ich mich isoliere, wenn ich mich bedroht fühle, das ist mein erlerntes Schutzverhalten."
+  - "Ich sehe, dass ich mich in schwierigen Situationen oft in mein Schutzmuster flüchte, indem ich Distanz schaffe."
+tags: [semantic, schutz, muster, abgrenzung]
+schema_version: "3.3"

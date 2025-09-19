@@ -1,0 +1,22 @@
+id: SEM_RISK_ACKNOWLEDGEMENT
+version: "3.4"
+frame:
+  signal: ["risk", "acknowledgement"]
+  concept: "risk_acknowledgement"
+  pragmatics: "risk_management"
+  narrative: "assessment"
+examples:
+  - "Wir gehen davon aus, dass die Nachfrage steigt, aber das ist noch unsicher."
+  - "Angenommen unsere Annahme zur Retention stimmt nicht, dann müssen wir nachjustieren."
+  - "Unsere Hypothese könnte falsch sein, was ein Risiko für die Planung darstellt."
+  - "Wir nehmen an, dass Churn stabil bleibt, sonst riskieren wir runway."
+  - "Das basiert auf Annahmen, deren Unsicherheit wir transparent beobachten."
+composed_of:
+  - ATO_ASSUMPTION
+  - ATO_UNCERTAINTY
+activation:
+  rule: "BOTH_IN_5_messages"
+scoring:
+  base: 0.8
+  weight: 1.3
+tags: [risk, assumption, uncertainty]

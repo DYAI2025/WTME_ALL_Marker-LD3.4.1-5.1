@@ -1,0 +1,28 @@
+id: SEM_SELF_CRITICISM_SPIRAL
+lang: de
+category: SEMANTIC
+description: "Erfasst eine sich selbst verstärkende Schleife aus negativer Selbstzuschreibung und resignativer Finalität, die auf eine verfestigte Denkstruktur hindeutet."
+frame:
+  signal:      ["Kombination aus negativer Selbstzuschreibung und verallgemeinernder Resignation"]
+  concept:     "Selbstkritische Abwärtsspirale"
+  pragmatics:  "Signalisiert erlernte Hilflosigkeit, sucht implizit nach Widerspruch oder Bestätigung des negativen Selbstbildes."
+  narrative:   "trap / loop"
+composed_of:
+  - ATO_SELF_ATTRIBUTION_NEGATIVE
+  - ATO_RESIGNATION_FINAL
+activation:
+  rule: "ALL in 1 message OR ANY 2 in 3 messages"
+scoring: { base: 1.6, weight: 1.2, formula: "logistic" }
+examples:
+  - "Es liegt sowieso wieder an mir, wenn das hier schiefgeht."
+  - "Typisch, ich vermassle das doch eh immer."
+  - "Ich bin halt einfach der, der es am Ende vergeigt."
+  - "Wahrscheinlich mache ich alles falsch, aber das ist ja nichts Neues."
+  - "Ich kann das nicht, hab ich noch nie gekonnt."
+  - "Mein Fehler, wie üblich."
+  - "Darüber müssen wir nicht reden, ich bin da sowieso ein hoffnungsloser Fall."
+  - "Das klappt eh nie, zumindest nicht, wenn ich es versuche."
+  - "Es war von Anfang an klar, dass das wieder an mir hängen bleibt."
+  - "Wundert mich nicht, ich bin einfach nicht dafür gemacht."
+tags: [semantic, self-criticism, resignation, loop, v3.3-compliant]
+schema_version: "3.3"

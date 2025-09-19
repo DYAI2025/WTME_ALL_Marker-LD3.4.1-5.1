@@ -1,0 +1,38 @@
+id: CLU_THERAPEUTIC_AWARENESS
+version: "3.3"
+frame:
+  signal: ["Therapeutische Selbsterkenntnis-Sequenz"]
+  concept: "Tiefe Selbstreflexion"
+  pragmatics: "Heilungsprozess"
+  narrative: "transformation"
+composed_of:
+  - SEM_METACOGNITIVE_INSIGHT
+  - SEM_PROJECTION_CONSCIOUSNESS
+  - SEM_EMOTIONAL_COMPLEXITY
+activation:
+  rule: "ANY 2 IN 10 messages"
+window:
+  messages: 10
+scoring:
+  base: 2.0
+  weight: 1.5
+  decay: 0.02
+  formula: "logistic"
+examples:
+  - "Eine Sequenz von: Ich merke mein Muster, erkenne meine Projektion, spüre die komplexen Gefühle"
+  - "Ablauf: Selbstbeobachtung führt zu Mustererkennung und emotionaler Differenzierung"
+  - "Prozess: Vom unbewussten Agieren zur bewussten Wahrnehmung eigener Dynamiken"
+  - "Therapeutischer Moment: Alle Ebenen der Selbsterkenntnis werden aktiviert"
+  - "Durchbruch: Muster, Projektionen und Gefühle werden gleichzeitig bewusst"
+  - "Ich merke, dass meine Wut oft eine Projektion meiner eigenen Hilflosigkeit ist, und das ist ein komplexes Gefühl."
+  - "Mir wird klar, dass ich meine Ängste auf andere projiziere, und ich spüre dabei eine Mischung aus Scham und Erleichterung."
+  - "Ich beobachte an mir, wie ich alte Muster wiederhole, und erkenne, dass dahinter eine tiefe Traurigkeit steckt."
+  - "Ich erkenne, dass meine Abwehrhaltung oft aus einer Projektion von Kritik entsteht, und das löst widersprüchliche Gefühle in mir aus."
+  - "Mir wird bewusst, dass ich meine eigenen unerfüllten Bedürfnisse auf andere projiziere, und das ist ein schmerzhafter, aber wichtiger Erkenntnisprozess."
+  - "Ich nehme wahr, dass meine Unsicherheit oft eine Projektion meiner eigenen Erwartungen ist, und das führt zu einem Gefühl der Überforderung."
+  - "Ich merke, dass ich meine eigenen ungelösten Konflikte auf Beziehungen projiziere, und das erzeugt eine komplexe emotionale Landschaft."
+  - "Mir fällt auf, dass meine Kritik an anderen oft eine Projektion meiner eigenen Unzufriedenheit ist, und das ist ein vielschichtiges Gefühl."
+  - "Ich beobachte an mir, dass ich meine eigenen Schwächen auf andere projiziere, und das führt zu einem Gefühl der Scham und des Bedauerns."
+  - "Ich erkenne, dass meine Angst vor Ablehnung oft eine Projektion meiner eigenen Selbstzweifel ist, und das ist ein tiefgreifender emotionaler Prozess."
+tags: [cluster, therapie, awareness, transformation]
+schema_version: "3.3"

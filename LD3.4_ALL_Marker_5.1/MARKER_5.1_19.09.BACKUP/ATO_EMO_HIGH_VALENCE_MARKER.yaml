@@ -1,0 +1,30 @@
+id: ATO_EMO_HIGH_VALENCE
+lang: en
+category: ATOMIC
+description: "Fires when a dedicated emotion detector (e.g., DetectEmotionValence) classifies an utterance with a valence score >= 0.6, indicating a strongly positive emotion."
+frame:
+  signal:      ["Strongly positive emotional language"]
+  concept:     "High Valence Emotion"
+  pragmatics:  "Expressing joy, excitement, or strong satisfaction."
+  narrative:   "token / peak positive"
+detect_class: "DetectEmotionValence"
+examples:
+  # Übernommene und kuratierte Beispiele
+  - "That news just made my day!"
+  - "I’m absolutely thrilled about the promotion."
+  - "Everything is going wonderfully right now."
+  - "Couldn’t be happier with the results!"
+  - "Life is fantastic this week."
+  # 10 neu hinzugefügte Beispiele
+  - "This is the best news I've heard all year!"
+  - "I feel absolutely fantastic today."
+  - "We did it! I'm so incredibly proud."
+  - "This trip has been a dream come true."
+  - "I'm on top of the world right now."
+  - "What a perfect evening, I'm so happy."
+  - "That was an amazing performance, truly spectacular."
+  - "I'm ecstatic about our success."
+  - "Feeling so grateful and joyful."
+  - "This is pure bliss."
+tags: [atomic, emotion, valence, detector-driven, token, v3.3-compliant]
+schema_version: "3.3"

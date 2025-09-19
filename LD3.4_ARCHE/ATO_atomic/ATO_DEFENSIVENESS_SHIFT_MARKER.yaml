@@ -1,0 +1,43 @@
+id: ATO_DEFENSIVENESS_SHIFT_MARKER
+frame:
+  signal:
+  - sag mal
+  - hör zu
+  - verstehst du
+  concept: Kommunikationsmuster
+  pragmatics: Dialog führen
+  narrative: exchange
+pattern:
+- (?i)\\b\-\ "ich\\b
+- (?i)\\b"ich\ hab\\b
+- (?i)\\bdu\ mich\\b
+- (?i)\\bdass\ ich\\b
+- (?i)\\bbin\ ich\\b
+examples:
+- Ich hab alles falsch gemacht? Klar, wie immer. 👏
+- Schön, wie du mich hinstellst – wieder mal.
+- Du behandelst mich wie einen Feind und erwartest Verständnis?
+- Du kannst es eh nie akzeptieren, wenn ich mal was sage.
+- Witzig, dass du mir jetzt Vorwürfe machst – schau mal in den Spiegel.
+- Ich hab doch nur ehrlich meine Meinung gesagt 😕
+- Du bist doch die/der, die/der ständig Stress macht.
+- Ich geb mir Mühe, aber es ist nie gut genug für dich.
+- Du verdrehst jedes meiner Worte, das ist einfach unfair 😓
+- Ich war halt müde, sorry dass ich nicht perfekt bin.
+- Du meckerst immer nur rum, statt mal zu sehen, was ich tue.
+- Immer bin ich der Depp, obwohl ich alles für dich mach.
+- Ich kann doch nichts dafür, dass du alles immer falsch verstehst.
+- Vielleicht solltest du mal über dein Verhalten nachdenken 🤷
+- Ich hab versucht, ruhig zu bleiben, aber du bist komplett eskaliert.
+- Wenn du nicht so überreagiert hättest, wär das gar nicht passiert.
+- Du hast doch gesehen, wie du mich behandelt hast!
+- Ich wusste nicht, dass ich mich für alles rechtfertigen muss 😤
+- Wow, jetzt bin ich plötzlich der Schuldige, ernsthaft?
+- Klar, immer bin ich das Problem – nie du, ne?
+- Ich hab doch gar nichts Schlimmes gesagt.
+- Du drehst halt wieder alles so, dass ich der Böse bin 🙄
+- Wie soll ich bitte reagieren, wenn du mich so angehst?
+- Ich hab echt nur versucht, dir zu helfen 😒
+- Es ist nicht meine Schuld, du hast doch angefangen!
+tags:
+- communication

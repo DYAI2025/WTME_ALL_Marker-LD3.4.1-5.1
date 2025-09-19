@@ -1,0 +1,42 @@
+id: SEM_DOUBT_UNCERTAINTY
+frame:
+  signal:
+    - "Zweifel und Unsicherheit"
+    - "Infragestellung von Entscheidungen"
+  concept: "Ausdrücke von Zweifel und Unsicherheit"
+  pragmatics: "Signalisiert Zögern und Infragestellung"
+  narrative: "Selbstzweifel und Entscheidungsunsicherheit"
+composed_of:
+  - "ATO_UNSICHER"
+  - "ATO_ZWEIFEL"
+  - "ATO_BEDENKEN"
+activation:
+  rule: "ANY_OF"
+  threshold: 1
+examples:
+    - "Ich bin mir nicht sicher, ob wir das schaffen."
+    - "Ich zweifle echt daran, dass das funktioniert."
+    - "Glaubst du wirklich, das ist eine gute Idee?"
+    - "Ich hab so meine Zweifel, ob das fair ist."
+    - "Ich bin unschlüssig, ob ich das richtig mache."
+    - "Ich hab Bedenken, dass es nach hinten losgeht."
+    - "Ich fühle mich unsicher, ob das der richtige Weg ist."
+    - "Ich hinterfrage ständig, ob ich das verkaufen kann."
+    - "Ich zweifle an meiner Entscheidung."
+    - "Ich hab Angst, dass das eine schlechte Wahl war."
+    - "Ich bin mir nicht mehr sicher, was richtig ist."
+    - "Vielleicht sollten wir das nochmal überdenken."
+    - "Könnte es sein, dass wir einen Fehler übersehen?"
+    - "Ich frage mich, ob das wirklich der beste Ansatz ist."
+    - "Es fällt mir schwer, mich darauf festzulegen."
+    - "Was, wenn wir uns komplett irren?"
+    - "Ich bin unsicher, ob ich das wirklich will, und habe Zweifel an der Entscheidung."
+    - "Ich zweifle an der Machbarkeit des Projekts und habe Bedenken bezüglich der Ressourcen."
+    - "Ich bin mir nicht sicher, ob das der richtige Zeitpunkt ist, und habe Zweifel an den Konsequenzen."
+    - "Ich habe Bedenken, dass wir uns irren könnten, und bin unsicher, wie wir weitermachen sollen."
+    - "Ich zweifle an der Richtigkeit dieser Aussage und habe Unsicherheiten bezüglich der Fakten."
+    - "Ich bin unsicher, ob ich das Vertrauen habe, und habe Bedenken, dass es schiefgehen könnte."
+    - "Ich habe Zweifel an der Glaubwürdigkeit der Quelle und bin unsicher, ob ich dem glauben soll."
+    - "Ich bin mir nicht sicher, ob das die beste Lösung ist, und habe Bedenken, dass es zu Problemen führen könnte."
+    - "Ich zweifle an meiner eigenen Fähigkeit und bin unsicher, ob ich dieser Aufgabe gewachsen bin."
+    - "Ich habe Bedenken, dass wir zu schnell handeln, und bin unsicher, ob wir alle Aspekte berücksichtigt haben."

@@ -1,0 +1,43 @@
+id: CLU_DESTRUCTIVE_SELF_PROTECTION
+lang: en
+category: CLUSTER
+description: "Destructive self-protection: blame shifting + minimization (optionally gaslighting) in short succession."
+frame:
+  signal: ["'because of you' + 'no big deal' in series"]
+  concept: "Defensive spiral"
+  pragmatics: "Responsibility evasion, trust erosion"
+  narrative: "Protection script over clarity"
+composed_of:
+  - SEM_BLAME_SHIFTING
+  - SEM_MINIMIZATION
+activation_logic: "SUM(weight)≥0.7 WITHIN 48h"
+scoring: { base: 1.8, weight: 1.3, decay: 0.02 }
+window: { messages: 15 }
+examples:
+  - "Accusation deflected ('because of you') + issue downplayed."
+  - "Evidence dismissed, responsibility offloaded—back to back."
+  - "'You're misreading' + 'it was minor'."
+  - "Caught → instant blame shift, then minimization."
+  - "Two defense moves inside 24 hours."
+  - "'You always exaggerate' followed by 'no big deal'."
+  - "Questions ignored, scope minimized."
+  - "Tone: annoyed, deflecting—repeated."
+  - "More relativizing after renewed inquiry."
+  - "Ends with stalemate, no ownership."
+  - "Ich hab nie gesagt, dass ich das verspreche – du hast das einfach so angenommen."
+  - "Also wenn du denkst, dass das alles meine Schuld ist, dann… okay."
+  - "Du hast mich in diese Situation gebracht – ich hatte keine Wahl."
+  - "Jetzt verdrehst du mir wieder das Wort im Mund."
+  - "Du willst immer, dass ich perfekt bin – das ist nicht fair."
+  # +5 neu
+  - "Ich konnte gar nicht anders, wegen dir."
+  - "Du übertreibst, das war doch nichts."
+  - "Wenn du nicht so wärst, hätte ich’s anders gemacht."
+  - "Das ist doch nur halb so wild."
+  - "Ich bin nicht schuld, du hast angefangen."
+  - "Ich habe das nur getan, weil du mich dazu gezwungen hast, und es war ja nicht so schlimm."
+  - "Du bist der Grund, warum ich so reagiere, und es ist doch nur eine Kleinigkeit."
+  - "Wenn du nicht so empfindlich wärst, wäre das kein Problem, und es ist doch nur ein Missverständnis."
+  - "Ich musste mich verteidigen, weil du mich angegriffen hast, und es war ja nur ein Wortgefecht."
+  - "Du hast mich provoziert, und es ist doch nur eine Lappalie."
+tags: [needs_review, cluster, defense, blame_shift]

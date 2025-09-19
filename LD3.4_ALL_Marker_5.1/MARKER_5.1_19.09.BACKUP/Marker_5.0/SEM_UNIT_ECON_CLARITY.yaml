@@ -1,0 +1,22 @@
+id: SEM_UNIT_ECON_CLARITY
+version: "3.4"
+frame:
+  signal: ["unit_econ", "semantic"]
+  concept: "unit_econ_clarity"
+  pragmatics: "clarity"
+  narrative: "economics"
+examples:
+  - "CAC ist 120€, LTV 360€, also LTV/CAC = 3x."
+  - "CAC 80€, LTV 600€, Payback < 3 Monate."
+  - "LTV/CAC aktuell 4x, Ziel 5x."
+  - "CAC fällt, LTV steigt – Payback verbessert sich."
+  - "Unit Economics validiert: CAC 90€, LTV 450€."
+composed_of:
+  - ATO_UNIT_ECON_CAC
+  - ATO_LTV
+activation:
+  rule: "BOTH_IN_2_messages"
+scoring:
+  base: 1.0
+  weight: 1.8
+tags: [finance, unit_econ]

@@ -1,0 +1,34 @@
+id: SEM_STRESS_EXCUSE
+frame:
+  signal:
+  - Stress + temporale Vagheit
+  concept: Stress-basierte Ausrede
+  pragmatics: Höfliche Ablehnung
+  narrative: polite_decline
+composed_of:
+- ATO_VOLL_STRESS
+- ATO_MUSS_SCHAUEN
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.3
+  weight: 1.1
+examples:
+- Muss mal schauen, bin grad voll im Stress
+- Total gestresst momentan, kann noch nichts sagen
+- Ist echt stressig, muss schauen wie's wird
+- Hab mega Stress, mal sehen wann ich Zeit hab
+- Bin im Stress, schau ich später mal
+- "Ich bin gerade total im Stress, ich muss mal schauen, wann ich dazu komme."
+- "Es ist gerade mega stressig, ich kann dir noch nicht sagen, wann ich Zeit habe."
+- "Ich bin momentan vollkommen gestresst, ich muss erst mal sehen, wie ich das alles schaffe."
+- "Der Druck ist immens, ich muss mal schauen, ob ich das überhaupt hinbekomme."
+- "Es ist gerade echt stressig, ich weiß nicht, wann ich dazu komme, mich darum zu kümmern."
+- "Ich bin am Limit, ich muss mal schauen, ob ich das überhaupt noch schaffe."
+- "Diese Phase ist extrem stressig, ich muss mal sehen, wann ich wieder Luft habe."
+- "Ich bin komplett gestresst, ich muss mal schauen, ob ich das überhaupt noch überstehe."
+- "Ich bin gerade vollkommen überfordert, ich muss mal schauen, wann ich mich wieder melden kann."
+- "Es ist gerade super stressig, ich muss mal sehen, ob ich das überhaupt noch schaffe."
+tags:
+- avoidance_strategy
+- stress_excuse

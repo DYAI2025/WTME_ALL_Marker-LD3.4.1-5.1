@@ -1,0 +1,26 @@
+id: CLU_RISK_LEVEL
+version: "3.4"
+frame:
+  signal: ["risk", "level"]
+  concept: "risk_level_cluster"
+  pragmatics: "alert"
+  narrative: "assessment"
+examples:
+  - "Wir gehen von X aus, aber das ist sehr unsicher und kritisch."
+  - "Unsere zentrale Annahme könnte falsch sein, das wäre ein Problem."
+  - "Hypothese riskant – unsicher, ob Marktgröße trägt."
+  - "Annahme zu Retention unsicher, beeinflusst Runway massiv."
+  - "Mehrere Annahmen wackelig – Risiko hoch."
+composed_of:
+  - SEM_RISK_ACKNOWLEDGEMENT
+  - ATO_UNCERTAINTY
+activation:
+  rule: "AT_LEAST 2 DISTINCT [SEM_RISK_ACKNOWLEDGEMENT, ATO_UNCERTAINTY] IN window.messages=5"
+scoring:
+  base: 0.6
+  weight: 1.9
+metadata:
+  risk:
+    heuristic: "risk_ack_weight=1.1 uncertainty_weight=1.0"
+    note: "Higher score => more explicit unmanaged risk"
+tags: [risk, alert]

@@ -1,0 +1,31 @@
+id: CLU_INTUITION_UNCERTAINTY
+category: CLUSTER
+schema_version: "LD-3.4"
+lang: en
+frame:
+  signal: ["intuition","weak-aggregation"]
+  concept: "Vorahnung: Unsicherheit/Vorsicht"
+  pragmatics: "Hypothesen vorsichtig testen"
+  narrative: "hypothesis"
+tags: [intuition, uncertainty, hedging, learning]
+criteria: ""
+composed_of:
+  - SEM_UNCERTAINTY_TONING
+  - SEM_TENTATIVE_INFERENCE
+  - SEM_PROBABILISTIC_LANGUAGE
+activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+scoring: { base: 0.5, weight: 1.0 }
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_UNCERTAINTY_TONING, SEM_TENTATIVE_INFERENCE] IN confirm_window"
+    multiplier_on_confirm: 1.5
+    decay_window: 7 # messages
+    penalize_false: 1.0
+  telemetry_keys:
+    counter_confirmed: "INT_UNCERT.confirmed"
+    counter_retracted: "INT_UNCERT.retracted"
+    ewma_precision: "INT_UNCERT.ewma_precision"
+examples:
+  - "Hedging- und Vermutungs‑Formulierungen häufen sich leicht"

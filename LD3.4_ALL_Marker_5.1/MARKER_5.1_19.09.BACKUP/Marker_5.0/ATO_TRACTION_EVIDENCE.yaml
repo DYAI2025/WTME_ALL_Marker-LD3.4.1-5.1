@@ -1,0 +1,17 @@
+id: ATO_TRACTION_EVIDENCE
+version: "3.4"
+frame:
+  signal: ["traction", "growth"]
+  concept: "traction_evidence"
+  pragmatics: "evidence"
+  narrative: "traction"
+examples:
+  - "Wir sehen 20% MRR-Wachstum pro Monat."
+  - "Pilotkunden berichten 90% Retention."
+  - "Monatliches Wachstum liegt bei 18%."
+  - "Churn gesunken auf 3%."
+  - "Retention über 85% in den letzten drei Monaten."
+pattern:
+  - "\\b(wachstum|wachstumsrate|monatlich|yoy|retention|churn|pilot|demo|referenz)\\b"
+  - "\\b(\\+?\\d{1,3}%|% Wachstum|Wachstum von)\\b"
+tags: [traction, growth, evidence]

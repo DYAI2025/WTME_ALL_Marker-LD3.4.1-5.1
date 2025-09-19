@@ -1,0 +1,59 @@
+marker_name: GUILT_TRIPPING_MARKER
+beschreibung: 'Implizite Schuldzuweisung, um das Gegenüber gefügig zu machen.
+
+  '
+beispiele:
+- Nach allem, was ich für dich getan habe…
+- Schon okay, ich komm alleine klar.
+- Ich dachte, du wärst für mich da.
+- Ich hätte das nie von dir erwartet.
+- Ist gut, ich enttäusche mich halt selber.
+semantische_grabber_id: AUTO_SEM_20250723_7E89
+kategorie: UNCATEGORIZED
+id: GUILT_TRIPPING_MARKER
+lang: de
+category: ATOMIC
+description: Marker für GUILT_TRIPPING_MARKER
+frame:
+  signal:
+  - signal
+  concept: Konzept
+  pragmatics: Kommunikation
+  narrative: interaction
+activation_logic: ANY 1
+examples:
+- Beispiel 1 für GUILT_TRIPPING_MARKER
+- Beispiel 2 für GUILT_TRIPPING_MARKER
+- Beispiel 3 für GUILT_TRIPPING_MARKER
+- Beispiel 4 für GUILT_TRIPPING_MARKER
+- Beispiel 5 für GUILT_TRIPPING_MARKER
+- "Nach all der Zeit, die ich investiert habe…"
+- "Ich dachte, du würdest dich kümmern."
+- "Das tut weh, dass du das nicht siehst."
+- "Ich habe so viel für dich geopfert."
+- "Schon in Ordnung, ich bin es gewohnt."
+- "Ich hätte mehr von dir erwartet."
+- "Das enttäuscht mich sehr."
+- "Nach allem, was passiert ist…"
+- "Ich dachte, wir wären Freunde."
+- "Das ist nicht fair mir gegenüber."
+- "Ich habe mich auf dich verlassen."
+- "Das bricht mir das Herz."
+- "Ich hätte das nicht von dir gedacht."
+- "Nach all den Opfern, die ich gebracht habe."
+- "Das ist wirklich verletzend."
+- "Ich dachte, du hättest mehr Verständnis."
+- "Das ist eine herbe Enttäuschung."
+- "Ich habe so viel für dich getan."
+- "Das ist nicht die Unterstützung, die ich brauche."
+- "Ich fühle mich im Stich gelassen."
+- "Nach all den Jahren…"
+- "Ich dachte, du würdest verstehen."
+- "Das ist wirklich schwer für mich."
+  - "Ich habe immer für dich da gestanden."
+  - "Nach allem, was ich für dich getan habe, könntest du doch..."
+  - "Ich dachte, du würdest dich endlich mal revanchieren"
+  - "Schon okay, ich bin es gewohnt, dass niemand mir hilft"
+  - "Ich habe so viel investiert, und das ist der Dank dafür"
+tags:
+- atomic

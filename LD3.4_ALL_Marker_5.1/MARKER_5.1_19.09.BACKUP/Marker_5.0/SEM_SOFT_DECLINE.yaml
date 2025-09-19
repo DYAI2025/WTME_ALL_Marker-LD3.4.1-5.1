@@ -1,0 +1,30 @@
+id: SEM_SOFT_DECLINE
+lang: de
+category: SEMANTIC
+description: "Indirekte, höfliche Absage durch Ausdruck von Unsicherheit."
+frame:
+  signal:      ["Höfliche Absage mit Unsicherheitsphrase"]
+  concept:     "Soft Decline"
+  pragmatics:  "Höfliche Abwehr"
+  narrative:   "Rückzug"
+composed_of:
+  - ATO_UNCERTAINTY_PHRASE
+activation_logic: "ANY 1"
+scoring: { base: 1.2, weight: 1.0 }
+examples:
+  - "Vielleicht klappt es bei mir nicht, ich melde mich wieder."
+  - "Mal sehen, ob ich Zeit finde, sag Bescheid."
+  - "Weiß nicht, ob ich dabei sein kann, ich geb Bescheid."
+  - "Könnte sein, dass es bei mir nicht passt."
+  - "Bin mir nicht sicher, ob ich schaffe."
+  - "Ich bin mir nicht ganz sicher, ob ich das zeitlich schaffe, aber ich melde mich."
+  - "Es könnte schwierig werden, aber ich versuche, es einzurichten."
+  - "Ich bin mir noch unschlüssig, ob ich dabei sein kann, ich gebe dir Bescheid."
+  - "Ich muss erst noch schauen, ob das passt, ich sage dir dann Bescheid."
+  - "Ich bin mir nicht sicher, ob ich das hinbekomme, aber ich gebe mein Bestes."
+  - "Es ist nicht ausgeschlossen, aber ich kann nichts versprechen."
+  - "Ich bin mir noch nicht sicher, ob ich die Kapazitäten habe, aber ich prüfe es."
+  - "Ich muss erst noch meine Termine checken, aber ich melde mich dann."
+  - "Ich bin mir noch nicht sicher, ob ich das schaffe, aber ich gebe dir ein Update."
+  - "Es ist noch offen, ob ich dabei sein kann, aber ich sage dir rechtzeitig Bescheid."
+tags: [semantic]

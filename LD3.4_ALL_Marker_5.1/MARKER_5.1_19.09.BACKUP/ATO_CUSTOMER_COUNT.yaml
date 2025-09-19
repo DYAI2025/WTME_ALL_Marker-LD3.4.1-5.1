@@ -1,0 +1,17 @@
+id: ATO_CUSTOMER_COUNT
+version: "3.4"
+frame:
+  signal: ["customers", "count"]
+  concept: "customer_count"
+  pragmatics: "evidence"
+  narrative: "traction"
+examples:
+  - "Wir haben 2.400 aktive Nutzer."
+  - "Aktuell bedienen wir 120 Kunden."
+  - "Rund 800 zahlende Kunden derzeit."
+  - "Über 5.000 registrierte User im System."
+  - "Ca. 300 aktive Konten diese Woche."
+pattern:
+  - "\\b(\\d{1,6})\\b\\s*(kunden|users|nutzer|clients|customers)\\b"
+  - "\\b(kunden|users|nutzer|clients|customers)\\b.*?\\b(\\d{1,6})\\b"
+tags: [traction, numeric]

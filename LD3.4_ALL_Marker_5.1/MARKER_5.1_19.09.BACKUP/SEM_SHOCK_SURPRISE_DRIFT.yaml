@@ -1,0 +1,39 @@
+id: SEM_SHOCK_SURPRISE_DRIFT
+frame:
+  signal:
+  - shock
+  - surprise
+  - startle
+  - abrupt reaction
+  concept: shock-surprise drift
+  pragmatics: highlight unexpected shifts
+  narrative: sudden transition
+composed_of:
+- ATO_PLACEHOLDER
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- Alter, das habe ich nicht kommen sehen!
+- Oh mein Gott... was ist gerade passiert?
+- Heftig... das hätte ich nie gedacht.
+- Moment mal, das ändert alles!
+- Wow, das war echt unerwartet.
+- Das hat mich jetzt echt aus der Bahn geworfen.
+- 😱😳😳😮😧😯
+- "Ich bin total schockiert, das kam aus dem Nichts und hat mich völlig überrascht."
+- "Das ist ja unglaublich, ich bin fassungslos und völlig überrumpelt von dieser Wendung."
+- "Ich bin sprachlos, das hat mich völlig unvorbereitet getroffen und alles auf den Kopf gestellt."
+- "Das ist ja ein Hammer, ich bin völlig perplex und muss das erst mal verdauen."
+- "Ich bin wie vom Blitz getroffen, das ist so unerwartet und hat mich völlig aus der Bahn geworfen."
+- "Das ist ja ein Ding, ich bin völlig baff und muss das erst mal sacken lassen."
+- "Ich bin völlig überwältigt, das ist so plötzlich und hat mich völlig überrascht."
+- "Das ist ja unglaublich, ich bin völlig verdutzt und muss das erst mal verarbeiten."
+- "Ich bin völlig perplex, das ist so unerwartet und hat mich völlig aus dem Konzept gebracht."
+- "Das ist ja ein Schock, ich bin völlig fassungslos und muss das erst mal realisieren."
+tags:
+- shock
+- surprise
+- drift

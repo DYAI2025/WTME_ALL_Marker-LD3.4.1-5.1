@@ -1,0 +1,56 @@
+id: CLU_ATTACHMENT_STYLE_SECURE
+lang: de
+category: CLUSTER
+description: "Sichere Bindung: verlässliche Fürsorge, offene Kommunikation, 'Fehler sind okay', konsistent im Zeitfenster."
+frame:
+  signal: ["Geborgenheit", "offen reden", "Fehler sind okay"]
+  concept: "Sichere Bindung"
+  pragmatics: "Vertrauen, Reparaturfähigkeit"
+  narrative: "Stabile Beziehungserfahrungen"
+composed_of:
+  - SEM_SECURE_CHILDHOOD_REFERENCE
+activation_logic: "AT_LEAST 2 IN 20 messages AND NO (CLU_ATTACHMENT_STYLE_ANXIOUS OR CLU_ATTACHMENT_STYLE_AVOIDANT) IN WINDOW"
+scoring: { base: 1.9, weight: 1.25, decay: 0.01 }
+window: { messages: 20 }
+examples:
+  - "Wiederkehrend: verlässliche Fürsorge + offene Gespräche."
+  - "'Fehler waren okay' wird mehrfach erwähnt."
+  - "Rituale (gemeinsames Essen) tauchen wiederholt auf."
+  - "Vertrauen wird explizit benannt und belegt."
+  - "Konflikte als lösbar beschrieben – mehrere Passagen."
+  - "Geborgenheit als Leitwort in mehreren Stellen."
+  - "Zuhören statt richten – konsistentes Motiv."
+  - "Freundschaften wurden unterstützt, nicht kontrolliert."
+  - "Wertschätzung statt Druck – über Themen hinweg stabil."
+  - "Warm-stabile Grundhaltung ohne Brüche im Fenster."
+  - "Eltern werden als 'Zuhörer' statt Richter skizziert."
+  - "Körperliche Nähe (Umarmungen) wird selbstverständlich erwähnt."
+  - "Erwachsenenbeziehungen spiegeln sichere Muster wider."
+  - "Fazit des Sprechers: 'Ich hatte eine schöne Kindheit'."
+  - "Der Sprecher schildert konsequent stabile, liebevolle Erinnerungen ohne größere Brüche."
+  - "Mehrere Passagen beschreiben verlässliche Fürsorge und offene Kommunikation."
+  - "Positive Elternbeispiele wiederholen sich über verschiedene Themen."
+  - "Kaum Hinweise auf Angst oder Selbstüberlassung – Ruhe dominiert."
+  - "Narrativ betont gegenseitiges Vertrauen und Unterstützung."
+  - "Es wird mehrfach erwähnt, dass 'Fehler okay waren'."
+  - "Konflikte werden als lösbar dargestellt, nicht bedrohlich."
+  - "Familienrituale (z.B. Abendessen, Spiele) ziehen sich durch die Erzählung."
+  - "Lob, Ermutigung und Trost werden konkret beschrieben."
+  - "Der Sprecher nutzt häufig das Wort 'Geborgenheit'."
+  - "Beim Thema Schule wird Wertschätzung statt Druck genannt."
+  - "Körperliche Nähe (Umarmungen) wird selbstverständlich erwähnt."
+  - "Eltern werden als 'Zuhörer' statt Richter skizziert."
+  - "Freundschaften wurden unterstützt, nicht kontrolliert."
+  - "Fazit des Sprechers: 'Ich hatte eine schöne Kindheit'."
+  # +5 neu
+  - "Zuhause fühlte ich mich gesehen und gehört."
+  - "Wir konnten über alles reden, ohne Angst."
+  - "Ich bekam Halt, auch wenn etwas schiefging."
+  - "Zuneigung war verlässlich, nicht konditional."
+  - "Konflikte endeten meist versöhnlich."
+  - "Ich wusste immer, dass ich geliebt werde, egal was passiert."
+  - "Meine Eltern waren immer für mich da, wenn ich sie brauchte."
+  - "Ich konnte meine Gefühle offen zeigen, ohne verurteilt zu werden."
+  - "Wir haben als Familie immer Lösungen gefunden, auch in schwierigen Zeiten."
+  - "Ich habe gelernt, dass Vertrauen die Basis jeder Beziehung ist."
+tags: [needs_review, cluster, attachment, secure]

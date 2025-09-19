@@ -1,0 +1,48 @@
+id: CLU_ADAPTIVE_POLARIZATION_MARKER
+frame:
+  signal:
+  - sag mal
+  - hör zu
+  - verstehst du
+  concept: Kommunikationsmuster
+  pragmatics: Dialog führen
+  narrative: exchange
+composed_of:
+- SEM_GENERIC_PATTERN
+activation:
+  rule: AT_LEAST 2 IN 5 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- Bin offen für alles. – Heute nicht.
+- Ich öffne mich dir. – Close window.
+- Komm in meine Nähe. – Du bist zu nah.
+- Könnte ewig mit dir schreiben… bin müde, bye.
+- Schick mir ein Bild von dir. – Nein, lieber nicht.
+- Bin so froh, dass es dich gibt. – Nur heute nervst du.
+- Schreib mir bitte! – Oder auch lieber nicht.
+- Wär schön, wenn du hier wärst… oder auch nicht.
+- Du bist mir wichtig. – Also manchmal.
+- Erzähl mir deine Geheimnisse. — Halt, das ist unheimlich.
+- Ich vertraue dir. — Warte, nein!
+- Ich möchte mit dir reden. — Lieber schweigen.
+- Du bist der Beste! — Hör auf damit.
+- Komm her zu mir! — Nee, doch nicht.
+- Deep Talk? Bin müde, ciao.
+- Erzähl mir alles von dir. — Später, zu viel Info.
+- Du fehlst mir so sehr… Ach, vergiss es.
+- Du fehlst mir… Ach, vergiss es.
+- Deep Talk? Bin müde, ciao.
+- "Ich bin ganz Ohr. – Aber bitte fass dich kurz."
+- "Lass uns das gemeinsam angehen. – Aber ich mach das lieber allein."
+- "Ich bin für dich da. – Aber lass mich in Ruhe."
+- "Ich freue mich auf unser Treffen. – Aber ich bin eigentlich zu müde."
+- "Ich möchte dir vertrauen. – Aber ich bin misstrauisch."
+- "Ich bin offen für deine Ideen. – Aber ich habe schon meine eigene Meinung."
+- "Ich bin bereit, mich zu ändern. – Aber ich bleibe, wie ich bin."
+- "Ich möchte dich besser kennenlernen. – Aber ich halte lieber Abstand."
+- "Ich bin froh, dass wir reden. – Aber ich habe eigentlich keine Lust."
+- "Ich bin ganz bei dir. – Aber ich bin gedanklich woanders."
+tags:
+- communication

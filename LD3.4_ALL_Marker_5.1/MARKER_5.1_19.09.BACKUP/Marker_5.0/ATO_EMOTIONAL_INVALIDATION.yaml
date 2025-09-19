@@ -1,0 +1,72 @@
+kategorie: SEMANTIC
+marker:
+  category: Semantic
+  context_rule: []
+  description: Automatisch generierte Beschreibung für EMOTIONAL_INVALIDATION
+  examples:
+  - 'name: "Emotional Invalidation"'
+  - The act of denying, rejecting, or trivializing someone's feelings, which undermines
+    their perception of reality. It implies that a person's emotional reaction is
+    wrong, inappropriate, or baseless. Thi
+  - 'category: "Gaslighting & Devaluation"'
+  id: S_EMOTIONAL_INVALIDATION
+  level: 2
+  name: EMOTIONAL_INVALIDATION
+  pattern: []
+  semantic_grabber_id: AUTO_SEM_20250714_EF38
+  semantic_tags:
+  - emotional-invalidation
+marker_name: EMOTIONAL_INVALIDATION
+id: EMOTIONAL_INVALIDATION
+lang: de
+category: ATOMIC
+description: Marker für EMOTIONAL_INVALIDATION
+frame:
+  signal:
+  - signal
+  concept: Konzept
+  pragmatics: Kommunikation
+  narrative: interaction
+activation_logic: ANY 1
+examples:
+  - "You're overreacting to this situation."
+  - "Stop being so sensitive about everything."
+  - "It's not a big deal, just move on."
+  - "You shouldn't feel that way about it."
+  - "You're making a fuss for nothing here."
+  - "Don't be so dramatic about this."
+  - "Just get over it and move forward."
+- "You're being way too emotional right now."
+- "That's not worth getting upset about."
+- "Stop making mountains out of molehills."
+- "Das ist doch nicht so schlimm."
+- "Stell dich nicht so an."
+- "Das ist doch übertrieben."
+- "Sei nicht so empfindlich."
+- "Das ist doch normal."
+- "Mach kein Drama daraus."
+- "Das ist doch nicht der Rede wert."
+- "Reiß dich zusammen."
+- "Andere haben es viel schlimmer."
+- "Sei nicht so weinerlich."
+- "Das ist doch lächerlich."
+- "Das ist doch kein Grund zu weinen."
+- "Sei erwachsen."
+- "Das ist doch nichts Besonderes."
+- "Hör auf zu jammern."
+- "Das ist doch nicht tragisch."
+- "Sei nicht so melodramatisch."
+- "Das ist doch alltäglich."
+- "Andere würden sich freuen."
+- "Sei nicht so negativ."
+- "Das ist doch halb so wild."
+- "Komm drüber weg."
+- "Sei realistisch."
+- "Das ist doch nicht so ernst."
+- "Stell dich nicht so an, andere haben es viel schlimmer"
+- "Das ist doch übertrieben, reg dich ab"
+- "Sei nicht so empfindlich, das ist doch normal"
+- "Das ist doch lächerlich, sich darüber aufzuregen"
+- "Reiß dich zusammen, das ist doch nichts"
+tags:
+- atomic

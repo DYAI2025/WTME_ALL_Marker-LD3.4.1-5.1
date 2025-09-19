@@ -1,0 +1,50 @@
+id: ATO_SADNESS
+frame:
+  signal:
+  - traurig
+  - ich weine
+  - niedergeschlagen
+  - melancholisch
+  - leer
+  - deprimiert
+  - down
+  concept: Traurigkeit
+  pragmatics: negative Valenz
+  narrative: Emotionsausdruck
+pattern:
+- (?i)\b(traurig|ich weine|niedergeschlagen|melancholisch|leer|deprimiert|down)\b
+activation:
+  rule: ANY 1
+examples:
+- Ich bin so traurig heute.
+- Mir fehlen die Worte, ich weine.
+- Es fällt mir schwer, weiterzumachen.
+- Ich fühle mich sehr niedergeschlagen.
+- Diese Nachricht macht mich melancholisch.
+- Irgendwie ist alles so leer.
+- Mir sitzt der Kloß im Hals.
+- Ich kann nicht aufhören zu weinen.
+- Mir bricht es das Herz.
+- Alles erscheint so hoffnungslos.
+- Ich hab keinen Antrieb mehr.
+- Ich fühle mich völlig ausgelaugt.
+- Ich kann das nicht mehr ertragen.
+- So eine Traurigkeit habe ich selten gespürt.
+- Ich möchte einfach nur allein sein.
+- Ich hab das Gefühl, in einem schwarzen Loch zu sein.
+- Manchmal möchte ich einfach verschwinden.
+- I feel so down.
+- This is heartbreaking.
+- I'm devastated.
+- "Eine tiefe Traurigkeit hat mich ergriffen."
+- "Ich fühle mich innerlich zerrissen und unendlich traurig."
+- "Die Last auf meiner Seele ist kaum zu ertragen."
+- "Ich bin von einer großen Melancholie umgeben."
+- "Mein Herz ist schwer, und ich fühle mich so allein."
+- "Ich kann die Tränen nicht zurückhalten, so traurig bin ich."
+- "Eine Welle der Niedergeschlagenheit überrollt mich."
+- "Ich fühle mich leer und ausgehöhlt von dieser Trauer."
+- "Es ist, als ob ein Schatten über allem liegt."
+- "Ich bin von einer tiefen Schwermut erfüllt."
+tags:
+- sadness

@@ -1,0 +1,41 @@
+id: CLU_BEHAVIOR_MARKER_SYSTEM
+frame:
+  signal:
+  - romance scam phrases
+  - emotional profiling
+  - pseudo intimacy
+  - fraudulent persuasion
+  concept: behavior marker system
+  pragmatics: systemische Verhaltenserkennung
+  narrative: Meta-Analyse
+composed_of:
+- SEM_AI_BOT_SCAM
+- SEM_M_LOVE_BOMBING
+- SEM_LIE_CONCEALMENT
+- SEM_GUILT_TRIPPING
+- SEM_GASLIGHTING
+activation:
+  rule: SUM(weight)>=2 WITHIN 10 messages
+scoring:
+  base: 2.0
+  weight: 1.3
+  decay: 0.05
+examples:
+- Mein Bankkonto wurde gesperrt, kannst du mir 300 € leihen?
+- Ich hab dich noch nie so geliebt wie jetzt.
+- 'Auf die Frage ''Wo warst du?'' weicht er aus: ''Ich war nur kurz unterwegs.'''
+- '[Example placeholder 4]'
+- '[Example placeholder 5]'
+  - "Ich liebe dich über alles → Brauchst du Geld für meinen Flug?"
+  - "Du bist meine Seele → Mein Konto ist gefroren, hilf mir bitte."
+  - "Wir sind füreinander bestimmt → Schick mir 500€, es ist urgent."
+  - "Ohne dich kann ich nicht leben → Ich brauche Hilfe mit meiner Rechnung."
+  - "Du bist perfekt → Kannst du mir Geld leihen für die Operation?"
+  - "Unsere Liebe ist ewig → Mein Business braucht einen Loan von dir."
+  - "Ich vertraue dir blind → Überweise mir etwas für die Krise."
+  - "Du machst mich glücklich → Ich habe ein Problem, sende Geld."
+  - "Wir heiraten bald → Aber erst, wenn du mir hilfst finanziell."
+  - "Meine Liebe ist echt → Beweis deine mit einer Überweisung."
+tags:
+- behavior
+- scam

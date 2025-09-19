@@ -1,0 +1,52 @@
+id: ATO_UNCLEAR_INTENTION
+frame:
+  signal:
+  - ich blick da nicht durch
+  - keine Ahnung, was hier abgeht
+  - ich verstehe gar nicht
+  - alles wirkt so nebulös
+  - ich kriege keinen klaren Eindruck
+  - ich check’s nicht
+  - ich hab keinen Plan
+  - mir fehlt der Durchblick
+  - das ist mir zu schwammig
+  - was soll ich daraus schließen
+  concept: unklare Absicht
+  pragmatics: absichtliche Verschleierung
+  narrative: Täuschung
+pattern:
+- (?i)\b(ich blick da nicht durch|keine Ahnung, was hier abgeht|ich verstehe gar nicht|alles
+  wirkt so nebulös|ich kriege keinen klaren Eindruck|ich check(?:'|e)?s nicht|ich
+  hab keinen Plan|mir fehlt der Durchblick|das ist mir zu schwammig|was soll ich daraus
+  schließen)\b
+activation:
+  rule: ANY 1
+examples:
+- Ich blick da nicht durch, was verheimlichst du mir?
+- Keine Ahnung, was hier abgeht – erklär dich besser.
+- Alles wirkt so nebulös, bist du dir sicher, dass das stimmt?
+- Ich check’s nicht, ist da was faul?
+- Mir fehlt der Durchblick, warum schweigst du?
+- Das ist mir zu schwammig, sag endlich, was los ist.
+- Was soll ich daraus schließen, wenn du nichts klarstellst?
+- Ich hab keinen Plan, was du eigentlich vorhast.
+- Ich verstehe gar nicht, warum du das so versteckst.
+- Ich kriege keinen klaren Eindruck – was verschweigst du?
+- Ist das jetzt ernst gemeint oder Verwirrungstaktik?
+- Du redest rum, ich check’s wirklich nicht.
+- Erklär das bitte klar, ich blick nicht durch.
+- Dieses Hin und Her macht mich ratlos.
+- Warum so vage? Willst du etwas verbergen?
+- "Deine Aussagen sind so vage, ich kann deine Absicht nicht erkennen."
+- "Ich verstehe nicht, was du mit diesen Andeutungen bezwecken willst."
+- "Deine Kommunikation ist so undurchsichtig, ich bin verwirrt."
+- "Ich kann deine wahren Motive hinter diesen Worten nicht ergründen."
+- "Es ist schwer, dir zu folgen, wenn du so unklar bleibst."
+- "Ich habe das Gefühl, du sprichst in Rätseln, was ist deine eigentliche Botschaft?"
+- "Deine Erklärungen sind so schwammig, dass ich keinen Sinn darin finde."
+- "Ich kann deine Intention nicht deuten, wenn du so ausweichend bist."
+- "Es ist mir unklar, wohin dieses Gespräch führen soll."
+- "Ich kann deine Absichten nicht einschätzen, wenn du so kryptisch bist."
+tags:
+- concealment
+- confusion

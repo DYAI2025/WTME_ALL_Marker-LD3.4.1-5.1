@@ -1,0 +1,30 @@
+id: ATO_TEMPO_FAST
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for fast speech tempo"
+frame:
+  signal: ["WPM ≫ Baseline"]
+  concept: "schnell"
+  pragmatics: "Tempo"
+  narrative: "audio"
+detect_class:
+  module: prosody.tempo
+  params: { delta_pct_min: 20 }
+examples:
+  - "[Tempo 180 WPM vs. Baseline 120 WPM]"
+  - "[Beschleunigte Sprechgeschwindigkeit erkannt]"
+  - "[Hastige Artikulation]"
+  - "[Gedrängte Silbenproduktion]"
+  - "[Deutlich über durchschnittlichem Sprechtempo]"
+  - "[Sehr schnelles Sprechen]"
+  - "[Hohe Sprechgeschwindigkeit]"
+  - "[Wortschwall]"
+  - "[Rasant gesprochen]"
+  - "[Überschlagende Worte]"
+  - "[Erhöhtes Sprechtempo]"
+  - "[Schnelle Abfolge von Wörtern]"
+  - "[Gehetzte Sprechweise]"
+  - "[Fließendes, schnelles Reden]"
+  - "[Kaum Pausen zwischen den Wörtern]"
+tags: [tempo, audio, atomic]

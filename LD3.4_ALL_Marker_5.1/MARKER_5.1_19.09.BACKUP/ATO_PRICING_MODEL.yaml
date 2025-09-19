@@ -1,0 +1,16 @@
+id: ATO_PRICING_MODEL
+version: "3.4"
+frame:
+  signal: ["pricing", "model"]
+  concept: "pricing_model"
+  pragmatics: "classification"
+  narrative: "business"
+examples:
+  - "Wir arbeiten mit einem Subscription- bzw. SaaS-Modell."
+  - "Das Produkt ist freemium mit Paid-Tier."
+  - "Wir haben ein Pay-per-use Preismodell."
+  - "Einmalige Lizenz plus Service-Fee."
+  - "Hybrid: Freemium und transaktionales Add-on."
+pattern:
+  - "\\b(freemium|subscription|SaaS|one[- ]time fee|transaktional|pay[- ]per[- ]use)\\b"
+tags: [finance, model, pricing]

@@ -1,0 +1,31 @@
+id: ATO_VALIDATE_AND_BOUNDARY
+version: "3.3"
+lang: de
+frame:
+  signal:
+    - "Gefühl anerkennen + eigene Grenze klar benennen"
+  concept: "Würdigen & begrenzen"
+  pragmatics: "Verbindung halten, Überforderung vermeiden"
+  narrative: "Respekt in beide Richtungen"
+pattern:
+  - '(?i)\bich\s+verstehe\s+dich\b.*\b(und|aber)\b.*\b(meine\s+grenze|ich\s+brauche\s+abstand)\b'
+  - '(?i)\bich\s+höre\s+dich\b.*\b(und|aber)\b.*\b(keine\s+kraft|zu\s+viel)\b'
+  - '(?i)\bes\s+tut\s+mir\s+leid\b.*\b(und|aber)\b.*\b(ich\s+ziehe\s+eine\s+grenze)\b'
+examples:
+  - "Ich verstehe dich – und ich brauche jetzt Pause."
+  - "Ich höre dich, aber meine Grenze ist erreicht."
+  - "Es tut mir leid, und ich ziehe eine Grenze."
+  - "Ich sehe deine Verletzung – gleichzeitig brauche ich Abstand."
+  - "Ich nehme dich ernst, und ich sage hier Stopp."
+  - "Ich verstehe deine Enttäuschung, aber ich kann dir dabei nicht helfen."
+  - "Ich höre, wie wichtig dir das ist, und ich muss trotzdem meine eigenen Bedürfnisse schützen."
+  - "Ich kann nachvollziehen, dass du wütend bist, und ich werde nicht zulassen, dass du mich anschreist."
+  - "Ich erkenne deine Gefühle an, und ich brauche jetzt Raum für mich."
+  - "Ich sehe deinen Schmerz, und ich muss mich trotzdem abgrenzen."
+  - "Ich verstehe deine Perspektive, und ich werde meine Meinung nicht ändern."
+  - "Ich höre deine Sorgen, und ich bin nicht verantwortlich für deine Gefühle."
+  - "Ich kann deine Frustration verstehen, und ich werde mich nicht rechtfertigen."
+  - "Ich nehme deine Kritik ernst, und ich werde mich nicht beleidigen lassen."
+  - "Ich sehe, dass du dich unverstanden fühlst, und ich werde meine Grenzen klar kommunizieren."
+tags: [validation, boundary, atomic]
+class: "ATO_VALIDATE_AND_BOUNDARY"

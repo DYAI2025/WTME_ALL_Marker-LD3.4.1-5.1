@@ -1,0 +1,37 @@
+id: ATO_HEDGING_CUE
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for hedging and uncertainty expressions"
+frame:
+  signal: ["Unsicherheitsformel"]
+  concept: "Hedging"
+  pragmatics: "Abschwächung"
+  narrative: "token"
+pattern:
+  - "vielleicht"
+  - "wohl"
+  - "glaube"
+  - "unsicher"
+  - "weiß nicht"
+examples:
+  - "Vielleicht ist das richtig."
+  - "Ich glaube, das passt."
+  - "Ich bin unsicher."
+  - "Weiß nicht, ob ich das kann."
+  - "Es wird wohl klappen."
+  - "Es könnte sein, dass wir uns irren."
+  - "Ich bin mir nicht ganz sicher, ob das die beste Lösung ist."
+  - "Man könnte meinen, dass es so funktioniert."
+  - "Ich vermute, das Ergebnis wird positiv sein."
+  - "Es scheint, als ob wir auf dem richtigen Weg sind."
+  - "Ich bin geneigt zu glauben, dass es so ist."
+  - "Es ist denkbar, dass sich die Situation ändert."
+  - "Ich würde sagen, das ist eine Möglichkeit."
+  - "Es ist nicht ausgeschlossen, dass es so kommt."
+  - "Ich bin mir da noch etwas unschlüssig."
+  - "Äh...keine Ahnung."
+  - "KP."
+  - "WHAT? hä?"
+  - "Vielleicht... ich weiß nicht."
+tags: [hedging, atomic]

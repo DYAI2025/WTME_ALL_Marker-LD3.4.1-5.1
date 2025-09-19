@@ -1,0 +1,34 @@
+id: SEM_POSITIVE_FUTURE
+frame:
+  signal:
+  - Wertschätzung + Wiederholungswunsch
+  concept: Verbindungsaufbau
+  pragmatics: Relationship building
+  narrative: connection_desire
+composed_of:
+- ATO_WAS_NICE
+- ATO_SHOULD_MORE_OFTEN
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.3
+examples:
+- War echt schön mit dir! Sollten wir öfter machen
+- Hat total Spaß gemacht. Das müssen wir wiederholen!
+- War super heute! Nächstes Mal wieder?
+- Fand ich richtig toll. Sollten wir bald wieder machen
+- War wirklich schön! Lass uns das öfter machen
+- "Es war ein wirklich schöner Abend, das sollten wir unbedingt bald wiederholen."
+- "Ich habe die Zeit mit dir sehr genossen, lass uns das öfter machen."
+- "Das war ein tolles Erlebnis, ich freue mich schon auf das nächste Mal."
+- "Es war super, dich zu treffen, wir sollten das in Zukunft häufiger tun."
+- "Ich fand es sehr angenehm, das sollten wir zur Gewohnheit machen."
+- "Die Unterhaltung war großartig, ich hoffe, wir können das bald fortsetzen."
+- "Es war eine Bereicherung, das sollten wir nicht so schnell wieder vergessen."
+- "Ich habe mich sehr wohlgefühlt, lass uns das bald wiederholen."
+- "Das war ein voller Erfolg, wir sollten das unbedingt wiederholen."
+- "Es war eine wunderbare Erfahrung, ich freue mich auf weitere gemeinsame Momente."
+tags:
+- connection_signal
+- positive_reinforcement

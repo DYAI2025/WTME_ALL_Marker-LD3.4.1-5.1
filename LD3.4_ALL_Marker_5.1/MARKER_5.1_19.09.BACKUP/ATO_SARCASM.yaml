@@ -1,0 +1,38 @@
+id: ATO_SARCASM
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for sarcastic expressions
+frame:
+  signal: ["sarcasm"]
+  concept: "Sarcastic expression signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(really|sure|obviously|great|wonderful|perfect)\\b.*[.!?]"]
+examples:
+  - "Oh really? That's just perfect."
+  - "Sure, that makes total sense."
+  - "Obviously, this is going well."
+  - "Great, another brilliant idea."
+  - "Wonderful, exactly what I needed."
+  - "Toll, noch mehr Arbeit, genau was ich brauche."
+  - "Klar, weil das ja immer so super funktioniert."
+  - "Fantastisch, der Plan ist bombensicher."
+  - "Ach, wie originell, das hab ich noch nie gehört."
+  - "Super, lass uns das auf keinen Fall ändern."
+  - "Oh ja, das ist definitiv eine tolle Idee."
+  - "Perfekt, weil nichts Besseres passieren könnte."
+  - "Natürlich, ich hab nichts Besseres zu tun."
+  - "Wunderbar, das macht alles einfacher."
+  - "Sicher, glaub ich sofort."
+  - "Ja, genau das habe ich mir vorgestellt, absolut."
+  - "Fantastisch, ich bin total begeistert von dieser Wendung."
+  - "Wunderbar, das ist ja mal eine wirklich hilfreiche Anmerkung."
+  - "Exzellent, ich liebe es, wenn alles so reibungslos läuft."
+  - "Genial, deine Vorschläge sind immer so... einzigartig."
+  - "Ach, wie nett, dass du dir die Mühe gemacht hast."
+  - "Beeindruckend, deine Fähigkeit, Probleme zu schaffen, ist unübertroffen."
+  - "Super, ich bin schon ganz gespannt auf das Ergebnis."
+  - "Toll, dass du immer so aufmerksam bist."
+  - "Ausgezeichnet, ich hätte es nicht besser formulieren können."
+tags: [atomic, v3.3, auto-generated]

@@ -1,0 +1,17 @@
+id: ATO_FUNDING_NEEDS
+version: "3.4"
+frame:
+  signal: ["funding", "capital", "raise"]
+  concept: "funding_needs"
+  pragmatics: "needs_statement"
+  narrative: "finance"
+examples:
+  - "Wir brauchen frisches Kapital für Wachstum."
+  - "Wir raisen aktuell eine Seed-Runde."
+  - "Der Kapitalbedarf liegt bei etwa 750k Euro."
+  - "Wir planen ein Raise von 1,2 Mio €."
+  - "Unser Budget-Need für die nächsten 18 Monate beträgt 900k."
+pattern:
+  - "\\b(raise|raising|runde|finanzierung|finanzierungsrunde|kapitalbedarf|funding|seed|pre[- ]seed|serie\\s+a|series\\s+a|bridge|extension)\\b"
+  - "\\b(\\d{1,3}(?:[.,]\\d{3})*(?:[.,]\\d+)?\\s*(€|eur|euro|mio|k))\\b.*\\b(raise|runde|funding|kapital)\\b"
+tags: [funding, finance, raise]

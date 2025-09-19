@@ -1,0 +1,39 @@
+id: ATO_SUBTLE_IRRITATION
+frame:
+  signal:
+  - seufz
+  - gähn
+  - '*seufz*'
+  - '*gähn*'
+  - '*roll die Augen*'
+  concept: Reizbarkeit
+  pragmatics: Genervtheit anzeigen
+  narrative: subtile Emotion
+pattern:
+- (?i)\*?seufz\*?
+- (?i)\*?gähn\*?
+activation:
+  rule: ANY 1
+examples:
+- '*seufz* Schon wieder dieses Thema...'
+- '*gähn* Ich bin echt müde davon.'
+- '*roll die Augen* Du auch hier?'
+- Seufz... wann ist das endlich vorbei?
+- Gähn... das ist echt ermüdend.
+- Ugh, not this again.
+- I'm so over this.
+- WAS IST???
+- WAS willst du?
+- Fass dich kurz!
+- "Ach, wirklich? Das ist ja... interessant."
+- "Mhm, ja, das haben wir schon gehört."
+- "Na gut, wenn du meinst."
+- "Ich bin ja gespannt, wie lange das noch dauert."
+- "Das ist ja mal eine ganz neue Erkenntnis."
+- "Ich bin ja nicht genervt, aber..."
+- "Können wir das Thema bitte wechseln?"
+- "Ich habe das Gefühl, wir drehen uns im Kreis."
+- "Das ist ja mal wieder typisch."
+- "Ich bin ja nicht ungeduldig, aber..."
+tags:
+- irritation

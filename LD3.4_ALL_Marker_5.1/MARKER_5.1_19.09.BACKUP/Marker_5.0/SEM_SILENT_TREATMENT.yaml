@@ -1,0 +1,36 @@
+id: SEM_SILENT_TREATMENT
+frame:
+  signal:
+  - no response
+  - ignoring
+  - walling off
+  - silence
+  concept: silent treatment
+  pragmatics: passive-aggressive punishment
+  narrative: relationship maneuver
+composed_of:
+- ATO_PLACEHOLDER
+activation:
+  rule: ALL 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- '...'
+- (keine Antwort)
+- Gut, dann antworte ich halt nicht mehr.
+- Ich sehe, dass du meine Nachricht gelesen hast – und trotzdem schweigst du.
+- Offenbar bin ich dir egal, wenn du nicht zurückschreibst.
+- "Ich werde dir jetzt einfach nicht mehr antworten, bis du verstehst, was du getan hast."
+- "Ich sehe deine Nachrichten, aber ich werde sie ignorieren, bis du dich entschuldigst."
+- "Ich werde dich jetzt einfach nicht mehr ansehen, bis du dich anders verhältst."
+- "Ich werde dich jetzt einfach nicht mehr ansprechen, bis du dich änderst."
+- "Ich werde dich jetzt einfach nicht mehr beachten, bis du dich entschuldigst."
+- "Ich werde dich jetzt einfach nicht mehr hören, bis du dich anders verhältst."
+- "Ich werde dich jetzt einfach nicht mehr sehen, bis du dich änderst."
+- "Ich werde dich jetzt einfach nicht mehr fühlen, bis du dich entschuldigst."
+- "Ich werde dich jetzt einfach nicht mehr riechen, bis du dich anders verhältst."
+- "Ich werde dich jetzt einfach nicht mehr schmecken, bis du dich änderst."
+tags:
+- silent_treatment
+- passive_aggressive

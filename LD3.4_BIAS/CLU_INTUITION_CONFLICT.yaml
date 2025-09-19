@@ -1,0 +1,36 @@
+id: CLU_INTUITION_CONFLICT
+version: "3.4"
+frame:
+  signal: ["intuition","weak-aggregation"]
+  concept: "Vorahnung: Konflikt/Eskalation"
+  pragmatics: "Frühwarnung, Deeskalation"
+  narrative: "hypothesis"
+tags: [intuition, conflict, escalation, learning]
+composed_of:
+  - SEM_NEGATIVE_FEEDBACK
+  - SEM_SARCASM_IRRITATION
+  - SEM_ESCALATION_MOVE
+activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages" }
+scoring: { base: 0.5, weight: 1.0 }
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 4
+    confirm_rule: "AT_LEAST 1 of [SEM_ESCALATION_MOVE, SEM_NEGATIVE_FEEDBACK] IN confirm_window"
+    multiplier_on_confirm: 2.0
+    decay_window: 6
+  telemetry_keys:
+    counter_confirmed: "INT_CONFLICT.confirmed"
+    counter_retracted: "INT_CONFLICT.retracted"
+    ewma_precision: "INT_CONFLICT.ewma_precision"
+examples:
+  - "… Vorwurf + genervter Sarkasmus …"
+  - "… Härte in Formulierungen nimmt zu …"
+  - "… 'immer du' + spitze Bemerkung …"
+  - "… Abwertung + Droh-Andeutung …"
+  - "… mehrere kurze Sticheleien …"
+  - "… 'lass es' + provozierender Ton …"
+  - "… Wiederholung von Schuldzuweisungen …"
+  - "… 'typisch du' + spitzer Kommentar …"
+  - "… Unterstellung + 'mach doch' …"
+  - "… 'so nicht' + Eskalations-Vokabular …"

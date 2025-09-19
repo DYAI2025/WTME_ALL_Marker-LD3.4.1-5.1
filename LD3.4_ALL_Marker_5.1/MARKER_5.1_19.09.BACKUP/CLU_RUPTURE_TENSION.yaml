@@ -1,0 +1,64 @@
+id: CLU_RUPTURE_TENSION
+version: "3.4"
+category: CLUSTER
+description: "Fehlabstimmungs-Signale, Patt und Rückzug"
+frame:
+  signal: ["misalignment signals, stalemate, withdrawal"]
+  concept: "micro-rupture / heightened tension"
+  pragmatics: "need for repair"
+  narrative: "strain"
+composed_of:
+  - SEM_MISALIGNMENT_CUE
+  - SEM_UNRESOLVED_ISSUE
+  - ATO_OFFENDED_SILENCE
+activation:
+  rule: "COUNT(SEM_MISALIGNMENT_CUE)+COUNT(SEM_UNRESOLVED_ISSUE)+COUNT(ATO_OFFENDED_SILENCE) >= 3 IN 20"
+  window:
+    messages: 20
+scoring:
+  weight: 1.4
+examples:
+  - "Mehrere offene Fragen → knappe/keine Antwort."
+  - "Sprache von Stillstand häuft sich."
+  - "Patient reagiert mit 'hm' oder '…' auf Exploration."
+  - "Thema wird mehrfach abgewürgt."
+  - "Wiederkehrende 'no progress'-Statements."
+  - "Therapist asks → silence; asks again → silence."
+  - "'Leads to nothing' + '…' in einem Block."
+  - "Aufeinanderfolgende einsilbige Antworten auf offene Fragen."
+  - "Patient becomes increasingly monosyllabic despite therapist efforts."
+  - "Mehrfache Versuche des Therapeuten treffen auf Widerstand."
+  - "Stagnation language increases while engagement decreases."
+  - "'We're stuck' mentioned repeatedly in short time frame."
+  - "Therapist reflections met with dismissive silence."
+  - "Pattern of 'I don't know' + '…' + topic avoidance."
+  - "Increasing emotional distance despite therapeutic attempts."
+  - "Patient withdraws progressively from collaborative exploration."
+  - "Multiple 'never mind' statements in response to invitations."
+  - "Frustration builds on both sides with decreasing communication."
+  - "Patient responds to therapeutic invitations with prolonged non-verbal withdrawal."
+  - "Increasing frequency of topic avoidance despite multiple therapeutic approaches."
+  - "Therapist's attempts at repair are met with consistent silence patterns."
+  - "Patient demonstrates growing emotional disengagement from therapeutic process."
+  - "Multiple instances of 'I don't know' followed by conversational shutdown."
+  - "Stagnation language becomes dominant as session tension rises."
+  - "Therapeutic reflections consistently fail to elicit patient engagement."
+  - "Patient withdraws verbally while therapist continues repair attempts."
+  - "Increasing misalignment cues signal breakdown in therapeutic alliance."
+  - "Patient's responses become progressively shorter and less engaged."
+  - "Therapist invitations repeatedly result in monosyllabic or silent responses."
+  - "Pattern of resistance emerges despite therapist's efforts to realign."
+  - "Emotional distance grows as collaborative exploration fails."
+  - "Patient demonstrates consistent avoidance of therapeutic deepening."
+  - "Multiple repair attempts fail to restore conversational flow."
+  - "Tension builds through repeated cycles of invitation and withdrawal."
+  - "Patient shows increasing discomfort with therapeutic process."
+  - "Therapeutic alliance shows signs of strain through withdrawal behaviors."
+  - "Patient responds to open questions with consistent topic deflection."
+  - "Growing therapeutic rupture evidenced by silence and minimal responses."
+  - "Patient demonstrates progressive retreat from therapeutic engagement."
+  - "Therapeutic connection frays as patient withdraws emotionally"
+  - "Alliance breaks down through escalating misunderstandings"
+  - "Patient's silence signals growing therapeutic disconnection"
+  - "Tension builds as collaborative efforts fail repeatedly"
+tags: [cluster, rupture, tension, misalignment]

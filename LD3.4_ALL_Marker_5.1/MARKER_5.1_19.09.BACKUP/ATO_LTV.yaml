@@ -1,0 +1,17 @@
+id: ATO_LTV
+version: "3.4"
+frame:
+  signal: ["ltv", "value"]
+  concept: "lifetime_value"
+  pragmatics: "metric"
+  narrative: "economics"
+examples:
+  - "Der LTV unserer Kunden liegt bei 600€."
+  - "LTV/CAC ist aktuell 3.2x."
+  - "Unser Lifetime Value beträgt 480 Euro."
+  - "LTV steigt Richtung 700€."
+  - "Wir erwarten LTV von 900€ nächstes Jahr."
+pattern:
+  - "\\b(LTV|Lifetime Value|kundenwert)\\b"
+  - "\\bLTV\\s*[:=]?\\s*\\d+(?:\\.\\d+)?\\b"
+tags: [finance, metric, ltv]

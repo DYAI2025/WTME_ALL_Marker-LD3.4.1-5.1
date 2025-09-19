@@ -1,0 +1,215 @@
+# Archetyp-Mapping: Der Held / Krieger
+# Format: LEAN.DEEP 3.4 – kompatibel zu ATO → SEM → CLU → MEMA
+
+# 1. ATOMIC MARKER (ATO_)
+- id: ATO_COURAGE
+  frame:
+    signal: ["token"]
+    concept: "Mut / Tapferkeit"
+    pragmatics: "Bereitschaft zur Konfrontation"
+    narrative: "Ich stelle mich der Herausforderung"
+  pattern: "(mutig|tapfer|stell mich|kämpfe|wage es)"
+  examples:
+    - "ich bin mutig genug"
+    - "ich stelle mich dem"
+    - "ich kämpfe dafür"
+    - "ich wage es"
+    - "tapfer vorangehen"
+
+- id: ATO_MISSION
+  frame:
+    signal: ["token"]
+    concept: "Mission / Aufgabe"
+    pragmatics: "Klares Ziel vor Augen"
+    narrative: "Ich habe eine Mission"
+  pattern: "(Mission|Aufgabe|Ziel|erreichen|durchziehen)"
+  examples:
+    - "das ist meine Mission"
+    - "meine Aufgabe ist es"
+    - "ich erreiche mein Ziel"
+    - "ich ziehe das durch"
+    - "klare Mission vor Augen"
+
+- id: ATO_VICTORY
+  frame:
+    signal: ["token"]
+    concept: "Sieg / Triumph"
+    pragmatics: "Erfolg und Überwindung"
+    narrative: "Ich siege über die Hindernisse"
+  pattern: "(gewonnen|Sieg|triumphiert|überwunden|geschafft)"
+  examples:
+    - "ich habe gewonnen"
+    - "das ist mein Sieg"
+    - "ich habe triumphiert"
+    - "überwunden und geschafft"
+    - "erfolgreich durchgekämpft"
+
+---
+
+# 2. SEMANTIC MARKER (SEM_)
+- id: SEM_HEROIC_JOURNEY
+  frame:
+    concept: "Heldenreise"
+    pragmatics: "Aufbruch zu großen Taten"
+    narrative: "Ich gehe den Weg des Helden"
+  composed_of:
+    - ATO_COURAGE
+    - ATO_MISSION
+  examples:
+    - "mutig meine Mission verfolgen"
+    - "tapfer für mein Ziel kämpfen"
+    - "ich stelle mich mutig meiner Aufgabe"
+    - "mit Mut die Mission durchziehen"
+    - "tapfer dem Ziel entgegen"
+
+- id: SEM_TRIUMPHANT_WARRIOR
+  frame:
+    concept: "Triumphierender Krieger"
+    pragmatics: "Erfolg durch Kampf und Mut"
+    narrative: "Durch Mut zum Sieg"
+  composed_of:
+    - ATO_COURAGE
+    - ATO_VICTORY
+  examples:
+    - "mutig gekämpft und gewonnen"
+    - "tapfer zum Sieg"
+    - "durch Mut triumphiert"
+    - "tapfer überwunden"
+    - "mutig und erfolgreich"
+
+---
+
+# 3. CLUSTER MARKER (CLU_)
+- id: CLU_HELD
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Held / Krieger"
+    pragmatics: "Mut, Mission, Überwindung von Hindernissen"
+    narrative: "Der klassische Held auf seiner Reise"
+  composed_of:
+    - SEM_HEROIC_JOURNEY
+    - SEM_TRIUMPHANT_WARRIOR
+  activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+  scoring: { base: 0.7, weight: 1.2 }
+  examples:
+    - "mutig meine Mission verfolgen und triumphieren"
+    - "tapfer kämpfen und das Ziel erreichen"
+    - "mit Mut durchziehen und gewinnen"
+    - "heroisch vorangehen und überwinden"
+    - "meine Aufgabe mutig erfüllen und siegen"
+
+# SCHATTEN-VERSION
+- id: CLU_HELD_SCHATTEN_TYRANN
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Tyrann (Schatten des Helden)"
+    pragmatics: "Übersteigerter Machtwille, Unterdrückung"
+    narrative: "Held wird zum Unterdrücker"
+  shadow_markers:
+    - ATO_DOMINATION: "(dominieren|unterwerfen|Macht über|kontrollieren)"
+    - ATO_RUTHLESS: "(rücksichtslos|brutal|ohne Gnade|vernichten)"
+  examples:
+    - "ich dominiere und kontrolliere alles"
+    - "rücksichtslos meine Macht durchsetzen"
+    - "alle anderen unterwerfen"
+    - "ohne Gnade vernichten"
+    - "brutale Kontrolle ausüben"
+
+- id: CLU_HELD_SCHATTEN_FEIGLING
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Feigling (Schatten des Helden)"
+    pragmatics: "Angst vor Konfrontation, Flucht"
+    narrative: "Held versagt in der entscheidenden Stunde"
+  shadow_markers:
+    - ATO_COWARDICE: "(feige|Angst|wegrennen|verstecken|nicht trauen)"
+    - ATO_FAILURE: "(versagt|gescheitert|aufgegeben|zu schwach)"
+  examples:
+    - "ich bin zu feige"
+    - "wegrennen und verstecken"
+    - "ich habe versagt"
+    - "zu schwach gescheitert"
+    - "nicht getraut und aufgegeben"
+
+---
+
+# 4. META-ANALYSIS (MEMA_)
+- id: MEMA_HERO_TYRANN_CYCLE
+  frame:
+    concept: "Held-Tyrann-Zyklus"
+    pragmatics: "Macht korrumpiert den Helden"
+    narrative: "Wer Monster bekämpft, wird selbst zum Monster"
+  composed_of:
+    - CLU_HELD
+    - CLU_HELD_SCHATTEN_TYRANN
+  examples:
+    - "Mission → Sieg → Machtgefühl → Tyrannei"
+    - "Held → Triumph → Dominanz → Unterdrücker"
+    - "Mut → Kontrolle → Rücksichtslosigkeit"
+    - "Kämpfer → Sieger → Despot"
+    - "Befreier → Herrscher → Tyrann"
+
+---
+
+# POPKULTUR-VERSIONEN (Add-on)
+popkultur_skins:
+  sigma_male:
+    name: "Sigma Male"
+    description: "Einsamer Held, Alpha ohne Rudel"
+    examples:
+      - "Ich gehe meinen eigenen Weg"
+      - "Grindset aktiviert"
+      - "Lone wolf mentality"
+    unlock_level: 2
+  
+  gym_bro:
+    name: "Gym Bro"
+    description: "Körperlicher Triumph, Fitness-Krieger"
+    examples:
+      - "No pain, no gain"
+      - "Beast mode activated"
+      - "Push through the limits"
+    unlock_level: 1
+  
+  toxic_masculinity:
+    name: "Toxic Alpha"
+    description: "Übersteigerter Männlichkeitswahn"
+    examples:
+      - "Alpha energy only"
+      - "Schwäche ist keine Option"
+      - "Dominanz zeigen"
+    unlock_level: 3
+  
+  keyboard_warrior:
+    name: "Keyboard Warrior"
+    description: "Online-Held, offline Feigling"
+    examples:
+      - "Im Chat bin ich der Boss"
+      - "Hinter dem Bildschirm stark"
+      - "Online unbesiegbar"
+    unlock_level: 2
+
+---
+
+# INTUITION MARKER (CLU_INTUITION für 3.4)
+- id: CLU_INTUITION_HELD
+  frame:
+    signal: ["intuition"]
+    concept: "Vorgefühl: Heldenmodus erwacht"
+    pragmatics: "schwache Signale für Kampfbereitschaft"
+    narrative: "das System spürt aufkommenden Mut"
+  metadata:
+    family: "COURAGE"
+    activation: "provisional"
+    runtime: "3-5 messages"
+    telemetry: true
+  weak_signals:
+    - ATO_COURAGE (threshold: 0.4)
+    - ATO_MISSION (threshold: 0.3)
+    - temporal_pattern: "challenge_context"
+  examples:
+    - "ich sollte eigentlich..."
+    - "vielleicht wage ich es..."
+    - "ich könnte ja mal..."
+    - "eigentlich müsste ich..."
+    - "ich nehme mir vor..."

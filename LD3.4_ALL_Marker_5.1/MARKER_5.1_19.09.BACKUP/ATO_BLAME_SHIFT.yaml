@@ -1,0 +1,40 @@
+id: ATO_BLAME_SHIFT
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for blame shifting language
+frame:
+  signal: ["blame shift"]
+  concept: "Blame shifting signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(you made me|you forced me|because of you|your fault)\\b"]
+examples:
+  - "Es ist deine Schuld, dass wir zu spät sind."
+  - "Wenn du das richtig gemacht hättest, wäre das nicht passiert."
+  - "Ich musste das tun, weil du mich dazu gezwungen hast."
+  - "Du hast mich provoziert, also bin ich ausgerastet."
+  - "Das Problem liegt nicht bei mir, sondern bei deiner mangelnden Kooperation."
+  - "Du hast mich in diese Lage gebracht."
+  - "Wegen dir ist das Projekt gescheitert."
+  - "Hättest du besser zugehört, wäre dieser Fehler nicht passiert."
+  - "Ich reagiere nur so, weil du mich immer wieder enttäuschst."
+  - "Die Verantwortung liegt ganz klar bei dir, nicht bei mir."
+  - "Du bist der Grund für meine schlechte Laune."
+  - "Das ist passiert, weil du deine Aufgaben nicht erledigt hast."
+  - "Ich musste so handeln, weil du mir keine andere Wahl gelassen hast."
+  - "Deine Unfähigkeit hat uns das eingebrockt."
+  - "Wenn du nicht so stur wärst, hätten wir eine Lösung gefunden."
+  - "Because of you this happened."
+  - "You put me in this situation."
+  - "I had no choice—you wanted it that way."
+  - "If you hadn't pushed, it would be different."
+  - "It's on you, not me."
+  - "I'm only reacting to you."
+  - "Had you been clearer, there'd be no problem."
+  - "You always trigger this."
+  - "I didn't start it—you did."
+  - "Your fault, not mine."
+tags: [semantic, blame, defense]
+
+tags: [atomic, v3.3, auto-generated]

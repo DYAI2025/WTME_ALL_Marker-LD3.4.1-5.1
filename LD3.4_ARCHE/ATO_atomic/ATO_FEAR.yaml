@@ -1,0 +1,43 @@
+id: ATO_FEAR
+frame:
+  signal: Wörter und Phrasen, die Angst, Furcht oder Sorge ausdrücken.
+  concept: Angst / Furcht
+  pragmatics: Ausdruck von Unsicherheit, Warnung, Hilfesuchverhalten.
+  narrative: threat_perception
+pattern:
+- (?i)\bangst\b
+- (?i)fürchte
+- (?i)schiss
+- (?i)besorgt
+- (?i)bammel
+- (?i)panik
+- (?i)beängstigend
+- (?i)furcht
+- (?i)sorgen machen
+examples:
+- Ich habe wirklich Angst, dass das schiefgeht.
+- Die Situation macht mir große Sorgen.
+- Ehrlich gesagt, hab ich ein bisschen Schiss vor der Präsentation morgen.
+- Ich fürchte, wir haben einen wichtigen Punkt übersehen.
+- Der Gedanke, das alleine durchzustehen, ist ziemlich beängstigend.
+- Ich bekomme leichte Panik, wenn ich an die Deadline denke.
+- Ich bin wirklich besorgt um deine Gesundheit.
+- Vor dem Gespräch mit dem Chef habe ich echt Bammel.
+- Seine kalte Reaktion hat mir Furcht eingejagt.
+- Es macht mir Angst, wie schnell sich die Welt verändert.
+- Ich will dir keine Angst machen, aber du solltest vorsichtig sein.
+- Die plötzliche Stille im Haus war total beängstigend.
+- Manchmal fürchte ich das Schlimmste.
+- Ich habe so eine schreckliche Angst, ihn zu enttäuschen.
+- Mir wird angst und bange, wenn ich an die Zukunft denke.
+- In dem Moment hatte ich wirklich Todesangst.
+- Bist du nicht auch ein wenig besorgt über die aktuellen Nachrichten?
+- Ich habe einen Heidenrespekt, fast schon Schiss, vor dieser Aufgabe.
+- Diese ständige Ungewissheit macht mir am meisten Angst.
+- Ich fürchte, es gibt dafür keine einfache Lösung.
+tags:
+- emotion
+- fear
+- negative
+- concern
+- anxiety

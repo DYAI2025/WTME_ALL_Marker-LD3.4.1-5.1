@@ -1,0 +1,193 @@
+# Archetyp-Mapping: Die Persona / Der Angepasste
+# Format: LEAN.DEEP 3.4 – kompatibel zu ATO → SEM → CLU → MEMA
+
+# 1. ATOMIC MARKER (ATO_)
+- id: ATO_CONFORMITY
+  frame:
+    signal: ["token"]
+    concept: "Anpassung / Konformität"
+    pragmatics: "Erfüllung sozialer Erwartungen"
+    narrative: "Funktionieren im System"
+  pattern: "(normal sein|wie alle anderen|angepasst|funktionieren|erwarten von mir)"
+  examples:
+    - "ich bin ganz normal"
+    - "wie alle anderen auch"
+    - "ich funktioniere ja"
+    - "man erwartet das von mir"
+    - "ich will nur angepasst sein"
+
+- id: ATO_SOCIAL_SAFETY
+  frame:
+    signal: ["token"]
+    concept: "Soziale Sicherheit"
+    pragmatics: "Schutz durch Zugehörigkeit"
+    narrative: "Teil des Systems sein"
+  pattern: "(dazugehören|nicht auffallen|sicher|Teil sein|wie man das macht)"
+  examples:
+    - "ich will dazugehören"
+    - "bloß nicht auffallen"
+    - "so macht man das eben"
+    - "ich bin Teil davon"
+    - "das ist sicher so"
+
+- id: ATO_ROLE_PERFORMANCE
+  frame:
+    signal: ["token"]
+    concept: "Rollenerfüllung"
+    pragmatics: "Perfekte Ausführung sozialer Rollen"
+    narrative: "Ich spiele meine Rolle gut"
+  pattern: "(meine Rolle|Aufgabe erfüllen|wie es sein soll|richtig machen)"
+  examples:
+    - "das ist meine Rolle"
+    - "ich erfülle meine Aufgabe"
+    - "so wie es sein soll"
+    - "ich mache das richtig"
+    - "jeder hat seine Rolle"
+
+---
+
+# 2. SEMANTIC MARKER (SEM_)
+- id: SEM_PERFECT_FUNCTIONING
+  frame:
+    concept: "Perfektes Funktionieren"
+    pragmatics: "Reibungslose Systemintegration"
+    narrative: "Ich bin ein gutes Rädchen im Getriebe"
+  composed_of:
+    - ATO_CONFORMITY
+    - ATO_ROLE_PERFORMANCE
+  examples:
+    - "ich bin normal und erfülle meine Rolle"
+    - "ich funktioniere wie alle anderen"
+    - "angepasst und richtig gemacht"
+    - "normal sein und Aufgaben erfüllen"
+    - "wie es sein soll, wie alle anderen"
+
+- id: SEM_SAFETY_THROUGH_INVISIBILITY
+  frame:
+    concept: "Sicherheit durch Unsichtbarkeit"
+    pragmatics: "Schutz durch Unauffälligkeit"
+    narrative: "Nicht gesehen werden ist sicher"
+  composed_of:
+    - ATO_SOCIAL_SAFETY
+    - ATO_CONFORMITY
+  examples:
+    - "bloß nicht auffallen, dazugehören"
+    - "sicher sein durch Anpassung"
+    - "normal und unauffällig bleiben"
+    - "Teil sein, nicht herausstechen"
+    - "angepasst und sicher"
+
+---
+
+# 3. CLUSTER MARKER (CLU_)
+- id: CLU_PERSONA
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Die Persona / Der Angepasste"
+    pragmatics: "Erstarrte soziale Maske, NPC-Modus"
+    narrative: "Perfekte Systemkonformität ohne Individualität"
+  composed_of:
+    - SEM_PERFECT_FUNCTIONING
+    - SEM_SAFETY_THROUGH_INVISIBILITY
+  activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+  scoring: { base: 0.6, weight: 1.0 }
+  examples:
+    - "ich bin normal, erfülle meine Rolle und falle nicht auf"
+    - "wie alle anderen, angepasst und funktional"
+    - "meine Aufgabe ist es, zu funktionieren und dazuzugehören"
+    - "bloß nicht auffallen, richtig machen, normal sein"
+    - "ich spiele meine Rolle perfekt und bin sicher"
+
+# SCHATTEN-VERSION
+- id: CLU_PERSONA_SCHATTEN
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Erstarrte Persona / NPC"
+    pragmatics: "Identitätsverlust durch Überanpassung"
+    narrative: "Austauschbar, bedeutungslos, fremdbestimmt"
+  composed_of:
+    - SEM_PERFECT_FUNCTIONING
+    - SEM_SAFETY_THROUGH_INVISIBILITY
+  shadow_markers:
+    - ATO_EMPTINESS: "(leer|austauschbar|bedeutungslos|wie eine Maschine)"
+    - ATO_BOREDOM: "(langweilig|immer das gleiche|monoton|stupide)"
+  examples:
+    - "ich bin austauschbar und langweilig"
+    - "immer das gleiche, wie eine Maschine"
+    - "bedeutungslos aber sicher"
+    - "monoton funktionieren, leer innen"
+    - "wie ein NPC, stupide Wiederholung"
+
+---
+
+# 4. META-ANALYSIS (MEMA_)
+- id: MEMA_SAFETY_PRISON
+  frame:
+    concept: "Sicherheitsgefängnis"
+    pragmatics: "Schutz wird zur Falle"
+    narrative: "Sicherheit durch Konformität führt zu Identitätsverlust"
+  composed_of:
+    - CLU_PERSONA
+    - CLU_PERSONA_SCHATTEN
+  examples:
+    - "Anpassung → Sicherheit → Leere → mehr Anpassung"
+    - "Funktionieren → Anerkennung → Austauschbarkeit → Verzweiflung"
+    - "Normal sein → Dazugehören → Bedeutungslosigkeit"
+    - "Rolle spielen → Schutz → Identitätsverlust"
+    - "Unauffällig → Sicher → Unsichtbar → Tot innen"
+
+---
+
+# POPKULTUR-VERSIONEN (Add-on)
+popkultur_skins:
+  npc:
+    name: "NPC (Non-Playable Character)"
+    description: "Funktioniert wie programmiert, repetitive Phrasen"
+    examples:
+      - "Ich funktioniere optimal"
+      - "System läuft stabil"
+      - "Aufgabe erfüllt"
+    unlock_level: 1
+  
+  corporate_drone:
+    name: "Corporate Drone"
+    description: "Perfekter Firmenangestellter ohne Persönlichkeit"
+    examples:
+      - "Synergien optimieren"
+      - "Best practices implementieren"
+      - "Stakeholder alignment"
+    unlock_level: 2
+  
+  basic:
+    name: "Basic"
+    description: "Mainstream ohne Ecken und Kanten"
+    examples:
+      - "Das macht jeder so"
+      - "Ist halt normal"
+      - "Wie alle anderen auch"
+    unlock_level: 1
+
+---
+
+# INTUITION MARKER (CLU_INTUITION für 3.4)
+- id: CLU_INTUITION_PERSONA
+  frame:
+    signal: ["intuition"]
+    concept: "Vorgefühl: Persona-Modus aktiviert"
+    pragmatics: "schwache Signale für Überanpassung"
+    narrative: "das System spürt Konformitätsdruck"
+  metadata:
+    family: "SAFETY"
+    activation: "provisional"
+    runtime: "5-7 messages"
+    telemetry: true
+  weak_signals:
+    - ATO_CONFORMITY (threshold: 0.3)
+    - ATO_SOCIAL_SAFETY (threshold: 0.4)
+    - temporal_pattern: "work_hours_messages"
+  examples:
+    - "ich sollte wohl..."
+    - "man macht das so..."
+    - "alle anderen..."
+    - "das gehört sich..."
+    - "normal wäre..."

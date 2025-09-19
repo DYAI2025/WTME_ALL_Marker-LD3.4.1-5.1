@@ -1,0 +1,61 @@
+id: SEM_BREAK_AND_DISMISS
+version: "3.4"
+category: SEMANTIC
+description: "Semantischer Marker für Beginn mit sofortigem Herunterspielen"
+frame:
+  signal: ["start + immediate downplay"]
+  concept: "approach-avoid sequence"
+  pragmatics: "inhibition/shame avoidance"
+  narrative: "step-in, step-out"
+composed_of:
+  - ATO_VOICE_MICRO_BREAK
+  - ATO_DISMISSIVE_DOWNPLAY
+activation:
+  rule: "ATO_VOICE_MICRO_BREAK AND ATO_DISMISSIVE_DOWNPLAY IN 3 messages"
+scoring:
+  weight: 1.2
+examples:
+  - "Ich wollte nur… ach nee, ist schon gut."
+  - "I was going to say— never mind."
+  - "Eigentlich… lassen wir das."
+  - "So— it's fine, forget it."
+  - "Ich könnte… ach, nicht wichtig."
+  - "I was about to… okay, leave it."
+  - "Ich wollte anfangen… egal, passt."
+  - "Vielleicht sollte ich… nein, vergiss es."
+  - "I thought maybe— actually, don't worry about it."
+  - "Es ist nur so, dass… ach, egal."
+  - "I was wondering if— never mind, it's stupid."
+  - "Ich hab da eine Idee… nee, lass mal."
+  - "Maybe we could— no, that's probably not good."
+  - "Ich wollte fragen, ob… ach, ist nicht wichtig."
+  - "There's something I— forget I said anything."
+  - "Vielleicht wäre es besser… nein, schon okay so."
+  - "I was thinking we might— but it's fine as it is."
+  - "Eigentlich hätte ich gern… ach, passt schon."
+  - "Ich dachte gerade… ach nee, lassen wir das."
+  - "I was considering… never mind, it's nothing."
+  - "Vielleicht könnte ich… ach, ist egal."
+  - "I had this thought… but forget it."
+  - "Eigentlich wollte ich sagen… naja, passt schon."
+  - "I was going to mention… actually, don't bother."
+  - "Ich hatte da was… ach, nicht so wichtig."
+  - "Maybe I should… no, it's fine."
+  - "I was thinking about… forget I mentioned it."
+  - "Eigentlich würde ich… aber lassen wir das."
+  - "I had an idea… never mind though."
+  - "Ich dachte mir… ach, egal jetzt."
+  - "I was going to ask… but it's okay."
+  - "Vielleicht sollten wir… nein, schon gut."
+  - "I was considering saying… actually, forget it."
+  - "Ich wollte eigentlich… aber passt schon."
+  - "I thought maybe… no, never mind."
+  - "Eigentlich hatte ich… ach, ist nicht wichtig."
+  - "I was about to suggest… but it's fine."
+  - "Vielleicht könnte man… nein, lassen wir das."
+  - "I had this feeling… forget about it."
+  - "Ich wollte etwas sagen… ach, ist nicht wichtig"
+  - "Da gibt es etwas… naja, lassen wir das"
+  - "Ich denke manchmal… aber egal jetzt"
+  - "Es fällt mir ein… vergiss es einfach"
+tags: [semantic, inhibition, dismissal, rapport_signal]

@@ -1,0 +1,33 @@
+id: ATO_IMPOSTER_FEELING
+version: "3.3"
+frame:
+  signal: ["nicht verdient", "Hochstapler", "auffliegen könnte"]
+  concept: "Hochstapler-Syndrom"
+  pragmatics: "Selbstzweifel"
+  narrative: "impostor"
+pattern:
+  - "(?i)\\b(nicht verdient|unverdient)\\b"
+  - "(?i)\\b(hochstapler|betrüger.?gefühl)\\b"
+  - "(?i)\\b(auffliegen|entlarvt.?werden)\\b"
+  - "(?i)\\b(nur.{0,10}glück|zufall)\\b"
+  - "(?i)\\b(nicht.{0,10}gut.?genug)\\b"
+examples:
+  - "Ich hab das nicht verdient"
+  - "Fühle mich wie ein Hochstapler"
+  - "Angst, dass ich auffliegen könnte"
+  - "War nur Glück, kein Können"
+  - "Bin einfach nicht gut genug dafür"
+  - "Ich habe oft Angst, dass andere merken, dass ich nicht so kompetent bin"
+  - "Es fühlt sich an, als ob ich jeden Moment entlarvt werde"  
+  - "Ich habe das Gefühl, dass ich nur durch Zufall hier bin"
+  - "Ich zweifle ständig an meinen Fähigkeiten"
+  - "Es ist, als ob ich eine Maske trage"
+  - "Ich habe Angst, dass ich irgendwann scheitere"
+  - "Ich fühle mich oft wie ein Betrüger"
+  - "Es ist schwer, meine Erfolge zu akzeptieren"
+  - "Ich habe das Gefühl, dass ich nicht wirklich dazugehöre"
+  - "Ich habe oft das Gefühl, dass ich nicht die Anerkennung verdiene"
+  - "Es ist, als ob ich ständig beweisen muss, dass ich es wert bin"
+  - "Ich habe Angst, dass ich irgendwann entlarvt werde"
+tags: [atomic, imposter, selbstzweifel, beruf]
+schema_version: "3.3"

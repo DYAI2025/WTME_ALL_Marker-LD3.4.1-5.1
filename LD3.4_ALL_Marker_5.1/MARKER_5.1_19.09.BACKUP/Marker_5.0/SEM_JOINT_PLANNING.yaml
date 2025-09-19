@@ -1,0 +1,61 @@
+id: SEM_JOINT_PLANNING
+version: "3.4"
+category: SEMANTIC
+description: "Gemeinsame Aufgabenorientierung"
+frame:
+  signal: ["we-language + next steps"]
+  concept: "shared task focus"
+  pragmatics: "alliance strengthening"
+  narrative: "forward together"
+composed_of:
+  - ATO_WE_LANGUAGE
+  - ATO_CLARIFICATION_REQUEST
+activation:
+  rule: "COUNT(ATO_WE_LANGUAGE)>=1 AND COUNT(ATO_CLARIFICATION_REQUEST)>=1 IN 5"
+scoring:
+  weight: 1.2
+examples:
+  - "Wir schauen gemeinsam. — Meinen Sie damit morgens?"
+  - "Let's do it together. — Do you mean this week?"
+  - "Unser nächster Schritt… — Können Sie das konkretisieren?"
+  - "We'll map triggers. — Did I get that right?"
+  - "Wir planen das. — Woran merken Sie Fortschritt?"
+  - "Our plan… — Can you be more specific?"
+  - "Wir halten das fest. — Meinen Sie täglich?"
+  - "Together we'll explore. — Are we talking about the same thing?"
+  - "Wir gehen das an. — Sprechen wir über heute oder generell?"
+  - "Let's figure this out. — What exactly do you mean by that?"
+  - "Unser Ziel ist… — Verstehe ich richtig, dass…?"
+  - "We can work on this. — Can you give me an example?"
+  - "Gemeinsam schaffen wir das. — Wie genau äußert sich das?"
+  - "Our focus will be… — Are you referring to a specific time?"
+  - "Wir werden das angehen. — Beziehen Sie sich auf diese Woche?"
+  - "Together we'll understand. — When you say 'always', do you mean…?"
+  - "Unser Ansatz wäre… — Habe ich Sie richtig verstanden?"
+  - "We'll tackle this systematically. — Can you help me understand what that looks like?"
+  - "Wir arbeiten zusammen daran. — Meinen Sie das im wörtlichen Sinn?"
+  - "Together we can identify patterns. — Do you mean every day?"
+  - "Unser gemeinsamer Plan… — Können Sie das genauer beschreiben?"
+  - "We'll explore this as a team. — Are we talking about work or home?"
+  - "Wir finden eine Lösung. — Woran würden Sie das merken?"
+  - "Our next step together… — Did I understand that correctly?"
+  - "Gemeinsam entwickeln wir das. — Can you give me a concrete example?"
+  - "Wir bauen darauf auf. — Sprechen wir von derselben Situation?"
+  - "Together we'll build on this. — What exactly do you have in mind?"
+  - "Unser Fokus liegt darauf… — Verstehe ich das richtig?"
+  - "We can work through this. — Can you be more specific about the timing?"
+  - "Wir gehen das Schritt für Schritt an. — Meinen Sie das ernsthaft?"
+  - "Our collaborative approach… — Are you referring to a particular incident?"
+  - "Gemeinsam schaffen wir Fortschritte. — Wie würde sich das zeigen?"
+  - "We'll figure this out together. — Do you mean in general or specifically?"
+  - "Unser gemeinsames Ziel ist… — Can you help me understand that better?"
+  - "We can address this systematically. — What would that look like for you?"
+  - "Wir unterstützen uns dabei. — Sprechen wir über die gleiche Sache?"
+  - "Together we'll find the right path. — Can you elaborate on that?"
+  - "Unser Plan beinhaltet… — Verstehe ich Sie da richtig?"
+  - "We can move forward together. — What are your thoughts on that?"
+  - "Wir beide überlegen uns das gemeinsam — Meinen Sie das so?"
+  - "Unser nächster Schritt könnte sein… — Wie stellen Sie sich das vor?"
+  - "Wir arbeiten zusammen an diesem Ziel — Was ist Ihr Beitrag?"
+  - "Unser gemeinsamer Plan entwickelt sich — Sehen Sie das genauso?"
+tags: [semantic, alliance, planning, rapport_signal]

@@ -1,0 +1,61 @@
+id: SEM_MISALIGNMENT_CUE
+version: "3.4"
+category: SEMANTIC
+description: "Therapeut lädt ein, Patient zieht sich zurück"
+frame:
+  signal: ["therapist invites, patient withdraws"]
+  concept: "small rupture/misalignment"
+  pragmatics: "repair opportunity"
+  narrative: "pull-push"
+composed_of:
+  - ATO_OPEN_QUESTION_THERAPIST
+  - ATO_OFFENDED_SILENCE
+activation:
+  rule: "ATO_OPEN_QUESTION_THERAPIST AND ATO_OFFENDED_SILENCE IN 2"
+scoring:
+  weight: 1.2
+examples:
+  - "Wie war das für Sie? — …"
+  - "Can you tell me more? — hm."
+  - "What would you say changed? — k."
+  - "Woran merken Sie das? — …"
+  - "How do you notice it? — mhm."
+  - "Tell me more? — (silence)"
+  - "Wie würden Sie das beschreiben? — …"
+  - "What comes up for you? — aha."
+  - "Können Sie das ausführen? — hm."
+  - "What's that like for you? — …"
+  - "Was geht in Ihnen vor? — k."
+  - "How does that feel? — mhm."
+  - "Woran denken Sie dabei? — …"
+  - "What's happening for you? — ja."
+  - "Wie erleben Sie das? — hm."
+  - "Can you elaborate on that? — …"
+  - "Was bedeutet das für Sie? — aha."
+  - "What would help you understand? — k."
+  - "Wie fühlen Sie sich dabei? — …"
+  - "Can you share more about that? — hm."
+  - "Was fällt Ihnen dazu ein? — mhm."
+  - "How are you experiencing this? — …"
+  - "Können Sie das beschreiben? — aha."
+  - "What comes to mind? — k."
+  - "Wie geht es Ihnen damit? — …"
+  - "Can you tell me your thoughts? — hm."
+  - "Was bedeutet Ihnen das? — ja."
+  - "How does that affect you? — …"
+  - "Können Sie das ausführlicher erzählen? — mhm."
+  - "What are you noticing? — …"
+  - "Wie nehmen Sie das wahr? — aha."
+  - "Can you elaborate? — k."
+  - "Was geht in Ihnen vor? — …"
+  - "How do you feel about that? — hm."
+  - "Können Sie mir mehr dazu sagen? — ja."
+  - "What would you like to explore? — …"
+  - "Wie erleben Sie diese Situation? — mhm."
+  - "Can you help me understand? — …"
+  - "Was ist Ihre Erfahrung damit? — aha."
+  - "Erzählen Sie mir mehr davon — …"
+  - "Wie fühlt sich das an? — hm."
+  - "Was bedeutet Ihnen das? — k."
+  - "Können Sie das beschreiben? — egal."
+tags: [semantic, rupture, misalignment, repair]

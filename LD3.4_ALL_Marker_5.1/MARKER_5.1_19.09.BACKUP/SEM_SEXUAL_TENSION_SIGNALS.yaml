@@ -1,0 +1,35 @@
+id: SEM_SEXUAL_TENSION_SIGNALS
+frame:
+  signal:
+  - zweideutige Formulierungen
+  - verzögerte Reaktionen
+  - verführerische Emojis
+  - imaginiertes Körpergefühl
+  concept: sexuelle Spannung
+  pragmatics: Andeutung erotischer Intention
+  narrative: subtiles Vorspiel
+composed_of:
+- ATO_DOUBLE_ENTENDRE
+- ATO_LINGERING_REACTION
+- ATO_SEDUCTIVE_EMOJI
+- ATO_IMAGINED_PHYSICALITY
+activation:
+  rule: ANY 1
+scoring:
+  base: 1.5
+  weight: 1.0
+examples:
+- Wenn du jetzt hier wärst... naja, wer weiß, was passiert wär 😉
+- Du weißt schon genau, was das mit mir macht.
+- Bin grad abgelenkt... liegt nur an deinen Nachrichten 😏
+- Sag sowas nicht, sonst werd ich noch schwach 🙃
+- Das war jetzt aber eine seeehr lange Umarmung in Gedanken...
+- Puh… wenn du hier wärst, ey, ich könnte für nichts garantieren.
+- Ey… du spielst mit dem Feuer.
+- Ich glaub, ich muss kurz kalt duschen gehen 🥵
+- Ich sag mal lieber nix… 😶‍🌫️
+- Wenn ich daran denke, krieg ich Gänsehaut… 🍆💦
+tags:
+- sexual_hint
+- tension
+- ambiguität

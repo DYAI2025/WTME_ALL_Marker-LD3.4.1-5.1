@@ -1,0 +1,48 @@
+id: C_SOFT_COMMITMENT_MARKER
+lang: de
+category: ATOMIC
+description: 'Reparierter Marker: C_SOFT_COMMITMENT_MARKER'
+frame:
+  signal:
+  - signal
+  concept: Konzept
+  pragmatics: Kommunikation
+  narrative: interaction
+activation_logic: ANY 1
+examples:
+- Beispiel 1 für C_SOFT_COMMITMENT_MARKER
+- Beispiel 2 für C_SOFT_COMMITMENT_MARKER
+- Beispiel 3 für C_SOFT_COMMITMENT_MARKER
+- Beispiel 4 für C_SOFT_COMMITMENT_MARKER
+- Beispiel 5 für C_SOFT_COMMITMENT_MARKER
+- "Ich könnte das vielleicht versuchen"
+- "Mal sehen, ob das funktioniert"
+- "Ich denke, ich bin bereit, das anzugehen"
+- "Vielleicht sollte ich das probieren"
+- "Ich bin geneigt, das zu tun"
+- "Unter Umständen könnte ich das machen"
+- "Ich tendiere dazu, das auszuprobieren"
+- "Ich bin offen dafür, das zu versuchen"
+- "Eventuell könnte ich das in Betracht ziehen"
+- "Ich spiele mit dem Gedanken, das zu tun"
+- "Vielleicht wäre das einen Versuch wert"
+- "Ich bin nicht abgeneigt, das zu probieren"
+- "Das könnte ich mir vorstellen"
+- "Ich bin prinzipiell dafür offen"
+- "Unter den richtigen Umständen würde ich das tun"
+- "Ich bin bereit, das zu überdenken"
+- "Das könnte eine Möglichkeit sein"
+- "Ich würde das nicht ausschließen"
+- "Vielleicht ist das machbar"
+- "Ich bin gewillt, das anzugehen"
+- "Das scheint mir plausibel"
+- "Ich bin dafür empfänglich"
+- "Das könnte ich mir gut vorstellen"
+  - "Ich bin positiv eingestellt"
+  - "Ich könnte mir vorstellen, das auszuprobieren"
+  - "Mal sehen, wie es sich anfühlt, das zu versuchen"
+  - "Ich bin geneigt, das als Möglichkeit zu betrachten"
+  - "Eventuell könnte ich mich darauf einlassen"
+tags:
+- atomic
+- repaired

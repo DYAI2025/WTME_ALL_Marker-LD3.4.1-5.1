@@ -1,0 +1,17 @@
+id: ATO_UNIT_ECON_CAC
+version: "3.4"
+frame:
+  signal: ["unit_econ", "cac"]
+  concept: "customer_acquisition_cost"
+  pragmatics: "metric"
+  narrative: "economics"
+examples:
+  - "Unser CAC liegt bei 120 Euro."
+  - "Die Akquisekosten pro Kunde betragen 80€."
+  - "CAC aktuell bei 95€."
+  - "Customer Acquisition Cost ist runter auf 60€."
+  - "Wir drücken CAC auf unter 100€."
+pattern:
+  - "\\b(CAC|Customer Acquisition Cost|akquisitionskosten|akquisekosten)\\b"
+  - "\\b(CAC)\\s*[:=]?\\s*\\d+\\b"
+tags: [finance, metric, cac]

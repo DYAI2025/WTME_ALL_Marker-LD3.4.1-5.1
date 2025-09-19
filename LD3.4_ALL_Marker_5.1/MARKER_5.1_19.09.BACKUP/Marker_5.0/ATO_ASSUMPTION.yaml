@@ -1,0 +1,17 @@
+id: ATO_ASSUMPTION
+version: "3.4"
+frame:
+  signal: ["assumption", "hypothesis"]
+  concept: "explicit_assumption"
+  pragmatics: "uncertainty_flag"
+  narrative: "reasoning"
+examples:
+  - "Wir gehen davon aus, dass die Conversion bei 5% liegt."
+  - "Angenommen wir halten die Churn stabil, dann ..."
+  - "Unsere Annahme ist, dass der Markt sich verdoppelt."
+  - "Das basiert auf der Hypothese, dass Nutzer wöchentlich zurückkehren."
+  - "Wir nehmen an, dass wir Q4 profitabel sind."
+pattern:
+  - "\b(gehen davon aus|nehmen an|annahme|angenommen|hypothese|unter der annahme)\b"
+  - "\b(basiert auf der annahme|unsere annahme ist)\b"
+tags: [assumption, reasoning, uncertainty]

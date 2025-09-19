@@ -1,0 +1,31 @@
+id: EMO_MELANCHOLIC_TONE
+lang: de
+category: SEMANTIC
+description: "Leichte Wehmut, verpackt in eine überwiegend positive Aussage."
+frame:
+  signal: ["ein bisschen schade", "leicht wehmütig", "schön, aber irgendwie traurig"]
+  concept: "Melancholische Färbung"
+  pragmatics: "Gefühlstiefe trotz positiver Botschaft"
+  narrative: "sanfte Nostalgie"
+composed_of:
+  - ATO_POSITIVE_STATEMENT
+  - ATO_MILD_SADNESS
+activation_logic: "ANY 2 IN 3 messages"
+scoring: { base: 1.4, weight: 1.1 }
+examples:
+  - "Es war wunderschön – irgendwie schade, dass es vorbei ist."
+  - "Hat richtig Spaß gemacht, auch wenn ich es ein bisschen vermisse."
+  - "War ein toller Tag, aber jetzt ist es so still."
+  - "Freu mich, aber irgendwie denk ich gern zurück."
+  - "Schön war's, auch wenn’s jetzt vorbei ist."
+  - "Es war ein perfekter Abend, aber es macht mich ein wenig traurig, dass er schon vorbei ist."
+  - "Ich bin so glücklich über das Ergebnis, doch ein Hauch von Wehmut bleibt, weil es nicht ewig währt."
+  - "Die Erinnerungen an diese Zeit sind wunderschön, aber es schmerzt ein wenig, dass sie nur noch Erinnerungen sind."
+  - "Ich freue mich auf die Zukunft, doch ein leiser Abschiedsschmerz begleitet mich, wenn ich an das Vergangene denke."
+  - "Es ist toll, wie weit wir gekommen sind, aber es ist auch ein bisschen schade, was wir auf dem Weg verloren haben."
+  - "Ich bin dankbar für all das Gute, aber es gibt auch eine leise Traurigkeit über das, was hätte sein können."
+  - "Der Erfolg ist süß, doch er hat auch einen bitteren Beigeschmack, weil nicht alle dabei sein können."
+  - "Es ist schön, dich wiederzusehen, aber es erinnert mich auch daran, wie viel Zeit vergangen ist."
+  - "Ich genieße diesen Moment in vollen Zügen, aber ich weiß, dass er vergänglich ist, und das macht mich melancholisch."
+  - "Das Leben ist voller Freude, aber auch voller Abschiede, und das ist eine bittersüße Erkenntnis."
+tags: [semantic, emotional, melancholic]

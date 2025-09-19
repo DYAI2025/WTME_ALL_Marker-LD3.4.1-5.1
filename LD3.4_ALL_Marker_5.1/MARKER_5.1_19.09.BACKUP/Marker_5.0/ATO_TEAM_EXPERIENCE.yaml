@@ -1,0 +1,17 @@
+id: ATO_TEAM_EXPERIENCE
+version: "3.4"
+frame:
+  signal: ["team", "experience"]
+  concept: "team_experience"
+  pragmatics: "credibility"
+  narrative: "team"
+examples:
+  - "Unser CTO war früher bei SAP."
+  - "Die Gründer haben 10 Jahre Erfahrung im eCommerce."
+  - "Ex-Google und Ex-Stripe im Kernteam."
+  - "Senior Engineering Lead mit 12 Jahren Erfahrung."
+  - "Team bringt Enterprise SaaS Expertise mit."
+pattern:
+  - "\\b(founder|gründer|cto|ceo|co[- ]founder|mitgründer|ex[- ](Google|SAP|Amazon|Facebook|Stripe|Microsoft))\\b"
+  - "\\b(\\d+\\s+Jahre\\s+Erfahrung|mit\\s+erfahrung\\s+in)\\b"
+tags: [team, credibility]

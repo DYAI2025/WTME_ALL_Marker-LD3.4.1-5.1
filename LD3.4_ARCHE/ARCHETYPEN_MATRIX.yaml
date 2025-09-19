@@ -1,0 +1,148 @@
+# Archetypen-Übersicht: Klassisch → Schatten → Popkultur
+# Format: LEAN.DEEP 3.4 – Vollständige Archetypen-Bibliothek
+
+# ARCHETYPEN-MATRIX
+archetypen_matrix:
+  
+  # 1. DAS VERLASSENE KIND (bereits erstellt)
+  verlassenes_kind:
+    klassisch: "Das verletzte/verlassene Kind"
+    schatten: "Endlose Bedürftigkeit, Opferrolle"
+    popkultur: ["Sadboi", "Soft Girl", "Emo Kid", "Trauma Dumper"]
+    kern_emotion: "Verlassenheit, Bedürfnis nach Halt"
+    
+  # 2. DER TRICKSTER (bereits erstellt)  
+  trickster:
+    klassisch: "Der Spieler, Chaosbringer, Saboteur"
+    schatten: "Zerstörung, Selbstsabotage, Lügner"
+    popkultur: ["Joker", "Shitposter", "Meme Lord", "Chaos Gremlin"]
+    kern_emotion: "Chaos als Befreiung"
+    
+  # 3. DER SOUVERÄN (bereits erstellt)
+  souveraen:
+    klassisch: "Der König, Herrscher, Autonome"
+    schatten: "Tyrann, Despot, Kontrollfreak"
+    popkultur: ["Sigma Male", "Alpha", "Boss Babe", "CEO Mindset"]
+    kern_emotion: "Kontrolle, Unabhängigkeit"
+    
+  # 4. DIE PERSONA (gerade erstellt)
+  persona:
+    klassisch: "Soziale Maske, Rollenerfüller"
+    schatten: "NPC, Konformist, Identitätsloser"
+    popkultur: ["NPC", "Corporate Drone", "Basic", "Mainstream"]
+    kern_emotion: "Sicherheit durch Anpassung"
+    
+  # 5. DER HELD (gerade erstellt)
+  held:
+    klassisch: "Krieger, Mutiger, Missionsträger"
+    schatten: "Tyrann (Held → Unterdrücker), Feigling"
+    popkultur: ["Sigma Male", "Gym Bro", "Keyboard Warrior", "Toxic Alpha"]
+    kern_emotion: "Mut, Triumph"
+    
+  # 6. DER KRITIKER (gerade erstellt)
+  kritiker:
+    klassisch: "Richter, Moralwächter, Autorität"
+    schatten: "Tyrannischer Richter, Dogmatiker"
+    popkultur: ["Karen", "Twitter Critic", "Boomer Dad", "Cancel Culture"]
+    kern_emotion: "Moral, Urteil"
+    
+  # 7. DAS OPFER (gerade erstellt)
+  opfer:
+    klassisch: "Märtyrer, Leidender, Hilfloser"
+    schatten: "Manipulativer Märtyrer, Professional Victim"
+    popkultur: ["Sadboi", "Victim Influencer", "Toxic Empath", "Professional Victim"]
+    kern_emotion: "Leiden, Hilflosigkeit"
+    
+  # 8. DER LIEBENDE (gerade erstellt)
+  liebender:
+    klassisch: "Romantiker, Hingabe, Verbindung"
+    schatten: "Besessive Liebe, Abhängigkeit"
+    popkultur: ["Simp", "Love Bomber", "Pick Me", "Yandere"]
+    kern_emotion: "Liebe, Verschmelzung"
+
+# ZUSÄTZLICHE ARCHETYPEN (für Vollständigkeit)
+weitere_archetypen:
+  
+  # 9. DER WEISE / MENTOR
+  weise:
+    klassisch: "Weiser Alter, Mentor, Führer"
+    schatten: "Zyniker, Nihilist, Manipulativer Guru"
+    popkultur: ["Conspiracy Uncle", "Sigma Grindset Mentor", "Toxic Life Coach", "Blackpill Philosopher"]
+    kern_emotion: "Weisheit, Führung"
+    
+  # 10. DIE GROSSE MUTTER
+  mutter:
+    klassisch: "Fürsorgliche Mutter, Beschützerin"
+    schatten: "Verschlingende Mutter, Helikopter Mom"
+    popkultur: ["Karen", "Helicopter Mom", "Wine Mom", "Mommy Blogger"]
+    kern_emotion: "Fürsorge, Kontrolle"
+    
+  # 11. DER SCHÖPFER / KÜNSTLER
+  schoepfer:
+    klassisch: "Kreativer, Innovator, Visionär"
+    schatten: "Zerstörer, Selbstzweifler, Gescheiterter"
+    popkultur: ["Startup Bro", "Failed Artist", "AI Overpromiser", "Creative Burnout"]
+    kern_emotion: "Kreativität, Innovation"
+    
+  # 12. DER MAGIER / ALCHEMIST
+  magier:
+    klassisch: "Transformator, Wissender, Mystiker"
+    schatten: "Manipulator, Trickser, Falscher Guru"
+    popkultur: ["Crypto Guru", "Techno Shaman", "Dark Web Wizard", "Life Hack Influencer"]
+    kern_emotion: "Transformation, Macht"
+
+# APP-INTEGRATION LOGIK
+app_struktur:
+  
+  basis_archetypen:
+    verfügbar: "Kostenfrei"
+    umfang: "8 Hauptarchetypen (CLU_VERLASSENES_KIND bis CLU_LIEBENDER)"
+    
+  popkultur_skins:
+    verfügbar: "Freemium / Premium"
+    unlock_system:
+      level_1: ["NPC", "Simp", "Karen", "Sadboi"] # Einfache, bekannte Memes
+      level_2: ["Sigma Male", "Twitter Critic", "Love Bomber"] # Komplexere Kulturphänomene  
+      level_3: ["Yandere", "Professional Victim", "Toxic Alpha"] # Extreme Ausprägungen
+      
+  dynamik_tracking:
+    archetyp_drift: "Zeigt Wanderung zwischen Archetypen über Zeit"
+    schatten_integration: "Wann kippt Archetyp in Schattenseite"
+    popkultur_overlay: "Aktuelle kulturelle Manifestation des Archetyps"
+    
+  gamification:
+    archetyp_punkte: "Durch Fragen sammeln"
+    skin_freischaltung: "Neue Popkultur-Versionen"
+    drift_visualisierung: "Archetypen-Wanderung als Spiel"
+
+# MARKER-ENGINE INTEGRATION
+marker_familie_beziehungen:
+  
+  # Häufige Übergänge (für MEMA-Analyse)
+  uebergaenge:
+    kind_zu_souveraen: "CLU_VERLASSENES_KIND → CLU_TRICKSTER → CLU_SOUVERAEN"
+    held_zu_tyrann: "CLU_HELD → CLU_HELD_SCHATTEN_TYRANN"
+    liebender_zu_obsession: "CLU_LIEBENDER → CLU_LIEBENDER_SCHATTEN_BESESSENHEIT"
+    persona_zu_rebellion: "CLU_PERSONA → CLU_TRICKSTER (Ausbruch aus Konformität)"
+    
+  # Gegensätze (für Spannungsanalyse)
+  polaritaeten:
+    ordnung_chaos: "CLU_PERSONA ↔ CLU_TRICKSTER"
+    macht_ohnmacht: "CLU_SOUVERAEN ↔ CLU_OPFER"
+    kritik_hingabe: "CLU_KRITIKER ↔ CLU_LIEBENDER"
+    mut_angst: "CLU_HELD ↔ CLU_VERLASSENES_KIND"
+
+# KULTURELLE EVOLUTION
+meme_updates:
+  # System für neue Popkultur-Archetypen
+  algorithmus: "Trending Memes → Archetyp-Zuordnung → App-Integration"
+  beispiele_2024_2025:
+    - "NPC erweitert um AI NPC, ChatGPT NPC"
+    - "Sigma Male neue Varianten wie Ligma Male (Ironie)"
+    - "Karen erweitert um Kyle (männliche Version)"
+    - "Simp neue Form: AI Simp (Verliebt in ChatGPT)"
+    
+update_zyklen:
+  häufigkeit: "Quartalsweise"
+  datenquelle: "Social Media Trends, Meme-Analyse"
+  integration: "Neue Skins als App-Updates"

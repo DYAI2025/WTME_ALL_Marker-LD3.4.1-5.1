@@ -1,0 +1,61 @@
+id: SEM_BLAME_SHIFTING
+lang: en
+category: SEMANTIC
+description: "Formulas of blaming the other and offloading responsibility."
+frame:
+  signal: ["because of you", "you forced me", "your fault"]
+  concept: "External attribution"
+  pragmatics: "Ego-protection, conflict displacement"
+  narrative: "Self-relief"
+composed_of:
+  - ATO_BLAME_SHIFT
+  - ATO_EXTERNALIZATION
+activation_logic: "ANY 2 IN 4 messages"
+scoring: { base: 1.3, weight: 1.0 }
+window: { messages: 8 }
+examples:
+- Wenn du nicht wieder so empfindlich wärst, hätten wir das Problem gar nicht.
+- Ich hab's nur gemacht, weil du dich so verhalten hast.
+- Du hast es doch provoziert – was soll ich da machen?
+- Du bringst mich immer so weit!
+- Du verstehst einfach nicht, wie schwer das für mich ist.
+- Wenn du pünktlicher wärst, hätten wir diese Diskussion nicht.
+- Du hast mich dazu gebracht, so zu reagieren.
+- "Es ist deine Schuld, dass ich so wütend bin, du hast mich provoziert."
+- "Wenn du das richtig gemacht hättest, wäre das nicht passiert, aber du bist ja immer so unaufmerksam."
+- "Ich musste das tun, weil du mich dazu gezwungen hast, und jetzt bist du auch noch beleidigt."
+- "Du hast mich in diese Lage gebracht, und jetzt tust du so, als wäre ich das Problem."
+- "Die Verantwortung liegt ganz klar bei dir, nicht bei mir, du hast ja auch nicht zugehört."
+- "Du bist der Grund für meine schlechte Laune, und jetzt erwartest du Verständnis von mir."
+- "Das ist passiert, weil du deine Aufgaben nicht erledigt hast, und jetzt muss ich das ausbaden."
+- "Ich musste so handeln, weil du mir keine andere Wahl gelassen hast, und jetzt beschwerst du dich."
+- "Deine Unfähigkeit hat uns das eingebrockt, und jetzt bin ich derjenige, der sich entschuldigen soll."
+- "Wenn du nicht so stur wärst, hätten wir eine Lösung gefunden, aber du bist ja immer so beratungsresistent."
+- "Because of you this happened."
+- "You put me in this situation."
+- "I had no choice—you wanted it that way."
+- "If you hadn't pushed, it would be different."
+- "It's on you, not me."
+- "I'm only reacting to you."
+- "Had you been clearer, there'd be no problem."
+- "You always trigger this."
+- "I didn't start it—you did."
+- "Your fault, not mine."
+- "Wenn du nicht wieder so empfindlich wärst, hätten wir das Problem gar nicht."
+- "Ich hab's nur gemacht, weil du dich so verhalten hast."
+- "Du hast es doch provoziert – was soll ich da machen?"
+- "Du bringst mich immer so weit!"
+- "Du verstehst einfach nicht, wie schwer das für mich ist."
+- "Wenn du pünktlicher wärst, hätten wir diese Diskussion nicht."
+- "Du hast mich dazu gebracht, so zu reagieren."
+- "Es ist deine Schuld, dass ich so wütend bin, du hast mich provoziert."
+- "Wenn du das richtig gemacht hättest, wäre das nicht passiert, aber du bist ja immer so unaufmerksam."
+- "Ich musste das tun, weil du mich dazu gezwungen hast, und jetzt bist du auch noch beleidigt."
+- "Du hast mich in diese Lage gebracht, und jetzt tust du so, als wäre ich das Problem."
+- "Die Verantwortung liegt ganz klar bei dir, nicht bei mir, du hast ja auch nicht zugehört."
+- "Du bist der Grund für meine schlechte Laune, und jetzt erwartest du Verständnis von mir."
+- "Das ist passiert, weil du deine Aufgaben nicht erledigt hast, und jetzt muss ich das ausbaden."
+- "Ich musste so handeln, weil du mir keine andere Wahl gelassen hast, und jetzt beschwerst du dich."
+- "Deine Unfähigkeit hat uns das eingebrockt, und jetzt bin ich derjenige, der sich entschuldigen soll."
+- "Wenn du nicht so stur wärst, hätten wir eine Lösung gefunden, aber du bist ja immer so beratungsresistent."
+tags: [semantic, blame, defense]

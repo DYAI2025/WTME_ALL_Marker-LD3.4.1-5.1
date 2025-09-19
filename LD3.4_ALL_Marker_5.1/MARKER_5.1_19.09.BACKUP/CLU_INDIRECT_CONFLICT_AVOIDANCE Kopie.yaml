@@ -1,0 +1,68 @@
+id: CLU_INDIRECT_CONFLICT_AVOIDANCE
+version: "3.3"
+frame:
+  signal: ["passiv-aggressive Spitzen", "Schweigen", "Schuldumkehr"]
+  concept: "Indirekte Konfliktvermeidung"
+  pragmatics: "Konflikt bleibt ungelöst, Spannung steigt"
+  narrative: "Annäherung–Rückzug–Umkehr"
+pcomposed_of:
+  - SEM_PASSIVE_AGGRESSION
+  - SEM_SILENCE_WITHDRAWAL
+  - SEM_BLAME_SHIFTING
+activation_logic: "AT_LEAST 2 OF 3 WITHIN 20 messages"
+scoring: { base: 1.9, weight: 1.3, decay: 0.02 }
+window: { messages: 20 }
+examples:
+  - "Morning barb, midday silence, evening blame."
+  - "Barb → retreat → 'because of you'—same day."
+  - "Two covert shots + excuse; no direct repair."
+  - "Irony, then radio silence, later blame."
+  - "Repeated: 'Nice for you' + ignored follow-up."
+  - "Status ping with barb, then offended silence."
+  - "Small jabs stack up, talk freezes."
+  - "Retreat after barb, topic slips away."
+  - "Passive-aggressive emoji + later accusation."
+  - "Three loops in a week without straight talk."
+  - "Sequenz: subtile Spitze → Schweigen → Schuldumkehr – alles binnen eines Abends."
+  - "Montag: 'Na toll, immer Fehler.' – Dienstag: 'Vergessen.' + '...'"
+  - "Chat 1: Sarkastischer Kommentar. Chat 2: Rechtfertigung + Blame. Chat 3: Schweigen."
+  - "Drei Tage: Angriff, Ausrede, Angriff – Konflikt nie direkt."
+  - "Sarkasmus in Voice-Note, danach Stille, dann 'Ich wollte nur helfen, du bist sensibel.'"
+  - "Wiederholt: 'Schön für dich.' → 'Hab verplant.' → Schuld an Empfänger."
+  - "Spitze am Morgen, Schweigen mittags, Schuldumkehr abends."
+  - "Meeting-Chat: Ironie, vergessene Aufgabe, 'du schuld'."
+  - "Zwei Angriffe + ein Rückzug in 15 Nachrichten."
+  - "Chronik einer Woche: fünfmal passive Aggression, kein offenes Gespräch."
+  - "Abwechselnd: Sarkasmus - Rechtfertigung - Schweigen (Pattern)."
+  - "Täglich ein sarkastischer Kommentar, gefolgt von karger Antwort."
+  - "'War ja klar' → Ticket vergessen → 'wegen dir'."
+  - "Ironischer Gruß, vergessene Datei, Schuldzuweisung: Schleife."
+  - "Rundmail mit Spitze, dann Offended Silence im Thread."
+  - "Mehrere Reaktionszyklen: Hilfevortäuschung + Vorwurf."
+  - "Statusbericht: Passiv-aggressiv, später 'mhm'."
+  - "Private Message: 'Ich wollte nur...' + 'Du provozierst das.'"
+  - "Konflikt zieht sich, keiner spricht Klartext."
+  - "Analyse markiert Pattern >2 innerhalb 20 Nachrichten."
+  - "A (Montag): 'Denk bitte an den Termin morgen.' / B (Dienstag): 'Sorry, hab ich komplett übersehen.' / A (Do): 'War mir wichtig.' / B (Do): 'Wenn du mir immer so Druck machst…'"
+  - "Lass uns später darüber reden."
+  - "Ist doch egal, nicht der Rede wert."
+  - "Schon gut, passt schon."
+  - "Ich will das Thema jetzt nicht."
+  - "Können wir das einfach vergessen?"
+  - "Let's drop it for now."
+  - "Never mind, it's fine."
+  - "Nicht jetzt, ein andermal."
+  - "Kein Drama, ist nicht wichtig."
+  - "Ich mag keinen Streit; lassen wir es."
+  - "Spitze im Meeting, Stunden Funkstille, abends Vorwurf."
+  - "Ironie, dann 'passt', dann Schuld bei dir."
+  - "Sarkasmus → Rückzug → 'Du bist zu sensibel.'"
+  - "Emoji-Augenrollen, danach tagelang keine Antwort."
+  - "Kurze Abwertung, dann 'hab’s vergessen', später Gegenangriff."
+  - "Ein passiv-aggressiver Kommentar, gefolgt von Schweigen, dann die Behauptung, man sei missverstanden worden."
+  - "Eine indirekte Kritik, dann das Ignorieren von Nachfragen, gefolgt von einer Schuldzuweisung."
+  - "Ein sarkastischer Witz, dann das Vermeiden von Augenkontakt, und später die Aussage, man sei überempfindlich."
+  - "Eine subtile Abwertung, dann das plötzliche Beenden des Gesprächs, und später die Behauptung, man habe keine Zeit."
+  - "Ein passiver Widerstand, dann das Ausweichen von direkter Konfrontation, und später die Aussage, man sei nicht das Problem."
+tags: [cluster, conflict, avoidance]
+

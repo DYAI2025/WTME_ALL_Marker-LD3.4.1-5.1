@@ -1,0 +1,60 @@
+id: CLU_GOTTMAN_TOXICITY_CLUSTER
+display_title: "Gottman: Toxizitäts-Cluster"
+version: "3.3"
+lang: de
+category: CLUSTER
+description: "Cluster toxischer Kommunikationsmuster nach Gottman."
+frame:
+  signal: ["Multiple Gottman-Destruktoren"]
+  concept: "Gottman: Toxizitäts-Cluster"
+  pragmatics: "Akkumulation beziehungsschädigender Kommunikation"
+  narrative: "Destruktive Beziehungsdynamik"
+combination:
+  type: "AND"
+  components:
+    - marker_id: "SEM_GOTTMAN_CONFLICT_ESCALATION"
+      weight: 0.6
+    - marker_id: "ATO_GOTTMAN_CRITICISM"
+      weight: 0.4
+    - marker_id: "ATO_GOTTMAN_CONTEMPT"
+      weight: 0.5
+    - marker_id: "ATO_GOTTMAN_DEFENSIVENESS"
+      weight: 0.3
+    - marker_id: "ATO_GOTTMAN_STONEWALLING"
+      weight: 0.4
+  threshold: 0.8
+activation:
+  rule: "WEIGHTED_AND"
+window:
+  messages: 50
+scoring:
+  base: 2.0
+  weight: 0.8
+  decay: 0.05
+  formula: "logistic"
+examples:
+  - "Du machst immer alles falsch! Du bist wirklich dumm! Das stimmt nicht! Ich will nicht mehr reden!"
+  - "Du bist so egoistisch! Immer denkst du nur an dich. Ich habe keine Lust mehr, darüber zu reden."
+  - "Das ist doch lächerlich, wie du dich verhältst. Ich muss mich nicht rechtfertigen."
+  - "Du machst immer alles kaputt! Ich bin nicht schuld, du hast angefangen. Ich gehe jetzt."
+  - "Wie kannst du nur so dumm sein? Ich habe keine Zeit für deine Probleme. Das ist doch nicht mein Problem."
+  - "Du bist so faul! Ich mache hier alles alleine. Ich bin es leid, mich zu wiederholen."
+  - "Das ist typisch für dich, immer das Drama. Ich habe keine Lust auf diese Diskussion."
+  - "Du bist so unzuverlässig! Ich kann mich auf dich nicht verlassen. Ich muss mich schützen."
+  - "Das ist doch Unsinn, was du sagst. Ich habe das nicht getan. Ich bin raus."
+  - "Du bist so negativ! Ich versuche, positiv zu bleiben. Ich will das nicht hören."
+  - "Wie kannst du nur so respektlos sein? Ich habe das nicht verdient. Ich beende das Gespräch."
+  - "Du bist immer so egoistisch."
+  - "Nie machst du irgendwas richtig."
+  - "Wie kann man nur so dumm sein?"
+  - "Augenrollen. Klar, typisch du."
+  - "Wenn du so weiter machst, rede ich nicht mehr mit dir."
+  - "You're impossible; I can't stand you."
+  - "Whatever. (stonewalling)"
+  - "Ist doch lächerlich, was du da sagst."
+  - "Alles deine Schuld – ich sag gar nichts mehr."
+  - "Schon wieder versaust du alles."
+tags: [cluster, gottman, toxicity, destructive, escalation, severe]
+detect_class: "E"
+criteria: "Häufung mehrerer Gottman-Destruktoren in kurzer Zeit"
+updated_at: "2025-08-19T10:30:00Z"

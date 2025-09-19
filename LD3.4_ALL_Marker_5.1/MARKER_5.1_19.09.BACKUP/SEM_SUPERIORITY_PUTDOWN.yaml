@@ -1,0 +1,28 @@
+id: SEM_SUPERIORITY_PUTDOWN
+frame:
+  signal: ["Überlegenheits-Frame (Target)"]
+  concept: "Spott/Putdown"
+  pragmatics: "Aggressiver Humor"
+  narrative: "jab_chain"
+composed_of:
+  - ATO_PUTDOWN_TEMPLATE
+  - ATO_SARCASM_CUES
+activation:
+  rule: "ANY 2 IN 3 messages"
+examples:
+  - "Nur ein Idiot—ja, genau—deployed freitags."
+  - "So dumm wie ..., na klar."
+  - "Ganz bestimmt Profi, 'Experte'."
+  - "Trottel-Move, logisch."
+  - "Peinlich? Aber sicher doch."
+  - "Das ist ja mal wieder typisch für dich, so eine brillante Idee, wirklich."
+  - "Ich bin ja beeindruckt von deiner Fähigkeit, immer das Offensichtliche zu übersehen, ganz ehrlich."
+  - "Nur ein Genie wie du kann so eine einfache Aufgabe so kompliziert machen, Respekt."
+  - "Das ist ja mal wieder ein Meisterwerk der Inkompetenz, ich bin sprachlos, wirklich."
+  - "Ich bin ja nicht überrascht, dass du das nicht verstanden hast, ist ja auch zu komplex für dich."
+  - "Deine Argumente sind so überzeugend, dass ich fast lachen muss, wirklich."
+  - "Ich bin ja nicht der Klügste, aber das hätte selbst ich gewusst, ganz ehrlich."
+  - "Das ist ja mal wieder ein Beweis für deine einzigartige Denkweise, wirklich."
+  - "Ich bin ja nicht der Einzige, der das so sieht, aber du bist ja immer die Ausnahme."
+  - "Deine Fähigkeit, Probleme zu schaffen, ist unübertroffen, wirklich."
+tags: [humor, superiority, target, semantics, v33]

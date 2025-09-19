@@ -1,0 +1,33 @@
+id: SEM_LIE_CONCEALMENT
+frame:
+  signal:
+  - widersprüchliche Aussagen
+  - ausweichende Formulierungen
+  - vage Antworten
+  - Deflektion
+  concept: lie concealment
+  pragmatics: evasion
+  narrative: obfuscation
+detect_class: DetectLieConcealment
+examples:
+- 'Auf die Frage "Wo warst du?": "Ich war nur kurz unterwegs, nichts Besonderes."'
+- Das ist eine lange Geschichte für einen anderen Tag.
+- '"Warum ist das jetzt relevant für dich?"'
+- Lass uns das Thema wechseln, es ist unangenehm.
+- Darüber möchte ich im Moment nicht sprechen.
+- Sagtest du nicht, du wärst an diesem Tag überhaupt nicht dagewesen? Das passt doch
+  nicht zusammen!
+- Acho, ne das war ganz anders, das hattest du falsch verstanden.
+- Ja was weiß ich denn, ich kann mich halt nicht an redes Detail erinnern, wann ich
+  wo gewesen bin. Du musst auch nicht alles so genau nehmen!
+- "Ich kann mich an die Details nicht mehr erinnern, es ist schon so lange her, und außerdem ist das doch nicht wichtig."
+- "Das ist eine sehr persönliche Frage, die ich nicht beantworten möchte, und es geht dich auch nichts an."
+- "Ich habe das Gefühl, du versuchst, mich in die Enge zu treiben, und ich werde mich dazu nicht äußern."
+- "Meine Erinnerung ist da etwas verschwommen, und ich sehe keinen Grund, das jetzt zu klären."
+- "Das ist eine komplexe Situation, die man nicht so einfach erklären kann, und ich habe jetzt keine Zeit dafür."
+- "Ich habe das Gefühl, du interpretierst da etwas falsch, und ich werde das nicht kommentieren."
+- "Das ist eine sehr sensible Angelegenheit, über die ich nicht öffentlich sprechen möchte, und ich bitte um dein Verständnis."
+- "Ich habe das Gefühl, du stellst mir eine Fangfrage, und ich werde mich dazu nicht äußern."
+- "Das ist eine sehr private Angelegenheit, die ich nicht teilen möchte, und ich bitte dich, das zu respektieren."
+- "Ich habe das Gefühl, du versuchst, mich zu verurteilen, und ich werde mich dazu nicht äußern."
+tags: []

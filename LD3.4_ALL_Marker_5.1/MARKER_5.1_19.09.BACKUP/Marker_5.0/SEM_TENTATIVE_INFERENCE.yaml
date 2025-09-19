@@ -1,0 +1,23 @@
+id: SEM_TENTATIVE_INFERENCE
+version: "3.4"
+frame:
+  signal: ["semantic","tentative"]
+  concept: "tentative_inference"
+  pragmatics: "hypothesis"
+  narrative: "tentative_claim"
+composed_of:
+  - ATO_HEDGING_CUE
+  - ATO_NUMERIC_ESTIMATE
+activation:
+  rule: "BOTH IN 1 message"
+examples:
+  - "Vielleicht können wir 20% Marktanteil erreichen."
+  - "Eventuell sind die Kosten nur halb so hoch."
+  - "Möglicherweise schaffen wir 15% Conversion."
+  - "Vielleicht kommen wir auf 500k Run Rate."
+  - "Kann sein, dass wir 30% schneller werden."
+  - "Tendenziell liegen wir bei 12% Marge."
+  - "Sozusagen 1000 Nutzer realistisch bis Jahresende."
+scoring:
+  base: 0.45
+  weight: 1.3

@@ -1,0 +1,61 @@
+id: SEM_VALIDATED_DISCLOSURE
+version: "3.4"
+category: SEMANTIC
+description: "Validierung gefolgt von Selbstoffenbarung"
+frame:
+  signal: ["validation followed by disclosure"]
+  concept: "safety enables openness"
+  pragmatics: "progress marker"
+  narrative: "opening"
+composed_of:
+  - ATO_VALIDATION_THERAPIST
+  - ATO_DISCLOSURE_STATEMENT
+activation:
+  rule: "ATO_VALIDATION_THERAPIST BEFORE ATO_DISCLOSURE_STATEMENT WITHIN 5"
+scoring:
+  weight: 1.2
+examples:
+  - "Das ist nachvollziehbar. — Ehrlich gesagt: Ich habe das noch niemandem erzählt."
+  - "It's okay to feel that. — I haven't told anyone this before."
+  - "Thanks for sharing. — For the first time I'm saying this."
+  - "Viele fänden das schwer. — Ich trau mich kaum, das zu sagen."
+  - "That makes sense. — Honestly, I'm ashamed of it."
+  - "Danke, dass Sie es sagen. — Ich spreche das zum ersten Mal aus."
+  - "It's understandable. — I hardly dare to say this."
+  - "Ihre Reaktion ist normal. — Das hab ich noch nie jemandem gesagt."
+  - "That takes courage. — I've been hiding this from myself."
+  - "Das ist völlig verständlich. — Ich schäme mich so dafür."
+  - "Your feelings are valid. — I'm terrified you'll judge me."
+  - "Es ist mutig von Ihnen. — Das ist das erste Mal, dass ich…"
+  - "That's completely natural. — I feel so vulnerable right now."
+  - "Sie sind nicht allein damit. — Ich hab das tief vergraben."
+  - "Many people would react that way. — This is the hardest thing to admit."
+  - "Das zeigt Ihre Stärke. — Ich hab Angst vor Ihrer Reaktion."
+  - "Thank you for trusting me. — I've never been this honest before."
+  - "Das ist eine normale Reaktion. — Ich merke, wie schwer mir das fällt."
+  - "That's completely understandable. — I've never shared this with anyone."
+  - "Ihre Gefühle sind berechtigt. — Ehrlich gesagt habe ich das geheim gehalten."
+  - "That makes perfect sense. — For the first time I'm opening up about this."
+  - "Das ist eine menschliche Reaktion. — Ich trau mich kaum, das zuzugeben."
+  - "Your experience is valid. — Honestly, I'm scared of being judged."
+  - "Danke für Ihr Vertrauen. — Das habe ich bisher niemandem erzählt."
+  - "That's a very normal response. — I hardly dare to say this out loud."
+  - "Sie haben allen Grund so zu fühlen. — Das ist das erste Mal, dass ich darüber rede."
+  - "I appreciate your courage. — I've been hiding this from everyone."
+  - "Das ist absolut nachvollziehbar. — Ich schäme mich dafür."
+  - "Your feelings are completely valid. — I'm terrified of your reaction."
+  - "Das zeigt Ihre Stärke. — Das ist das erste Mal, dass ich mich öffne."
+  - "That's a very human experience. — I feel so exposed right now."
+  - "Sie sind nicht allein damit. — Ich habe das tief in mir vergraben."
+  - "Many would feel the same way. — This is the hardest admission for me."
+  - "Das ist mutig von Ihnen. — Ich habe Angst, dass Sie mich anders sehen."
+  - "Thank you for being open. — I've never been this vulnerable before."
+  - "Das ist eine verständliche Reaktion. — Ich merke, wie schwer das für mich ist."
+  - "Your honesty is admirable. — Das habe ich noch nie laut ausgesprochen."
+  - "Das macht vollkommen Sinn. — Ehrlich gesagt: Ich habe das vor mir selbst versteckt."
+  - "I understand why you'd feel that way. — For the first time I'm admitting this."
+  - "Das ist eine verständliche Reaktion — Deshalb habe ich das nie jemandem erzählt"
+  - "Ihre Gefühle sind absolut berechtigt — Das ist das erste Mal, dass ich das sage"
+  - "Das macht total Sinn — Ehrlich gesagt: Ich habe das immer geheim gehalten"
+  - "That's completely normal — For the first time I'm opening up about this"
+tags: [semantic, disclosure, safety, rapport_signal]

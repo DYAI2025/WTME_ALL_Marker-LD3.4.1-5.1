@@ -1,0 +1,49 @@
+id: S_BLAME_SHIFT_EXPRESSIONS_MARKER
+lang: de
+category: ATOMIC
+description: 'Reparierter Marker: S_BLAME_SHIFT_EXPRESSIONS_MARKER'
+frame:
+  signal:
+  - signal
+  concept: Konzept
+  pragmatics: Kommunikation
+  narrative: interaction
+activation_logic: ANY 1
+examples:
+- Beispiel 1 für S_BLAME_SHIFT_EXPRESSIONS_MARKER
+- Beispiel 2 für S_BLAME_SHIFT_EXPRESSIONS_MARKER
+- Beispiel 3 für S_BLAME_SHIFT_EXPRESSIONS_MARKER
+- Beispiel 4 für S_BLAME_SHIFT_EXPRESSIONS_MARKER
+- Beispiel 5 für S_BLAME_SHIFT_EXPRESSIONS_MARKER
+- "Das liegt an dir, nicht an mir."
+- "Du bist derjenige, der das verursacht hat."
+- "Das ist deine Schuld."
+- "Wenn du anders handeln würdest, wäre alles besser."
+- "Ich mache das nur wegen dir."
+- "Du bringst mich dazu, so zu reagieren."
+- "Das passiert nur, weil du…"
+- "Du bist der Grund dafür."
+- "Wenn du nicht wärst, wäre alles in Ordnung."
+- "Du zwingst mich dazu."
+- "Das ist eine Folge deines Verhaltens."
+- "Du trägst die Verantwortung."
+- "Ich tue das nur, um dich zu schützen."
+- "Du lässt mir keine andere Wahl."
+- "Das ist deine Entscheidung gewesen."
+- "Du hast das provoziert."
+- "Ich reagiere nur auf dich."
+- "Du machst es mir unmöglich."
+- "Das ist eine direkte Folge von dir."
+- "Du bist der Auslöser."
+- "Wenn du dich ändern würdest, würde ich mich auch ändern."
+- "Du bist der Grund für meine Reaktion."
+- "Das ist alles deine Schuld."
+- "Du bringst das Schlechteste in mir hervor."
+  - "Ich bin so, weil du mich dazu machst."
+  - "Du zwingst mich dazu, so zu reagieren"
+  - "Das ist alles deine Verantwortung"
+  - "Du machst mich zu dem, was ich bin"
+  - "Das liegt allein an deinem Verhalten"
+tags:
+- atomic
+- repaired

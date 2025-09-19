@@ -1,0 +1,30 @@
+id: ATO_PROTECTIVE_DISTANCING
+version: "3.3"
+frame:
+  signal: ["aus Selbstschutz", "muss mich schützen", "Abstand brauche"]
+  concept: "Schutzmechanismus"
+  pragmatics: "Emotionale Regulation"
+  narrative: "protection"
+pattern:
+  - "(?i)\\b(aus selbstschutz|zum selbstschutz)\\b"
+  - "(?i)\\b(muss mich schützen|mich schützen)\\b"
+  - "(?i)\\b(abstand brauch|distanz brauch)\\b"
+  - "(?i)\\b(meine grenzen|meinen schutzraum)\\b"
+examples:
+  - "Ich habe mich zurückgezogen aus Selbstschutz"
+  - "Ich muss mich schützen vor dieser Dynamik"
+  - "Ich brauche jetzt Abstand"
+  - "Das sind meine Grenzen"
+  - "Ich brauche meinen Schutzraum"
+  - "Ich ziehe mich zurück, um mich selbst zu schützen."
+  - "Es ist wichtig für mich, jetzt eine gewisse Distanz zu wahren."
+  - "Ich muss meine eigenen Bedürfnisse schützen und mich abgrenzen."
+  - "Um mich nicht zu verlieren, brauche ich jetzt Raum für mich."
+  - "Ich schütze mich, indem ich mich von dieser Situation entferne."
+  - "Meine Grenzen sind mir wichtig, und ich muss sie jetzt verteidigen."
+  - "Ich brauche Zeit für mich, um mich zu erholen und zu schützen."
+  - "Ich muss mich vor negativen Einflüssen abschirmen."
+  - "Es ist ein Akt der Selbstfürsorge, mich hier abzugrenzen."
+  - "Ich schaffe mir einen Schutzraum, um wieder zu Kräften zu kommen."
+tags: [atomic, schutz, grenzen, regulation]
+schema_version: "3.3"

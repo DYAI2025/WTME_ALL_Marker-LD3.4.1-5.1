@@ -1,0 +1,62 @@
+id: CLU_ATTACHMENT_STYLE_AVOIDANT
+lang: de
+category: CLUSTER
+description: "Vermeidendes Bindungsmuster: Überbetonung von Autarkie, Minimierung von Gefühlen, Rückzug statt Dialog."
+frame:
+  signal: ["'alleine klargekommen'", "Gefühle = Schwäche", "Rückzug statt Austausch"]
+  concept: "Vermeidende Bindungsdynamik"
+  pragmatics: "Distanz, Selbstgenügsamkeits-Frame"
+  narrative: "Selbstschutz über Autonomie"
+composed_of:
+  - SEM_AVOIDANT_CHILDHOOD_REFERENCE
+activation_logic: "AT_LEAST 2 IN 20 messages"
+scoring: { base: 1.8, weight: 1.2, decay: 0.01 }
+window: { messages: 20 }
+examples:
+  - "Mehrfach: 'Ich brauchte nie jemanden' – Stolz auf Unabhängigkeit."
+  - "Kindheit 'früh erwachsen' – Gefühlsäußerungen als hinderlich."
+  - "Konflikte werden wiederholt durch Rückzug 'gelöst'."
+  - "Hilfsangebote abwerten: 'Brauch ich nicht'."
+  - "Bindungen wirken funktional statt emotional – mehrfach thematisiert."
+  - "Lob ist peinlich/unwichtig – konsequent berichtet."
+  - "Krankheitserinnerungen: Selbstversorgung als Leistungsbeweis."
+  - "Distanziert-sachliche Elternbeschreibung wiederholt."
+  - "Fehler kaum zugegeben; Image-Pflege priorisiert."
+  - "Leistung > Verbindung – leitendes Motiv über das Fenster."
+  - "Der Sprecher betont wiederholt, alleine klargekommen zu sein."
+  - "Kindheit wird als 'früh erwachsen' geschildert."
+  - "Hilfe­losigkeit wird verneint, Selbständigkeit glorifiziert."
+  - "Elterliche Abwesenheit wird nüchtern, ohne Emotion, erwähnt."
+  - "Gefühlsäußerungen werden minimiert oder als Schwäche angesehen."
+  - "Sätze wie 'brauche niemanden' häufen sich."
+  - "Lob wird als unwichtig oder peinlich dargestellt."
+  - "Bindungen zu Freunden wichtiger als zu Familie."
+  - "Konflikte werden durch Rückzug gelöst, nicht durch Dialog."
+  - "Erfolg wird auf eigene Leistung, nie auf Unterstützung zurückgeführt."
+  - "Der Sprecher lacht über 'anhängliche' Menschen."
+  - "Erinnerungen an Krankheit zeigen Selbstversorgung."
+  - "Fehler werden verschwiegen, um unabhängiges Image zu wahren."
+  - "Eltern werden sachlich, aber distanziert beschrieben."
+  - "Zusammenhalt wird als 'Später erst gelernt' betont."
+  - "Ich komme besser klar, wenn mich niemand stört."
+  - "Emotionen sind privat, nicht Gesprächsthema."
+  - "Ich brauche Abstand, um mich sicher zu fühlen."
+  - "Hilfe annehmen fühlt sich falsch an."
+  - "Verletzlichkeit zeige ich höchstens mir selbst."
+  - "Elterliche Abwesenheit wird nüchtern, ohne Emotion, erwähnt."
+  - "Lob wird als unwichtig oder peinlich dargestellt."
+  - "Bindungen zu Freunden wichtiger als zu Familie."
+  - "Konflikte werden durch Rückzug gelöst, nicht durch Dialog."
+  - "Erfolg wird auf eigene Leistung, nie auf Unterstützung zurückgeführt."
+  - "Eltern werden sachlich, aber distanziert beschrieben."
+  - "Ich brauche jetzt einfach meine Ruhe, lass mich allein."
+  - "Ich muss das für mich selbst klären, da kann mir niemand helfen."
+  - "Ich habe gerade keine Zeit für emotionale Gespräche."
+  - "Ich ziehe mich zurück, wenn es mir zu nah wird."
+  - "Ich bin lieber für mich, das ist einfacher."
+  - "Ich reagiere nicht auf deine Nachrichten, weil ich Raum brauche."
+  - "Ich vermeide es, über meine Gefühle zu sprechen."
+  - "Ich bin nicht gut darin, Nähe zuzulassen."
+  - "Ich brauche viel Freiraum in Beziehungen."
+  - "Ich bin ein Einzelgänger, das ist meine Art."
+tags: [needs_review, cluster, attachment, avoidant]

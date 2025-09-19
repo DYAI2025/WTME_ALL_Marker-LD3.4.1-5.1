@@ -1,0 +1,36 @@
+id: CLU_INTUITION_GRIEF
+version: "3.4"
+frame:
+  signal: ["intuition","weak-aggregation"]
+  concept: "Vorahnung: Trauer/Schuld/Bedauern"
+  pragmatics: "Fokus schärfen, biasarm"
+  narrative: "hypothesis"
+tags: [intuition, grief, hypothesis, learning]
+composed_of:
+  - SEM_SADNESS_EXPRESSIONS
+  - SEM_NOSTALGIA_REGRET
+  - SEM_GUILT_ADMISSION
+activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+scoring: { base: 0.5, weight: 1.0 }
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_SADNESS_EXPRESSIONS, SEM_GUILT_ADMISSION] IN confirm_window"
+    multiplier_on_confirm: 2.0
+    decay_window: 8
+  telemetry_keys:
+    counter_confirmed: "INT_GRIEF.confirmed"
+    counter_retracted: "INT_GRIEF.retracted"
+    ewma_precision: "INT_GRIEF.ewma_precision"
+examples:
+  - "… 'ich vermisse' … 'hätte ich anders' …"
+  - "… Bedauern + Anflug von Schuld …"
+  - "… 'so schade' + Erinnerung an Verlust …"
+  - "… 'es tut mir leid' + trauriger Ton …"
+  - "… 'allein' + 'schwer' in kurzer Folge …"
+  - "… 'wenn doch' + 'zu spät' …"
+  - "… leiser Ton + 'fehlst mir' …"
+  - "… Schuldgeständnis + Rückblick …"
+  - "… 'Trauer' genannt + seufzen …"
+  - "… 'kann es nicht rückgängig machen' …"

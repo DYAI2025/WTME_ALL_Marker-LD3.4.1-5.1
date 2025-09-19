@@ -1,0 +1,37 @@
+id: ATO_SARCASM_SUBTILE
+frame:
+  signal:
+  - oh, großartig
+  - ja klar
+  - klasse, wirklich toll
+  - wie erfrischend
+  - ganz im ernst
+  concept: subtiler Sarkasmus
+  pragmatics: ironische Kritik
+  narrative: versteckte Anschuldigung
+pattern:
+- (?i)\boh, großartig\b
+- (?i)\bja klar\b
+activation:
+  rule: ANY 1
+examples:
+- Oh, großartig, jetzt habe ich wieder was zu tun.
+- Ja klar, weil ich nichts Besseres zu tun habe.
+- Klasse, wirklich toll, wie du jetzt alle Aufgaben vergisst.
+- Wie erfrischend, schon wieder dein Geheimnis.
+- Ganz im Ernst, das war deine beste Idee?
+- Oh, great, another surprise.
+- Yeah, right, that sounds convincing.
+- "Fantastisch, genau das, was ich jetzt brauche."
+- "Wunderbar, noch eine Herausforderung für meinen ohnehin schon vollen Terminkalender."
+- "Exzellent, ich liebe es, wenn Pläne so reibungslos funktionieren."
+- "Genial, das ist ja mal eine wirklich innovative Lösung."
+- "Ach, wie schön, dass du dir so viele Gedanken gemacht hast."
+- "Beeindruckend, deine Fähigkeit, Dinge zu vereinfachen, ist unübertroffen."
+- "Super, ich bin total begeistert von dieser Entwicklung."
+- "Toll, dass du immer so pünktlich bist, wenn es um wichtige Entscheidungen geht."
+- "Ausgezeichnet, ich hätte es nicht besser machen können... oder doch?"
+- "Ja, genau das habe ich erwartet, absolut keine Überraschung."
+tags:
+- sarcasm
+- irony

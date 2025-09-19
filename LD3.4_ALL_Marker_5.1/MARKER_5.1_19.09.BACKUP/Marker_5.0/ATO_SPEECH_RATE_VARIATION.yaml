@@ -1,0 +1,20 @@
+id: ATO_SPEECH_RATE_VARIATION
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for speech rate variation within utterance"
+frame:
+  signal: ["Tempo Fluctuation Pattern"]
+  concept: "schwankend"
+  pragmatics: "Rhythmus"
+  narrative: "audio"
+detect_class:
+  module: prosody.rate_variation
+  params: { variation_coefficient: 0.25, window_size_ms: 1000 }
+examples:
+  - "[Schwankende Sprechgeschwindigkeit]"
+  - "[Unregelmäßiger Rhythmus]"
+  - "[Tempo-Variation innerhalb Äußerung]"
+  - "[Inkonsistente Artikulationsgeschwindigkeit]"
+  - "[Rhythmische Instabilität]"
+tags: [rhythm, audio, atomic]

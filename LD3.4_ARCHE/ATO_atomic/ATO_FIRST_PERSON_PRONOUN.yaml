@@ -1,0 +1,19 @@
+id: ATO_FIRST_PERSON_PRONOUN
+version: "3.4"
+frame:
+  signal: ["surface","pronoun"]
+  concept: "self-reference"
+  pragmatics: "personal stake"
+  narrative: "surface"
+pattern: "\\b(ich|meine|mir|mich)\\b"
+examples:
+  - "Ich glaube, wir sollten..."
+  - "Mir wäre wichtig..."
+  - "Ich habe das vorbereitet."
+  - "Ich würde vorschlagen, dass wir testen."
+  - "Meiner Ansicht nach passt das."
+  - "Ich sehe da ein Risiko."
+  - "Ich nehme das mit ins nächste Meeting."
+scoring:
+  base: 0.5
+  weight: 0.8

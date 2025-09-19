@@ -1,0 +1,62 @@
+id: SEM_RAPPORT_SUPPORT_MOVE
+version: "3.4"
+category: SEMANTIC
+description: "Unterstützende Interventions-Triade des Therapeuten"
+frame:
+  signal: ["open question + reflection + validation (therapist)"]
+  concept: "supportive intervention triad"
+  pragmatics: "trust building & exploration"
+  narrative: "guided openness"
+composed_of:
+  - ATO_OPEN_QUESTION_THERAPIST
+  - ATO_REFLECTIVE_STATEMENT_THERAPIST
+  - ATO_VALIDATION_THERAPIST
+activation:
+  rule: "COUNT(ATO_OPEN_QUESTION_THERAPIST)>=1 AND COUNT(ATO_REFLECTIVE_STATEMENT_THERAPIST)>=1 AND COUNT(ATO_VALIDATION_THERAPIST)>=1 IN 5"
+scoring:
+  weight: 1.2
+examples:
+  - "What was that like for you? — It sounds like this felt unsafe. — That makes sense."
+  - "Wie war das für Sie? — Sie wirken unruhig. — Es ist okay, so zu fühlen."
+  - "Can you tell me more? — You seem torn. — Thanks for sharing."
+  - "Woran merken Sie das? — Es klingt, als ob… — Das ist nachvollziehbar."
+  - "How do you notice it? — If I understand you… — Many would find this hard."
+  - "Was würden Sie sagen… — Sie sagen, dass… — Danke, dass Sie das teilen."
+  - "Tell me more… — It sounds like… — It's okay to feel that."
+  - "Was geht in Ihnen vor? — Sie scheinen… — Ihre Reaktion ist verständlich."
+  - "What comes up for you? — You appear to be… — That takes courage."
+  - "Können Sie das beschreiben? — Es wirkt, als… — Das ist völlig normal."
+  - "How does that feel? — I sense that… — Your feelings are valid."
+  - "Was bedeutet das für Sie? — Sie klingen… — Das macht Sinn."
+  - "What's that like? — It seems like… — Anyone would feel that way."
+  - "Woran denken Sie dabei? — Ich höre heraus… — Es ist mutig, das zu sagen."
+  - "Can you elaborate? — You sound… — That's completely understandable."
+  - "Wie erleben Sie das? — Es scheint… — Das zeigt Ihre Stärke."
+  - "What's happening for you? — It feels like… — Thank you for trusting me."
+  - "Was ist da los? — Sie wirken… — Das ist eine natürliche Reaktion."
+  - "How are you feeling right now? — It sounds like you're struggling. — That's completely valid."
+  - "Was geht Ihnen durch den Kopf? — Sie klingen besorgt. — Das ist verständlich."
+  - "Can you share what's coming up? — You seem hesitant. — Many people feel that way."
+  - "Wie nehmen Sie das wahr? — Es wirkt, als wäre das schwer. — Danke für Ihr Vertrauen."
+  - "What would help you here? — I hear uncertainty in your voice. — Your feelings make sense."
+  - "Was brauchen Sie gerade? — Sie scheinen verwirrt. — Das ist eine normale Reaktion."
+  - "How does that sit with you? — It feels like there's conflict. — Thank you for opening up."
+  - "Was bedeutet Ihnen das? — Sie klingen traurig. — Das zeigt Ihre Sensibilität."
+  - "Can you tell me more about that? — You appear to be processing this. — That's very brave."
+  - "Wie erleben Sie diese Emotion? — Es klingt, als wäre das intensiv. — I appreciate your honesty."
+  - "What comes up when you think about it? — I sense there's more to this. — Your experience is valid."
+  - "Was fällt Ihnen dazu ein? — Sie wirken nachdenklich. — Das ist eine wichtige Einsicht."
+  - "How are you holding this? — It sounds overwhelming. — Many would find this difficult."
+  - "Was ist Ihre größte Sorge? — Sie scheinen ängstlich. — Thank you for sharing that."
+  - "Can you describe what that's like? — You seem to be carrying a lot. — That's understandable."
+  - "Wie geht es Ihnen damit? — Es wirkt, als wäre das belastend. — Your reaction makes sense."
+  - "What would you like to explore? — I hear mixed feelings. — I appreciate your openness."
+  - "Was ist Ihnen wichtig dabei? — Sie klingen unsicher. — That's a very human response."
+  - "How do you want to proceed? — It feels like there's hesitation. — Thank you for trusting me."
+  - "Was geht in Ihnen vor? — Sie wirken erleichtert. — Your courage is admirable."
+  - "Can you help me understand? — You appear thoughtful. — That's a valuable insight."
+  - "Was bewegt Sie gerade? — Sie wirken nachdenklich. — Das ist ein wichtiger Moment."
+  - "Wie geht es Ihnen damit? — Es klingt schmerzhaft. — Ihre Offenheit ist bewundernswert."
+  - "Was brauchen Sie jetzt? — Sie scheinen unsicher. — Das verstehe ich vollkommen."
+  - "Erzählen Sie mir davon — Es scheint belastend. — Danke, dass Sie das teilen."
+tags: [semantic, rapport_building, therapist_move]

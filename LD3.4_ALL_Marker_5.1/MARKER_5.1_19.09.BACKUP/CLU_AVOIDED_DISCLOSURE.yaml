@@ -1,0 +1,64 @@
+id: CLU_AVOIDED_DISCLOSURE
+version: "3.4"
+category: CLUSTER
+description: "Systematische Vermeidung von Aussagen"
+frame:
+  signal: ["start + downplay + silence repeats"]
+  concept: "systematic avoidance of saying"
+  pragmatics: "blocked engagement"
+  narrative: "retreat loop"
+composed_of:
+  - SEM_BREAK_AND_DISMISS
+  - ATO_OFFENDED_SILENCE
+  - ATO_HESITATION_VOICE
+activation:
+  rule: "COUNT(SEM_BREAK_AND_DISMISS)+COUNT(ATO_OFFENDED_SILENCE)+COUNT(ATO_HESITATION_VOICE) >= 3 IN 20"
+  window:
+    messages: 20
+scoring:
+  weight: 1.4
+examples:
+  - "Ich wollte… ach nee, ist gut. — …"
+  - "Start → downplay → silence."
+  - "Hesitation + cut-off wiederholt in kurzer Zeit."
+  - "Never mind + '…' mehrfach."
+  - "'It's fine' → hm → '…'"
+  - "Approach → avoid → quiet."
+  - "Mehrere abgebrochene Sätze in einer Sequenz."
+  - "Pattern: 'Ähm, ich…' → 'ach, egal' → silence."
+  - "Repeated cycle of starting to share then immediately backing off."
+  - "Multiple 'I was going to say…' followed by dismissal."
+  - "'Um, maybe…' → 'never mind' → withdrawal becomes frequent."
+  - "Self-interruption pattern intensifies throughout conversation."
+  - "Patient consistently begins topics then immediately minimizes them."
+  - "Hesitation markers increase while actual content decreases."
+  - "Approach-avoidance conflict becomes more pronounced over time."
+  - "Series of false starts followed by immediate topic dismissal."
+  - "Increasing self-censorship despite therapeutic encouragement."
+  - "Pattern of emotional approach followed by rapid protective retreat."
+  - "Multiple instances of 'I was going to share something…' → 'actually, never mind'."
+  - "Hesitation fills increase as disclosure attempts decrease."
+  - "Patient starts speaking, then abruptly stops mid-sentence repeatedly."
+  - "Consistent pattern of beginning personal stories then dismissing them."
+  - "Therapist invitations met with prolonged silence after initial engagement."
+  - "Increasing frequency of 'hm' and '…' as session progresses."
+  - "Patient shows interest in topic, then immediately withdraws verbally."
+  - "Multiple false starts: 'Actually…' → 'forget it' cycle repeats."
+  - "Hesitation markers become more frequent while content becomes scarcer."
+  - "Patient begins emotional topics then immediately minimizes importance."
+  - "Repeated pattern of partial disclosure followed by immediate retraction."
+  - "Silence becomes longer after each attempt to engage."
+  - "Self-interruption becomes habitual throughout the conversation."
+  - "Approach-avoidance dance intensifies despite therapeutic safety cues."
+  - "Patient consistently starts sentences with hesitation then abandons them."
+  - "Dismissive language increases while personal sharing decreases."
+  - "Multiple instances of almost-disclosing followed by protective withdrawal."
+  - "Hesitation patterns become entrenched as rapport attempts continue."
+  - "Patient repeatedly initiates topics then immediately shuts them down."
+  - "Increasing emotional retreat despite consistent therapeutic invitations."
+  - "Pattern of near-disclosure followed by immediate self-censorship."
+  - "Patient starts: 'Da war mal...' → immediately: 'Ach, vergiss es'"
+  - "Begins with vulnerability: 'Ich fühle mich...' → switches to: 'Naja, ist egal'"
+  - "Opens up: 'Das ist schwer...' → closes down: 'Lassen wir das'"
+  - "Almost shares: 'Ich habe Angst...' → retreats: 'Nicht so wichtig'"
+tags: [cluster, avoidance, inhibition, disclosure_block]

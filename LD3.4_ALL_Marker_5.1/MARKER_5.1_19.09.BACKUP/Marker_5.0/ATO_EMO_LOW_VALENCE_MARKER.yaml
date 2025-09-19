@@ -1,0 +1,41 @@
+id: ATO_EMO_LOW_VALENCE
+lang: en
+category: ATOMIC
+description: "Detektiert Einzelaussagen mit stark negativer Valenz (valence score ≤ –0.6), automatisch getriggert durch einen EmotionDynamics-Detector."
+frame:
+  signal:      ["stark negative Emotion", "low valence", "depressive Grundstimmung"]
+  concept:     "Negative Affektlage"
+  pragmatics:  "Frühwarnsignal für Überforderung, Rückzug oder Krise"
+  narrative:   "negative emotion"
+pattern:
+  - "valence <= -0.6"  # wird nicht via Regex, sondern durch den ML-Score getriggert
+activation_logic: "ANY 1"
+examples:
+  - "A (-0.75): “Nothing seems to matter anymore.”"
+  - "B (-0.68): “I feel utterly hopeless today.”"
+  - "A (-0.80): “Everything is falling apart.”"
+  - "B (-0.70): “This is the worst news I could get.”"
+  - "A (-0.73): “I’m so disappointed and drained.”"
+  - "I'm feeling completely overwhelmed and lost. (-0.78)"
+  - "There's a deep sadness that I can't shake off. (-0.82)"
+  - "I just want to disappear, everything feels so heavy. (-0.90)"
+  - "This pain is unbearable, I don't know how much more I can take. (-0.85)"
+  - "I'm so tired of fighting, I have no energy left. (-0.79)"
+  - "It feels like I'm trapped in a dark place. (-0.88)"
+  - "I'm constantly worried and anxious about everything. (-0.75)"
+  - "Nothing brings me joy anymore, I feel numb. (-0.83)"
+  - "I'm so disappointed with myself and my life. (-0.77)"
+  - "I feel utterly alone, even when surrounded by people. (-0.86)"
+tags:
+  - emotion
+  - low_valence
+  - atomic
+  - negative
+scoring:
+  base: 1.1
+  weight: 1.0
+  decay: 0.0
+  formula: "linear"
+window:
+  messages: 3
+schema_version: "3.2"

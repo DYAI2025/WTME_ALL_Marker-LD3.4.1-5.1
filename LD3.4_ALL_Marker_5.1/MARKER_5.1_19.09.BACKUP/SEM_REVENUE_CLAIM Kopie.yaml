@@ -1,0 +1,22 @@
+id: SEM_REVENUE_CLAIM
+version: "3.4"
+frame:
+  signal: ["revenue", "semantic"]
+  concept: "revenue_claim_with_model"
+  pragmatics: "key_claim"
+  narrative: "business"
+examples:
+  - "Wir haben 50k MRR mit Abo-Modell."
+  - "850k ARR über Subscription und Usage Fees."
+  - "45k MRR rein SaaS plus transaktionale Upsells."
+  - "Run Rate 300k€ durch freemium funnel + paid tier."
+  - "MRR kombiniert mit Pay-per-use wächst 20%."
+composed_of:
+  - ATO_REVENUE_NUMBER
+  - ATO_PRICING_MODEL
+activation:
+  rule: "BOTH_IN_1_message"
+scoring:
+  base: 1.0
+  weight: 1.6
+tags: [finance, claim]

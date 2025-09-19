@@ -1,0 +1,48 @@
+id: CLU_SELF_PROTECTION_TACTICS
+lang: en
+category: CLUSTER
+description: "Sustained self-protection/deception tactics (blame shifting + minimization) within the window."
+frame:
+  signal: ["'because of you' + 'no big deal' repeatedly"]
+  concept: "Defensive pattern"
+  pragmatics: "Evasion of responsibility, trust loss"
+  narrative: "Recurring protection script"
+composed_of:
+  - SEM_BLAME_SHIFTING
+  - SEM_MINIMIZATION
+activation_logic: "AT_LEAST 3 INSTANCES IN 7 days"
+scoring: { base: 1.7, weight: 1.25, decay: 0.02 }
+window: { days: 7 }
+examples:
+  - "A: 'Ich habe Belege, dass du das Geld genommen hast.' / B: 'Teilweise stimmt das, aber du übertreibst 🙄'"
+  - "A: 'Warum fehlen 500 €?' / B: 'Ach, das ist doch keine große Sache. Du bildest dir da was ein.'"
+  - "A: 'Du hast doch gesagt, du wärst gestern zu Hause.' / B: 'Naja, eigentlich schon. Halb so wild, was spielt das für eine Rolle?'"
+  - "A: 'Die Termine wurden nicht eingehalten.' / B: 'Ein bisschen Verzögerung, aber nichts Dramatisches 🙄'"
+  - "A: 'Ich habe die E-Mails gesehen.' / B: 'Davon weiß ich nichts. Du interpretierst das völlig falsch.'"
+  - "A: 'Es gab einen Fehler, aber das war wirklich nur minimal und absolut kein Beinbruch.'"
+  - "A: 'Ich habe es wohl verpasst, aber ehrlich gesagt ist das ja nicht so wichtig.'"
+  - "A: 'Du übertreibst das jetzt, das war wirklich nur ein kleiner Ausrutscher.'"
+  - "A: 'Okay, ich war vielleicht etwas unaufmerksam, aber das ändert doch nichts.'"
+  - "A: 'Na gut, ein bisschen stimmt es, aber das waren doch nur Kleinigkeiten.'"
+  # +5 neu
+  - "Reg dich ab, das ist nicht der Rede wert."
+  - "Du hörst nur, was du hören willst."
+  - "Wenn überhaupt, war’s ein Missverständnis."
+  - "Mach mal halblang, so schlimm war’s nicht."
+  - "Ich sehe das anders – du konstruierst da was."
+  - "Ich habe das nur getan, weil du mich dazu gezwungen hast, und es war ja nicht so schlimm."
+  - "Du bist der Grund, warum ich so reagiere, und es ist doch nur eine Kleinigkeit."
+  - "Wenn du nicht so empfindlich wärst, wäre das kein Problem, und es ist doch nur ein Missverständnis."
+  - "Ich musste mich verteidigen, weil du mich angegriffen hast, und es war ja nur ein Wortgefecht."
+  - "Du hast mich provoziert, und es ist doch nur eine Lappalie."
+  - "Three rounds of 'because of you' + 'it was small' in a week."
+  - "Series: blame → minimize → change topic."
+  - "Multiple tickets: responsibility dodged, severity downplayed."
+  - "Evidence ignored, scope reduced—again."
+  - "Two chats in a row: blame shift + 'no drama'."
+  - "Meeting + DM: same pattern within 48h."
+  - "More minimization after follow-ups."
+  - "Critique dismissed, blame delegated."
+  - "Same script over days."
+  - "Trust visibly drops across the span."
+tags: [needs_review, cluster, tactics, gaslighting] 

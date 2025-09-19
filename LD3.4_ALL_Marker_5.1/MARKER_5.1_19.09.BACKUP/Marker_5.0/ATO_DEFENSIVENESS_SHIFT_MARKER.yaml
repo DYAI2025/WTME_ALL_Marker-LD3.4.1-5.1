@@ -1,0 +1,107 @@
+# --- ATO_DEFENSIVENESS_SHIFT_MARKER.yaml ---
+id: ATO_DEFENSIVENESS_SHIFT_MARKER
+lang: de
+category: ATOMIC
+description: "Drückt Abwehrhaltung und Verteidigung der eigenen Position aus."
+frame:
+  signal:
+    - "Ich habe nichts falsch gemacht"
+    - "liegt nicht an mir"
+    - "wurde falsch verstanden"
+  concept: "Verteidigung"
+  pragmatics: "Abwehr"
+  narrative: "Defensiveness"
+pattern:
+  - "(?i)ich habe nichts falsch gemacht"
+  - "(?i)liegt nicht an mir"
+  - "(?i)wurde falsch verstanden"
+activation_logic: "ANY 1"
+examples:
+  - "Ich habe doch nichts falsch gemacht!"
+  - "Das liegt nicht an mir, sondern am System."
+  - "Ich wurde hier falsch verstanden."
+  - "Das ist unfair, mich dafür verantwortlich zu machen."
+  - "Ich war nicht involviert."
+  - "Das war nicht meine Entscheidung."
+  - "Ich habe nur das getan, was mir gesagt wurde."
+  - "Die Situation ist komplexer, als es scheint."
+  - "Ich habe keine Kontrolle über diese Umstände."
+  - "Es ist nicht meine Schuld, dass es so gelaufen ist."
+  - "Ich habe alles nach bestem Wissen und Gewissen gemacht."
+  - "Die Verantwortung liegt woanders."
+  - "Ich habe nicht die Macht, das zu ändern."
+  - "Das war außerhalb meines Einflussbereichs."
+  - "Ich habe versucht, das Beste daraus zu machen."
+  - "Es ist unfair, mir die Schuld zu geben."
+  - "Es ist schon komisch, wenn ich sowas mache, ist es ein riesen Drama!"
+  - "Aber wenn du das machst, ist es plötzlich okay?"
+  - "Ich hatte ja auch echt keine Unterstützung von dir."
+  - "Ne, es reicht mir echt, ich habe nichts falsch gemacht!"
+  - "Ich habe alles getan, was ich konnte."
+  - "Es ist nicht meine Aufgabe, das alles hier alleine zu regeln ud mich dann auch noch blöde anmachen zu lassen."
+  - "Ich möchte dich ja mal in der Situation sehen, in der ich war."
+  - "Come on! Es ist jetzt echt nicht so schlimm, wie du es darstellst."
+  - "Weißt du wie oft du das schon getan hast?"
+  - "Das ist nicht mein Fehler, die Umstände waren ungünstig."
+  - "Ich habe nur versucht zu helfen."
+  - "Andere machen das doch auch so."
+  - "Das ist halt so, wie es ist."
+  - "Ich kann nichts dafür, dass es so gekommen ist."
+  - "Das ist eine Überreaktion von Ihrer Seite."
+  - "Ich bin nicht der Einzige, der das so sieht."
+  - "Das ist ja wohl normal in dieser Situation."
+  - "Ich habe das nicht so gemeint, wie es rüberkam."
+  - "Das ist doch kein großes Ding."
+  - "Warum immer ich?"
+  - "Das passiert doch jedem mal."
+  - "Ich bin halt so, wie ich bin."
+  - "Das ist nicht meine Stärke."
+  - "Ich habe das im Griff."
+  - "Das ist kein Problem für mich."
+  - "Andere würden das genauso machen."
+  - "Das ist doch logisch."
+  - "Ich habe meine Gründe dafür."
+  - "Das ist eine gute Entscheidung gewesen."
+  - "Ich weiß, was ich tue."
+  - "Das war die beste Option zu dem Zeitpunkt."
+  - "Ich habe nur das getan, was unter diesen Umständen sinnvoll war"
+  - "Andere hätten wahrscheinlich genauso entschieden"
+  - "Das war die logische Konsequenz aus der Situation"
+  - "Ich bin kein Experte, aber das erschien mir richtig"
+    - Ich hab alles falsch gemacht? Klar, wie immer. 👏
+  - Schön, wie du mich hinstellst – wieder mal.
+  - Du behandelst mich wie einen Feind und erwartest Verständnis?
+  - Du kannst es eh nie akzeptieren, wenn ich mal was sage.
+  - Witzig, dass du mir jetzt Vorwürfe machst – schau mal in den Spiegel.
+  - Ich hab doch nur ehrlich meine Meinung gesagt 😕
+  - Du bist doch die/der, die/der ständig Stress macht.
+  - Ich geb mir Mühe, aber es ist nie gut genug für dich.
+  - Du verdrehst jedes meiner Worte, das ist einfach unfair 😓
+  - Ich war halt müde, sorry dass ich nicht perfekt bin.
+  - Du meckerst immer nur rum, statt mal zu sehen, was ich tue.
+  - Immer bin ich der Depp, obwohl ich alles für dich mach.
+  - Ich kann doch nichts dafür, dass du alles immer falsch verstehst.
+  - Vielleicht solltest du mal über dein Verhalten nachdenken 🤷
+  - Ich hab versucht, ruhig zu bleiben, aber du bist komplett eskaliert.
+  - Wenn du nicht so überreagiert hättest, wär das gar nicht passiert.
+  - Du hast doch gesehen, wie du mich behandelt hast!
+  - Ich wusste nicht, dass ich mich für alles rechtfertigen muss 😤
+  - Wow, jetzt bin ich plötzlich der Schuldige, ernsthaft?
+  - Klar, immer bin ich das Problem – nie du, ne?
+  - Ich hab doch gar nichts Schlimmes gesagt.
+  - Du drehst halt wieder alles so, dass ich der Böse bin 🙄
+  - Wie soll ich bitte reagieren, wenn du mich so angehst?
+  - Ich hab echt nur versucht, dir zu helfen 😒
+  - Es ist nicht meine Schuld, du hast doch angefangen!
+  - "Ich habe doch nur meine Sicht der Dinge dargelegt, warum ist das gleich ein Angriff?"
+  - "Es ist typisch, dass du meine Absichten immer falsch interpretierst."
+  - "Ich habe mich doch entschuldigt, was willst du noch von mir?"
+  - "Du suchst doch nur einen Grund, um dich aufzuregen."
+  - "Ich bin nicht derjenige, der hier das Problem hat."
+  - "Warum muss ich mich ständig für alles rechtfertigen, was ich tue?"
+  - "Du bist doch derjenige, der hier überreagiert."
+  - "Ich habe doch nur versucht, die Situation zu klären, und jetzt bin ich der Böse?"
+  - "Es ist immer das Gleiche, du gibst mir die Schuld für alles."
+  - "Ich kann nichts dafür, dass du so empfindlich bist."
+
+tags: [atomic, defensiveness]

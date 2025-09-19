@@ -1,0 +1,28 @@
+id: CLU_EMOTIONAL_SUPPORT
+frame:
+  signal:
+  - emotionale Unterstützung
+  concept: Unterstützung
+  pragmatics: Empathie
+  narrative: support
+composed_of:
+  - ATO_INVITING_RESONANCE
+  - SEM_VALIDATION_OF_FEELING
+activation:
+  rule: AT_LEAST 2 IN 5 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+  - "Ich verstehe, dass du dich so fühlst, das ist absolut nachvollziehbar."
+  - "Ich kann gut nachempfinden, wie schwer das für dich ist, und deine Gefühle sind berechtigt."
+  - "Ich bin für dich da, und es ist okay, traurig zu sein."
+  - "Ich höre dir zu, und ich sehe, dass dich das sehr mitnimmt."
+  - "Deine Reaktion ist verständlich, und ich bin hier, um dich zu unterstützen."
+  - "Ich fühle mit dir, und es ist wichtig, dass du deine Emotionen zulässt."
+  - "Ich kann deine Sorgen nachvollziehen, und ich bin an deiner Seite."
+  - "Ich sehe deinen Schmerz, und es ist in Ordnung, sich so zu fühlen."
+  - "Ich bin hier, um dir zuzuhören, und deine Gefühle sind gültig."
+  - "Ich verstehe, dass du dich überfordert fühlst, und ich bin für dich da."
+tags:
+  - support

@@ -1,0 +1,43 @@
+id: ATO_DISGUST
+frame:
+  signal: Wörter und Phrasen, die Ekel, Abscheu oder Abneigung ausdrücken.
+  concept: Ekel / Abstoßung
+  pragmatics: Distanzierung, Ablehnung, Ausdruck von Unbehagen.
+  narrative: rejection
+tags:
+- emotion
+- disgust
+- negative
+- rejection
+examples:
+- Das ist einfach nur ekelhaft.
+- Mir wird schlecht, wenn ich das sehe.
+- Pfui, fass das nicht an!
+- Sein Verhalten widert mich zutiefst an.
+- Ich finde das absolut widerlich.
+- Das ist so abstoßend, ich kann es kaum ansehen.
+- Mir dreht sich der Magen um bei dem Gedanken.
+- Iiiih, was ist das denn?
+- Das ist geschmacklos und ekelerregend.
+- Ich habe einen richtigen Abscheu vor Spinnen.
+- Wie kann man nur so etwas Ekelhaftes tun?
+- Diese Heuchelei finde ich zum Kotzen.
+- Bäh, das riecht ja furchtbar.
+- Das ist unter aller Sau, wirklich widerwärtig.
+- Mir kommt die Galle hoch, wenn ich daran denke.
+- Ich empfinde puren Ekel für diese Art von Mensch.
+- Das ist eine ekelerregende Vorstellung.
+- Von dieser Person bin ich einfach nur angewidert.
+- Das ist ja widerlich, bring das weg!
+- Ich kann meine Abneigung dagegen nicht verbergen.
+pattern:
+- (?i)ekelhaft
+- (?i)widert mich an
+- (?i)pfui
+- (?i)widerlich
+- (?i)abscheu
+- (?i)angewidert
+- (?i)zum kotzen
+- (?i)bäh
+- (?i)iiih
+- (?i)mir wird schlecht

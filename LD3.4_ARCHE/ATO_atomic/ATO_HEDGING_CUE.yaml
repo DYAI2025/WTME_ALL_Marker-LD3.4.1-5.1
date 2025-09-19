@@ -1,0 +1,19 @@
+id: ATO_HEDGING_CUE
+version: "3.4"
+frame:
+  signal: ["surface","hedge"]
+  concept: "uncertainty/softening"
+  pragmatics: "risk-avoidance"
+  narrative: "qualifier"
+pattern: "\\b(vielleicht|eher|kann sein|möglicherweise|tendenziell|sozusagen)\\b"
+examples:
+  - "Vielleicht könnten wir..."
+  - "Das ist vielleicht zu optimistisch."
+  - "Könnte sein, dass wir mehr Zeit brauchen."
+  - "Das ist sozusagen unser erster Versuch."
+  - "Tendenziell sehe ich das positiv."
+  - "Möglicherweise verschiebt sich der Launch."
+  - "Eher nicht in diesem Quartal."
+scoring:
+  base: 0.5
+  weight: 1.2

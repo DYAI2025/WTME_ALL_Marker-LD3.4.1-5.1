@@ -1,0 +1,29 @@
+id: ATO_SELF_RELIANCE_EARLY_MARKER
+frame:
+  signal:
+  - brauche Abstand
+  - muss allein
+  - keine Zeit
+  concept: Vermeidende Bindung
+  pragmatics: Distanz schaffen
+  narrative: withdrawal
+pattern:
+- (?i)\\bhabe\ ich\\b
+examples:
+- Schon mit zehn habe ich mich selbst um mein Abendessen gekümmert.
+- Mit zwölf habe ich meine kleinen Geschwister versorgt.
+- Urlaub organisierte ich mir als Teenager alleine.
+- Hausaufgaben? Da habe ich nie Hilfe erwartet.
+- Selbst Geburtstagsfeiern habe ich geplant, nicht meine Eltern.
+- "Schon früh habe ich gelernt, meine Probleme selbst zu lösen."
+- "Ich habe mich immer darauf verlassen, dass ich meine eigenen Wege finde."
+- "Als Kind habe ich meine Entscheidungen oft selbst getroffen."
+- "Ich habe es vorgezogen, Dinge alleine zu erledigen, anstatt um Hilfe zu bitten."
+- "Ich habe früh Verantwortung für mich und meine Angelegenheiten übernommen."
+- "Ich habe mich immer als unabhängig und selbstständig empfunden."
+- "Ich habe gelernt, auf meine eigenen Fähigkeiten zu vertrauen."
+- "Ich habe mich nie gerne auf andere verlassen."
+- "Ich habe früh erkannt, dass ich meine eigenen Stärken nutzen muss."
+- "Ich habe immer versucht, meine eigenen Lösungen zu finden, bevor ich andere frage."
+tags:
+- attachment

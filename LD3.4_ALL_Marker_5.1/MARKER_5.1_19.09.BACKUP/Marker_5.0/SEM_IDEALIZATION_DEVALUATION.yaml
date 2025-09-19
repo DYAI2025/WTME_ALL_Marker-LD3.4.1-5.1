@@ -1,0 +1,37 @@
+id: SEM_IDEALIZATION_DEVALUATION
+frame:
+  frame:
+    signal:
+    - du bist das Beste
+    - niemand auf der Welt
+    - nie machst du
+    - so egoistisch
+    - wertlos
+    concept: idealization-devaluation
+    pragmatics: Spaltung
+    narrative: instabile Beziehung
+  signal:
+  - '[Signal placeholder]'
+  concept: '[Concept placeholder]'
+  pragmatics: '[Pragmatics placeholder]'
+  narrative: '[Narrative placeholder]'
+detect_class: DetectSplitting
+activation:
+  rule: ANY 1
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+- Du bist das Beste, was mir je passiert ist.
+- Niemand auf der Welt ist so unglaublich wie du.
+- Alles, was du tust, ist perfekt.
+- Ich könnte mich nicht mehr verlieben.
+- Du enttäuschst mich zutiefst.
+- Nie bist du in der Lage, etwas richtig zu machen.
+- Du bist so egoistisch und lieblos.
+- You were perfect yesterday, but today you’re worthless.
+- One moment I adore you, the next I can’t stand you.
+- I don’t know who you are anymore—one minute angel, the next demon.
+tags:
+- splitting
+- unstable_relationship

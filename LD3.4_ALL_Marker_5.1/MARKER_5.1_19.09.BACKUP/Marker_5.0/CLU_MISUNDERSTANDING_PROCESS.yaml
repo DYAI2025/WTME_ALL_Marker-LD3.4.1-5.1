@@ -1,0 +1,31 @@
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_multimodal_bridge"
+id: CLU_MISUNDERSTANDING_PROCESS
+lang: de
+category: CLUSTER
+description: "Bruch → Erregung → Reparatur(−) (Text×Audio)."
+frame:
+  signal: ["Break/Arousal (Audio) + Repair-Failure (Text)"]
+  concept: "Missverständnis-Prozess (Multimodal)"
+  pragmatics: "Meta-Klärung anstoßen"
+  narrative: "Sequenz, cross-modal"
+composed_of:
+  - ld34_text_social_grammar.SEM_REPAIR_FAILURE_TEXT
+  - ld34_voice_social_grammar.SEM_AROUSAL_SPIKE_AT_BREAK
+  - ld34_voice_social_grammar.SEM_REPAIR_FAILURE_AUDIO
+activation_logic: "SEQUENCE [EXPECTANCY_BREAK + AROUSAL] AND LACK_OF_SUCCESSFUL_REPAIR within 2 turns"
+scoring: { base: 0.65, cap: 1.0 }
+examples:
+  - "Audio: Break→Spike; Text: 'hä? … egal, anderes Thema'."
+  - "Audio: Spike nach Störung; Text: 'Wie bitte? … weiter'."
+  - "Audio: Arousal; Text: 'Wer? … egal, Budget'."
+  - "Audio: Spike; Text: 'Was meinst du? … passt schon'."
+  - "Audio: Break→Spike; Text: 'hä? … anyway, morgen'."
+  - "Audio: Spike; Text: 'Wie bitte? … egal'"
+  - "Audio: Break; Text: 'Wer? … weiter'"
+  - "Audio: Arousal; Text: 'Was? … anderes Thema'"
+tags: [cluster, multimodal, misunderstanding]
+metadata:
+  family: "MISUNDERSTANDING"
+  cross_namespace: true

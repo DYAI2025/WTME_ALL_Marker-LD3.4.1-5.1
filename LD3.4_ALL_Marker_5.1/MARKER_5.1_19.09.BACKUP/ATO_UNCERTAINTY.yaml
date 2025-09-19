@@ -1,0 +1,20 @@
+id: ATO_UNCERTAINTY
+version: "1.0"
+schema_version: LD-3.4
+lang: de
+category: ATOMIC
+description: Atomic pattern for uncertainty expressions
+frame:
+  signal: ["uncertainty","hedge"]
+  concept: "uncertainty_signal"
+  pragmatics: "lexical_indicator"
+  narrative: "surface"
+pattern:
+  - "(?i)\\b(maybe|vielleicht|eventuell|vermutlich|ich glaube|ich denke|nicht sicher|könnte sein)\\b"
+examples:
+  - "Ich bin mir nicht sicher, ob das klappt."
+  - "Vielleicht sollten wir das nochmal prüfen."
+  - "Eventuell verschiebt sich der Launch."
+  - "Ich denke, das könnte funktionieren."
+  - "Nicht sicher, ob wir das so lassen."
+tags: [hedging, uncertainty, atomic]

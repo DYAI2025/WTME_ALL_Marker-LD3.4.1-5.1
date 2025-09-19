@@ -1,0 +1,33 @@
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_multimodal_bridge"
+id: CLU_VERBAL_PROSODY_INCONGRUENCE
+lang: de
+category: CLUSTER
+description: "Wortlaut vs. Prosodie kollidieren (Text×Audio-Inkongruenz)."
+frame:
+  signal: ["Mind. 1 TEXT_SEM + 1 AUDIO_SEM im Nahfenster"]
+  concept: "Inkongruenz (Verbal/Prosodie)"
+  pragmatics: "Subtext erkennen, Klärung einfordern"
+  narrative: "Multimodale Bündelung"
+composed_of:
+  - ld34_text_social_grammar.SEM_REACTION_FORMATION_TEXT
+  - ld34_text_social_grammar.SEM_AFFECT_ISOLATION_TEXT
+  - ld34_voice_social_grammar.SEM_UNCERTAINTY_PROSODY
+  - ld34_voice_social_grammar.SEM_SHAME_PROSODY
+  - ld34_voice_social_grammar.SEM_REACTION_FORMATION_AUDIO
+activation_logic: "AT_LEAST 1 TEXT_SEM AND 1 AUDIO_SEM IN 2 aligned turns"
+scoring: { base: 0.62, cap: 0.98 }
+examples:
+  - "Text: 'War hart, aber gut.' + Audio: (leiser, flach)"
+  - "Text: 'Alles gut!' + Audio: (lachen) bei negativem Kontext"
+  - "Text: Rationalisierung am Verlustthema + Audio: Scham-Prosodie"
+  - "Text: Positivformel + Audio: Unsicherheitsprosodie"
+  - "Text: 'passt' + Audio: Fragekontur + Pause"
+  - "Text: 'kein Problem' + Audio: (flat, leise)"
+  - "Text: 'läuft' + Audio: (Sigh + Pause)"
+  - "Text: 'super' + Audio: (zittrig)"
+tags: [cluster, multimodal, incongruence]
+metadata:
+  family: "INCONGRUENCE"
+  cross_namespace: true

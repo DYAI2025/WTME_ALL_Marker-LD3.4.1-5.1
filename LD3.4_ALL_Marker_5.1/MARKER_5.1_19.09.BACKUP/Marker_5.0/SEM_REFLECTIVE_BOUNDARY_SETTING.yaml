@@ -1,0 +1,27 @@
+id: SEM_REFLECTIVE_BOUNDARY_SETTING
+lang: en
+category: SEMANTIC
+description: "Distanced self-reflection combined with explicit boundary setting."
+frame:
+  signal: ["from the outside I see …", "please mirror …", "no advice", "I need distance"]
+  concept: "Reflective self-demarcation"
+  pragmatics: "Controlled depth, protection"
+  narrative: "Self-clarification with scope"
+composed_of:
+  - ATO_OUTSIDE_PERSPECTIVE
+  - ATO_SET_BOUNDARY
+activation_logic: "ALL WITHIN 3 messages"
+scoring: { base: 1.3, weight: 1.0 }
+window: { messages: 6 }
+examples:
+  - "From the outside I see fear—please mirror that."
+  - "No tips, please—just how it lands on you."
+  - "I need distance; let's keep it factual."
+  - "Mirror back whether that sounds plausible."
+  - "I'm setting a boundary and staying on topic."
+  - "At a distance I see my part—feedback?"
+  - "No coaching, only mirroring, please."
+  - "I decide how deep we go."
+  - "Let's stay in observation mode."
+  - "I'll keep my boundary and listen."
+tags: [semantic, reflection, boundaries]
