@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_ATTENTION_TO_FEELINGS
+frame:
+  signal: ["achtete ich auf","war mir bewusst","mir war klar"]
+  concept: "Aufmerksamkeit für Gefühle"
+  pragmatics: "Meta-Awareness"
+  narrative: "awareness"
+tags: [awareness]
+pattern:
+  regex: '(?i)\b(achte\s+auf\s+meine\s+gefühle|war\s+mir\s+(dessen\s+)?bewusst|mir\s+war\s+klar|ich\s+merke|ich\s+spüre)\b'
+examples:
+  - "Ich achte auf meine Gefühle."
+  - "Ich war mir bewusst, was in mir passiert."
+  - "Mir war klar, dass Angst hochkam."
+  - "Ich merke, wie ich reagiere."
+  - "Ich achte genauer auf innere Signale."
+  - "Ich spüre, was das mit mir macht."
+  - "Mir ist bewusst, dass mich das triggert."
+  - "Ich nehme wahr, wie die Anspannung steigt."
+  - "Ich registriere meine Reaktionen."
+  - "Ich höre besser in mich hinein."
+  - "Ich bemerke kleine Veränderungen."
+  - "Ich achte auf meinen Körper."
+  - "Ich spüre die Nervosität."
+  - "Mir wird klar, wann es kippt."
+  - "Ich merke früh, wenn es zu viel wird."
+

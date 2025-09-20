@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Code Marker Assistant",
+  "version": "1.0.0",
+  "description": "Markiert Texte anhand deiner Marker-Semantik. Persistenz über Reloads.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "dist/background.js", "type": "module" },
+  "action": { "default_popup": "src/popup.html", "default_title": "Marker" },
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["dist/content-script.js"], "run_at": "document_idle" }
+  ],
+  "web_accessible_resources": [
+    { "resources": ["dist/marker_registry.json", "dist/models/**"], "matches": ["<all_urls>"] }
+  ]
+}

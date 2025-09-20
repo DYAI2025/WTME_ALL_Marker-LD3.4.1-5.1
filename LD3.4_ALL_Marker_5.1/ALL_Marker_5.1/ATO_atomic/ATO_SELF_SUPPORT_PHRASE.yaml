@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SELF_SUPPORT_PHRASE
+frame:
+  signal: ["selber Mut machen","selber aufmuntern","mir selbst zur Seite stehen"]
+  concept: "Selbstunterstützung"
+  pragmatics: "Coping-Selbstansprache"
+  narrative: "self-support"
+tags: [support, coping]
+pattern:
+  regex: '(?i)\b(selbst\s+(ermutig|aufmunter)|mir\s+selbst\s+zur\s+seite\s+steh\w+|mich\s+zusammenreißen|ich\s+schaffe\s+das)\b'
+examples:
+  - "Ich versuche, mir selbst Mut zu machen."
+  - "Ich muntere mich selbst auf."
+  - "Da stand ich mir selbst zur Seite."
+  - "Ich sage mir: Ich schaffe das."
+  - "Ich reiße mich zusammen."
+  - "Ich stärke mich innerlich."
+  - "Ich rede mir gut zu."
+  - "Ich halte zu mir."
+  - "Ich baue mich selbst wieder auf."
+  - "Ich erinnere mich daran, dass ich das kann."
+  - "Ich gebe mir Halt."
+  - "Ich atme durch und beruhige mich."
+  - "Ich bleibe freundlich zu mir."
+  - "Ich bin für mich da."
+  - "Ich gönne mir Aufmunterung."
+

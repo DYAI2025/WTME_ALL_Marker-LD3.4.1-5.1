@@ -1,0 +1,35 @@
+{
+  "positive_affect": {
+    "atos": [
+      "ATO_JOY_EXPRESSION",
+      "ATO_POSITIVE_PREFERENCE",
+      "ATO_SATISFACTION_STATE",
+      "ATO_NONVERBAL_JOY_VERB",
+      "ATO_POSITIVE_OUTLOOK_CUE"
+    ],
+    "sems": [
+      "SEM_ACTIVE_ENJOYMENT",
+      "SEM_STATE_OF_HAPPINESS",
+      "SEM_EXPRESSED_SATISFACTION",
+      "SEM_POSITIVE_OUTLOOK",
+      "SEM_REPORTED_NONVERBAL_JOY",
+      "SEM_POSITIVE_EMOTION_REGULATION"
+    ],
+    "hint_id": "HINT_POSITIVE_AFFECT"
+  },
+  "affect_regulation": {
+    "atos": [
+      "ATO_EMOTIONAL_INTENSITY",
+      "ATO_SELF_SUPPORT_PHRASE",
+      "ATO_ACCEPTANCE_PHRASE"
+    ],
+    "sems": [
+      "SEM_EMOTIONAL_OVERWHELM",
+      "SEM_EMOTIONAL_ACCEPTANCE",
+      "SEM_SELF_SUPPORT_STATEMENT"
+    ],
+    "hint_id": "HINT_AFFECT_REGULATION"
+  }
+}
+
+

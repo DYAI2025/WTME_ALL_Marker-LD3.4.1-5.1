@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_FEELING_WORD
+frame:
+  signal: ["Gefühlswort"]
+  concept: "Benennung eines Gefühlszustands"
+  pragmatics: "Affektlabel"
+  narrative: "affect"
+tags: [feeling, affect]
+pattern:
+  regex: '(?i)\b(traur(ig|igkeit)|ängstlich|nervös|unsicher|wütend|glücklich|froh|zufrieden|entspannt|gestresst|überfordert|erleichtert|beschämt|schuldig|frustriert)\b'
+  flags: ["UNICODE"]
+examples:
+  - "Ich bin traurig."
+  - "Ich fühle mich ängstlich."
+  - "Heute bin ich nervös."
+  - "Ich bin unsicher."
+  - "Ich bin wütend."
+  - "Ich bin glücklich."
+  - "Ich fühle mich froh."
+  - "Ich bin zufrieden."
+  - "Ich bin entspannt."
+  - "Ich bin gestresst."
+  - "Ich fühle mich überfordert."
+  - "Ich bin erleichtert."
+  - "Ich schäme mich."
+  - "Ich habe Schuldgefühle."
+  - "Ich bin frustriert."
+

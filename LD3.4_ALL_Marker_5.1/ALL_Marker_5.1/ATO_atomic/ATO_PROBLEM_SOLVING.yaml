@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PROBLEM_SOLVING
+frame:
+  signal: ["Problem lösen","nächster Schritt","Plan machen","konkret angehen"]
+  concept: "Problemlösehandlung"
+  pragmatics: "Planung und Umsetzung"
+  narrative: "change"
+tags: [problem_solving, plan]
+pattern:
+  regex: '(?i)\b(problem\s+l(?:ö|oe)sen|n(?:ä|ae)chster\s+schritt|plan\s+machen|konkret\s+angehen|vorgehen\s+festlegen|schritte\s+definieren|umsetzungsplan)\b'
+examples:
+  - "Ich will das Problem lösen."
+  - "Der nächste Schritt ist klar."
+  - "Lass uns einen Plan machen."
+  - "Ich gehe das konkret an."
+  - "Wir legen das Vorgehen fest."
+  - "Ich definiere die Schritte."
+  - "Ich erstelle einen Umsetzungsplan."
+  - "Wir strukturieren das Problem."
+  - "Ich zerlege es in Teilaufgaben."
+  - "Ich setze Prioritäten."
+  - "Ich kläre Blocker und Abhängigkeiten."
+  - "Ich plane die nächsten zwei Schritte."
+  - "Wir bestimmen Verantwortlichkeiten."
+  - "Ich bringe Ordnung in die Aufgaben."
+  - "Ich mache das lösungsorientiert."
+

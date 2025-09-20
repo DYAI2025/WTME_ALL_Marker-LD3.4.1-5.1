@@ -1,0 +1,75 @@
+[
+  {
+    "id": "ATO_ACTION_ORIENTATION",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "ATO_DISENGAGEMENT_LANGUAGE",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "ATO_DIZZINESS_DESCRIPTION",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "ATO_EMOTIONAL_INTENSITY",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "ATO_RESIGNATION_METAPHOR",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "ATO_SELF_EFFICACY_ASSERTION",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "ATO_SHUTDOWN_PHYSIOLOGY",
+    "type": "ATO",
+    "composed_of": []
+  },
+  {
+    "id": "CLU_INTUITION_SELF_EFFICACY",
+    "type": "CLU",
+    "composed_of": [
+      "SEM_POSITIVE_SELF_EFFICACY"
+    ]
+  },
+  {
+    "id": "CLU_INTUITION_SHUTDOWN",
+    "type": "CLU",
+    "composed_of": [
+      "SEM_SHUTDOWN_EPISODE"
+    ]
+  },
+  {
+    "id": "SEM_POSITIVE_SELF_EFFICACY",
+    "type": "SEM",
+    "composed_of": [
+      "ATO_SELF_EFFICACY_ASSERTION",
+      "ATO_ACTION_ORIENTATION"
+    ]
+  },
+  {
+    "id": "SEM_RESIGNATION_TENDENCY",
+    "type": "SEM",
+    "composed_of": [
+      "ATO_RESIGNATION_METAPHOR",
+      "ATO_DISENGAGEMENT_LANGUAGE"
+    ]
+  },
+  {
+    "id": "SEM_SHUTDOWN_EPISODE",
+    "type": "SEM",
+    "composed_of": [
+      "ATO_SHUTDOWN_PHYSIOLOGY",
+      "ATO_DIZZINESS_DESCRIPTION"
+    ]
+  }
+]

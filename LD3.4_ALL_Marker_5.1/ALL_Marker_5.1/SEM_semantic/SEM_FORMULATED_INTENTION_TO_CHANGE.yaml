@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_FORMULATED_INTENTION_TO_CHANGE
+frame:
+  signal: ["klare Änderungsabsicht"]
+  concept: "Formulierte Intention zur Verhaltensänderung"
+  pragmatics: "Plan→Aktion"
+  narrative: "change"
+composed_of:
+  - ATO_PROACTIVE_INTENTION
+  - ATO_PROBLEM_SOLVING
+activation: { rule: "ANY 2 IN 3 messages", window: 3 }
+scoring: { base: 0.6, weight: 1.05 }
+examples:
+  - "Ich werde Hilfe in Anspruch nehmen – nächster Schritt Termin."
+  - "Ich beginne heute – konkreter Plan folgt."
+  - "Ich habe die Absicht – wir machen das konkret."
+  - "Ich plane X – ich kümmere mich um Y."
+  - "Ich setze um – nächster Schritt ist gesetzt."
+  - "Ich starte – und strukturierte Schritte folgen."
+  - "Ich plane konkret – ich bringe das in Gang."
+  - "Ich mache das verbindlich – nächster Schritt klar."
+  - "Ich stoße das an – Plan liegt vor."
+  - "Ich gehe das an – Schritte definiert."
+  - "Ich beginne mit Umsetzung – Blocker geklärt."
+  - "Ich lege den Start fest – Verantwortungen verteilt."
+  - "Ich kümmere mich – Plan erstellt."
+  - "Ich setze die Punkte um – nächste Steps terminiert."
+  - "Ich bringe Ordnung rein – und handle."
+

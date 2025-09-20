@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SOCIAL_AFFILIATION
+frame:
+  signal: ["soziale Anbindung"]
+  concept: "Bedürfnis nach Zugehörigkeit"
+  pragmatics: "Annäherung"
+  narrative: "social"
+composed_of:
+  - ATO_AFFILIATION_PHRASE
+  - ATO_EMO_HIGH_VALENCE
+activation: { rule: "BOTH IN 1 message" }
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Gesellig und freue mich auf Treffen."
+  - "Kontaktfreudig – das macht mich glücklich."
+  - "Bin gerne mit anderen – fühlt sich gut an."
+  - "Mehr Geselligkeit tut mir gut."
+  - "Ich treffe gerne Menschen – mag das."
+  - "Ich bin gern unter Leuten – das freut mich."
+  - "Ich mag Gesellschaft – ich bin zufrieden."
+  - "Ich bin offen – das macht mir Freude."
+  - "Ich suche Anschluss – das tut gut."
+  - "Ich lade gern ein – das macht mich froh."
+  - "Ich bin teamorientiert – ich freue mich."
+  - "Ich genieße Gesellschaft – ich bin glücklich."
+  - "Ich knüpfe gern Kontakte – ich bin zuversichtlich."
+  - "Ich verbringe gern Zeit – das ist schön."
+  - "Ich fühle mich verbunden – ich bin dankbar."
+

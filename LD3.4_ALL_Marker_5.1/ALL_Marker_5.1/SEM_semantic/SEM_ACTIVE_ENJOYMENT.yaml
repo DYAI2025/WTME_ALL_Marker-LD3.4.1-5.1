@@ -1,0 +1,27 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_ACTIVE_ENJOYMENT
+type: SEM
+frame:
+  concept: "Aktives Genießen einer Aktivität"
+  narrative: "positive_affect"
+  signal: ["gern/mag + Tätigkeit"]
+composed_of: [ATO_POSITIVE_PREFERENCE, ATO_ACTIVITY_VERB]
+activation: { rule: "BOTH IN 1 message" }
+examples:
+  - "Ich **mag** Joggen und **gehe** oft laufen."
+  - "Ich **lerne gerne** neue Dinge."
+  - "Ich **spiele gerne** Schach."
+  - "Ich **koche gerne** für Freunde."
+  - "Ich **lese gern** am Abend."
+  - "Ich **trainiere gerne** im Park."
+  - "Ich **bastle gern** an Elektronikprojekten."
+  - "Ich **mag** es, morgens **spazieren zu gehen**."
+  - "Ich **spiele** am liebsten Gitarre und **mag** den Klang."
+  - "Ich **lerne** Sprachen **gern** in kleinen Schritten."
+  - "Ich **mag** Yoga und **trainiere** regelmäßig."
+  - "Ich **lese gerne** Sachbücher und **lerne** dazu."
+negatives:
+  - "Ich **mag nicht** schwimmen."
+
+

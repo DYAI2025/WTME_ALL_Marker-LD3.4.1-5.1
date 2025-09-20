@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_NONVERBAL_JOY_VERB
+type: ATO
+frame:
+  concept: "Nonverbale Freude (berichtete Beobachtung)"
+  narrative: "positive_affect"
+  signal: ["lacht","lächelt","grinst"]
+pattern:
+  regex: '(?i)\b(lacht|l(ä|ae)chelt|grinst)\b'
+examples:
+  - "Das Kind **lacht** oft."
+  - "Sie **lächelt** spontan."
+  - "Er **grinst** zufrieden."
+  - "Wir **lachen** miteinander."
+  - "Sie **lächeln** einander an."
+  - "Das Publikum **lacht** herzlich."
+  - "Sie **lächelt** vor Freude."
+  - "Er **grinst** breit."
+  - "Alle **lachen** laut."
+  - "Ein **Lächeln** huscht über ihr Gesicht."
+negatives:
+  - "Er **grinst** vor Schmerz."                  # nicht Freude
+tags: [nonverbal]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

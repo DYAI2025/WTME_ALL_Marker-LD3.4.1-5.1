@@ -1,0 +1,35 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_REWARD_RESPONSE
+type: ATO
+frame:
+  concept: "Belohnungsreaktion/Anerkennung/Zuneigung"
+  narrative: "positive_affect"
+  signal: ["Lob","Anerkennung","Zärtlichkeit","Streicheln","Umarmen","Küssen"]
+pattern:
+  regex: '(?i)\b(lob|anerkennung|z(ä|ae)rtlichkeit|streichel\w*|umarm\w*|k(ü|ue)ss\w*)\b'
+examples:
+  - "**Lob** motiviert mich."
+  - "Ich reagiere auf **Anerkennung**."
+  - "**Zärtlichkeit** tut mir gut."
+  - "Ein **Umarmen** beruhigt mich."
+  - "Ein ehrliches **Lob** baut mich auf."
+  - "**Anerkennung** gibt mir Energie."
+  - "**Zärtliche** Berührung beruhigt mich."
+  - "Eine **Umarmung** tröstet mich."
+  - "Ein **Kuss** macht mich glücklich."
+  - "Ein **Schulterklopfen** tut gut."
+  - "**Zuneigung** lässt mich aufblühen."
+  - "**Wertschätzung** fühlt sich gut an."
+  - "Ein **liebes Wort** wirkt wie Belohnung."
+  - "Kleine Gesten der **Zärtlichkeit** bedeuten mir viel."
+negatives:
+  - "Er **küsst** die Tasse."                     # Metapher/Objekt
+  - "Keine **Anerkennung** erhalten."             # Negation
+tags: [reward, social]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

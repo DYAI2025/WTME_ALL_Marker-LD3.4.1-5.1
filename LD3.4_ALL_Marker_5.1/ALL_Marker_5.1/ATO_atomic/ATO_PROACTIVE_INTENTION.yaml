@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PROACTIVE_INTENTION
+frame:
+  signal: ["ernsthafte Absicht","werde damit beginnen","werde Hilfe in Anspruch nehmen","ich plane"]
+  concept: "Konkrete Handlungsabsicht"
+  pragmatics: "Intention→Aktion"
+  narrative: "change"
+tags: [intention, action]
+pattern:
+  regex: '(?i)\b(habe\s+die\s+ernsthafte\s+absicht|werde\s+\w+\s+damit\s+beginnen|werde\s+hilfe\s+in\s+anspruch\s+nehmen|ich\s+plane\s+\w+|ich\s+setze\s+um)\b'
+examples:
+  - "Ich habe die ernsthafte Absicht, das anzugehen."
+  - "Ich werde heute damit beginnen."
+  - "Ich werde Hilfe in Anspruch nehmen."
+  - "Ich plane, einen Termin zu machen."
+  - "Ich setze den ersten Schritt um."
+  - "Ich starte morgen mit X."
+  - "Ich nehme Unterstützung in Anspruch."
+  - "Ich plane konkret, Y zu tun."
+  - "Ich mache das jetzt verbindlich."
+  - "Ich lege den Start fest."
+  - "Ich bringe das in Gang."
+  - "Ich beginne mit der Umsetzung."
+  - "Ich kümmere mich darum."
+  - "Ich gehe das aktiv an."
+  - "Ich stoße das an."
+

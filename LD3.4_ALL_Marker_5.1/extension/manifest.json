@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "LD 3.4 Marker Engine",
+  "version": "1.0.0",
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

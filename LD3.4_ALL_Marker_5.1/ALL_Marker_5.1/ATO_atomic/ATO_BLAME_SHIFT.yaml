@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_BLAME_SHIFT
+frame:
+  signal: ["Schuldzuweisung"]
+  concept: "Schuld nach außen verlagern"
+  pragmatics: "Abwehr / Externalisierung"
+  narrative: "conflict"
+tags: [blame, external]
+pattern:
+  regex: '(?i)\b(wegen\s+dir|deine?r?\s+schuld|du\s+hast\s+das\s+verursacht|ihr\s+habt\s+\w+\s+gemacht|er\s+ist\s+schuld|sie\s+ist\s+schuld|nicht\s+mein\s+fehler)\b'
+examples:
+  - "Wegen dir ist das passiert."
+  - "Das ist deine Schuld."
+  - "Du hast das verursacht."
+  - "Ihr habt das kaputt gemacht."
+  - "Er ist schuld."
+  - "Sie ist schuld."
+  - "Das ist nicht mein Fehler."
+  - "Wegen euch ging alles schief."
+  - "Du hast alles verkompliziert."
+  - "Ihr habt uns reingeritten."
+  - "Wegen ihm sitzen wir jetzt hier."
+  - "Das ist allein deine Verantwortung."
+  - "Ihr habt das verbockt."
+  - "Du hast es ruiniert."
+  - "Die anderen sind schuld, nicht ich."
+

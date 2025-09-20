@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_POSITIVE_SELF_EFFICACY
+frame:
+  signal: ["Selbstwirksamkeit"]
+  concept: "Positive Kompetenzerwartung"
+  pragmatics: "Agency"
+  narrative: "efficacy"
+composed_of: [ATO_EFFICACY_PHRASE]
+justification: "1-ATO-Ausnahme, klarer Diagnostik-Phraseologismus."
+activation: { rule: "ANY 1 IN 1 message" }
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Ich traue mir zu, das zu schaffen."
+  - "Ich kann das Problem gut lösen."
+  - "Ich verlasse mich auf meine Fähigkeiten."
+  - "Ich bin selbst verantwortlich."
+  - "Aus eigener Kraft gelingt mir das."
+  - "Ich weiß, wie ich das angehe."
+  - "Ich bekomme das alleine hin."
+  - "Ich finde eine Lösung."
+  - "Ich habe das schon öfter geschafft."
+  - "Ich kann mich auf mich verlassen."
+  - "Ich handle aus eigener Kraft."
+  - "Ich bin kompetent genug dafür."
+  - "Ich habe die nötige Erfahrung."
+  - "Ich setze meine Stärken ein."
+  - "Ich löse das zuverlässig."
+

@@ -1,0 +1,35 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_CONFLICT_AVOIDANCE
+frame:
+  signal: ["Konfliktvermeidung"]
+  concept: "Harmonie über Konfrontation"
+  pragmatics: "Deeskalation"
+  narrative: "harmony"
+composed_of:
+  - ATO_HARMONY_PHRASE
+  - ATO_DEESCALATION_PHRASE
+activation: { rule: "ANY 2 IN 3 messages", window: 3 }
+metadata:
+  constraints:
+    absent:
+      within_window: 3
+      sem: [SEM_CONFLICT_ESCALATION]
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Kompromissbereit – lass uns runterfahren."
+  - "Ich komme gut mit anderen aus – beruhigen wir das."
+  - "Harmonie ist wichtig – keine Eskalation."
+  - "Ich lasse es nicht an dir aus – wir deeskalieren."
+  - "Rücksicht und ruhiger Ton."
+  - "Ich biete einen Kompromiss an – bleiben wir sachlich."
+  - "Ich ziehe Kooperation vor – fahren wir das runter."
+  - "Ich vermeide Streit – keine Eskalation."
+  - "Ich beruhige die Lage – wir bleiben ruhig."
+  - "Ich will Frieden wahren – sachlich bleiben."
+  - "Wir gehen einen Schritt zurück – entspannen wir das."
+  - "Ich achte auf Miteinander – Ton runter."
+  - "Ich spreche ruhig – entladen wir das nicht."
+  - "Ich meide Provokation – wir dämpfen das."
+  - "Ich suche Ausgleich – lass uns runterfahren."
+

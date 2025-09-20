@@ -1,0 +1,39 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_INTUITION_COMMITMENT
+name: CLU_INTUITION_COMMITMENT
+type: CLU
+frame:
+  signal: ["Commitment-Intuition"]
+  concept: "Commitment vs. Verzögerung – Vorahnung"
+  pragmatics: "Intuition, zustandsbehaftet"
+  narrative: "commitment"
+composed_of: [SEM_CLEAR_COMMITMENT, SEM_DELAYING_MOVE, SEM_PROCRASTINATION_BEHAVIOR]
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+  confirm_window: 5
+  cooldown_messages: 4
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_CLEAR_COMMITMENT, SEM_DELAYING_MOVE] IN confirm_window"
+    multiplier_on_confirm: 1.5
+    decay_window: 7
+telemetry:
+  counter_confirmed: "INT_COMMIT.confirmed"
+  counter_retracted: "INT_COMMIT.retracted"
+  ewma_precision: "INT_COMMIT.ewma_precision"
+scoring: { base: 0.6, weight: 1.1 }
+examples:
+  - "… klare Zusage … danach Verzögerung …"
+  - "… Aufschieben … dann Commitment …"
+  - "… Prokrastination … gefolgt von Zusage …"
+  - "… klare Worte … aber verschleppte Umsetzung …"
+  - "… wiederholt Verzögerung trotz Zusage …"
+  - "… halbherzige Zusage … danach schieben …"
+  - "… klares Ja … kein Follow-up …"
+  - "… Druck auf Commitment … dann Prokrastination …"
+  - "… Zusage im Ton … Taten fehlen …"
+  - "… klare Intention … wiederholt Aufschub …"
+

@@ -1,0 +1,24 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_COMMITMENT_RESOLUTION_PATTERN
+frame:
+  signal: ["Commitment→Hemmnis→Reparatur→Commitment"]
+  concept: "Sequenz: Commitment-Ansage, Verzögerung, Reparatur/Neu-Commitment"
+  pragmatics: "Entscheidungsdynamik stabilisieren"
+  narrative: "commitment_cycle"
+composed_of:
+  sequence:
+    - CLU_INTUITION_COMMITMENT
+    - [SEM_DELAYING_MOVE, SEM_PROCRASTINATION_BEHAVIOR]
+    - [SEM_REPAIR_SEQUENCE, SEM_CLEAR_COMMITMENT]
+activation:
+  rule: "SEQUENCE IN 12 messages"
+  window: 12
+scoring: { base: 0.65, weight: 1.15 }
+examples:
+  - "… Commitment-Vorahnung … Aufschieben … Reparatur … klare Zusage."
+  - "… Zusage … Prokrastination … Entschuldigung/Verständnis … Re-Commit."
+  - "… Druck auf Commitment … Verzögerung … Reparatur … Festlegung."
+  - "… Halbes Ja … Schieben … Reparatur … klares Ja."
+  - "… Intention … Hemmnis … Anerkennung … erneute Zusage."
+

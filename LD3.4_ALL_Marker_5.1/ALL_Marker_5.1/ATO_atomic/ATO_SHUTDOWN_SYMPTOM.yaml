@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SHUTDOWN_SYMPTOM
+frame:
+  signal: ["schwindelig","schwarz vor Augen","nicht mehr hören","taub","nicht mehr bewegen","gelähmt","nicht mehr sprechen"]
+  concept: "Dissoziations-/Shutdown-Symptom"
+  pragmatics: "somatisch"
+  narrative: "shutdown"
+tags: [shutdown, dissociation]
+pattern:
+  regex: '(?i)\b(schwindelig|schwarz\s+vor\s+augen|nichts?\s+mehr\s+hören|taub(?:heit)?|nicht\s+mehr\s+bewegen|gelähmt|nicht\s+mehr\s+sprechen)\b'
+examples:
+  - "Mir wurde schwindelig."
+  - "Es wurde schwarz vor Augen."
+  - "Ich konnte nichts mehr hören."
+  - "Mein Körper war taub."
+  - "Ich war wie gelähmt."
+  - "Ich konnte mich nicht mehr bewegen."
+  - "Ich konnte nicht mehr sprechen."
+  - "Plötzlich war alles taub."
+  - "Es hat mir die Sprache verschlagen."
+  - "Mir wurde so schwindelig, dass ich mich setzen musste."
+  - "Kurz schwarz vor Augen, dann Taubheit."
+  - "Arme wie gelähmt."
+  - "Ich hörte plötzlich nichts mehr."
+  - "Nicht mehr bewegen vor Schreck."
+  - "Sprachlos, wie blockiert."
+

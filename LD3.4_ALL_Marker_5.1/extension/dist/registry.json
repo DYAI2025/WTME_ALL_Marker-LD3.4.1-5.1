@@ -1,0 +1,2005 @@
+[
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_ACCEPTANCE_PHRASE",
+    "frame": {
+      "signal": [
+        "annehmen",
+        "akzeptieren",
+        "zu Gefühlen stehen"
+      ],
+      "concept": "Akzeptanz",
+      "pragmatics": "Emotionsakzeptanz",
+      "narrative": "acceptance"
+    },
+    "tags": [
+      "acceptance"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(annehm\\w+|akzeptier\\w+|zu\\s+meinen\\s+gefühlen\\s+steh\\w+|es\\s+ist\\s+okay,\\s+dass\\s+ich\\s+\\w+)\\b"
+    },
+    "examples": [
+      "Ich akzeptiere meine Angst.",
+      "Ich nehme die Traurigkeit an.",
+      "Ich stehe zu meinen Gefühlen.",
+      "Es ist okay, dass ich nervös bin.",
+      "Ich akzeptierte es, so zu fühlen.",
+      "Ich nehme an, dass diese Sorge da ist.",
+      "Ich akzeptiere, dass Wut in mir auftaucht.",
+      "Ich stehe dazu, verletzt zu sein.",
+      "Es ist okay, dass ich mich überfordert fühle.",
+      "Ich nehme an, dass das gerade schwierig ist.",
+      "Ich akzeptiere meine Grenzen.",
+      "Ich erkenne an, dass die Angst da ist.",
+      "Ich lasse das Gefühl da sein.",
+      "Ich stehe dazu, traurig zu sein.",
+      "Es ist okay, so zu empfinden."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_ACTIVITY_VERB",
+    "type": "ATO",
+    "frame": {
+      "concept": "Tätigkeitsverb (Hobby/Handlung)",
+      "narrative": "activity",
+      "signal": [
+        "gehe",
+        "spiele",
+        "lerne",
+        "arbeite",
+        "koche",
+        "lese",
+        "bastle",
+        "trainiere"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(gehe|spiel\\w*|lern\\w*|arbeit\\w*|koch\\w*|les\\w*|bastel\\w*|trainier\\w*)\\b"
+    },
+    "examples": [
+      "Ich **gehe** gern laufen.",
+      "Ich **lerne** Neues.",
+      "Ich **lese** abends.",
+      "Ich **spiele** regelmäßig Schach.",
+      "Ich **koche** gerne frisch.",
+      "Ich **trainiere** dreimal die Woche.",
+      "Ich **bastle** an kleinen Projekten.",
+      "Ich **arbeite** konzentriert an meinem Ziel.",
+      "Ich **gehe** täglich spazieren.",
+      "Ich **lerne** mit Freude dazu.",
+      "Ich **lese** gerne Sachbücher.",
+      "Ich **spiele** Gitarre.",
+      "Ich **koche** für Freunde.",
+      "Ich **trainiere** Ausdauer."
+    ],
+    "negatives": [
+      "Ich **arbeite nicht** gerne."
+    ],
+    "tags": [
+      "activity"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_AFFILIATION_PHRASE",
+    "frame": {
+      "signal": [
+        "gerne mit anderen",
+        "kontaktfreudig",
+        "gesellig"
+      ],
+      "concept": "Affiliation/Sozialität",
+      "pragmatics": "Annäherung",
+      "narrative": "social"
+    },
+    "tags": [
+      "affiliation"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(gerne\\s+mit\\s+anderen\\s+menschen\\s+zusammen|sehr\\s+kontaktfreudig|gesellig|ich\\s+treffe\\s+gerne\\s+menschen|mag\\s+gesellschaft)\\b"
+    },
+    "examples": [
+      "Ich bin sehr kontaktfreudig.",
+      "Ich bin gesellig.",
+      "Ich bin gerne mit anderen zusammen.",
+      "Ich treffe gerne Menschen.",
+      "Ich mag Gesellschaft.",
+      "Ich knüpfe gern Kontakte.",
+      "Ich bin sehr offen im Umgang.",
+      "Ich suche gern Nähe zu Menschen.",
+      "Ich bin gern unter Leuten.",
+      "Ich genieße gute Gesellschaft.",
+      "Ich verbringe gern Zeit mit Freunden.",
+      "Ich mag soziale Runden.",
+      "Ich bin teamorientiert.",
+      "Ich lade gern Leute ein.",
+      "Ich fühle mich in Gruppen wohl."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_ATTENTION_TO_FEELINGS",
+    "frame": {
+      "signal": [
+        "achtete ich auf",
+        "war mir bewusst",
+        "mir war klar"
+      ],
+      "concept": "Aufmerksamkeit für Gefühle",
+      "pragmatics": "Meta-Awareness",
+      "narrative": "awareness"
+    },
+    "tags": [
+      "awareness"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(achte\\s+auf\\s+meine\\s+gefühle|war\\s+mir\\s+(dessen\\s+)?bewusst|mir\\s+war\\s+klar|ich\\s+merke|ich\\s+spüre)\\b"
+    },
+    "examples": [
+      "Ich achte auf meine Gefühle.",
+      "Ich war mir bewusst, was in mir passiert.",
+      "Mir war klar, dass Angst hochkam.",
+      "Ich merke, wie ich reagiere.",
+      "Ich achte genauer auf innere Signale.",
+      "Ich spüre, was das mit mir macht.",
+      "Mir ist bewusst, dass mich das triggert.",
+      "Ich nehme wahr, wie die Anspannung steigt.",
+      "Ich registriere meine Reaktionen.",
+      "Ich höre besser in mich hinein.",
+      "Ich bemerke kleine Veränderungen.",
+      "Ich achte auf meinen Körper.",
+      "Ich spüre die Nervosität.",
+      "Mir wird klar, wann es kippt.",
+      "Ich merke früh, wenn es zu viel wird."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_BLAME_SHIFT",
+    "frame": {
+      "signal": [
+        "Schuldzuweisung"
+      ],
+      "concept": "Schuld nach außen verlagern",
+      "pragmatics": "Abwehr / Externalisierung",
+      "narrative": "conflict"
+    },
+    "tags": [
+      "blame",
+      "external"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(wegen\\s+dir|deine?r?\\s+schuld|du\\s+hast\\s+das\\s+verursacht|ihr\\s+habt\\s+\\w+\\s+gemacht|er\\s+ist\\s+schuld|sie\\s+ist\\s+schuld|nicht\\s+mein\\s+fehler)\\b"
+    },
+    "examples": [
+      "Wegen dir ist das passiert.",
+      "Das ist deine Schuld.",
+      "Du hast das verursacht.",
+      "Ihr habt das kaputt gemacht.",
+      "Er ist schuld.",
+      "Sie ist schuld.",
+      "Das ist nicht mein Fehler.",
+      "Wegen euch ging alles schief.",
+      "Du hast alles verkompliziert.",
+      "Ihr habt uns reingeritten.",
+      "Wegen ihm sitzen wir jetzt hier.",
+      "Das ist allein deine Verantwortung.",
+      "Ihr habt das verbockt.",
+      "Du hast es ruiniert.",
+      "Die anderen sind schuld, nicht ich."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_CONDITION_CUE",
+    "type": "ATO",
+    "frame": {
+      "concept": "Bedingungs-Konnektor",
+      "narrative": "discourse",
+      "signal": [
+        "wenn",
+        "sobald",
+        "dann wenn",
+        "am ... wenn"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(wenn|sobald|dann\\s+wenn)\\b"
+    },
+    "examples": [
+      "**Wenn** ich mich geborgen fühle ...",
+      "**Sobald** die Sonne scheint ...",
+      "**Wenn** ich Zeit habe, lese ich.",
+      "**Sobald** Ruhe einkehrt, entspanne ich.",
+      "**Wenn** es passt, gehe ich laufen.",
+      "**Sobald** ich ankomme, melde ich mich.",
+      "**Wenn** möglich, treffe ich Freunde.",
+      "**Sobald** ich frei habe, koche ich.",
+      "**Wenn** ich Kraft habe, trainiere ich.",
+      "**Sobald** es hell wird, starte ich."
+    ],
+    "negatives": [
+      "Wir **sind** wenn möglich pünktlich."
+    ],
+    "tags": [
+      "discourse"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_DEESCALATION_PHRASE",
+    "frame": {
+      "signal": [
+        "runterfahren",
+        "beruhigen",
+        "lass uns sachlich bleiben",
+        "keine Eskalation"
+      ],
+      "concept": "Deeskalationssprache",
+      "pragmatics": "Konflikt dämpfen",
+      "narrative": "harmony"
+    },
+    "tags": [
+      "deescalation"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(beruhigen\\s+wir\\s+uns|lass\\s+uns\\s+sachlich\\s+bleiben|keine\\s+eskalation|fahren\\s+wir\\s+runter|ruhig\\s+bleiben|einen\\s+gang\\s+runterschalten|entspannen\\s+wir\\s+das)\\b"
+    },
+    "examples": [
+      "Beruhigen wir uns bitte.",
+      "Lass uns sachlich bleiben.",
+      "Keine Eskalation jetzt.",
+      "Fahren wir das runter.",
+      "Ich möchte ruhig bleiben.",
+      "Wir schalten einen Gang runter.",
+      "Lass uns das entspannen.",
+      "Wir nehmen da Druck raus.",
+      "Ich will den Ton runterfahren.",
+      "Können wir das deeskalieren?",
+      "Ich spreche ruhig weiter.",
+      "Ich will Frieden wahren.",
+      "Wir beruhigen die Lage.",
+      "Ich will das nicht hochschaukeln.",
+      "Wir treten einen Schritt zurück."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_EFFICACY_PHRASE",
+    "frame": {
+      "signal": [
+        "auf meine Fähigkeiten verlassen",
+        "aus eigener Kraft",
+        "traue mir zu",
+        "selbst verantwortlich"
+      ],
+      "concept": "Selbstwirksamkeit",
+      "pragmatics": "Agency",
+      "narrative": "efficacy"
+    },
+    "tags": [
+      "efficacy",
+      "agency"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(auf\\s+meine\\s+f(?:ä|ae)higkeiten\\s+verlassen|aus\\s+eigener\\s+kraft|traue\\s+mir\\s+zu|bin\\s+für\\s+mein\\s+leben\\s+selbst\\s+verantwortlich|ich\\s+kann\\s+\\w+\\s+gut\\s+lösen)\\b"
+    },
+    "examples": [
+      "Ich kann das gut lösen.",
+      "Ich verlasse mich auf meine Fähigkeiten.",
+      "Ich traue mir zu, das zu schaffen.",
+      "Aus eigener Kraft kriege ich das hin.",
+      "Ich bin selbst verantwortlich.",
+      "Ich kann Probleme strukturiert lösen.",
+      "Ich bekomme das alleine hin.",
+      "Ich habe die Fähigkeiten dafür.",
+      "Ich bin mir meiner Stärken bewusst.",
+      "Ich kann das zuverlässig erledigen.",
+      "Ich weiß, wie ich das angehe.",
+      "Ich habe das schon öfter geschafft.",
+      "Ich kann mich auf mich verlassen.",
+      "Ich finde eine Lösung.",
+      "Ich handle aus eigener Kraft."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_EMOTIONAL_INTENSITY",
+    "frame": {
+      "signal": [
+        "überwältigen",
+        "hin- und hergerissen",
+        "intensiv",
+        "stark genug",
+        "extrem"
+      ],
+      "concept": "Gefühlsintensität",
+      "pragmatics": "Skalierung/Affektstärke",
+      "narrative": "affect"
+    },
+    "tags": [
+      "emotion",
+      "intensity"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(überwältig\\w+|hin[-\\s]?und[-\\s]?her\\s?gerissen|intensiv\\w*|stark\\s+genug|völlig\\s+fertig|extrem\\s+\\w+)\\b",
+      "flags": [
+        "UNICODE"
+      ]
+    },
+    "examples": [
+      "Die Angst hat mich überwältigt.",
+      "Ich bin hin und her gerissen.",
+      "Das war intensiv.",
+      "Es war stark genug, mich zu blockieren.",
+      "Die Gefühle waren extrem.",
+      "Ich war völlig überwältigt.",
+      "Es war extrem heftig.",
+      "Die Gefühle waren extrem stark.",
+      "Die Wucht hat mich getroffen.",
+      "So intensiv habe ich das selten erlebt.",
+      "Es war zu stark für mich.",
+      "Ich fühlte mich total überrollt.",
+      "Extrem aufgewühlt.",
+      "Die Intensität war kaum auszuhalten.",
+      "Es hat mich komplett fertig gemacht."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_EMO_HIGH_VALENCE",
+    "frame": {
+      "signal": [
+        "positive Emotion"
+      ],
+      "concept": "Positiv-affektive Ausdrücke",
+      "pragmatics": "Valenz hoch",
+      "narrative": "affect"
+    },
+    "tags": [
+      "emotion",
+      "positive"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(glücklich|froh|freu\\w+ mich|zufrieden|erleichtert|dankbar|begeistert|stolz|hoffnungsvoll|zuversichtlich)\\b"
+    },
+    "examples": [
+      "Ich bin glücklich.",
+      "Ich bin froh.",
+      "Ich freue mich sehr.",
+      "Ich bin zufrieden.",
+      "Ich bin erleichtert.",
+      "Ich bin dankbar.",
+      "Ich bin begeistert.",
+      "Ich bin stolz.",
+      "Ich bin hoffnungsvoll.",
+      "Ich bin zuversichtlich.",
+      "Das freut mich.",
+      "Ich empfinde Freude.",
+      "Ich fühle Dankbarkeit.",
+      "Ich spüre Zuversicht.",
+      "Das macht mich glücklich."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_FEELING_WORD",
+    "frame": {
+      "signal": [
+        "Gefühlswort"
+      ],
+      "concept": "Benennung eines Gefühlszustands",
+      "pragmatics": "Affektlabel",
+      "narrative": "affect"
+    },
+    "tags": [
+      "feeling",
+      "affect"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(traur(ig|igkeit)|ängstlich|nervös|unsicher|wütend|glücklich|froh|zufrieden|entspannt|gestresst|überfordert|erleichtert|beschämt|schuldig|frustriert)\\b",
+      "flags": [
+        "UNICODE"
+      ]
+    },
+    "examples": [
+      "Ich bin traurig.",
+      "Ich fühle mich ängstlich.",
+      "Heute bin ich nervös.",
+      "Ich bin unsicher.",
+      "Ich bin wütend.",
+      "Ich bin glücklich.",
+      "Ich fühle mich froh.",
+      "Ich bin zufrieden.",
+      "Ich bin entspannt.",
+      "Ich bin gestresst.",
+      "Ich fühle mich überfordert.",
+      "Ich bin erleichtert.",
+      "Ich schäme mich.",
+      "Ich habe Schuldgefühle.",
+      "Ich bin frustriert."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_GIVING_UP_PHRASE",
+    "frame": {
+      "signal": [
+        "gebe schnell auf",
+        "Kopf in den Sand"
+      ],
+      "concept": "Resignation",
+      "pragmatics": "Aufgeben",
+      "narrative": "resignation"
+    },
+    "tags": [
+      "resignation"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(gebe?\\s+schnell\\s+auf|kopf\\s+in\\s+den\\s+sand\\s+steck\\w+|lass\\w*\\s+es\\s+sein|brech\\w*\\s+ab|ich\\s+werfe\\s+hin)\\b"
+    },
+    "examples": [
+      "Ich gebe schnell auf.",
+      "Ich stecke den Kopf in den Sand.",
+      "Dann lasse ich es sein.",
+      "Ich breche das Thema ab.",
+      "Ich werfe hin.",
+      "Ich kapituliere.",
+      "Ich lasse es gut sein.",
+      "Ich gebe auf, es hat keinen Sinn.",
+      "Ich lasse davon ab.",
+      "Ich ziehe mich zurück und beende es.",
+      "Ich höre auf, mich anzustrengen.",
+      "Ich schaffe das nicht, ich bin raus.",
+      "Ich gebe mich geschlagen.",
+      "Ich stelle es ein.",
+      "Ich beende es hier."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_HARMONY_PHRASE",
+    "frame": {
+      "signal": [
+        "kompromissbereit",
+        "komme gut mit anderen aus",
+        "Harmonie wichtig"
+      ],
+      "concept": "Harmonie-/Konfliktvermeidung",
+      "pragmatics": "Kooperation",
+      "narrative": "harmony"
+    },
+    "tags": [
+      "harmony"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(kompromissbereit|komme\\s+immer\\s+gut\\s+mit\\s+anderen\\s+aus|w(?:ü|ue)rde\\s+meine\\s+schlechte\\s+laune\\s+nie\\s+an\\s+anderen\\s+auslassen|harmonie\\s+wichtig)\\b"
+    },
+    "examples": [
+      "Ich bin kompromissbereit.",
+      "Ich komme gut mit anderen aus.",
+      "Mir ist Harmonie wichtig.",
+      "Ich lasse schlechte Laune nicht an anderen aus.",
+      "Ich vermeide Streit.",
+      "Ich suche den Ausgleich.",
+      "Ich beruhige lieber, als zu konfrontieren.",
+      "Ich achte auf ein gutes Miteinander.",
+      "Ich bleibe friedlich.",
+      "Ich halte die Stimmung positiv.",
+      "Ich biete einen Kompromiss an.",
+      "Ich deeskaliere lieber.",
+      "Ich ziehe Kooperation der Konfrontation vor.",
+      "Ich meide Provokationen.",
+      "Ich spreche in ruhigem Ton."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_JOY_EXPRESSION",
+    "type": "ATO",
+    "frame": {
+      "concept": "Freude/Glück ausdrücken",
+      "narrative": "positive_affect",
+      "signal": [
+        "Freude",
+        "erfreut",
+        "glücklich",
+        "Spaß",
+        "lacht",
+        "lächelt"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(freude|erfreut\\w*|gl(ü|ue)cklich(?:ste[nmr]?|er|es|e|en)?|spa(ß|ss)\\b|lach\\w*|l(ä|ae)chel\\w*)\\b"
+    },
+    "examples": [
+      "Ich empfinde **Freude**.",
+      "Ich bin **erfreut**.",
+      "Ich war **am glücklichsten**, als ...",
+      "Das macht mir **Spaß**.",
+      "Er **lacht** oft und **lächelt**.",
+      "Ich **freue** mich sehr.",
+      "Das **erfüllt** mich mit **Freude**.",
+      "Ich bin richtig **glücklich**.",
+      "Das macht mir **viel Spaß**.",
+      "Wir **lachen** herzlich.",
+      "Sie **lächelt** mich warm an.",
+      "Ich könnte vor **Freude** platzen.",
+      "Die Stimmung macht mich **glücklich**.",
+      "Ich **lache** aus vollem Herzen.",
+      "Ein **Lächeln** breitet sich aus."
+    ],
+    "negatives": [
+      "Der **Spaßvogel** kam zu spät.",
+      "Das war **glücklich** gewählt.",
+      "Freude **kam nicht** auf."
+    ],
+    "tags": [
+      "affect",
+      "joy"
+    ],
+    "negation_guard": {
+      "regex": "(?i)\\b(nicht|kein|ohne)\\b",
+      "window": 3
+    }
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_NONVERBAL_JOY_VERB",
+    "type": "ATO",
+    "frame": {
+      "concept": "Nonverbale Freude (berichtete Beobachtung)",
+      "narrative": "positive_affect",
+      "signal": [
+        "lacht",
+        "lächelt",
+        "grinst"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(lacht|l(ä|ae)chelt|grinst)\\b"
+    },
+    "examples": [
+      "Das Kind **lacht** oft.",
+      "Sie **lächelt** spontan.",
+      "Er **grinst** zufrieden.",
+      "Wir **lachen** miteinander.",
+      "Sie **lächeln** einander an.",
+      "Das Publikum **lacht** herzlich.",
+      "Sie **lächelt** vor Freude.",
+      "Er **grinst** breit.",
+      "Alle **lachen** laut.",
+      "Ein **Lächeln** huscht über ihr Gesicht."
+    ],
+    "negatives": [
+      "Er **grinst** vor Schmerz."
+    ],
+    "tags": [
+      "nonverbal"
+    ],
+    "negation_guard": {
+      "regex": "(?i)\\b(nicht|kein|ohne)\\b",
+      "window": 3
+    }
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_POSITIVE_OUTLOOK_CUE",
+    "type": "ATO",
+    "frame": {
+      "concept": "Optimismus/Ausblick",
+      "narrative": "positive_affect",
+      "signal": [
+        "positive Lebenseinstellung",
+        "positiv in die Zukunft",
+        "zuversichtlich",
+        "Optimismus"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(positive\\s+lebenseinstellung|positiv\\s+in\\s+die\\s+zukunft|zuversicht\\w*|optimism\\w*)\\b"
+    },
+    "examples": [
+      "Ich habe eine **positive Lebenseinstellung**.",
+      "Ich blicke **positiv in die Zukunft**.",
+      "Ich bin **zuversichtlich**.",
+      "Mehr **Optimismus** tut mir gut.",
+      "Ich bin **zuversichtlich**, dass es klappt.",
+      "Ich **schaue optimistisch** nach vorn.",
+      "Ich gehe **positiv** an die Sache.",
+      "Ich **bleibe zuversichtlich**.",
+      "Ich habe **Hoffnung und Zuversicht**.",
+      "Ich **traue** mir das zu.",
+      "Ich **rechne** mit einem guten Ausgang.",
+      "Ich **glaube** an eine gute Zukunft.",
+      "Ich **sehe die Chancen**.",
+      "Ich **blicke gelassen und positiv** voraus."
+    ],
+    "negatives": [
+      "Das ist **optimistisch** geschätzt."
+    ],
+    "tags": [
+      "outlook"
+    ],
+    "negation_guard": {
+      "regex": "(?i)\\b(nicht|kein|ohne)\\b",
+      "window": 3
+    }
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_POSITIVE_PREFERENCE",
+    "type": "ATO",
+    "frame": {
+      "concept": "Mögen/Vorliebe",
+      "narrative": "positive_affect",
+      "signal": [
+        "gern/gerne",
+        "mag",
+        "bevorzuge",
+        "liebe"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(gern(?:e)?|mag|bevorzug\\w+|ich\\s+liebe\\b)\\b"
+    },
+    "examples": [
+      "Ich **mag** Rätsel.",
+      "Ich lerne **gerne** Neues.",
+      "Ich **bevorzuge** ruhige Abende.",
+      "Ich **liebe** Brettspiele.",
+      "Wir kochen **gern** zusammen.",
+      "Sie **mag** ruhige Musik.",
+      "Ich **bevorzuge** Tee am Morgen.",
+      "Wir **lieben** lange Spaziergänge.",
+      "Ich **mag** es, früh aufzustehen.",
+      "Ich **liebe** es, draußen zu sein.",
+      "Er **bevorzugt** klare Strukturen.",
+      "Ich **mag gerne** Gesellschaftsspiele.",
+      "Ich **mag** warme Farben.",
+      "Ich **bevorzuge** einfache Lösungen."
+    ],
+    "negatives": [
+      "Ich **mag nicht**, wenn ...",
+      "Das **mag** sein."
+    ],
+    "tags": [
+      "preference"
+    ],
+    "negation_guard": {
+      "regex": "(?i)\\b(nicht|kein|ohne)\\b",
+      "window": 3
+    }
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_PROACTIVE_INTENTION",
+    "frame": {
+      "signal": [
+        "ernsthafte Absicht",
+        "werde damit beginnen",
+        "werde Hilfe in Anspruch nehmen",
+        "ich plane"
+      ],
+      "concept": "Konkrete Handlungsabsicht",
+      "pragmatics": "Intention→Aktion",
+      "narrative": "change"
+    },
+    "tags": [
+      "intention",
+      "action"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(habe\\s+die\\s+ernsthafte\\s+absicht|werde\\s+\\w+\\s+damit\\s+beginnen|werde\\s+hilfe\\s+in\\s+anspruch\\s+nehmen|ich\\s+plane\\s+\\w+|ich\\s+setze\\s+um)\\b"
+    },
+    "examples": [
+      "Ich habe die ernsthafte Absicht, das anzugehen.",
+      "Ich werde heute damit beginnen.",
+      "Ich werde Hilfe in Anspruch nehmen.",
+      "Ich plane, einen Termin zu machen.",
+      "Ich setze den ersten Schritt um.",
+      "Ich starte morgen mit X.",
+      "Ich nehme Unterstützung in Anspruch.",
+      "Ich plane konkret, Y zu tun.",
+      "Ich mache das jetzt verbindlich.",
+      "Ich lege den Start fest.",
+      "Ich bringe das in Gang.",
+      "Ich beginne mit der Umsetzung.",
+      "Ich kümmere mich darum.",
+      "Ich gehe das aktiv an.",
+      "Ich stoße das an."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_PROBLEM_EXTERNALIZATION",
+    "frame": {
+      "signal": [
+        "Sache von Ärzten",
+        "kann nicht irgendwer",
+        "nichts hilft",
+        "Umstände sind schuld"
+      ],
+      "concept": "Externalisierung",
+      "pragmatics": "Locus extern",
+      "narrative": "external"
+    },
+    "tags": [
+      "externalization"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(sache\\s+von\\s+(?:ä|ae)rzten|kann\\s+nicht\\s+irgendwer\\s+etwas\\s+tun|nichts?\\s+hilft|liegt\\s+an\\s+den\\s+anderen|die\\s+umst(?:ä|ae)nde\\s+sind\\s+schuld)\\b"
+    },
+    "examples": [
+      "Das ist Sache von Ärzten.",
+      "Kann nicht irgendjemand etwas tun?",
+      "Nichts hilft.",
+      "Das liegt an den anderen.",
+      "Die Umstände sind schuld.",
+      "Die anderen haben das verursacht.",
+      "Ich kann da nichts machen.",
+      "Das System ist schuld.",
+      "Die Lage macht alles unmöglich.",
+      "Es liegt außerhalb meiner Kontrolle.",
+      "Die Verantwortlichen sind die anderen.",
+      "Nur Ärzte können da helfen.",
+      "Die Situation ist schuld.",
+      "Ich bin Opfer der Umstände.",
+      "Das Umfeld verhindert die Lösung."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_PROBLEM_SOLVING",
+    "frame": {
+      "signal": [
+        "Problem lösen",
+        "nächster Schritt",
+        "Plan machen",
+        "konkret angehen"
+      ],
+      "concept": "Problemlösehandlung",
+      "pragmatics": "Planung und Umsetzung",
+      "narrative": "change"
+    },
+    "tags": [
+      "problem_solving",
+      "plan"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(problem\\s+l(?:ö|oe)sen|n(?:ä|ae)chster\\s+schritt|plan\\s+machen|konkret\\s+angehen|vorgehen\\s+festlegen|schritte\\s+definieren|umsetzungsplan)\\b"
+    },
+    "examples": [
+      "Ich will das Problem lösen.",
+      "Der nächste Schritt ist klar.",
+      "Lass uns einen Plan machen.",
+      "Ich gehe das konkret an.",
+      "Wir legen das Vorgehen fest.",
+      "Ich definiere die Schritte.",
+      "Ich erstelle einen Umsetzungsplan.",
+      "Wir strukturieren das Problem.",
+      "Ich zerlege es in Teilaufgaben.",
+      "Ich setze Prioritäten.",
+      "Ich kläre Blocker und Abhängigkeiten.",
+      "Ich plane die nächsten zwei Schritte.",
+      "Wir bestimmen Verantwortlichkeiten.",
+      "Ich bringe Ordnung in die Aufgaben.",
+      "Ich mache das lösungsorientiert."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_REWARD_RESPONSE",
+    "type": "ATO",
+    "frame": {
+      "concept": "Belohnungsreaktion/Anerkennung/Zuneigung",
+      "narrative": "positive_affect",
+      "signal": [
+        "Lob",
+        "Anerkennung",
+        "Zärtlichkeit",
+        "Streicheln",
+        "Umarmen",
+        "Küssen"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(lob|anerkennung|z(ä|ae)rtlichkeit|streichel\\w*|umarm\\w*|k(ü|ue)ss\\w*)\\b"
+    },
+    "examples": [
+      "**Lob** motiviert mich.",
+      "Ich reagiere auf **Anerkennung**.",
+      "**Zärtlichkeit** tut mir gut.",
+      "Ein **Umarmen** beruhigt mich.",
+      "Ein ehrliches **Lob** baut mich auf.",
+      "**Anerkennung** gibt mir Energie.",
+      "**Zärtliche** Berührung beruhigt mich.",
+      "Eine **Umarmung** tröstet mich.",
+      "Ein **Kuss** macht mich glücklich.",
+      "Ein **Schulterklopfen** tut gut.",
+      "**Zuneigung** lässt mich aufblühen.",
+      "**Wertschätzung** fühlt sich gut an.",
+      "Ein **liebes Wort** wirkt wie Belohnung.",
+      "Kleine Gesten der **Zärtlichkeit** bedeuten mir viel."
+    ],
+    "negatives": [
+      "Er **küsst** die Tasse.",
+      "Keine **Anerkennung** erhalten."
+    ],
+    "tags": [
+      "reward",
+      "social"
+    ],
+    "negation_guard": {
+      "regex": "(?i)\\b(nicht|kein|ohne)\\b",
+      "window": 3
+    }
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_SATISFACTION_STATE",
+    "type": "ATO",
+    "frame": {
+      "concept": "Zufriedenheit/Wohlbefinden/Stolz",
+      "narrative": "positive_affect",
+      "signal": [
+        "zufrieden",
+        "wohlbefinden",
+        "stolz",
+        "mir geht es gut",
+        "fühle mich wohl",
+        "tut gut"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(zufrieden|wohlbefinden|stolz|mir\\s+geht\\s+es\\s+gut|ich\\s+f(ü|ue)hle\\s+mich\\s+wohl|tut\\s+mir\\s+gut)\\b"
+    },
+    "examples": [
+      "Ich bin **zufrieden**.",
+      "Mein **Wohlbefinden** ist hoch.",
+      "Ich bin **stolz** auf mich.",
+      "**Mir geht es gut**.",
+      "Das **tut mir gut**.",
+      "Ich bin rundum **zufrieden**.",
+      "Heute geht es mir **richtig gut**.",
+      "Ich **fühle mich wohl** in meiner Haut.",
+      "Das **fühlt sich gut** an.",
+      "Der Spaziergang **tut mir gut**.",
+      "Ich bin **stolz** auf unseren Fortschritt.",
+      "Es **geht mir gut** mit dieser Entscheidung.",
+      "Ich **ruhe in mir**.",
+      "Ich bin **zufrieden** mit dem Ergebnis.",
+      "Es **tut mir richtig gut**, Pause zu machen."
+    ],
+    "negatives": [
+      "Das war **gut** möglich.",
+      "**Guten** Morgen."
+    ],
+    "tags": [
+      "satisfaction",
+      "wellbeing"
+    ],
+    "negation_guard": {
+      "regex": "(?i)\\b(nicht|kein|ohne)\\b",
+      "window": 3
+    }
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_SELF_SUPPORT_PHRASE",
+    "frame": {
+      "signal": [
+        "selber Mut machen",
+        "selber aufmuntern",
+        "mir selbst zur Seite stehen"
+      ],
+      "concept": "Selbstunterstützung",
+      "pragmatics": "Coping-Selbstansprache",
+      "narrative": "self-support"
+    },
+    "tags": [
+      "support",
+      "coping"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(selbst\\s+(ermutig|aufmunter)|mir\\s+selbst\\s+zur\\s+seite\\s+steh\\w+|mich\\s+zusammenreißen|ich\\s+schaffe\\s+das)\\b"
+    },
+    "examples": [
+      "Ich versuche, mir selbst Mut zu machen.",
+      "Ich muntere mich selbst auf.",
+      "Da stand ich mir selbst zur Seite.",
+      "Ich sage mir: Ich schaffe das.",
+      "Ich reiße mich zusammen.",
+      "Ich stärke mich innerlich.",
+      "Ich rede mir gut zu.",
+      "Ich halte zu mir.",
+      "Ich baue mich selbst wieder auf.",
+      "Ich erinnere mich daran, dass ich das kann.",
+      "Ich gebe mir Halt.",
+      "Ich atme durch und beruhige mich.",
+      "Ich bleibe freundlich zu mir.",
+      "Ich bin für mich da.",
+      "Ich gönne mir Aufmunterung."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_SHUTDOWN_SYMPTOM",
+    "frame": {
+      "signal": [
+        "schwindelig",
+        "schwarz vor Augen",
+        "nicht mehr hören",
+        "taub",
+        "nicht mehr bewegen",
+        "gelähmt",
+        "nicht mehr sprechen"
+      ],
+      "concept": "Dissoziations-/Shutdown-Symptom",
+      "pragmatics": "somatisch",
+      "narrative": "shutdown"
+    },
+    "tags": [
+      "shutdown",
+      "dissociation"
+    ],
+    "pattern": {
+      "regex": "(?i)\\b(schwindelig|schwarz\\s+vor\\s+augen|nichts?\\s+mehr\\s+hören|taub(?:heit)?|nicht\\s+mehr\\s+bewegen|gelähmt|nicht\\s+mehr\\s+sprechen)\\b"
+    },
+    "examples": [
+      "Mir wurde schwindelig.",
+      "Es wurde schwarz vor Augen.",
+      "Ich konnte nichts mehr hören.",
+      "Mein Körper war taub.",
+      "Ich war wie gelähmt.",
+      "Ich konnte mich nicht mehr bewegen.",
+      "Ich konnte nicht mehr sprechen.",
+      "Plötzlich war alles taub.",
+      "Es hat mir die Sprache verschlagen.",
+      "Mir wurde so schwindelig, dass ich mich setzen musste.",
+      "Kurz schwarz vor Augen, dann Taubheit.",
+      "Arme wie gelähmt.",
+      "Ich hörte plötzlich nichts mehr.",
+      "Nicht mehr bewegen vor Schreck.",
+      "Sprachlos, wie blockiert."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_SPONTANEITY_CUE",
+    "type": "ATO",
+    "frame": {
+      "concept": "Spontaneitätshinweis",
+      "narrative": "discourse",
+      "signal": [
+        "spontan",
+        "ohne Grund",
+        "von selbst"
+      ]
+    },
+    "pattern": {
+      "regex": "(?i)\\b(spontan|ohne\\s+grund|von\\s+selbst)\\b"
+    },
+    "examples": [
+      "**Spontan** fange ich an zu lachen.",
+      "Er lächelt **ohne Grund**.",
+      "Ich singe **spontan** mit.",
+      "Sie hilft **von selbst**.",
+      "Wir entscheiden **spontan**.",
+      "Er ruft **spontan** an.",
+      "Ich tanze **ohne Grund**.",
+      "Die Freude kommt **von selbst**.",
+      "Ich gehe **spontan** raus.",
+      "Sie lacht **ohne Grund**."
+    ],
+    "negatives": [
+      "Wir planen ein **spontanes** Meeting."
+    ],
+    "tags": [
+      "discourse"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "CLU_DYSREGULATION_PATTERN",
+    "name": "CLU_INTUITION_DYSREGULATION",
+    "type": "CLU",
+    "frame": {
+      "signal": [
+        "Dysregulation"
+      ],
+      "concept": "Schwierigkeiten in Emotionsregulation",
+      "pragmatics": "Risikomuster",
+      "narrative": "affect"
+    },
+    "composed_of": [
+      "SEM_EMOTIONAL_OVERWHELM",
+      "SEM_EMOTIONAL_ACCEPTANCE",
+      "SEM_SELF_SUPPORT_STATEMENT"
+    ],
+    "activation": {
+      "rule": "AT_LEAST 3 SEM_EMOTIONAL_OVERWHELM IN 10 messages",
+      "window": 10,
+      "confirm_window": 6,
+      "cooldown_messages": 4
+    },
+    "metadata": {
+      "family": "AFFECT",
+      "constraints": {
+        "absent": {
+          "within_window": 10,
+          "sem": [
+            "SEM_SELF_SUPPORT_STATEMENT"
+          ]
+        }
+      }
+    },
+    "telemetry": {
+      "counter_confirmed": "AFFECT.counter_confirmed",
+      "counter_retracted": "AFFECT.counter_retracted",
+      "ewma_precision": "AFFECT.ewma_precision"
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.15
+    },
+    "examples": [
+      "… überwältigt … überwältigt … überwältigt … (keine Selbstunterstützung).",
+      "… intensiv + Angst … wiederholt ohne ich schaffe das.",
+      "… stark genug … mehrfach … keine Selbst-Coping-Phrase.",
+      "… hin- und hergerissen … Angst … erneut überwältigt.",
+      "… extrem … unsicher … überwältigt …",
+      "… emotional überrollt … keine Akzeptanz …",
+      "… extrem heftig … wiederholt …",
+      "… Gefühle zu stark … keine Selbsthilfe …",
+      "… intensiver Affekt … keine Regulierung …",
+      "… stark genug blockiert … wiederholt …"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "CLU_INTUITION_COMMITMENT",
+    "name": "CLU_INTUITION_COMMITMENT",
+    "type": "CLU",
+    "frame": {
+      "signal": [
+        "Commitment-Intuition"
+      ],
+      "concept": "Commitment vs. Verzögerung – Vorahnung",
+      "pragmatics": "Intuition, zustandsbehaftet",
+      "narrative": "commitment"
+    },
+    "composed_of": [
+      "SEM_CLEAR_COMMITMENT",
+      "SEM_DELAYING_MOVE",
+      "SEM_PROCRASTINATION_BEHAVIOR"
+    ],
+    "activation": {
+      "rule": "AT_LEAST 2 DISTINCT SEMs IN 5 messages",
+      "confirm_window": 5,
+      "cooldown_messages": 4
+    },
+    "metadata": {
+      "intuition": {
+        "state": "provisional",
+        "confirm_window": 5,
+        "confirm_rule": "AT_LEAST 1 of [SEM_CLEAR_COMMITMENT, SEM_DELAYING_MOVE] IN confirm_window",
+        "multiplier_on_confirm": 1.5,
+        "decay_window": 7
+      }
+    },
+    "telemetry": {
+      "counter_confirmed": "INT_COMMIT.confirmed",
+      "counter_retracted": "INT_COMMIT.retracted",
+      "ewma_precision": "INT_COMMIT.ewma_precision"
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.1
+    },
+    "examples": [
+      "… klare Zusage … danach Verzögerung …",
+      "… Aufschieben … dann Commitment …",
+      "… Prokrastination … gefolgt von Zusage …",
+      "… klare Worte … aber verschleppte Umsetzung …",
+      "… wiederholt Verzögerung trotz Zusage …",
+      "… halbherzige Zusage … danach schieben …",
+      "… klares Ja … kein Follow-up …",
+      "… Druck auf Commitment … dann Prokrastination …",
+      "… Zusage im Ton … Taten fehlen …",
+      "… klare Intention … wiederholt Aufschub …"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "CLU_INTUITION_WELLBEING",
+    "name": "CLU_INTUITION_WELLBEING",
+    "type": "CLU",
+    "frame": {
+      "concept": "Vorahnung stabilen Wohlbefindens",
+      "narrative": "positive_affect",
+      "signal": [
+        "geballte positive SEMs über kurze Zeit"
+      ]
+    },
+    "composed_of": [
+      "HINT_POSITIVE_AFFECT",
+      "SEM_ACTIVE_ENJOYMENT",
+      "SEM_POSITIVE_OUTLOOK",
+      "SEM_EXPRESSED_SATISFACTION",
+      "SEM_REPORTED_NONVERBAL_JOY"
+    ],
+    "activation": {
+      "rule": "AT_LEAST 2 DISTINCT SEMs IN 5 messages",
+      "window": 5,
+      "confirm_window": 6,
+      "cooldown_messages": 2
+    },
+    "metadata": {
+      "family": "AFFECT",
+      "intuition": {
+        "state": "provisional",
+        "confirm_window": 10,
+        "confirm_rule": "AT_LEAST 1 of [SEM_EXPRESSED_SATISFACTION, SEM_POSITIVE_OUTLOOK] IN confirm_window",
+        "decay_window": 14
+      }
+    },
+    "telemetry": {
+      "counter_confirmed": "AFFECT.counter_confirmed",
+      "counter_retracted": "AFFECT.counter_retracted",
+      "ewma_precision": "AFFECT.ewma_precision"
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.1
+    },
+    "examples": [
+      "… **mag** X und **spiele gerne** … **blicke positiv** …",
+      "… **zufrieden** … **lächelt** spontan …",
+      "… **stolz** auf Fortschritt … **positive Lebenseinstellung** …",
+      "… **lacht** mit anderen … **blickt zuversichtlich** nach vorn …",
+      "… **zufrieden** mit Ergebnis … **lächelt** … **optimistisch** …",
+      "… **mag** Training … **geht gern** laufen … **ist zuversichtlich** …",
+      "… **stolz** auf Team … **positive Zukunft** …",
+      "… **lacht** herzlich … **zufrieden** … **blickt positiv** …",
+      "… **spielt gern** … **kulturelle Aktivität** … **optimistisch** …",
+      "… **lächelt** oft … **zufrieden** … **Zuversicht** …",
+      "… **mag** Gartenarbeit … **blickt positiv** auf Woche …",
+      "… **zufrieden** mit Ruhe … **lächelt** ohne Grund …"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "CLU_SHUTDOWN_DISSOCIATION_CLUSTER",
+    "name": "CLU_INTUITION_SHUTDOWN_DISSOCIATION",
+    "type": "CLU",
+    "frame": {
+      "signal": [
+        "Shutdown/Dissociation"
+      ],
+      "concept": "Wiederkehrende dissoziative Zustände",
+      "pragmatics": "Somatik-Risiko",
+      "narrative": "shutdown"
+    },
+    "composed_of": [
+      "SEM_SHUTDOWN_EPISODE"
+    ],
+    "activation": {
+      "rule": "AT_LEAST 2 DISTINCT SEM_SHUTDOWN_EPISODE IN 5 messages",
+      "window": 5,
+      "confirm_window": 4,
+      "cooldown_messages": 4
+    },
+    "telemetry": {
+      "counter_confirmed": "SHUTDOWN.counter_confirmed",
+      "counter_retracted": "SHUTDOWN.counter_retracted",
+      "ewma_precision": "SHUTDOWN.ewma_precision"
+    },
+    "scoring": {
+      "base": 0.65,
+      "weight": 1.2
+    },
+    "examples": [
+      "… schwarz vor Augen … später nichts mehr hören …",
+      "… taub … danach gelähmt …",
+      "… nicht mehr sprechen … nicht mehr bewegen …",
+      "… schwindelig … später taub …",
+      "… gelähmt … schwarz vor Augen …",
+      "… taub … erneut schwarz vor Augen …",
+      "… nicht mehr bewegen … wieder Episode …",
+      "… Rauschen im Ohr … danach gelähmt …",
+      "… Sprachlosigkeit … später Taubheit …",
+      "… Aussetzer … erneut nichts mehr hören …"
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "MEMA_COMMITMENT_RESOLUTION_PATTERN",
+    "frame": {
+      "signal": [
+        "Commitment→Hemmnis→Reparatur→Commitment"
+      ],
+      "concept": "Sequenz: Commitment-Ansage, Verzögerung, Reparatur/Neu-Commitment",
+      "pragmatics": "Entscheidungsdynamik stabilisieren",
+      "narrative": "commitment_cycle"
+    },
+    "composed_of": {
+      "sequence": [
+        "CLU_INTUITION_COMMITMENT",
+        [
+          "SEM_DELAYING_MOVE",
+          "SEM_PROCRASTINATION_BEHAVIOR"
+        ],
+        [
+          "SEM_REPAIR_SEQUENCE",
+          "SEM_CLEAR_COMMITMENT"
+        ]
+      ]
+    },
+    "activation": {
+      "rule": "SEQUENCE IN 12 messages",
+      "window": 12
+    },
+    "scoring": {
+      "base": 0.65,
+      "weight": 1.15
+    },
+    "examples": [
+      "… Commitment-Vorahnung … Aufschieben … Reparatur … klare Zusage.",
+      "… Zusage … Prokrastination … Entschuldigung/Verständnis … Re-Commit.",
+      "… Druck auf Commitment … Verzögerung … Reparatur … Festlegung.",
+      "… Halbes Ja … Schieben … Reparatur … klares Ja.",
+      "… Intention … Hemmnis … Anerkennung … erneute Zusage."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "MEMA_CONFLICT_RESOLUTION_PATTERN",
+    "frame": {
+      "signal": [
+        "Konflikt→Reparatur→Einigung"
+      ],
+      "concept": "Sequenz: aufkeimender Konflikt, Deeskalation, Einigung",
+      "pragmatics": "Bewältigungsdynamik",
+      "narrative": "resolution"
+    },
+    "composed_of": {
+      "sequence": [
+        "CLU_INTUITION_CONFLICT",
+        "SEM_REPAIR_SEQUENCE",
+        [
+          "SEM_CLOSURE_PROTOCOL",
+          "SEM_CLEAR_COMMITMENT"
+        ]
+      ]
+    },
+    "activation": {
+      "rule": "SEQUENCE IN 10 messages",
+      "window": 10
+    },
+    "scoring": {
+      "base": 0.7,
+      "weight": 1.2
+    },
+    "examples": [
+      "… Konflikt-Vorahnung … Entschuldigung+Anerkennung … Abschluss.",
+      "… Eskalationsanzeichen … Reparatursequenz … klare Zusage.",
+      "… Vorwurf/Sarkasmus … Deeskalation … Haken dran.",
+      "… Härtere Töne … Sorry+Verstanden … Einigung.",
+      "… Sticheleien … Reparatur … Commitment."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_ACTIVE_ENJOYMENT",
+    "type": "SEM",
+    "frame": {
+      "concept": "Aktives Genießen einer Aktivität",
+      "narrative": "positive_affect",
+      "signal": [
+        "gern/mag + Tätigkeit"
+      ]
+    },
+    "composed_of": [
+      "ATO_POSITIVE_PREFERENCE",
+      "ATO_ACTIVITY_VERB"
+    ],
+    "activation": {
+      "rule": "BOTH IN 1 message"
+    },
+    "examples": [
+      "Ich **mag** Joggen und **gehe** oft laufen.",
+      "Ich **lerne gerne** neue Dinge.",
+      "Ich **spiele gerne** Schach.",
+      "Ich **koche gerne** für Freunde.",
+      "Ich **lese gern** am Abend.",
+      "Ich **trainiere gerne** im Park.",
+      "Ich **bastle gern** an Elektronikprojekten.",
+      "Ich **mag** es, morgens **spazieren zu gehen**.",
+      "Ich **spiele** am liebsten Gitarre und **mag** den Klang.",
+      "Ich **lerne** Sprachen **gern** in kleinen Schritten.",
+      "Ich **mag** Yoga und **trainiere** regelmäßig.",
+      "Ich **lese gerne** Sachbücher und **lerne** dazu."
+    ],
+    "negatives": [
+      "Ich **mag nicht** schwimmen."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_CONFLICT_AVOIDANCE",
+    "frame": {
+      "signal": [
+        "Konfliktvermeidung"
+      ],
+      "concept": "Harmonie über Konfrontation",
+      "pragmatics": "Deeskalation",
+      "narrative": "harmony"
+    },
+    "composed_of": [
+      "ATO_HARMONY_PHRASE",
+      "ATO_DEESCALATION_PHRASE"
+    ],
+    "activation": {
+      "rule": "ANY 2 IN 3 messages",
+      "window": 3
+    },
+    "metadata": {
+      "constraints": {
+        "absent": {
+          "within_window": 3,
+          "sem": [
+            "SEM_CONFLICT_ESCALATION"
+          ]
+        }
+      }
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Kompromissbereit – lass uns runterfahren.",
+      "Ich komme gut mit anderen aus – beruhigen wir das.",
+      "Harmonie ist wichtig – keine Eskalation.",
+      "Ich lasse es nicht an dir aus – wir deeskalieren.",
+      "Rücksicht und ruhiger Ton.",
+      "Ich biete einen Kompromiss an – bleiben wir sachlich.",
+      "Ich ziehe Kooperation vor – fahren wir das runter.",
+      "Ich vermeide Streit – keine Eskalation.",
+      "Ich beruhige die Lage – wir bleiben ruhig.",
+      "Ich will Frieden wahren – sachlich bleiben.",
+      "Wir gehen einen Schritt zurück – entspannen wir das.",
+      "Ich achte auf Miteinander – Ton runter.",
+      "Ich spreche ruhig – entladen wir das nicht.",
+      "Ich meide Provokation – wir dämpfen das.",
+      "Ich suche Ausgleich – lass uns runterfahren."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_EMOTIONAL_ACCEPTANCE",
+    "frame": {
+      "signal": [
+        "Akzeptanz von Gefühlen"
+      ],
+      "concept": "Aktive Annahme auch negativer Gefühle",
+      "pragmatics": "Regulation",
+      "narrative": "acceptance"
+    },
+    "composed_of": [
+      "ATO_FEELING_WORD",
+      "ATO_ACCEPTANCE_PHRASE"
+    ],
+    "activation": {
+      "rule": "BOTH IN 1 message"
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Ich akzeptiere, ängstlich zu sein.",
+      "Ich nehme meine Trauer an.",
+      "Ich stehe zu meiner Unsicherheit.",
+      "Es ist okay, dass ich nervös bin.",
+      "Ich akzeptierte die Anspannung.",
+      "Ich erkenne die Wut an.",
+      "Ich lasse die Gefühle da sein.",
+      "Ich nehme an, dass mich das verletzt.",
+      "Ich stehe dazu, überfordert zu sein.",
+      "Ich akzeptiere meine Grenzen heute.",
+      "Es ist okay, dass ich traurig bin.",
+      "Ich akzeptiere meine Nervosität.",
+      "Ich nehme meine Angst ernst, ohne zu kämpfen.",
+      "Es darf so sein, wie es ist.",
+      "Ich stehe zu meinem Gefühl der Scham."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_EMOTIONAL_AWARENESS",
+    "frame": {
+      "signal": [
+        "Gefühlsbewusstsein"
+      ],
+      "concept": "Bewusstsein für eigene Gefühle",
+      "pragmatics": "Meta-Awareness",
+      "narrative": "affect"
+    },
+    "composed_of": [
+      "ATO_FEELING_WORD",
+      "ATO_ATTENTION_TO_FEELINGS"
+    ],
+    "activation": {
+      "rule": "BOTH IN 1 message"
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Ich achte auf meine Gefühle und fühle mich ruhiger.",
+      "Mir war klar, dass ich ängstlich wurde.",
+      "Ich merke, dass ich mich unsicher fühle.",
+      "Ich achte darauf, wenn ich traurig bin.",
+      "Ich bin mir bewusst, dass ich nervös bin.",
+      "Ich spüre, wie die Freude kommt.",
+      "Ich bemerke meine Anspannung.",
+      "Mir ist bewusst, dass ich wütend bin.",
+      "Ich registriere mein Unbehagen.",
+      "Ich nehme wahr, dass ich erleichtert bin.",
+      "Ich achte auf meinen Ärger.",
+      "Ich bin mir meiner Trauer bewusst.",
+      "Ich erkenne meine Angst.",
+      "Ich spüre die Nervosität.",
+      "Mir wird klar, wenn es kippt."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_EMOTIONAL_OVERWHELM",
+    "frame": {
+      "signal": [
+        "Überwältigung"
+      ],
+      "concept": "Von Emotionen überrollt",
+      "pragmatics": "Dysregulation",
+      "narrative": "affect"
+    },
+    "composed_of": [
+      "ATO_FEELING_WORD",
+      "ATO_EMOTIONAL_INTENSITY"
+    ],
+    "activation": {
+      "rule": "BOTH IN 1 message"
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.05
+    },
+    "examples": [
+      "Ich war überwältigt vor Angst.",
+      "Traurig und hin und her gerissen.",
+      "Nervös mit intensiven Gefühlen.",
+      "Unsicher und extrem aufgewühlt.",
+      "Die Angst war stark genug, mich zu blockieren.",
+      "Ich fühlte mich extrem traurig.",
+      "Wütend und völlig überwältigt.",
+      "Glücklich, aber die Intensität war zu stark.",
+      "Beschämt und emotional überrollt.",
+      "Frustriert und extrem angespannt.",
+      "Ich war so nervös, es war extrem.",
+      "Überfordert und hin- und hergerissen.",
+      "Ich war erleichtert und doch überwältigt.",
+      "Die Freude war so intensiv, dass ich weinen musste.",
+      "Die Wut kam extrem stark hoch."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_EXPRESSED_SATISFACTION",
+    "type": "SEM",
+    "frame": {
+      "concept": "Ausgedrückte Zufriedenheit/Stolz",
+      "narrative": "positive_affect",
+      "signal": [
+        "zufrieden/stolz + Bezug"
+      ]
+    },
+    "composed_of": [
+      "ATO_SATISFACTION_STATE"
+    ],
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "examples": [
+      "Ich war mit meiner Konzentration **zufrieden**.",
+      "Ich bin **stolz** auf meine Leistung.",
+      "Ich bin **zufrieden** mit dem Ergebnis.",
+      "Ich bin **stolz** auf meinen Fortschritt.",
+      "Wir waren **zufrieden** mit dem Ablauf.",
+      "Ich bin **stolz** auf unser Team.",
+      "Ich bin **zufrieden**, wie es lief.",
+      "Ich bin **stolz**, das geschafft zu haben.",
+      "Ich war **zufrieden** mit der Vorbereitung.",
+      "Ich bin **stolz** auf meine Entwicklung.",
+      "Die Lehrerin war **zufrieden** mit mir."
+    ],
+    "negatives": [
+      "Nicht **zufrieden**stellend."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_EXTERNALIZING_LOCUS_OF_CONTROL",
+    "frame": {
+      "signal": [
+        "externale Zuschreibung"
+      ],
+      "concept": "Ursache/Lösung wird extern verortet",
+      "pragmatics": "Locus extern",
+      "narrative": "control"
+    },
+    "composed_of": {
+      "any_of": [
+        "ATO_PROBLEM_EXTERNALIZATION",
+        "ATO_BLAME_SHIFT"
+      ]
+    },
+    "activation": {
+      "rule": "AT_LEAST 2 IN 3 messages",
+      "window": 3
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.05
+    },
+    "examples": [
+      "Das ist Sache von Ärzten – die anderen sind schuld.",
+      "Nichts hilft – die Umstände verhindern alles.",
+      "Kann nicht irgendwer etwas tun? – Du bist schuld.",
+      "Liegt an den anderen – ich kann nichts tun.",
+      "Die Umstände sind schuld – nichts hilft.",
+      "Ihr habt das verursacht – ich bin machtlos.",
+      "Es ist das System – ich kann nichts ändern.",
+      "Die Lage ist schuld – mir sind die Hände gebunden.",
+      "Er hat das kaputt gemacht – ich konnte nichts tun.",
+      "Die Verantwortlichen sind die anderen – ich nicht.",
+      "Die Situation verhindert Fortschritt – nicht mein Einfluss.",
+      "Nur andere können das lösen – ich nicht.",
+      "Die Umstände sind gegen mich – es geht nicht.",
+      "Ihr habt uns reingeritten – ich war außen vor.",
+      "Die anderen sind schuld, nicht ich."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_FORMULATED_INTENTION_TO_CHANGE",
+    "frame": {
+      "signal": [
+        "klare Änderungsabsicht"
+      ],
+      "concept": "Formulierte Intention zur Verhaltensänderung",
+      "pragmatics": "Plan→Aktion",
+      "narrative": "change"
+    },
+    "composed_of": [
+      "ATO_PROACTIVE_INTENTION",
+      "ATO_PROBLEM_SOLVING"
+    ],
+    "activation": {
+      "rule": "ANY 2 IN 3 messages",
+      "window": 3
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.05
+    },
+    "examples": [
+      "Ich werde Hilfe in Anspruch nehmen – nächster Schritt Termin.",
+      "Ich beginne heute – konkreter Plan folgt.",
+      "Ich habe die Absicht – wir machen das konkret.",
+      "Ich plane X – ich kümmere mich um Y.",
+      "Ich setze um – nächster Schritt ist gesetzt.",
+      "Ich starte – und strukturierte Schritte folgen.",
+      "Ich plane konkret – ich bringe das in Gang.",
+      "Ich mache das verbindlich – nächster Schritt klar.",
+      "Ich stoße das an – Plan liegt vor.",
+      "Ich gehe das an – Schritte definiert.",
+      "Ich beginne mit Umsetzung – Blocker geklärt.",
+      "Ich lege den Start fest – Verantwortungen verteilt.",
+      "Ich kümmere mich – Plan erstellt.",
+      "Ich setze die Punkte um – nächste Steps terminiert.",
+      "Ich bringe Ordnung rein – und handle."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_POSITIVE_EMOTION_REGULATION",
+    "type": "SEM",
+    "frame": {
+      "concept": "Positive Gefühle aktiv erzeugen",
+      "narrative": "positive_affect",
+      "signal": [
+        "positiv/wohl + herbeiführen/erzeugen/kultivieren"
+      ]
+    },
+    "composed_of": [
+      "ATO_SATISFACTION_STATE"
+    ],
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "justification": "Verb der aktiven Steuerung wird über Regex geprüft.",
+    "pattern": {
+      "regex": "(?i)\\b(herbeif(ü|ue)hr\\w*|erzeug\\w*|kultivier\\w*|aufbau\\w*|hochregulier\\w*)\\b"
+    },
+    "examples": [
+      "Ich konnte **positivere Gefühle** gezielt **herbeiführen**.",
+      "Ich **erzeuge** mir **gute Stimmung**.",
+      "Ich **kultiviere** **Zuversicht** im Alltag.",
+      "Ich **baue** mir **Wohlbefinden** auf.",
+      "Ich **reguliere** mich in Richtung **Ruhe**.",
+      "Ich **fördere** bewusst **positive Gefühle**.",
+      "Ich **erzeuge** **Zufriedenheit** durch Pause.",
+      "Ich **steuere** mich hin zu **Gelassenheit**.",
+      "Ich **kultiviere** **Dankbarkeit**.",
+      "Ich **stärke** mein **Wohlbefinden** aktiv."
+    ],
+    "negatives": [
+      "Die Stimmung **entsteht** von allein."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_POSITIVE_OUTLOOK",
+    "type": "SEM",
+    "frame": {
+      "concept": "Optimistischer Ausblick",
+      "narrative": "positive_affect",
+      "signal": [
+        "positive Lebenseinstellung/Zukunft"
+      ]
+    },
+    "composed_of": [
+      "ATO_POSITIVE_OUTLOOK_CUE"
+    ],
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "examples": [
+      "Ich habe eine **positive Lebenseinstellung**.",
+      "Ich **blicke positiv** in die Zukunft.",
+      "Ich bin **zuversichtlich** für die nächsten Schritte.",
+      "Ich **glaube** an einen guten Ausgang.",
+      "Ich **sehe** viele Möglichkeiten.",
+      "Ich **rechne** mit positiven Effekten.",
+      "Ich **bleibe zuversichtlich** trotz Hürden.",
+      "Ich **schaue** optimistisch nach vorn.",
+      "Ich **traue** mir das zu.",
+      "Ich **gehe** positiv an die Aufgabe heran.",
+      "Ich **sehe die Chancen** klarer."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_POSITIVE_SELF_EFFICACY",
+    "frame": {
+      "signal": [
+        "Selbstwirksamkeit"
+      ],
+      "concept": "Positive Kompetenzerwartung",
+      "pragmatics": "Agency",
+      "narrative": "efficacy"
+    },
+    "composed_of": [
+      "ATO_EFFICACY_PHRASE"
+    ],
+    "justification": "1-ATO-Ausnahme, klarer Diagnostik-Phraseologismus.",
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Ich traue mir zu, das zu schaffen.",
+      "Ich kann das Problem gut lösen.",
+      "Ich verlasse mich auf meine Fähigkeiten.",
+      "Ich bin selbst verantwortlich.",
+      "Aus eigener Kraft gelingt mir das.",
+      "Ich weiß, wie ich das angehe.",
+      "Ich bekomme das alleine hin.",
+      "Ich finde eine Lösung.",
+      "Ich habe das schon öfter geschafft.",
+      "Ich kann mich auf mich verlassen.",
+      "Ich handle aus eigener Kraft.",
+      "Ich bin kompetent genug dafür.",
+      "Ich habe die nötige Erfahrung.",
+      "Ich setze meine Stärken ein.",
+      "Ich löse das zuverlässig."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_REPORTED_NONVERBAL_JOY",
+    "type": "SEM",
+    "frame": {
+      "concept": "Berichtetes nonverbales Freudeverhalten",
+      "narrative": "positive_affect",
+      "signal": [
+        "lacht/lächelt + spontan/ohne Grund (optional)"
+      ]
+    },
+    "composed_of": [
+      "ATO_NONVERBAL_JOY_VERB"
+    ],
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "metadata": {
+      "notes": "Textuell berichtete Beobachtung; keine echte Sensorik."
+    },
+    "examples": [
+      "Das Kind **lacht** oft **ohne Grund**.",
+      "Sie **lächelt spontan**.",
+      "Er **grinst** zufrieden vor sich hin.",
+      "Wir **lachen** miteinander und werden ruhiger.",
+      "Sie **lächeln** einander freundlich an.",
+      "Das Publikum **lacht** herzlich.",
+      "Sie **lächelt** vor Freude über die Nachricht.",
+      "Er **grinst** breit nach dem Erfolg.",
+      "Alle **lachen** laut vor Glück.",
+      "Ein **Lächeln** huscht über ihr Gesicht."
+    ],
+    "negatives": [
+      "Er **lacht** aus **Hohn**."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_RESIGNATION_TENDENCY",
+    "frame": {
+      "signal": [
+        "Resignationstendenz"
+      ],
+      "concept": "Neigung zum Aufgeben",
+      "pragmatics": "Aushalten vs. Abbruch",
+      "narrative": "resignation"
+    },
+    "composed_of": [
+      "ATO_GIVING_UP_PHRASE"
+    ],
+    "justification": "1-ATO-Ausnahme, diagnostische Kernformeln.",
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Ich gebe schnell auf.",
+      "Ich stecke den Kopf in den Sand.",
+      "Ich lasse es sein.",
+      "Ich breche ab.",
+      "Ich werfe hin.",
+      "Ich kapituliere.",
+      "Ich beende das Thema.",
+      "Ich gebe mich geschlagen.",
+      "Ich höre auf, mich zu bemühen.",
+      "Ich ziehe mich zurück.",
+      "Ich lasse davon ab.",
+      "Ich stelle es ein.",
+      "Ich bin raus.",
+      "Kein Sinn, ich höre auf.",
+      "Ich mache nicht weiter."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_SELF_SUPPORT_STATEMENT",
+    "frame": {
+      "signal": [
+        "Selbstunterstützung"
+      ],
+      "concept": "Aktive Selbstunterstützung in Belastung",
+      "pragmatics": "Coping",
+      "narrative": "self-support"
+    },
+    "composed_of": [
+      "ATO_SELF_SUPPORT_PHRASE"
+    ],
+    "justification": "1-ATO-Ausnahme gemäß 3.3 erlaubt (CI-Hook).",
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Ich mache mir selbst Mut.",
+      "Ich muntere mich selbst auf.",
+      "Ich stehe mir selbst zur Seite.",
+      "Ich sage mir: Du schaffst das.",
+      "Ich stärke mich innerlich.",
+      "Ich rede mir gut zu.",
+      "Ich erinnere mich an meine Stärken.",
+      "Ich halte zu mir.",
+      "Ich beruhige mich selbst.",
+      "Ich gebe mir Halt.",
+      "Ich baue mich wieder auf.",
+      "Ich bin freundlich zu mir.",
+      "Ich bleibe zugewandt mit mir.",
+      "Ich sporne mich an.",
+      "Ich motiviere mich selbst."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_SHUTDOWN_EPISODE",
+    "frame": {
+      "signal": [
+        "Shutdown-Episode"
+      ],
+      "concept": "Dissoziatives Erlebnis",
+      "pragmatics": "Somatik",
+      "narrative": "shutdown"
+    },
+    "composed_of": [
+      "ATO_SHUTDOWN_SYMPTOM"
+    ],
+    "justification": "1-ATO-Ausnahme für Symptom-Ereignis.",
+    "activation": {
+      "rule": "ANY 1 IN 1 message"
+    },
+    "scoring": {
+      "base": 0.6,
+      "weight": 1.05
+    },
+    "examples": [
+      "Schwarz vor Augen – musste mich setzen.",
+      "Plötzlich nichts mehr hören.",
+      "Körper taub – wie gelähmt.",
+      "So schwindelig, dass ich nicht mehr sprechen konnte.",
+      "Nicht mehr bewegen – alles wie eingefroren.",
+      "Arme wie gelähmt, konnte nicht reagieren.",
+      "Mir wurde schwarz vor Augen, dann Taubheit.",
+      "Ich hörte nur noch ein Rauschen.",
+      "Sprachlos, wie blockiert.",
+      "Plötzlicher Aussetzer, nichts mehr mitbekommen.",
+      "Alles weit weg, als ob ich nicht da wäre.",
+      "Ich konnte mich kaum rühren.",
+      "Mein Körper fühlte sich taub an.",
+      "Die Beine waren wie festgeklebt.",
+      "Die Stimme setzte aus."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_SOCIAL_AFFILIATION",
+    "frame": {
+      "signal": [
+        "soziale Anbindung"
+      ],
+      "concept": "Bedürfnis nach Zugehörigkeit",
+      "pragmatics": "Annäherung",
+      "narrative": "social"
+    },
+    "composed_of": [
+      "ATO_AFFILIATION_PHRASE",
+      "ATO_EMO_HIGH_VALENCE"
+    ],
+    "activation": {
+      "rule": "BOTH IN 1 message"
+    },
+    "scoring": {
+      "base": 0.55,
+      "weight": 1
+    },
+    "examples": [
+      "Gesellig und freue mich auf Treffen.",
+      "Kontaktfreudig – das macht mich glücklich.",
+      "Bin gerne mit anderen – fühlt sich gut an.",
+      "Mehr Geselligkeit tut mir gut.",
+      "Ich treffe gerne Menschen – mag das.",
+      "Ich bin gern unter Leuten – das freut mich.",
+      "Ich mag Gesellschaft – ich bin zufrieden.",
+      "Ich bin offen – das macht mir Freude.",
+      "Ich suche Anschluss – das tut gut.",
+      "Ich lade gern ein – das macht mich froh.",
+      "Ich bin teamorientiert – ich freue mich.",
+      "Ich genieße Gesellschaft – ich bin glücklich.",
+      "Ich knüpfe gern Kontakte – ich bin zuversichtlich.",
+      "Ich verbringe gern Zeit – das ist schön.",
+      "Ich fühle mich verbunden – ich bin dankbar."
+    ]
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_STATE_OF_HAPPINESS",
+    "type": "SEM",
+    "frame": {
+      "concept": "Zustand von Glück mit Bedingung",
+      "narrative": "positive_affect",
+      "signal": [
+        "glücklich + wenn-Kondition"
+      ]
+    },
+    "composed_of": [
+      "ATO_JOY_EXPRESSION",
+      "ATO_CONDITION_CUE"
+    ],
+    "activation": {
+      "rule": "BOTH IN 1 message"
+    },
+    "examples": [
+      "Am **glücklichsten** bin ich, **wenn** ich mich geborgen fühle.",
+      "Ich bin **glücklich**, **wenn** andere glücklich sind.",
+      "Ich bin **glücklich**, **wenn** ich draußen bin.",
+      "Ich bin **am glücklichsten**, **wenn** ich Zeit mit Freunden habe.",
+      "Ich fühle mich **glücklich**, **wenn** ich Musik höre.",
+      "Ich bin **glücklich**, **wenn** die Sonne scheint.",
+      "Ich fühle **Freude**, **wenn** ich etwas Neues lerne.",
+      "Ich bin **glücklich**, **wenn** ich helfen kann.",
+      "Ich werde **glücklich**, **wenn** ich erfolgreich bin.",
+      "Ich bin **glücklich**, **wenn** wir gemeinsam lachen.",
+      "Ich bin **glücklich**, **wenn** ich zur Ruhe komme."
+    ],
+    "negatives": [
+      "Ich **wäre** glücklich, **wenn** es nicht regnete."
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_POSITIVE_OUTLOOK
+type: SEM
+frame:
+  concept: "Optimistischer Ausblick"
+  narrative: "positive_affect"
+  signal: ["positive Lebenseinstellung/Zukunft"]
+composed_of: [ATO_POSITIVE_OUTLOOK_CUE]
+activation: { rule: "ANY 1 IN 1 message" }
+examples:
+  - "Ich habe eine **positive Lebenseinstellung**."
+  - "Ich **blicke positiv** in die Zukunft."
+  - "Ich bin **zuversichtlich** für die nächsten Schritte."
+  - "Ich **glaube** an einen guten Ausgang."
+  - "Ich **sehe** viele Möglichkeiten."
+  - "Ich **rechne** mit positiven Effekten."
+  - "Ich **bleibe zuversichtlich** trotz Hürden."
+  - "Ich **schaue** optimistisch nach vorn."
+  - "Ich **traue** mir das zu."
+  - "Ich **gehe** positiv an die Aufgabe heran."
+  - "Ich **sehe die Chancen** klarer."
+
+

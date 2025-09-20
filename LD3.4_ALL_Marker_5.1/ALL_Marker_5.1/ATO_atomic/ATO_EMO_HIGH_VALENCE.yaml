@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_EMO_HIGH_VALENCE
+frame:
+  signal: ["positive Emotion"]
+  concept: "Positiv-affektive Ausdrücke"
+  pragmatics: "Valenz hoch"
+  narrative: "affect"
+tags: [emotion, positive]
+pattern:
+  regex: '(?i)\b(glücklich|froh|freu\w+ mich|zufrieden|erleichtert|dankbar|begeistert|stolz|hoffnungsvoll|zuversichtlich)\b'
+examples:
+  - "Ich bin glücklich."
+  - "Ich bin froh."
+  - "Ich freue mich sehr."
+  - "Ich bin zufrieden."
+  - "Ich bin erleichtert."
+  - "Ich bin dankbar."
+  - "Ich bin begeistert."
+  - "Ich bin stolz."
+  - "Ich bin hoffnungsvoll."
+  - "Ich bin zuversichtlich."
+  - "Das freut mich."
+  - "Ich empfinde Freude."
+  - "Ich fühle Dankbarkeit."
+  - "Ich spüre Zuversicht."
+  - "Das macht mich glücklich."
+

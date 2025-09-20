@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_EMOTIONAL_OVERWHELM
+frame:
+  signal: ["Überwältigung"]
+  concept: "Von Emotionen überrollt"
+  pragmatics: "Dysregulation"
+  narrative: "affect"
+composed_of:
+  - ATO_FEELING_WORD
+  - ATO_EMOTIONAL_INTENSITY
+activation: { rule: "BOTH IN 1 message" }
+scoring: { base: 0.6, weight: 1.05 }
+examples:
+  - "Ich war überwältigt vor Angst."
+  - "Traurig und hin und her gerissen."
+  - "Nervös mit intensiven Gefühlen."
+  - "Unsicher und extrem aufgewühlt."
+  - "Die Angst war stark genug, mich zu blockieren."
+  - "Ich fühlte mich extrem traurig."
+  - "Wütend und völlig überwältigt."
+  - "Glücklich, aber die Intensität war zu stark."
+  - "Beschämt und emotional überrollt."
+  - "Frustriert und extrem angespannt."
+  - "Ich war so nervös, es war extrem."
+  - "Überfordert und hin- und hergerissen."
+  - "Ich war erleichtert und doch überwältigt."
+  - "Die Freude war so intensiv, dass ich weinen musste."
+  - "Die Wut kam extrem stark hoch."
+

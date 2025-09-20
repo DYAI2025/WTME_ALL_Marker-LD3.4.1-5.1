@@ -1,0 +1,27 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_REPORTED_NONVERBAL_JOY
+type: SEM
+frame:
+  concept: "Berichtetes nonverbales Freudeverhalten"
+  narrative: "positive_affect"
+  signal: ["lacht/lächelt + spontan/ohne Grund (optional)"]
+composed_of: [ATO_NONVERBAL_JOY_VERB]
+activation: { rule: "ANY 1 IN 1 message" }
+metadata:
+  notes: "Textuell berichtete Beobachtung; keine echte Sensorik."
+examples:
+  - "Das Kind **lacht** oft **ohne Grund**."
+  - "Sie **lächelt spontan**."
+  - "Er **grinst** zufrieden vor sich hin."
+  - "Wir **lachen** miteinander und werden ruhiger."
+  - "Sie **lächeln** einander freundlich an."
+  - "Das Publikum **lacht** herzlich."
+  - "Sie **lächelt** vor Freude über die Nachricht."
+  - "Er **grinst** breit nach dem Erfolg."
+  - "Alle **lachen** laut vor Glück."
+  - "Ein **Lächeln** huscht über ihr Gesicht."
+negatives:
+  - "Er **lacht** aus **Hohn**."  # nicht Freude
+
+

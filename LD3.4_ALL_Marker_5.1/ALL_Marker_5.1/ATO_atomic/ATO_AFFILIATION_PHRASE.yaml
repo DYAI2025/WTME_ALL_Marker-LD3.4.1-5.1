@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_AFFILIATION_PHRASE
+frame:
+  signal: ["gerne mit anderen","kontaktfreudig","gesellig"]
+  concept: "Affiliation/Sozialität"
+  pragmatics: "Annäherung"
+  narrative: "social"
+tags: [affiliation]
+pattern:
+  regex: '(?i)\b(gerne\s+mit\s+anderen\s+menschen\s+zusammen|sehr\s+kontaktfreudig|gesellig|ich\s+treffe\s+gerne\s+menschen|mag\s+gesellschaft)\b'
+examples:
+  - "Ich bin sehr kontaktfreudig."
+  - "Ich bin gesellig."
+  - "Ich bin gerne mit anderen zusammen."
+  - "Ich treffe gerne Menschen."
+  - "Ich mag Gesellschaft."
+  - "Ich knüpfe gern Kontakte."
+  - "Ich bin sehr offen im Umgang."
+  - "Ich suche gern Nähe zu Menschen."
+  - "Ich bin gern unter Leuten."
+  - "Ich genieße gute Gesellschaft."
+  - "Ich verbringe gern Zeit mit Freunden."
+  - "Ich mag soziale Runden."
+  - "Ich bin teamorientiert."
+  - "Ich lade gern Leute ein."
+  - "Ich fühle mich in Gruppen wohl."
+

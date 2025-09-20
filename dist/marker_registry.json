@@ -1,0 +1,827 @@
+[
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_ACTION_ORIENTATION",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Handlungsorientierung",
+      "narrative": "agency",
+      "signal": [
+        "ich werde",
+        "ich setze um",
+        "ich packe an"
+      ]
+    },
+    "examples": [
+      "Ich werde den Plan jetzt sofort umsetzen.",
+      "Ich packe das Thema proaktiv an.",
+      "Ich setze mir heute noch konkrete Schritte.",
+      "Ich gehe direkt in die Umsetzung.",
+      "Ich plane den ersten Sprint selbst.",
+      "Ich priorisiere das Projekt und lege los.",
+      "Ich schreite gleich zur Tat.",
+      "Ich mache den Termin selbst klar.",
+      "Ich koordiniere die Aufgaben eigenständig.",
+      "Ich strukturiere den nächsten Release und starte.",
+      "Ich bringe das Angebot heute noch raus.",
+      "Ich sammle die Daten und analysiere sie persönlich.",
+      "Ich bereite den Workshop vor und führe ihn durch.",
+      "Ich entscheide mich jetzt und handle.",
+      "Ich initiiere direkt ein Kick-off.",
+      "Ich setze die Änderungen noch in dieser Woche um.",
+      "Ich schreibe die Stakeholder gleich an.",
+      "Ich führe das Update selbstständig aus.",
+      "Ich stelle die Ressourcen zusammen und starte.",
+      "Ich teste die Hypothese sofort mit einem Experiment."
+    ],
+    "negatives": [
+      "Ich warte erst einmal ab.",
+      "Ich hoffe, dass jemand anderes startet.",
+      "Vielleicht sollten wir nichts überstürzen.",
+      "Ich beobachte, wie sich das entwickelt.",
+      "Ich möchte darüber schlafen, bevor ich handle.",
+      "Ich lasse das Team entscheiden.",
+      "Ich verschiebe das Projekt auf später.",
+      "Ich bin mir unsicher, was ich tun soll.",
+      "Ich denke, wir sollten weitere Meinungen einholen.",
+      "Vielleicht erledigt sich das Problem von selbst.",
+      "Ich bleibe erstmal passiv.",
+      "Ich traue mich nicht, den nächsten Schritt zu gehen.",
+      "Ich weiß nicht, ob ich handeln sollte.",
+      "Ich will keine Verantwortung übernehmen.",
+      "Ich bleibe lieber in der Beobachterrolle.",
+      "Ich erwähne das Thema nur im Bericht.",
+      "Ich reiche das weiter nach oben.",
+      "Ich warte, bis wir mehr Informationen haben.",
+      "Ich werde erst reagieren, wenn jemand fragt.",
+      "Ich halte mich im Hintergrund."
+    ],
+    "tags": [
+      "agency",
+      "initiative"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot"
+    },
+    "source": "markers/ATO_ACTION_ORIENTATION.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_DISENGAGEMENT_LANGUAGE",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Rückzugssprache",
+      "narrative": "withdrawal",
+      "signal": [
+        "egal",
+        "keine Lust",
+        "lasse laufen",
+        "bringt nichts"
+      ]
+    },
+    "examples": [
+      "Mir ist das Ganze inzwischen egal.",
+      "Ich habe keine Lust mehr, mich zu bemühen.",
+      "Ich lasse das einfach laufen, es bringt nichts.",
+      "Ich ziehe mich zurück, das ist mir zu viel.",
+      "Ich halte mich raus, das kostet nur Energie.",
+      "Ich lasse es sein, der Aufwand lohnt nicht.",
+      "Ich steige aus, bevor ich noch mehr Kraft verliere.",
+      "Ich bleibe passiv, weil es eh nicht klappt.",
+      "Ich verabschiede mich innerlich von dem Projekt.",
+      "Ich lasse die Verantwortung los.",
+      "Ich distanziere mich vom Thema.",
+      "Ich ziehe mich still zurück.",
+      "Ich schaue nur noch zu, wie es ausgeht.",
+      "Ich verschwinde aus der Diskussion.",
+      "Ich halte mich komplett raus.",
+      "Ich lasse mich treiben, ohne Erwartungen.",
+      "Ich entziehe mich dem Stress.",
+      "Ich lasse die Kollegen machen.",
+      "Ich dämme meine Beteiligung ein.",
+      "Ich gebe keine Energie mehr hinein."
+    ],
+    "negatives": [
+      "Ich bringe mich weiterhin aktiv ein.",
+      "Ich bleibe dran, selbst wenn es schwer ist.",
+      "Ich setze meine Energie bewusst ein.",
+      "Ich übernehme Verantwortung für das Ergebnis.",
+      "Ich unterstütze das Team nach Kräften.",
+      "Ich bleibe engagiert und sichtbar.",
+      "Ich gehe mit voller Kraft rein.",
+      "Ich gebe Gas und halte nicht an.",
+      "Ich bin motiviert, weiterzumachen.",
+      "Ich bleibe neugierig und stelle Fragen.",
+      "Ich mische mich bewusst ein.",
+      "Ich nehme die Herausforderung an.",
+      "Ich investiere weiter Energie.",
+      "Ich bleibe engagiert, bis es geschafft ist.",
+      "Ich fokussiere mich auf die Lösung.",
+      "Ich bleibe am Projekt dran.",
+      "Ich halte an meiner Präsenz fest.",
+      "Ich bleibe mit Herzblut dabei.",
+      "Ich bin voller Tatendrang.",
+      "Ich bleibe aktiv beteiligt."
+    ],
+    "tags": [
+      "withdrawal",
+      "language"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot"
+    },
+    "source": "markers/ATO_DISENGAGEMENT_LANGUAGE.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_DIZZINESS_DESCRIPTION",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Schwindelbeschreibungen",
+      "narrative": "overwhelm",
+      "signal": [
+        "schwindelig",
+        "benommen",
+        "taumeln",
+        "kreiseln"
+      ]
+    },
+    "examples": [
+      "Mir ist plötzlich ganz schwindelig geworden.",
+      "Ich taumle wie auf einem Schiff.",
+      "Ich fühle mich völlig benommen.",
+      "Der Raum fängt an zu kreiseln.",
+      "Ich schwanke und kann kaum stehen.",
+      "Mir wird drehend übel.",
+      "Ich sehe alles schwimmen.",
+      "Ich laufe wie auf Watte.",
+      "Ich verliere die Balance.",
+      "Ich kippe fast um vor Schwindel.",
+      "Mir dreht sich der Kopf.",
+      "Ich lande im freien Fall.",
+      "Ich kann die Richtung nicht mehr halten.",
+      "Ich fühle mich schwankend wie im Sturm.",
+      "Alles flimmert vor meinen Augen.",
+      "Ich wackle wie auf einem Boot.",
+      "Ich ringe nach Halt, weil mir schwindelt.",
+      "Ich sehe Punkte und Linien kreisen.",
+      "Ich stütze mich ab, sonst falle ich.",
+      "Die Welt eiert um mich herum."
+    ],
+    "negatives": [
+      "Ich stehe fest auf beiden Beinen.",
+      "Ich fühle mich stabil und sicher.",
+      "Ich habe klare Orientierung.",
+      "Ich kann sofort losrennen.",
+      "Ich bleibe ruhig und fokussiert.",
+      "Ich habe keine Gleichgewichtsprobleme.",
+      "Ich halte die Balance ohne Mühe.",
+      "Ich fühle mich wach und klar.",
+      "Ich bewege mich zielgerichtet.",
+      "Ich habe eine ruhige Atmung.",
+      "Ich bin geerdet und stabil.",
+      "Ich schwimme gleichmäßig und gerade.",
+      "Ich gehe sicher eine Treppe hinunter.",
+      "Ich halte mich aufrecht ohne Schwanken.",
+      "Ich nehme alles klar und unverzerrt wahr.",
+      "Ich spüre keine Übelkeit.",
+      "Ich kann frei stehen ohne zu kippen.",
+      "Ich laufe schnurgeradeaus.",
+      "Ich richte meinen Blick ruhig aus.",
+      "Ich bin beweglich und souverän."
+    ],
+    "tags": [
+      "shutdown",
+      "dizziness"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot"
+    },
+    "source": "markers/ATO_DIZZINESS_DESCRIPTION.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_EMOTIONAL_INTENSITY",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Gefühlsintensität",
+      "narrative": "affect",
+      "signal": [
+        "überwältigen",
+        "hin- und hergerissen",
+        "intensiv",
+        "stark genug",
+        "extrem"
+      ]
+    },
+    "examples": [
+      "Die Angst hat mich überwältigt.",
+      "Ich bin völlig hin und her gerissen.",
+      "Das war eine extrem heftige Freude.",
+      "Der Schmerz war so intensiv, dass mir die Luft wegblieb.",
+      "Ich spüre eine überwältigende Trauer in mir.",
+      "Meine Wut kocht geradezu über.",
+      "Die Sehnsucht frisst mich von innen auf.",
+      "Diese Erleichterung war unfassbar stark.",
+      "Ich fühle mich geradezu von den Gefühlen überschwemmt.",
+      "Die Erregung ist kaum auszuhalten.",
+      "Die Enttäuschung trifft mich mit voller Wucht.",
+      "Das Glück rauscht wie ein Sturm durch mich hindurch.",
+      "Ich ertrinke fast in dieser Verzweiflung.",
+      "Der Enthusiasmus trägt mich wie eine Welle.",
+      "Die Angst schießt mir heiß durch den Körper.",
+      "Meine Nervosität ist gerade nicht mehr zu bändigen.",
+      "Ich fühle eine boshafte Hitze in meiner Brust.",
+      "Die Liebe zu ihr ist einfach überwältigend.",
+      "Mich reißt diese Euphorie richtig mit.",
+      "Die Panik rast durch jede Faser meines Körpers."
+    ],
+    "negatives": [
+      "Ich habe überlegt, was wichtig ist.",
+      "Ich bin hin und wieder draußen.",
+      "Eine intensive Pflege ist nötig.",
+      "Ich fand den Film interessant, mehr aber auch nicht.",
+      "Wir haben den Plan sachlich diskutiert.",
+      "Ich bin innerlich ruhig und sortiert.",
+      "Die Arbeit war anstrengend, aber machbar.",
+      "Ich bin noch nicht ganz entschieden.",
+      "Wir haben die Daten intensiv analysiert.",
+      "Ich fühle mich ausreichend informiert.",
+      "Das Training war umfangreich, aber okay.",
+      "Ich bin hin und wieder beim Sport.",
+      "Die Farben sind extrem kräftig gemalt.",
+      "Ich kann stark genug heben, um die Kiste zu tragen.",
+      "Wir brauchen intensivere Beleuchtung am Set.",
+      "Ich überlege noch wegen des Vertrags.",
+      "Das Konzert war laut, aber ohne Emotion.",
+      "Ich habe einen intensiven Kaffee bestellt.",
+      "Die Prüfung war extrem lang, doch ich blieb gelassen.",
+      "Ich fühle mich stabil genug, um weiterzumachen."
+    ],
+    "tags": [
+      "emotion",
+      "intensity"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot",
+      "family": "AFFECT_VALENCE"
+    },
+    "source": "markers/ATO_EMOTIONAL_INTENSITY.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_RESIGNATION_METAPHOR",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Resignationsmetaphern",
+      "narrative": "withdrawal",
+      "signal": [
+        "Kopf in den Sand",
+        "weiße Fahne",
+        "aufgeben"
+      ]
+    },
+    "examples": [
+      "Ich stecke den Kopf in den Sand.",
+      "Ich hisse innerlich schon die weiße Fahne.",
+      "Ich werfe das Handtuch und gebe auf.",
+      "Ich lasse alles einfach an mir vorbeiziehen.",
+      "Ich lege die Waffen nieder.",
+      "Ich lasse mich vom Strom treiben, ohne zu kämpfen.",
+      "Ich kapituliere vor dem Berg an Aufgaben.",
+      "Ich lasse die Schultern hängen und ergebe mich.",
+      "Ich beuge mich dem Schicksal.",
+      "Ich hänge die Segel an den Nagel.",
+      "Ich lasse das Steuer los und drifte.",
+      "Ich gebe mich geschlagen.",
+      "Ich ziehe mich in mein Schneckenhaus zurück.",
+      "Ich lasse die Kontrolle völlig los.",
+      "Ich lasse die Dinge einfach laufen, egal wohin.",
+      "Ich kapitulierte innerlich schon längst.",
+      "Ich knicke ein und lasse los.",
+      "Ich lasse meinen Antrieb einfach versanden.",
+      "Ich richte mich auf Rückzug ein.",
+      "Ich höre auf zu kämpfen und lasse es geschehen."
+    ],
+    "negatives": [
+      "Ich halte durch, bis wir eine Lösung haben.",
+      "Ich kämpfe weiter, egal wie schwer es wird.",
+      "Ich gebe nicht auf, auch wenn es zäh ist.",
+      "Ich suche aktiv nach Unterstützung.",
+      "Ich starte einen neuen Versuch.",
+      "Ich motiviere mich für den nächsten Schritt.",
+      "Ich gehe das Problem frontal an.",
+      "Ich plane eine Gegenstrategie.",
+      "Ich bleibe hartnäckig, bis es klappt.",
+      "Ich lasse nicht locker.",
+      "Ich nehme Kurs auf die Lösung.",
+      "Ich bleibe fokussiert und mache weiter.",
+      "Ich verteidige unsere Position.",
+      "Ich sammle noch einmal Kräfte.",
+      "Ich bleibe am Ball, egal wie müde ich bin.",
+      "Ich suche Wege, wieder ins Spiel zu kommen.",
+      "Ich stehe auf und versuche es erneut.",
+      "Ich bohre weiter nach Antworten.",
+      "Ich will es wissen und kämpfe weiter.",
+      "Ich halte dagegen und bleibe präsent."
+    ],
+    "tags": [
+      "resignation",
+      "metaphor"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot"
+    },
+    "source": "markers/ATO_RESIGNATION_METAPHOR.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_SELF_EFFICACY_ASSERTION",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Selbstwirksamkeitsbekräftigung",
+      "narrative": "agency",
+      "signal": [
+        "ich schaffe das",
+        "ich kann",
+        "ich traue mir"
+      ]
+    },
+    "examples": [
+      "Ich traue mir zu, das zu schaffen.",
+      "Ich bekomme das alleine hin.",
+      "Ich weiß, dass ich diese Aufgabe meistern werde.",
+      "Ich kann mich auf meine Fähigkeiten verlassen.",
+      "Ich habe die Situation im Griff.",
+      "Ich schaffe das locker, wenn ich mich fokussiere.",
+      "Ich packe das mit links.",
+      "Ich traue mir den nächsten Schritt absolut zu.",
+      "Ich kann das Problem lösen, keine Frage.",
+      "Ich bin stark genug, um das durchzuziehen.",
+      "Ich werde die Präsentation souverän halten.",
+      "Ich traue mir den Marathon zu.",
+      "Ich kann mein Team da sicher durchführen.",
+      "Ich bin überzeugt, dass ich bestehen werde.",
+      "Ich schaffe den Launch, egal wie komplex er wird.",
+      "Ich traue mir die Verantwortung an.",
+      "Ich habe die Skills, um das umzusetzen.",
+      "Ich meistere auch diesen Rückschlag.",
+      "Ich kann mich auf mein Bauchgefühl verlassen.",
+      "Ich ziehe das Projekt erfolgreich durch."
+    ],
+    "negatives": [
+      "Ich hoffe, jemand anderes übernimmt das.",
+      "Ich weiß nicht, ob ich bereit bin.",
+      "Ich glaube nicht, dass ich das hinkriege.",
+      "Vielleicht kann ich helfen, aber ich bin unsicher.",
+      "Ich wünschte, mir würde jemand zeigen, wie es geht.",
+      "Ich bin nicht sicher, ob ich das darf.",
+      "Ich brauche dringend Unterstützung dabei.",
+      "Ich fühle mich der Aufgabe nicht gewachsen.",
+      "Ich hoffe, dass wir das gemeinsam hinbekommen.",
+      "Ich bin nicht stark genug, um das durchzustehen.",
+      "Ich weiß nicht, ob ich bestehen werde.",
+      "Ich traue mich kaum, den ersten Schritt zu machen.",
+      "Ich kann mich nicht auf meine Fähigkeiten verlassen.",
+      "Ich scheitere meistens bei so etwas.",
+      "Ich habe Angst, komplett zu versagen.",
+      "Ich glaube, das ist zu viel Verantwortung.",
+      "Ich brauche mehr Zeit, bevor ich das probiere.",
+      "Ich bin skeptisch, ob das etwas wird.",
+      "Ich würde lieber jemanden fragen, der sich auskennt.",
+      "Ich denke nicht, dass ich die Skills habe."
+    ],
+    "tags": [
+      "agency",
+      "self-efficacy"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot"
+    },
+    "source": "markers/ATO_SELF_EFFICACY_ASSERTION.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "ATO_SHUTDOWN_PHYSIOLOGY",
+    "type": "ATO",
+    "lang": "de",
+    "frame": {
+      "concept": "Shutdown-Symptome",
+      "narrative": "overwhelm",
+      "signal": [
+        "schwarz vor Augen",
+        "taub",
+        "Lähmung",
+        "weggetreten"
+      ]
+    },
+    "examples": [
+      "Es wurde mir schwarz vor Augen.",
+      "Ich spüre Taubheit in den Armen.",
+      "Mein Körper fühlt sich plötzlich gelähmt an.",
+      "Mir wird heiß und gleichzeitig kalt.",
+      "Ich höre alles nur noch gedämpft.",
+      "Ich sacke innerlich zusammen und nehme nichts mehr wahr.",
+      "Ich spüre, wie mir die Kraft komplett entgleitet.",
+      "Meine Beine fühlen sich wie Beton an.",
+      "Ich merke, wie ich komplett abdrifte.",
+      "Ich fühle mich plötzlich wie betäubt.",
+      "Ich verliere den Bodenkontakt.",
+      "Ich sehe nur noch verschwommene Flecken.",
+      "Ich kippe innerlich in eine Starre.",
+      "Mein Kopf wird leer und dumpf.",
+      "Ich rutsche in ein Nebelgefühl.",
+      "Ich bin wie eingefroren.",
+      "Ich verliere jede Körperspannung.",
+      "Ich fühle nur noch Leere im Körper.",
+      "Ich bin wie weggeklappt.",
+      "Ich spüre kaum noch meine Hände."
+    ],
+    "negatives": [
+      "Ich bin hellwach und konzentriert.",
+      "Ich fühle mich voller Energie.",
+      "Ich nehme jede Kleinigkeit bewusst wahr.",
+      "Ich bin körperlich entspannt und präsent.",
+      "Ich fühle mich leichtfüßig und frei.",
+      "Ich habe klare Gedanken und Fokus.",
+      "Ich bin lebendig und agil.",
+      "Ich halte die Spannung und bleibe aktiv.",
+      "Ich spüre angenehme Wärme im Körper.",
+      "Ich bin vollkommen bei mir.",
+      "Ich tanze voller Beweglichkeit.",
+      "Ich fühle mich wach und motiviert.",
+      "Ich bin im Flow und voller Antrieb.",
+      "Ich erkenne jedes Detail glasklar.",
+      "Ich fühle mich geerdet und stabil.",
+      "Ich bin völlig in meiner Kraft.",
+      "Ich nehme kraftvolle Energie wahr.",
+      "Ich bewege mich mühelos durch den Raum.",
+      "Ich spüre jeden Atemzug voller Präsenz.",
+      "Ich habe eine lebendige Körperspannung."
+    ],
+    "tags": [
+      "shutdown",
+      "physiology"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot"
+    },
+    "source": "markers/ATO_SHUTDOWN_PHYSIOLOGY.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "CLU_INTUITION_SELF_EFFICACY",
+    "type": "CLU",
+    "lang": "de",
+    "name": "CLU_INTUITION_SELF_EFFICACY",
+    "frame": {
+      "concept": "Intuition: Selbstwirksam",
+      "narrative": "agency",
+      "signal": [
+        "traue mir",
+        "ich packe das",
+        "ich kann"
+      ]
+    },
+    "composed_of": [
+      "SEM_POSITIVE_SELF_EFFICACY"
+    ],
+    "examples": [
+      "Ich traue mir dieses Projekt locker zu und starte gleich mit dem Plan.",
+      "Ich weiß, dass ich das hinbekomme und lege heute los.",
+      "Ich habe die Ressourcen und setze das jetzt eigenständig um.",
+      "Ich traue mir die Rolle zu, ich bereite direkt alles vor.",
+      "Ich kann das stemmen und werde es zeigen.",
+      "Ich packe das mit meinem Team, ich übernehme die Führung.",
+      "Ich weiß, dass ich die Herausforderung meistere und plane die Schritte.",
+      "Ich traue mir die Umsetzung zu und starte die Umsetzung.",
+      "Ich bin überzeugt, dass ich das Ziel erreiche und handle sofort.",
+      "Ich weiß, wie das geht, und beginne ohne zu zögern."
+    ],
+    "negatives": [
+      "Ich weiß nicht, ob ich das kann, ich zögere.",
+      "Vielleicht sollte jemand anderes das übernehmen.",
+      "Ich habe Sorge, dass ich scheitere.",
+      "Ich traue mich nicht, Verantwortung zu übernehmen.",
+      "Ich brauche mehr Mut, bevor ich anfange.",
+      "Ich fühle mich zu unsicher, um zu handeln.",
+      "Ich hoffe, dass mir jemand hilft.",
+      "Ich lasse das lieber ruhen, bevor ich Fehler mache.",
+      "Ich habe Zweifel, dass ich das schaffe.",
+      "Ich kann mir nicht vorstellen, das zu meistern."
+    ],
+    "tags": [
+      "intuition",
+      "agency"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot",
+      "family": "SELF_EFFICACY"
+    },
+    "telemetry": {
+      "counter_confirmed": "SELF_EFFICACY.confirmed",
+      "counter_retracted": "SELF_EFFICACY.retracted",
+      "ewma_precision": "SELF_EFFICACY.precision"
+    },
+    "activation": {
+      "confirm_window": 3,
+      "cooldown_messages": 4
+    },
+    "source": "markers/CLU_INTUITION_SELF_EFFICACY.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "CLU_INTUITION_SHUTDOWN",
+    "type": "CLU",
+    "lang": "de",
+    "name": "CLU_INTUITION_SHUTDOWN",
+    "frame": {
+      "concept": "Intuition: Shutdown",
+      "narrative": "overwhelm",
+      "signal": [
+        "schwarz vor Augen",
+        "weggetreten",
+        "benommen"
+      ]
+    },
+    "composed_of": [
+      "SEM_SHUTDOWN_EPISODE"
+    ],
+    "examples": [
+      "Ich war komplett weggetreten, alles wurde schwarz und ich taumelte.",
+      "Ich klappte innerlich zu und mir wurde schwindelig.",
+      "Ich konnte kaum stehen, es rauschte und ich war wie gelähmt.",
+      "Ich schaltete ab, während mir schwarz vor Augen wurde.",
+      "Ich verlor jeden Halt, der Boden schwankte und ich war weg.",
+      "Ich spürte nichts mehr, alles verschwamm und ich sank zusammen.",
+      "Ich war nur noch Nebel, während mein Körper einfrohr.",
+      "Ich fühlte mich betäubt, die Welt drehte sich und ich kippte fast.",
+      "Ich war nicht mehr ansprechbar, weil mir schwarz wurde.",
+      "Ich driftete weg, während der Raum kreiselte."
+    ],
+    "negatives": [
+      "Ich war erschöpft, aber noch ansprechbar.",
+      "Ich war traurig, doch stand stabil.",
+      "Ich fühlte Stress, blieb jedoch präsent.",
+      "Ich fühlte Druck, aber keine körperliche Starre.",
+      "Ich war nervös, aber nicht benommen.",
+      "Ich war enttäuscht, doch nicht gelähmt.",
+      "Ich hatte Angst, blieb aber handlungsfähig.",
+      "Ich war verärgert, ohne dass mir schwarz wurde.",
+      "Ich fühlte mich gehetzt, aber stabil.",
+      "Ich war überfordert, doch nicht weggetreten."
+    ],
+    "tags": [
+      "intuition",
+      "shutdown"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot",
+      "family": "SHUTDOWN"
+    },
+    "telemetry": {
+      "counter_confirmed": "SHUTDOWN.confirmed",
+      "counter_retracted": "SHUTDOWN.retracted",
+      "ewma_precision": "SHUTDOWN.precision"
+    },
+    "activation": {
+      "confirm_window": 4,
+      "cooldown_messages": 5
+    },
+    "source": "markers/CLU_INTUITION_SHUTDOWN.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_POSITIVE_SELF_EFFICACY",
+    "type": "SEM",
+    "lang": "de",
+    "frame": {
+      "concept": "Zuversichtliche Selbstwirksamkeit",
+      "narrative": "agency",
+      "signal": [
+        "ich traue mir",
+        "ich bekomme das hin",
+        "ich gehe es an"
+      ]
+    },
+    "composed_of": [
+      "ATO_SELF_EFFICACY_ASSERTION",
+      "ATO_ACTION_ORIENTATION"
+    ],
+    "examples": [
+      "Ich traue mir den Jobwechsel zu und packe ihn jetzt an.",
+      "Ich weiß, dass ich das Projekt stemmen kann und starte heute.",
+      "Ich bekomme die Präsentation hin und übe noch heute Abend.",
+      "Ich bin sicher, dass ich die Prüfung schaffe, daher beginne ich den Lernplan.",
+      "Ich kann die Migration durchführen und plane gleich die Schritte.",
+      "Ich traue mir die Moderation zu und setze den Termin auf.",
+      "Ich weiß, dass ich das Team führen kann und bereite das Kick-off vor.",
+      "Ich kann die Fehler beheben und öffne direkt den Code.",
+      "Ich schaffe die Zielvorgabe locker und starte mit dem ersten Task.",
+      "Ich bin überzeugt, dass ich das Training meistere und melde mich an.",
+      "Ich traue mir das Investment zu und analysiere sofort die Zahlen.",
+      "Ich habe die Fähigkeiten und schreibe den Prototyp heute noch.",
+      "Ich kann die Verhandlung führen und entwerfe gleich die Agenda.",
+      "Ich weiß, dass ich das lernen kann und beginne jetzt mit der Übung.",
+      "Ich traue mir die Herausforderung zu und setze mir dafür Meilensteine.",
+      "Ich schaffe die Umstellung, ich plane direkt den Rollout.",
+      "Ich bin sicher, das Gespräch meistern zu können und bereite Leitfragen vor.",
+      "Ich traue mir den Pitch zu, ich entwerfe gleich die Storyline.",
+      "Ich weiß, dass ich bestehen kann und schreibe den Zeitplan.",
+      "Ich kann das Team unterstützen und starte mit dem Controlling."
+    ],
+    "negatives": [
+      "Ich hoffe, dass es irgendwie klappt, aber ich zögere.",
+      "Ich weiß nicht, ob ich das kann, ich lasse es lieber.",
+      "Ich fühle mich zu unsicher, um zu starten.",
+      "Ich traue mir das nicht alleine zu.",
+      "Ich habe Angst, das Projekt zu übernehmen.",
+      "Ich warte auf klare Anweisungen, bevor ich etwas tue.",
+      "Ich bin nicht überzeugt, dass ich das schaffe.",
+      "Ich überlasse das lieber meinen Kolleginnen.",
+      "Ich fühle mich der Aufgabe nicht gewachsen.",
+      "Ich bin passiv, weil ich mir das nicht zutraue.",
+      "Ich verschiebe das auf später, damit jemand helfen kann.",
+      "Ich befürchte, dass ich scheitern werde, also starte ich nicht.",
+      "Ich brauche äußere Motivation, sonst komme ich nicht voran.",
+      "Ich denke, andere sind dafür besser geeignet.",
+      "Ich bin unentschlossen und lasse es auf sich beruhen.",
+      "Ich vermeide es, weil ich mir nichts zutraue.",
+      "Ich zweifle zu sehr, um aktiv zu werden.",
+      "Ich suche erst externe Unterstützung.",
+      "Ich bleibe lieber Zuschauerin.",
+      "Ich lege das Thema auf Eis, bis sich wer meldet."
+    ],
+    "tags": [
+      "agency",
+      "composition"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot",
+      "family": "SELF_EFFICACY"
+    },
+    "source": "markers/SEM_POSITIVE_SELF_EFFICACY.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_RESIGNATION_TENDENCY",
+    "type": "SEM",
+    "lang": "de",
+    "frame": {
+      "concept": "Resignationsneigung",
+      "narrative": "withdrawal",
+      "signal": [
+        "ich gebe auf",
+        "mir egal",
+        "lass laufen"
+      ]
+    },
+    "composed_of": [
+      "ATO_RESIGNATION_METAPHOR",
+      "ATO_DISENGAGEMENT_LANGUAGE"
+    ],
+    "examples": [
+      "Ich stecke den Kopf in den Sand und lasse es einfach laufen.",
+      "Ich hisse die weiße Fahne, mir ist das Ganze egal geworden.",
+      "Ich gebe auf und halte mich komplett raus.",
+      "Ich werfe das Handtuch und distanziere mich vom Projekt.",
+      "Ich lasse mich treiben und verabschiede mich innerlich.",
+      "Ich kapituliere und ziehe mich aus allem zurück.",
+      "Ich gebe mich geschlagen und lasse die Verantwortung los.",
+      "Ich lege die Waffen nieder und investiere keine Energie mehr.",
+      "Ich lasse alles an mir vorbeiziehen und kümmere mich nicht mehr.",
+      "Ich ziehe mich in mein Schneckenhaus zurück und halte mich raus.",
+      "Ich lasse die Schultern hängen und sage innerlich ab.",
+      "Ich kapituliere vor dem Aufwand und lasse das Team allein.",
+      "Ich steige aus der Diskussion aus und lasse es passieren.",
+      "Ich lasse die Dinge laufen, ohne mich einzumischen.",
+      "Ich gebe die Kontrolle ab und bleibe passiv.",
+      "Ich lasse die Verantwortung los und ziehe mich zurück.",
+      "Ich lasse den Prozess versanden und schaue nur zu.",
+      "Ich lasse mich treiben und gebe keine Impulse mehr.",
+      "Ich gebe innerlich auf und lasse mich fallen.",
+      "Ich lasse alles stehen und liegen, weil es nichts bringt."
+    ],
+    "negatives": [
+      "Ich halte weiter dagegen, auch wenn es zäh ist.",
+      "Ich bleibe engagiert und suche aktiv Lösungen.",
+      "Ich motiviere mich, dranzubleiben.",
+      "Ich gebe gerade erst richtig Gas.",
+      "Ich kämpfe für das Thema, bis es klappt.",
+      "Ich halte mich präsent und aktiv.",
+      "Ich lasse den Kopf nicht hängen.",
+      "Ich bleibe dabei, egal wie lange es dauert.",
+      "Ich nehme die Herausforderung ernst und handle.",
+      "Ich bleibe wachsam und greife ein.",
+      "Ich verstärke mein Engagement jetzt erst recht.",
+      "Ich suche Verbündete, statt mich zurückzuziehen.",
+      "Ich gehe auf die anderen zu und bleibe dran.",
+      "Ich ziehe das Thema durch, auch wenn es mühsam ist.",
+      "Ich treibe das Projekt aktiv voran.",
+      "Ich suche mir neue Energie, statt aufzugeben.",
+      "Ich halte den Kurs und bleibe aktiv beteiligt.",
+      "Ich stemme mich gegen die Müdigkeit.",
+      "Ich bleibe sichtbar im Projekt.",
+      "Ich lasse mich nicht abschrecken und mache weiter."
+    ],
+    "tags": [
+      "withdrawal",
+      "composition"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot",
+      "family": "RESIGNATION"
+    },
+    "source": "markers/SEM_RESIGNATION_TENDENCY.yaml"
+  },
+  {
+    "schema": "LeanDeep",
+    "version": "3.4",
+    "id": "SEM_SHUTDOWN_EPISODE",
+    "type": "SEM",
+    "lang": "de",
+    "frame": {
+      "concept": "Shutdown-Episode",
+      "narrative": "overwhelm",
+      "signal": [
+        "schwarz vor Augen",
+        "benommen",
+        "weggetreten"
+      ]
+    },
+    "composed_of": [
+      "ATO_SHUTDOWN_PHYSIOLOGY",
+      "ATO_DIZZINESS_DESCRIPTION"
+    ],
+    "examples": [
+      "Es wurde mir schwarz vor Augen und ich taumelte benommen.",
+      "Ich war wie gelähmt und die Welt drehte sich um mich.",
+      "Ich sackte weg, alles verschwamm und ich konnte kaum stehen.",
+      "Mein Körper wurde taub, mir wurde schwindelig und ich driftete weg.",
+      "Ich hörte nur noch gedämpft und der Boden schwankte.",
+      "Ich fühlte mich völlig leer, während alles anfing zu kreiseln.",
+      "Ich verlor das Gleichgewicht und war wie betäubt.",
+      "Ich spürte keine Hände mehr und taumelte.",
+      "Ich sah nur noch Flecken, während ich in mich zusammensank.",
+      "Ich fror ein, mir wurde schwummerig und ich driftete ab.",
+      "Ich war kaum ansprechbar, weil mir schwarz wurde.",
+      "Ich stand unter Schock, mein Kopf rauschte und ich wackelte.",
+      "Ich spürte nichts mehr und musste mich abstützen.",
+      "Ich verlor jede Körperspannung und der Raum kippte.",
+      "Ich war wie weggeklappt, alles schwamm.",
+      "Ich fühlte nur noch Taubheit, während ich ins Schwanken geriet.",
+      "Ich hörte mich nur noch aus der Ferne und verlor die Balance.",
+      "Ich drifte in eine Leere, das Bild verschwimmt.",
+      "Ich merkte, wie ich innerlich abschaltete und kaum stehen konnte.",
+      "Ich war wie eingefroren und musste mich festhalten, damit ich nicht falle."
+    ],
+    "negatives": [
+      "Ich war nervös, aber vollkommen präsent.",
+      "Mir war flau, doch ich blieb stabil.",
+      "Ich fühlte starken Stress, blieb jedoch handlungsfähig.",
+      "Ich bekam weiche Knie, aber kein Schwindel.",
+      "Ich war angespannt, jedoch wach.",
+      "Ich musste tief durchatmen, blieb aber klar.",
+      "Ich fühlte mich müde, doch nicht benommen.",
+      "Ich war erschöpft, aber körperlich ansprechbar.",
+      "Ich war sehr traurig, ohne dass mir schwarz wurde.",
+      "Ich war überfordert, blieb aber aufrecht.",
+      "Ich hatte Bauchschmerzen, konnte aber noch laufen.",
+      "Ich fühlte Druck im Kopf, doch ich blieb konzentriert.",
+      "Ich fühlte mich ausgelaugt, aber nicht taub.",
+      "Ich war wütend, doch nicht schwindelig.",
+      "Ich war überrascht, aber ohne Kreislaufprobleme.",
+      "Ich hatte Herzklopfen, aber keinen Gleichgewichtsverlust.",
+      "Ich war angespannt, doch nicht gelähmt.",
+      "Ich war sehr emotional, aber körperlich stabil.",
+      "Ich fühlte mich unruhig, jedoch nicht betäubt.",
+      "Ich war traurig, doch standfest."
+    ],
+    "tags": [
+      "shutdown",
+      "composition"
+    ],
+    "metadata": {
+      "maintainer": "marker-bot",
+      "family": "SHUTDOWN"
+    },
+    "source": "markers/SEM_SHUTDOWN_EPISODE.yaml"
+  }
+]

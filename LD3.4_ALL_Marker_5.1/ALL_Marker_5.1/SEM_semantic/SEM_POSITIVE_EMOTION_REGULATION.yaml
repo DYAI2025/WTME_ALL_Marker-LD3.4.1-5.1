@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_POSITIVE_EMOTION_REGULATION
+type: SEM
+frame:
+  concept: "Positive Gefühle aktiv erzeugen"
+  narrative: "positive_affect"
+  signal: ["positiv/wohl + herbeiführen/erzeugen/kultivieren"]
+composed_of: [ATO_SATISFACTION_STATE]
+activation: { rule: "ANY 1 IN 1 message" }
+justification: "Verb der aktiven Steuerung wird über Regex geprüft."
+pattern:
+  regex: '(?i)\b(herbeif(ü|ue)hr\w*|erzeug\w*|kultivier\w*|aufbau\w*|hochregulier\w*)\b'
+examples:
+  - "Ich konnte **positivere Gefühle** gezielt **herbeiführen**."
+  - "Ich **erzeuge** mir **gute Stimmung**."
+  - "Ich **kultiviere** **Zuversicht** im Alltag."
+  - "Ich **baue** mir **Wohlbefinden** auf."
+  - "Ich **reguliere** mich in Richtung **Ruhe**."
+  - "Ich **fördere** bewusst **positive Gefühle**."
+  - "Ich **erzeuge** **Zufriedenheit** durch Pause."
+  - "Ich **steuere** mich hin zu **Gelassenheit**."
+  - "Ich **kultiviere** **Dankbarkeit**."
+  - "Ich **stärke** mein **Wohlbefinden** aktiv."
+negatives:
+  - "Die Stimmung **entsteht** von allein."  # keine aktive Steuerung
+
+

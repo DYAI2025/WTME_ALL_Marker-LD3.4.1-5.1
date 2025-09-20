@@ -1,0 +1,36 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SATISFACTION_STATE
+type: ATO
+frame:
+  concept: "Zufriedenheit/Wohlbefinden/Stolz"
+  narrative: "positive_affect"
+  signal: ["zufrieden","wohlbefinden","stolz","mir geht es gut","fühle mich wohl","tut gut"]
+pattern:
+  regex: '(?i)\b(zufrieden|wohlbefinden|stolz|mir\s+geht\s+es\s+gut|ich\s+f(ü|ue)hle\s+mich\s+wohl|tut\s+mir\s+gut)\b'
+examples:
+  - "Ich bin **zufrieden**."
+  - "Mein **Wohlbefinden** ist hoch."
+  - "Ich bin **stolz** auf mich."
+  - "**Mir geht es gut**."
+  - "Das **tut mir gut**."
+  - "Ich bin rundum **zufrieden**."
+  - "Heute geht es mir **richtig gut**."
+  - "Ich **fühle mich wohl** in meiner Haut."
+  - "Das **fühlt sich gut** an."
+  - "Der Spaziergang **tut mir gut**."
+  - "Ich bin **stolz** auf unseren Fortschritt."
+  - "Es **geht mir gut** mit dieser Entscheidung."
+  - "Ich **ruhe in mir**."
+  - "Ich bin **zufrieden** mit dem Ergebnis."
+  - "Es **tut mir richtig gut**, Pause zu machen."
+negatives:
+  - "Das war **gut** möglich."                    # kein Befinden
+  - "**Guten** Morgen."                           # Grußformel
+tags: [satisfaction, wellbeing]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

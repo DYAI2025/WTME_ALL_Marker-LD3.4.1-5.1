@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_RESIGNATION_TENDENCY
+frame:
+  signal: ["Resignationstendenz"]
+  concept: "Neigung zum Aufgeben"
+  pragmatics: "Aushalten vs. Abbruch"
+  narrative: "resignation"
+composed_of: [ATO_GIVING_UP_PHRASE]
+justification: "1-ATO-Ausnahme, diagnostische Kernformeln."
+activation: { rule: "ANY 1 IN 1 message" }
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Ich gebe schnell auf."
+  - "Ich stecke den Kopf in den Sand."
+  - "Ich lasse es sein."
+  - "Ich breche ab."
+  - "Ich werfe hin."
+  - "Ich kapituliere."
+  - "Ich beende das Thema."
+  - "Ich gebe mich geschlagen."
+  - "Ich höre auf, mich zu bemühen."
+  - "Ich ziehe mich zurück."
+  - "Ich lasse davon ab."
+  - "Ich stelle es ein."
+  - "Ich bin raus."
+  - "Kein Sinn, ich höre auf."
+  - "Ich mache nicht weiter."
+

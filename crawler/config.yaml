@@ -1,0 +1,11 @@
+user_agent: "CMA-ExampleCrawler/1.0 (+contact: you@example.com)"
+rate_limit_per_domain_per_min: 20
+allow_domains:
+  - example.org
+  - forum.beispiel.de
+deny_paths:
+  - "/login"
+  - "/account"
+languages: ["de"]
+min_confidence: 0.62
+uncertain_band: [0.53, 0.62]

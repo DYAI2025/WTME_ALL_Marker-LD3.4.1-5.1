@@ -1,0 +1,35 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_POSITIVE_PREFERENCE
+type: ATO
+frame:
+  concept: "Mögen/Vorliebe"
+  narrative: "positive_affect"
+  signal: ["gern/gerne","mag","bevorzuge","liebe"]
+pattern:
+  regex: '(?i)\b(gern(?:e)?|mag|bevorzug\w+|ich\s+liebe\b)\b'
+examples:
+  - "Ich **mag** Rätsel."
+  - "Ich lerne **gerne** Neues."
+  - "Ich **bevorzuge** ruhige Abende."
+  - "Ich **liebe** Brettspiele."
+  - "Wir kochen **gern** zusammen."
+  - "Sie **mag** ruhige Musik."
+  - "Ich **bevorzuge** Tee am Morgen."
+  - "Wir **lieben** lange Spaziergänge."
+  - "Ich **mag** es, früh aufzustehen."
+  - "Ich **liebe** es, draußen zu sein."
+  - "Er **bevorzugt** klare Strukturen."
+  - "Ich **mag gerne** Gesellschaftsspiele."
+  - "Ich **mag** warme Farben."
+  - "Ich **bevorzuge** einfache Lösungen."
+negatives:
+  - "Ich **mag nicht**, wenn ..."                 # Negation
+  - "Das **mag** sein."                           # Modalpartikel
+tags: [preference]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

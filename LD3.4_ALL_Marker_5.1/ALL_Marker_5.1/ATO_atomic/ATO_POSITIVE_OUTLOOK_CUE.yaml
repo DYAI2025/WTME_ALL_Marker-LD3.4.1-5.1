@@ -1,0 +1,34 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_POSITIVE_OUTLOOK_CUE
+type: ATO
+frame:
+  concept: "Optimismus/Ausblick"
+  narrative: "positive_affect"
+  signal: ["positive Lebenseinstellung","positiv in die Zukunft","zuversichtlich","Optimismus"]
+pattern:
+  regex: '(?i)\b(positive\s+lebenseinstellung|positiv\s+in\s+die\s+zukunft|zuversicht\w*|optimism\w*)\b'
+examples:
+  - "Ich habe eine **positive Lebenseinstellung**."
+  - "Ich blicke **positiv in die Zukunft**."
+  - "Ich bin **zuversichtlich**."
+  - "Mehr **Optimismus** tut mir gut."
+  - "Ich bin **zuversichtlich**, dass es klappt."
+  - "Ich **schaue optimistisch** nach vorn."
+  - "Ich gehe **positiv** an die Sache."
+  - "Ich **bleibe zuversichtlich**."
+  - "Ich habe **Hoffnung und Zuversicht**."
+  - "Ich **traue** mir das zu."
+  - "Ich **rechne** mit einem guten Ausgang."
+  - "Ich **glaube** an eine gute Zukunft."
+  - "Ich **sehe die Chancen**."
+  - "Ich **blicke gelassen und positiv** voraus."
+negatives:
+  - "Das ist **optimistisch** geschätzt."         # Schätzung, kein Affekt
+tags: [outlook]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PROBLEM_EXTERNALIZATION
+frame:
+  signal: ["Sache von Ärzten","kann nicht irgendwer","nichts hilft","Umstände sind schuld"]
+  concept: "Externalisierung"
+  pragmatics: "Locus extern"
+  narrative: "external"
+tags: [externalization]
+pattern:
+  regex: '(?i)\b(sache\s+von\s+(?:ä|ae)rzten|kann\s+nicht\s+irgendwer\s+etwas\s+tun|nichts?\s+hilft|liegt\s+an\s+den\s+anderen|die\s+umst(?:ä|ae)nde\s+sind\s+schuld)\b'
+examples:
+  - "Das ist Sache von Ärzten."
+  - "Kann nicht irgendjemand etwas tun?"
+  - "Nichts hilft."
+  - "Das liegt an den anderen."
+  - "Die Umstände sind schuld."
+  - "Die anderen haben das verursacht."
+  - "Ich kann da nichts machen."
+  - "Das System ist schuld."
+  - "Die Lage macht alles unmöglich."
+  - "Es liegt außerhalb meiner Kontrolle."
+  - "Die Verantwortlichen sind die anderen."
+  - "Nur Ärzte können da helfen."
+  - "Die Situation ist schuld."
+  - "Ich bin Opfer der Umstände."
+  - "Das Umfeld verhindert die Lösung."
+

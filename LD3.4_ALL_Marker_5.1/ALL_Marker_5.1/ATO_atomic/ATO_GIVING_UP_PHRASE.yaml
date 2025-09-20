@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_GIVING_UP_PHRASE
+frame:
+  signal: ["gebe schnell auf","Kopf in den Sand"]
+  concept: "Resignation"
+  pragmatics: "Aufgeben"
+  narrative: "resignation"
+tags: [resignation]
+pattern:
+  regex: '(?i)\b(gebe?\s+schnell\s+auf|kopf\s+in\s+den\s+sand\s+steck\w+|lass\w*\s+es\s+sein|brech\w*\s+ab|ich\s+werfe\s+hin)\b'
+examples:
+  - "Ich gebe schnell auf."
+  - "Ich stecke den Kopf in den Sand."
+  - "Dann lasse ich es sein."
+  - "Ich breche das Thema ab."
+  - "Ich werfe hin."
+  - "Ich kapituliere."
+  - "Ich lasse es gut sein."
+  - "Ich gebe auf, es hat keinen Sinn."
+  - "Ich lasse davon ab."
+  - "Ich ziehe mich zurück und beende es."
+  - "Ich höre auf, mich anzustrengen."
+  - "Ich schaffe das nicht, ich bin raus."
+  - "Ich gebe mich geschlagen."
+  - "Ich stelle es ein."
+  - "Ich beende es hier."
+

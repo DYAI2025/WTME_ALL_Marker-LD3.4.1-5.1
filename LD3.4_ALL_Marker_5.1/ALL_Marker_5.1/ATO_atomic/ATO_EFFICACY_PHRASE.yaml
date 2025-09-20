@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_EFFICACY_PHRASE
+frame:
+  signal: ["auf meine Fähigkeiten verlassen","aus eigener Kraft","traue mir zu","selbst verantwortlich"]
+  concept: "Selbstwirksamkeit"
+  pragmatics: "Agency"
+  narrative: "efficacy"
+tags: [efficacy, agency]
+pattern:
+  regex: '(?i)\b(auf\s+meine\s+f(?:ä|ae)higkeiten\s+verlassen|aus\s+eigener\s+kraft|traue\s+mir\s+zu|bin\s+für\s+mein\s+leben\s+selbst\s+verantwortlich|ich\s+kann\s+\w+\s+gut\s+lösen)\b'
+examples:
+  - "Ich kann das gut lösen."
+  - "Ich verlasse mich auf meine Fähigkeiten."
+  - "Ich traue mir zu, das zu schaffen."
+  - "Aus eigener Kraft kriege ich das hin."
+  - "Ich bin selbst verantwortlich."
+  - "Ich kann Probleme strukturiert lösen."
+  - "Ich bekomme das alleine hin."
+  - "Ich habe die Fähigkeiten dafür."
+  - "Ich bin mir meiner Stärken bewusst."
+  - "Ich kann das zuverlässig erledigen."
+  - "Ich weiß, wie ich das angehe."
+  - "Ich habe das schon öfter geschafft."
+  - "Ich kann mich auf mich verlassen."
+  - "Ich finde eine Lösung."
+  - "Ich handle aus eigener Kraft."
+

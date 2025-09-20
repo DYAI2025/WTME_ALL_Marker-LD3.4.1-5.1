@@ -1,0 +1,26 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SPONTANEITY_CUE
+type: ATO
+frame:
+  concept: "Spontaneitätshinweis"
+  narrative: "discourse"
+  signal: ["spontan","ohne Grund","von selbst"]
+pattern:
+  regex: '(?i)\b(spontan|ohne\s+grund|von\s+selbst)\b'
+examples:
+  - "**Spontan** fange ich an zu lachen."
+  - "Er lächelt **ohne Grund**."
+  - "Ich singe **spontan** mit."
+  - "Sie hilft **von selbst**."
+  - "Wir entscheiden **spontan**."
+  - "Er ruft **spontan** an."
+  - "Ich tanze **ohne Grund**."
+  - "Die Freude kommt **von selbst**."
+  - "Ich gehe **spontan** raus."
+  - "Sie lacht **ohne Grund**."
+negatives:
+  - "Wir planen ein **spontanes** Meeting."       # neutral
+tags: [discourse]
+
+

@@ -1,0 +1,37 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_JOY_EXPRESSION
+type: ATO
+frame:
+  concept: "Freude/Glück ausdrücken"
+  narrative: "positive_affect"
+  signal: ["Freude","erfreut","glücklich","Spaß","lacht","lächelt"]
+pattern:
+  regex: '(?i)\b(freude|erfreut\w*|gl(ü|ue)cklich(?:ste[nmr]?|er|es|e|en)?|spa(ß|ss)\b|lach\w*|l(ä|ae)chel\w*)\b'
+examples:
+  - "Ich empfinde **Freude**."
+  - "Ich bin **erfreut**."
+  - "Ich war **am glücklichsten**, als ..."
+  - "Das macht mir **Spaß**."
+  - "Er **lacht** oft und **lächelt**."
+  - "Ich **freue** mich sehr."
+  - "Das **erfüllt** mich mit **Freude**."
+  - "Ich bin richtig **glücklich**."
+  - "Das macht mir **viel Spaß**."
+  - "Wir **lachen** herzlich."
+  - "Sie **lächelt** mich warm an."
+  - "Ich könnte vor **Freude** platzen."
+  - "Die Stimmung macht mich **glücklich**."
+  - "Ich **lache** aus vollem Herzen."
+  - "Ein **Lächeln** breitet sich aus."
+negatives:
+  - "Der **Spaßvogel** kam zu spät."              # Metapher, keine Affektangabe
+  - "Das war **glücklich** gewählt."              # adverbial, nicht Affekt
+  - "Freude **kam nicht** auf."                   # Negation
+tags: [affect, joy]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

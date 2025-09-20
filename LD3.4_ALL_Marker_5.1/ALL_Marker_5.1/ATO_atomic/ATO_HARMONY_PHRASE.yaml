@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_HARMONY_PHRASE
+frame:
+  signal: ["kompromissbereit","komme gut mit anderen aus","Harmonie wichtig"]
+  concept: "Harmonie-/Konfliktvermeidung"
+  pragmatics: "Kooperation"
+  narrative: "harmony"
+tags: [harmony]
+pattern:
+  regex: '(?i)\b(kompromissbereit|komme\s+immer\s+gut\s+mit\s+anderen\s+aus|w(?:ü|ue)rde\s+meine\s+schlechte\s+laune\s+nie\s+an\s+anderen\s+auslassen|harmonie\s+wichtig)\b'
+examples:
+  - "Ich bin kompromissbereit."
+  - "Ich komme gut mit anderen aus."
+  - "Mir ist Harmonie wichtig."
+  - "Ich lasse schlechte Laune nicht an anderen aus."
+  - "Ich vermeide Streit."
+  - "Ich suche den Ausgleich."
+  - "Ich beruhige lieber, als zu konfrontieren."
+  - "Ich achte auf ein gutes Miteinander."
+  - "Ich bleibe friedlich."
+  - "Ich halte die Stimmung positiv."
+  - "Ich biete einen Kompromiss an."
+  - "Ich deeskaliere lieber."
+  - "Ich ziehe Kooperation der Konfrontation vor."
+  - "Ich meide Provokationen."
+  - "Ich spreche in ruhigem Ton."
+

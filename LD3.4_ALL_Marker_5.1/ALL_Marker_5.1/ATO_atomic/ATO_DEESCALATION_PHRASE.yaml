@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_DEESCALATION_PHRASE
+frame:
+  signal: ["runterfahren","beruhigen","lass uns sachlich bleiben","keine Eskalation"]
+  concept: "Deeskalationssprache"
+  pragmatics: "Konflikt dämpfen"
+  narrative: "harmony"
+tags: [deescalation]
+pattern:
+  regex: '(?i)\b(beruhigen\s+wir\s+uns|lass\s+uns\s+sachlich\s+bleiben|keine\s+eskalation|fahren\s+wir\s+runter|ruhig\s+bleiben|einen\s+gang\s+runterschalten|entspannen\s+wir\s+das)\b'
+examples:
+  - "Beruhigen wir uns bitte."
+  - "Lass uns sachlich bleiben."
+  - "Keine Eskalation jetzt."
+  - "Fahren wir das runter."
+  - "Ich möchte ruhig bleiben."
+  - "Wir schalten einen Gang runter."
+  - "Lass uns das entspannen."
+  - "Wir nehmen da Druck raus."
+  - "Ich will den Ton runterfahren."
+  - "Können wir das deeskalieren?"
+  - "Ich spreche ruhig weiter."
+  - "Ich will Frieden wahren."
+  - "Wir beruhigen die Lage."
+  - "Ich will das nicht hochschaukeln."
+  - "Wir treten einen Schritt zurück."
+

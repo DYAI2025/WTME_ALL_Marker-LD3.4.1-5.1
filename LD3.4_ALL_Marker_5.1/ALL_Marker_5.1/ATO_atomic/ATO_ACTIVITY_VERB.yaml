@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_ACTIVITY_VERB
+type: ATO
+frame:
+  concept: "Tätigkeitsverb (Hobby/Handlung)"
+  narrative: "activity"
+  signal: ["gehe","spiele","lerne","arbeite","koche","lese","bastle","trainiere"]
+pattern:
+  regex: '(?i)\b(gehe|spiel\w*|lern\w*|arbeit\w*|koch\w*|les\w*|bastel\w*|trainier\w*)\b'
+examples:
+  - "Ich **gehe** gern laufen."
+  - "Ich **lerne** Neues."
+  - "Ich **lese** abends."
+  - "Ich **spiele** regelmäßig Schach."
+  - "Ich **koche** gerne frisch."
+  - "Ich **trainiere** dreimal die Woche."
+  - "Ich **bastle** an kleinen Projekten."
+  - "Ich **arbeite** konzentriert an meinem Ziel."
+  - "Ich **gehe** täglich spazieren."
+  - "Ich **lerne** mit Freude dazu."
+  - "Ich **lese** gerne Sachbücher."
+  - "Ich **spiele** Gitarre."
+  - "Ich **koche** für Freunde."
+  - "Ich **trainiere** Ausdauer."
+negatives:
+  - "Ich **arbeite nicht** gerne."                # Negation
+tags: [activity]
+
+

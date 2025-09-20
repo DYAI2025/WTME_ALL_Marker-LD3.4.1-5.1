@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_ACCEPTANCE_PHRASE
+frame:
+  signal: ["annehmen","akzeptieren","zu Gefühlen stehen"]
+  concept: "Akzeptanz"
+  pragmatics: "Emotionsakzeptanz"
+  narrative: "acceptance"
+tags: [acceptance]
+pattern:
+  regex: '(?i)\b(annehm\w+|akzeptier\w+|zu\s+meinen\s+gefühlen\s+steh\w+|es\s+ist\s+okay,\s+dass\s+ich\s+\w+)\b'
+examples:
+  - "Ich akzeptiere meine Angst."
+  - "Ich nehme die Traurigkeit an."
+  - "Ich stehe zu meinen Gefühlen."
+  - "Es ist okay, dass ich nervös bin."
+  - "Ich akzeptierte es, so zu fühlen."
+  - "Ich nehme an, dass diese Sorge da ist."
+  - "Ich akzeptiere, dass Wut in mir auftaucht."
+  - "Ich stehe dazu, verletzt zu sein."
+  - "Es ist okay, dass ich mich überfordert fühle."
+  - "Ich nehme an, dass das gerade schwierig ist."
+  - "Ich akzeptiere meine Grenzen."
+  - "Ich erkenne an, dass die Angst da ist."
+  - "Ich lasse das Gefühl da sein."
+  - "Ich stehe dazu, traurig zu sein."
+  - "Es ist okay, so zu empfinden."
+

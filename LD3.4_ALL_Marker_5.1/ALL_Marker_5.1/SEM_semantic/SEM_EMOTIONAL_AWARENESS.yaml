@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_EMOTIONAL_AWARENESS
+frame:
+  signal: ["Gefühlsbewusstsein"]
+  concept: "Bewusstsein für eigene Gefühle"
+  pragmatics: "Meta-Awareness"
+  narrative: "affect"
+composed_of:
+  - ATO_FEELING_WORD
+  - ATO_ATTENTION_TO_FEELINGS
+activation: { rule: "BOTH IN 1 message" }
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Ich achte auf meine Gefühle und fühle mich ruhiger."
+  - "Mir war klar, dass ich ängstlich wurde."
+  - "Ich merke, dass ich mich unsicher fühle."
+  - "Ich achte darauf, wenn ich traurig bin."
+  - "Ich bin mir bewusst, dass ich nervös bin."
+  - "Ich spüre, wie die Freude kommt."
+  - "Ich bemerke meine Anspannung."
+  - "Mir ist bewusst, dass ich wütend bin."
+  - "Ich registriere mein Unbehagen."
+  - "Ich nehme wahr, dass ich erleichtert bin."
+  - "Ich achte auf meinen Ärger."
+  - "Ich bin mir meiner Trauer bewusst."
+  - "Ich erkenne meine Angst."
+  - "Ich spüre die Nervosität."
+  - "Mir wird klar, wenn es kippt."
+

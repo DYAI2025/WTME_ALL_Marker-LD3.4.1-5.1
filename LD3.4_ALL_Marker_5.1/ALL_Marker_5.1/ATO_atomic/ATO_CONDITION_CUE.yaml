@@ -1,0 +1,26 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_CONDITION_CUE
+type: ATO
+frame:
+  concept: "Bedingungs-Konnektor"
+  narrative: "discourse"
+  signal: ["wenn","sobald","dann wenn","am ... wenn"]
+pattern:
+  regex: '(?i)\b(wenn|sobald|dann\s+wenn)\b'
+examples:
+  - "**Wenn** ich mich geborgen fühle ..."
+  - "**Sobald** die Sonne scheint ..."
+  - "**Wenn** ich Zeit habe, lese ich."
+  - "**Sobald** Ruhe einkehrt, entspanne ich."
+  - "**Wenn** es passt, gehe ich laufen."
+  - "**Sobald** ich ankomme, melde ich mich."
+  - "**Wenn** möglich, treffe ich Freunde."
+  - "**Sobald** ich frei habe, koche ich."
+  - "**Wenn** ich Kraft habe, trainiere ich."
+  - "**Sobald** es hell wird, starte ich."
+negatives:
+  - "Wir **sind** wenn möglich pünktlich."        # formelhaft
+tags: [discourse]
+
+

@@ -1,0 +1,26 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_STATE_OF_HAPPINESS
+type: SEM
+frame:
+  concept: "Zustand von Glück mit Bedingung"
+  narrative: "positive_affect"
+  signal: ["glücklich + wenn-Kondition"]
+composed_of: [ATO_JOY_EXPRESSION, ATO_CONDITION_CUE]
+activation: { rule: "BOTH IN 1 message" }
+examples:
+  - "Am **glücklichsten** bin ich, **wenn** ich mich geborgen fühle."
+  - "Ich bin **glücklich**, **wenn** andere glücklich sind."
+  - "Ich bin **glücklich**, **wenn** ich draußen bin."
+  - "Ich bin **am glücklichsten**, **wenn** ich Zeit mit Freunden habe."
+  - "Ich fühle mich **glücklich**, **wenn** ich Musik höre."
+  - "Ich bin **glücklich**, **wenn** die Sonne scheint."
+  - "Ich fühle **Freude**, **wenn** ich etwas Neues lerne."
+  - "Ich bin **glücklich**, **wenn** ich helfen kann."
+  - "Ich werde **glücklich**, **wenn** ich erfolgreich bin."
+  - "Ich bin **glücklich**, **wenn** wir gemeinsam lachen."
+  - "Ich bin **glücklich**, **wenn** ich zur Ruhe komme."
+negatives:
+  - "Ich **wäre** glücklich, **wenn** es nicht regnete."  # hypothetisch, schwach
+
+

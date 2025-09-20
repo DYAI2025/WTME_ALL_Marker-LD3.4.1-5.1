@@ -1,0 +1,24 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_CONFLICT_RESOLUTION_PATTERN
+frame:
+  signal: ["Konflikt→Reparatur→Einigung"]
+  concept: "Sequenz: aufkeimender Konflikt, Deeskalation, Einigung"
+  pragmatics: "Bewältigungsdynamik"
+  narrative: "resolution"
+composed_of:
+  sequence:
+    - CLU_INTUITION_CONFLICT
+    - SEM_REPAIR_SEQUENCE
+    - [SEM_CLOSURE_PROTOCOL, SEM_CLEAR_COMMITMENT]
+activation:
+  rule: "SEQUENCE IN 10 messages"
+  window: 10
+scoring: { base: 0.7, weight: 1.2 }
+examples:
+  - "… Konflikt-Vorahnung … Entschuldigung+Anerkennung … Abschluss."
+  - "… Eskalationsanzeichen … Reparatursequenz … klare Zusage."
+  - "… Vorwurf/Sarkasmus … Deeskalation … Haken dran."
+  - "… Härtere Töne … Sorry+Verstanden … Einigung."
+  - "… Sticheleien … Reparatur … Commitment."
+

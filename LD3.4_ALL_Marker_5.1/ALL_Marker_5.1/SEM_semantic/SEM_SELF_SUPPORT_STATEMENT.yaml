@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SELF_SUPPORT_STATEMENT
+frame:
+  signal: ["Selbstunterstützung"]
+  concept: "Aktive Selbstunterstützung in Belastung"
+  pragmatics: "Coping"
+  narrative: "self-support"
+composed_of: [ATO_SELF_SUPPORT_PHRASE]
+justification: "1-ATO-Ausnahme gemäß 3.3 erlaubt (CI-Hook)."
+activation: { rule: "ANY 1 IN 1 message" }
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Ich mache mir selbst Mut."
+  - "Ich muntere mich selbst auf."
+  - "Ich stehe mir selbst zur Seite."
+  - "Ich sage mir: Du schaffst das."
+  - "Ich stärke mich innerlich."
+  - "Ich rede mir gut zu."
+  - "Ich erinnere mich an meine Stärken."
+  - "Ich halte zu mir."
+  - "Ich beruhige mich selbst."
+  - "Ich gebe mir Halt."
+  - "Ich baue mich wieder auf."
+  - "Ich bin freundlich zu mir."
+  - "Ich bleibe zugewandt mit mir."
+  - "Ich sporne mich an."
+  - "Ich motiviere mich selbst."
+

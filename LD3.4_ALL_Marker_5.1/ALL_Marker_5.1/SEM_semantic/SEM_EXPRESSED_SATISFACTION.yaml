@@ -1,0 +1,26 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_EXPRESSED_SATISFACTION
+type: SEM
+frame:
+  concept: "Ausgedrückte Zufriedenheit/Stolz"
+  narrative: "positive_affect"
+  signal: ["zufrieden/stolz + Bezug"]
+composed_of: [ATO_SATISFACTION_STATE]
+activation: { rule: "ANY 1 IN 1 message" }
+examples:
+  - "Ich war mit meiner Konzentration **zufrieden**."
+  - "Ich bin **stolz** auf meine Leistung."
+  - "Ich bin **zufrieden** mit dem Ergebnis."
+  - "Ich bin **stolz** auf meinen Fortschritt."
+  - "Wir waren **zufrieden** mit dem Ablauf."
+  - "Ich bin **stolz** auf unser Team."
+  - "Ich bin **zufrieden**, wie es lief."
+  - "Ich bin **stolz**, das geschafft zu haben."
+  - "Ich war **zufrieden** mit der Vorbereitung."
+  - "Ich bin **stolz** auf meine Entwicklung."
+  - "Die Lehrerin war **zufrieden** mit mir."
+negatives:
+  - "Nicht **zufrieden**stellend."  # Wortfamilie, andere Bedeutung
+
+

@@ -29,7 +29,8 @@ def count_examples(marker: Dict[str, Any]) -> int:
 
 ALLOWED_TOP_LEVEL_KEYS = {
     'schema','version','id','name','type','frame','tags','pattern','examples',
-    'composed_of','activation','scoring','metadata','requires','inhibitors'
+    'composed_of','activation','scoring','metadata','requires','inhibitors',
+    'justification','telemetry'
 }
 
 

@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_EMOTIONAL_ACCEPTANCE
+frame:
+  signal: ["Akzeptanz von Gefühlen"]
+  concept: "Aktive Annahme auch negativer Gefühle"
+  pragmatics: "Regulation"
+  narrative: "acceptance"
+composed_of:
+  - ATO_FEELING_WORD
+  - ATO_ACCEPTANCE_PHRASE
+activation: { rule: "BOTH IN 1 message" }
+scoring: { base: 0.55, weight: 1.0 }
+examples:
+  - "Ich akzeptiere, ängstlich zu sein."
+  - "Ich nehme meine Trauer an."
+  - "Ich stehe zu meiner Unsicherheit."
+  - "Es ist okay, dass ich nervös bin."
+  - "Ich akzeptierte die Anspannung."
+  - "Ich erkenne die Wut an."
+  - "Ich lasse die Gefühle da sein."
+  - "Ich nehme an, dass mich das verletzt."
+  - "Ich stehe dazu, überfordert zu sein."
+  - "Ich akzeptiere meine Grenzen heute."
+  - "Es ist okay, dass ich traurig bin."
+  - "Ich akzeptiere meine Nervosität."
+  - "Ich nehme meine Angst ernst, ohne zu kämpfen."
+  - "Es darf so sein, wie es ist."
+  - "Ich stehe zu meinem Gefühl der Scham."
+

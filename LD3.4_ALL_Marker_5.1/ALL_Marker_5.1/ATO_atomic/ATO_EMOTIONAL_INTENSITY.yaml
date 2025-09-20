@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_EMOTIONAL_INTENSITY
+frame:
+  signal: ["überwältigen","hin- und hergerissen","intensiv","stark genug","extrem"]
+  concept: "Gefühlsintensität"
+  pragmatics: "Skalierung/Affektstärke"
+  narrative: "affect"
+tags: [emotion, intensity]
+pattern:
+  regex: '(?i)\b(überwältig\w+|hin[-\s]?und[-\s]?her\s?gerissen|intensiv\w*|stark\s+genug|völlig\s+fertig|extrem\s+\w+)\b'
+  flags: ["UNICODE"]
+examples:
+  - "Die Angst hat mich überwältigt."
+  - "Ich bin hin und her gerissen."
+  - "Das war intensiv."
+  - "Es war stark genug, mich zu blockieren."
+  - "Die Gefühle waren extrem."
+  - "Ich war völlig überwältigt."
+  - "Es war extrem heftig."
+  - "Die Gefühle waren extrem stark."
+  - "Die Wucht hat mich getroffen."
+  - "So intensiv habe ich das selten erlebt."
+  - "Es war zu stark für mich."
+  - "Ich fühlte mich total überrollt."
+  - "Extrem aufgewühlt."
+  - "Die Intensität war kaum auszuhalten."
+  - "Es hat mich komplett fertig gemacht."
+

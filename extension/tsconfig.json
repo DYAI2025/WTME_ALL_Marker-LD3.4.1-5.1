@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "allowJs": false,
+    "strict": true,
+    "noEmit": false,
+    "types": ["node", "chrome"]
+  },
+  "include": ["src/**/*.ts"]
+}
