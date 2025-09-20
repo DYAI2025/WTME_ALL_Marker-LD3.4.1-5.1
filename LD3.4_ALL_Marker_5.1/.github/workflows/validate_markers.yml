@@ -1,0 +1,64 @@
+name: Validate Markers
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+          sudo apt-get update
+          sudo apt-get install -y jq
+          sudo wget -qO /usr/local/bin/yq "https://github.com/mikefarah/yq/releases/download/v4.44.3/yq_linux_amd64" && sudo chmod +x /usr/local/bin/yq
+      - name: Run validator
+        run: |
+          python validate_markers.py
+      - name: CI jq/yq checks - Container examples forbidden
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS= read -r -d '' f; do
+            if yq -o=json '.' "$f" | jq -e 'has("markers") and has("examples")' >/dev/null; then
+              echo "[FAIL] Container hat examples: $f"
+              fail=1
+            fi
+          done < <(git ls-files '*.yml' '*.yaml' -z)
+          exit $fail
+      - name: CI jq/yq checks - CLU_INTUITION_* examples >=5
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS= read -r -d '' f; do
+            # true wenn Marker existiert und Bedingung erfüllt, false wenn verletzt; null wenn kein solcher Marker
+            res=$(yq -o=json '.' "$f" | jq -r 'select(.type=="CLU" and (.name|startswith("CLU_INTUITION_"))) | (.examples|length>=5)') || true
+            if [ "$res" = "false" ]; then
+              echo "[FAIL] Beispiele <5 bei CLU_INTUITION_*: $f"
+              fail=1
+            fi
+          done < <(git ls-files '*.yml' '*.yaml' -z)
+          exit $fail
+      - name: CI jq/yq checks - INCONSISTENCY cooldown >=4
+        run: |
+          set -euo pipefail
+          fail=0
+          while IFS= read -r -d '' f; do
+            res=$(yq -o=json '.' "$f" | jq -r 'select(.type=="CLU" and (.telemetry.counter_confirmed|startswith("INCONSISTENCY."))) | ((.activation.cooldown_messages//0) >= 4)') || true
+            if [ "$res" = "false" ]; then
+              echo "[FAIL] cooldown_messages <4 bei INCONSISTENCY: $f"
+              fail=1
+            fi
+          done < <(git ls-files '*.yml' '*.yaml' -z)
+          exit $fail

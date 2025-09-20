@@ -1,0 +1,34 @@
+schema: "LeanDeep"
+version: "3.4"
+bundle_id: "MOTIVE_EXT_5.1"
+title: "Motivationale Muster (Sicherheit/Leistung/Macht) – ATO→SEM→CLU/MEMA"
+author: "Team"
+date: "2025-09-20"
+files_new:
+  - ALL_Marker_5.1/ATO_atomic/ATO_STATUS_QUO_PREFERENCE.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_RISK_AVERSION_PHRASE.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_CALM_LIFE_DESIRE.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_REASSURANCE_SEEKING.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_RECOGNITION_SEEKING.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_STATUS_SIGNALING.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_SUPERLATIVE_SELF_REFERENCE.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_COMPETITIVE_FRAME.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_ACHIEVEMENT_GOAL.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_INFLUENCE_DESIRE_STATEMENT.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_RESPONSIBILITY_CLAIM.yaml
+  - ALL_Marker_5.1/ATO_atomic/ATO_DECISION_ANNOUNCEMENT.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_SAFETY_ORIENTATION.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_STABILITY_PRESERVATION.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_STATUS_RECOGNITION.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_EXCELLENCE_DRIVE.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_INFLUENCE_ORIENTATION.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_RESPONSIBILITY_AND_DECISION.yaml
+  - ALL_Marker_5.1/SEM_semantic/SEM_REASSURANCE_DRIVE.yaml
+  - ALL_Marker_5.1/CLU_cluster/CLU_SAFETY_MOTIVE_ACTIVE.yaml
+  - ALL_Marker_5.1/CLU_cluster/CLU_ACHIEVEMENT_MOTIVE_ACTIVE.yaml
+  - ALL_Marker_5.1/CLU_cluster/CLU_POWER_MOTIVE_ACTIVE.yaml
+  - ALL_Marker_5.1/MEMA_meta/MEMA_SAFETY_REASSURE_AND_PLAN.yaml
+  - ALL_Marker_5.1/MEMA_meta/MEMA_ACHIEVEMENT_SHOWCASE_AND_GOAL.yaml
+  - ALL_Marker_5.1/MEMA_meta/MEMA_POWER_SHARED_LEADERSHIP.yaml
+notes:
+  - "Kompatibel mit vorhandenem Bestand (z.B. ATO_MINI_DEADLINE, ATO_PACING, ATO_PROBLEM_SOLVING, ATO_ACKNOWLEDGE, ATO_STYLE_REFERENCE, ATO_SHARED_CONTEXT, ATO_UNILATERAL_DECISION, SEM_LISTING, SEM_PROOF_STD_SHIFT, SEM_VALIDATION, SEM_DEESCALATION, SEM_CONSENSUS_SIGNAL, SEM_CLEAR_COMMITMENT)."
