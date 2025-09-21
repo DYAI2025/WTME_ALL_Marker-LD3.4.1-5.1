@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_REGULATION_VERB_POSITIVE
+type: ATO
+frame:
+  concept: "Positives Affektregulations‑Verb"
+  narrative: "positive_affect"
+  signal: ["herbeiführen","erzeugen","kultivieren","aufbauen","hochregulieren","fördern","stärken"]
+pattern:
+  regex: '(?i)\b(herbeif(ü|ue)hr\w*|erzeug\w*|kultivier\w*|aufbau\w*|hochregulier\w*|f(ö|oe)rder\w*|st(ä|ae)rk\w*)\b'
+examples:
+  - "Ich konnte positive Gefühle gezielt **herbeiführen**."
+  - "Ich **erzeuge** mir gute Stimmung."
+  - "Ich **kultiviere** Gelassenheit."
+  - "Ich **baue** Wohlbefinden auf."
+  - "Ich **hochreguliere** Ruhe."
+  - "Ich **fördere** Zuversicht."
+  - "Ich **stärke** mein Wohlbefinden."
+  - "Ich **erzeuge** Zufriedenheit durch Pausen."
+  - "Ich **kultiviere** Dankbarkeit."
+  - "Ich **baue** innere Ruhe **auf**."
+negatives:
+  - "Die Stimmung entsteht von allein."  # keine aktive Steuerung
+tags: [regulation, positive]
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

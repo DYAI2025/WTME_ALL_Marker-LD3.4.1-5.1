@@ -1,0 +1,16 @@
+reddit:
+  subreddits:
+    - relationships
+    - relationship_advice
+    - TrueOffMyChest
+    - offmychest
+    - AmItheAsshole
+    - DecidingToBeBetter
+    - AskMen
+    - AskWomen
+    - SocialSkills
+    - needadvice
+  listing: new    # new|hot|top
+  limit: 50       # max pro Abruf
+
+

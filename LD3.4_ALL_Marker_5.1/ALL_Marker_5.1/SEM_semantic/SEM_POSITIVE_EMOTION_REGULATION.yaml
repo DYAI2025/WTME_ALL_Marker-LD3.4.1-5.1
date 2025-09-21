@@ -6,11 +6,9 @@ frame:
   concept: "Positive Gefühle aktiv erzeugen"
   narrative: "positive_affect"
   signal: ["positiv/wohl + herbeiführen/erzeugen/kultivieren"]
-composed_of: [ATO_SATISFACTION_STATE]
-activation: { rule: "ANY 1 IN 1 message" }
-justification: "Verb der aktiven Steuerung wird über Regex geprüft."
-pattern:
-  regex: '(?i)\b(herbeif(ü|ue)hr\w*|erzeug\w*|kultivier\w*|aufbau\w*|hochregulier\w*)\b'
+composed_of: [ATO_SATISFACTION_STATE, ATO_REGULATION_VERB_POSITIVE]
+activation: { rule: "BOTH IN 1 message" }
+justification: "Kombination aus positivem Zustand und explizitem Regulations‑Verb."
 examples:
   - "Ich konnte **positivere Gefühle** gezielt **herbeiführen**."
   - "Ich **erzeuge** mir **gute Stimmung**."

@@ -6,8 +6,8 @@ frame:
   concept: "Ausgedrückte Zufriedenheit/Stolz"
   narrative: "positive_affect"
   signal: ["zufrieden/stolz + Bezug"]
-composed_of: [ATO_SATISFACTION_STATE]
-activation: { rule: "ANY 1 IN 1 message" }
+composed_of: [ATO_SATISFACTION_STATE, ATO_PRIDE_STATE]
+activation: { rule: "AT_LEAST 1 IN 1 message" }
 examples:
   - "Ich war mit meiner Konzentration **zufrieden**."
   - "Ich bin **stolz** auf meine Leistung."

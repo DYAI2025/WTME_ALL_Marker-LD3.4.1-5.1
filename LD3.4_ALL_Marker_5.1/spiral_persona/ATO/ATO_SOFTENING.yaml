@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SOFTENING
+frame:
+  signal: ["token"]
+  concept: "Abschwächung"
+  pragmatics: "Deeskalation"
+  narrative: "surface"
+pattern:
+  tokens: ["ein bisschen", "vielleicht", "gefühlt", "irgendwie", "nicht ganz"]
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"
+
+

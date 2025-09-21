@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PRIDE_STATE
+type: ATO
+frame:
+  concept: "Stolz (Selbstwertbezogener positiver Zustand)"
+  narrative: "positive_affect"
+  signal: ["stolz"]
+pattern:
+  regex: '(?i)\b(stolz)\b'
+examples:
+  - "Ich bin **stolz** auf meinen Fortschritt."
+  - "Ich bin **stolz** auf mein Team."
+  - "Ich fühle mich **stolz** auf die Leistung."
+  - "Wir sind **stolz** auf das Ergebnis."
+  - "Ich bin **stolz**, das geschafft zu haben."
+  - "Sie ist **stolz** auf ihre Entwicklung."
+  - "Ich bin auf mich **stolz**."
+  - "Er ist **stolz** auf seine Entscheidung."
+  - "Wir fühlen uns **stolz** nach dem Erfolg."
+  - "Ich bin richtig **stolz** darauf."
+negatives:
+  - "Stolz kommt vor dem Fall."  # Sprichwort, nicht Zustand
+tags: [pride]
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

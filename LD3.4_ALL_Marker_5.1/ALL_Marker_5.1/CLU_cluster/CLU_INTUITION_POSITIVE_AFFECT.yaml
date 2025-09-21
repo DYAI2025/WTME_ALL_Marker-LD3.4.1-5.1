@@ -1,10 +1,10 @@
 schema: "LeanDeep"
 version: "3.4"
-id: CLU_INTUITION_WELLBEING
-name: CLU_INTUITION_WELLBEING
+id: CLU_INTUITION_POSITIVE_AFFECT
+name: CLU_INTUITION_POSITIVE_AFFECT
 type: CLU
 frame:
-  concept: "Vorahnung stabilen Wohlbefindens"
+  concept: "Vorahnung stabilen Wohlbefindens (Familie: POSITIVE_AFFECT)"
   narrative: "positive_affect"
   signal: ["geballte positive SEMs über kurze Zeit"]
 composed_of: [HINT_POSITIVE_AFFECT, SEM_ACTIVE_ENJOYMENT, SEM_POSITIVE_OUTLOOK, SEM_EXPRESSED_SATISFACTION, SEM_REPORTED_NONVERBAL_JOY]
