@@ -8,3 +8,4 @@ Alle relevanten Änderungen an diesem Repository werden in diesem Dokument festg
 - Xenova-Modell `all-MiniLM-L6-v2` lokal gebündelt (config, Tokenizer, Vokabular, ONNX-Gewichte).
 - Chrome-Extension (Manifest v3) implementiert: Hintergrundservice, Worker-Engine, Content Script, Popup & Styles.
 - Dokumentation erweitert: deutschsprachiges README mit Installations- & Nutzungsschritten, Active-Learning-Workflow.
+- Bootstrap-Workflow (`npm run setup`) sowie Review-GUI (`npm run review:gui`) hinzugefügt – inkl. Express-Server, HTML-Frontend und automatischer Übernahme akzeptierter Beispiele.

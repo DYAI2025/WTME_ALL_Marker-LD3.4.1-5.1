@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Marker Review</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 24px; }
+    .row { border: 1px solid #ddd; border-radius: 6px; padding: 12px; margin-bottom: 12px; transition: background 0.2s ease; }
+    .meta { font-size: 12px; color: #555; margin-bottom: 6px; }
+    .txt { font-size: 15px; margin: 6px 0 12px; white-space: pre-wrap; }
+    .btns button { margin-right: 8px; padding: 6px 10px; cursor: pointer; }
+    .accepted { background: #e6ffed; }
+    .rejected { background: #ffecec; }
+    .toolbar { display: flex; gap: 12px; margin-bottom: 16px; align-items: center; }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <h1 style="margin:0;">Marker Review</h1>
+    <button id="reload">Neu laden</button>
+    <span id="count"></span>
+  </div>
+  <div id="list"></div>
+
+  <script>
+    const list = document.getElementById('list');
+    const count = document.getElementById('count');
+    document.getElementById('reload').onclick = load;
+
+    async function load() {
+      list.innerHTML = 'Lade...';
+      const res = await fetch('/api/examples');
+      const data = await res.json();
+      count.textContent = `Offen: ${data.length}`;
+      list.innerHTML = '';
+      data.forEach(ex => list.appendChild(render(ex)));
+    }
+
+    function render(ex) {
+      const div = document.createElement('div');
+      div.className = 'row';
+      const score = typeof ex.score === 'number' ? ex.score.toFixed(2) : 'n/a';
+      const sourceLink = ex.url ? `• <a href="${ex.url}" target="_blank" rel="noreferrer">Quelle</a>` : '';
+      div.innerHTML = `
+        <div class="meta"><b>Marker:</b> ${escapeHtml(ex.marker)} • <b>Score:</b> ${score} ${sourceLink}</div>
+        <div class="txt">${escapeHtml(ex.text)}</div>
+        <div class="btns">
+          <button data-act="accept">Annehmen</button>
+          <button data-act="reject">Ablehnen</button>
+        </div>
+      `;
+      div.addEventListener('click', async (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) return;
+        const act = target.getAttribute('data-act');
+        if (!act) return;
+        target.setAttribute('disabled', 'true');
+        const accepted = act === 'accept';
+        await fetch('/api/decision', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ example: ex, accepted })
+        });
+        div.classList.add(accepted ? 'accepted' : 'rejected');
+        setTimeout(() => div.remove(), 200);
+        const open = Math.max(0, parseInt(count.textContent.replace(/\D+/g, '') || '0', 10) - 1);
+        count.textContent = `Offen: ${open}`;
+      });
+      return div;
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (ch) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      })[ch]);
+    }
+
+    load();
+  </script>
+</body>
+</html>

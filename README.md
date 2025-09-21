@@ -13,7 +13,21 @@ Dieses Repository bündelt alle Werkzeuge, um LeanDeep-3.4-Marker lokal zu pfleg
 - Optional: Python 3 & `curl` zum manuellen Download weiterer Modelle
 - Internetzugang für `npm install`, Modell-Downloads, optionales Crawling
 
-## Installation & Grundsetup
+## Schnellstart: Vollautomatisches Setup & Review
+1. Repository klonen oder in das Arbeitsverzeichnis wechseln.
+2. Bootstrap ausführen (prüft Node-Version, installiert Dependencies, baut Artefakte, packt die Extension):
+   ```bash
+   npm run setup
+   ```
+3. Review-GUI starten und im Browser öffnen (`http://localhost:5173`):
+   ```bash
+   npm run review:gui
+   ```
+   - Neue Vorschläge (z. B. aus `dist/autogen_examples.jsonl`) erscheinen in der Liste.
+   - „Annehmen“ schreibt das Beispiel direkt in die passende Marker-YAML; Entscheidungen landen in `dist/review_state.json`.
+4. Optional: Active-Learning-Crawler anwerfen (siehe unten) und anschließend die GUI zum Kuratieren nutzen.
+
+## Installation & Grundsetup (manuell)
 1. Repository klonen oder in das Arbeitsverzeichnis wechseln.
 2. Abhängigkeiten installieren:
    ```bash
@@ -36,7 +50,7 @@ Dieses Repository bündelt alle Werkzeuge, um LeanDeep-3.4-Marker lokal zu pfleg
 2. Optional: globale Hard-Negatives in `negatives/hard_negatives.jsonl` pflegen.
 3. Konsistenz prüfen:
    ```bash
-   npx tsx tools/validate_markers.ts
+   npm run validate
    ```
    - Warnungen für zu wenige Beispiele werden ausgegeben, Fehler brechen ab.
 
@@ -69,8 +83,9 @@ Dieses Repository bündelt alle Werkzeuge, um LeanDeep-3.4-Marker lokal zu pfleg
   Ergebnisse → `dist/crawl_labeled.jsonl`.
 - Vorschlags-Merge (Top-Beispiele in `.autogen.yml`):
   ```bash
-  npx tsx tools/merge_autogen.ts
+ npm run merge:auto
   ```
+  Ergänzend kannst du mit `npm run watch` einen Datei-Watcher starten, der bei Änderungen in `markers/` automatisch `link:markers` und `compile:markers` ausführt.
 
 ## Chrome-Extension bauen & nutzen
 1. Registry aktualisieren (`npm run compile:markers`).
@@ -90,12 +105,19 @@ Dieses Repository bündelt alle Werkzeuge, um LeanDeep-3.4-Marker lokal zu pfleg
 - `markers/` – Marker-Definitionen mit lokalen Negativbeispielen
 - `negatives/hard_negatives.jsonl` – globaler Verwechslungs-Pool
 - `dist/devset.jsonl` – Gold-Labels für Evaluation
+- `dist/review_state.json` – persistierte Entscheidungen aus der Review-GUI
 - `tools/*.ts` – Automatisierungen (Linking, Registry, Eval, Crawl, Merge, Validate)
+- `tools/review_server.ts` & `review_gui.html` – leichtgewichtige Review-Oberfläche für neue Beispiele
 - `extension/src/` – TypeScript-Quellen für Background, Worker, Content Script, Popup, Styles
 - `models/all-MiniLM-L6-v2/` – lokales Transformer-Modell für Embeddings (Xenova-Port)
+- `bootstrap.sh` – Automations-Skript hinter `npm run setup`
+- `npm run watch` – beobachtet Marker-Dateien und aktualisiert Registry bei Änderungen
+- `npm run review:gui` – startet den lokalen Review-Server auf Port 5173 (oder `PORT=...`)
+- `npm run setup` – führt den kompletten Bootstrap inkl. Build & Extension-Packaging aus
 
 ## Tipps & Fehlersuche
 - **ts-node/tsx Fehler**: Falls Pipes blockiert sind, Skripte mit Admin-Rechten (`sudo npm run …`) ausführen oder temporäre Ordner bereinigen.
 - **Modell fehlt**: Sicherstellen, dass `models/all-MiniLM-L6-v2/onnx/model.onnx` vorhanden ist; ansonsten Download wiederholen.
 - **CI/Validation**: `tools/validate_markers.ts` vor jedem Commit laufen lassen, um Feld-Typos zu verhindern.
 - **Extension aktualisieren**: Nach Marker-Updates erneut `npm run compile:markers && npm run build:ext` ausführen und den Ordner in Chrome neu laden.
+- **Review-GUI**: Falls Port 5173 belegt ist, `PORT=5180 npm run review:gui` aufrufen und die URL entsprechend anpassen.
