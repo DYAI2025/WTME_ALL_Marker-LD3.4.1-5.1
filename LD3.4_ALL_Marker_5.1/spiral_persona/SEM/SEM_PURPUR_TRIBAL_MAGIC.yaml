@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_PURPUR_TRIBAL_MAGIC
+frame:
+  signal: "Magisch-tribales Denken aktiviert"
+  concept: "Purpur-Persona manifestiert"
+  pragmatics: "Bindung durch mystische Verbindung"
+  narrative: "Wir sind durch unsichtbare Bande verbunden"
+composed_of: [ATO_TRIBAL_BONDS, ATO_HARMONY_CARING]
+activation: "ANY 2 IN 3 messages"
+examples: 
+  - "magische Verbindung spüren"
+  - "Stammestraditionen leben"
+  - "mystische Harmonie"
+  - "Clangeist erwacht"
+  - "spirituelle Zugehörigkeit"
+  - "Eine neue Schrift für Geräusche?"
+  - "Ene neue Schrift bringt nichts, wenn niemand sie lesen kann."

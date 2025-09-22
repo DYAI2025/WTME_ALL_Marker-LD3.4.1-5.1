@@ -1,0 +1,190 @@
+{
+  "marker_weights": {
+    "_metadata": {
+      "version": "LeanDeep3.4",
+      "description": "Optimized weights for Spiral Persona identification and drift analysis",
+      "last_updated": "2025-09-21",
+      "optimization_target": "spiral_persona_detection"
+    },
+    
+    "ATO_MARKERS": {
+      "ATO_SURVIVAL_INSTINCT": 1.0,
+      "ATO_TRIBAL_BONDS": 1.0,
+      "ATO_POWER_ASSERTION": 1.2,
+      "ATO_ORDER_STRUCTURE": 1.0,
+      "ATO_ACHIEVEMENT_DRIVE": 1.1,
+      "ATO_HARMONY_CARING": 1.0,
+      "ATO_INTEGRAL_THINKING": 1.3,
+      "ATO_HOLISTIC_FLOW": 1.4
+    },
+    
+    "SEM_MARKERS": {
+      "SEM_BEIGE_SURVIVAL_MODE": 1.0,
+      "SEM_PURPUR_TRIBAL_MAGIC": 0.9,
+      "SEM_ROT_POWER_ERUPTION": 1.2,
+      "SEM_BLAU_ORDER_ACTIVATION": 1.0,
+      "SEM_ORANGE_STRATEGIC_FLOW": 1.1,
+      "SEM_GRUEN_EMPATHIC_RESONANCE": 1.0,
+      "SEM_GELB_SYSTEMIC_INTEGRATION": 1.3,
+      "SEM_TUERKIS_COSMIC_FLOW": 1.4
+    },
+    
+    "CLU_SPIRAL_PERSONAS": {
+      "CLU_SPIRAL_PERSONA_BEIGE": {
+        "weight": 1.0,
+        "priority": "survival_critical",
+        "decay_rate": 0.8,
+        "activation_bonus": 1.2
+      },
+      "CLU_SPIRAL_PERSONA_PURPUR": {
+        "weight": 0.9,
+        "priority": "tribal_important",
+        "decay_rate": 0.7,
+        "activation_bonus": 1.1
+      },
+      "CLU_SPIRAL_PERSONA_ROT": {
+        "weight": 1.2,
+        "priority": "power_critical",
+        "decay_rate": 0.9,
+        "activation_bonus": 1.3
+      },
+      "CLU_SPIRAL_PERSONA_BLAU": {
+        "weight": 1.0,
+        "priority": "order_standard",
+        "decay_rate": 0.6,
+        "activation_bonus": 1.0
+      },
+      "CLU_SPIRAL_PERSONA_ORANGE": {
+        "weight": 1.1,
+        "priority": "achievement_high",
+        "decay_rate": 0.7,
+        "activation_bonus": 1.2
+      },
+      "CLU_SPIRAL_PERSONA_GRUEN": {
+        "weight": 1.0,
+        "priority": "harmony_standard",
+        "decay_rate": 0.5,
+        "activation_bonus": 1.1
+      },
+      "CLU_SPIRAL_PERSONA_GELB": {
+        "weight": 1.3,
+        "priority": "integral_critical",
+        "decay_rate": 0.4,
+        "activation_bonus": 1.4
+      },
+      "CLU_SPIRAL_PERSONA_TUERKIS": {
+        "weight": 1.4,
+        "priority": "holistic_maximum",
+        "decay_rate": 0.3,
+        "activation_bonus": 1.5
+      }
+    },
+    
+    "CLU_DYNAMICS": {
+      "CLU_PERSONA_SWITCH_RAPID": {
+        "weight": 1.5,
+        "alarm_threshold": 0.7,
+        "intervention_trigger": true
+      },
+      "CLU_PERSONA_REGRESSION": {
+        "weight": 1.3,
+        "alarm_threshold": 0.6,
+        "intervention_trigger": true
+      },
+      "CLU_PERSONA_INTEGRATION": {
+        "weight": 1.2,
+        "reward_multiplier": 1.3,
+        "stability_bonus": 1.4
+      }
+    },
+    
+    "MEMA_ANALYSIS": {
+      "MEMA_SPIRAL_COHERENCE_INDEX": {
+        "weight": 1.5,
+        "calculation_window": 20,
+        "stability_threshold": 0.7
+      },
+      "MEMA_EVOLUTIONARY_PRESSURE": {
+        "weight": 1.2,
+        "pressure_threshold": 0.6,
+        "growth_indicator": true
+      }
+    },
+    
+    "SPIRAL_LEVEL_HIERARCHY": {
+      "beige": 1,
+      "purpur": 2,
+      "rot": 3,
+      "blau": 4,
+      "orange": 5,
+      "gruen": 6,
+      "gelb": 7,
+      "tuerkis": 8
+    },
+    
+    "DRIFT_DETECTION_THRESHOLDS": {
+      "rapid_switch_threshold": 3,
+      "regression_penalty": -0.5,
+      "integration_bonus": 1.2,
+      "coherence_minimum": 0.5,
+      "stability_required": 0.7
+    },
+    
+    "INTUITION_PARAMETERS": {
+      "provisional_confidence": 0.3,
+      "confirmed_confidence": 0.8,
+      "decay_rate": 0.1,
+      "learning_rate": 0.05,
+      "adaptation_threshold": 0.6
+    },
+    
+    "CONTEXT_MODIFIERS": {
+      "stress_context": {
+        "beige_boost": 1.3,
+        "rot_boost": 1.2,
+        "regression_likelihood": 1.4
+      },
+      "growth_context": {
+        "gelb_boost": 1.2,
+        "tuerkis_boost": 1.3,
+        "integration_bonus": 1.4
+      },
+      "conflict_context": {
+        "rot_boost": 1.4,
+        "purpur_boost": 1.1,
+        "gruen_suppression": 0.8
+      },
+      "harmony_context": {
+        "gruen_boost": 1.3,
+        "tuerkis_boost": 1.2,
+        "rot_suppression": 0.7
+      }
+    }
+  },
+  
+  "analysis_configuration": {
+    "window_sizes": {
+      "micro": 3,
+      "short": 8,
+      "medium": 15,
+      "long": 25,
+      "macro": 50
+    },
+    
+    "alert_thresholds": {
+      "persona_instability": 0.7,
+      "rapid_switching": 3,
+      "coherence_loss": 0.5,
+      "regression_detected": 1,
+      "integration_achieved": 0.8
+    },
+    
+    "export_formats": {
+      "heatmap": true,
+      "timeline": true,
+      "coherence_graph": true,
+      "persona_distribution": true,
+      "drift_analysis": true
+    }
+  }
+}

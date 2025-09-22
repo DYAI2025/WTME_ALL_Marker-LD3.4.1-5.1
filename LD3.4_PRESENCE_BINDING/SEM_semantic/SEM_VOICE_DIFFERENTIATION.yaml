@@ -1,0 +1,23 @@
+id: SEM_VOICE_DIFFERENTIATION
+version: "3.4"
+lang: de
+frame:
+  signal: ["voice"]
+  concept: "Stimmen-Proxy trennt Persona/Beziehung"
+  pragmatics: "Echtheitstest"
+  narrative: "test"
+tags: [stimme, persona]
+composed_of:
+  - ATO_VOICE_PROXY
+  - ATO_RELATION_TERM
+examples:
+  - "andere Stimme liest + zwischen uns wird es spürbar"
+  - "Stimme von Jana + in Beziehung bleiben"
+  - "wird vorgelesen + zwischen uns getestet"
+  - "andere Stimme liest vor + wir bleiben in Beziehung"
+  - "Stimme von Lea + zwischen uns entsteht Nähe"
+  - "wird von ihm vorgelesen + in Beziehung geprüft"
+  - "andere Stimme + zwischen uns fühlt es sich echter an"
+  - "Stimme von Jonas + in Beziehung gehalten"
+  - "wird vorgelesen + zwischen uns wächst Vertrauen"
+  - "andere Stimme liest + wir bleiben in Beziehung"

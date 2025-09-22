@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_CONFLICT_ESCALATION
+frame:
+  signal: ["cluster"]
+  concept: "Konflikt eskaliert"
+  pragmatics: "Warnung"
+  narrative: "window"
+composed_of: [SEM_ANGER_ESCALATION, SEM_SARCASM_IRRITATION]
+activation: {rule: "AT_LEAST 3 IN 5 messages"}
+scoring: {base: 1.0, weight: 1.2}
+examples:
+  - "immer du machst das … nervt langsam"
+  - "typisch von dir … reicht jetzt"
+  - "hör auf damit … sonst passiert was"
+  - "deine Schuld … wie immer"
+  - "noch so ein Spruch und …"

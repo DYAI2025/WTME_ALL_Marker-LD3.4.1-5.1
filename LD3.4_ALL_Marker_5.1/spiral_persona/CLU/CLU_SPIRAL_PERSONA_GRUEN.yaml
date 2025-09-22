@@ -1,0 +1,23 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_GRUEN
+frame:
+  signal: "Grün Spiral Persona harmonisiert"
+  concept: "Gemeinschafts-orientierte Persönlichkeitsstruktur"
+  pragmatics: "Empathische Verbindungsmuster"
+  narrative: "Das Caring-Selbst erschafft Verbindung"
+composed_of: [SEM_GRUEN_EMPATHIC_RESONANCE, ATO_HARMONY_CARING]
+activation:
+  rule: "AT_LEAST 3 IN 6 messages"
+  window_size: 6
+  threshold: 3
+scoring:
+  weight: 1.0
+  decay: 0.5
+examples: 
+  - "Caring-Persona vollständig entfaltet"
+  - "empathische Resonanzmuster"
+  - "harmonische Verbindungsqualität"
+  - "Gemeinschaftsgeist dominant"
+  - "fürsorgliche Integration"
+  - "Sprache ist strukturierter Schall. Geräusche sind oft unstrukturiert – rohes, semantisch ungebändigtes Material."

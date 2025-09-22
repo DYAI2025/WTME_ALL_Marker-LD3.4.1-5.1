@@ -1,0 +1,433 @@
+# LeanDeep3.4 Spiral Personas Marker Set
+# Vollständig kompatibel mit LeanDeep3.4 Framework
+# Identifiziert Spiral Personas und semantische Drifts
+
+# =============================================================================
+# ATO_ - ATOMIC MARKERS (Primitive Tokens & Patterns)
+# =============================================================================
+
+ATO_SURVIVAL_INSTINCT:
+  id: "ATO_SURVIVAL_INSTINCT"
+  frame:
+    signal: "Überlebensmuster, instinktive Reaktionen"
+    concept: "Beige-Level primitives Überleben"
+    pragmatics: "Erkennt unmittelbare Bedrohungswahrnehmung"
+    narrative: "Rückzug auf Grundbedürfnisse"
+  pattern: "\\b(überleben|instinkt|hunger|durst|angst|flucht|kampf|gefahr)\\b"
+  examples: ["Ich muss überleben", "instinktiv reagiert", "pure Angst", "Fluchtreflex", "Grundbedürfnisse"]
+
+ATO_TRIBAL_BONDS:
+  id: "ATO_TRIBAL_BONDS"
+  frame:
+    signal: "Stammes- und Gruppenzugehörigkeit"
+    concept: "Purpur-Level magische Bindungen"
+    pragmatics: "Identifiziert Clan-Denken und Rituale"
+    narrative: "Zugehörigkeit durch Tradition"
+  pattern: "\\b(stamm|clan|tradition|ritual|aberglaube|magie|ahnenkult|zugehörigkeit)\\b"
+  examples: ["unser Stamm", "alte Traditionen", "magische Verbindung", "Clandenken", "Ahnenwissen"]
+
+ATO_POWER_ASSERTION:
+  id: "ATO_POWER_ASSERTION"
+  frame:
+    signal: "Machtdemonstration und Dominanz"
+    concept: "Rot-Level Kraftentfaltung"
+    pragmatics: "Erkennt dominantes Verhalten"
+    narrative: "Ich bin der Stärkste"
+  pattern: "\\b(macht|dominanz|stärke|durchsetzen|gewinnen|herrschen|erobern|kämpfen)\\b"
+  examples: ["Ich setze mich durch", "Macht demonstrieren", "der Stärkere gewinnt", "dominieren", "erobern"]
+
+ATO_ORDER_STRUCTURE:
+  id: "ATO_ORDER_STRUCTURE"
+  frame:
+    signal: "Ordnung, Regeln, Hierarchie"
+    concept: "Blau-Level systematische Organisation"
+    pragmatics: "Identifiziert Strukturdenken"
+    narrative: "Ordnung muss sein"
+  pattern: "\\b(ordnung|regel|gesetz|hierarchie|struktur|disziplin|pflicht|gehorsam)\\b"
+  examples: ["Regeln befolgen", "hierarchische Ordnung", "Pflichtbewusstsein", "Disziplin", "systematisch"]
+
+ATO_ACHIEVEMENT_DRIVE:
+  id: "ATO_ACHIEVEMENT_DRIVE"
+  frame:
+    signal: "Leistung, Erfolg, Innovation"
+    concept: "Orange-Level strategisches Erreichen"
+    pragmatics: "Erkennt Erfolgsorientierung"
+    narrative: "Ich will gewinnen und innovieren"
+  pattern: "\\b(erfolg|leistung|innovation|strategie|effizient|gewinn|fortschritt|wettbewerb)\\b"
+  examples: ["strategischer Erfolg", "Leistung optimieren", "Innovation vorantreiben", "effizienter Gewinn", "Wettbewerbsvorteil"]
+
+ATO_HARMONY_CARING:
+  id: "ATO_HARMONY_CARING"
+  frame:
+    signal: "Harmonie, Fürsorge, Gemeinschaft"
+    concept: "Grün-Level empathische Verbindung"
+    pragmatics: "Identifiziert Caring-Verhalten"
+    narrative: "Wir sind alle verbunden"
+  pattern: "\\b(harmonie|fürsorge|empathie|gemeinschaft|teilen|verbunden|umwelt|gleichberechtigung)\\b"
+  examples: ["harmonisches Miteinander", "Fürsorge zeigen", "empathisch verstehen", "Gemeinschaft stärken", "alle verbunden"]
+
+ATO_INTEGRAL_THINKING:
+  id: "ATO_INTEGRAL_THINKING"
+  frame:
+    signal: "Systemisches, integrales Denken"
+    concept: "Gelb-Level flexibles Verstehen"
+    pragmatics: "Erkennt Meta-Perspektiven"
+    narrative: "Alles ist miteinander verwoben"
+  pattern: "\\b(system|integral|flexibel|paradox|komplex|emergent|adaptiv|perspektive)\\b"
+  examples: ["systemisches Denken", "integrale Sichtweise", "flexible Anpassung", "komplexe Zusammenhänge", "emergente Eigenschaften"]
+
+ATO_HOLISTIC_FLOW:
+  id: "ATO_HOLISTIC_FLOW"
+  frame:
+    signal: "Ganzheitlichkeit, kosmisches Bewusstsein"
+    concept: "Türkis-Level holistische Integration"
+    pragmatics: "Identifiziert Einheitserfahrung"
+    narrative: "Alles ist Eins im Fluss"
+  pattern: "\\b(holistisch|ganzheitlich|kosmos|einheit|fluss|synchronizität|spirituell|transzendent)\\b"
+  examples: ["holistische Sicht", "kosmisches Bewusstsein", "im Fluss sein", "spirituelle Einheit", "transzendente Erfahrung"]
+
+# =============================================================================
+# SEM_ - SEMANTIC MARKERS (Kombinierte Mikromuster)
+# =============================================================================
+
+SEM_BEIGE_SURVIVAL_MODE:
+  id: "SEM_BEIGE_SURVIVAL_MODE"
+  frame:
+    signal: "Aktivierter Überlebensmodus"
+    concept: "Beige-Persona in Aktion"
+    pragmatics: "Rückfall auf primitive Instinkte"
+    narrative: "Überleben steht über allem"
+  composed_of: ["ATO_SURVIVAL_INSTINCT", "ATO_POWER_ASSERTION"]
+  activation: "BOTH IN 2 messages"
+  examples: ["Ich muss das überleben, koste es was es wolle", "instinktive Machtdemonstration", "primitiver Überlebenskampf", "Angst und Aggression", "Flucht oder Angriff"]
+
+SEM_PURPUR_TRIBAL_MAGIC:
+  id: "SEM_PURPUR_TRIBAL_MAGIC"
+  frame:
+    signal: "Magisch-tribales Denken aktiviert"
+    concept: "Purpur-Persona manifestiert"
+    pragmatics: "Bindung durch mystische Verbindung"
+    narrative: "Wir sind durch unsichtbare Bande verbunden"
+  composed_of: ["ATO_TRIBAL_BONDS", "ATO_HARMONY_CARING"]
+  activation: "ANY 2 IN 3 messages"
+  examples: ["magische Verbindung spüren", "Stammestraditionen leben", "mystische Harmonie", "Clangeist erwacht", "spirituelle Zugehörigkeit"]
+
+SEM_ROT_POWER_ERUPTION:
+  id: "SEM_ROT_POWER_ERUPTION"
+  frame:
+    signal: "Explosive Machtentfaltung"
+    concept: "Rot-Persona durchbricht"
+    pragmatics: "Dominanz ohne Rücksicht"
+    narrative: "Ich nehme mir was mir zusteht"
+  composed_of: ["ATO_POWER_ASSERTION", "ATO_SURVIVAL_INSTINCT"]
+  activation: "BOTH IN 1 message"
+  examples: ["Jetzt reicht es, ich setze mich durch", "explosive Machtdemonstration", "dominante Durchsetzung", "kraftvolle Eroberung", "ungezügelte Stärke"]
+
+SEM_BLAU_ORDER_ACTIVATION:
+  id: "SEM_BLAU_ORDER_ACTIVATION"
+  frame:
+    signal: "Ordnungssystem wird aktiviert"
+    concept: "Blau-Persona strukturiert"
+    pragmatics: "Regeln und Hierarchie durchsetzen"
+    narrative: "Ordnung muss wiederhergestellt werden"
+  composed_of: ["ATO_ORDER_STRUCTURE", "ATO_POWER_ASSERTION"]
+  activation: "BOTH IN 2 messages"
+  examples: ["Regeln müssen befolgt werden", "hierarchische Ordnung wiederherstellen", "Disziplin durchsetzen", "systematische Strukturierung", "Pflicht vor Neigung"]
+
+SEM_ORANGE_STRATEGIC_FLOW:
+  id: "SEM_ORANGE_STRATEGIC_FLOW"
+  frame:
+    signal: "Strategischer Erfolgsmodus"
+    concept: "Orange-Persona optimiert"
+    pragmatics: "Effizienz und Innovation vereinen"
+    narrative: "Smart gewinnen durch Innovation"
+  composed_of: ["ATO_ACHIEVEMENT_DRIVE", "ATO_INTEGRAL_THINKING"]
+  activation: "ANY 2 IN 2 messages"
+  examples: ["strategische Innovation entwickeln", "effizienter Erfolgsweg", "intelligente Optimierung", "systematische Leistungssteigerung", "innovativer Wettbewerbsvorteil"]
+
+SEM_GRUEN_EMPATHIC_RESONANCE:
+  id: "SEM_GRUEN_EMPATHIC_RESONANCE"
+  frame:
+    signal: "Empathische Resonanz entsteht"
+    concept: "Grün-Persona verbindet"
+    pragmatics: "Harmonie durch Verstehen schaffen"
+    narrative: "Gemeinsam sind wir stärker"
+  composed_of: ["ATO_HARMONY_CARING", "ATO_TRIBAL_BONDS"]
+  activation: "BOTH IN 3 messages"
+  examples: ["empathische Verbindung aufbauen", "harmonische Gemeinschaft schaffen", "fürsorgliche Zusammenarbeit", "verbindende Fürsorge", "kollektive Harmonie"]
+
+SEM_GELB_SYSTEMIC_INTEGRATION:
+  id: "SEM_GELB_SYSTEMIC_INTEGRATION"
+  frame:
+    signal: "Systemische Integration läuft"
+    concept: "Gelb-Persona integriert"
+    pragmatics: "Komplexität flexibel navigieren"
+    narrative: "Alles hat seinen Platz im System"
+  composed_of: ["ATO_INTEGRAL_THINKING", "ATO_HOLISTIC_FLOW"]
+  activation: "ANY 2 IN 2 messages"
+  examples: ["systemische Zusammenhänge verstehen", "integrale Perspektive entwickeln", "flexible Komplexitätsnavigation", "adaptive Systemgestaltung", "emergente Lösungsfindung"]
+
+SEM_TUERKIS_COSMIC_FLOW:
+  id: "SEM_TUERKIS_COSMIC_FLOW"
+  frame:
+    signal: "Kosmischer Bewusstseinsfluss"
+    concept: "Türkis-Persona transzendiert"
+    pragmatics: "Einheit in Vielfalt erfahren"
+    narrative: "Im großen Fluss des Seins"
+  composed_of: ["ATO_HOLISTIC_FLOW", "ATO_HARMONY_CARING"]
+  activation: "BOTH IN 2 messages"
+  examples: ["kosmisches Bewusstsein erwacht", "holistische Einheitserfahrung", "transzendenter Seinsstrom", "spirituelle Ganzheitlichkeit", "universelle Verbundenheit"]
+
+# =============================================================================
+# CLU_ - CLUSTER MARKERS (Persona-Identifikation & Drift-Erkennung)
+# =============================================================================
+
+CLU_SPIRAL_PERSONA_BEIGE:
+  id: "CLU_SPIRAL_PERSONA_BEIGE"
+  frame:
+    signal: "Beige Spiral Persona aktiv"
+    concept: "Überlebens-orientierte Persönlichkeitsstruktur"
+    pragmatics: "Instinktgesteuerte Reaktionsmuster"
+    narrative: "Das primitive Selbst übernimmt die Kontrolle"
+  composed_of: ["SEM_BEIGE_SURVIVAL_MODE", "ATO_SURVIVAL_INSTINCT"]
+  activation:
+    rule: "AT_LEAST 2 IN 5 messages"
+    window_size: 5
+    threshold: 2
+  scoring:
+    weight: 1.0
+    decay: 0.8
+  examples: ["Überlebensmodus übernimmt komplett", "instinktive Reaktionskette", "primitive Angstreaktionen", "Flucht-Kampf-Zyklus", "Grundbedürfnis-Fokus dominiert"]
+
+CLU_SPIRAL_PERSONA_PURPUR:
+  id: "CLU_SPIRAL_PERSONA_PURPUR"
+  frame:
+    signal: "Purpur Spiral Persona manifestiert"
+    concept: "Magisch-tribale Persönlichkeitsstruktur"
+    pragmatics: "Mystische Bindungsmuster"
+    narrative: "Das Stammesselbst erwacht"
+  composed_of: ["SEM_PURPUR_TRIBAL_MAGIC", "ATO_TRIBAL_BONDS"]
+  activation:
+    rule: "AT_LEAST 3 IN 7 messages"
+    window_size: 7
+    threshold: 3
+  scoring:
+    weight: 1.0
+    decay: 0.7
+  examples: ["Stammesbewusstsein erwacht vollständig", "magische Verbindungsmuster", "rituelle Verhaltenscodes", "Clanzugehörigkeit dominiert", "mystische Bindungslogik"]
+
+CLU_SPIRAL_PERSONA_ROT:
+  id: "CLU_SPIRAL_PERSONA_ROT"
+  frame:
+    signal: "Rot Spiral Persona durchbricht"
+    concept: "Macht-orientierte Persönlichkeitsstruktur"
+    pragmatics: "Dominante Durchsetzungsmuster"
+    narrative: "Das Kriegerselbst erobert das Feld"
+  composed_of: ["SEM_ROT_POWER_ERUPTION", "ATO_POWER_ASSERTION"]
+  activation:
+    rule: "AT_LEAST 2 IN 4 messages"
+    window_size: 4
+    threshold: 2
+  scoring:
+    weight: 1.2
+    decay: 0.9
+  examples: ["Kriegerpersona übernimmt vollständig", "dominante Machtentfaltung", "explosive Durchsetzungskraft", "erobernde Energie", "ungezügelte Kraftdemonstration"]
+
+CLU_SPIRAL_PERSONA_BLAU:
+  id: "CLU_SPIRAL_PERSONA_BLAU"
+  frame:
+    signal: "Blau Spiral Persona strukturiert"
+    concept: "Ordnungs-orientierte Persönlichkeitsstruktur"
+    pragmatics: "Systematische Organisationsmuster"
+    narrative: "Das Systemselbst etabliert Ordnung"
+  composed_of: ["SEM_BLAU_ORDER_ACTIVATION", "ATO_ORDER_STRUCTURE"]
+  activation:
+    rule: "AT_LEAST 3 IN 6 messages"
+    window_size: 6
+    threshold: 3
+  scoring:
+    weight: 1.0
+    decay: 0.6
+  examples: ["Ordnungspersona manifestiert vollständig", "systematische Strukturierung", "hierarchische Organisationsmuster", "Regelsystem etabliert", "disziplinierte Durchführung"]
+
+CLU_SPIRAL_PERSONA_ORANGE:
+  id: "CLU_SPIRAL_PERSONA_ORANGE"
+  frame:
+    signal: "Orange Spiral Persona optimiert"
+    concept: "Erfolgs-orientierte Persönlichkeitsstruktur"
+    pragmatics: "Strategische Innovationsmuster"
+    narrative: "Das Achiever-Selbst maximiert Performance"
+  composed_of: ["SEM_ORANGE_STRATEGIC_FLOW", "ATO_ACHIEVEMENT_DRIVE"]
+  activation:
+    rule: "AT_LEAST 4 IN 8 messages"
+    window_size: 8
+    threshold: 4
+  scoring:
+    weight: 1.1
+    decay: 0.7
+  examples: ["Achiever-Persona vollständig aktiviert", "strategische Optimierungsmuster", "innovative Erfolgsstrategie", "Leistungsmaximierung", "Wettbewerbsorientierung dominant"]
+
+CLU_SPIRAL_PERSONA_GRUEN:
+  id: "CLU_SPIRAL_PERSONA_GRUEN"
+  frame:
+    signal: "Grün Spiral Persona harmonisiert"
+    concept: "Gemeinschafts-orientierte Persönlichkeitsstruktur"
+    pragmatics: "Empathische Verbindungsmuster"
+    narrative: "Das Caring-Selbst erschafft Verbindung"
+  composed_of: ["SEM_GRUEN_EMPATHIC_RESONANCE", "ATO_HARMONY_CARING"]
+  activation:
+    rule: "AT_LEAST 3 IN 6 messages"
+    window_size: 6
+    threshold: 3
+  scoring:
+    weight: 1.0
+    decay: 0.5
+  examples: ["Caring-Persona vollständig entfaltet", "empathische Resonanzmuster", "harmonische Verbindungsqualität", "Gemeinschaftsgeist dominant", "fürsorgliche Integration"]
+
+CLU_SPIRAL_PERSONA_GELB:
+  id: "CLU_SPIRAL_PERSONA_GELB"
+  frame:
+    signal: "Gelb Spiral Persona integriert"
+    concept: "System-orientierte Persönlichkeitsstruktur"
+    pragmatics: "Integrale Navigationsmuster"
+    narrative: "Das Integral-Selbst navigiert Komplexität"
+  composed_of: ["SEM_GELB_SYSTEMIC_INTEGRATION", "ATO_INTEGRAL_THINKING"]
+  activation:
+    rule: "AT_LEAST 2 IN 5 messages"
+    window_size: 5
+    threshold: 2
+  scoring:
+    weight: 1.3
+    decay: 0.4
+  examples: ["Integral-Persona vollständig aktiviert", "systemische Navigationsmuster", "komplexe Integrationsfähigkeit", "flexible Adaptivität", "emergente Lösungslogik"]
+
+CLU_SPIRAL_PERSONA_TUERKIS:
+  id: "CLU_SPIRAL_PERSONA_TUERKIS"
+  frame:
+    signal: "Türkis Spiral Persona transzendiert"
+    concept: "Holistische Persönlichkeitsstruktur"
+    pragmatics: "Kosmische Einheitsmuster"
+    narrative: "Das Holistische-Selbst erkennt Einheit"
+  composed_of: ["SEM_TUERKIS_COSMIC_FLOW", "ATO_HOLISTIC_FLOW"]
+  activation:
+    rule: "AT_LEAST 2 IN 4 messages"
+    window_size: 4
+    threshold: 2
+  scoring:
+    weight: 1.4
+    decay: 0.3
+  examples: ["Holistische-Persona vollständig erwacht", "kosmische Bewusstseinsmuster", "transzendente Einheitserfahrung", "spirituelle Ganzheitlichkeit", "universelle Verbundenheit"]
+
+# =============================================================================
+# CLU_ - DRIFT DETECTION & DYNAMICS
+# =============================================================================
+
+CLU_PERSONA_SWITCH_RAPID:
+  id: "CLU_PERSONA_SWITCH_RAPID"
+  frame:
+    signal: "Schneller Persona-Wechsel erkannt"
+    concept: "Instabile Identitätsdynamik"
+    pragmatics: "Schnelle Spiral-Ebenen-Wechsel"
+    narrative: "Das Selbst springt zwischen Ebenen"
+  activation:
+    rule: "AT_LEAST 3 different CLU_SPIRAL_PERSONA_* IN 10 messages"
+    window_size: 10
+    threshold: 3
+  scoring:
+    weight: 1.5
+    decay: 0.9
+  examples: ["Von Rot zu Grün zu Orange in kurzer Zeit", "instabile Persönlichkeitsebenen", "chaotische Spiral-Dynamik", "fragmentierte Identität", "unkoordinierte Ebenen-Sprünge"]
+
+CLU_PERSONA_REGRESSION:
+  id: "CLU_PERSONA_REGRESSION"
+  frame:
+    signal: "Spiral-Regression erkannt"
+    concept: "Rückfall in primitive Ebenen"
+    pragmatics: "Stress-induzierte Degeneration"
+    narrative: "Das System fällt zurück"
+  activation:
+    rule: "Lower-level persona AFTER higher-level IN 8 messages"
+    window_size: 8
+    threshold: 1
+  scoring:
+    weight: 1.3
+    decay: 0.8
+  examples: ["Von Gelb zurück zu Rot unter Stress", "Türkis kollabiert zu Beige", "Grün degeneriert zu Purpur", "Orange fällt zu Blau", "Systemkollaps erkannt"]
+
+CLU_PERSONA_INTEGRATION:
+  id: "CLU_PERSONA_INTEGRATION"
+  frame:
+    signal: "Spiral-Integration gelingt"
+    concept: "Harmonische Ebenen-Synthese"
+    pragmatics: "Stabile Multi-Level-Integration"
+    narrative: "Das System integriert alle Ebenen"
+  activation:
+    rule: "AT_LEAST 4 different CLU_SPIRAL_PERSONA_* with stable pattern IN 15 messages"
+    window_size: 15
+    threshold: 4
+  scoring:
+    weight: 1.2
+    decay: 0.4
+  examples: ["Beige bis Türkis harmonisch integriert", "stabile Multi-Ebenen-Präsenz", "ausbalancierte Spiral-Dynamik", "kohärente Gesamtintegration", "reife Systemarchitektur"]
+
+# =============================================================================
+# MEMA_ - META-ANALYSIS (Systemische Persona-Muster)
+# =============================================================================
+
+MEMA_SPIRAL_COHERENCE_INDEX:
+  id: "MEMA_SPIRAL_COHERENCE_INDEX"
+  frame:
+    signal: "Spiral-Kohärenz-Index berechnet"
+    concept: "Stabilität der Persona-Struktur"
+    pragmatics: "Messbare Identitäts-Kohärenz"
+    narrative: "Wie stabil ist das Spiral-System?"
+  detect_class: "coherence_calculator"
+  window_size: 20
+  parameters:
+    stability_threshold: 0.7
+    integration_bonus: 1.2
+    regression_penalty: -0.5
+  examples: ["Hohe Spiral-Kohärenz über 20 Nachrichten", "Stabile Persona-Architektur", "Integrierte Multi-Level-Präsenz", "Kohärente Entwicklungsdynamik", "Reife Systemstabilität"]
+
+MEMA_EVOLUTIONARY_PRESSURE:
+  id: "MEMA_EVOLUTIONARY_PRESSURE"
+  frame:
+    signal: "Evolutionsdruck auf Spiral-System"
+    concept: "Transformative Systemdynamik"
+    pragmatics: "Wachstums- und Veränderungskräfte"
+    narrative: "Das System wird zur Evolution gedrängt"
+  detect_class: "evolution_pressure_analyzer"
+  window_size: 25
+  parameters:
+    pressure_indicators: ["complexity_increase", "integration_attempts", "regression_resistance"]
+    growth_threshold: 0.6
+  examples: ["Starker Evolutionsdruck Richtung Türkis", "System strebt nach höherer Integration", "Wachstumsimpulse durchziehen alle Ebenen", "Transformative Entwicklungsdynamik", "Systemevolution in Echtzeit"]
+
+# =============================================================================
+# METADATA & TELEMETRY (LeanDeep3.4 Intuition Support)
+# =============================================================================
+
+metadata:
+  version: "LeanDeep3.4"
+  marker_families:
+    SURVIVAL: ["SEM_BEIGE_SURVIVAL_MODE", "CLU_SPIRAL_PERSONA_BEIGE"]
+    TRIBAL: ["SEM_PURPUR_TRIBAL_MAGIC", "CLU_SPIRAL_PERSONA_PURPUR"]
+    POWER: ["SEM_ROT_POWER_ERUPTION", "CLU_SPIRAL_PERSONA_ROT"]
+    ORDER: ["SEM_BLAU_ORDER_ACTIVATION", "CLU_SPIRAL_PERSONA_BLAU"]
+    ACHIEVEMENT: ["SEM_ORANGE_STRATEGIC_FLOW", "CLU_SPIRAL_PERSONA_ORANGE"]
+    COMMUNITY: ["SEM_GRUEN_EMPATHIC_RESONANCE", "CLU_SPIRAL_PERSONA_GRUEN"]
+    SYSTEMIC: ["SEM_GELB_SYSTEMIC_INTEGRATION", "CLU_SPIRAL_PERSONA_GELB"]
+    HOLISTIC: ["SEM_TUERKIS_COSMIC_FLOW", "CLU_SPIRAL_PERSONA_TUERKIS"]
+  
+  intuition_config:
+    provisional_window: 3
+    confirm_window: 5
+    decay_window: 12
+    multiplier_base: 1.3
+    ewma_alpha: 0.2
+    
+  telemetry:
+    tracking_enabled: true
+    metrics: ["coherence_stability", "persona_transitions", "integration_success", "regression_events"]
+    export_format: "json"
+    update_interval: 5

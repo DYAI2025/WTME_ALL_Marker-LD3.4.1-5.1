@@ -1,0 +1,78 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_ABSENCE_OF_SELF_REFERENCE_IN_CONFLICT
+lang: de
+frame:
+  signal: ["Konflikt ohne Selbstbezug"]
+  concept: "Omission: Selbstreferenz fehlt trotz Streit"
+  pragmatics: "Hinweis auf externalisierte Perspektiven"
+  narrative: "controlled_distance"
+tags: [meta, absence, conflict, self_reference]
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+emit:
+  per_speaker: true
+absence_sets:
+  SELF_REFERENCE:
+    tags: [self_reference, pronoun_ich]
+    ids:
+      - ATO_PRONOUN_ICH
+      - ATO_SELF_STATEMENT
+examples:
+  - |
+    A: Seit Wochen wartest du nicht auf Rückmeldung.
+    B: Du hättest den Termin selbst sichern können.
+    A: Du verschiebst immer wieder die Verantwortung.
+    B: Du siehst nur deinen Kalender, nicht den Prozess.
+  - |
+    A: Deine Abteilung liefert nie rechtzeitig.
+    B: Du setzt unrealistische Deadlines.
+    A: Deine Planung ignoriert die Kapazitäten.
+    B: Du gehst ständig über unsere Grenzen.
+  - |
+    A: Du hältst dich nicht an unsere Vereinbarungen.
+    B: Du schmeißt ständig neue Aufgaben rein.
+    A: Du lässt Nacharbeit einfach bei uns liegen.
+    B: Du verkennst, wie komplex das Thema ist.
+  - |
+    A: Du weichst kritischen Fragen immer aus.
+    B: Du provozierst mit Unterstellungen.
+    A: Du stellst das Team vor vollendete Tatsachen.
+    B: Du ignorierst sämtliche Rückmeldungen.
+  - |
+    A: Du blockierst jeden Vorschlag aus dem Projektteam.
+    B: Du willst einfach nur deinen eigenen Plan durchdrücken.
+    A: Du lässt keine Diskussion zu.
+    B: Du wartest nur darauf, Fehler zu finden.
+  - |
+    A: Du machst wieder alles von deinem Bauchgefühl abhängig.
+    B: Du klammerst dich an veraltete Prozesse.
+    A: Du siehst nicht, wie viel Schaden das anrichtet.
+    B: Du übergehst jedes Warnsignal.
+  - |
+    A: Du setzt andere unter Druck, statt Lösungen zu suchen.
+    B: Du dramatisierst jede Verzögerung.
+    A: Du stellst das Board gegen uns.
+    B: Du nutzt jede Abweichung für Schuldzuweisungen.
+  - |
+    A: Du hast das Protokoll komplett ignoriert.
+    B: Du warst es, der die Anforderungen täglich änderte.
+    A: Du lässt jede Abstimmung platzen.
+    B: Du respektierst keine Freigaben.
+  - |
+    A: Du gehst wieder mit Halbwissen in die Präsentation.
+    B: Du sabotierst die Vorbereitung durch ständige Änderungen.
+    A: Du spielst Risiken herunter.
+    B: Du blendest jede Konsequenz aus.
+  - |
+    A: Du bringst das Team in Schwierigkeiten mit deinen Zusagen.
+    B: Du verteilst Aufgaben ohne Ressourcen zu prüfen.
+    A: Du setzt Meetings an, obwohl nichts geklärt ist.
+    B: Du siehst die Auswirkungen auf die Partner nicht.

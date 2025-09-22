@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_STEGANO_HINT
+frame:
+  signal: ["atomic"]
+  concept: "Steganografie-Hinweis"
+  pragmatics: "Versteckte Botschaft"
+  narrative: "micro"
+pattern: "\\b(versteckte Sprache|kodiert|steganografisch)\\b"
+examples:
+  - "versteckte Sprache"
+  - "kodiert"
+  - "steganografisch…"
+  - "versteckte Hinweise"
+  - "kodierte Botschaft"

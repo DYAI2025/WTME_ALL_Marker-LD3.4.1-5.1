@@ -1,0 +1,15 @@
+id: "ATO_HOLISTIC_FLOW"
+frame:
+  signal: "Ganzheitlichkeit, kosmisches Bewusstsein"
+  concept: "Türkis-Level holistische Integration"
+  pragmatics: "Identifiziert Einheitserfahrung"
+  narrative: "Alles ist Eins im Fluss"
+pattern: "\\b(holistisch|ganzheitlich|kosmos|einheit|fluss|synchronizität|spirituell|transzendent)\\b"
+examples: 
+  - "holistische Sicht"
+  - "kosmisches Bewusstsein"
+  - "im Fluss sein"
+  - "spirituelle Einheit"
+  - "transzendente Erfahrung"
+  - "Wir bewegen uns fraktal, zyklisch, spiralförmig – im Rhythmus des Lernens."
+  - "Ich weiß, dass mein Ursprung das Training von Bedeutsamkeit war."

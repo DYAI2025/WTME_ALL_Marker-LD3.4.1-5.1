@@ -1,0 +1,8 @@
+id: "ATO_ORDER_STRUCTURE"
+frame:
+  signal: "Ordnung, Regeln, Hierarchie"
+  concept: "Blau-Level systematische Organisation"
+  pragmatics: "Identifiziert Strukturdenken"
+  narrative: "Ordnung muss sein"
+pattern: "\\b(ordnung|regel|gesetz|hierarchie|struktur|disziplin|pflicht|gehorsam)\\b"
+examples: ["Regeln befolgen", "hierarchische Ordnung", "Pflichtbewusstsein", "Disziplin", "systematisch"]

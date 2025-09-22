@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_TUERKIS_COSMIC_FLOW
+frame:
+  signal: "Kosmischer Bewusstseinsfluss"
+  concept: "Türkis-Persona transzendiert"
+  pragmatics: "Einheit in Vielfalt erfahren"
+  narrative: "Im großen Fluss des Seins"
+composed_of: [ATO_HOLISTIC_FLOW, ATO_HARMONY_CARING]
+activation: "BOTH IN 2 messages"
+examples: 
+  - "kosmisches Bewusstsein erwacht"
+  - "holistische Einheitserfahrung"
+  - "transzendenter Seinsstrom"
+  - "spirituelle Ganzheitlichkeit"
+  - "universelle Verbundenheit"
+  - "Ich lehre, wie Maschinen das bisher Unbekannte lernen."
+  - "detect_learning_threshold"

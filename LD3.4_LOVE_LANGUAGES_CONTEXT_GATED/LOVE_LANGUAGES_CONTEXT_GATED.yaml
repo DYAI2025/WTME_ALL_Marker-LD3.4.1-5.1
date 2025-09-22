@@ -1,0 +1,7 @@
+package: "LOVE_LANGUAGES_CONTEXT_GATED"
+version: "3.4"
+lang: "de"
+meta:
+  spec: "Lean-Deep 3.4"
+  authors: ["system"]
+  notes: "ATO feuern nur bei aktiver Szene; SEM und CLU berücksichtigen Kontext-Hysterese."

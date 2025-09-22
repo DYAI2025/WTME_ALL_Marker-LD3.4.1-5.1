@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PROJECT_INIT
+frame:
+  signal: ["atomic"]
+  concept: "Projekt-Initiierung"
+  pragmatics: "Startbefehl"
+  narrative: "micro"
+pattern: "\\b(Projekt starten|Struktur bestimmen|initiiere)\\b"
+examples:
+  - "Projekt starten"
+  - "Struktur bestimmen"
+  - "initiiere…"
+  - "Projekt-Kick"
+  - "Starten wir das Projekt"

@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_VALUE_REFRAME
+frame:
+  signal: ["cluster"]
+  concept: "Werte-Reframe"
+  pragmatics: "Neusortierung"
+  narrative: "window"
+composed_of: [SEM_SD_GREEN_EMPATHY, SEM_SD_ORANGE_ACHIEVE]
+activation: {rule: "AT_LEAST 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "früher war mir Sicherheit wichtig … jetzt Freiheit"
+  - "habe meine Prioritäten geändert"
+  - "erst Leistung … nun Gemeinschaft"
+  - "ich sehe das heute anders"
+  - "Werte neu sortiert"

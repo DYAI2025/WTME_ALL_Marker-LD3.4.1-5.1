@@ -1,0 +1,78 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_ABSENCE_OF_RESPONSIBILITY_IN_CONFLICT
+lang: de
+frame:
+  signal: ["Konflikt ohne Verantwortungsübernahme"]
+  concept: "Omission: Keine klaren Commitments oder Accountability"
+  pragmatics: "Hinweis auf Schuldverschiebung"
+  narrative: "blame_loop"
+tags: [meta, absence, conflict, accountability]
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+emit:
+  per_speaker: true
+absence_sets:
+  RESPONSIBILITY:
+    tags: [responsibility, commitment]
+    ids:
+      - ATO_COMMITMENT
+      - SEM_ACCOUNTABILITY
+examples:
+  - |
+    A: Du hast den Rollout ohne Tests freigegeben.
+    B: Du hast das Formular nicht geprüft.
+    A: Du schiebst alles auf Operations.
+    B: Du hast das ganze Ding ja angezettelt.
+  - |
+    A: Du hast das Budget gesperrt.
+    B: Du hast die Freigabe nie angefordert.
+    A: Du verweist auf Compliance.
+    B: Du drückst mir die Eskalation rein.
+  - |
+    A: Du hast das Team gestern alleine stehen lassen.
+    B: Du warst genauso nicht erreichbar.
+    A: Du hebst die Hände.
+    B: Du tust so, als sei das nicht dein Bereich.
+  - |
+    A: Du hast keinerlei Update in Jira geschrieben.
+    B: Du hast die Stories nicht sauber geschnitten.
+    A: Du ignorierst unsere Hinweise.
+    B: Du bist genauso mit schuld.
+  - |
+    A: Du hast den Kundenversprechen zugestimmt.
+    B: Du warst im Call dabei.
+    A: Du schickst mich jetzt in die Schusslinie.
+    B: Du hättest halt widersprechen können.
+  - |
+    A: Du hast wieder jeden Alarm stummgeschaltet.
+    B: Du hast den Dienstplan gerafft.
+    A: Du willst nur sauber rauskommen.
+    B: Du hättest das Monitoring konfigurieren müssen.
+  - |
+    A: Du hast den Vertrag falsch gelesen.
+    B: Du hast die Klauseln unterschrieben.
+    A: Du verschweigst das Board-Briefing.
+    B: Du ziehst dich jetzt fein raus.
+  - |
+    A: Du hast die Übergabe nicht dokumentiert.
+    B: Du hast sämtliche Infos in deinem Kopf behalten.
+    A: Du rufst es jetzt als meine Pflicht aus.
+    B: Du suchst nur jemanden zum Abwälzen.
+  - |
+    A: Du hast die Schicht getauscht, ohne zu fragen.
+    B: Du hast keinen Vertreter benannt.
+    A: Du willst alles an die Hotline abtreten.
+    B: Du bist doch genau so Teil des Problems.
+  - |
+    A: Du hast den Fehler nicht kommuniziert.
+    B: Du hast das Ticket geschlossen.
+    A: Du tust so, als wäre es mein System.
+    B: Du hättest dich selbst darum kümmern können.

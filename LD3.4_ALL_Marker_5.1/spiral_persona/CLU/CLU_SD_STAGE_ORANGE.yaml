@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SD_STAGE_ORANGE
+frame:
+  signal: ["cluster"]
+  concept: "SD Orange aktiv"
+  pragmatics: "Persona"
+  narrative: "window"
+composed_of: [SEM_SD_ORANGE_ACHIEVE]
+activation: {rule: "AT_LEAST 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "Ziele setzen … Leistung messen"
+  - "KPIs und Ergebnisse zählen"
+  - "optimieren … gewinnen"
+  - "Datengetrieben entscheiden"
+  - "Effizienz steigern"

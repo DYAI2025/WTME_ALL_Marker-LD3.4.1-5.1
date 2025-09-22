@@ -1,0 +1,25 @@
+id: ATO_LL_QUALITY_TIME
+version: "3.4"
+lang: de
+frame:
+  signal: ["intent"]
+  concept: "gemeinsame Zeit"
+  pragmatics: "ungeteilte Aufmerksamkeit"
+  narrative: "Nähe durch Zeit"
+tags: [love_language, time]
+requires_env:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+pattern:
+  - "\\b(zu zweit|nur wir|Quality[- ]?Time|gemeinsam(e|er)? Zeit|ohne Handy|ungeteilte Aufmerksamkeit)\\b"
+  - "\\b(lass uns .*?(spazieren|essen gehen|Abend nur für uns))\\b"
+examples:
+  - "Lass uns morgen Abend nur wir zwei essen gehen."
+  - "Ich wünsche mir einen Abend zu zweit ohne Handy."
+  - "Kannst du Sonntag nur für uns blocken, damit wir Quality Time haben?"
+  - "Ich brauche einmal die Woche gemeinsame Zeit, nur wir."
+  - "Lass uns zusammen spazieren gehen und einfach reden."
+  - "Wie wäre es, wenn wir den Samstag als Abend nur für uns reservieren?"
+  - "Ich möchte ungeteilte Aufmerksamkeit, ohne dass jemand aufs Handy schaut."
+  - "Nur wir beide auf dem Sofa, ohne Serien, einfach reden."
+  - "Lass uns nächste Woche einen ganzen Tag zu zweit planen."
+  - "Ich wünsche mir mehr gemeinsame Zeit, in der nur wir zählen."

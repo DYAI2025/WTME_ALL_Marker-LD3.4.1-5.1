@@ -1,0 +1,78 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_ABSENCE_OF_GOAL_CLARITY_IN_CONFLICT
+lang: de
+frame:
+  signal: ["Konflikt ohne Klärung von Absichten"]
+  concept: "Omission: Keine Ziel- oder Intentionsaussagen"
+  pragmatics: "Zeigt festgefahrene Auseinandersetzungen ohne Orientierung"
+  narrative: "drift"
+tags: [meta, absence, conflict, goal_clarity]
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+emit:
+  per_speaker: true
+absence_sets:
+  GOAL_CLARITY:
+    tags: [goal, intention]
+    ids:
+      - ATO_INTENTION
+      - SEM_TARGET_STATEMENT
+examples:
+  - |
+    A: Du schneidest die Anforderungen jedes Mal neu.
+    B: Du wechselst mitten im Sprint ständig die Richtung.
+    A: Du kippst nur Probleme auf uns.
+    B: Du hältst niemanden auf dem Laufenden.
+  - |
+    A: Du hast die Roadmap wieder veröffentlicht, ohne abzustimmen.
+    B: Du hast die Stakeholder nicht einbezogen.
+    A: Du wirfst uns schlechte Kommunikation vor.
+    B: Du blockierst jeden Workshop.
+  - |
+    A: Du nimmst die dritten Folgeänderungen einfach an.
+    B: Du stellst das Team dann vor die Wahl aufzuhören.
+    A: Du lässt alles eskalieren.
+    B: Du reagierst nur mit Kritik.
+  - |
+    A: Du stoppst Releases ohne Erklärung.
+    B: Du reichst immer nur rote Karten ein.
+    A: Du kommentierst jede Initiative abfällig.
+    B: Du verweigerst jede Abstimmung.
+  - |
+    A: Du hast die Datenmigration wieder verschoben.
+    B: Du bestellst neue Tasks, statt etwas abzunehmen.
+    A: Du beschwerst dich über fehlende Struktur.
+    B: Du ziehst uns parallel ins nächste Thema.
+  - |
+    A: Du hast das Meeting heute einfach abgebrochen.
+    B: Du hast nur über Fehler gesprochen.
+    A: Du lädst ständig neue Leute ein.
+    B: Du sagst nie, was du erwartest.
+  - |
+    A: Du rollst schon wieder ein Audit auf.
+    B: Du sendest nur Mahnungen.
+    A: Du stellst Fragen ohne Kontext.
+    B: Du kritisierst ohne Ansatz für ein Vorgehen.
+  - |
+    A: Du legst Berichte vor und verschwindest dann.
+    B: Du forderst Stellungnahmen ohne Ankündigung.
+    A: Du schmeißt uns Tabellen hin.
+    B: Du reagierst nur auf Eskalationen von oben.
+  - |
+    A: Du bringst jeden Morgen neue Kritikpunkte.
+    B: Du wiederholst einfach die Beschwerden des Kunden.
+    A: Du lässt keine Diskussion zu.
+    B: Du drohst nur mit Konsequenzen.
+  - |
+    A: Du hast wiederholt das Review gerissen.
+    B: Du merkst nicht, wie viele Umwege du aufmachst.
+    A: Du holst rein gar keinen Input ein.
+    B: Du klemmst jede Rückfrage ab.
