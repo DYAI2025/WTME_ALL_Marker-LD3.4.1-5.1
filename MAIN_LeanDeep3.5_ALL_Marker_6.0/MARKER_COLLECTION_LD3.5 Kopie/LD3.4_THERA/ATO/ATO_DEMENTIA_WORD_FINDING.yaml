@@ -1,0 +1,31 @@
+id: ATO_DEMENTIA_WORD_FINDING
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for word-finding difficulties in dementia
+frame:
+  signal:
+  - word finding difficulty
+  concept: Memory and language impairment
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(what's that word|I can't remember the word|thingy|whatchamacallit)\b
+examples:
+  positive:
+  - "I need the... what's that word... thingy for cutting."
+  - "The... whatchamacallit... is on the table."
+  - "I can't remember the word for... you know, the big animal."
+  - "It's called a... um... the thing with wheels."
+  - "The... what's it called... memory is failing me."
+  negative:
+  - "I need the knife for cutting."
+  - "The book is on the table."
+  - "I can't remember the word for elephant."
+  - "It's called a car."
+  - "The memory is failing me."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- neuropsychological

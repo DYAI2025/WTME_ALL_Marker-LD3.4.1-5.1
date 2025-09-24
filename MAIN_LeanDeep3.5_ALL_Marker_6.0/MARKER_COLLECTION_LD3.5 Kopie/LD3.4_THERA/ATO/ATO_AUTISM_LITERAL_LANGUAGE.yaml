@@ -1,0 +1,31 @@
+id: ATO_AUTISM_LITERAL_LANGUAGE
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for literal language in autism spectrum disorder
+frame:
+  signal:
+  - literal language
+  concept: Pragmatic language impairment
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(literally|exactly as said|don't understand idiom|take it literally|what do you mean)\b
+examples:
+  positive:
+  - "Literally, break a leg means to injure yourself?"
+  - "Exactly as said, no metaphors please."
+  - "I don't understand the idiom 'kick the bucket'."
+  - "Take it literally, what does 'it's raining cats' mean?"
+  - "What do you mean by 'piece of cake'?"
+  negative:
+  - "Break a leg means good luck."
+  - "No metaphors, just facts."
+  - "I understand idioms."
+  - "It's raining heavily."
+  - "It's easy."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

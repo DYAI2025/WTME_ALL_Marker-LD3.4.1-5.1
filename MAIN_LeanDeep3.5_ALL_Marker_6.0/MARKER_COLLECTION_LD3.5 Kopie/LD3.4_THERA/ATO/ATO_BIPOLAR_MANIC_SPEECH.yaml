@@ -1,0 +1,61 @@
+id: ATO_BIPOLAR_MANIC_SPEECH
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for manic speech in bipolar disorder
+frame:
+  signal:
+  - manic speech
+  concept: Elevated mood language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(so excited|amazing idea|let's do it all|incredible|brilliant plan)\b
+examples:
+  positive:
+  - "I'm so excited, we can do everything at once!"
+  - "This amazing idea will change the world."
+  - "Let's do it all tonight, it's incredible!"
+  - "My brilliant plan is foolproof."
+  - "I'm on top of the world, everything is perfect."
+  - "Wow, this is the best day ever, let's conquer it!"
+  - "I have a genius idea that will make us rich."
+  - "Everything is possible, no limits here!"
+  - "I'm unstoppable, let's start a revolution."
+  - "This project is epic, we'll finish it in hours."
+  - "I'm buzzing with energy, can't sit still."
+  - "My mind is racing with fantastic thoughts."
+  - "Let's buy everything we want right now."
+  - "I'm the smartest person in the room."
+  - "Life is an adventure, full speed ahead!"
+  - "I can solve any problem instantly."
+  - "This is groundbreaking, nobody thought of it."
+  - "I'm euphoric, the world is mine."
+  - "Let's party all night, no sleep needed."
+  - "My creativity is off the charts today."
+  negative:
+  - "I'm calm and collected."
+  - "This is a good idea."
+  - "Let's plan it carefully."
+  - "It's decent."
+  - "I'm feeling okay."
+  - "I'm relaxed and taking it slow."
+  - "This seems reasonable."
+  - "We should think it through."
+  - "It's acceptable."
+  - "I'm content."
+  - "No rush, let's proceed steadily."
+  - "This is a solid plan."
+  - "I'm balanced today."
+  - "Everything is fine as is."
+  - "I'm not overwhelmed."
+  - "Let's keep it simple."
+  - "This works for me."
+  - "I'm grounded."
+  - "No extremes here."
+  - "I'm satisfied."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

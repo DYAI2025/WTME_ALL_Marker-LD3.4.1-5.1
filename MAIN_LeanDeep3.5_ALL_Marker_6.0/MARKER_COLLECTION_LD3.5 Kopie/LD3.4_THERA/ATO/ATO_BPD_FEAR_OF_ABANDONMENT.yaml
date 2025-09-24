@@ -1,0 +1,61 @@
+id: ATO_BPD_FEAR_OF_ABANDONMENT
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for fear of abandonment in borderline personality disorder
+frame:
+  signal:
+  - fear of abandonment
+  concept: Relationship instability language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(don't leave me|abandon|alone|please stay|you'll leave)\b
+examples:
+  positive:
+  - "Don't leave me, I can't be alone right now."
+  - "You're going to abandon me, aren't you?"
+  - "I feel so alone without you here."
+  - "Please stay, I need you desperately."
+  - "You'll leave eventually, like everyone does."
+  - "Don't go, I'll be lost without you."
+  - "You're abandoning me again."
+  - "I can't survive alone."
+  - "Stay forever, please."
+  - "Everyone leaves me in the end."
+  - "Don't walk away, I beg you."
+  - "Abandonment is my worst fear."
+  - "I need you here constantly."
+  - "You'll desert me soon."
+  - "Alone is unbearable."
+  - "Please don't leave my side."
+  - "You're going to vanish."
+  - "I can't be by myself."
+  - "Stay, or I'll fall apart."
+  - "Abandonment hurts so much."
+  negative:
+  - "I understand if you need to go."
+  - "You're not abandoning me."
+  - "I can handle being alone."
+  - "Stay if you want, no pressure."
+  - "You won't leave, I trust you."
+  - "It's okay if you leave."
+  - "No abandonment here."
+  - "I enjoy some alone time."
+  - "Stay or go, your choice."
+  - "I believe you'll stay."
+  - "No need to stay."
+  - "Not abandoning."
+  - "I like independence."
+  - "Your decision."
+  - "Trust in your return."
+  - "Fine with solitude."
+  - "No pressure to stay."
+  - "I know you'll come back."
+  - "Alone is okay."
+  - "No fear of leaving."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

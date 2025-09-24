@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../_LeanDeep3.4_ALL_Marker_5.1/ALL_Marker_5.1/SEM_semantic"
+		},
+		{
+			"path": "../../_LeanDeep3.4_ALL_Marker_5.1/ALL_Marker_5.1/MEMA_meta"
+		},
+		{
+			"path": "../../_LeanDeep3.4_ALL_Marker_5.1/ALL_Marker_5.1/CLU_cluster"
+		},
+		{
+			"path": "../../_LeanDeep3.4_ALL_Marker_5.1/ALL_Marker_5.1/ATO_atomic"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

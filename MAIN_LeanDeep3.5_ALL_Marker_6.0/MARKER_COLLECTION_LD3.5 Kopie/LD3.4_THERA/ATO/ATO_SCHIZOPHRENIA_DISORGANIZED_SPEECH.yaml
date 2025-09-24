@@ -1,0 +1,31 @@
+id: ATO_SCHIZOPHRENIA_DISORGANIZED_SPEECH
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for disorganized speech in schizophrenia
+frame:
+  signal:
+  - disorganized speech
+  concept: Thought disorder language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(word salad|neologism|loose associations)\b
+examples:
+  positive:
+  - "The trees are talking to the clouds in word salad fashion."
+  - "Neologism like 'blorple' means everything and nothing."
+  - "Loose associations: cats fly to the moon on bicycles."
+  - "Thoughts jump from apples to quantum physics randomly."
+  - "Disorganized: I am the king of invisible elephants."
+  negative:
+  - "The trees are tall and green."
+  - "Neologism is a new word."
+  - "Cats are pets that meow."
+  - "Apples are fruits."
+  - "I am a person."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

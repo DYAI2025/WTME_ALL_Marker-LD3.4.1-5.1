@@ -1,0 +1,31 @@
+id: ATO_PTSD_AVOIDANCE_LANGUAGE
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for avoidance language in PTSD
+frame:
+  signal:
+  - avoidance
+  concept: Trauma-related language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(I don't want to talk about it|let's not go there|I can't remember)\b
+examples:
+  positive:
+  - "I don't want to talk about that incident."
+  - "Let's not go there, it's too painful."
+  - "I can't remember the details right now."
+  - "Please change the subject, I feel uncomfortable."
+  - "I prefer not to discuss my past experiences."
+  negative:
+  - "I want to talk about that incident."
+  - "Let's discuss it openly."
+  - "I remember the details clearly."
+  - "I'm comfortable talking about it."
+  - "I can share my past experiences."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
