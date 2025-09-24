@@ -10,7 +10,7 @@ frame:
   pragmatics: lexical indicator
   narrative: surface
 pattern:
-- (?i)\b(don't leave me|abandon|alone|please stay|you'll leave)\b
+- (?i)\b(don't leave me|abandon|alone|please stay|you'll leave|reject|desert|forsake|cling|desperate|need you|can't be alone|abandonment|deserted|forsaken)\b
 examples:
   positive:
   - "Don't leave me, I can't be alone right now."
@@ -33,6 +33,9 @@ examples:
   - "I can't be by myself."
   - "Stay, or I'll fall apart."
   - "Abandonment hurts so much."
+  - "I cling to you because I'm terrified you'll leave."
+  - "Deserted by everyone I love."
+  - "Forsaken in my darkest moments."
   negative:
   - "I understand if you need to go."
   - "You're not abandoning me."
