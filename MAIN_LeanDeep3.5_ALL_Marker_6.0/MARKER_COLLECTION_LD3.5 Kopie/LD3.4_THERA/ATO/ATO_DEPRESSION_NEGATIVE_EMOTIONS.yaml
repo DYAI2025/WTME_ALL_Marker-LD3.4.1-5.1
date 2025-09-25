@@ -1,0 +1,62 @@
+id: ATO_DEPRESSION_NEGATIVE_EMOTIONS
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for negative emotional language in major depressive disorder
+frame:
+  signal:
+  - negative emotions
+  concept: Emotional valence language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(sad|pain|anxiety|suffering|hate|anger|despair|hopeless|depressed|worthless)\b
+examples:
+  positive:
+  - "I feel so sad and hopeless every day."
+  - "The pain in my chest won't go away."
+  - "I'm filled with anger and despair."
+  - "This anxiety is overwhelming me."
+  - "I hate everything about my life."
+  - "Despair consumes me completely."
+  - "I'm depressed and can't see a way out."
+  - "Hopelessness is my constant companion."
+  - "The sadness never lifts."
+  - "I feel worthless and in pain."
+  - "Anger boils inside me."
+  - "Verzweiflung überkommt mich."  # German example
+  - "I'm full of hatred towards myself."
+  - "This suffering is unbearable."
+  - "Depressive thoughts plague me."
+  - "Hopeless and broken."
+  - "Painful memories haunt me."
+  - "I'm angry at the world."
+  - "Despair is my reality."
+  - "Sadness engulfs everything."
+  negative:
+  - "I'm feeling okay today."
+  - "Life is going well."
+  - "I have some positive thoughts."
+  - "Things are neutral."
+  - "No strong emotions here."
+  - "I'm content with my situation."
+  - "Everything is fine."
+  - "I feel balanced."
+  - "No sadness or pain."
+  - "Life is manageable."
+  - "I'm not depressed."
+  - "Positive outlook maintained."
+  - "No anger issues."
+  - "Calm and collected."
+  - "Hopeful for the future."
+  - "No despair present."
+  - "Feeling good."
+  - "Emotionally stable."
+  - "No hatred."
+  - "Pain-free."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
+- depression

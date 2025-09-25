@@ -1,0 +1,62 @@
+id: ATO_DEPRESSION_PAST_FOCUS
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for past-focused language in major depressive disorder
+frame:
+  signal:
+  - past orientation
+  concept: Temporal focus language patterns
+  pragmatics: grammatical indicator
+  narrative: surface
+pattern:
+- (?i)\b(was|had|went|did|made|felt|said|thought|lived)\b
+examples:
+  positive:
+  - "I was happy once, but not anymore."
+  - "I had dreams that faded away."
+  - "Life was better before."
+  - "I went through so much pain."
+  - "I did everything wrong."
+  - "I made mistakes that haunt me."
+  - "I felt worthless for years."
+  - "I said things I regret."
+  - "I thought it would get better."
+  - "I lived in darkness."
+  - "Ich war glücklich einmal."  # German
+  - "Ich hatte Träume, die verblassten."
+  - "Das Leben war besser früher."
+  - "Ich ging durch so viel Schmerz."
+  - "Ich tat alles falsch."
+  - "Ich machte Fehler, die mich verfolgen."
+  - "Ich fühlte mich wertlos jahrelang."
+  - "Ich sagte Dinge, die ich bereue."
+  - "Ich dachte, es würde besser werden."
+  - "Ich lebte in Dunkelheit."
+  negative:
+  - "I am happy now."
+  - "I have plans for tomorrow."
+  - "Life will improve."
+  - "I go forward with hope."
+  - "I do things right today."
+  - "I make positive changes."
+  - "I feel good currently."
+  - "I say encouraging words."
+  - "I think positively."
+  - "I live in the light."
+  - "Ich bin glücklich jetzt."  # German
+  - "Ich habe Pläne für morgen."
+  - "Das Leben wird besser."
+  - "Ich gehe vorwärts mit Hoffnung."
+  - "Ich tue Dinge richtig heute."
+  - "Ich mache positive Veränderungen."
+  - "Ich fühle mich gut aktuell."
+  - "Ich sage ermutigende Worte."
+  - "Ich denke positiv."
+  - "Ich lebe im Licht."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
+- depression

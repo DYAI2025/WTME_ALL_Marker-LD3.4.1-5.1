@@ -10,7 +10,7 @@ frame:
   pragmatics: lexical indicator
   narrative: surface
 pattern:
-- (?i)\b(what's that word|I can't remember the word|thingy|whatchamacallit)\b
+- (?i)\b(what's that word|thingy|whatchamacallit|what's it called|whatsit|doodad)\b
 examples:
   positive:
   - "I need the... what's that word... thingy for cutting."

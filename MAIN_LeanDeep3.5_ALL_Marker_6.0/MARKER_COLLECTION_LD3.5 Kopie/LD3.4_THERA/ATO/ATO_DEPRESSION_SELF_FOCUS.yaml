@@ -1,0 +1,62 @@
+id: ATO_DEPRESSION_SELF_FOCUS
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for self-focused language in major depressive disorder
+frame:
+  signal:
+  - self-focus
+  concept: Rumination and self-absorption language patterns
+  pragmatics: grammatical indicator
+  narrative: surface
+pattern:
+- (?i)\b(i|me|my|myself)\b
+examples:
+  positive:
+  - "I feel worthless every day."
+  - "My life is meaningless."
+  - "I can't stop thinking about myself."
+  - "Me and my problems."
+  - "I am so depressed."
+  - "My thoughts are dark."
+  - "I blame myself for everything."
+  - "Myself is the problem."
+  - "I focus only on me."
+  - "My pain is unbearable."
+  - "Ich fühle mich wertlos."  # German
+  - "Mein Leben ist sinnlos."
+  - "Mich selbst hasse ich."
+  - "Mir geht es schlecht."
+  - "Ich bin depressiv."
+  - "Meine Gedanken sind dunkel."
+  - "Ich gebe mir die Schuld."
+  - "Mich selbst kann ich nicht leiden."
+  - "Ich konzentriere mich nur auf mich."
+  - "Mein Schmerz ist unerträglich."
+  negative:
+  - "People around me suffer too."
+  - "We all have problems."
+  - "Others need help."
+  - "The world affects everyone."
+  - "Not just about me."
+  - "Shared experiences matter."
+  - "I think about others."
+  - "We can help each other."
+  - "Not my fault alone."
+  - "Focus on community."
+  - "Andere leiden auch."  # German
+  - "Wir haben alle Probleme."
+  - "Andere brauchen Hilfe."
+  - "Die Welt betrifft alle."
+  - "Nicht nur um mich."
+  - "Geteilte Erfahrungen zählen."
+  - "Ich denke an andere."
+  - "Wir können uns helfen."
+  - "Nicht nur meine Schuld."
+  - "Fokus auf Gemeinschaft."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
+- depression

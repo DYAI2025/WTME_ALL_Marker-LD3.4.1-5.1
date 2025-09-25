@@ -1,0 +1,62 @@
+id: ATO_DEPRESSION_ABSOLUTIST_LANGUAGE
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for absolutist language in major depressive disorder
+frame:
+  signal:
+  - absolutist thinking
+  concept: Cognitive distortion language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(everything|always|never|nothing|everyone|no one|totally|completely|perfectly|absolutely nothing)\b
+examples:
+  positive:
+  - "Everything is always wrong in my life."
+  - "I never get anything right."
+  - "Nothing ever goes my way."
+  - "Everyone hates me."
+  - "No one understands me."
+  - "It's always this bad."
+  - "I feel totally worthless."
+  - "Everything is completely hopeless."
+  - "I never have any luck."
+  - "Nothing matters anymore."
+  - "Jeder hasst mich."  # German
+  - "Keiner liebt mich."
+  - "Immer geht alles schief."
+  - "Nichts ist gut."
+  - "Total verloren."
+  - "Vollkommen allein."
+  - "Gar nichts funktioniert."
+  - "Immer derselbe Schmerz."
+  - "Alles ist finster."
+  - "Nie ein Lichtblick."
+  negative:
+  - "Some things are okay."
+  - "I sometimes feel better."
+  - "Not everything is bad."
+  - "A few people care."
+  - "Things can improve."
+  - "I have some luck occasionally."
+  - "Not totally hopeless."
+  - "Some aspects are good."
+  - "Not everyone dislikes me."
+  - "I feel somewhat balanced."
+  - "Nicht alles ist schlecht."
+  - "Manchmal geht es besser."
+  - "Einige Dinge sind okay."
+  - "Nicht immer traurig."
+  - "Teilweise positiv."
+  - "Nicht komplett verloren."
+  - "Gelegentlich Glück."
+  - "Nicht jeder hasst mich."
+  - "Nicht nichts ist gut."
+  - "Nicht total hoffnungslos."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
+- depression

@@ -1,0 +1,35 @@
+id: MEMA_DEPRESSIVE_LANGUAGE_PROFILE
+schema_version: LD-3.4
+lang: en
+category: META
+description: Meta pattern for overall depressive language profile in major depressive disorder
+frame:
+  signal:
+  - depressive profile
+  concept: Integrated depressive language markers
+  pragmatics: meta-analysis
+  narrative: holistic
+components:
+- ATO_DEPRESSION_NEGATIVE_EMOTIONS
+- ATO_DEPRESSION_ABSOLUTIST_LANGUAGE
+- ATO_DEPRESSION_SELF_FOCUS
+- ATO_DEPRESSION_PAST_FOCUS
+- ATO_DEPRESSION_SUICIDE_RISK
+- CLU_DEPRESSIVE_TRIAD
+pattern:
+- Complex meta-pattern combining emotional valence, cognitive distortions, temporal focus, and crisis indicators
+examples:
+  positive:
+  - "I was happy once, but now everything is always wrong. I feel so sad and hopeless, my life is meaningless. I blame myself for everything."
+  - "Life was better before, but nothing ever goes my way. I'm filled with anger and despair, my thoughts are dark. I want to end it all."
+  - "I had dreams that faded away, and now I never get anything right. The pain is unbearable, I can't stop thinking about myself. Suicide seems the only way."
+  negative:
+  - "I am happy now and have plans for tomorrow. Some things are okay, I feel good and think about others. Life will improve."
+  - "Things are going well, not everything is bad. I go forward with hope, do things right today. We can help each other."
+  - "I have some positive thoughts, feel balanced. Not totally hopeless, focus on community. Hopeful for the future."
+tags:
+- meta
+- v3.4
+- diagnostic
+- psychiatric
+- depression

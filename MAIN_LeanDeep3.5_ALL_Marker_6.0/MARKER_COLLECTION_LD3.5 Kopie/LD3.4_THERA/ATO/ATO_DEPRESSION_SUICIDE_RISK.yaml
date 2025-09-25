@@ -1,0 +1,63 @@
+id: ATO_DEPRESSION_SUICIDE_RISK
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for suicide risk language in major depressive disorder
+frame:
+  signal:
+  - suicide ideation
+  concept: Crisis language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(suicide|kill myself|end it all|not worth living|better off dead|want to die|no reason to live|escape this pain)\b
+examples:
+  positive:
+  - "I think about suicide every day."
+  - "I want to kill myself."
+  - "Life isn't worth living anymore."
+  - "I'd be better off dead."
+  - "No reason to go on."
+  - "I want to end it all."
+  - "This pain is unbearable, I want to die."
+  - "Suicide seems like the only way."
+  - "I can't escape this darkness."
+  - "Not worth living like this."
+  - "Ich denke an Selbstmord jeden Tag."  # German
+  - "Ich will mich umbringen."
+  - "Das Leben ist nicht mehr lebenswert."
+  - "Ich wäre besser tot."
+  - "Kein Grund weiterzumachen."
+  - "Ich will allem ein Ende setzen."
+  - "Dieser Schmerz ist unerträglich, ich will sterben."
+  - "Selbstmord scheint der einzige Weg."
+  - "Ich kann dieser Dunkelheit nicht entkommen."
+  - "Nicht wert, so zu leben."
+  negative:
+  - "I have hope for the future."
+  - "Life has meaning."
+  - "I want to live."
+  - "Things will get better."
+  - "I value my life."
+  - "No thoughts of ending it."
+  - "I find reasons to continue."
+  - "Suicide is not an option."
+  - "I seek help instead."
+  - "Life is precious."
+  - "Ich habe Hoffnung für die Zukunft."  # German
+  - "Das Leben hat Bedeutung."
+  - "Ich will leben."
+  - "Die Dinge werden besser."
+  - "Ich schätze mein Leben."
+  - "Keine Gedanken, es zu beenden."
+  - "Ich finde Gründe weiterzumachen."
+  - "Selbstmord ist keine Option."
+  - "Ich suche Hilfe stattdessen."
+  - "Das Leben ist kostbar."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
+- depression
+- crisis
