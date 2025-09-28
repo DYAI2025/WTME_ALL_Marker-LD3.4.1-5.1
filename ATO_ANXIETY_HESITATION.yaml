@@ -1,0 +1,31 @@
+id: ATO_ANXIETY_HESITATION
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for hesitant speech in anxiety disorders
+frame:
+  signal:
+  - hesitation
+  concept: Anxiety-related speech patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(um|uh|er|ah|well|you know|like)\b
+examples:
+  positive:
+  - "Um, I think... well, maybe we should... you know, wait."
+  - "Uh, I'm not sure... er, perhaps later."
+  - "Ah, it's like... well, complicated, you know?"
+  - "Um, the thing is... uh, I'm nervous about it."
+  - "Well, you know... er, I need more time."
+  negative:
+  - "I think we should wait."
+  - "I'm not sure, perhaps later."
+  - "It's complicated."
+  - "I'm nervous about it."
+  - "I need more time."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric
