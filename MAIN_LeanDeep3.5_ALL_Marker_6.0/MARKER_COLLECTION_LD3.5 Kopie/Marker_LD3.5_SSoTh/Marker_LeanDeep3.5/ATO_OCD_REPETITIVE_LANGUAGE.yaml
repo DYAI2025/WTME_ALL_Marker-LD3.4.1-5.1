@@ -1,0 +1,31 @@
+id: ATO_OCD_REPETITIVE_LANGUAGE
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for repetitive language in OCD
+frame:
+  signal:
+  - repetitive language
+  concept: Compulsive thought patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(check again|must be perfect|repeat|double-check|one more time)\b
+examples:
+  positive:
+  - "I need to check again if the door is locked."
+  - "It must be perfect, let me fix it."
+  - "Repeat the process one more time."
+  - "Double-check everything before proceeding."
+  - "I have to do it again to be sure."
+  negative:
+  - "The door is locked."
+  - "It's good enough."
+  - "The process is done."
+  - "Check it once."
+  - "I'm sure it's fine."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

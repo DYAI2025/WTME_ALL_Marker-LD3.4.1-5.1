@@ -1,0 +1,23 @@
+id: SEM_RELATION_OVER_PERSONA
+version: "3.4"
+lang: de
+frame:
+  signal: ["relation>persona"]
+  concept: "Beziehung wichtiger als Rolle"
+  pragmatics: "Stabilität"
+  narrative: "priority"
+tags: [beziehung, priorität]
+composed_of:
+  - ATO_RELATION_TERM
+  - ATO_PERSONA_TERM
+examples:
+  - "zwischen uns zählt mehr als die Persona"
+  - "in Beziehung bleiben + Rolle ablegen"
+  - "zwischen uns + Maske fällt"
+  - "in Beziehung sein + Rolle loslassen"
+  - "zwischen uns + Persona darf ruhen"
+  - "in Beziehung bleiben + Maske weg"
+  - "zwischen uns + Rolle nicht wichtig"
+  - "in Beziehung + Persona tritt zurück"
+  - "zwischen uns + Maske runter"
+  - "in Beziehung + Rolle zweitrangig"

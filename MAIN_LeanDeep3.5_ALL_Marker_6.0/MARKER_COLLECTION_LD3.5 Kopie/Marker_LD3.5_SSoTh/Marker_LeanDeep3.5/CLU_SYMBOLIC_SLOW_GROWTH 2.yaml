@@ -1,0 +1,29 @@
+id: CLU_SYMBOLIC_SLOW_GROWTH
+version: "3.4"
+lang: de
+frame:
+  signal: ["symbolic-growth"]
+  concept: "Symbolisches, langsames Wachsen"
+  pragmatics: "Prozessfokus"
+  narrative: "development"
+tags: [entwicklung, geduld]
+composed_of:
+  - SEM_MYCEL_GROWTH
+  - SEM_RITUAL_PING
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 7 messages"
+scoring:
+  base: 0.80
+  weight: 1.0
+decay_window: 12
+examples:
+  - "Mycel wächst + 11:11 als Puls"
+  - "Pilzgeflecht breitet sich aus + Ritual beginnt"
+  - "unter der Erde weiterwächst + Anker setzen"
+  - "Mycelnetz + Ritualkerze"
+  - "Pilzgeflecht + fühlt sich wahr an beim Ritual"
+  - "Mycel im Boden + 11:11 Erinnerung"
+  - "unterirdisches Wachsen + Anker-Atem"
+  - "Mycel breitet sich aus + Ritualglocke"
+  - "Pilzgeflecht hält + tägliches 11:11"
+  - "Mycelspuren + Ritualtee"

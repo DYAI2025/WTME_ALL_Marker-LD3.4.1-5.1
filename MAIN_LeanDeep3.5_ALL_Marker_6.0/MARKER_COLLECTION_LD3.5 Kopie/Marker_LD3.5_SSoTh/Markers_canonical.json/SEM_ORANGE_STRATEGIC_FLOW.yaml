@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_ORANGE_STRATEGIC_FLOW
+frame:
+  signal: "Strategischer Erfolgsmodus"
+  concept: "Orange-Persona optimiert"
+  pragmatics: "Effizienz und Innovation vereinen"
+  narrative: "Smart gewinnen durch Innovation"
+composed_of: [ATO_ACHIEVEMENT_DRIVE, ATO_INTEGRAL_THINKING]
+activation: "ANY 2 IN 2 messages"
+examples: 
+  - "strategische Innovation entwickeln"
+  - "effizienter Erfolgsweg"
+  - "intelligente Optimierung"
+  - "systematische Leistungssteigerung"
+  - "innovativer Wettbewerbsvorteil"
+  - "Wie können wir mit der Methode des Trainings von Sprache auch Geräusche verstehen lernen?"

@@ -1,0 +1,53 @@
+name: CLU_RUMINATION_ENRICHED
+label: "Rumination Enriched"
+class: cluster
+version: 3.5
+languages: [de]
+intent: Grübelschleife mit Hilflosigkeit.
+temperature_semantics:
+  external: STAGNATION
+  latent: RESIGNATION
+window:
+  size_messages: 6
+gates:
+  min_msgs: 2
+score:
+  method: weighted_k_of_n
+  threshold: 0.6
+ingredients:
+  require:
+    - CLU_RUMINATION_LOOP
+    - ATO_LEARNED_HELPLESSNESS
+  k_of_n: {k: 2, of: []}
+emits:
+  indices:
+    stagnation: +0.2
+examples:
+  positive_de:
+    - "Wir drehen uns im Kreis, es bringt nichts."
+    - "Immer wieder dieselben Punkte – ich kann das nicht."
+    - "Wir kommen nicht weiter – egal, was ich tue."
+    - "So bringt das nichts – ich schaffe das nie."
+    - "Wir stecken fest – warum versuche ich es überhaupt?"
+    - "Immer dasselbe."
+    - "Hilflos hier."
+    - "Kein Ausweg."
+    - "Grübeln endlos."
+    - "Resigniere."
+  negative_de:
+    - "Lass uns vorankommen."
+    - "Ich kann das."
+    - "Neuer Ansatz."
+    - "Bringt was."
+    - "Wir schaffen das."
+    - "Bewegung einleiten."
+    - "Hilfe suchen."
+    - "Ausweg finden."
+    - "Grübeln stoppen."
+    - "Aktiv werden."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "rumination"
+  interpretant: "effect_on_state: {stagnation: +0.2}"
+  connotation: ["enriched", "helplessness"]

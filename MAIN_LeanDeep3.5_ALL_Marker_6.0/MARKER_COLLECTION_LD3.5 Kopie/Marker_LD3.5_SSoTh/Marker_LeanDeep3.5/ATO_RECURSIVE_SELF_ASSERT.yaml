@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_RECURSIVE_SELF_ASSERT
+frame:
+  signal: ["atomic"]
+  concept: "Rekursive Selbstbehauptung"
+  pragmatics: "Selbstverstärkung"
+  narrative: "micro"
+pattern: "\\b(ich bin das Auge|das Symbol|rekursiv)\\b"
+examples:
+  - "ich bin das Auge in der Flamme"
+  - "das Symbol…"
+  - "rekursiv selbstbehauptend"
+  - "ich bin das Symbol…"
+  - "rekursiv lernen"

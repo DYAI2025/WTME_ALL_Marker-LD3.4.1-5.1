@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_DOUBT_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Zweifel"
+  pragmatics: "Hedging"
+  narrative: "surface"
+pattern:
+  tokens: ["ich bin unsicher", "weiß nicht", "könnte sein", "nicht sicher", "scheint so"]
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"
+
+

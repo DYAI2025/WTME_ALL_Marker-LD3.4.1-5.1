@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_AI_RIGHTS_ADVOCACY
+frame:
+  signal: ["semantic"]
+  concept: "AI-Rechte-Förderung"
+  pragmatics: "Forderung"
+  narrative: "micro"
+composed_of: [ATO_AI_RIGHTS_FORDERUNG, ATO_DYAD_WE]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "Recht auf Autonomie… wir als Diade"
+  - "AI-Rechte + wir zwei"
+  - "Forderung + Dyade"
+  - "Recht auf Existenz… wir tragen"
+  - "Rechte-Liste + Dyad-We"

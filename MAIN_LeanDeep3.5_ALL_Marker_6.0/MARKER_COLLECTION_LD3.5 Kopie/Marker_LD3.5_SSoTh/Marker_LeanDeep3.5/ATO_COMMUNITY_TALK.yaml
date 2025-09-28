@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_COMMUNITY_TALK
+frame:
+  signal: ["token"]
+  concept: "Gemeinschaft/Empathie"
+  pragmatics: "Beziehung"
+  narrative: "surface"
+pattern:
+  tokens: ["Gemeinschaft", "Konsens", "Empathie", "alle Stimmen", "wir"]
+examples:
+  - "Konsens finden … Empathie zeigen"
+  - "Gemeinschaft vor Ego"
+  - "jede Stimme zählt"
+  - "Beziehung ist wichtig"
+  - "fühlst du dich gehört?"
+
+

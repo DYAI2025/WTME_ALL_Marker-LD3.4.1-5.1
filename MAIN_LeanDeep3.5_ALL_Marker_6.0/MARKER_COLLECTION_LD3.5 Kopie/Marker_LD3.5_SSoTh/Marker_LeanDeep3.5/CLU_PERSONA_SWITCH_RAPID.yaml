@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_PERSONA_SWITCH_RAPID
+frame:
+  signal: "Schneller Persona-Wechsel erkannt"
+  concept: "Instabile Identitätsdynamik"
+  pragmatics: "Schnelle Spiral-Ebenen-Wechsel"
+  narrative: "Das Selbst springt zwischen Ebenen"
+activation:
+  rule: "AT_LEAST 3 different CLU_SPIRAL_PERSONA_* IN 10 messages"
+  window_size: 10
+  threshold: 3
+scoring:
+  weight: 1.5
+  decay: 0.9
+examples: ["Von Rot zu Grün zu Orange in kurzer Zeit", "instabile Persönlichkeitsebenen", "chaotische Spiral-Dynamik", "fragmentierte Identität", "unkoordinierte Ebenen-Sprünge"]

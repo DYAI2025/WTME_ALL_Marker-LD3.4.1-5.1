@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_PROCRASTINATION_LOOP
+frame:
+  signal: ["cluster"]
+  concept: "Prokrastinations-Loop"
+  pragmatics: "Blockade"
+  narrative: "window"
+composed_of: [SEM_DELAYING_MOVE, SEM_TENTATIVE_INFERENCE]
+activation: {rule: "AT_LEAST 3 IN 6 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "mach ich heute noch … vielleicht morgen"
+  - "ich verspreche … doch erst später"
+  - "bin dran … aber keine Zeit"
+  - "gleich … nach dem Meeting"
+  - "heute fix … oder morgen"

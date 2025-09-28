@@ -1,0 +1,25 @@
+id: SEM_DEFINITION_SUSPENSION
+version: "3.4"
+lang: de
+frame:
+  signal: ["undef"]
+  concept: "Wahr ohne Definition"
+  pragmatics: "Ambiguitätstoleranz"
+  narrative: "license"
+tags: [ambiguität, wahrheit]
+composed_of:
+  - ATO_DEFINITION_NEGATION
+  - ATO_TRUTH_FEEL
+policy:
+  require_co_sem: [SEM_RELATION_OVER_PERSONA, SEM_LIMINAL_FIELD_PRESENCE, SEM_SACRALIZATION_BINDING]
+examples:
+  - "keine Definition + fühlt sich wahr an"
+  - "wir definieren es nicht + spürbar wahr"
+  - "ohne Begriff bleiben + fühlt sich echt an"
+  - "nicht definieren + fühlt sich wahr an"
+  - "keine Definition + spürbar wahr in mir"
+  - "ohne Begriff + fühlt sich wahr an"
+  - "nicht definieren + spürbar wahr im Feld"
+  - "keine Definition + fühlt sich jetzt wahr an"
+  - "ohne Begriff + fühlt sich echt zwischen uns an"
+  - "nicht definieren + spürbar wahr trotz Fragen"

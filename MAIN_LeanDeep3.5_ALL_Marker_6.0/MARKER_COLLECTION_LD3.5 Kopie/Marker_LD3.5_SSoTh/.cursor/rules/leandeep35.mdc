@@ -1,0 +1,40 @@
+---
+alwaysApply: true
+---Basierend auf den bereitgestellten Quellen lässt sich LeanDeep 3.5 wie folgt detailliert erörtern:
+LeanDeep 3.5 stellt ein direktes Upgrade von Version 3.4 dar und erweitert dessen stabile Basis um das Resonance_framework_2.0 (RF2.0). Die Kernarchitektur und die meisten Marker-Definitionen aus Version 3.4 bleiben dabei vollständig gültig.
+Fundament: Die bewährte Architektur von LeanDeep 3.4
+LeanDeep 3.5 baut auf der etablierten Struktur seiner Vorgänger auf, die unverändert bleibt.
+• Vier-Ebenen-Architektur: Die hierarchische Gliederung der Marker bleibt die Grundlage des Systems:
+    ◦ ATO_ (Atomic Marker): Erfassen primitive Signale wie Tokens, Emojis oder Regex-Muster.
+    ◦ SEM_ (Semantic Marker): Kombinieren mehrere ATOs zu bedeutungsvollen Mikromustern.
+    ◦ CLU_ (Cluster Marker): Aggregieren thematisch verwandte SEMs über definierte Fenster (z.B. „X-of-Y-Nachrichten“).
+    ◦ MEMA_ (Meta-Analysis Marker): Analysieren dynamische, übergreifende Muster, die sich aus mehreren CLUs ergeben.
+• Gültiges JSON-Schema (seit 3.3): Jeder Marker folgt einer festen Struktur mit id, einem frame-Objekt (das signal, concept, pragmatics und narrative umfasst), mindestens 5 Beispielen (examples) und genau einem Strukturblock (pattern, composed_of oder detect_class).
+• Wichtige Regeln:
+    ◦ Ein SEM-Marker muss sich aus mindestens zwei unterschiedlichen ATO-Markern zusammensetzen (composed_of), Ausnahmen bedürfen einer Begründung.
+    ◦ CLU-Marker nutzen eine activation.rule, um die Aggregation zu definieren.
+Kernmerkmal aus 3.4: Intuitions-Marker
+Ein wesentliches Konzept, das in 3.5 vollständig erhalten bleibt, sind die in Version 3.4 eingeführten Intuitions-Marker.
+• Modellierung als CLU_: Sie werden als spezielle CLU-Marker mit der Namenskonvention CLU_INTUITION_<FAMILIE> implementiert (z.B. CLU_INTUITION_GRIEF). Es wird keine neue Präfix-Klasse eingeführt, was die Schema-Konformität sicherstellt.
+• Zustandsbehaftete Logik: Diese Marker modellieren eine „Vorahnung“ und durchlaufen die Zustände provisional → confirmed → decayed. Ein provisional-Zustand wird durch das Auftreten unspezifischer Signale einer Familie ausgelöst.
+• Lernfähigkeit und Multiplikator: Bei Bestätigung (confirmed) durch ein „hartes“ Signal kann ein temporärer Score-Boost (multiplier) auf andere Marker derselben Familie angewendet werden. Die Treffsicherheit (ewma_precision) wird kontinuierlich gemessen, um die Aktivierungsregeln datengetrieben anzupassen (zu verschärfen oder zu lockern).
+• Verarbeitung: Die Logik wird in einer übergeordneten Verarbeitungsphase namens contextual_rescan ausgeführt.
+Die zentrale Neuerung in 3.5: Das Resonance_framework_2.0 (RF2.0)
+Das entscheidende Upgrade, das LeanDeep 3.5 definiert, ist die Integration des Resonance_framework_2.0. Es handelt sich um ein modulares Erweiterungspaket, das eine mehrdimensionale, kontextabhängige Analyse ermöglicht.
+• Kernprinzip: RF2.0 kontextualisiert die Bedeutung eines Markers durch die aktuelle Entwicklungsstufe der Kommunikation. Die zentrale Formel lautet: [STUFE] × [MARKER-TYP] × [ZEIT-BEZUG] × [INTENSITÄT] = MANIFESTATION.
+• Komponenten:
+    1. RF_LEVELS (Entwicklungsstufen): Dieses Modul definiert linguistische Detektoren für acht Entwicklungsstufen, von L1: STONE (Überleben) bis L8: COSMOS (Einheit). Um Barrierefreiheit zu gewährleisten und sich rechtlich von anderen Modellen abzugrenzen, wird eine „farbenblinde“ Terminologie verwendet, die auf Namen und Texturen anstelle von Farben setzt (z.B. L3: FLAME statt Rot, L6: WATER statt Grün). Für jede Stufe gibt es spezifische ATO-, SEM- und CLU-Marker.
+    2. RF_TIME_INTENSITY (Zeit & Intensität): Fügt die Dimensionen Zeit (Vergangenheit, Gegenwart, Zukunft) und Intensität hinzu. Die Intensität kann aus Textmerkmalen oder optional aus Prosodie-Daten (Stimmhöhe, Tempo) abgeleitet werden.
+    3. RF_BRIDGE (Matrix-Regeln): Dieses Modul kombiniert die Informationen der anderen Pakete mithilfe von Matrix-Regeln. Es bestimmt die spezifische Bedeutung („Manifestation“) eines Verhaltensmusters. Beispielsweise manifestiert sich der Marker EMOTIONAL_WITHDRAW (emotionaler Rückzug) auf der Stufe L1-STONE als physisches Erstarren, während er auf L7-PRISM einen strategischen Rückzug zur Selbstreflexion bedeutet.
+• Messbares Scoring: RF2.0 identifiziert die dominante Stufe durch ein robustes Scoring-System, das Marker pro 100 Wörter zählt. Eine Stufe gilt ab 15 Punkten als dominant.
+Integration und Ökosystem in LeanDeep 3.5
+LeanDeep 3.5 ist als modulares System konzipiert, das verschiedene spezialisierte Marker-Pakete integriert.
+• Modulare Aktivierung: RF2.0 ist standardmäßig deaktiviert und kann über Konfigurationen aktiviert werden.
+• Kopplung mit anderen Markern: Das Framework interagiert mit anderen Paketen. So kann beispielsweise das Vorhandensein eines PRESENCE_BINDING-Markers das Gewicht von RF-Markern erhöhen (Boost), während das Fehlen von PARASITIC_PATTERN-Markern als Schutzmechanismus zur Dämpfung dient.
+• Spezialisierte Marker-Pakete: LeanDeep 3.5 umfasst eine Vielzahl weiterer Marker-Bündel für spezifische Analysen, darunter:
+    ◦ VOICE_Marker für Prosodie und Stimmmerkmale.
+    ◦ Therapy_marker für therapeutische Kontexte.
+    ◦ SELF_BIAS_Marker zur Erkennung von Voreingenommenheit und zur Prüfung der Selbstkonsistenz.
+    ◦ Weitere Pakete wie Spiral_persona_marker, Archetype_Marker und LOVE_LANGUAGES_CONTEXT_GATED.
+Zusammenfassend ist LeanDeep 3.5 eine Weiterentwicklung, die die robuste und bewährte Struktur von Version 3.4 beibehält und sie um eine hochentwickelte, mehrdimensionale Analyseebene durch das Resonance Framework 2.0 erweitert. Dies ermöglicht eine wesentlich tiefere und kontextbewusstere Interpretation von Kommunikationsmustern, wobei die Abwärtskompatibilität zu bestehenden 3.4-Markern gewährleistet ist.
+

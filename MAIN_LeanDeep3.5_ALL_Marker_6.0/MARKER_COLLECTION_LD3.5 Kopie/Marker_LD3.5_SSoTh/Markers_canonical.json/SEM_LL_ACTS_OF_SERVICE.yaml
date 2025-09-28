@@ -1,0 +1,27 @@
+id: SEM_LL_ACTS_OF_SERVICE
+version: "3.4"
+lang: de
+frame:
+  signal: ["aggregation"]
+  concept: "Primat der Hilfe"
+  pragmatics: "Entlastung priorisiert"
+  narrative: "Liebe durch Taten"
+composed_of:
+  any_of: ["ATO_LL_ACTS_OF_SERVICE"]
+  window:
+    utterances: 10
+  min_hits: 2
+precondition:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+tags: [love_language]
+examples:
+  - "Chat: 'Ich kümmere mich um die Steuer' gefolgt von 'Soll ich dir die Einkäufe abnehmen?'"
+  - "Paar-Dialog mit zwei klaren Angeboten, Aufgaben zu übernehmen."
+  - "Voice-Note: 'Ich übernehme das Putzen' und kurz danach 'Ich mach das Essen heute'."
+  - "Wochenplan, in dem 'Ich bringe das in Ordnung' und 'Ich helfe dir beim Sortieren' stehen."
+  - "Abend-Check-in mit zwei Sätzen: 'Ich übernehme das Telefonat' und 'Soll ich den Hund ausführen?'"
+  - "Sprachnachricht: 'Ich kümmere mich darum' plus 'Ich helfe dir mit der Präsentation'."
+  - "Gespräch nach Feierabend: 'Ich mach das' und 'Ich kümmere mich morgen drum'."
+  - "Paartherapie-Protokoll mit mehrfacher Bereitschaft, Aufgaben abzunehmen."
+  - "Kalendernotiz: 'Ich nehme die Blumen' und 'Ich kümmere mich ums Budget'."
+  - "Problem-Lösungsgespräch mit zwei direkten Hilfsangeboten innerhalb weniger Turns."

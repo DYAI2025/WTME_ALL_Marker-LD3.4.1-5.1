@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_TRUST_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Vertrauen signalisieren"
+  pragmatics: "Bindung"
+  narrative: "surface"
+pattern:
+  tokens: ["verlass dich auf mich", "ich vertrau dir", "du kannst mir glauben", "ich halte Wort", "ehrlich"]
+examples:
+  - "ich bin da für dich … wir schaffen das"
+  - "danke dir … fühl mich gesehen"
+  - "gemeinsam kriegen wir das hin"
+  - "du kannst dich auf mich verlassen"
+  - "ich hör dir zu … okay?"
+
+

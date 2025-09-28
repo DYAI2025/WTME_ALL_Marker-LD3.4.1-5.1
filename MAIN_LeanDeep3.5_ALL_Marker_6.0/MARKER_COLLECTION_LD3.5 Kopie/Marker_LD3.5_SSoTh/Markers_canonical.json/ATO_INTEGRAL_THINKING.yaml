@@ -1,0 +1,15 @@
+id: "ATO_INTEGRAL_THINKING"
+frame:
+  signal: "Systemisches, integrales Denken"
+  concept: "Gelb-Level flexibles Verstehen"
+  pragmatics: "Erkennt Meta-Perspektiven"
+  narrative: "Alles ist miteinander verwoben"
+pattern: "\\b(system|integral|flexibel|paradox|komplex|emergent|adaptiv|perspektive)\\b"
+examples: 
+  - "systemisches Denken"
+  - "integrale Sichtweise"
+  - "flexible Anpassung"
+  - "komplexe Zusammenhänge"
+  - "emergente Eigenschaften"
+  - "Rekurrenter Aufmerksamkeit"
+  - "Silence-Aware Loss Functions"

@@ -1,0 +1,19 @@
+id: CLU_PERSONA_BLUE
+version: "3.1.4"
+frame:
+  signal: [ "persona", "blue" ]
+  concept: "Value-Persona BLUE"
+  pragmatics: "Screening"
+  narrative: "cluster"
+composed_of:
+- SEM_NORM_COMPLIANCE
+- SEM_AUTHORITY_REFERENCE
+activation:
+  rule: "AT_LEAST 2 IN 6 messages"
+scoring: { base: 1.0, weight: 1.0 }
+examples:
+- "Laut Vorschrift …"
+- "Die Richtlinie muss eingehalten werden."
+- "Behördliche Vorgabe ist maßgeblich."
+- "Standards sind einzuhalten."
+- "Es muss nach Regelwerk erfolgen."

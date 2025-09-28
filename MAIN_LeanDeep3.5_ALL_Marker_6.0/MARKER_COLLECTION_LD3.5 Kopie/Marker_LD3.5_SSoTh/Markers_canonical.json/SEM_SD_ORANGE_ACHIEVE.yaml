@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SD_ORANGE_ACHIEVE
+frame:
+  signal: ["semantic"]
+  concept: "SD Orange Leistung"
+  pragmatics: "Ziel/Erfolg"
+  narrative: "micro"
+composed_of: [ATO_SD_ORANGE_LEX, ATO_PROBABILISTIC]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "Ziele setzen … Leistung messen"
+  - "KPIs und Ergebnisse zählen"
+  - "optimieren … gewinnen"
+  - "Datengetrieben entscheiden"
+  - "Effizienz steigern"

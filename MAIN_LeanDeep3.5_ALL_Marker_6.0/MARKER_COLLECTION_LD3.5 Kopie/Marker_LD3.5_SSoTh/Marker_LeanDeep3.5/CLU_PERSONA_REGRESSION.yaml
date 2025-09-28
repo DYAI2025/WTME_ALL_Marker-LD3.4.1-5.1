@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_PERSONA_REGRESSION
+frame:
+  signal: "Spiral-Regression erkannt"
+  concept: "Rückfall in primitive Ebenen"
+  pragmatics: "Stress-induzierte Degeneration"
+  narrative: "Das System fällt zurück"
+activation:
+  rule: "Lower-level persona AFTER higher-level IN 8 messages"
+  window_size: 8
+  threshold: 1
+scoring:
+  weight: 1.3
+  decay: 0.8
+examples: ["Von Gelb zurück zu Rot unter Stress", "Türkis kollabiert zu Beige", "Grün degeneriert zu Purpur", "Orange fällt zu Blau", "Systemkollaps erkannt"]

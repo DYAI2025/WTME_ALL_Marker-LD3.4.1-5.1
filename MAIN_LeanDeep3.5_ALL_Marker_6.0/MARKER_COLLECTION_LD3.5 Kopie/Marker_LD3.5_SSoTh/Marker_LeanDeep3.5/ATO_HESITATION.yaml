@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_HESITATION
+frame:
+  signal: ["token"]
+  concept: "Zögern"
+  pragmatics: "weicher Ton"
+  narrative: "surface"
+pattern:
+  tokens: ["äh", "ähm", "hm", "hmm", "nun ja", "vielleicht", "mal sehen"]
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"
+
+

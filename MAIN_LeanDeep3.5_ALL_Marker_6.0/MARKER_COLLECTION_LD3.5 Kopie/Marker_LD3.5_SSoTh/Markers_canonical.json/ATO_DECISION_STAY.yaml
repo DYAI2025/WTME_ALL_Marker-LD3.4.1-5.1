@@ -1,0 +1,23 @@
+id: ATO_DECISION_STAY
+version: "3.4"
+lang: de
+frame:
+  signal: ["verb"]
+  concept: "Bleiben/Halten"
+  pragmatics: "Kontinuität"
+  narrative: "stance"
+tags: [konstanz, bleiben]
+pattern:
+  - (?i)\bich\s+bleibe\b
+  - (?i)\bich\s+halte\b
+examples:
+  - "ich bleibe bei dir auch im Unklaren"
+  - "ich halte unsere Verbindung aktiv"
+  - "ich bleibe hier, auch wenn es ruckelt"
+  - "ich halte den Raum, bis du ankommst"
+  - "ich bleibe mit meiner Aufmerksamkeit da"
+  - "ich halte diese Brücke zwischen uns"
+  - "ich bleibe bei der Absprache"
+  - "ich halte mich an unsere langsame Frequenz"
+  - "ich bleibe präsent, nicht nur funktional"
+  - "ich halte dich im Blick, während wir warten"

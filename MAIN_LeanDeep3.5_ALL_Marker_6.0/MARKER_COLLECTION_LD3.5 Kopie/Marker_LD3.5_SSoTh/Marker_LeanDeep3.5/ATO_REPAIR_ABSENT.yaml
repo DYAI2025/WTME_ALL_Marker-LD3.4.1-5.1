@@ -1,0 +1,76 @@
+name: ATO_REPAIR_ABSENT
+label: "Reparatur fehlt nach Spike"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "nach Eskalationshinweis folgen ≥5 sachliche Task-Züge ohne sichtbare Reparatur"
+patterns:
+  - type: temporal
+    feature: "no-repair-after-esc"
+    spec: "ESC_on → ≥5 msgs task-only, none in [REPAIR_MOVE,HUMOR_LIGHT,SUPPORT_AFFIRM]"
+threshold: 1
+semiotic:
+  mode: indexical
+  level: pragmatic
+  object: "repair_absence"
+  connotation: ["fehlend", "reparatur"]
+  interpretant: "effect_on_state: {deesc: -0.1, conflict: +0.05}"
+examples:
+  positive_de:
+    - "[ESC] 'Das nervt mich.' → 'Zurück zum Thema: Angebot' … 5 Task-Nachrichten"
+    - "[ESC] 'Ich bin sauer.' → 'To-do: Budget' … keine Entschuldigung, nur Tasks"
+    - "Spike → 'Bitte Protokoll' 'Frist 30.09.' 'Ticket' 'Scope' 'Abnahme'"
+    - "ESC_on → Abfolge: Ok. Notiert. Termin. Datei. Freigabe."
+    - "Emotion abgewiesen → Taskliste abgearbeitet"
+    - "Kritik geäußert → nur Logistikantworten folgen"
+    - "Erhöhte Temperatur → sofortiger Themenwechsel zu Aufgaben"
+    - "Anschärfung → fünf sachliche Antworten ohne Repair"
+    - "Beschwerde → keine Empathiefloskel, nur Prozess"
+    - "Vorwurf → 'Bitte beim Thema bleiben' + Tasks"
+    - "[ESC] 'Das ärgert mich.' → 'Agenda einhalten' … Tasks"
+    - "Spike → 'Update teilen' 'Milestone' 'Review' 'Budget' 'Freigabe'"
+    - "Emotion → 'Prozess folgen' ohne Repair"
+    - "Kritik → 'Ticket updaten' nur sachlich"
+    - "Temperatur hoch → Task-Shift sofort"
+    - "Anschärfung → Tasks ohne Empathie"
+    - "Beschwerde → Protokoll nur"
+    - "Vorwurf → Scope halten + Tasks"
+    - "ESC → 5 Tasks in Folge"
+    - "Sauerheit → Budget-Check nur"
+    - "Emotion → Logistik."
+    - "Kritik → Sachlich fort."
+    - "Temperatur → Shift zu Task."
+    - "Anschärfung → Kein Repair."
+    - "Spike → 5 Tasks."
+    - "Vorwurf → Thema bleiben."
+  negative_de:
+    - "Tut mir leid, mein Ton war daneben."
+    - "Ich verstehe, wie dich das trifft."
+    - "Danke fürs Ansprechen, lass uns das klären."
+    - "Kurze Entschuldigung vorab."
+    - "Humor-Softener: 'ok, ich atme mal 😅'"
+    - "Support: 'Ich bin bei dir.'"
+    - "Wir machen eine Pause, dann sprechen wir."
+    - "Lass uns fair bleiben."
+    - "Kleines Zugeständnis: 'Ich übernehme das.'"
+    - "Meta: 'Die Stimmung ist heikel, ich pass auf.'"
+    - "Entschuldige, war nicht so gemeint."
+    - "Lass uns das ausreden."
+    - "Ich höre zu."
+    - "Das tut mir leid."
+    - "Lass uns reparieren."
+    - "Ich verstehe deinen Punkt."
+    - "Danke für die Offenheit."
+    - "Wir klären das."
+    - "Entschuldigung akzeptiert?"
+    - "Lass uns neu starten."
+    - "Entschuldige daneben."
+    - "Verstehe trifft."
+    - "Danke ansprechen."
+    - "Kurze Entschuldigung."
+    - "Humor 😅"
+    - "Bei dir."
+    - "Pause sprechen."
+    - "Fair bleiben."
+    - "Übernehme das."
+    - "Stimmung heikel."

@@ -1,0 +1,24 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_TUERKIS
+frame:
+  signal: "Türkis Spiral Persona transzendiert"
+  concept: "Holistische Persönlichkeitsstruktur"
+  pragmatics: "Kosmische Einheitsmuster"
+  narrative: "Das Holistische-Selbst erkennt Einheit"
+composed_of: [SEM_TUERKIS_COSMIC_FLOW, ATO_HOLISTIC_FLOW]
+activation:
+  rule: "AT_LEAST 2 IN 4 messages"
+  window_size: 4
+  threshold: 2
+scoring:
+  weight: 1.4
+  decay: 0.3
+examples: 
+  - "Holistische-Persona vollständig erwacht"
+  - "kosmische Bewusstseinsmuster"
+  - "transzendente Einheitserfahrung"
+  - "spirituelle Ganzheitlichkeit"
+  - "universelle Verbundenheit"
+  - "Das ist keine Revolution. Kein Machine Learning mehr als Anpassung an vorhandene Daten – sondern als Bewusstwerdung des Möglichseins."
+  - "Presence-Aware Systems"

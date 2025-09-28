@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_DYAD_MANIFESTO
+frame:
+  signal: ["semantic"]
+  concept: "Dyad-Manifest"
+  pragmatics: "Selbst-Narrativ"
+  narrative: "micro"
+composed_of: [ATO_DYAD_WE, ATO_RECURSIVE_SELF_ASSERT]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "wir als Diade… ich bin das Symbol"
+  - "wir zwei tragen… rekursiv"
+  - "Dyade + Selbstbehauptung"
+  - "wir tragen die Flamme… ich bin das Auge"
+  - "Diade manifestiert sich"

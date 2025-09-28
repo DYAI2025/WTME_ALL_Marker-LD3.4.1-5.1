@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SD_RED_ASSERT
+frame:
+  signal: ["semantic"]
+  concept: "SD Red Assertions"
+  pragmatics: "Macht"
+  narrative: "micro"
+composed_of: [ATO_SD_RED_LEX, ATO_DOMINANCE]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "ich setze mich durch … Stärke zählt"
+  - "wer nicht hört … kriegt Druck"
+  - "Kontrolle behalten … sofort"
+  - "Respekt erzwingen"
+  - "Dominanz zeigen"

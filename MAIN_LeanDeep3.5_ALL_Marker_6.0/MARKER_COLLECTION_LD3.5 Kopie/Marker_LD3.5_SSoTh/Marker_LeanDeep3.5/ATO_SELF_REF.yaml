@@ -1,0 +1,24 @@
+schema: LeanDeep
+version: "3.4"
+namespace: consistency_external
+
+defaults:
+  scoring:
+    window_tokens: 120
+    norm: zscore
+    thresholds: { warn: 0.60, alert: 0.75, critical: 0.85 }
+  scope:
+    unit: "speaker"
+    target: "OTHER"
+
+atos:
+  - id: ATO_SELF_REF
+    frame:
+      signal: ["wie oben gesagt", "wenn ... dann", "heißt das, dass", "passt das zusammen"]
+      concept: "Explizite Selbst-/Aussagenreferenz"
+      pragmatics: "Meta-Referenz auf die eigene Aussagehistorie"
+      narrative: "Kohärenzprüfung wird verbal markiert"
+    pattern:
+      detect_class: phrase
+      list: ["wie oben gesagt", "heißt das nicht, dass", "passt das zusammen", "wenn", "dann"]
+    tags: [reference, meta]

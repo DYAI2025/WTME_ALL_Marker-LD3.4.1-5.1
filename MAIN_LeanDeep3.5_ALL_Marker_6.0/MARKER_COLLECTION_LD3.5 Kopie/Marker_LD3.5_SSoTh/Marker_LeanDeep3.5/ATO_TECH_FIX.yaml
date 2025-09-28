@@ -1,0 +1,26 @@
+id: ATO_TECH_FIX
+version: "3.4"
+lang: de
+frame:
+  signal: ["action"]
+  concept: "Kleinreparaturen/Setup"
+  pragmatics: "Sicherheit durch Tun"
+  narrative: "repair"
+tags: [technik, repair]
+pattern:
+  - (?i)nummer\s+einrichten
+  - (?i)trigger\s+prüfen
+  - (?i)cache
+  - (?i)env
+  - (?i)korrigieren
+examples:
+  - "ich lasse uns kurz die Nummer einrichten"
+  - "wir prüfen den Trigger gemeinsam"
+  - "ich leere eben den Cache, dann läuft es"
+  - "ich setze die ENV Variablen sauber"
+  - "lass mich das Log korrigieren"
+  - "wir richten schnell einen Backup-Trigger ein"
+  - "ich korrigiere die Config live"
+  - "wir checken den Cache, bevor wir starten"
+  - "ich passe die ENV an, damit es ruhig wird"
+  - "ich korrigiere die Nummer, dann bist du sicher drin"

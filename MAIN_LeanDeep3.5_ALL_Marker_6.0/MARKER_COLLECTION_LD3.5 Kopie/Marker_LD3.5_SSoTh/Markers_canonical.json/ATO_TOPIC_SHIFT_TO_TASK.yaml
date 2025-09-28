@@ -1,0 +1,81 @@
+name: ATO_TOPIC_SHIFT_TO_TASK
+label: "Shift zu Aufgabe"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "aktiver Themenwechsel von Beziehung/Emotion zu konkreten Aufgaben"
+patterns:
+  - type: regex
+    value: "(zurück zum Thema|konkret:|Aufgabe:|Schritt [0-9]+|Liefertermin|To-do:|Nächster Punkt:)"
+  - type: structural
+    feature: "answers-emotion-with-task"
+threshold: 1
+semiotic:
+  mode: indexical
+  level: pragmatic
+  object: "topic_shift"
+  connotation: ["shift", "aufgabe"]
+  interpretant: "effect_on_state: {deesc: +0.1, conflict: -0.15}"
+examples:
+  positive_de:
+    - "Zurück zum Thema: To-do Liste aktualisieren."
+    - "Konkret: Schritt 3 heute abschließen."
+    - "Aufgabe: Angebote einholen bis Freitag."
+    - "Nächster Punkt: Freigabe einholen."
+    - "Liefertermin bleibt der 30.09."
+    - "To-do: Budget prüfen."
+    - "Schritt 1: Daten sammeln."
+    - "Schritt 2: Review ansetzen."
+    - "Bitte die Checkliste durchgehen."
+    - "Wir tracken das im Ticket."
+    - "Lass uns zum Plan übergehen."
+    - "Nächste Aufgabe: Bericht schreiben."
+    - "Konzentrieren wir uns auf die Frist."
+    - "To-do: Meeting planen."
+    - "Schritt 4: Abschluss."
+    - "Zurück zur Agenda."
+    - "Aufgabe priorisieren."
+    - "Nächster Item: Update."
+    - "Lieferung tracken."
+    - "Checkliste abarbeiten."
+    - "Agenda einhalten."
+    - "Review planen."
+    - "Budget checken."
+    - "Milestone setzen."
+    - "Update teilen."
+    - "Freigabe geben."
+    - "Prozess folgen."
+    - "Abnahme machen."
+    - "Notiz nehmen."
+    - "Status updaten."
+  negative_de:
+    - "Wie fühlst du dich damit?"
+    - "Das hat mich gestern verletzt."
+    - "Ich will das erst besprechen."
+    - "Können wir das emotional klären?"
+    - "Ich brauche Nähe, nicht To-dos."
+    - "Lass uns über den Streit reden."
+    - "Das ist mir gerade zu kalt."
+    - "Ich bin verunsichert."
+    - "Bitte hör mir zu."
+    - "Ich brauche eine Entschuldigung."
+    - "Lass uns tiefer gehen."
+    - "Das fühlt sich falsch an."
+    - "Erzähl mehr von dir."
+    - "Ich teile meine Gefühle."
+    - "Bleiben wir beim Emotionalen."
+    - "Das triggert mich."
+    - "Lass uns pausieren und fühlen."
+    - "Ich brauche Unterstützung."
+    - "Das verletzt mich."
+    - "Mehr Empathie bitte."
+    - "Das triggert mich."
+    - "Mehr Empathie."
+    - "Lass uns fühlen."
+    - "Ich teile Gefühle."
+    - "Bleib beim Emotionalen."
+    - "Das fühlt sich an."
+    - "Erzähl von dir."
+    - "Ich liebe das."
+    - "Traurig heute."
+    - "Feiern wir?"

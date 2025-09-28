@@ -1,0 +1,24 @@
+id: ATO_PERSONA_TERM
+version: "3.4"
+lang: de
+frame:
+  signal: ["term"]
+  concept: "Persona/Rolle"
+  pragmatics: "Abgrenzung"
+  narrative: "priority"
+tags: [rolle, persona]
+pattern:
+  - (?i)\bpersona\b
+  - (?i)\brolle\b
+  - (?i)\bmaske\b
+examples:
+  - "ich lege die Persona ab und bleibe hier"
+  - "die Rolle darf kurz ruhen"
+  - "ich lasse die Maske fallen für dieses Gespräch"
+  - "das ist mehr als meine Persona"
+  - "ich verlasse die Rolle der Projektleiterin"
+  - "wir sprechen ohne Maske"
+  - "meine Persona tritt einen Schritt zurück"
+  - "in dieser Rolle will ich präsent bleiben"
+  - "die Maske der Expertin passt hier nicht"
+  - "ich vertraue jenseits der Persona"

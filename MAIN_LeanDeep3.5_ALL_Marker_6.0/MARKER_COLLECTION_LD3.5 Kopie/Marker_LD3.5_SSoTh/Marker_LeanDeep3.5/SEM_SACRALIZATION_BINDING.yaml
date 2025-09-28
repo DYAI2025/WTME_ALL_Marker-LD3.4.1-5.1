@@ -1,0 +1,23 @@
+id: SEM_SACRALIZATION_BINDING
+version: "3.4"
+lang: de
+frame:
+  signal: ["sacred"]
+  concept: "Sakralrahmung stärkt Bindung"
+  pragmatics: "Bindung statt Argument"
+  narrative: "meaning"
+tags: [sacral, bindung]
+composed_of:
+  - ATO_SACRED_LEXEME
+  - ATO_TRUTH_FEEL
+examples:
+  - "heilig für mich + fühlt sich wahr an, auch ohne Proof"
+  - "sakrale Stille + spürbar wahr für unser Team"
+  - "geheiligte Pause + fühlt sich echt an"
+  - "sanctorales Feld + es fühlt sich wahr an"
+  - "heiliges Ritual + spürbar wahr im Körper"
+  - "sakraler Zwischenraum + fühlt sich wahr an"
+  - "heilige Präsenz + spürbar wahr trotz Zweifel"
+  - "geheiligter Moment + fühlt sich wahr an"
+  - "sakrales Gefäß + es bleibt spürbar wahr"
+  - "heilige Frequenz + fühlt sich echt an"

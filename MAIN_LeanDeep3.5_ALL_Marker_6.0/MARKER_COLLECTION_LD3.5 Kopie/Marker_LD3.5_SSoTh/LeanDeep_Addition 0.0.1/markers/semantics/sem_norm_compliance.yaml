@@ -1,0 +1,18 @@
+id: SEM_NORM_COMPLIANCE
+version: "3.1.4"
+frame:
+  signal: [ "norm", "compliance" ]
+  concept: "Regel-/Normbezug"
+  pragmatics: "Semantische Zusammensetzung"
+  narrative: "compose"
+composed_of:
+- ATO_DEONTIC_MODAL
+- ATO_AUTHORITY_REF
+activation:
+  rule: "AT_LEAST 2 DISTINCT_ATO"
+examples:
+- "Laut Vorschrift muss das so erfolgen."
+- "Der Standard verlangt, dass …"
+- "Wir sind verpflichtet gemäß Richtlinie …"
+- "Wie die Behörde festlegt, soll …"
+- "Das Regelwerk schreibt es vor."

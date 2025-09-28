@@ -1,0 +1,24 @@
+id: ATO_WEDDING_STRESS_CUE
+version: "3.4"
+lang: de
+frame:
+  signal: ["state"]
+  concept: "Eventstress"
+  pragmatics: "Zeitdruck/Überforderung"
+  narrative: "Vorbereitung erschöpft"
+tags: [stress, wedding]
+requires_env:
+  any_of: ["SCN_WEDDING_CONTEXT"]
+pattern:
+  - "\\b(Stres(s|sig)|Zeitplan|wir sind im Verzug|alles wird zu viel|Budget sprengt)\\b"
+examples:
+  - "Der Zeitplan macht mich gerade richtig stressig."
+  - "Wir sind im Verzug mit den Einladungen und ich merke den Druck."
+  - "Alles wird zu viel, ich weiß nicht, wie wir das schaffen sollen."
+  - "Das Budget sprengt uns den Kopf, jede Ausgabe tut weh."
+  - "Ich fühle mich gestresst, weil die Deko noch nicht steht."
+  - "Der Caterer drängt, und der Stress steigt jeden Tag."
+  - "Ich merke, wie stressig die Sitzordnung gerade wird."
+  - "Wir sind so im Verzug, dass ich kaum schlafen kann."
+  - "Alles wird zu viel, vor allem die Koordination mit den Dienstleistern."
+  - "Der Zeitplan für die Hochzeit lässt mir keine Luft zum Atmen."

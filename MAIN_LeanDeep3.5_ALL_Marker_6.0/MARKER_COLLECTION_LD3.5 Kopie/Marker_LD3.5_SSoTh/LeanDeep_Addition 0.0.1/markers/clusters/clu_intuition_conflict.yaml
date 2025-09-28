@@ -1,0 +1,22 @@
+id: CLU_INTUITION_CONFLICT
+version: "3.1.4"
+frame:
+  signal: [ "intuition", "conflict" ]
+  concept: "Frühsignal Konflikt"
+  pragmatics: "focus multiplier (family-scoped)"
+  narrative: "cluster"
+composed_of:
+- SEM_CONFLICT_ESCALATION
+- SEM_PASSIVE_AGGRESSIVE_BEHAVIOR
+activation: { rule: "AT_LEAST 1 IN 5 messages" }
+metadata:
+  intuition:
+    confirm_window: 5
+    decay_window: 7
+    multiplier_on_confirm: 1.5
+examples:
+- "Du übertreibst wieder."
+- "Typisch, dass du ausweichst."
+- "Immer dasselbe Theater."
+- "Mach nicht so ein Drama."
+- "Du verstehst absichtlich nichts."

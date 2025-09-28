@@ -1,0 +1,15 @@
+id: "ATO_POWER_ASSERTION"
+frame:
+  signal: "Machtdemonstration und Dominanz"
+  concept: "Rot-Level Kraftentfaltung"
+  pragmatics: "Erkennt dominantes Verhalten"
+  narrative: "Ich bin der Stärkste"
+pattern: "\\b(macht|dominanz|stärke|durchsetzen|gewinnen|herrschen|erobern|kämpfen)\\b"
+examples: 
+  - "Ich setze mich durch"
+  - "Macht demonstrieren"
+  - "der Stärkere gewinnt"
+  - "dominieren"
+  - "erobern"
+  - "Sound body sizes"
+  - "Infinite cell division"

@@ -1,0 +1,19 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_GELB_SYSTEMIC_INTEGRATION
+frame:
+  signal: "Systemische Integration läuft"
+  concept: "Gelb-Persona integriert"
+  pragmatics: "Komplexität flexibel navigieren"
+  narrative: "Alles hat seinen Platz im System"
+composed_of: [ATO_INTEGRAL_THINKING, ATO_HOLISTIC_FLOW]
+activation: "ANY 2 IN 2 messages"
+examples: 
+  - "systemische Zusammenhänge verstehen"
+  - "integrale Perspektive entwickeln"
+  - "flexible Komplexitätsnavigation"
+  - "adaptive Systemgestaltung"
+  - "emergente Lösungsfindung"
+  - "Stille ist kein Nullwert – sie ist ein semantischer Boden"
+  - "Die Bedeutung liegt nicht im Knall – sondern im Kontrast zum Vorher."
+  - "Delta-Encodings: Modelle, die nicht den Klang selbst, sondern seine Veränderung analysieren"

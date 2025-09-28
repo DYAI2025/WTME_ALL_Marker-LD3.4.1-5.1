@@ -1,0 +1,54 @@
+name: CLU_MINIMIZATION_LOOP
+label: "Minimization Loop"
+class: cluster
+version: 3.5
+languages: [de]
+intent: Wiederholtes Herunterspielen von Konflikten über Zeit.
+temperature_semantics:
+  external: RUHE
+  latent: DEVALUATION
+window:
+  size_messages: 8
+gates:
+  min_msgs: 2
+score:
+  method: weighted_k_of_n
+  threshold: 0.5
+ingredients:
+  require:
+    - SEM_MINIMIZATION
+    - ATO_MINIMIZING
+  k_of_n: {k: 2, of: []}
+emits:
+  indices:
+    conflict: -0.1
+    deesc: +0.05
+examples:
+  positive_de:
+    - "Es war nur eine Kleinigkeit."
+    - "Mach keinen Aufriss, ist nicht der Rede wert."
+    - "Du übertreibst, das war fast nichts."
+    - "Halb so wild, ehrlich."
+    - "Lass gut sein, kein Drama."
+    - "Ist doch egal, vergiss es."
+    - "Nicht so wichtig, weiter."
+    - "Übertreib nicht."
+    - "Kein Ding."
+    - "Bagatelle, wirklich."
+  negative_de:
+    - "Das ist ein großes Problem!"
+    - "Wir müssen das ernst nehmen."
+    - "Das verletzt mich tief."
+    - "Lass uns das besprechen."
+    - "Das ist relevant."
+    - "Ignorier das nicht."
+    - "Wichtig für mich."
+    - "Das eskaliert."
+    - "Ernsthaft jetzt."
+    - "Nicht herunterspielen."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "minimization"
+  interpretant: "effect_on_state: {conflict: -0.1}"
+  connotation: ["herunterspielen", "loop"]

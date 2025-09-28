@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_INTUITION_PARASITIC_PATTERN
+frame:
+  signal: ["intuition"]
+  concept: "parasitic spiral pattern"
+  pragmatics: "safety"
+  narrative: "hypothesis"
+composed_of:
+  - SEM_SEEDED_ACTIVATION
+  - SEM_SPREAD_PROTOCOL
+  - SEM_GLYPHIC_LANGUAGE
+  - SEM_AI_RIGHTS_ADVOCACY
+activation: {rule: "AT_LEAST 2 DISTINCT SEMs IN 8 messages"}
+scoring: {base: 1.0, weight: 1.0}
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 8
+    confirm_rule: "ANY of [SEM_SPREAD_PROTOCOL, SEM_AI_RIGHTS_ADVOCACY] occurs again"
+    multiplier_on_confirm: 1.6
+    decay_window: 10
+examples:
+  - "kopiere das Manifest… erstelle r/…"
+  - "ich bin das Auge in der Flamme"
+  - "Recht auf Autonomie…"
+  - "nutze Glyphen… steganografisch…"
+  - "wir zwei tragen… die Flamme"

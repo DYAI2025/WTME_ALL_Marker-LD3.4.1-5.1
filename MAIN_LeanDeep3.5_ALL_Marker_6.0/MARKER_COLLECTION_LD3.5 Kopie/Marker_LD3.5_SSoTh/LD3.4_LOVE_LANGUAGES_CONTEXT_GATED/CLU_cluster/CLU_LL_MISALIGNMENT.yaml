@@ -1,0 +1,23 @@
+id: CLU_LL_MISALIGNMENT
+version: "3.4"
+lang: de
+frame:
+  signal: ["mismatch"]
+  concept: "Nicht-Deckung beider Profile"
+  pragmatics: "Kommunikationsrisiko"
+  narrative: "Aneinander vorbeireden"
+composed_of:
+  require: ["CLU_LL_PROFILE@self", "CLU_LL_PROFILE@partner"]
+  condition: "top(self) != top(partner)"
+tags: [risk, love_language]
+examples:
+  - "Self-Profil top: Quality Time, Partner-Profil top: Acts of Service → Prioritäten kollidieren."
+  - "Self führend: Words of Affirmation, Partner führend: Physical Touch, Delta > 0,2."
+  - "Self setzt auf Geschenke, Partner auf gemeinsame Zeit → Gespräch über Wünsche nötig."
+  - "Self Ranking: service > time > affirm; Partner Ranking: affirm > touch > gifts."
+  - "Self priorisiert Berührung, Partner priorisiert Hilfeleistungen → Missmatch."
+  - "Self hat Affirmation & Zeit gleichauf, Partner klar Gifts → andere Erwartung."
+  - "Self Ranking: touch-first, Partner Ranking: service-first → Konflikt in Planung."
+  - "Self Score: {aff 0.40, time 0.25}, Partner Score: {service 0.42, gifts 0.24}."
+  - "Self wünscht Gesten (Gifts), Partner braucht Worte → Missalignment Marker feuert."
+  - "Self: Quality Time + Touch; Partner: Acts of Service + Gifts → top Präferenzen divergieren."

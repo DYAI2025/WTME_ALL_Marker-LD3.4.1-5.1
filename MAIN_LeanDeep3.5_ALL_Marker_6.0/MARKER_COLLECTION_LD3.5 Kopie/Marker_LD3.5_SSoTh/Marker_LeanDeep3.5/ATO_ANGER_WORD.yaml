@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_ANGER_WORD
+frame:
+  signal: ["token"]
+  concept: "Ärger"
+  pragmatics: "Härte"
+  narrative: "surface"
+pattern:
+  tokens: ["wütend", "genervt", "reicht", "unfassbar", "nervtötend", "sauer"]
+examples:
+  - "immer du machst das … nervt langsam"
+  - "typisch von dir … reicht jetzt"
+  - "hör auf damit … sonst passiert was"
+  - "deine Schuld … wie immer"
+  - "noch so ein Spruch und …"
+
+

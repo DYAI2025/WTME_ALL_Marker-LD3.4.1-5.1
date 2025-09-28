@@ -1,0 +1,24 @@
+id: ATO_SELF_ADDRESS_VERB
+version: "3.4"
+lang: de
+frame:
+  signal: ["imperative"]
+  concept: "Selbstansprache"
+  pragmatics: "Affektregulation"
+  narrative: "move"
+tags: [selbstansprache, regulation]
+pattern:
+  - (?i)begegne\s+dir\s+selbst
+  - (?i)sprich\s+zu\s+dir
+  - (?i)\bich\s+zu\s+mir\b
+examples:
+  - "begegne dir selbst ganz sanft in diesem Moment"
+  - "sprich zu dir wie zu einem guten Freund"
+  - "ich zu mir: wir bleiben ruhig"
+  - "begegne dir selbst mit einem tiefen Atem"
+  - "sprich zu dir, bevor du antwortest"
+  - "ich zu mir: bleib präsent"
+  - "begegne dir selbst heute ohne Urteil"
+  - "sprich zu dir leise, dass du sicher bist"
+  - "ich zu mir sage: du darfst bleiben"
+  - "begegne dir selbst jeden Morgen in Ruhe"

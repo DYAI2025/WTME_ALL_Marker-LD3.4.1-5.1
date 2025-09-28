@@ -1,0 +1,58 @@
+name: ATO_DEESCALATION_PHRASE
+label: "Deeskalations-Phrase"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Phrasen, die zur Deeskalation beitragen"
+patterns:
+  - type: regex
+    value: "(lass uns beruhigen|atmen wir durch|kein Stress|entspann dich|es ist ok)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "deescalation_phrase"
+  interpretant: "effect_on_state: {deesc: +0.2, conflict: -0.15}"
+examples:
+  positive_de:
+    - "Lass uns beruhigen."
+    - "Atmen wir durch."
+    - "Kein Stress."
+    - "Entspann dich."
+    - "Es ist ok."
+    - "Beruhige dich."
+    - "Durchatmen."
+    - "Stress abbauen."
+    - "Entspannen wir."
+    - "Alles gut."
+    - "Lass ruhig werden."
+    - "Atme tief."
+    - "Kein Druck."
+    - "Entspanne bitte."
+    - "Ok so."
+    - "Beruhigung jetzt."
+    - "Durchatmen zusammen."
+    - "Stress runter."
+    - "Entspannung pur."
+    - "Ist in Ordnung."
+  negative_de:
+    - "Lass uns eskalieren."
+    - "Nicht atmen."
+    - "Viel Stress."
+    - "Nicht entspannen."
+    - "Es ist nicht ok."
+    - "Nicht beruhigen."
+    - "Nicht durchatmen."
+    - "Stress aufbauen."
+    - "Nicht entspannen."
+    - "Nichts gut."
+    - "Nicht ruhig werden."
+    - "Nicht tief atmen."
+    - "Druck hoch."
+    - "Nicht entspannen."
+    - "Nicht ok."
+    - "Keine Beruhigung."
+    - "Nicht durchatmen."
+    - "Stress hoch."
+    - "Keine Entspannung."
+    - "Nicht in Ordnung."
