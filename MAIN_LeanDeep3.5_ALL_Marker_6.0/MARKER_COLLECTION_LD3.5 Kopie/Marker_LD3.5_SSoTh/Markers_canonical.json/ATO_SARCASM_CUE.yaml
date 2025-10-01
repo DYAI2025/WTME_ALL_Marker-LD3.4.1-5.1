@@ -2,17 +2,52 @@ schema: "LeanDeep"
 version: "3.4"
 id: ATO_SARCASM_CUE
 frame:
-  signal: ["token"]
+  signal: [ "token" ]
   concept: "Sarkasmus-Hinweis"
   pragmatics: "Irritation"
   narrative: "surface"
 pattern:
-  tokens: ["na klar", "super", "genial", "wie toll", "mega", "ironisch"]
+  tokens: [ "na klar", "super", "genial", "wie toll", "mega", "ironisch" ]
 examples:
-  - "immer du machst das … nervt langsam"
-  - "typisch von dir … reicht jetzt"
-  - "hör auf damit … sonst passiert was"
-  - "deine Schuld … wie immer"
-  - "noch so ein Spruch und …"
-
-
+- "Na klar, immer ich bin schuld, wie immer."
+- "Super, genau das brauchten wir jetzt auch noch."
+- "Genial, wieder mal zu spät – wie toll!"
+- "Mega, deine Ausreden werden immer besser."
+- "Wie toll von dir, das einfach zu vergessen."
+- "Na klar, du hast natürlich wieder recht."
+- "Super Idee, das noch schlimmer zu machen."
+- "Genial, jetzt ist es komplett ruiniert."
+- "Na klar, das war ja vorhersehbar."
+- "Mega witzig, wirklich, ich lache gleich."
+- "Wie toll, dass du das jetzt sagst."
+- "Super Timing, echt beeindruckend."
+- "Genial gelöst, wirklich, Applaus."
+- "Na klar, und ich bin der Weihnachtsmann."
+- "Mega clever, auf die Idee muss man erst mal kommen."
+- "Wie toll, dass du so einsichtig bist."
+- "Super, noch mehr Probleme, danke."
+- "Genial, jetzt können wir von vorne anfangen."
+- "Na klar, du weißt es natürlich besser."
+- "Mega hilfsbereit von dir, wirklich."
+metadata:
+  neg_examples:
+  - "Das ist wirklich eine gute Idee, ernsthaft."
+  - "Ich finde das tatsächlich hilfreich, danke."
+  - "Das war clever von dir, ehrlich."
+  - "Ich schätze deine Meinung aufrichtig."
+  - "Das ist ein guter Punkt, den du da machst."
+  - "Ich meine das ernst, das hilft uns weiter."
+  - "Das ist eine konstruktive Lösung, gut gemacht."
+  - "Ich bin wirklich froh über deinen Input."
+  - "Das ist tatsächlich eine Verbesserung."
+  - "Ich respektiere deine Perspektive aufrichtig."
+  - "Das ist ein fairer Einwand, danke."
+  - "Ich finde das wirklich überzeugend."
+  - "Das ist eine ernsthafte Überlegung wert."
+  - "Ich bin ehrlich beeindruckt von der Lösung."
+  - "Das ist ein guter Ansatz, finde ich."
+  - "Ich nehme das ernst, was du sagst."
+  - "Das ist tatsächlich hilfreich für uns."
+  - "Ich schätze deine Offenheit sehr."
+  - "Das ist ein kluger Vorschlag."
+  - "Ich bin aufrichtig dankbar für deine Hilfe."

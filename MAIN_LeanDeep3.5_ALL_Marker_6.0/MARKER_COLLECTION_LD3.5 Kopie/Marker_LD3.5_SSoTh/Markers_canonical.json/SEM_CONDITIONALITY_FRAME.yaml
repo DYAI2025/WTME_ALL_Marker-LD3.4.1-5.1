@@ -4,19 +4,36 @@ lang: de
 level: SEM
 frame:
   signal:
-    - "Bedingungsrahmen für Kontakt/Handlung"
+  - "Bedingungsrahmen für Kontakt/Handlung"
   concept: "Wenn–Dann-Rahmung"
   pragmatics: "explizite Bedingungen, Risiko von Druck"
   narrative: "Kontroll-/Sicherheitslogik"
 pattern:
-  - '(?i)\bnur\s+wenn\b'
-  - '(?i)\b(dann|ansonsten)\s+(kann|werde|mache)\b'
-  - '(?i)\b(unter\s+diesen\s+bedingungen)\b'
-  - '(?i)\b(erst\s+wenn)\b'
+- '(?i)\bnur\s+wenn\b'
+- '(?i)\b(dann|ansonsten)\s+(kann|werde|mache)\b'
+- '(?i)\b(unter\s+diesen\s+bedingungen)\b'
+- '(?i)\b(erst\s+wenn)\b'
 examples:
+  positive:
   - "Nur wenn ich X weiß, kann ich weitermachen."
   - "Erst wenn du das sagst, treffe ich mich."
   - "Unter diesen Bedingungen halte ich Kontakt."
   - "Ansonsten ziehe ich mich zurück."
   - "Dann kann ich wieder vertrauen."
-tags: [conditional, boundary, semantics]
+  - "Nur wenn du dich änderst, bleibe ich."
+  - "Erst wenn du mir das beweist, glaube ich dir."
+  - "Wenn nicht, dann ist es vorbei."
+  - "Unter dieser Voraussetzung kann ich mir das vorstellen."
+  - "Nur unter diesen Umständen mache ich mit."
+  negative:
+  - "Ich würde mich freuen, wenn wir das so machen."
+  - "Es wäre schön, wenn du das berücksichtigst."
+  - "Ich hoffe, wir finden einen Weg."
+  - "Vielleicht können wir das zusammen klären."
+  - "Ich wünsche mir, dass wir offen reden."
+  - "Es würde helfen, wenn du mir sagst, wie du dich fühlst."
+  - "Ich denke, es wäre gut für uns beide."
+  - "Lass uns schauen, was für beide passt."
+  - "Ich würde das gerne verstehen."
+  - "Mir ist wichtig, dass wir beide zufrieden sind."
+tags: [ conditional, boundary, semantics ]

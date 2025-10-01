@@ -18,4 +18,14 @@ examples:
     - "Du hast das verursacht."
     - "Ich habe das nur getan, weil du mich dazu gebracht hast."
     - "Es ist deine Verantwortung, das zu regeln."
-  negative: []
+  negative:
+    - "Ich habe einen Fehler gemacht."
+    - "Das war meine Entscheidung und meine Verantwortung."
+    - "Ich trage die Konsequenzen für mein Handeln."
+    - "Ich hätte anders reagieren können."
+    - "Das ist mein Teil, den ich beitragen muss."
+    - "Ich übernehme Verantwortung dafür."
+    - "Ich hätte besser aufpassen sollen."
+    - "Das liegt in meinem Verantwortungsbereich."
+    - "Ich erkenne meinen Anteil daran."
+    - "Wir haben beide einen Teil dazu beigetragen."

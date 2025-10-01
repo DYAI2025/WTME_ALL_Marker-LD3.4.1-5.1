@@ -2,28 +2,45 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_GOTTMAN_CONFLICT_ESCALATION
 frame:
-  signal: ["gottman_escalation"]
+  signal: [ "gottman_escalation" ]
   concept: "Gottman-Konflikteskalation"
   pragmatics: "Akkumulation destruktiver Muster"
   narrative: "conflict"
-tags: [gottman, conflict, escalation]
+tags: [ gottman, conflict, escalation ]
 composed_of:
   weighted_any_of:
-    - id: ATO_GOTTMAN_CRITICISM
-      weight: 0.4
-    - id: ATO_GOTTMAN_CONTEMPT
-      weight: 0.5
-    - id: ATO_GOTTMAN_DEFENSIVENESS
-      weight: 0.3
-    - id: ATO_GOTTMAN_STONEWALLING
-      weight: 0.4
+  - id: ATO_GOTTMAN_CRITICISM
+    weight: 0.4
+  - id: ATO_GOTTMAN_CONTEMPT
+    weight: 0.5
+  - id: ATO_GOTTMAN_DEFENSIVENESS
+    weight: 0.3
+  - id: ATO_GOTTMAN_STONEWALLING
+    weight: 0.4
 activation:
   rule: "WEIGHTED_OR >= 0.8"
   window: 6
 scoring: { base: 1.2, weight: 1.1 }
 examples:
+  positive:
   - "Du machst immer alles falsch! – Das stimmt nicht! – (schweigen)"
   - "Du bist so respektlos! – Ich verteidige mich nur! – Lass mich in Ruhe!"
   - "Nie hörst du zu! – Ach, wirklich? – ..."
   - "Du greifst mich an! – Ich kann nichts dafür! – Ich bin raus."
   - "Immer dieselbe Leier – du übertreibst – (keine Antwort)."
+  - "Du versagst ständig! – Nein! – (ignoriert)"
+  - "Typisch du, total unfähig! – Ich hab's versucht! – Vergiss es."
+  - "Du bist einfach unmöglich! – Wegen DIR! – ..."
+  - "Nie machst du was richtig! – Doch! – (wendet sich ab)"
+  - "Du zerstörst alles! – Das ist nicht fair! – Ich geh."
+  negative:
+  - "Ich bin verletzt. – Das wollte ich nicht. – Lass uns reden."
+  - "Das hat mich getroffen. – Entschuldigung. – Wie können wir das klären?"
+  - "Ich bin frustriert. – Ich auch. – Was brauchen wir beide?"
+  - "Das ärgert mich. – Ich verstehe. – Lass uns eine Lösung finden."
+  - "Ich fühle mich nicht gehört. – Okay, ich höre jetzt zu. – Danke."
+  - "Das ist schwierig für mich. – Für mich auch. – Atmen wir mal durch."
+  - "Ich bin gerade überfordert. – Brauchst du eine Pause? – Ja, bitte."
+  - "Das verletzt mich. – Das tut mir leid. – Können wir neu anfangen?"
+  - "Ich bin traurig. – Ich auch. – Lass uns das zusammen angehen."
+  - "Das belastet mich. – Mich auch. – Was hilft uns jetzt?"

@@ -2,17 +2,52 @@ schema: "LeanDeep"
 version: "3.4"
 id: ATO_DOUBT_PHRASE
 frame:
-  signal: ["token"]
+  signal: [ "token" ]
   concept: "Zweifel"
   pragmatics: "Hedging"
   narrative: "surface"
 pattern:
-  tokens: ["ich bin unsicher", "weiß nicht", "könnte sein", "nicht sicher", "scheint so"]
+  tokens: [ "ich bin unsicher", "weiß nicht", "könnte sein", "nicht sicher", "scheint so" ]
 examples:
-  - "kurze Sequenz A … kurze Sequenz B"
-  - "Beispiel mit zwei Signalen in einem Satz"
-  - "Signal 1 … später Signal 2 im Kontext"
-  - "Kombination aus Token X und Y"
-  - "Variante mit ähnlicher Semantik"
-
-
+- "Ich bin unsicher, ob das wirklich stimmt."
+- "Ich weiß nicht, ob wir das schaffen können."
+- "Das könnte sein, aber ich bin nicht sicher."
+- "Ich bin mir nicht sicher, wie das ausgehen wird."
+- "Es scheint so, als wäre das richtig."
+- "Ich bin unsicher, was der richtige Weg ist."
+- "Weiß nicht genau, ob das funktioniert."
+- "Könnte sein, dass du recht hast, unsicher bin ich."
+- "Ich bin nicht sicher, ob ich das richtig verstehe."
+- "Es scheint so, aber Gewissheit habe ich nicht."
+- "Ich bin unsicher, ob das die Lösung ist."
+- "Weiß nicht, ob ich dem zustimmen kann."
+- "Das könnte sein, ich bin mir aber nicht sicher."
+- "Nicht sicher, ob das der beste Ansatz ist."
+- "Es scheint so zu sein, aber ich zweifle."
+- "Ich bin unsicher bei dieser Entscheidung."
+- "Weiß nicht recht, ob das passt."
+- "Könnte sein, aber die Sicherheit fehlt mir."
+- "Ich bin nicht sicher, was ich davon halten soll."
+- "Scheint so, als ob, aber ich bin unsicher."
+metadata:
+  neg_examples:
+  - "Ich bin absolut überzeugt, dass das stimmt."
+  - "Ich weiß mit Sicherheit, dass wir das schaffen."
+  - "Das ist definitiv der richtige Weg."
+  - "Ich bin mir völlig sicher, wie das ausgeht."
+  - "Das ist eindeutig richtig, keine Frage."
+  - "Ich bin vollkommen überzeugt davon."
+  - "Ich weiß genau, dass das funktioniert."
+  - "Du hast absolut recht, da bin ich sicher."
+  - "Ich bin mir hundertprozentig sicher, dass ich das verstehe."
+  - "Das ist ohne Zweifel die Wahrheit."
+  - "Ich bin mir völlig sicher bei dieser Lösung."
+  - "Ich weiß mit Bestimmtheit, dass ich zustimme."
+  - "Das ist definitiv der Fall, keine Unsicherheit."
+  - "Ich bin mir sicher, das ist der beste Ansatz."
+  - "Das ist eindeutig so, ich zweifle nicht."
+  - "Ich bin völlig sicher bei dieser Entscheidung."
+  - "Ich weiß ganz genau, dass das passt."
+  - "Das ist definitiv so, völlige Gewissheit."
+  - "Ich bin mir komplett sicher, was ich davon halte."
+  - "Das ist eindeutig der Fall, ohne Zweifel."

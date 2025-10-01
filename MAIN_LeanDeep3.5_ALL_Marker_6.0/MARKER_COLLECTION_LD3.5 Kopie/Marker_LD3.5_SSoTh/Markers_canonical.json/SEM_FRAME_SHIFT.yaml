@@ -2,21 +2,38 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_FRAME_SHIFT
 frame:
-  signal: ["frame_shift"]
+  signal: [ "frame_shift" ]
   concept: "Vom konkreten Fall auf Meta/Prinzipien verlagern"
   pragmatics: "Abstraktion / Agenda-Schutz"
   narrative: "framing"
-tags: [frame, abstraction]
+tags: [ frame, abstraction ]
 composed_of:
   any_of:
-    - ATO_TOPIC_SPLIT
-    - ATO_STYLE_REFERENCE
+  - ATO_TOPIC_SPLIT
+  - ATO_STYLE_REFERENCE
 activation:
   rule: "AT_LEAST 1 IN 2 messages"
   window: 2
 examples:
+  positive:
   - "Lass uns auf Prinzipienebene schauen."
   - "Nicht der Einzelfall, es geht ums Muster."
   - "Meta: Was sind unsere Regeln?"
   - "Rahmenwechsel: vom Detail zur Policy."
   - "Zur Methodik, nicht zur Ausnahme."
+  - "Das ist kein Einzelthema, das ist grundsätzlich."
+  - "Wir müssen das strukturell betrachten."
+  - "Das führt zu weit, bleiben wir beim Rahmen."
+  - "Raus aus dem Konkreten, rein ins Prinzipielle."
+  - "Wir diskutieren hier nicht den Fall, sondern die Regel."
+  negative:
+  - "Lass uns das konkrete Beispiel durchgehen."
+  - "Was genau ist in diesem Fall passiert?"
+  - "Ich will verstehen, wie es dazu kam."
+  - "Können wir bei den Details bleiben?"
+  - "Was bedeutet das hier und jetzt für uns?"
+  - "Lass uns diese spezifische Situation klären."
+  - "Ich brauche die Details, um zu verstehen."
+  - "Was ist konkret das Problem?"
+  - "Bleiben wir beim Thema, nicht bei Prinzipien."
+  - "Das Einzelne ist mir wichtig, nicht die Theorie."

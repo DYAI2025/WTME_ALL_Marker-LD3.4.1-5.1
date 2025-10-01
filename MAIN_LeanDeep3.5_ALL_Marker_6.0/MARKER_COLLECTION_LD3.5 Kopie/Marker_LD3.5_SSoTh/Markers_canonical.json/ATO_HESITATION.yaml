@@ -2,17 +2,52 @@ schema: "LeanDeep"
 version: "3.4"
 id: ATO_HESITATION
 frame:
-  signal: ["token"]
+  signal: [ "token" ]
   concept: "Zögern"
   pragmatics: "weicher Ton"
   narrative: "surface"
 pattern:
-  tokens: ["äh", "ähm", "hm", "hmm", "nun ja", "vielleicht", "mal sehen"]
+  tokens: [ "äh", "ähm", "hm", "hmm", "nun ja", "vielleicht", "mal sehen" ]
 examples:
-  - "kurze Sequenz A … kurze Sequenz B"
-  - "Beispiel mit zwei Signalen in einem Satz"
-  - "Signal 1 … später Signal 2 im Kontext"
-  - "Kombination aus Token X und Y"
-  - "Variante mit ähnlicher Semantik"
-
-
+- "Äh, ich weiß nicht genau, wie ich das sagen soll."
+- "Ähm, vielleicht sollten wir das nochmal überdenken."
+- "Hm, ich bin mir da nicht so sicher."
+- "Hmm, mal sehen, ob das funktioniert."
+- "Nun ja, ich könnte mir das vorstellen."
+- "Vielleicht ist das eine Option, äh, ich weiß nicht."
+- "Mal sehen, ähm, ich muss darüber nachdenken."
+- "Äh, das ist schwierig zu beantworten."
+- "Hmm, vielleicht hast du recht, ich bin unsicher."
+- "Nun ja, äh, ich tendiere eher zu dieser Lösung."
+- "Ähm, mal sehen, wie sich das entwickelt."
+- "Hm, vielleicht sollten wir abwarten."
+- "Äh, ich bin noch nicht ganz überzeugt davon."
+- "Hmm, nun ja, das könnte klappen."
+- "Vielleicht, äh, ich brauche noch Zeit."
+- "Mal sehen, hm, das ist kompliziert."
+- "Äh, ähm, ich weiß nicht, was ich dazu sagen soll."
+- "Nun ja, vielleicht ist das der richtige Weg."
+- "Hmm, äh, ich bin mir nicht sicher, ehrlich gesagt."
+- "Vielleicht, mal sehen, äh, wir werden sehen."
+metadata:
+  neg_examples:
+  - "Ich bin absolut sicher, dass das funktioniert."
+  - "Definitiv, das ist die richtige Entscheidung."
+  - "Ohne Zweifel, wir machen das so."
+  - "Ich weiß genau, wie wir vorgehen müssen."
+  - "Eindeutig ist das der beste Weg."
+  - "Ich bin vollkommen überzeugt davon."
+  - "Klar, das machen wir jetzt sofort."
+  - "Sicher, ich stehe hundertprozentig dahinter."
+  - "Zweifellos ist das die Lösung."
+  - "Ich bin mir vollkommen im Klaren darüber."
+  - "Definitiv, keine Frage, das passt."
+  - "Ich weiß mit Gewissheit, dass das stimmt."
+  - "Absolut, ich bin fest entschlossen."
+  - "Klar und deutlich, so machen wir das."
+  - "Ich bin mir komplett sicher in dieser Sache."
+  - "Ohne zu zögern, das ist richtig."
+  - "Ich habe null Zweifel daran."
+  - "Ganz klar, das ist die Antwort."
+  - "Ich bin vollkommen entschieden."
+  - "Sicher wie das Amen in der Kirche."

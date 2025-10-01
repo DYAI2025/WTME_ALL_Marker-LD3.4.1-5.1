@@ -4,19 +4,36 @@ lang: de
 level: SEM
 frame:
   signal:
-    - "Respekt/Verlässlichkeit als Maßstab anführen"
+  - "Respekt/Verlässlichkeit als Maßstab anführen"
   concept: "Beziehungsnormen explizit"
   pragmatics: "Rahmenklärung"
   narrative: "Werteabgleich"
 pattern:
-  - '(?i)\brespekt\b|\brespektier\w*\b'
-  - '(?i)\bverlässlich(keit)?\b|\bzuverlässig(keit)?\b'
-  - '(?i)\b(acht(ung)?|würde)\b'
-  - '(?i)\b(so\s+ist\s+es\s+respektvoll)\b'
+- '(?i)\brespekt\b|\brespektier\w*\b'
+- '(?i)\bverlässlich(keit)?\b|\bzuverlässig(keit)?\b'
+- '(?i)\b(acht(ung)?|würde)\b'
+- '(?i)\b(so\s+ist\s+es\s+respektvoll)\b'
 examples:
+  positive:
   - "Das ist für mich eine Frage von Respekt."
   - "Ich brauche Verlässlichkeit."
   - "Bitte respektiere meine Grenze."
   - "So ist es für mich respektvoll."
   - "Zuverlässigkeit ist mir wichtig."
-tags: [norms, respect, reliability, semantics]
+  - "Respekt bedeutet für mich, dass du pünktlich bist."
+  - "Ich erwarte, dass du meine Würde achtest."
+  - "Verlässlichkeit ist die Basis unserer Beziehung."
+  - "Das ist eine Frage der Achtung."
+  - "Respektiere bitte, was ich sage."
+  negative:
+  - "Ich wünsche mir, dass du pünktlich bist."
+  - "Es wäre schön, wenn du das berücksichtigst."
+  - "Mir ist wichtig, dass wir gut miteinander umgehen."
+  - "Ich hoffe, du verstehst meine Position."
+  - "Es hilft mir, wenn du zuverlässig bist."
+  - "Ich fühle mich wohler, wenn ich mich auf dich verlassen kann."
+  - "Guter Umgang bedeutet mir viel."
+  - "Ich schätze es, wenn du meine Wünsche beachtest."
+  - "Mir liegt an einem guten Miteinander."
+  - "Ich freue mich über deine Zuverlässigkeit."
+tags: [ norms, respect, reliability, semantics ]

@@ -4,20 +4,37 @@ lang: de
 level: SEM
 frame:
   signal:
-    - "Ich-Botschaften (Gefühl/Bedürfnis/Bitte)"
+  - "Ich-Botschaften (Gefühl/Bedürfnis/Bitte)"
   concept: "Selbstoffenbarung ohne Anklage"
   pragmatics: "Angriff vermeiden, Verantwortung bei sich"
   narrative: "Transparenz über Innenzustand"
 pattern:
-  - '(?i)\bich\s+fühle\s+mich\s+\w+\b'
-  - '(?i)\bich\s+brauche\s+\w+\b'
-  - '(?i)\bich\s+bitte\s+dich\s+um\s+\w+\b'
-  - '(?i)\bich\s+bin\s+unsicher\b'
-  - '(?i)\bmir\s+fehlt\s+(klarheit|sicherheit)\b'
+- '(?i)\bich\s+fühle\s+mich\s+\w+\b'
+- '(?i)\bich\s+brauche\s+\w+\b'
+- '(?i)\bich\s+bitte\s+dich\s+um\s+\w+\b'
+- '(?i)\bich\s+bin\s+unsicher\b'
+- '(?i)\bmir\s+fehlt\s+(klarheit|sicherheit)\b'
 examples:
+  positive:
   - "Ich fühle mich klein gemacht."
   - "Ich brauche mehr Klarheit, um wieder Vertrauen zu fassen."
   - "Ich bitte dich um eine kurze Rückmeldung."
   - "Ich bin unsicher und möchte verstehen."
   - "Mir fehlt Sicherheit in dem Thema."
-tags: [self_disclosure, clarity, semantics]
+  - "Ich fühle mich übergangen, wenn du das so entscheidest."
+  - "Ich brauche Zeit, um das zu verarbeiten."
+  - "Ich bin verletzt durch deine Worte."
+  - "Mir ist wichtig, dass wir ehrlich zueinander sind."
+  - "Ich wünsche mir mehr Aufmerksamkeit von dir."
+  negative:
+  - "Du machst mich immer klein."
+  - "Du gibst mir nie Klarheit."
+  - "Du antwortest nie zeitnah."
+  - "Du machst mich unsicher."
+  - "Wegen dir fühle ich mich so."
+  - "Du bist schuld, dass ich mich so fühle."
+  - "Du übergehst mich ständig."
+  - "Du verletzt mich mit Absicht."
+  - "Du bist unehrlich."
+  - "Du gibst mir nicht genug Aufmerksamkeit."
+tags: [ self_disclosure, clarity, semantics ]

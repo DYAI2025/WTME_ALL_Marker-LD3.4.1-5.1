@@ -2,25 +2,42 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_SETTING_CONTROL
 frame:
-  signal: ["setting_control"]
+  signal: [ "setting_control" ]
   concept: "Kanal/Timing/Format festlegen"
   pragmatics: "Rahmensetzung"
   narrative: "coordination"
-tags: [setting, control]
+tags: [ setting, control ]
 composed_of:
   any_of:
-    - ATO_STYLE_REFERENCE
-    - ATO_SHARED_CONTEXT
+  - ATO_STYLE_REFERENCE
+  - ATO_SHARED_CONTEXT
   optional:
-    - ATO_PACING
-    - ATO_MINI_DEADLINE
-    - ATO_ACKNOWLEDGE
+  - ATO_PACING
+  - ATO_MINI_DEADLINE
+  - ATO_ACKNOWLEDGE
 activation:
   rule: "BOTH IN 2 messages"
   window: 2
 examples:
+  positive:
   - "Stilwechsel: kurz & direkt – jetzt."
   - "Bitte im Call, nicht per Text."
   - "Heute formell – ab 15:00."
   - "Kurz und direkt – nach dem Meeting."
   - "Zurück zur Roadmap – in Stichpunkten."
+  - "Nur per E-Mail – keine Calls."
+  - "Wir machen das synchron – 15 Minuten."
+  - "Format: Bullet Points – bis morgen."
+  - "Timing: jetzt sofort – nicht verschieben."
+  - "Kanal: Slack – keine DMs."
+  negative:
+  - "Wie möchtest du das besprechen?"
+  - "Wähle den Kanal, der dir passt."
+  - "Wann ist ein guter Zeitpunkt für dich?"
+  - "Sag mir, wie ich das am besten formuliere."
+  - "Ich bin flexibel mit dem Format."
+  - "Lass uns gemeinsam entscheiden, wie wir das machen."
+  - "Deine Präferenz zählt."
+  - "Ich passe mich deinem Stil an."
+  - "Wie auch immer es für dich besser ist."
+  - "Du bestimmst, wie wir kommunizieren."

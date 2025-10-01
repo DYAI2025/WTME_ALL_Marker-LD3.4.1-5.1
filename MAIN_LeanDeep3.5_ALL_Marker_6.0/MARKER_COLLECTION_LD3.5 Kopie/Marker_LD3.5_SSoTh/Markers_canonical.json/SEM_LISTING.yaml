@@ -2,22 +2,39 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_LISTING
 frame:
-  signal: ["listing"]
+  signal: [ "listing" ]
   concept: "Kontext-/Lastenbündel statt Punktlösung"
   pragmatics: "Breite statt Tiefe"
   narrative: "argumentation"
-tags: [listing, evidence]
+tags: [ listing, evidence ]
 composed_of:
   any_of:
-    - ATO_PLATFORM
-    - ATO_STATUS_TERMS
-    - ATO_NUMBER_MENTION
+  - ATO_PLATFORM
+  - ATO_STATUS_TERMS
+  - ATO_NUMBER_MENTION
 activation:
   rule: "AT_LEAST 2 IN 4 messages"
   window: 4
 examples:
+  positive:
   - "Punkt 1, 2, 3…"
   - "Zahlen: 5 Systeme, 12 Tickets, 3 Incidents."
   - "Kontext: Budget, Timeline, Ressourcen."
   - "Hier die Liste: A, B, C."
   - "Mehrere Belege in einem Rutsch."
+  - "Fakten: 3 Meetings, 7 E-Mails, 2 Calls."
+  - "Overview: Slack, Teams, Jira, GitHub."
+  - "Status: 15 offen, 8 in Progress, 3 blocked."
+  - "Aufzählung: Design, Development, Testing, Deploy."
+  - "Liste der Themen: 1. Security, 2. Performance, 3. UX."
+  negative:
+  - "Das Hauptthema ist die Sicherheit."
+  - "Mir geht es vor allem um Performance."
+  - "Der wichtigste Punkt ist das Budget."
+  - "Ich konzentriere mich auf die Timeline."
+  - "Das zentrale Problem ist Kommunikation."
+  - "Lass uns tief in dieses eine Thema eintauchen."
+  - "Ich möchte das im Detail verstehen."
+  - "Fokussieren wir uns auf einen Aspekt."
+  - "Das Kernelement ist Trust."
+  - "Der entscheidende Faktor ist Zeit."

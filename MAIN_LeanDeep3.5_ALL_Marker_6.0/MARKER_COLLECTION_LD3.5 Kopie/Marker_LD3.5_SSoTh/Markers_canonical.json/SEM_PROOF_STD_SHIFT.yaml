@@ -2,21 +2,38 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_PROOF_STD_SHIFT
 frame:
-  signal: ["proof_std_shift"]
+  signal: [ "proof_std_shift" ]
   concept: "Beweisstandard verschieben/erhöhen"
   pragmatics: "Hürde erhöhen"
   narrative: "argumentation"
-tags: [proof, standard]
+tags: [ proof, standard ]
 composed_of:
   any_of:
-    - ATO_REQUEST_FOR_FEEDBACK
-    - ATO_PROOF_SEEKING_BEHAVIOR
+  - ATO_REQUEST_FOR_FEEDBACK
+  - ATO_PROOF_SEEKING_BEHAVIOR
 activation:
   rule: "AT_LEAST 1 IN 2 messages"
   window: 2
 examples:
+  positive:
   - "Beleg das bitte."
   - "Zeig's nach."
   - "Quelle?"
   - "Nachweise oder es zählt nicht."
   - "Bitte Evidenz, sonst vertagen wir."
+  - "Das muss nachprüfbar sein."
+  - "Ohne Daten glaube ich das nicht."
+  - "Wo sind die Fakten?"
+  - "Beweis mir, dass das stimmt."
+  - "Ich brauche härtere Evidenz."
+  negative:
+  - "Das klingt plausibel."
+  - "Ich vertraue deiner Einschätzung."
+  - "Okay, ich glaube dir."
+  - "Deine Erfahrung reicht mir als Beleg."
+  - "Ich verstehe deine Perspektive."
+  - "Das macht für mich Sinn."
+  - "Ich kann nachvollziehen, wie du das siehst."
+  - "Dein Bauchgefühl ist mir wichtig."
+  - "Ich nehme das so an."
+  - "Klingt stimmig für mich."

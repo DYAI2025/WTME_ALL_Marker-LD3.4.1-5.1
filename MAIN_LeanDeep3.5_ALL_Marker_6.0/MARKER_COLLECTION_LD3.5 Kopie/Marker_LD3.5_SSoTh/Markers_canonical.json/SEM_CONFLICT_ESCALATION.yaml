@@ -2,25 +2,42 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_CONFLICT_ESCALATION
 frame:
-  signal: ["escalation"]
+  signal: [ "escalation" ]
   concept: "Konflikteskalation"
   pragmatics: "Aneinanderhakende Mikro-Muster"
   narrative: "conflict"
-tags: [conflict, escalation]
+tags: [ conflict, escalation ]
 composed_of:
   any_of:
-    - ATO_DEFENSIVENESS
-    - ATO_BLAME_SHIFT
-    - ATO_SARCASM
-    - ATO_OUTRAGE_MARKERS
-    - ATO_CRITICISM_ATTACK_MARKER
+  - ATO_DEFENSIVENESS
+  - ATO_BLAME_SHIFT
+  - ATO_SARCASM
+  - ATO_OUTRAGE_MARKERS
+  - ATO_CRITICISM_ATTACK_MARKER
 activation:
   rule: "AT_LEAST 3 IN 4 messages"
   window: 4
 scoring: { base: 0.9, weight: 1.2 }
 examples:
+  positive:
   - "Das stimmt nicht – wegen dir musste ich so reagieren – na klar, immer ich."
   - "Typisch – du hast mich gezwungen – ach ja, sehr witzig."
   - "Du übertreibst – das ist deine Schuld – ich verteidige mich nur."
   - "Immer dasselbe – du bist verantwortlich – toll, wieder mein Fehler."
   - "Hör auf – wegen dir – großartig, gib mir ruhig alles."
+  - "Echt jetzt? – Du hast angefangen – Und jetzt bin ICH schuld?"
+  - "Das ist lächerlich – nur wegen deiner Unfähigkeit – Super, danke auch!"
+  - "Nie kannst du – immer muss ICH – toll gemacht, wirklich."
+  - "Du verstehst das falsch – das ist DEIN Problem – na super."
+  - "So nicht – das war DEINE Entscheidung – jetzt komm mir nicht so!"
+  negative:
+  - "Ich verstehe deinen Punkt, aber ich sehe das anders."
+  - "Okay, lass uns das später besprechen, wenn wir ruhiger sind."
+  - "Ich brauche kurz Pause, dann können wir weiterreden."
+  - "Das verletzt mich, können wir sachlich bleiben?"
+  - "Ich höre, was du sagst, ich denke aber trotzdem unterschiedlich."
+  - "Lass uns beide tief durchatmen und neu anfangen."
+  - "Vielleicht haben wir beide einen Anteil daran."
+  - "Ich merke, wir drehen uns im Kreis, lass uns abbrechen."
+  - "Du hast recht, dass ich auch Fehler gemacht habe."
+  - "Können wir einen Moment innehalten und überlegen?"

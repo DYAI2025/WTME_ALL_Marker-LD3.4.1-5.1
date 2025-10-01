@@ -2,22 +2,39 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_EVAL_PRIOR
 frame:
-  signal: ["eval_prior"]
+  signal: [ "eval_prior" ]
   concept: "Frührahmung / Vorbewertung"
   pragmatics: "Maßstab setzen, bevor alles vorliegt"
   narrative: "evaluation"
-tags: [evaluation, framing]
+tags: [ evaluation, framing ]
 composed_of:
   any_of:
-    - ATO_PREMATURE_CLOSURE
-    - ATO_CLOSE
-    - ATO_PACING
+  - ATO_PREMATURE_CLOSURE
+  - ATO_CLOSE
+  - ATO_PACING
 activation:
   rule: "AT_LEAST 2 IN 4 messages"
   window: 4
 examples:
+  positive:
   - "Alles gesagt – reicht."
   - "Passt – wir entscheiden jetzt."
   - "Später Details – heute nur Go/No-Go."
   - "Deadline jetzt – Rest danach."
   - "Fertig, das genügt."
+  - "Ich hab genug gehört, wir ziehen das durch."
+  - "Die Richtung ist klar, Rest klären wir im Doing."
+  - "Das Setting ist gesetzt, keine weiteren Inputs nötig."
+  - "Reicht mir, ich bewerte das jetzt so."
+  - "Ich schließe das Thema jetzt ab, fertig."
+  negative:
+  - "Wir haben viel besprochen, lass uns das sacken lassen."
+  - "Guter Punkt, ich denke nochmal drüber nach."
+  - "Ich brauche noch mehr Input, bevor ich entscheide."
+  - "Lass uns das gemeinsam durchdenken."
+  - "Ich bin noch unsicher, können wir das vertiefen?"
+  - "Das ist komplex, ich will alle Aspekte verstehen."
+  - "Ich nehme mir Zeit für eine fundierte Entscheidung."
+  - "Danke für die Infos, ich wäge das noch ab."
+  - "Lass uns alle Optionen durchspielen."
+  - "Ich möchte das nicht überstürzen."

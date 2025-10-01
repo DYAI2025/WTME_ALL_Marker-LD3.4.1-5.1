@@ -2,21 +2,38 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_FORMAT_POLICING
 frame:
-  signal: ["format_policing"]
+  signal: [ "format_policing" ]
   concept: "Formregeln als Hebel"
   pragmatics: "Gatekeeping über Form"
   narrative: "process_control"
-tags: [format, policing]
+tags: [ format, policing ]
 composed_of:
   any_of:
-    - ATO_STYLE_REFERENCE
-    - ATO_SHARED_CONTEXT
+  - ATO_STYLE_REFERENCE
+  - ATO_SHARED_CONTEXT
 activation:
   rule: "AT_LEAST 1 IN 2 messages"
   window: 2
 examples:
+  positive:
   - "Nicht per Text, nur FaceTime."
   - "Bitte in Vorlage XYZ."
   - "Kein PDF, nur Google Doc."
   - "Nur im Ticket, nicht per Mail."
   - "Formfehler, bitte neu einreichen."
+  - "Das geht nur über den offiziellen Kanal."
+  - "So können wir nicht arbeiten, nutze das Template."
+  - "Ich bearbeite das nur, wenn es richtig formatiert ist."
+  - "Das ist nicht der Prozess, mach es nochmal."
+  - "Ohne korrekte Form nehme ich das nicht an."
+  negative:
+  - "Am besten wäre FaceTime, aber Text geht auch."
+  - "Die Vorlage hilft, ist aber nicht zwingend."
+  - "Google Doc wäre einfacher, aber PDF ist okay."
+  - "Ticket bevorzugt, aber Mail geht zur Not."
+  - "Kleine Formfehler sind kein Problem."
+  - "Mach es so, wie es für dich am besten passt."
+  - "Hauptsache der Inhalt stimmt."
+  - "Die Form ist mir nicht so wichtig."
+  - "Schick es mir einfach, wie du magst."
+  - "Lass uns pragmatisch sein mit der Form."

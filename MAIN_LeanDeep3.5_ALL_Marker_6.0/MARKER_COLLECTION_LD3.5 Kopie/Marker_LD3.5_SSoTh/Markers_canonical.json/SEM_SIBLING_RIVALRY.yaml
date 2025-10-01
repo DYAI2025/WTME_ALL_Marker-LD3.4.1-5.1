@@ -5,19 +5,19 @@ lang: de
 category: SEMANTIC
 description: "Semantische Kombination von Geschwisterrollen und Konfliktmustern."
 frame:
-  signal: ["Geschwisterrolle + Konflikt"]
+  signal: [ "Geschwisterrolle + Konflikt" ]
   concept: "Geschwisterrivalität"
   pragmatics: "Konkurrenz um elterliche Aufmerksamkeit"
   narrative: "Familiäre Rangordnung"
 combination:
   type: "AND"
   components:
-    - marker_id: "ATO_ROLE_SIBLINGS"
-      weight: 0.6
-    - marker_id: "ATO_GOTTMAN_CRITICISM"
-      weight: 0.4
-    - marker_id: "ATO_GOTTMAN_CONTEMPT"
-      weight: 0.5
+  - marker_id: "ATO_ROLE_SIBLINGS"
+    weight: 0.6
+  - marker_id: "ATO_GOTTMAN_CRITICISM"
+    weight: 0.4
+  - marker_id: "ATO_GOTTMAN_CONTEMPT"
+    weight: 0.5
   threshold: 0.6
 activation:
   rule: "WEIGHTED_AND"
@@ -29,10 +29,29 @@ scoring:
   decay: 0.03
   formula: "logistic"
 examples:
+  positive:
   - "Mein Bruder macht immer alles falsch!"
   - "Die Schwester ist so dumm."
   - "Geschwister sind manchmal echt nervig."
-tags: [semantic, family, siblings, rivalry, conflict]
+  - "Mama mag meine Schwester sowieso lieber."
+  - "Der bekommt immer mehr als ich!"
+  - "Mein Bruder ist viel besser als ich, sagen alle."
+  - "Die darf alles, ich darf nie was!"
+  - "Typisch, bei meinem Bruder ist das wieder okay."
+  - "Meine Schwester kriegt die ganze Aufmerksamkeit."
+  - "Er ist der Liebling, ich bin egal."
+  negative:
+  - "Mein Bruder und ich haben verschiedene Meinungen."
+  - "Meine Schwester spielt gerade lieber alleine."
+  - "Wir Geschwister sind sehr unterschiedlich."
+  - "Mein Bruder mag andere Sachen als ich."
+  - "Manchmal brauchen wir beide unseren Raum."
+  - "Meine Schwester hat heute keinen guten Tag."
+  - "Wir haben uns kurz gestritten, ist aber okay."
+  - "Mein Bruder ist einfach anders als ich."
+  - "Geschwister haben halt unterschiedliche Interessen."
+  - "Wir verstehen uns nicht immer, aber das ist normal."
+tags: [ semantic, family, siblings, rivalry, conflict ]
 detect_class: "E"
 criteria: "Kombination aus Geschwisterrolle und negativen Bewertungen"
 updated_at: "2025-08-19T10:30:00Z"

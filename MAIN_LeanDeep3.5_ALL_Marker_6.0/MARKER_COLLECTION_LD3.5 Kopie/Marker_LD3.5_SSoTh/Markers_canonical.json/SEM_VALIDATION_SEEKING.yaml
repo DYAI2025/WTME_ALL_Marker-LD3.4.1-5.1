@@ -2,26 +2,43 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_VALIDATION_SEEKING
 frame:
-  signal: ["validation_seeking"]
+  signal: [ "validation_seeking" ]
   concept: "Validierungs-/Bestätigungs-Suche"
   pragmatics: "Externes Korrektiv einholen / Absicherung"
   narrative: "attachment"
-tags: [validation, attachment]
+tags: [ validation, attachment ]
 composed_of:
   any_of:
-    - ATO_VALIDATION_SEEKING
-    - ATO_REQUEST_FOR_FEEDBACK
-    - ATO_PITY_APPEAL
-    - ATO_VICTIM_LANGUAGE
+  - ATO_VALIDATION_SEEKING
+  - ATO_REQUEST_FOR_FEEDBACK
+  - ATO_PITY_APPEAL
+  - ATO_VICTIM_LANGUAGE
   optional:
-    - ATO_CONFIRM
+  - ATO_CONFIRM
 activation:
   rule: "AT_LEAST 2 IN 3 messages"
   window: 3
 scoring: { base: 0.55, weight: 1.0 }
 examples:
+  positive:
   - "Kannst du spiegeln? – Ich fühle mich so allein."
   - "Kurze Rückmeldung? – Keiner versteht mich."
   - "Wie wirkt das? – Ich armes Ich."
   - "Passt das so? – Ich brauche Bestätigung."
   - "Feedback bitte – niemand steht hinter mir."
+  - "Siehst du das auch so? – Ich bin mir so unsicher."
+  - "Bin ich da falsch? – Alle sind gegen mich."
+  - "Was denkst du? – Ich fühle mich so verloren."
+  - "Bestätige mir bitte, dass ich richtig liege."
+  - "Brauche Feedback – ich weiß nicht mehr weiter."
+  negative:
+  - "Was ist deine Meinung dazu?"
+  - "Ich bin neugierig auf deine Perspektive."
+  - "Kannst du mir helfen, das zu verstehen?"
+  - "Wie siehst du die Situation?"
+  - "Ich würde gerne deinen Input hören."
+  - "Was wäre dein Vorschlag?"
+  - "Teilst du deine Gedanken mit mir?"
+  - "Ich schätze deine Einschätzung."
+  - "Magst du mir deine Sicht erklären?"
+  - "Ich bin offen für andere Perspektiven."

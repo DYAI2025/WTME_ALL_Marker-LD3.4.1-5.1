@@ -5,19 +5,19 @@ lang: de
 category: SEMANTIC
 description: "Semantische Kombination von Kinderrolle und defensiven Mustern."
 frame:
-  signal: ["Kinderrolle + Defensive Muster"]
+  signal: [ "Kinderrolle + Defensive Muster" ]
   concept: "Kindlicher Widerstand"
   pragmatics: "Widerstand gegen elterliche Autorität"
   narrative: "Autonomiestreben"
 combination:
   type: "AND"
   components:
-    - marker_id: "ATO_ROLE_CHILD"
-      weight: 0.5
-    - marker_id: "ATO_GOTTMAN_DEFENSIVENESS"
-      weight: 0.4
-    - marker_id: "ATO_GOTTMAN_STONEWALLING"
-      weight: 0.4
+  - marker_id: "ATO_ROLE_CHILD"
+    weight: 0.5
+  - marker_id: "ATO_GOTTMAN_DEFENSIVENESS"
+    weight: 0.4
+  - marker_id: "ATO_GOTTMAN_STONEWALLING"
+    weight: 0.4
   threshold: 0.6
 activation:
   rule: "WEIGHTED_AND"
@@ -29,10 +29,29 @@ scoring:
   decay: 0.03
   formula: "logistic"
 examples:
+  positive:
   - "Kind: Das ist nicht meine Schuld!"
   - "Unser Kind will nicht reden."
   - "Die Kleinen sagen immer: Das stimmt nicht!"
-tags: [semantic, family, child, resistance, defensive]
+  - "Das Kind mauert total, wenn wir über Hausaufgaben sprechen."
+  - "Meine Tochter sagt nur 'Weiß nicht' und dreht sich weg."
+  - "Der Kleine verschränkt die Arme: 'Ich war's nicht!'"
+  - "Unser Sohn blockt komplett ab, sobald wir ihn was fragen."
+  - "Das Kind rechtfertigt sich permanent: 'Das hast DU falsch verstanden!'"
+  - "Sie sagt nur 'Lass mich in Ruhe' und macht die Tür zu."
+  - "Der Junge weicht aus: 'Ihr versteht das eh nicht.'"
+  negative:
+  - "Mein Kind braucht heute einfach Ruhe."
+  - "Die Kleine ist müde, sie antwortet nicht viel."
+  - "Unser Sohn hat heute keine Lust zu reden."
+  - "Das Kind ist gerade in seiner eigenen Welt."
+  - "Sie konzentriert sich auf ihr Spiel."
+  - "Er ist ein bisschen schüchtern bei Fremden."
+  - "Die Tochter braucht manchmal Zeit für sich."
+  - "Unser Kind ist sehr nachdenklich heute."
+  - "Der Kleine ist einfach introvertiert."
+  - "Sie verarbeitet das gerade noch innerlich."
+tags: [ semantic, family, child, resistance, defensive ]
 detect_class: "D"
 criteria: "Kombination aus Kinderrolle und defensiven Reaktionsmustern"
 updated_at: "2025-08-19T10:30:00Z"

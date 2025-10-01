@@ -5,23 +5,23 @@ lang: de
 category: SEMANTIC
 description: "Semantische Kombination von Elternrolle und direktiven Äußerungen."
 frame:
-  signal: ["Elternrolle + Anweisung"]
+  signal: [ "Elternrolle + Anweisung" ]
   concept: "Elterliche Autorität"
   pragmatics: "Machtausübung durch Elternrolle"
   narrative: "Hierarchische Kommunikation"
 combination:
   type: "AND"
   components:
-    - marker_id: "ATO_ROLE_FATHER"
-      weight: 0.5
-    - marker_id: "ATO_ROLE_MOTHER"
-      weight: 0.5
-    - marker_id: "ATO_DIRECTIVE_CHORES"
-      weight: 0.4
-    - marker_id: "ATO_DIRECTIVE_HOMEWORK"
-      weight: 0.4
-    - marker_id: "ATO_DIRECTIVE_BEDTIME"
-      weight: 0.4
+  - marker_id: "ATO_ROLE_FATHER"
+    weight: 0.5
+  - marker_id: "ATO_ROLE_MOTHER"
+    weight: 0.5
+  - marker_id: "ATO_DIRECTIVE_CHORES"
+    weight: 0.4
+  - marker_id: "ATO_DIRECTIVE_HOMEWORK"
+    weight: 0.4
+  - marker_id: "ATO_DIRECTIVE_BEDTIME"
+    weight: 0.4
   threshold: 0.7
 activation:
   rule: "WEIGHTED_AND"
@@ -33,10 +33,29 @@ scoring:
   decay: 0.02
   formula: "logistic"
 examples:
+  positive:
   - "Papa sagt: Räum dein Zimmer auf!"
   - "Mama: Mach deine Hausaufgaben!"
   - "Als Vater bestimme ich, wann Schlafenszeit ist."
-tags: [semantic, family, authority, directive, hierarchy]
+  - "Ich bin die Mutter, ich entscheide das jetzt."
+  - "Papa hat gesagt, ihr müsst um 8 ins Bett."
+  - "Mama besteht darauf, dass du den Tisch abräumst."
+  - "Als Eltern legen wir fest, wie lange du raus darfst."
+  - "Der Vater sagt: Keine Diskussion, du machst das jetzt."
+  - "Ich bin deine Mutter und sage dir, was richtig ist."
+  - "Papa verlangt, dass du dich entschuldigst."
+  negative:
+  - "Ich schlage vor, dass wir dein Zimmer aufräumen."
+  - "Wäre es nicht gut, jetzt die Hausaufgaben zu machen?"
+  - "Lass uns gemeinsam überlegen, wann Schlafenszeit sein sollte."
+  - "Ich würde mich freuen, wenn du den Tisch abräumst."
+  - "Was denkst du, wie lange du heute raus sein solltest?"
+  - "Könnten wir uns vielleicht auf 8 Uhr einigen?"
+  - "Ich fände es schön, wenn du dich entschuldigst."
+  - "Lass uns darüber sprechen, wie wir das regeln."
+  - "Ich habe das Gefühl, wir sollten das anders machen."
+  - "Vielleicht können wir einen Kompromiss finden?"
+tags: [ semantic, family, authority, directive, hierarchy ]
 detect_class: "E"
 criteria: "Kombination aus Elternrolle und direktiven Sprechakten"
 updated_at: "2025-08-19T10:30:00Z"
