@@ -21,8 +21,8 @@ markers:
     score: 0.60
     metadata: { type: SEM }
     examples:
-      - "Nie dort" ↔ "Gestern dort".
-      - "Immer derselbe" ↔ "Inzwischen anders".
-      - "Ständig X" ↔ "Heute Y".
-      - "Jedes Mal klappt's" ↔ "Letzte Woche nicht".
-      - "Nie gezahlt" ↔ "Vorhin gezahlt".
+      - '"Nie dort" ↔ "Gestern dort".'
+      - '"Immer derselbe" ↔ "Inzwischen anders".'
+      - '"Ständig X" ↔ "Heute Y".'
+      - "\"Jedes Mal klappt's\" ↔ \"Letzte Woche nicht\"."
+      - '"Nie gezahlt" ↔ "Vorhin gezahlt".'

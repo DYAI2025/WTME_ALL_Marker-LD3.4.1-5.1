@@ -17,9 +17,29 @@ activation:
   rule: ANY 1
 examples:
 - Vielleicht sprechen wir morgen darüber.
-- Lass uns das Thema wechseln, wenn dir das Recht ist.
+- Lass uns das Thema wechseln, wenn dir das recht ist.
 - Ich bin mir nicht sicher, ob wir das jetzt klären sollten.
 - Können wir das ein andermal besprechen?
 - Lass uns das lieber ruhen lassen.
+- Vielleicht passt das besser in einer der nächsten Sitzungen.
+- Ich würde das ungern jetzt vertiefen, lass uns später darauf zurückkommen.
+- Lass es uns vorerst parken, es gibt Wichtigeres.
+- Könnten wir erst die anderen Punkte machen und das hier verschieben?
+- Das ist kompliziert, ich würde es lieber offline klären.
+- Ich glaube, das ist gerade kein guter Moment dafür.
+- Vielleicht sollten wir warten, bis sich die Lage beruhigt hat.
+- Ich würde das lieber im Stillen für mich sortieren, okay?
+metadata:
+  neg_examples:
+    - Lass uns den Konflikt sofort offen ansprechen.
+    - Ich will das Thema jetzt verstehen, erzähl mir mehr.
+    - Wir klären das direkt, damit nichts hängenbleibt.
+    - Ich möchte nicht ausweichen, lass uns dranbleiben.
+    - Wir sollten das Problem sofort lösen, statt es zu verschieben.
+    - Ich bin bereit, das jetzt ausführlich zu diskutieren.
+    - Bitte bleib beim Thema, es ist wichtig.
+    - Lass uns keine Pausen mehr machen, wir entscheiden hier und jetzt.
+    - Ich möchte deine klare Haltung dazu hören.
+    - Wir halten das Thema warm, statt es ruhen zu lassen.
 tags:
 - avoidance

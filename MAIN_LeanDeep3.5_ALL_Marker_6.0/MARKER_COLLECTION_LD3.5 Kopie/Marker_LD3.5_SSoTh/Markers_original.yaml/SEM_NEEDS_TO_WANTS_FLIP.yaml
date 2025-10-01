@@ -1,0 +1,23 @@
+id: SEM_NEEDS_TO_WANTS_FLIP
+version: "3.4"
+lang: de
+frame:
+  signal: ["flip"]
+  concept: "Bedürfnis → Wille"
+  pragmatics: "Agency-Shift"
+  narrative: "reframe"
+tags: [reframe, agency]
+composed_of:
+  - ATO_NEED_TERM
+  - ATO_WANT_TERM
+examples:
+  - "ich brauche Halt → ich will präsent sein"
+  - "ich benötige Nähe → ich will sie gestalten"
+  - "ich brauche deine Stimme → ich will sie heute hören"
+  - "ich benötige Struktur → ich will sie setzen"
+  - "ich brauche Ruhe → ich will sie mit dir schaffen"
+  - "ich benötige Feedback → ich will dich danach fragen"
+  - "ich brauche Orientierung → ich will sie bauen"
+  - "ich benötige Aufmerksamkeit → ich will sie einfordern"
+  - "ich brauche das Ritual → ich will es halten"
+  - "ich benötige Verbindung → ich will sie aktiv wählen"

@@ -1,0 +1,18 @@
+family: SHUTDOWN
+cluster: CLU_INTUITION_SHUTDOWN
+sequences:
+  - name: confirm_and_decay
+    description: Stonewalling + Rückzug lösen Aktivierung aus, Shutdown-Episode bestätigt, danach keine weiteren Treffer.
+    events:
+      - sems: [SEM_STONEWALLING_BEHAVIOR]
+      - sems: [SEM_SILENCE_WITHDRAWAL]
+      - sems: [SEM_SHUTDOWN_EPISODE]
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []

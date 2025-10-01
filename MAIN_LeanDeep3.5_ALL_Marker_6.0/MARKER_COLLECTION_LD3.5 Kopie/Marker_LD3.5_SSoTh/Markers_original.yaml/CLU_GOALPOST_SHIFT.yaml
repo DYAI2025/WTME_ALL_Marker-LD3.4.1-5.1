@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_GOALPOST_SHIFT
+frame:
+  signal: ["cluster"]
+  concept: "Goalpost-Shift"
+  pragmatics: "Kriteriumswechsel"
+  narrative: "window"
+composed_of: [SEM_SD_ORANGE_ACHIEVE, SEM_UNCERTAINTY_TONING]
+activation: {rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages"}
+scoring: {base: 1.0, weight: 1.1}
+examples:
+  - "früher war mir Sicherheit wichtig … jetzt Freiheit"
+  - "habe meine Prioritäten geändert"
+  - "erst Leistung … nun Gemeinschaft"
+  - "ich sehe das heute anders"
+  - "Werte neu sortiert"

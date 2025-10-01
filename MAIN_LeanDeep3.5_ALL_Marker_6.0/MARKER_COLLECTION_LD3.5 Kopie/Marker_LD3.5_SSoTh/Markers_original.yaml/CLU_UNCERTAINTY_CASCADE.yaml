@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_UNCERTAINTY_CASCADE
+frame:
+  signal: ["cluster"]
+  concept: "Unsicherheits-Kaskade"
+  pragmatics: "Vorsicht"
+  narrative: "window"
+composed_of: [SEM_UNCERTAINTY_TONING, SEM_TENTATIVE_INFERENCE, ATO_PROBABILISTIC]
+activation: {rule: "AT_LEAST 3 IN 6 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "vielleicht ist es so … bin mir nicht sicher"
+  - "ich glaube … könnte aber falsch liegen"
+  - "hm … weiß nicht genau"
+  - "es spricht einiges dafür … aber"
+  - "vermutlich … kann mich täuschen"

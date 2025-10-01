@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SD_TURQUOISE_HOLISM
+frame:
+  signal: ["semantic"]
+  concept: "SD Turquoise Holismus"
+  pragmatics: "Ganzheit"
+  narrative: "micro"
+composed_of: [ATO_SD_TURQUOISE_LEX, ATO_HOLISM_LEX]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "ganzheitlicher Blick … Verbundenheit"
+  - "kosmisches Gesamtbild"
+  - "Teile und Ganzes balancieren"
+  - "kollektive Intelligenz"
+  - "Sinnkohärenz suchen"

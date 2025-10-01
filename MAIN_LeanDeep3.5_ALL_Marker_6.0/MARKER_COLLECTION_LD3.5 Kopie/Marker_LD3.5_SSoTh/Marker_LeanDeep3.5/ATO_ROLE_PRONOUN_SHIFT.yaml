@@ -19,8 +19,8 @@ markers:
     score: 0.30
     metadata: { type: ATO }
     examples:
-      - "Ich habe entschieden" → "Wir haben entschieden".
-      - "Ich musste zahlen" → "Wir mussten zahlen".
-      - "Ich habe das gemacht" → "Man macht das so".
-      - "Du hast zugesagt" → "Ihr habt zugesagt".
-      - "Ich bezahlte" → "Wir zahlten".
+      - '"Ich habe entschieden" → "Wir haben entschieden".'
+      - '"Ich musste zahlen" → "Wir mussten zahlen".'
+      - '"Ich habe das gemacht" → "Man macht das so".'
+      - '"Du hast zugesagt" → "Ihr habt zugesagt".'
+      - '"Ich bezahlte" → "Wir zahlten".'

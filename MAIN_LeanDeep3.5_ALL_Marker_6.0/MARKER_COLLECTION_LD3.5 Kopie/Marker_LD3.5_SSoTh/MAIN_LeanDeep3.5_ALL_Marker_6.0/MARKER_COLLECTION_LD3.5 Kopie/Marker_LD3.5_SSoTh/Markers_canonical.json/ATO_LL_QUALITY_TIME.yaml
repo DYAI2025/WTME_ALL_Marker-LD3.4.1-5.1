@@ -1,0 +1,58 @@
+name: ATO_LL_QUALITY_TIME
+label: "Qualitätszeit (Love Language)"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Ausdrücke des Wunsches nach gemeinsamer Qualitätszeit"
+patterns:
+  - type: regex
+    value: "(Zeit zusammen verbringen|lass uns ausgehen|gemeinsam Zeit|Qualitätszeit|mit dir sein)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "quality_time"
+  interpretant: "effect_on_state: {intimacy: +0.15, sync: +0.15}"
+examples:
+  positive_de:
+    - "Zeit zusammen verbringen."
+    - "Lass uns ausgehen."
+    - "Gemeinsam Zeit."
+    - "Qualitätszeit mit dir."
+    - "Mit dir sein."
+    - "Abend zusammen?"
+    - "Spazieren gehen."
+    - "Zeit für uns."
+    - "Qualität verbringen."
+    - "Sei bei mir."
+    - "Zusammen ausgehen."
+    - "Gemeinsam entspannen."
+    - "Zeit teilen."
+    - "Qualitätsabend."
+    - "Mit dir Zeit."
+    - "Abend planen."
+    - "Spaziergang zusammen."
+    - "Unsere Zeit."
+    - "Verbringen qualitativ."
+    - "Bei mir sein."
+  negative_de:
+    - "Keine Zeit zusammen."
+    - "Nicht ausgehen."
+    - "Keine gemeinsame Zeit."
+    - "Keine Qualitätszeit."
+    - "Nicht mit dir sein."
+    - "Kein Abend zusammen."
+    - "Nicht spazieren."
+    - "Keine Zeit für uns."
+    - "Keine Qualität."
+    - "Nicht bei mir."
+    - "Nicht zusammen ausgehen."
+    - "Nicht gemeinsam entspannen."
+    - "Keine Zeit teilen."
+    - "Kein Qualitätsabend."
+    - "Nicht mit dir Zeit."
+    - "Kein Abend planen."
+    - "Kein Spaziergang zusammen."
+    - "Nicht unsere Zeit."
+    - "Nicht verbringen."
+    - "Nicht bei mir sein."

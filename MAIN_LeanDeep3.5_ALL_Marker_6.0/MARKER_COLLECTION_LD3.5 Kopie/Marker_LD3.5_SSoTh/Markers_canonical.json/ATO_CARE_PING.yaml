@@ -31,27 +31,27 @@ examples:
   - "Hab an dich gedacht."
   - "Mini Check-in – alles gut?"
   - "Nur ein Pflege-Hallo."
+  - "Kurzer Check-in, wollte dir nur einen lieben Gruß dalassen."
+  - "Hallo du, ich schick dir ein kleines Care-Ping."
+  - "Nur ein kurzer Gedanke: Hoffe, dein Tag ist okay."
+  - "Ich wollte einfach kurz winken – fühl dich gesehen."
+  - "Hier ein kleiner Ping: Wenn du was brauchst, ich bin da."
+  - "Mini-Nachricht, um Hallo zu sagen und dich zu erinnern, dass du wichtig bist."
+  - "Kurzes "Hab dich im Blick" – kein To-do, nur Wärme."
+  - "Ich lasse dir ein Herz da und frage, wie du dich heute fühlst."
+  - "Nur ein ganz kurzes "alles gut bei dir?" ohne Druck."
+metadata:
+  neg_examples:
+    - "Kannst du mir sofort helfen, es ist dringend?"
+    - "Ich brauche deine Arbeitsergebnisse, bitte schnell."
+    - "Warum meldest du dich nicht, das enttäuscht mich."
+    - "Schick mir die Dateien, das ist wichtig." 
+    - "Ich rufe dich an, wir müssen was klären."
+    - "Brauche Feedback zu meiner Präsentation, bitte heute noch."
+    - "Du hast mich vergessen, das fühlt sich mies an."
+    - "Ich will ausführlich sprechen, Reservier dir eine Stunde."
+    - "Das ist keine Begrüßung, sondern eine Mahnung."
+    - "Wir haben ein Problem, melde dich sofort."
 detect_class: null
 criteria: null
 updated_at: "2025-08-19T10:30:00Z"
-activation:
-  rule: "ANY 1 IN 30 messages"
-window:
-  messages: 30
-scoring:
-  base: 1.7
-  weight: 0.4
-  decay: 0.01
-  formula: "logistic"
-examples:
-  - "Kurzes Update: Ich bin gut angekommen."
-  - "Denk an dich!"
-  - "Wie war dein Tag?"
-  - "Kleines Lebenszeichen von mir."
-  - "Wollte mal hören, wie es dir geht."
-  - "Schneller Check-in: Alles gut bei dir?"
-  - "Hab gerade an dich gedacht."
-  - "Kurze Frage: Wie läuft deine Woche?"
-  - "Kurzer Ping!"
-  - "Alles gut bei dir?"
-tags: [ato, positiv, friendship, ritual, deeskalation]

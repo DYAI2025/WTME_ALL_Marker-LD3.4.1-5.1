@@ -1,0 +1,19 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_VALUE_DYNAMICS
+frame:
+  signal: ["meta"]
+  concept: "Value Dynamics Analyse"
+  pragmatics: "Werteverschiebung"
+  narrative: "meta"
+composed_of: [CLU_SPIRAL_PERSONA_BEIGE, CLU_SPIRAL_PERSONA_PURPUR, CLU_SPIRAL_PERSONA_ROT, CLU_SPIRAL_PERSONA_BLAU, CLU_SPIRAL_PERSONA_ORANGE, CLU_SPIRAL_PERSONA_GRUEN, CLU_SPIRAL_PERSONA_GELB, CLU_SPIRAL_PERSONA_TUERKIS]
+activation: {rule: "AT_LEAST 2 DISTINCT CLUs IN 10 messages"}
+metadata:
+  transition_rule: "if prev_stage.score >= 0.6 and next_stage.score - prev_stage.score >= 0.3 within 10 messages → TRANSITION(prev→next)"
+  min_persistence: 3
+examples:
+  - "von Rot zu Blau: Dominanz → Ordnung"
+  - "Orange → Grün: Leistung → Gemeinschaft"
+  - "Blau → Orange: Regel → Ergebnis"
+  - "Grün → Gelb: Empathie → Systeme"
+  - "Gelb → Türkis: Systeme → Holismus"

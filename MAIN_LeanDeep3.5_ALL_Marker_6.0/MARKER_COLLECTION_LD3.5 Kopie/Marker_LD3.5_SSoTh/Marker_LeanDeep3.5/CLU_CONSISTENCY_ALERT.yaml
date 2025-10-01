@@ -45,8 +45,8 @@ markers:
         counter_retracted: "INT_INCONSISTENCY.retracted"
         ewma_precision: "INT_INCONSISTENCY.ewma_precision"
     examples:
-      - "Nie dort." → "Gestern dort." + Zahlendreher.
-      - "Immer pünktlich" → "Letzte Woche zu spät".
-      - "Nie bezahlt" → "Ich habe gezahlt".
-      - "5 Leute" → "12 Leute" beim selben Ereignis.
-      - "Wir mussten zahlen" ↔ "Ich habe nie bezahlt".
+      - '"Nie dort." → "Gestern dort." + Zahlendreher.'
+      - '"Immer pünktlich" → "Letzte Woche zu spät".'
+      - '"Nie bezahlt" → "Ich habe gezahlt".'
+      - '"5 Leute" → "12 Leute" beim selben Ereignis.'
+      - '"Wir mussten zahlen" ↔ "Ich habe nie bezahlt".'

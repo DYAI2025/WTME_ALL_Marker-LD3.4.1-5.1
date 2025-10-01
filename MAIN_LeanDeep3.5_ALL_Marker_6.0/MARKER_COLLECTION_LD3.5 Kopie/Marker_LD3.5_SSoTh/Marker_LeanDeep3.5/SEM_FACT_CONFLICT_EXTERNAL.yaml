@@ -22,8 +22,8 @@ markers:
     score: 0.70
     metadata: { type: SEM }
     examples:
-      - "5 Meetings" ↔ "12 Meetings".
-      - "3 Tage" ↔ "7 Tage".
-      - "100 EUR" ↔ "150 EUR".
-      - "2,5 Stunden" ↔ "1 Stunde".
-      - "10 Personen" ↔ "8 Personen".
+      - '"5 Meetings" ↔ "12 Meetings".'
+      - '"3 Tage" ↔ "7 Tage".'
+      - '"100 EUR" ↔ "150 EUR".'
+      - '"2,5 Stunden" ↔ "1 Stunde".'
+      - '"10 Personen" ↔ "8 Personen".'

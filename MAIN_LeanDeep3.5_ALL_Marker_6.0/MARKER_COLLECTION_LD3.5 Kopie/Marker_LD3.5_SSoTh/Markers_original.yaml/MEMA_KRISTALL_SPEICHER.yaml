@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_KRISTALL_SPEICHER
+frame:
+  signal: ["meta"]
+  concept: "Kristall-Speicher (stabile Knoten)"
+  pragmatics: "Wissensanker"
+  narrative: "meta"
+detect_class: "node_crystallizer"
+metadata: {stability_window: 20, min_repeats: 3, variance_max: 0.2}
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"

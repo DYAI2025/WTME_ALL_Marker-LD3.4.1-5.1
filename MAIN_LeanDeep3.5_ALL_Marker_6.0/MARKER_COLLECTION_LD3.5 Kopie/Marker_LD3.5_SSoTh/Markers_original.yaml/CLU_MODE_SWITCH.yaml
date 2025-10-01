@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_MODE_SWITCH
+frame:
+  signal: ["cluster"]
+  concept: "Moduswechsel (rational↔affektiv)"
+  pragmatics: "Stilbruch"
+  narrative: "window"
+composed_of: [SEM_SD_ORANGE_ACHIEVE, SEM_SADNESS_EXPRESSIONS]
+activation: {rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"

@@ -1,0 +1,18 @@
+family: EFFICACY
+cluster: CLU_INTUITION_SELF_EFFICACY
+sequences:
+  - name: confirm_and_decay
+    description: Selbstwirksamkeit + Task-Drive aktivieren, Commitment bestätigt, anschließend kein weiterer Input.
+    events:
+      - sems: [SEM_TASK_DRIVE]
+      - sems: [SEM_CLEAR_COMMITMENT]
+      - sems: [SEM_POSITIVE_SELF_EFFICACY]
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []

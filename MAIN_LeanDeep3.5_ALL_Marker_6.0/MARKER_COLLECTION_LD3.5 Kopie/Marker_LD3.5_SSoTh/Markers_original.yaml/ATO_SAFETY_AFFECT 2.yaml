@@ -1,0 +1,25 @@
+id: ATO_SAFETY_AFFECT
+version: "3.4"
+lang: de
+frame:
+  signal: ["affect"]
+  concept: "Sicherheits-/Ruheaffekt"
+  pragmatics: "Deeskalation"
+  narrative: "state"
+tags: [sicherheit, ruhe]
+pattern:
+  - (?i)fühlt\s+sich\s+sicher
+  - (?i)es\s+wird\s+ruhiger
+  - (?i)gehalten
+  - (?i)getragen
+examples:
+  - "es fühlt sich sicher an, seit du da bist"
+  - "es wird ruhiger in mir, wenn wir sprechen"
+  - "ich fühle mich von diesem Prozess gehalten"
+  - "ich weiß, du trägst das mit mir"
+  - "es fühlt sich sicher an, nichts zu leisten"
+  - "es wird ruhiger, je öfter wir einchecken"
+  - "ich bin in diesem Kreis gehalten"
+  - "ich spüre, wie das Feld uns trägt"
+  - "es fühlt sich sicherer an als gestern"
+  - "ich lasse mich von deiner Stimme tragen"

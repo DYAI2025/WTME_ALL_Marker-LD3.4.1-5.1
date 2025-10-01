@@ -1,0 +1,23 @@
+id: SEM_LIMINAL_FIELD_PRESENCE
+version: "3.4"
+lang: de
+frame:
+  signal: ["field"]
+  concept: "Zwischenraum als Präsenz-Ort"
+  pragmatics: "Sicherheit durch Rahmung"
+  narrative: "setting"
+tags: [feld, zwischenraum]
+composed_of:
+  - ATO_BETWEENNESS_TERM
+  - ATO_TRUTH_FEEL
+examples:
+  - "Zwischenraum halten + fühlt sich wahr an"
+  - "im Dazwischen bleiben + spürbar wahr"
+  - "liminaler Ort + fühlt sich echt an"
+  - "Zwischenraum sichern + es fühlt sich wahr an"
+  - "liminaler Korridor + spürbar wahr"
+  - "Dazwischen atmen + fühlt sich wahr an"
+  - "Zwischenraum als Schutz + fühlt sich richtig an"
+  - "liminalen Raum markieren + spürbar wahr"
+  - "im Dazwischen verweilen + fühlt sich wahr an"
+  - "liminales Feld öffnen + es fühlt sich echt an"

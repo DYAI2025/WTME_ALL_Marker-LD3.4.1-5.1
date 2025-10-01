@@ -1,0 +1,23 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_ORANGE
+frame:
+  signal: "Orange Spiral Persona optimiert"
+  concept: "Erfolgs-orientierte Persönlichkeitsstruktur"
+  pragmatics: "Strategische Innovationsmuster"
+  narrative: "Das Achiever-Selbst maximiert Performance"
+composed_of: [SEM_ORANGE_STRATEGIC_FLOW, ATO_ACHIEVEMENT_DRIVE]
+activation:
+  rule: "AT_LEAST 4 IN 8 messages"
+  window_size: 8
+  threshold: 4
+scoring:
+  weight: 1.1
+  decay: 0.7
+examples: 
+  - "Achiever-Persona vollständig aktiviert"
+  - "strategische Optimierungsmuster"
+  - "innovative Erfolgsstrategie"
+  - "Leistungsmaximierung"
+  - "Wettbewerbsorientierung dominant"
+  - "AudioSet, ESC-50, FSD50K"

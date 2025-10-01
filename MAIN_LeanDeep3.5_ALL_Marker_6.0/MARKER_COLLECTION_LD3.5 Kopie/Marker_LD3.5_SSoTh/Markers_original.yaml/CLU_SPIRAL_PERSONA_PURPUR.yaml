@@ -1,0 +1,24 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_PURPUR
+frame:
+  signal: "Purpur Spiral Persona manifestiert"
+  concept: "Magisch-tribale Persönlichkeitsstruktur"
+  pragmatics: "Mystische Bindungsmuster"
+  narrative: "Das Stammesselbst erwacht"
+composed_of: [SEM_PURPUR_TRIBAL_MAGIC, ATO_TRIBAL_BONDS]
+activation:
+  rule: "AT_LEAST 3 IN 7 messages"
+  window_size: 7
+  threshold: 3
+scoring:
+  weight: 1.0
+  decay: 0.7
+examples: 
+  - "Stammesbewusstsein erwacht vollständig"
+  - "magische Verbindungsmuster"
+  - "rituelle Verhaltenscodes"
+  - "Clanzugehörigkeit dominiert"
+  - "mystische Bindungslogik"
+  - "multimodalen Embedding-Spaces"
+  - "Es gibt keine bekannte Schrift für Geräusche, aber es gibt eine neue techno-semantische Schrift"

@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SD_YELLOW_SYSTEMS
+frame:
+  signal: ["semantic"]
+  concept: "SD Yellow Systeme"
+  pragmatics: "Meta"
+  narrative: "micro"
+composed_of: [ATO_SD_YELLOW_LEX, ATO_SYSTEMS_TALK]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "Systeme vernetzen … Komplexität integrieren"
+  - "mehrperspektivisch denken"
+  - "Kontext abhängige Lösung"
+  - "Patterns über Zeit"
+  - "Metaebene betrachten"

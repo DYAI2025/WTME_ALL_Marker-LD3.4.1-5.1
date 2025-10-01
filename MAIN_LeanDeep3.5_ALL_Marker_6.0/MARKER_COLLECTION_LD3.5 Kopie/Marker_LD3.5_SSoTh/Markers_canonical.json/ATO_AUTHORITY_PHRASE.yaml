@@ -9,10 +9,26 @@ frame:
 pattern:
   tokens: ["Regel", "Pflicht", "Vorschrift", "Autorität", "Handbuch"]
 examples:
-  - "Regeln sind Regeln … Pflicht zuerst"
-  - "Ordnung halten … Autorität respektieren"
-  - "so steht es im Handbuch"
-  - "Disziplin vor Diskussion"
-  - "nach Vorschrift handeln"
-
+  - "Regeln sind Regeln, Pflicht kommt zuerst, egal wie du dich fühlst."
+  - "Ordnung halten heißt, die Autorität ohne Widerrede zu respektieren."
+  - "So steht es im Handbuch, also machen wir das exakt so."
+  - "Disziplin vor Diskussion, das ist hier Vorschrift."
+  - "Wir handeln nach Vorschrift, nicht nach persönlicher Meinung."
+  - "Die Amtsanweisung ist bindend, da gibt es keinen Spielraum."
+  - "Der Vorstand hat das beschlossen, und daran halten wir uns."
+  - "Das ist Pflichtprogramm laut Richtlinie, Ende der Debatte."
+  - "Die Autorität liegt beim Kommandanten, wir folgen seiner Order."
+  - "Das Handbuch schreibt vor, dass wir jeden Schritt dokumentieren."
+metadata:
+  neg_examples:
+    - "Wir entscheiden das im Team, statt uns auf Vorschriften zu berufen."
+    - "Die Regeln sind flexibel, wir passen sie an die Situation an."
+    - "Handbücher helfen, aber hier improvisieren wir bewusst."
+    - "Die Autorität fragt nach Feedback, bevor sie entscheidet."
+    - "Wir folgen unserer Intuition, nicht starr der Vorschrift."
+    - "Pflicht ist gut, aber heute priorisieren wir Kooperation."
+    - "Der Vorstand gibt einen Rahmen, wir gestalten den Rest eigenständig."
+    - "Disziplin ist zweitrangig, zuerst hören wir auf das Team."
+    - "Die Richtlinie ist veraltet, deshalb suchen wir bessere Lösungen."
+    - "Auf dem Papier steht viel, aber wir wählen eine pragmatische Option."
 

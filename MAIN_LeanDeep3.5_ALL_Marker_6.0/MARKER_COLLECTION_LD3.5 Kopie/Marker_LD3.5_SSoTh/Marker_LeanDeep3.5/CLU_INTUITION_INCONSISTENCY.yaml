@@ -34,8 +34,8 @@ markers:
         counter_retracted: "INTUITION_IC.retracted"
         ewma_precision: "INTUITION_IC.ewma_precision"
     examples:
-      - "Genauer gesagt" + Pronomenwechsel in kurzer Folge.
-      - "Eigentlich …" + spätere Relativierung.
-      - "Ich" → "Wir" bei Verantwortung.
+      - '"Genauer gesagt" + Pronomenwechsel in kurzer Folge.'
+      - '"Eigentlich …" + spätere Relativierung.'
+      - '"Ich" → "Wir" bei Verantwortung.'
       - Früherer Absolutizer + Zeitbezug.
       - Zwei verschiedene SEMs in vier Nachrichten.

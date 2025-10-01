@@ -9,10 +9,26 @@ frame:
 pattern:
   tokens: ["wütend", "genervt", "reicht", "unfassbar", "nervtötend", "sauer"]
 examples:
-  - "immer du machst das … nervt langsam"
-  - "typisch von dir … reicht jetzt"
-  - "hör auf damit … sonst passiert was"
-  - "deine Schuld … wie immer"
-  - "noch so ein Spruch und …"
-
+  - "Immer du machst das – das nervt langsam unfassbar."
+  - "Typisch von dir, mir reicht es jetzt einfach."
+  - "Hör auf damit, sonst passiert hier echt was!"
+  - "Das ist wieder deine Schuld, wie immer, und ich bin wütend."
+  - "Noch so ein Spruch und ich werde richtig sauer."
+  - "Ich bin so verdammt genervt von diesem Theater."
+  - "Unfassbar, dass du schon wieder zu spät bist – echt wütend machst du mich."
+  - "Es reicht, ich bin stinksauer auf diese Ausreden."
+  - "Deine nervtötenden Kommentare treiben mich langsam zur Weißglut."
+  - "Ich bin komplett sauer, weil niemand zuhört."
+metadata:
+  neg_examples:
+    - "Ich merke die Spannung, aber ich bleibe ruhig."
+    - "Mich stört das ein wenig, doch ich kann damit umgehen."
+    - "Lass uns sachlich bleiben, ohne laut zu werden."
+    - "Ich fühle mich verletzt, aber nicht wütend."
+    - "Das ist ärgerlich, trotzdem bleibe ich gelassen."
+    - "Ich möchte das Problem ruhig besprechen."
+    - "Mich überrascht das, doch ich werde nicht sauer."
+    - "Ich bin enttäuscht, nicht wütend."
+    - "Das nervt mich nur leicht, lass uns weitermachen."
+    - "Wir lösen das, ohne dass jemand die Fassung verliert."
 

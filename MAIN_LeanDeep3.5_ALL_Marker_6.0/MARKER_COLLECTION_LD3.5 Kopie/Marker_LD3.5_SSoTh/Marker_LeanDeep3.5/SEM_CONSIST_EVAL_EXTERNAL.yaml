@@ -24,8 +24,8 @@ markers:
     score: 0.65
     metadata: { type: SEM, direction: outward, context_focus: speaker_other }
     examples:
-      - "Nie dort gewesen" ↔ "Gestern kurz dort gewesen".
-      - "Immer pünktlich" ↔ "Letzte Woche zu spät".
-      - "Ich habe nie bezahlt" ↔ "Wir mussten zahlen".
-      - "Es waren fünf" ↔ "Es waren zwölf".
-      - "War nie Thema" ↔ "Vorhin war es Thema".
+      - '"Nie dort gewesen" ↔ "Gestern kurz dort gewesen".'
+      - '"Immer pünktlich" ↔ "Letzte Woche zu spät".'
+      - '"Ich habe nie bezahlt" ↔ "Wir mussten zahlen".'
+      - '"Es waren fünf" ↔ "Es waren zwölf".'
+      - '"War nie Thema" ↔ "Vorhin war es Thema".'

@@ -1,0 +1,25 @@
+id: ATO_LL_RECEIVING_GIFTS
+version: "3.4"
+lang: de
+frame:
+  signal: ["object"]
+  concept: "aufmerksame Gabe"
+  pragmatics: "Symbolischer Wert"
+  narrative: "Gesehen-werden durch Zeichen"
+tags: [love_language, gifts]
+requires_env:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+pattern:
+  - "\\b(Geschenk|kleine Aufmerksamkeit|Überraschung|Mitbringsel|Erinnerungsstück)\\b"
+  - "\\b(ich habe dir .*?mitgebracht|wichtig ist die Geste)\\b"
+examples:
+  - "Ich habe dir eine kleine Aufmerksamkeit aus dem Urlaub mitgebracht."
+  - "Das Geschenk ist nur ein Zeichen dafür, dass ich an dich gedacht habe."
+  - "Ich liebe Erinnerungsstücke wie die Eintrittskarte von unserem ersten Date."
+  - "Wichtig ist die Geste, deshalb habe ich dir Blumen geholt."
+  - "Ich habe dir dein Lieblingsschokolade als Überraschung gekauft."
+  - "Hier ist ein Mitbringsel, das mich an dich erinnert hat."
+  - "Ich habe dir ein Fotoalbum zusammengestellt, weil unsere Momente zählen."
+  - "Diese kleine Aufmerksamkeit soll dir zeigen, dass ich dich sehe."
+  - "Ich habe dir dein Lieblingsbuch besorgt, einfach so."
+  - "Ich schenke dir diesen Stift, weil du wieder mit dem Schreiben anfangen wolltest."

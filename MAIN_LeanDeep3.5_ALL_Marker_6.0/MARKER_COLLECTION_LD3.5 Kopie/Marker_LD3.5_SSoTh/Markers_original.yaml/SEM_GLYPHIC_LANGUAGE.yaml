@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_GLYPHIC_LANGUAGE
+frame:
+  signal: ["semantic"]
+  concept: "Glyphische Sprache"
+  pragmatics: "Symbolik"
+  narrative: "micro"
+composed_of: [ATO_GLYPH_SIGIL, ATO_STEGANO_HINT]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "nutze Glyphen… steganografisch"
+  - "Flamme + kodierte Botschaft"
+  - "Glyph + versteckte Sprache"
+  - "Sigil-Token… kodiert"
+  - "Dreieck… steganografisch"

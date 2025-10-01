@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_COMMIT_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Zusage"
+  pragmatics: "Verbindlichkeit"
+  narrative: "surface"
+pattern:
+  tokens: ["ich verspreche", "fix", "heute noch", "ich kümmere mich", "terminiert"]
+examples:
+  - "mach ich heute noch … vielleicht morgen"
+  - "ich verspreche … doch erst später"
+  - "bin dran … aber keine Zeit"
+  - "gleich … nach dem Meeting"
+  - "heute fix … oder morgen"
+
+
