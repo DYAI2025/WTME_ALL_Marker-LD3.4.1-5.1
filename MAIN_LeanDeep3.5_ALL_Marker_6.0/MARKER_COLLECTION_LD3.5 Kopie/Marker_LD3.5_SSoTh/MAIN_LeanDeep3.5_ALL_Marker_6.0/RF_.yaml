@@ -1,0 +1,126 @@
+id: ATO_TIME_PRESENT
+type: atomic
+level: ATO
+family: RF_TIME_INTENSITY
+version: "2.0"
+
+description: "Detektiert sprachliche Marker für Gegenwartsbezug"
+
+metadata:
+  purpose: "Zeitdimension für RF2.0 Bridge-Manifestationen - Präsenz"
+  integration: "Wird mit RF_LEVELS und semantischen Markern kombiniert"
+  scoring_weight: 1.0
+
+pattern:
+  type: lexicon
+  tokens:
+    # Temporale Adverbien
+    - "jetzt"
+    - "gerade"
+    - "aktuell"
+    - "momentan"
+    - "derzeit"
+    - "gegenwärtig"
+    - "heute"
+    - "nun"
+    - "sofort"
+    - "augenblicklich"
+    
+    # Präsenz-Phrasen
+    - "in diesem moment"
+    - "im hier und jetzt"
+    - "hier und jetzt"
+    - "genau jetzt"
+    - "right now"
+    - "im augenblick"
+    - "zur zeit"
+    - "aktuell ist"
+    - "gerade eben"
+    
+    # Prozess-Marker
+    - "bin (gerade )?(dabei|am)"
+    - "geschieht (gerade|jetzt)"
+    - "passiert (gerade|jetzt)"
+    - "erlebe (gerade|jetzt)"
+    - "fühle (gerade|jetzt)"
+    - "spüre (gerade|jetzt)"
+    
+    # Unmittelbarkeits-Marker
+    - "soeben"
+    - "eben erst"
+    - "gerade noch"
+    - "just"
+    - "unmittelbar"
+
+examples:
+  positive:
+    - text: "Jetzt verstehe ich, was du meinst"
+      trigger: "jetzt"
+      context: "Gegenwärtiger Erkenntnismoment"
+    
+    - text: "Ich bin gerade dabei, das zu verarbeiten"
+      trigger: "gerade dabei"
+      context: "Aktiver Gegenwartsprozess"
+    
+    - text: "In diesem Moment spüre ich Unsicherheit"
+      trigger: "in diesem moment"
+      context: "Unmittelbare emotionale Präsenz"
+    
+    - text: "Hier und jetzt möchte ich das klären"
+      trigger: "hier und jetzt"
+      context: "Intentionale Gegenwartsorientierung"
+    
+    - text: "Aktuell fühle ich mich überfordert"
+      trigger: "aktuell"
+      context: "Gegenwärtiger emotionaler Zustand"
+    
+    - text: "Ich erlebe gerade eine Mischung aus Wut und Trauer"
+      trigger: "gerade"
+      context: "Unmittelbare emotionale Komplexität"
+    
+    - text: "Momentan kann ich das nicht einordnen"
+      trigger: "momentan"
+      context: "Gegenwärtige kognitive Herausforderung"
+    
+    - text: "Das passiert gerade eben zwischen uns"
+      trigger: "gerade eben"
+      context: "Relationale Gegenwartsdynamik"
+    
+    - text: "Sofort merke ich, wie sich mein Körper anspannt"
+      trigger: "sofort"
+      context: "Unmittelbare somatische Reaktion"
+    
+    - text: "Im Augenblick brauche ich Raum zum Atmen"
+      trigger: "im augenblick"
+      context: "Akutes Bedürfnis in der Gegenwart"
+
+  negative:
+    - text: "Früher habe ich das anders gesehen"
+      reason: "Vergangenheitsbezug"
+    
+    - text: "Später werde ich darüber nachdenken"
+      reason: "Zukunftsorientiert"
+    
+    - text: "Damals war ich überzeugt"
+      reason: "Explizit vergangen"
+    
+    - text: "Irgendwann verstehe ich es vielleicht"
+      reason: "Unbestimmte Zukunft"
+    
+    - text: "Vor Jahren habe ich das gelernt"
+      reason: "Zeitlich distanziert"
+    
+    - text: "Morgen sehe ich klarer"
+      reason: "Prospektiv"
+    
+    - text: "Rückblickend war es richtig"
+      reason: "Retrospektive Perspektive"
+    
+    - text: "Demnächst werde ich Zeit haben"
+      reason: "Zukünftige Verfügbarkeit"
+    
+    - text: "Einst dachte ich so"
+      reason: "Weit entfernte Vergangenheit"
+    
+    - text: "Bald wird sich alles klären"
+      reason: "Nahende Zukunft"
