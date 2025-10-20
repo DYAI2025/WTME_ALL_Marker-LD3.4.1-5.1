@@ -20,17 +20,7 @@ scoring:
   decay: 0.01
   formula: logistic
 examples:
-  positive:
-    - "Ich will dich ja nicht unter Druck setzen, aber ich brauche deine Hilfe jetzt sofort."
-    - "Ich will dich nicht belasten, aber ich kann das ohne dich nicht schaffen."
-    - "Ich will dir keine Vorwürfe machen, aber du hast mich enttäuscht."
-    - "Ich will dich nicht manipulieren, aber wenn du das nicht tust, bin ich am Ende."
-    - "Ich will dich nicht verurteilen, aber das war wirklich dumm von dir."
-    - "Ich will dich nicht kontrollieren, aber ich muss wissen, wo du bist."
-    - "Ich will dich nicht verletzen, aber ich muss dir die Wahrheit sagen."
-    - "Ich will dich nicht zwingen, aber es wäre wirklich wichtig, wenn du mitmachst."
-    - "Ich will dich nicht kritisieren, aber das war nicht gut genug."
-    - "Ich will dich nicht verlieren, aber ich kann so nicht weitermachen."
+  positive: []
   negative: []
 tags:
 - sem

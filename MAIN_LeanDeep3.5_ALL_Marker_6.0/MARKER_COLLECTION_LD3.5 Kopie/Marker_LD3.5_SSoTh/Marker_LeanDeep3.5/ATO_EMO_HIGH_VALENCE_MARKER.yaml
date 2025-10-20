@@ -12,17 +12,7 @@ frame:
   narrative: token / peak positive
 detect_class: DetectEmotionValence
 examples:
-  positive:
-    - "Ich bin überglücklich!"
-    - "Das ist fantastisch!"
-    - "Ich bin so begeistert!"
-    - "Das ist wunderbar!"
-    - "Ich bin total euphorisch!"
-    - "Das ist der beste Tag meines Lebens!"
-    - "Ich bin so dankbar!"
-    - "Ich bin voller Freude!"
-    - "Das ist einfach unglaublich!"
-    - "Ich bin so glücklich!"
+  positive: []
   negative: []
 tags:
 - atomic

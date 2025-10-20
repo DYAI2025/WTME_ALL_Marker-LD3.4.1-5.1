@@ -21,17 +21,7 @@ scoring:
 window:
   messages: 20
 examples:
-  positive:
-    - "Ich habe früh gelernt, meine Probleme für mich zu behalten."
-    - "Gefühle zu zeigen, galt bei uns als Schwäche."
-    - "Ich war schon als Kind sehr selbstständig und habe niemanden gebraucht."
-    - "Wenn es schwierig wurde, habe ich mich am liebsten in mein Zimmer zurückgezogen."
-    - "Ich rede nicht gerne über meine Gefühle, das bringt ja nichts."
-    - "Ich komme am besten alleine klar, dann bin ich von niemandem abhängig."
-    - "Nähe fühlt sich für mich oft einengend an."
-    - "Ich habe gelernt, meine Emotionen nicht so an mich herankommen zu lassen."
-    - "Ich brauche viel Freiraum und Zeit für mich allein."
-    - "Ich verlasse mich am liebsten auf mich selbst, dann werde ich nicht enttäuscht."
+  positive: []
   negative: []
 tags:
 - needs_review

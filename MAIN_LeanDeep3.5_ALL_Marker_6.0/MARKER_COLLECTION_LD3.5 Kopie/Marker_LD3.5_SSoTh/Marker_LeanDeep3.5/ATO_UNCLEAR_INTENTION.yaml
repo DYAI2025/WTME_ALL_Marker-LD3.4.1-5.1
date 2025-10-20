@@ -22,17 +22,7 @@ pattern:
 activation:
   rule: ANY 1
 examples:
-  positive:
-    - "Ich blick da nicht durch."
-    - "Keine Ahnung, was hier abgeht."
-    - "Ich verstehe gar nicht, was du von mir willst."
-    - "Alles wirkt so nebulös."
-    - "Ich kriege keinen klaren Eindruck."
-    - "Ich check's nicht."
-    - "Ich hab keinen Plan."
-    - "Mir fehlt der Durchblick."
-    - "Das ist mir zu schwammig."
-    - "Was soll ich daraus schließen?"
+  positive: []
   negative: []
 tags:
 - concealment

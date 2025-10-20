@@ -10,22 +10,7 @@ tags:
 - negative
 - rejection
 examples:
-  positive:
-    - "Das ist ekelhaft."
-    - "Das widert mich an."
-    - "Pfui!"
-    - "Das ist widerlich."
-    - "Ich empfinde Abscheu."
-    - "Ich bin angewidert."
-    - "Das ist zum Kotzen."
-    - "Bäh!"
-    - "Iiih!"
-    - "Mir wird schlecht."
-    - "Das ist abstoßend."
-    - "Mir wird davon übel."
-    - "Das packe ich nicht an."
-    - "Ekelhaftes Zeug."
-    - "Ich könnte mich übergeben."
+  positive: []
   negative: []
 pattern:
 - (?i)ekelhaft

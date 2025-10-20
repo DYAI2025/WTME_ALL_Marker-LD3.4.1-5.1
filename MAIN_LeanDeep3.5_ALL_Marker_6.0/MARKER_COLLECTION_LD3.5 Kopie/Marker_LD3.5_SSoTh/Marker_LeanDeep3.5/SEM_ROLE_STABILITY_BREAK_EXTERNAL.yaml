@@ -20,8 +20,8 @@ markers:
     score: 0.58
     metadata: { type: SEM }
     examples:
-      - '"Ich habe entschieden" → "Wir haben entschieden".'
-      - '"Ich musste zahlen" → "Wir mussten zahlen".'
-      - '"Ich machte Fehler" → "Wir machten Fehler".'
-      - '"Ich sagte zu" → "Wir sagten zu".'
-      - '"Ich habe bezahlt" → "Wir haben bezahlt".'
+      - "Ich habe entschieden" → "Wir haben entschieden".
+      - "Ich musste zahlen" → "Wir mussten zahlen".
+      - "Ich machte Fehler" → "Wir machten Fehler".
+      - "Ich sagte zu" → "Wir sagten zu".
+      - "Ich habe bezahlt" → "Wir haben bezahlt".

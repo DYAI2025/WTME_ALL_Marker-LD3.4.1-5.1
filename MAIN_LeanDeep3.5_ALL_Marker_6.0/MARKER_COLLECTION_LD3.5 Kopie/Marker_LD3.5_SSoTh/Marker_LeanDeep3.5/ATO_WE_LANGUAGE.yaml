@@ -17,17 +17,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Wir schaffen das gemeinsam."
-    - "Unser Ziel ist es, eine Lösung zu finden."
-    - "Wir sind ein Team."
-    - "Wir ziehen an einem Strang."
-    - "Wir sind auf dem gleichen Weg."
-    - "Wir können das zusammen erreichen."
-    - "Wir sind Partner in diesem Prozess."
-    - "Wir haben ein gemeinsames Interesse."
-    - "Wir sind füreinander da."
-    - "Wir sind uns einig."
+  positive: []
   negative: []
 tags:
 - atomic

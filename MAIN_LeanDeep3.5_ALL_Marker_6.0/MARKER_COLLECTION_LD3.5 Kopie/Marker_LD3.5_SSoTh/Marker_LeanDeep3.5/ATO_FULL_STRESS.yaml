@@ -14,17 +14,7 @@ pattern:
 - (?i)\b(total|voll|mega)\s+gestresst\b
 - (?i)\bstress\s+(pur|total|grad)\b
 examples:
-  positive:
-    - "Ich bin voll im Stress."
-    - "Ich habe mega Stress."
-    - "Das ist stressig."
-    - "Ich bin total gestresst."
-    - "Stress pur."
-    - "Ich bin gerade vollkommen überfordert."
-    - "Ich habe zu viel um die Ohren."
-    - "Ich bin am Limit."
-    - "Ich bin kurz vor dem Burnout."
-    - "Ich bin fix und fertig."
+  positive: []
   negative: []
 tags:
 - stress_signal

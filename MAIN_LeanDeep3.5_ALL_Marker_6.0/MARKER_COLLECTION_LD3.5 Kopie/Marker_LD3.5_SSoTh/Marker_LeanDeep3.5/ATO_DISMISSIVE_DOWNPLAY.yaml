@@ -19,17 +19,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Ach nee, ist schon gut."
-    - "Lass mal, ist nicht so wichtig."
-    - "Egal, vergiss es."
-    - "It's fine, forget it."
-    - "Never mind."
-    - "Ist doch nicht der Rede wert."
-    - "Das ist nur eine Kleinigkeit."
-    - "Kein Problem."
-    - "Alles in Ordnung."
-    - "Mach dir keine Gedanken."
+  positive: []
   negative: []
 tags:
 - atomic

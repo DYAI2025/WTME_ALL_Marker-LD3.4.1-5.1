@@ -19,17 +19,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Ich habe niemandem gesagt, dass ich mich so fühle."
-    - "Zum ersten Mal sage ich das laut."
-    - "Ich traue mich kaum, das zu sagen."
-    - "Ehrlich gesagt, ich bin sehr einsam."
-    - "Ich muss Ihnen etwas gestehen."
-    - "Das ist ein Geheimnis, das ich noch nie geteilt habe."
-    - "Ich fühle mich sehr verletzlich, wenn ich das sage."
-    - "Ich habe Angst, was Sie denken werden, aber ich muss es sagen."
-    - "Das ist sehr persönlich, aber ich möchte es Ihnen erzählen."
-    - "Ich öffne mich Ihnen jetzt."
+  positive: []
   negative: []
 tags:
 - atomic

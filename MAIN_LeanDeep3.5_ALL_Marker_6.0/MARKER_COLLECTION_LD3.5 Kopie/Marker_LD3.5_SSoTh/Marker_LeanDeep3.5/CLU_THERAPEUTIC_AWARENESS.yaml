@@ -20,17 +20,7 @@ scoring:
   decay: 0.02
   formula: logistic
 examples:
-  positive:
-    - "Mir wird gerade klar, dass ich dieses Muster schon lange wiederhole."
-    - "Ich erkenne jetzt, wie meine Angst vor Ablehnung mein Verhalten steuert."
-    - "Ich sehe, dass meine Wut eigentlich eine tiefe Traurigkeit verbirgt."
-    - "Mir wird bewusst, dass ich die Erwartungen anderer auf mich projiziert habe."
-    - "Ich spüre zum ersten Mal, wie diese alte Verletzung noch immer in mir wirkt."
-    - "Ich verstehe jetzt den Zusammenhang zwischen meiner Kindheit und meinen heutigen Beziehungsproblemen."
-    - "Ich erkenne, dass mein Perfektionismus ein Versuch ist, Kontrolle zu behalten."
-    - "Mir wird klar, dass ich oft 'Ja' sage, obwohl ich 'Nein' meine."
-    - "Ich sehe, wie ich mich selbst sabotiere, aus Angst vor dem Erfolg."
-    - "Ich spüre eine tiefe Verbindung zu meinem inneren Kind und seinen Bedürfnissen."
+  positive: []
   negative: []
 tags:
 - cluster

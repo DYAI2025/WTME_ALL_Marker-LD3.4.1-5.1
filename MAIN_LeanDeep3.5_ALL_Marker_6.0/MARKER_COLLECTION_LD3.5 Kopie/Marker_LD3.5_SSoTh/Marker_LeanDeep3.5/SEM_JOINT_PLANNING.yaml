@@ -16,17 +16,7 @@ activation:
 scoring:
   weight: 1.2
 examples:
-  positive:
-    - "Wie gehen wir das am besten an?"
-    - "Was ist unser nächster Schritt?"
-    - "Lass uns gemeinsam einen Plan entwickeln."
-    - "Wie können wir das zusammen erreichen?"
-    - "Was denkst du, wie wir das am effektivsten umsetzen können?"
-    - "Ich schlage vor, wir teilen die Aufgaben auf. Was meinst du?"
-    - "Lass uns die nächsten Schritte festlegen."
-    - "Wie können wir sicherstellen, dass wir beide auf dem gleichen Stand sind?"
-    - "Was ist deine Idee, wie wir das Projekt vorantreiben können?"
-    - "Ich bin offen für deine Vorschläge, wie wir das gemeinsam gestalten können."
+  positive: []
   negative: []
 tags:
 - semantic

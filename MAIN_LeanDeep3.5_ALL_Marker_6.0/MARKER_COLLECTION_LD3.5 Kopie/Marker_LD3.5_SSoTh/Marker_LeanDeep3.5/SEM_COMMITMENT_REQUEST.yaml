@@ -14,17 +14,7 @@ pattern:
 - (?i)\b(wenn\s+wir\s+uns\s+trennen)\s+und\s+wieder\s+daten\b
 - (?i)\b(sag(en)?\s+wir\s+es\s+einander)\b
 examples:
-  positive:
-    - "Können wir eine klare Absprache treffen?"
-    - "Ich brauche eine verbindliche Zusage."
-    - "Lass uns das festmachen."
-    - "Ich möchte wissen, woran ich bin."
-    - "Können wir uns darauf einigen?"
-    - "Ich brauche Verlässlichkeit."
-    - "Ich möchte, dass wir das jetzt klären."
-    - "Lass uns einen konkreten Plan machen."
-    - "Ich brauche eine klare Aussage von dir."
-    - "Ich möchte, dass wir uns darauf festlegen."
+  positive: []
   negative: []
 negative:
 - Vielleicht klappt es morgen.

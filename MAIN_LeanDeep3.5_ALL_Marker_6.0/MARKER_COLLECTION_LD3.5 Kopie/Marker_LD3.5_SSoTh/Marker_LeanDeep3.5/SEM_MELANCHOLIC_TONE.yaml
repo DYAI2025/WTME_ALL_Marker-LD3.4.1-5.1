@@ -18,17 +18,7 @@ scoring:
   base: 1.4
   weight: 1.1
 examples:
-  positive:
-    - "Es war eine wunderschöne Zeit, aber es macht mich ein bisschen traurig, dass sie vorbei ist."
-    - "Ich erinnere mich gerne daran, auch wenn ein Hauch von Wehmut mitschwingt."
-    - "Das Lied ist so schön, aber es macht mich immer ein wenig melancholisch."
-    - "Ich bin dankbar für die Erfahrung, auch wenn der Abschied schmerzt."
-    - "Es ist schön, dich wiederzusehen, aber es erinnert mich auch daran, wie viel Zeit vergangen ist."
-    - "Ich liebe den Herbst, auch wenn er immer eine gewisse Melancholie mit sich bringt."
-    - "Das war ein perfekter Moment, und ich bin ein bisschen traurig, dass er nicht ewig dauern kann."
-    - "Ich bin glücklich, aber irgendwie auch nachdenklich."
-    - "Es ist ein bittersüßes Gefühl."
-    - "Ich lächle, aber in meinem Herzen ist ein kleiner Stich."
+  positive: []
   negative: []
 tags:
 - semantic

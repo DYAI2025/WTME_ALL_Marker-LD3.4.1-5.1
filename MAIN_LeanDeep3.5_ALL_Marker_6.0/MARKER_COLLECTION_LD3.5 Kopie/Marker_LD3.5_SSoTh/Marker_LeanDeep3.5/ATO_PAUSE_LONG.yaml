@@ -14,17 +14,7 @@ detect_class:
   params:
     min_ms: 600
 examples:
-  positive:
-    - "(Lange Pause)"
-    - "(Schweigt für mehrere Sekunden)"
-    - "(Deutliche Stille)"
-    - "(Lange Denkpause)"
-    - "(Zögert lange, bevor er/sie spricht)"
-    - "(Eine ausgedehnte Pause)"
-    - "(Stille, die unangenehm lang wird)"
-    - "(Lange Unterbrechung im Redefluss)"
-    - "(Verharrt in Stille)"
-    - "(Lange, nachdenkliche Pause)"
+  positive: []
   negative: []
 tags:
 - pause

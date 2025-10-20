@@ -15,22 +15,7 @@ pattern:
 - (?i)furcht
 - (?i)sorgen machen
 examples:
-  positive:
-    - "Ich habe Angst."
-    - "Ich fürchte, das wird nicht gut gehen."
-    - "Ich habe Schiss."
-    - "Ich bin besorgt."
-    - "Ich habe Bammel."
-    - "Ich gerate in Panik."
-    - "Das ist beängstigend."
-    - "Ich habe Furcht."
-    - "Ich mache mir Sorgen."
-    - "Ich bin ängstlich."
-    - "Ich habe ein schlechtes Gefühl."
-    - "Mir macht das Angst."
-    - "Ich traue mich nicht."
-    - "Ich bekomme Herzklopfen vor Angst."
-    - "Ich zittere vor Furcht."
+  positive: []
   negative: []
 tags:
 - emotion

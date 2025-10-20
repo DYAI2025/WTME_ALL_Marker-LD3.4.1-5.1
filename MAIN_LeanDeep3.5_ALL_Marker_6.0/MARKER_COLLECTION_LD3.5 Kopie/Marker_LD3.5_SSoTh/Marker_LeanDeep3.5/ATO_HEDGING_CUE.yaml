@@ -16,17 +16,7 @@ pattern:
 - unsicher
 - weiß nicht
 examples:
-  positive:
-    - "Vielleicht ist das so."
-    - "Das ist wohl so."
-    - "Ich glaube, das könnte stimmen."
-    - "Ich bin mir unsicher."
-    - "Ich weiß nicht so recht."
-    - "Es könnte sein."
-    - "Ich vermute mal."
-    - "Das ist nicht ganz klar."
-    - "Ich bin nicht überzeugt."
-    - "Ich habe da so meine Zweifel."
+  positive: []
   negative: []
 tags:
 - hedging

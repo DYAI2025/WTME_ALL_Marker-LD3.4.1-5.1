@@ -15,17 +15,7 @@ pattern:
 activation:
   rule: ANY 1
 examples:
-  positive:
-    - "Oh, großartig."
-    - "Ja klar."
-    - "Klasse, wirklich toll."
-    - "Wie erfrischend."
-    - "Ganz im Ernst."
-    - "Das ist ja eine Überraschung."
-    - "Ich bin total begeistert."
-    - "Das ist ja mal was Neues."
-    - "Ich bin sprachlos."
-    - "Das ist ja mal eine Leistung."
+  positive: []
   negative: []
 tags:
 - sarcasm

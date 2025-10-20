@@ -23,17 +23,7 @@ scoring:
   base: 1.5
   weight: 1.0
 examples:
-  positive:
-    - "Laut einer aktuellen Studie ist bewiesen, dass..."
-    - "Wie Professor Müller in seinem Buch darlegt, ist das die einzig logische Schlussfolgerung."
-    - "Die Experten sind sich einig: Das ist der richtige Weg."
-    - "Die Regierung hat klar kommuniziert, dass diese Maßnahme notwendig ist."
-    - "Wissenschaftliche Erkenntnisse belegen, dass..."
-    - "Mein Anwalt hat mir geraten, nichts zu sagen."
-    - "Der Arzt hat gesagt, ich soll mich schonen."
-    - "Die Bibel sagt, dass..."
-    - "Wie mein Chef immer zu sagen pflegt..."
-    - "Die Forschung zeigt eindeutig, dass..."
+  positive: []
   negative: []
 tags:
 - semantic

@@ -14,17 +14,7 @@ pattern:
 - (?i)\b(spiegelt sich|sich spiegelt)\b
 - (?i)\b(mein eigenes thema|meine eigene)\b
 examples:
-  positive:
-    - "Ich merke, dass ich meine eigene Unsicherheit auf dich projiziere."
-    - "Ich glaube, ich übertrage meine eigenen Ängste auf diese Situation."
-    - "Es spiegelt sich meine eigene Vergangenheit in dem, was ich gerade sehe."
-    - "Ich erkenne, dass das mein eigenes Thema ist, das hier hochkommt."
-    - "Mir wird klar, dass ich meine eigenen Erwartungen auf dich projiziere."
-    - "Ich sehe, dass ich meine eigenen ungelösten Konflikte auf andere übertrage."
-    - "Ich merke, dass sich meine eigenen Vorurteile hier spiegeln."
-    - "Ich glaube, ich projiziere meine eigenen Wünsche auf das Ergebnis."
-    - "Ich erkenne, dass ich meine eigene Kritik an mir selbst auf dich übertrage."
-    - "Mir wird bewusst, dass sich meine eigenen unerfüllten Bedürfnisse hier spiegeln."
+  positive: []
   negative: []
 tags:
 - atomic

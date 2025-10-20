@@ -1,30 +1,36 @@
-schema: "LeanDeep"
-version: "3.4"
 id: SEM_BOUNDARY_SETTING
+schema_version: LD-3.3
+lang: en
+category: SEMANTIC
+description: Semantic pattern for healthy boundary setting
 frame:
-  signal: ["boundary_setting"]
-  concept: "Klare Grenzen zu Thema/Verantwortung/Scope"
-  pragmatics: "Autonomie- und Ressourcenschutz"
-  narrative: "coordination"
-tags: [boundary, scope, autonomy]
+  signal:
+  - limit establishment
+  concept: Boundary Setting
+  pragmatics: micro pattern recognition
+  narrative: intent
 composed_of:
-  any_of:
-    - ATO_SOVEREIGNTY_OVER_SUBJECT
-    - ATO_CONTROL_PHRASES
-    - ATO_SUBJECT_CLOSED
-    - ATO_TOPIC_SPLIT
-activation:
-  rule: "AT_LEAST 2 IN 4 messages"
-  window: 4
-scoring: { base: 0.7, weight: 1.10 }
+- ATO_BOUNDARY_SETTING
+- ATO_EMOTIONAL_REGULATION
+- ATO_SELF_REFLECTION
+activation_logic: ANY 2
+window:
+  messages: 2
 examples:
-  - "Das liegt nicht in meinem Scope."
-  - "Wir schließen diesen Teil – eigener Thread für B."
-  - "Ich entscheide das Thema – bitte beim Fokus bleiben."
-  - "Hier ist Schluss – der Rest separat."
-  - "Das ist geklärt; nächstes Item."
-  - "Abtrennen: A hier, B später."
-  - "Verantwortung liegt bei mir; bleib im Rahmen."
-  - "Kein weiteres Ausweiten – wir halten die Grenze."
-  - "Dieser Strang ist beendet."
-  - "Bitte im vorgesehenen Kanal weiter."
+  positive: []
+  negative: []
+negative:
+- Vielleicht sollten wir später reden.
+- Ich weiß nicht, ob das okay ist.
+- Man könnte es so oder so sehen.
+- Ich fühle mich unwohl, aber mach du mal.
+- Ich möchte nicht, aber gut…
+- I guess it's fine.
+- Könnten wir vielleicht?
+- Ich wäre eventuell dafür.
+- Das passt mir nicht so, aber na gut.
+- Mal schauen, wie es wird.
+tags:
+- semantic
+- v3.4
+- boundaries

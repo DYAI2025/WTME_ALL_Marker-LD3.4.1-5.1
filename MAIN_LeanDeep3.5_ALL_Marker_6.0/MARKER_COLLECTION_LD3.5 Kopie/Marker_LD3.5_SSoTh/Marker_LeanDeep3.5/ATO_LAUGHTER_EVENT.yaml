@@ -15,17 +15,7 @@ detect_class:
     min_duration_ms: 300
     spectral_pattern: burst_voiced
 examples:
-  positive:
-    - "(Lacht laut)"
-    - "(Kichert)"
-    - "(Schmunzelt)"
-    - "(Lacht leise)"
-    - "(Lacht herzlich)"
-    - "(Lacht ironisch)"
-    - "(Lacht nervös)"
-    - "(Lacht aus vollem Halse)"
-    - "(Lacht verlegen)"
-    - "(Lacht spöttisch)"
+  positive: []
   negative: []
 tags:
 - emotion

@@ -18,17 +18,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Äh, ich weiß nicht so recht."
-    - "Um, das ist eine gute Frage."
-    - "Uh, ich muss mal kurz nachdenken."
-    - "Hm, das ist kompliziert."
-    - "Erm, ich bin mir nicht sicher."
-    - "Ähm, ich glaube, ich habe mich da geirrt."
-    - "Ich meine, es ist so, äh, schwierig."
-    - "Das ist, äh, irgendwie, äh, komisch."
-    - "Sort of, äh, like, you know."
-    - "Kind of, äh, I guess."
+  positive: []
   negative: []
 tags:
 - atomic

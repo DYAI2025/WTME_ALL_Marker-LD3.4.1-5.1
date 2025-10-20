@@ -20,17 +20,7 @@ activation:
 scoring:
   weight: 1.2
 examples:
-  positive:
-    - "Wir drehen uns im Kreis."
-    - "Wir kommen hier nicht weiter."
-    - "Es gibt keine Lösung."
-    - "Das führt zu nichts."
-    - "Wir stecken fest."
-    - "Ich weiß nicht mehr, was ich noch sagen soll."
-    - "Wir haben schon alles versucht."
-    - "Das ist ein Teufelskreis."
-    - "Ich sehe keinen Ausweg."
-    - "Wir sind am Ende unserer Möglichkeiten."
+  positive: []
   negative: []
 tags:
 - semantic

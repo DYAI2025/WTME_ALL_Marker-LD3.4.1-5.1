@@ -15,17 +15,7 @@ pattern:
 - (?i)\b(nur.{0,10}glück|zufall)\b
 - (?i)\b(nicht.{0,10}gut.?genug)\b
 examples:
-  positive:
-    - "Ich habe das Gefühl, ich habe das nicht verdient."
-    - "Ich fühle mich wie ein Hochstapler."
-    - "Ich habe Angst, dass ich auffliegen könnte."
-    - "Das war nur Glück, nicht mein Verdienst."
-    - "Ich bin nicht gut genug."
-    - "Ich habe Angst, dass die Leute merken, dass ich nichts kann."
-    - "Ich fühle mich wie ein Betrüger."
-    - "Ich habe Angst, dass ich entlarvt werde."
-    - "Ich bin nicht so schlau, wie alle denken."
-    - "Ich habe Angst, dass ich versage."
+  positive: []
   negative: []
 tags:
 - atomic

@@ -15,17 +15,7 @@ scoring:
   base: 1.2
   weight: 1.0
 examples:
-  positive:
-    - "Ich bin mir nicht sicher, ob das eine gute Idee ist."
-    - "Ich weiß nicht, ob ich das schaffe."
-    - "Mal schauen, ob sich das ausgeht."
-    - "Ich muss mal sehen, ob das passt."
-    - "Ich bin da eher skeptisch."
-    - "Ich glaube, das ist nichts für mich."
-    - "Ich bin nicht überzeugt, dass das funktioniert."
-    - "Ich habe da so meine Zweifel."
-    - "Ich bin mir unsicher, ob ich da mitmachen will."
-    - "Ich weiß nicht so recht."
+  positive: []
   negative: []
 tags:
 - semantic

@@ -12,17 +12,7 @@ frame:
 pattern:
 - (?i)\b(really|sure|obviously|great|wonderful|perfect)\b.*[.!?]
 examples:
-  positive:
-    - "Wirklich? Das ist ja eine Überraschung."
-    - "Sicher, das ist die beste Idee, die ich je gehört habe."
-    - "Offensichtlich. Ich hätte es wissen müssen."
-    - "Großartig. Genau das, was ich jetzt brauche."
-    - "Wunderbar. Könnte nicht besser sein."
-    - "Perfekt. Absolut fehlerfrei."
-    - "Ja, klar. Als ob das passieren würde."
-    - "Das ist ja mal eine Leistung."
-    - "Ich bin total begeistert."
-    - "Das ist ja mal eine Erleichterung."
+  positive: []
   negative: []
 tags:
 - atomic

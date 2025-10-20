@@ -19,17 +19,7 @@ scoring:
   decay: 0.01
   formula: logistic
 examples:
-  positive:
-    - "Das ist deine Schuld."
-    - "Du bist schuld daran."
-    - "Es ist deine Verantwortung."
-    - "Du hast das verursacht."
-    - "Das ist alles deine Schuld."
-    - "Du bist derjenige, der das verbockt hat."
-    - "Das ist auf dein Konto gegangen."
-    - "Du bist dafür verantwortlich."
-    - "Das ist deine eigene Schuld."
-    - "Du hast das zu verantworten."
+  positive: []
   negative: []
 tags:
 - ato

@@ -15,16 +15,6 @@ pattern:
 activation:
   rule: ANY 1
 examples:
-  positive:
-    - "Ich verstehe dich vollkommen."
-    - "Das klingt total nachvollziehbar."
-    - "Ich kann das gut nachempfinden."
-    - "Das macht Sinn für mich."
-    - "Ich habe das Gefühl, ich kann mich da hineinversetzen."
-    - "Ich bin ganz bei dir."
-    - "Ich kann das gut nachvollziehen."
-    - "Ich fühle mit dir."
-    - "Das ist absolut verständlich."
-    - "Ich kann deine Gefühle gut verstehen."
+  positive: []
   negative: []
 tags: []

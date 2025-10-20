@@ -20,17 +20,7 @@ activation:
 scoring:
   weight: 1.4
 examples:
-  positive:
-    - "Ich wollte gerade etwas sagen, aber... ach, ist nicht so wichtig."
-    - "Ähm... also... (langes Schweigen)"
-    - "Ich weiß nicht, wie ich das sagen soll. Lassen wir das."
-    - "Es ist kompliziert. Ich kann das nicht erklären."
-    - "Ich fange an zu reden, aber dann blockiere ich."
-    - "Mir liegt etwas auf der Zunge, aber ich traue mich nicht, es auszusprechen."
-    - "Ich weiche dem Thema immer wieder aus."
-    - "Ich spüre einen Widerstand in mir, darüber zu sprechen."
-    - "Ich zögere, weil ich Angst vor der Reaktion habe."
-    - "Ich verstumme, wenn es um dieses Thema geht."
+  positive: []
   negative: []
 tags:
 - cluster

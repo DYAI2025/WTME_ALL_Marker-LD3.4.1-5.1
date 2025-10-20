@@ -14,17 +14,7 @@ scoring:
   base: 1.5
   weight: 1.2
 examples:
-  positive:
-    - "Ich kann verstehen, dass du dich so fühlst. Das ist eine schwere Zeit."
-    - "Ich bin für dich da, wenn du mich brauchst."
-    - "Es ist in Ordnung, traurig zu sein. Nimm dir die Zeit, die du brauchst."
-    - "Ich höre dir zu. Erzähl mir, was los ist."
-    - "Das tut mir so leid, dass du das durchmachen musst."
-    - "Ich kann mir vorstellen, wie verletzt du sein musst."
-    - "Du bist nicht allein damit. Ich bin an deiner Seite."
-    - "Was du fühlst, ist absolut verständlich."
-    - "Ich möchte, dass du weißt, dass ich an dich denke."
-    - "Wenn ich irgendetwas für dich tun kann, sag es einfach."
+  positive: []
   negative: []
 tags:
 - support

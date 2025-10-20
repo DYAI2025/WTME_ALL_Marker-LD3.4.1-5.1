@@ -14,17 +14,7 @@ pattern:
 - (?i)\b(abstand brauch|distanz brauch)\b
 - (?i)\b(meine grenzen|meinen schutzraum)\b
 examples:
-  positive:
-    - "Ich brauche jetzt Abstand, aus Selbstschutz."
-    - "Ich muss mich schützen, deshalb ziehe ich mich zurück."
-    - "Ich brauche Distanz, um meine Grenzen zu wahren."
-    - "Ich muss meine eigenen Bedürfnisse schützen."
-    - "Ich ziehe mich zurück, um mich zu regulieren."
-    - "Ich brauche meinen Schutzraum."
-    - "Ich muss meine Energie schützen."
-    - "Ich brauche jetzt Ruhe, um mich zu erholen."
-    - "Ich muss mich abgrenzen, um nicht überfordert zu werden."
-    - "Ich schütze mich, indem ich mich distanziere."
+  positive: []
   negative: []
 tags:
 - atomic

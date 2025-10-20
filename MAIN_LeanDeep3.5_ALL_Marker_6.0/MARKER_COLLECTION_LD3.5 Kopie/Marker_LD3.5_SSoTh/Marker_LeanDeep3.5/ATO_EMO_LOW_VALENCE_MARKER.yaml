@@ -15,17 +15,7 @@ pattern:
 - valence <= -0.6
 activation_logic: ANY 1
 examples:
-  positive:
-    - "Ich fühle mich elend."
-    - "Ich bin verzweifelt."
-    - "Ich bin am Boden zerstört."
-    - "Ich bin hoffnungslos."
-    - "Ich bin am Ende."
-    - "Ich bin wertlos."
-    - "Ich bin nutzlos."
-    - "Ich bin ein Versager."
-    - "Ich bin eine Last."
-    - "Ich bin eine Enttäuschung."
+  positive: []
   negative: []
 tags:
 - emotion

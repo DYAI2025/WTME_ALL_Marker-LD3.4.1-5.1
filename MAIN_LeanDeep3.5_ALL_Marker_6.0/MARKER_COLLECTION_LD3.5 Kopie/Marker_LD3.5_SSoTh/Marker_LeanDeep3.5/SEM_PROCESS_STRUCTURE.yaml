@@ -17,17 +17,7 @@ scoring:
   base: 1.5
   weight: 1.2
 examples:
-  positive:
-    - "Erstens möchte ich sagen, dass... Zweitens..."
-    - "Der nächste Punkt, den ich ansprechen möchte, ist..."
-    - "Zusammenfassend lässt sich sagen, dass..."
-    - "Abschließend möchte ich noch erwähnen, dass..."
-    - "Lassen Sie uns das Schritt für Schritt durchgehen."
-    - "Zunächst einmal müssen wir..."
-    - "Darüber hinaus gibt es noch einen weiteren Aspekt."
-    - "Um das Ganze abzuschließen,..."
-    - "Ich möchte das in drei Teile gliedern."
-    - "Bevor wir weitermachen, lassen Sie uns das bisherige zusammenfassen."
+  positive: []
   negative: []
 tags:
 - meta_communication

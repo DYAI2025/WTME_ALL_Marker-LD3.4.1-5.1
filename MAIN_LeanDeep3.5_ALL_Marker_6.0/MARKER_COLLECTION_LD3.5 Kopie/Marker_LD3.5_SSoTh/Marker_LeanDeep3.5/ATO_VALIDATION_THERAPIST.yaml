@@ -18,17 +18,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Das ist nachvollziehbar."
-    - "Danke für das Teilen."
-    - "Es ist okay, so zu fühlen."
-    - "Das wäre für viele schwer."
-    - "Ich kann verstehen, dass Sie sich so fühlen."
-    - "Ihre Reaktion ist absolut verständlich."
-    - "Das ist ein mutiger Schritt."
-    - "Ich schätze Ihre Offenheit."
-    - "Das ist gültig."
-    - "Sie sind nicht allein damit."
+  positive: []
   negative: []
 tags:
 - atomic

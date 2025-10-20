@@ -16,17 +16,7 @@ scoring:
   base: 1.5
   weight: 1.2
 examples:
-  positive:
-    - "Was?! Das kann nicht dein Ernst sein!"
-    - "Wow, damit habe ich jetzt überhaupt nicht gerechnet."
-    - "Ich bin schockiert."
-    - "Das haut mich jetzt echt um."
-    - "Ich bin sprachlos."
-    - "Das ist ja unglaublich!"
-    - "Ich kann es nicht fassen."
-    - "Moment, was ist gerade passiert?"
-    - "Das kam jetzt aus heiterem Himmel."
-    - "Ich bin total überrascht."
+  positive: []
   negative: []
 tags:
 - shock

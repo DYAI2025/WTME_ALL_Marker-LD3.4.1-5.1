@@ -20,17 +20,7 @@ scoring:
   decay: 0.01
   formula: logistic
 examples:
-  positive:
-    - "Ohne dich schaffe ich das nicht."
-    - "Ich kann das nicht allein."
-    - "Ohne dich geht es nicht."
-    - "Ich schaffe das nicht."
-    - "Ich bin hilflos ohne deine Hilfe."
-    - "Ich bin auf dich angewiesen."
-    - "Ich brauche dich."
-    - "Ich bin so schwach."
-    - "Ich bin so hilflos."
-    - "Ich bin so abhängig von dir."
+  positive: []
   negative: []
 tags:
 - ato

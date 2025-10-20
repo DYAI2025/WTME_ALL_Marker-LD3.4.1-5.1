@@ -21,17 +21,7 @@ scoring:
 window:
   messages: 6
 examples:
-  positive:
-    - "..."
-    - "Ist egal."
-    - "Keine Antwort."
-    - "Lass uns das später besprechen."
-    - "Ich will darüber nicht reden."
-    - "(Schweigen)"
-    - "Ich habe dazu nichts zu sagen."
-    - "Das führt zu nichts."
-    - "Ich bin müde, lass uns das verschieben."
-    - "Ich habe jetzt keine Zeit dafür."
+  positive: []
   negative: []
 tags:
 - semantic

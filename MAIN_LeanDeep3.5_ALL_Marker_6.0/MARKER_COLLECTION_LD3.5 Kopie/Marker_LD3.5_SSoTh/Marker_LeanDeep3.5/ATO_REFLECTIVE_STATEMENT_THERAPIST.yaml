@@ -19,17 +19,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Es klingt, als ob Sie sich sehr allein fühlen."
-    - "Sie wirken sehr nachdenklich."
-    - "Wenn ich Sie richtig verstehe, fühlen Sie sich überfordert."
-    - "Sie sagen, dass Sie Angst haben."
-    - "Ich höre, dass Sie sich verletzt fühlen."
-    - "Es scheint, als ob Sie wütend sind."
-    - "Ich spüre Ihre Traurigkeit."
-    - "Sie scheinen sehr frustriert zu sein."
-    - "Ich nehme wahr, dass Sie sich hilflos fühlen."
-    - "Es wirkt, als ob Sie sich schämen."
+  positive: []
   negative: []
 tags:
 - atomic

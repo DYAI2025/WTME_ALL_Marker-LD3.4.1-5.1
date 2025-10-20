@@ -12,6 +12,26 @@ pattern:
 - (?i)\\bwenn\ du\\b
 - (?i)\\bselber\ schuld\\b
 examples:
+ - "Das ist deine Schuld."
+    - "Du hast angefangen."
+    - "Warum tust du das?"
+    - "Du bist verantwortlich."
+    - "Nicht ich, du."
+    - "Schuld bei dir."
+    - "Du hast es vermasselt."
+    - "Dein Fehler."
+    - "Warum immer du?"
+    - "Verantwortung bei dir."
+    - "Du bist schuld."
+    - "Angefangen hast du."
+    - "Tust du immer."
+    - "Verantwortlich du."
+    - "Nicht meine Schuld."
+    - "Bei dir die Schuld."
+    - "Vermasselt von dir."
+    - "Fehler dein."
+    - "Immer du warum?"
+    - "Deine Verantwortung."
 - Wenn du nicht widersprechen würdest, gäbe es keinen Streit.
 - Du stellst dich an, nicht ich.
 - Du hast doch selbst drum gebeten, also beschwer dich nicht.
@@ -27,6 +47,27 @@ examples:
 - Nicht meine Schuld, du hast mich nicht informiert.
 - Wärst du früher dran gewesen, gäb's das Problem nicht.
 - Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren.
+negative_de:
+    - "Das ist meine Schuld."
+    - "Ich hab angefangen."
+    - "Warum tu ich das?"
+    - "Ich bin verantwortlich."
+    - "Nicht du, ich."
+    - "Schuld bei mir."
+    - "Ich hab es vermasselt."
+    - "Mein Fehler."
+    - "Warum immer ich?"
+    - "Verantwortung bei mir."
+    - "Ich bin schuld."
+    - "Angefangen hab ich."
+    - "Tu ich immer."
+    - "Verantwortlich ich."
+    - "Nicht deine Schuld."
+    - "Bei mir die Schuld."
+    - "Vermasselt von mir."
+    - "Fehler mein."
+    - "Immer ich warum?"
+    - "Meine Verantwortung."
 tags:
 - schuld
 - abwälzung

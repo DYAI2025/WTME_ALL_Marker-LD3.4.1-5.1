@@ -17,17 +17,7 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive:
-    - "Meinen Sie damit...?"
-    - "Können Sie das konkretisieren?"
-    - "Habe ich Sie richtig verstanden?"
-    - "Was genau meinen Sie mit...?"
-    - "Können Sie das noch einmal erklären?"
-    - "Ich bin mir nicht sicher, ob ich das richtig verstanden habe."
-    - "Können Sie ein Beispiel geben?"
-    - "Was bedeutet das für Sie?"
-    - "Können Sie das präzisieren?"
-    - "Ich brauche mehr Details."
+  positive: []
   negative: []
 tags:
 - atomic

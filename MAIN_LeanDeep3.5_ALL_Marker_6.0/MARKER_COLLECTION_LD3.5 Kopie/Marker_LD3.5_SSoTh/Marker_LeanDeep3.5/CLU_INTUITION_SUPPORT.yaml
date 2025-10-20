@@ -1,26 +1,34 @@
-schema: "LeanDeep"
-version: "3.4"
 id: CLU_INTUITION_SUPPORT
+category: CLU_INTUITION
+schema_version: "3.4"
+lang: de
 frame:
-  signal: ["intuition","weak-aggregation"]
-  concept: "Vorahnung: Unterstützung/Bindung"
-  pragmatics: "Ressourcenfokus"
+  signal: ["intuition","verbundenheit","wärme"]
+  concept: "Vorahnung: Unterstützung/Verbundenheit"
+  pragmatics: "Ressourcen stärken, Kontakt vertiefen"
   narrative: "hypothesis"
-composed_of: [SEM_SUPPORT_VALIDATION, SEM_TRUST_SIGNALING, SEM_SADNESS_EXPRESSIONS]
-activation: {rule: "AT_LEAST 2 DISTINCT SEMs IN 6 messages"}
-scoring: {base: 0.5, weight: 1.0}
-metadata:
-  intuition:
-    state: "provisional"
-    confirm_window: 6
-    confirm_rule: "AT_LEAST 1 of [SEM_SUPPORT_VALIDATION, SEM_TRUST_SIGNALING] IN confirm_window"
-    multiplier_on_confirm: 1.75
-    decay_window: 8
-  learning: {ewma_alpha: 0.1}
-  telemetry_keys: {counter_confirmed: "INT_SUPPORT.confirmed", counter_retracted: "INT_SUPPORT.retracted", ewma_precision: "INT_SUPPORT.ewma"}
+tags: [intuition, support, verbundenheit, wärme]
 examples:
-  - "ich bin da für dich … wir schaffen das"
-  - "danke dir … fühl mich gesehen"
-  - "gemeinsam kriegen wir das hin"
-  - "du kannst dich auf mich verlassen"
-  - "ich hör dir zu … okay?"
+  positive:
+    - "Ich habe das Gefühl, dass zwischen euch gerade etwas Gutes entsteht."
+    - "Es fühlt sich an, als wärt ihr auf einer Wellenlänge."
+    - "Ich spüre, dass dir das gerade gut tut."
+    - "Ich nehme Wärme und Verbundenheit wahr."
+    - "Mein Eindruck ist, dass Vertrauen wächst."
+    - "Es klingt so, als würdet ihr euch gegenseitig tragen."
+    - "Hier entsteht gerade Sicherheit."
+    - "Das wirkt nach echter Unterstützung."
+    - "Ich spüre eine weiche, wohlwollende Haltung."
+    - "Da ist Nähe und Zugewandtheit."
+  negative:
+    - "Es wäre schön, wenn wir uns besser verstehen."  # Wunsch/Zukunft, nicht beobachtete Intuition
+    - "Wir sollten uns unterstützen."  # Imperativ statt gespürter Zustand
+    - "Ich hoffe auf mehr Nähe."  # Hoffnung statt Wahrnehmung
+    - "Vielleicht können wir zusammenhalten."  # Hypothetisch, unkonkret
+    - "Man könnte Vertrauen aufbauen."  # Vorschlag, nicht Wahrnehmung
+    - "Bitte unterstützen Sie mich."  # Bitte/Bitteformel
+    - "Unterstützung ist wichtig."  # Allgemeine Aussage
+    - "Wir arbeiten zusammen."  # Faktisch, keine gefühlte Qualität
+    - "Das Team hilft."  # Objektive Feststellung
+    - "Ich will dich unterstützen."  # Absicht, nicht gespürte Verbundenheit
+

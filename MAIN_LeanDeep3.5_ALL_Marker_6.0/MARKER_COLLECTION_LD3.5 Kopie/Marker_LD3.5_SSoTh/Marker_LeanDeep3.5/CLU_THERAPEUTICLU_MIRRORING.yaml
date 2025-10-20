@@ -22,17 +22,7 @@ scoring:
 window:
   messages: 10
 examples:
-  positive:
-    - "Können Sie mir spiegeln, wie das bei Ihnen ankommt?"
-    - "Ich brauche gerade eine Außenperspektive. Wie sehen Sie das?"
-    - "Ich setze hier eine Grenze, aber ich möchte verstehen, wie mein Standpunkt auf Sie wirkt."
-    - "Sagen Sie mir, was Sie hören, wenn ich das sage."
-    - "Ich möchte, dass Sie mir zurückmelden, was Sie bei mir wahrnehmen."
-    - "Ich fühle mich unsicher. Können Sie mir helfen, meine Gedanken zu sortieren, indem Sie sie wiedergeben?"
-    - "Das ist mein Standpunkt. Wie kommt das bei Ihnen an?"
-    - "Ich brauche eine Spiegelung, um mich selbst besser zu verstehen."
-    - "Bevor wir weitermachen, können Sie mir sagen, was Sie gerade bei mir sehen?"
-    - "Ich merke, ich brauche eine Rückmeldung. Was nehmen Sie wahr?"
+  positive: []
   negative: []
 tags:
 - needs_review

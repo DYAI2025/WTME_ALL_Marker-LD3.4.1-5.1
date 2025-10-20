@@ -16,17 +16,7 @@ activation:
 scoring:
   weight: 1.2
 examples:
-  positive:
-    - "Therapeut: 'Was denken Sie darüber?' Klient: (Schweigen, Blick abwenden)"
-    - "Therapeut: 'Können Sie mir mehr darüber erzählen?' Klient: 'Ich weiß nicht, was ich dazu sagen soll.'"
-    - "Therapeut: 'Wie fühlen Sie sich dabei?' Klient: (Zuckt mit den Schultern, keine Antwort)"
-    - "Therapeut: 'Was geht Ihnen gerade durch den Kopf?' Klient: 'Nichts.'"
-    - "Therapeut: 'Ich sehe, dass Sie zögern. Was hält Sie zurück?' Klient: 'Ich will nicht darüber reden.'"
-    - "Therapeut: 'Gibt es etwas, das Sie mir noch mitteilen möchten?' Klient: (Wechselt das Thema)"
-    - "Therapeut: 'Ich habe das Gefühl, dass wir an einem wichtigen Punkt sind.' Klient: 'Ach, das ist nicht so wichtig.'"
-    - "Therapeut: 'Was bedeutet das für Sie?' Klient: 'Ich weiß nicht. Ist doch egal.'"
-    - "Therapeut: 'Ich möchte Sie ermutigen, sich zu öffnen.' Klient: (Verschränkt die Arme, wirkt abweisend)"
-    - "Therapeut: 'Was ist das Schwierigste daran?' Klient: 'Alles.'"
+  positive: []
   negative: []
 tags:
 - semantic

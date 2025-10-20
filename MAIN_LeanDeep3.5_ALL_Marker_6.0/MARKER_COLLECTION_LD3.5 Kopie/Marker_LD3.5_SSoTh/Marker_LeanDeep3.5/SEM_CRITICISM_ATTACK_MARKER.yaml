@@ -22,17 +22,7 @@ scoring:
   weight: 1.3
   formula: logistic
 examples:
-  positive:
-    - "Du bist einfach zu egoistisch, um das zu verstehen."
-    - "Du bist so faul, kein Wunder, dass du nichts auf die Reihe kriegst."
-    - "Du bist immer so dramatisch, das ist unerträglich."
-    - "Du bist so manipulativ, ich kann dir nicht mehr vertrauen."
-    - "Du bist so dumm, das hätte jeder sehen müssen."
-    - "Du bist so unsensibel, du verletzt immer alle."
-    - "Du bist so ein Versager, du schaffst nie etwas."
-    - "Du bist so verlogen, ich glaube dir kein Wort mehr."
-    - "Du bist so kindisch, benimm dich endlich wie ein Erwachsener."
-    - "Du bist so arrogant, du denkst, du bist besser als alle anderen."
+  positive: []
   negative: []
 semantische_grabber_id: AUTO_SEM_20250718_944A
 metadata:

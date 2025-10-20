@@ -20,17 +20,7 @@ activation:
 scoring:
   weight: 1.4
 examples:
-  positive:
-    - "Ich glaube, wir reden aneinander vorbei."
-    - "Das habe ich so nicht gesagt."
-    - "(längeres Schweigen)"
-    - "Ich weiß nicht, was ich dazu sagen soll."
-    - "Wir kommen hier nicht weiter."
-    - "Ich fühle mich gerade nicht verstanden."
-    - "Das führt doch zu nichts."
-    - "Ich glaube, Sie verstehen nicht, was ich meine."
-    - "Ich wiederhole mich nur."
-    - "Lassen wir das Thema."
+  positive: []
   negative: []
 tags:
 - cluster
