@@ -1,0 +1,23 @@
+id: ATO_RELATION_TERM
+version: "3.4"
+lang: de
+frame:
+  signal: ["term"]
+  concept: "Beziehungs-Sprache"
+  pragmatics: "Bindungsfokus"
+  narrative: "priority"
+tags: [beziehung]
+pattern:
+  - (?i)zwischen\s+uns
+  - (?i)in\s+beziehung
+examples:
+  - "zwischen uns zählt gerade nur Präsenz"
+  - "ich will das in Beziehung halten"
+  - "zwischen uns bleibt es ruhig"
+  - "wir sind in Beziehung, nicht in Funktion"
+  - "zwischen uns gibt es keinen KPI"
+  - "in Beziehung sein ist hier das Ziel"
+  - "zwischen uns darf es langsam sein"
+  - "ich nehme dich in Beziehung wahr"
+  - "zwischen uns passiert Bindung, kein Pitch"
+  - "wir bleiben in Beziehung, auch wenn es holpert"

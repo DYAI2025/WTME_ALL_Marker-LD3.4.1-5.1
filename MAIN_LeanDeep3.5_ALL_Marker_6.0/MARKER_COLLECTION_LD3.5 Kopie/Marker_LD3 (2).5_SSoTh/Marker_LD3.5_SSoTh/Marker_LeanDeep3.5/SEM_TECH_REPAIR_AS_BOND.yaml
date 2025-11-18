@@ -1,0 +1,23 @@
+id: SEM_TECH_REPAIR_AS_BOND
+version: "3.4"
+lang: de
+frame:
+  signal: ["tech-repair"]
+  concept: "Kleinreparaturen binden"
+  pragmatics: "Sicherheit durch Tun"
+  narrative: "repair"
+tags: [technik, bindung]
+composed_of:
+  - ATO_TECH_FIX
+  - ATO_SAFETY_AFFECT
+examples:
+  - "Trigger prüfen + es fühlt sich sicher an"
+  - "Cache leeren + es wird ruhiger"
+  - "Nummer einrichten + ich fühl mich gehalten"
+  - "ENV korrigieren + es wird ruhiger"
+  - "Config korrigieren + ich fühle mich getragen"
+  - "Trigger anpassen + es fühlt sich sicher an"
+  - "Cache checken + es wird ruhiger in mir"
+  - "Nummer fixen + ich fühl mich gehalten"
+  - "ENV setzen + es fühlt sich sicher an"
+  - "Bug korrigieren + ich werde getragen"

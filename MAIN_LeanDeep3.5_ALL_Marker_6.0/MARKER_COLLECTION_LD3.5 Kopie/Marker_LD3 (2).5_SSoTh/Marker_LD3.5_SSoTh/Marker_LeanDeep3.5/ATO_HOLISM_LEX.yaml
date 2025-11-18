@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_HOLISM_LEX
+frame:
+  signal: ["token"]
+  concept: "Holismus/Ganzheit"
+  pragmatics: "Integration"
+  narrative: "surface"
+pattern:
+  tokens: ["holistisch", "ganzheitlich", "Verbundenheit", "Kosmos", "Ganzes"]
+examples:
+  - "ganzheitlicher Blick … Verbundenheit"
+  - "kosmisches Gesamtbild"
+  - "Teile und Ganzes balancieren"
+  - "kollektive Intelligenz"
+  - "Sinnkohärenz suchen"
+
+

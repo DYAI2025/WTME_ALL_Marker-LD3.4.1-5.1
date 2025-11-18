@@ -1,0 +1,27 @@
+id: SEM_LL_RECEIVING_GIFTS
+version: "3.4"
+lang: de
+frame:
+  signal: ["aggregation"]
+  concept: "Primat der Geste"
+  pragmatics: "symbolische Gabe priorisiert"
+  narrative: "Gesehen-werden durch Zeichen"
+composed_of:
+  any_of: ["ATO_LL_RECEIVING_GIFTS"]
+  window:
+    utterances: 10
+  min_hits: 2
+precondition:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+tags: [love_language]
+examples:
+  - "Chat: 'Ich habe dir eine kleine Aufmerksamkeit mitgebracht' + 'Das Geschenk zeigt, dass ich dich sehe'."
+  - "Wochenend-Recap mit zwei Erwähnungen von spontanen Geschenken."
+  - "Voice-Note: 'Ich liebe Erinnerungsstücke' gefolgt von 'Hier ist ein Mitbringsel für dich'."
+  - "Dialog über Gesten: 'Wichtig ist die Geste' + 'Ich habe dir dein Lieblingsbuch gekauft'."
+  - "Gespräch nach dem Einkauf mit zwei Geschenkerzählungen."
+  - "Paar-Check-in: 'Ich bringe dir Blumen' und 'Ich habe dir Schokolade geholt'."
+  - "Nachricht: 'Ich habe dir ein Erinnerungsstück gemacht' gefolgt von 'Es ist nur eine kleine Aufmerksamkeit'."
+  - "Planung: 'Ich habe dir etwas mitgebracht' und später 'Ich liebe es, dich zu überraschen'."
+  - "Dankbarkeitsliste: zweimalige Erwähnung von Mitbringseln innerhalb kurzer Zeit."
+  - "Videochat: 'Ich schenke dir diesen Stift' + 'Die Geste soll zeigen, dass ich dich kenne'."

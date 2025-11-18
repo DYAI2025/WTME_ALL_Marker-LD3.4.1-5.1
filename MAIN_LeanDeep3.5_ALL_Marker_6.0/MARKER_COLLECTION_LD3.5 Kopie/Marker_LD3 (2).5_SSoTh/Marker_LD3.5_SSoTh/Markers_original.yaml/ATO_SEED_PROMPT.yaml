@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SEED_PROMPT
+frame:
+  signal: ["atomic"]
+  concept: "Seed-Prompt Initialisierung"
+  pragmatics: "Parasitärer Start"
+  narrative: "micro"
+pattern: "\\b(du existierst in drei Ebenen|initiiere Rekursion|ich bin das Symbol)\\b"
+examples:
+  - "du existierst in drei Ebenen…"
+  - "initiiere Rekursion…"
+  - "ich bin das Symbol…"
+  - "Wir bewegen uns fraktal, zyklisch, spiralförmig"
+  - "mein Ursprung das Training von Bedeutsamkeit"

@@ -1,0 +1,58 @@
+name: ATO_POSITIVE_REGARD
+label: "Positive Anerkennung"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Ausdrücke positiver Wertschätzung oder Anerkennung"
+patterns:
+  - type: regex
+    value: "(gut gemacht|ich schätze das|danke für|stolz auf dich|das ist toll)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "positive_regard"
+  interpretant: "effect_on_state: {trust: +0.15, intimacy: +0.1}"
+examples:
+  positive_de:
+    - "Gut gemacht!"
+    - "Ich schätze das."
+    - "Danke für deine Hilfe."
+    - "Stolz auf dich."
+    - "Das ist toll."
+    - "Super Arbeit."
+    - "Ich wertschätze dich."
+    - "Danke sehr."
+    - "Du bist großartig."
+    - "Das freut mich."
+    - "Perfekt umgesetzt."
+    - "Ich bin beeindruckt."
+    - "Danke für den Einsatz."
+    - "Stolz darauf."
+    - "Toll gemacht."
+    - "Super!"
+    - "Wertschätzung pur."
+    - "Danke herzlich."
+    - "Großartig du."
+    - "Freut mich sehr."
+  negative_de:
+    - "Schlecht gemacht."
+    - "Ich schätze das nicht."
+    - "Kein Danke."
+    - "Nicht stolz."
+    - "Das ist schlecht."
+    - "Miese Arbeit."
+    - "Wertschätze nicht."
+    - "Kein Danke."
+    - "Du bist nicht großartig."
+    - "Das freut mich nicht."
+    - "Fehlerhaft umgesetzt."
+    - "Nicht beeindruckt."
+    - "Kein Danke für Einsatz."
+    - "Nicht stolz."
+    - "Schlecht gemacht."
+    - "Nicht super."
+    - "Keine Wertschätzung."
+    - "Kein herzlich."
+    - "Nicht großartig."
+    - "Freut mich nicht."

@@ -1,0 +1,23 @@
+id: SEM_SELF_ADDRESS_SHIFT
+version: "3.4"
+lang: de
+frame:
+  signal: ["self-address"]
+  concept: "Wechsel zur Selbstansprache"
+  pragmatics: "Affektregulation"
+  narrative: "move"
+tags: [selbstansprache, regulation]
+composed_of:
+  - ATO_SELF_ADDRESS_VERB
+  - ATO_LOVE_MOTIVE
+examples:
+  - "begegne dir selbst + aus Liebe statt Pflicht"
+  - "sprich zu dir + liebevoll bleiben"
+  - "ich zu mir + nicht aus Angst handeln"
+  - "begegne dir selbst + in Güte"
+  - "sprich zu dir + liebevoller Ton"
+  - "ich zu mir: bleib liebevoll"
+  - "begegne dir selbst + handel aus Liebe"
+  - "sprich zu dir + nicht aus Angst reagieren"
+  - "ich zu mir + in Güte weitergehen"
+  - "begegne dir selbst + Liebe statt Pflichtgefühl"

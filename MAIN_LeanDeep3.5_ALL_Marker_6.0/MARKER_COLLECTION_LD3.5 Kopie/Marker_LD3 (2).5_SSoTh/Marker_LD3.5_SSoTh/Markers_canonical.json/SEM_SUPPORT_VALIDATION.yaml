@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SUPPORT_VALIDATION
+frame:
+  signal: ["semantic"]
+  concept: "Unterstützung + Validierung"
+  pragmatics: "Bindung"
+  narrative: "micro"
+composed_of: [ATO_SUPPORT_PHRASE, ATO_SOFTENING]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "ich bin da für dich … wir schaffen das"
+  - "danke dir … fühl mich gesehen"
+  - "gemeinsam kriegen wir das hin"
+  - "du kannst dich auf mich verlassen"
+  - "ich hör dir zu … okay?"

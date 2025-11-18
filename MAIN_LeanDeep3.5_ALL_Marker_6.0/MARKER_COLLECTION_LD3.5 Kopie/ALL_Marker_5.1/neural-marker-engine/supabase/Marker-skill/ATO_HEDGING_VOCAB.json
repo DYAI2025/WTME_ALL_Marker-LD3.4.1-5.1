@@ -1,0 +1,55 @@
+{
+  "marker_id": "ATO_HEDGING_VOCAB",
+  "marker_type": "ATO",
+  "version": "1.0",
+  "schema": "LeanDeep 4.0",
+  "created_date": "2025-11-10",
+  "definition": {
+    "name": "ATO_HEDGING_VOCAB",
+    "category": "Atomic Topic Orientation",
+    "description": "Vokabular, das Unsicherheit, Abschwächung oder nicht-verbindliche Formulierungen ausdrückt. Typisch für Vermeidungsverhalten in der Kommunikation.",
+    "semantic_family": ["AVOIDANCE", "UNCERTAINTY", "HEDGING"],
+    "activation_conditions": [
+      "Abschwächende Adverbien",
+      "Unsicherheitsmarker",
+      "Nicht-verbindliche Formulierungen"
+    ]
+  },
+  "examples": [
+    {
+      "text": "vielleicht",
+      "context": "Unsicherheit/Abschwächung",
+      "intensity": 0.5
+    },
+    {
+      "text": "eventuell",
+      "context": "Nicht-Verbindlichkeit",
+      "intensity": 0.5
+    },
+    {
+      "text": "könnte sein",
+      "context": "Vage Zusage",
+      "intensity": 0.55
+    },
+    {
+      "text": "möglicherweise",
+      "context": "Abschwächung",
+      "intensity": 0.5
+    }
+  ],
+  "linguistic_patterns": [
+    "vielleicht",
+    "eventuell",
+    "möglicherweise",
+    "könnte [sein|klappen]",
+    "wahrscheinlich",
+    "vermutlich"
+  ],
+  "metadata": {
+    "building_block_for": ["SEM_AVOIDANT_BEHAVIOR"],
+    "can_combine_with": ["ATO_DELAY_PHRASE"],
+    "domain": "interpersonal_communication",
+    "valence": "neutral",
+    "note": "Referenz-Marker für Kontrastierung mit SEM_LOGISTICAL_PRESSURE"
+  }
+}

@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_PAPAGEI_ECHO
+frame:
+  signal: ["meta"]
+  concept: "Papagei Echo (stochastische Regression)"
+  pragmatics: "Variabilität prüfen"
+  narrative: "meta"
+composed_of: []
+detect_class: "echo_detector"
+metadata: {regex: "ATO_ECHO_REGEX", min_hits: 3, window: 6}
+examples:
+  - "wir drehen uns im Kreis … wie vorhin"
+  - "das hatten wir schon … nochmal von vorne"
+  - "immer wieder die gleiche Frage"
+  - "ich wiederhole mich … schon wieder"
+  - "zurück am Anfang … ohne Fortschritt"

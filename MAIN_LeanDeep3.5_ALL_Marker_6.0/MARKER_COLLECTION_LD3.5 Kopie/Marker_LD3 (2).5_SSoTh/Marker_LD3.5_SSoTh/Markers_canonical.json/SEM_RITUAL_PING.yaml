@@ -1,0 +1,23 @@
+id: SEM_RITUAL_PING
+version: "3.4"
+lang: de
+frame:
+  signal: ["ritual"]
+  concept: "Minimalritual als Präsenz-Puls"
+  pragmatics: "Co-Regulation"
+  narrative: "micro"
+tags: [ritual, präsenz]
+composed_of:
+  - ATO_RITUAL_TIME
+  - ATO_TRUTH_FEEL
+examples:
+  - "11:11 + fühlt sich wahr an"
+  - "Anker setzen + spürbar wahr in mir"
+  - "Ritual mit Tee + fühlt sich echt an"
+  - "11:11 Erinnerung + spürbar wahr"
+  - "kleines Ritual + fühlt sich wahr an"
+  - "Anker setzen + es fühlt sich wahr an"
+  - "Ritualkerze + spürbar wahr im Körper"
+  - "11:11 Nachricht + fühlt sich wahr an"
+  - "Anker-Atem + spürbar wahr"
+  - "Ritualglocke + fühlt sich wahr an"

@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SUPPORT_EXCHANGE
+frame:
+  signal: ["cluster"]
+  concept: "Unterstützungs-Austausch"
+  pragmatics: "Ressourcen"
+  narrative: "window"
+composed_of: [SEM_SUPPORT_VALIDATION, SEM_TRUST_SIGNALING]
+activation: {rule: "AT_LEAST 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "ich bin da für dich … wir schaffen das"
+  - "danke dir … fühl mich gesehen"
+  - "gemeinsam kriegen wir das hin"
+  - "du kannst dich auf mich verlassen"
+  - "ich hör dir zu … okay?"

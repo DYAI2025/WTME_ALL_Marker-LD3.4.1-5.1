@@ -1,0 +1,38 @@
+id: ATO_COMMITMENT_PHRASES
+version: "3.4"
+frame:
+  signal: ["commitment"]
+  concept: "Konkrete Zusage/Verpflichtung"
+  pragmatics: "Plan/Verbindlichkeit"
+  narrative: "task_flow"
+tags: [commitment, planning]
+pattern:
+  regex: "\\b(ich\\s+mache\\s+das|ich\\s+kümmere\\s+mich|ich\\s+übernehme|commit|fixe\\s+bis)\\b"
+  flags: ["IGNORECASE"]
+examples:
+  - "Ich mache das."
+  - "Ich kümmere mich darum."
+  - "Ich übernehme das Ticket."
+  - "I commit to Friday."
+  - "Fixe bis Montag."
+  - "Ich nehme die Aufgabe und liefere bis Donnerstag."
+  - "Das ist jetzt mein To-do, ich schließe es heute ab."
+  - "Ich melde mich morgen mit dem Ergebnis."
+  - "Ich übernehme die Verantwortung für diesen Teil."
+  - "Ihr könnt auf mich zählen, ich erledige das."
+  - "Ich committe mich auf den 15. als Launch-Datum."
+  - "Ich verpflichte mich, das Budget bis Montag freizugeben."
+  - "Ich kümmere mich persönlich um das Kundenfeedback."
+  - "Ich plane die Retrospektive und sende die Einladung."
+metadata:
+  neg_examples:
+    - "Vielleicht mache ich das, mal sehen."
+    - "Ich schaue mir das irgendwann an."
+    - "Das könnte jemand übernehmen, ich weiß noch nicht wer."
+    - "Ich brauche erst mehr Infos, bevor ich mich festlege."
+    - "Eventuell bis Freitag, aber keine Zusage."
+    - "Kann jemand anders das Ticket nehmen?"
+    - "Ich habe keine Kapazität, wahrscheinlich bleibt es liegen."
+    - "Wir sehen dann, ob es klappt – kein Versprechen."
+    - "Ich helfe nur, wenn Zeit übrig ist."
+    - "Ich halte mir das offen, ohne Termin."

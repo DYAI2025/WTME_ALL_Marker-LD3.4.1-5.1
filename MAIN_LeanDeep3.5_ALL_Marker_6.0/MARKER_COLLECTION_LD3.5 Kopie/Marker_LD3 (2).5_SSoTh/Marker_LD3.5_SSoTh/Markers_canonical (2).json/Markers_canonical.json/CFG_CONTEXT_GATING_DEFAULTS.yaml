@@ -1,0 +1,28 @@
+id: CFG_CONTEXT_GATING_DEFAULTS
+version: "3.4"
+lang: de
+frame:
+  signal: ["config"]
+  concept: "Gating-Parameter"
+  pragmatics: "Stabilität/Präzision"
+  narrative: "Hysterese und Decay"
+params:
+  scene_activation_hits: 2
+  scene_decay_turns: 30
+  scene_decay_days: 14
+  sem_window_utterances: 10
+  sem_min_hits: 2
+  allow_parallel_scenes: true
+  conflict_resolution: "highest_scene_score; if tie: evaluate in parallel"
+  logging: "emit gates: on; emit scene_state: on"
+examples:
+  - "Standard: zwei Treffer aktivieren Szene, Decay 14 Tage → Wedding-Kontext bleibt stabil."
+  - "Partnerschaftsdialog hält 30 Turns, bevor die Szene ausläuft."
+  - "SEM-Fenster auf 10 Äußerungen begrenzt, verhindert Rauschen in langen Chats."
+  - "Min_hits 2 sorgt dafür, dass vereinzelte Worte keine Aggregation auslösen."
+  - "Parallel Scenes true → Wedding und Partnership können zugleich gelten."
+  - "Konfliktlösung: höchster Scene Score, bei Gleichstand parallele Bewertung."
+  - "Logging on → Debug-Stream zeigt gate-open/gate-close Events."
+  - "Scene Activation Hits 2 schützt vor Fehltrigger durch kleine Erwähnung."
+  - "Decay 14 Tage für Wedding-Szene unterstützt langfristige Planungsphase."
+  - "Settings dienen als Default für neue Love-Language-Pipelines."

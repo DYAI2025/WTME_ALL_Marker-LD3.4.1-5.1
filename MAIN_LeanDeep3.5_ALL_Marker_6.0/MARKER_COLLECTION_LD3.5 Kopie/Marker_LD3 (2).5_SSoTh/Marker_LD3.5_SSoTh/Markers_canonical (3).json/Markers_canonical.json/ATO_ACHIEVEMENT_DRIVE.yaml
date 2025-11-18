@@ -1,0 +1,15 @@
+id: "ATO_ACHIEVEMENT_DRIVE"
+frame:
+  signal: "Leistung, Erfolg, Innovation"
+  concept: "Orange-Level strategisches Erreichen"
+  pragmatics: "Erkennt Erfolgsorientierung"
+  narrative: "Ich will gewinnen und innovieren"
+pattern: "\\b(erfolg|leistung|innovation|strategie|effizient|gewinn|fortschritt|wettbewerb)\\b"
+examples: 
+  - "strategischer Erfolg"
+  - "Leistung optimieren"
+  - "Innovation vorantreiben"
+  - "effizienter Gewinn"
+  - "Wettbewerbsvorteil"
+  - "Sprache ist strukturierter Schall. Geräusche sind oft unstrukturiert – rohes, semantisch ungebändigtes Material."
+  - "AudioSet, ESC-50, FSD50K"

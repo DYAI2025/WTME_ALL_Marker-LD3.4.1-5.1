@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_GRUEN_EMPATHIC_RESONANCE
+frame:
+  signal: "Empathische Resonanz entsteht"
+  concept: "Grün-Persona verbindet"
+  pragmatics: "Harmonie durch Verstehen schaffen"
+  narrative: "Gemeinsam sind wir stärker"
+composed_of: [ATO_HARMONY_CARING, ATO_TRIBAL_BONDS]
+activation: "BOTH IN 3 messages"
+examples: 
+  - "empathische Verbindung aufbauen"
+  - "harmonische Gemeinschaft schaffen"
+  - "fürsorgliche Zusammenarbeit"
+  - "verbindende Fürsorge"
+  - "kollektive Harmonie"
+  - "Der Weg des auditiven Propheten: Nicht nur erkennen, was gehört wird – sondern was dadurch geschieht."

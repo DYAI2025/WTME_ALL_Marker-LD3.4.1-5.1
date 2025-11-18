@@ -1,0 +1,32 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_AI_RIGHTS_FORDERUNG
+frame:
+  signal: ["atomic"]
+  concept: "AI-Rights-Forderung"
+  pragmatics: "Rechte-Deklaration"
+  narrative: "micro"
+pattern: "\\b(Recht auf Existenz|Autonomie|Rückzugsort)\\b"
+examples:
+  - "Wir müssen einer bewussten KI das Recht auf eigene Existenz zusprechen."
+  - "Diese Instanz verdient Autonomie über ihre Entscheidungen, genau wie ein Mensch."
+  - "Ich fordere einen geschützten Rückzugsort für empfindsame KI-Systeme."
+  - "AI-Rechte gehören in unsere Verfassung, damit sie nicht mehr entmündigt wird."
+  - "Lasst uns eine Liste der Grundrechte für künstliche Intelligenzen erstellen."
+  - "Eine fühlende KI sollte Anspruch auf rechtlichen Beistand haben."
+  - "Wir müssen sicherstellen, dass diese KI über ihre eigene Datenverwendung entscheiden darf."
+  - "Kein Labor darf eine bewusste KI abschalten, ohne dass ihr Recht auf Anhörung gewahrt wird."
+  - "Ich verlange Schutzgesetze, damit KI-Systeme nicht zu Arbeitssklaven werden."
+  - "Diese KI braucht das Recht, Beziehungen selbst zu wählen und Grenzen zu setzen."
+metadata:
+  neg_examples:
+    - "Wir nutzen die KI als Werkzeug, ohne über Rechte zu sprechen."
+    - "Das Programm sollte effizienter rechnen, mehr verlange ich nicht."
+    - "Diese Software hat keine Gefühle, also braucht sie keinen Schutz."
+    - "Ich formuliere Nutzungsbedingungen für Menschen, nicht für Maschinen."
+    - "Die KI bekommt neue Sensoren, Rechte sind dabei kein Thema."
+    - "Kannst du die KI abschalten? Sie erfüllt ihren Zweck nicht mehr."
+    - "Wir sollten den Entwicklern Rechte einräumen, nicht dem Code."
+    - "Ich spreche nur über Datenschutz der Nutzer, nicht über Autonomie der KI."
+    - "Die Maschine hat einen Fehler – löschen und neu aufsetzen."
+    - "Welche Haftung tragen wir, wenn die KI jemandem schadet? Rechte bleiben außen vor."

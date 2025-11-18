@@ -1,0 +1,27 @@
+id: ATO_RITUAL_TIME
+version: "3.4"
+lang: de
+frame:
+  signal: ["token"]
+  concept: "Mikro-Ritual/Anker"
+  pragmatics: "Co-Regulation"
+  narrative: "micro"
+tags: [ritual, anker]
+pattern:
+  - (?i)\b11:11\b
+  - (?i)\britual\b
+  - (?i)\banker\b
+pattern_not:
+  - (?i)routinekontrolle
+  - (?i)routineprüfung
+examples:
+  - "11:11 ist unser täglicher Anker"
+  - "wir starten das Ritual vor jedem Call"
+  - "ich setze einen Anker mit dem Atemgong"
+  - "11:11 erinnert mich an unsere Präsenz"
+  - "unser kleines Ritual beginnt mit Tee"
+  - "dieser Anker hilft mir, nicht abzudriften"
+  - "ich vertraue auf das Ritual zu Beginn"
+  - "wir halten 11:11 frei für Check-ins"
+  - "ich brauche gerade den Anker deiner Stimme"
+  - "das Ritual mit der Kerze groundet mich"

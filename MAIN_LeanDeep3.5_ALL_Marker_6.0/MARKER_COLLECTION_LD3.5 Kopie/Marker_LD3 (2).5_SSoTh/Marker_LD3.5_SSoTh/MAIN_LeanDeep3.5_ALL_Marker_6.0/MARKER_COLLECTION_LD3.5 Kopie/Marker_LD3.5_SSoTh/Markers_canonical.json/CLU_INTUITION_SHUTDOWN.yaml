@@ -1,0 +1,44 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_INTUITION_SHUTDOWN
+type: CLU
+lang: de
+name: CLU_INTUITION_SHUTDOWN
+frame:
+  concept: "Intuition: Shutdown"
+  narrative: "overwhelm"
+  signal: ["schwarz vor Augen", "weggetreten", "benommen"]
+composed_of: [SEM_SHUTDOWN_EPISODE]
+examples:
+  - "Ich war komplett weggetreten, alles wurde schwarz und ich taumelte."
+  - "Ich klappte innerlich zu und mir wurde schwindelig."
+  - "Ich konnte kaum stehen, es rauschte und ich war wie gelähmt."
+  - "Ich schaltete ab, während mir schwarz vor Augen wurde."
+  - "Ich verlor jeden Halt, der Boden schwankte und ich war weg."
+  - "Ich spürte nichts mehr, alles verschwamm und ich sank zusammen."
+  - "Ich war nur noch Nebel, während mein Körper einfrohr."
+  - "Ich fühlte mich betäubt, die Welt drehte sich und ich kippte fast."
+  - "Ich war nicht mehr ansprechbar, weil mir schwarz wurde."
+  - "Ich driftete weg, während der Raum kreiselte."
+negatives:
+  - "Ich war erschöpft, aber noch ansprechbar."
+  - "Ich war traurig, doch stand stabil."
+  - "Ich fühlte Stress, blieb jedoch präsent."
+  - "Ich fühlte Druck, aber keine körperliche Starre."
+  - "Ich war nervös, aber nicht benommen."
+  - "Ich war enttäuscht, doch nicht gelähmt."
+  - "Ich hatte Angst, blieb aber handlungsfähig."
+  - "Ich war verärgert, ohne dass mir schwarz wurde."
+  - "Ich fühlte mich gehetzt, aber stabil."
+  - "Ich war überfordert, doch nicht weggetreten."
+tags: [intuition, shutdown]
+metadata:
+  maintainer: "marker-bot"
+  family: "SHUTDOWN"
+telemetry:
+  counter_confirmed: "SHUTDOWN.confirmed"
+  counter_retracted: "SHUTDOWN.retracted"
+  ewma_precision: "SHUTDOWN.precision"
+activation:
+  confirm_window: 4
+  cooldown_messages: 5

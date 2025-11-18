@@ -1,0 +1,8 @@
+id: "ATO_SURVIVAL_INSTINCT"
+frame:
+  signal: "Überlebensmuster, instinktive Reaktionen"
+  concept: "Beige-Level primitives Überleben"
+  pragmatics: "Erkennt unmittelbare Bedrohungswahrnehmung"
+  narrative: "Rückzug auf Grundbedürfnisse"
+pattern: "\\b(überleben|instinkt|hunger|durst|angst|flucht|kampf|gefahr)\\b"
+examples: ["Ich muss überleben", "instinktiv reagiert", "pure Angst", "Fluchtreflex", "Grundbedürfnisse"]

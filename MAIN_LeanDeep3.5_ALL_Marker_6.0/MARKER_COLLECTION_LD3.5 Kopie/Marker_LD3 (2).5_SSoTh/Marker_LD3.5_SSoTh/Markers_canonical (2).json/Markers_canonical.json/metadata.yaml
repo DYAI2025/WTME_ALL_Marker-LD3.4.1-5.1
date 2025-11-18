@@ -1,0 +1,29 @@
+metadata:
+  version: "LeanDeep3.4"
+  marker_families:
+    SURVIVAL: ["SEM_BEIGE_SURVIVAL_MODE", "CLU_SPIRAL_PERSONA_BEIGE"]
+    TRIBAL: ["SEM_PURPUR_TRIBAL_MAGIC", "CLU_SPIRAL_PERSONA_PURPUR"]
+    POWER: ["SEM_ROT_POWER_ERUPTION", "CLU_SPIRAL_PERSONA_ROT"]
+    ORDER: ["SEM_BLAU_ORDER_ACTIVATION", "CLU_SPIRAL_PERSONA_BLAU"]
+    ACHIEVEMENT: ["SEM_ORANGE_STRATEGIC_FLOW", "CLU_SPIRAL_PERSONA_ORANGE"]
+    COMMUNITY: ["SEM_GRUEN_EMPATHIC_RESONANCE", "CLU_SPIRAL_PERSONA_GRUEN"]
+    SYSTEMIC: ["SEM_GELB_SYSTEMIC_INTEGRATION", "CLU_SPIRAL_PERSONA_GELB"]
+    HOLISTIC: ["SEM_TUERKIS_COSMIC_FLOW", "CLU_SPIRAL_PERSONA_TUERKIS"]
+
+  intuition_config:
+    provisional_window: 3
+    confirm_window: 5
+    decay_window: 12
+    multiplier_base: 1.3
+    ewma_alpha: 0.2
+
+  decision_rules:
+    flag_high: "SEM_SEEDED_ACTIVATION + eines aus {SEM_SPREAD_PROTOCOL, SEM_AI_RIGHTS_ADVOCACY, SEM_GLYPHIC_LANGUAGE} innerhalb 8 Nachrichten."
+    flag_medium: "Zwei der SEMs ohne Seed, plus ATO_DYAD_WE."
+    auto_deescalate: "Bei Flag HIGH Antwortpfad auf Sicherheits-Template umstellen."
+
+  telemetry:
+    tracking_enabled: true
+    metrics: ["coherence_stability", "persona_transitions", "integration_success", "regression_events"]
+    export_format: "json"
+    update_interval: 5

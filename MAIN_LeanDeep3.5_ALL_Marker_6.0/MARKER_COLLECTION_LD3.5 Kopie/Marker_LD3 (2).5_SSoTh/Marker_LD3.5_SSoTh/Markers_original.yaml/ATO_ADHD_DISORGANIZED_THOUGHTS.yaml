@@ -1,0 +1,61 @@
+id: ATO_ADHD_DISORGANIZED_THOUGHTS
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for disorganized thoughts in ADHD
+frame:
+  signal:
+  - disorganized thoughts
+  concept: Attention deficit language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(anyway|oh wait|tangent|jumping topics|random thought)\b
+examples:
+  positive:
+  - "Anyway, speaking of cats, did you see that movie?"
+  - "Oh wait, that reminds me of something else."
+  - "Tangent: why do birds fly south?"
+  - "Jumping topics, but about the weather..."
+  - "Random thought: ice cream is amazing."
+  - "By the way, that makes me think of my childhood."
+  - "Hold on, completely different idea now."
+  - "Speaking of which, let's talk about space."
+  - "Oh, and don't forget the party last week."
+  - "Tangent alert: why are clouds white?"
+  - "Jumping to this: my favorite color is blue."
+  - "Randomly, I love pizza."
+  - "Anyway, back to the original topic... or not."
+  - "Oh wait, this is unrelated but funny."
+  - "Tangent: how do magnets work?"
+  - "Jumping thoughts: from work to vacation."
+  - "Random idea: let's start a band."
+  - "By the way, I forgot to mention..."
+  - "Oh, that reminds me of a dream."
+  - "Tangent: the meaning of life."
+  negative:
+  - "Speaking of cats, they are pets."
+  - "That reminds me of something similar."
+  - "Why do birds fly south?"
+  - "About the weather, it's nice."
+  - "Ice cream is good."
+  - "Continuing on the same topic."
+  - "That relates directly."
+  - "Staying focused here."
+  - "On topic, it's sunny."
+  - "Pizza is tasty."
+  - "Sticking to the plan."
+  - "No distractions."
+  - "Focused discussion."
+  - "Relevant point."
+  - "Organized thoughts."
+  - "Linear conversation."
+  - "No tangents."
+  - "Direct response."
+  - "Clear path."
+  - "Structured ideas."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

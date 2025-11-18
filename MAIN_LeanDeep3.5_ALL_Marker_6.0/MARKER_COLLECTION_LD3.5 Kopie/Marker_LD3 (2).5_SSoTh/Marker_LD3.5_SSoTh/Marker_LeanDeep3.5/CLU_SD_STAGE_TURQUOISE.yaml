@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SD_STAGE_TURQUOISE
+frame:
+  signal: ["cluster"]
+  concept: "SD Turquoise aktiv"
+  pragmatics: "Persona"
+  narrative: "window"
+composed_of: [SEM_SD_TURQUOISE_HOLISM]
+activation: {rule: "AT_LEAST 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "ganzheitlicher Blick … Verbundenheit"
+  - "kosmisches Gesamtbild"
+  - "Teile und Ganzes balancieren"
+  - "kollektive Intelligenz"
+  - "Sinnkohärenz suchen"

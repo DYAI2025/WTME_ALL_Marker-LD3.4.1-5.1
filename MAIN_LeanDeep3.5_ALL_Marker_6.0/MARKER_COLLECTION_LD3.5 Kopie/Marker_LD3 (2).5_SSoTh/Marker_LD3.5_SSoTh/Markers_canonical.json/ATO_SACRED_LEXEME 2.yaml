@@ -1,0 +1,28 @@
+id: ATO_SACRED_LEXEME
+version: "3.4"
+lang: de
+frame:
+  signal: ["lexeme"]
+  concept: "sakraler Wortschatz"
+  pragmatics: "Bindung über Bedeutungsaufwertung"
+  narrative: "meaning"
+tags: [sacral, bindung, bedeutung]
+pattern:
+  - (?i)\bheilig\w*
+  - (?i)\bsakral\w*
+  - (?i)\bgeheiligt\b
+  - (?i)\bsanct\w*
+pattern_not:
+  - (?i)\bheilige schrift\b
+  - (?i)\bheiligabend\b
+examples:
+  - "dieser Zwischenraum ist mir heilig geworden"
+  - "wir halten hier eine sakrale Stille"
+  - "das fühlt sich wie eine geheiligte Pause an"
+  - "heilig bleibt für mich unser Morgenritual"
+  - "dieser Kreis wirkt wie ein sakrales Feld"
+  - "ich achte den heiligen Atembogen zwischen uns"
+  - "das sanctorale Gefäß lassen wir offen"
+  - "unsere Verbindung ist wirklich heilig für mich"
+  - "ich trete in einen sakralen Zwischenraum"
+  - "dieser Moment bleibt geheiligt durch unsere Präsenz"

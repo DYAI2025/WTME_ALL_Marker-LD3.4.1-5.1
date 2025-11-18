@@ -1,0 +1,325 @@
+{
+  "marker_id": "SEM_LOGISTICAL_PRESSURE",
+  "marker_type": "SEM",
+  "version": "1.0",
+  "schema": "LeanDeep 4.0",
+  "created_date": "2025-11-10",
+  "definition": {
+    "name": "SEM_LOGISTICAL_PRESSURE",
+    "category": "Semantic Marker",
+    "description": "Ein semantisches Muster, das signifikanten Stress, Frustration oder Handlungsunfähigkeit anzeigt, welche direkt durch das Scheitern oder die Komplexität externer Logistik (z.B. Verkehr, Zeitpläne, Verfügbarkeit Dritter, räumliche Blockaden) verursacht wird.",
+    "semantic_family": ["LOGISTICS", "STRESS", "CONSTRAINT", "PLANNING"],
+    "composed_of": [
+      "ATO_EXTERNAL_CONSTRAINT",
+      "ATO_PLANNING_FAILURE",
+      "ATO_FRUSTRATION"
+    ]
+  },
+  "activation_rules": {
+    "strict_composition_rule": "Mindestens zwei (≥2) unterschiedliche ATOs müssen im relevanten Zeitfenster (z.B. 3-5 Nachrichten) erkannt werden",
+    "required_ato_combinations": [
+      ["ATO_EXTERNAL_CONSTRAINT", "ATO_PLANNING_FAILURE"],
+      ["ATO_EXTERNAL_CONSTRAINT", "ATO_FRUSTRATION"],
+      ["ATO_PLANNING_FAILURE", "ATO_FRUSTRATION"]
+    ],
+    "temporal_window": "3-5 Nachrichten",
+    "minimum_ato_types": 2,
+    "context_requirement": "ATO_FRUSTRATION muss im kontextuellen Zusammenhang mit ATO_EXTERNAL_CONSTRAINT oder ATO_PLANNING_FAILURE stehen"
+  },
+  "rf_manifestation": {
+    "formula": "L2-BRONZE × SEM_LOGISTICAL_PRESSURE",
+    "interpretation": "Blockierte Handlungsfähigkeit durch externe Hürden; führt zu hohem ad-hoc Stress",
+    "base_intensity": 0.75,
+    "intensity_range": [0.65, 0.85]
+  },
+  "examples": [
+    {
+      "id": "example_01",
+      "valid": true,
+      "text": "Oh Gott der Horror ey. Es ist alles zu. Alles. Die komplette Autobahn",
+      "detected_atos": [
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "Der Horror ey"
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "alles zu"
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "komplette Autobahn"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_FRUSTRATION, ATO_EXTERNAL_CONSTRAINT}",
+      "rf_manifestation": "L2-BRONZE × SEM_LOGISTICAL_PRESSURE → Akute Frustration durch unüberwindbare Blockade",
+      "intensity": 0.8,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS", "FRUSTRATION"]
+    },
+    {
+      "id": "example_02",
+      "valid": false,
+      "text": "Berlin ist total zu... wegen irgend nem Marathon ☹️ Stecken komplett fest",
+      "detected_atos": [
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "total zu"
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "Marathon"
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "komplett fest"
+        }
+      ],
+      "sem_activated": false,
+      "error": "SEM_LOGISTICAL_PRESSURE nicht aktiviert. Regel verletzt: Benötigt ≥2 *unterschiedliche* ATOs (z.B. Frustration oder Planning Failure fehlt)",
+      "rule_check": {
+        "rule_violation": true
+      }
+    },
+    {
+      "id": "example_03",
+      "valid": true,
+      "text": "Zoe: 'Stecken komplett fest' Ben: 'Oh man. Diese Stadt. Echt jedes Wochenende ist die halbe Stadt gesperrt'",
+      "detected_atos": [
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "komplett fest"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "Oh man. Diese Stadt."
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "halbe Stadt gesperrt"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_EXTERNAL_CONSTRAINT, ATO_FRUSTRATION}",
+      "intensity": 0.75,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS", "FRUSTRATION"]
+    },
+    {
+      "id": "example_04",
+      "valid": false,
+      "text": "Ich schaff es denke ich nicht vor 17 Uhr :( Die abzubauen hat länger gebraucht als gedacht ☹️",
+      "detected_atos": [
+        {
+          "type": "ATO_PLANNING_FAILURE",
+          "anchor": "nicht vor 17 Uhr"
+        },
+        {
+          "type": "ATO_PLANNING_FAILURE",
+          "anchor": "länger gebraucht als gedacht"
+        }
+      ],
+      "sem_activated": false,
+      "error": "SEM_LOGISTICAL_PRESSURE nicht aktiviert. Regel verletzt: Benötigt ≥2 *unterschiedliche* ATOs",
+      "rule_check": {
+        "rule_violation": true
+      }
+    },
+    {
+      "id": "example_05",
+      "valid": true,
+      "text": "Zoe: 'Der Wasserladen hatte zu 😑' Zoe (früher): 'Die abzubauen hat länger gebraucht als gedacht ☹️'",
+      "detected_atos": [
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "hatte zu"
+        },
+        {
+          "type": "ATO_PLANNING_FAILURE",
+          "anchor": "länger gebraucht als gedacht"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_EXTERNAL_CONSTRAINT, ATO_PLANNING_FAILURE}",
+      "intensity": 0.7,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS"]
+    },
+    {
+      "id": "example_06",
+      "valid": true,
+      "text": "Übergabe wurde nicht abgeschlossen, weil sie jetzt doch nicht die Spülmaschine haben wollen. Dh ich muss die heute noch ausbauen. Wahnsinn.",
+      "detected_atos": [
+        {
+          "type": "ATO_PLANNING_FAILURE",
+          "anchor": "Übergabe wurde nicht abgeschlossen"
+        },
+        {
+          "type": "ATO_PLANNING_FAILURE",
+          "anchor": "muss die heute noch ausbauen"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "Wahnsinn"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_PLANNING_FAILURE, ATO_FRUSTRATION}",
+      "intensity": 0.8,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS", "FRUSTRATION"]
+    },
+    {
+      "id": "example_07",
+      "valid": true,
+      "text": "Zoe: 'Die komplette Autobahn' Ben: 'Oh fuck' 'Ey das ist echt so nervig'",
+      "detected_atos": [
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "komplette Autobahn"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "Oh fuck"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "echt so nervig"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_EXTERNAL_CONSTRAINT, ATO_FRUSTRATION}",
+      "intensity": 0.78,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS", "FRUSTRATION"]
+    },
+    {
+      "id": "example_08",
+      "valid": false,
+      "text": "Ätzend... bin total genervt weil meine Mutter nur rumnörgelt. Das stresst noch mehr ..",
+      "detected_atos": [
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "Ätzend"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "total genervt"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "stresst noch mehr"
+        }
+      ],
+      "sem_activated": false,
+      "error": "Nur 1 ATO-Typ (FRUSTRATION). Kein externes Constraint oder Planungsfehler im Text.",
+      "rule_check": {
+        "rule_violation": true
+      }
+    },
+    {
+      "id": "example_09",
+      "valid": true,
+      "text": "Alles rot. Wir versuchen es jetzt iwie parallel dazu. Aber den Gedanken haben sicher auch alle",
+      "detected_atos": [
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "Alles rot"
+        },
+        {
+          "type": "ATO_PLANNING_FAILURE",
+          "anchor": "Gedanken haben sicher auch alle"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_EXTERNAL_CONSTRAINT, ATO_PLANNING_FAILURE}",
+      "intensity": 0.72,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS"]
+    },
+    {
+      "id": "example_10",
+      "valid": true,
+      "text": "Nervig Ey.. und die übergabe der wohnung soll am montag sein. nicht am Wochenende. WTF",
+      "context": "Zoe muss Küche streichen",
+      "detected_atos": [
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "Nervig Ey"
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "soll am montag sein"
+        },
+        {
+          "type": "ATO_EXTERNAL_CONSTRAINT",
+          "anchor": "nicht am Wochenende"
+        },
+        {
+          "type": "ATO_FRUSTRATION",
+          "anchor": "WTF"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_FRUSTRATION, ATO_EXTERNAL_CONSTRAINT}",
+      "intensity": 0.75,
+      "rule_check": {
+        "rule_sem_ge_2_atos": true
+      },
+      "families": ["LOGISTICS", "FRUSTRATION"]
+    }
+  ],
+  "counter_examples": [
+    {
+      "id": "counter_example_01",
+      "text": "Können wir vielleicht später bereden? Xx",
+      "detected_atos": [
+        {
+          "type": "ATO_DELAY_PHRASE",
+          "anchor": "später bereden"
+        },
+        {
+          "type": "ATO_HEDGING_VOCAB",
+          "anchor": "vielleicht"
+        }
+      ],
+      "sem_activated_instead": "SEM_AVOIDANT_BEHAVIOR",
+      "reason": "Thema ist interpersonell, nicht logistisch",
+      "note": "Kein SEM_LOGISTICAL_PRESSURE"
+    }
+  ],
+  "sft_training_data": {
+    "instruction_template": "Analysiere: '{text}'",
+    "output_template": "ATO: [{ato_list}]\nSEM: [{sem_list}]\n{additional_info}",
+    "total_examples": 11,
+    "positive_examples": 7,
+    "negative_examples": 4
+  },
+  "metadata": {
+    "domain": "logistical_stress",
+    "valence": "negative",
+    "intensity_category": "high",
+    "requires_context": true,
+    "context_window": "3-5 messages",
+    "related_markers": ["SEM_AVOIDANT_BEHAVIOR"],
+    "use_cases": [
+      "Verkehrsanalyse",
+      "Zeitmanagement-Stress",
+      "Logistik-Probleme",
+      "Externe Blockaden"
+    ]
+  }
+}

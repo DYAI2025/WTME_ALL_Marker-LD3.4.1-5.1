@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SD_ORANGE_LEX
+frame:
+  signal: ["token"]
+  concept: "SD Orange"
+  pragmatics: "Leistung"
+  narrative: "surface"
+pattern:
+  tokens: ["Ziele setzen", "Leistung", "KPIs", "Ergebnisse", "optimieren", "gewinnen"]
+examples:
+  - "Ziele setzen … Leistung messen"
+  - "KPIs und Ergebnisse zählen"
+  - "optimieren … gewinnen"
+  - "Datengetrieben entscheiden"
+  - "Effizienz steigern"
+
+

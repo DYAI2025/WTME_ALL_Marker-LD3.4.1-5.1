@@ -1,0 +1,56 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_RESIGNATION_TENDENCY
+type: SEM
+lang: de
+frame:
+  concept: "Resignationsneigung"
+  narrative: "withdrawal"
+  signal: ["ich gebe auf","mir egal","lass laufen"]
+composed_of: [ATO_RESIGNATION_METAPHOR, ATO_DISENGAGEMENT_LANGUAGE]
+examples:
+  - "Ich stecke den Kopf in den Sand und lasse es einfach laufen."
+  - "Ich hisse die weiße Fahne, mir ist das Ganze egal geworden."
+  - "Ich gebe auf und halte mich komplett raus."
+  - "Ich werfe das Handtuch und distanziere mich vom Projekt."
+  - "Ich lasse mich treiben und verabschiede mich innerlich."
+  - "Ich kapituliere und ziehe mich aus allem zurück."
+  - "Ich gebe mich geschlagen und lasse die Verantwortung los."
+  - "Ich lege die Waffen nieder und investiere keine Energie mehr."
+  - "Ich lasse alles an mir vorbeiziehen und kümmere mich nicht mehr."
+  - "Ich ziehe mich in mein Schneckenhaus zurück und halte mich raus."
+  - "Ich lasse die Schultern hängen und sage innerlich ab."
+  - "Ich kapituliere vor dem Aufwand und lasse das Team allein."
+  - "Ich steige aus der Diskussion aus und lasse es passieren."
+  - "Ich lasse die Dinge laufen, ohne mich einzumischen."
+  - "Ich gebe die Kontrolle ab und bleibe passiv."
+  - "Ich lasse die Verantwortung los und ziehe mich zurück."
+  - "Ich lasse den Prozess versanden und schaue nur zu."
+  - "Ich lasse mich treiben und gebe keine Impulse mehr."
+  - "Ich gebe innerlich auf und lasse mich fallen."
+  - "Ich lasse alles stehen und liegen, weil es nichts bringt."
+negatives:
+  - "Ich halte weiter dagegen, auch wenn es zäh ist."
+  - "Ich bleibe engagiert und suche aktiv Lösungen."
+  - "Ich motiviere mich, dranzubleiben."
+  - "Ich gebe gerade erst richtig Gas."
+  - "Ich kämpfe für das Thema, bis es klappt."
+  - "Ich halte mich präsent und aktiv."
+  - "Ich lasse den Kopf nicht hängen."
+  - "Ich bleibe dabei, egal wie lange es dauert."
+  - "Ich nehme die Herausforderung ernst und handle."
+  - "Ich bleibe wachsam und greife ein."
+  - "Ich verstärke mein Engagement jetzt erst recht."
+  - "Ich suche Verbündete, statt mich zurückzuziehen."
+  - "Ich gehe auf die anderen zu und bleibe dran."
+  - "Ich ziehe das Thema durch, auch wenn es mühsam ist."
+  - "Ich treibe das Projekt aktiv voran."
+  - "Ich suche mir neue Energie, statt aufzugeben."
+  - "Ich halte den Kurs und bleibe aktiv beteiligt."
+  - "Ich stemme mich gegen die Müdigkeit."
+  - "Ich bleibe sichtbar im Projekt."
+  - "Ich lasse mich nicht abschrecken und mache weiter."
+tags: [withdrawal, composition]
+metadata:
+  maintainer: "marker-bot"
+  family: "RESIGNATION"

@@ -1,0 +1,34 @@
+id: ATO_AMBIGUITY_QUOTES
+frame:
+  signal: ["Distanzierende Anführungszeichen"]
+  concept: "Markierung nicht-wörtlicher Bedeutung"
+  pragmatics: "Manner-Maxime flouten (Mehrdeutigkeit)"
+  narrative: "hint"
+pattern:
+  - "[„\"']\\s?[^„\"']+\\s?[\"'”]"
+  - "(?i)(sogenannt(e|er|es)|'so')\\s+\\w+"
+examples:
+  - "Unser 'agiler' Prozess."
+  - "Die „Experten“ sind da."
+  - "Das sogenannte Best-Practice."
+  - "Ein 'sicherer' Plan."
+  - "Der „neue“ Server ist alt."
+  - "Er arbeitet im ‚Homeoffice‘ – sprich, er ist wieder auf der Couch."
+  - "Dieser „Bonus“ ist eigentlich nur ein Gutschein."
+  - "Wir haben eine 'partnerschaftliche' Lösung, die nur uns nutzt."
+  - "Sie war auf einer sogenannten Weiterbildung, eher ein Wellness-Wochenende."
+  - "Das ist ein ‚temporärer‘ Fix, der wohl ewig bleibt."
+  - "Wir haben den 'stabilen' Build deployed, der schon zweimal abgestürzt ist."
+metadata:
+  neg_examples:
+    - "Unser agiler Prozess funktioniert gut."
+    - "Die Experten sind da und legen los."
+    - "Das Best Practice ist dokumentiert."
+    - "Der Plan ist sicher und abgesegnet."
+    - "Der neue Server ist tatsächlich neu."
+    - "Er arbeitet wirklich im Homeoffice."
+    - "Dieser Bonus ist eine echte Gehaltserhöhung."
+    - "Wir haben partnerschaftlich eine faire Lösung gefunden."
+    - "Sie war auf einer Weiterbildung, die ihr viel gebracht hat."
+    - "Der Fix ist wirklich temporär, wir ersetzen ihn nächste Woche."
+tags: [humor, ambiguity, quotes, grice_manner, atomic, v33]

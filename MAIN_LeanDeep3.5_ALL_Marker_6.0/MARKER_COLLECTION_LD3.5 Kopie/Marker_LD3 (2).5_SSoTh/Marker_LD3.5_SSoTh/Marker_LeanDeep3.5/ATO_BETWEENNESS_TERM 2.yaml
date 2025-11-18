@@ -1,0 +1,24 @@
+id: ATO_BETWEENNESS_TERM
+version: "3.4"
+lang: de
+frame:
+  signal: ["term"]
+  concept: "Zwischenraum/Liminalität"
+  pragmatics: "Sicherheitsrahmen"
+  narrative: "setting"
+tags: [zwischenraum, liminal, rahmung]
+pattern:
+  - (?i)\bzwischenraum\b
+  - (?i)\bdazwischen\b
+  - (?i)\bliminal\w*
+examples:
+  - "lass uns in diesem Zwischenraum verweilen"
+  - "wir treffen uns bewusst im Dazwischen"
+  - "ich halte den liminalen Ort für uns offen"
+  - "dieser Zwischenraum trägt unsere Gespräche"
+  - "wir arbeiten aus dem Dazwischen heraus"
+  - "das ist ein liminaler Korridor für Bindung"
+  - "ich spüre den Zwischenraum zwischen Reiz und Antwort"
+  - "wir vereinbaren einen liminalen Moment zum Check-in"
+  - "dieses Dazwischen schützt uns vor hektischen Reflexen"
+  - "ich vertraue auf den Zwischenraum, den wir markieren"

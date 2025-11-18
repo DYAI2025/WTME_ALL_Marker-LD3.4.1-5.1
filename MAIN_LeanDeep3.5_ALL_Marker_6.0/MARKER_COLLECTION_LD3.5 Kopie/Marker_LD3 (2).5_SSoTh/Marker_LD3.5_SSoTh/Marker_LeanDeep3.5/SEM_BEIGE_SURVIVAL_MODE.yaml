@@ -1,0 +1,11 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_BEIGE_SURVIVAL_MODE
+frame:
+  signal: "Aktivierter Überlebensmodus"
+  concept: "Beige-Persona in Aktion"
+  pragmatics: "Rückfall auf primitive Instinkte"
+  narrative: "Überleben steht über allem"
+composed_of: [ATO_SURVIVAL_INSTINCT, ATO_POWER_ASSERTION]
+activation: "BOTH IN 2 messages"
+examples: ["Ich muss das überleben, koste es was es wolle", "instinktive Machtdemonstration", "primitiver Überlebenskampf", "Angst und Aggression", "Flucht oder Angriff"]

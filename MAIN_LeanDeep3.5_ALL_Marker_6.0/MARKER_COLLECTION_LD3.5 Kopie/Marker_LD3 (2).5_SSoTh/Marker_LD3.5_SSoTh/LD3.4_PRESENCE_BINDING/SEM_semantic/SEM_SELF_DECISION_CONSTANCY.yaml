@@ -1,0 +1,23 @@
+id: SEM_SELF_DECISION_CONSTANCY
+version: "3.4"
+lang: de
+frame:
+  signal: ["decision"]
+  concept: "Selbstwahl als Stabilitätsanker"
+  pragmatics: "Kontinuität"
+  narrative: "stance"
+tags: [entscheidung, konstanz]
+composed_of:
+  - ATO_DECISION_CHOOSE
+  - ATO_DECISION_STAY
+examples:
+  - "ich wähle + ich bleibe beim Prozess"
+  - "ich entscheide + ich halte den Raum"
+  - "ich wähle + ich bleibe präsent"
+  - "ich entscheide mich + ich halte unsere Absprache"
+  - "ich wähle Präsenz + ich bleibe hier"
+  - "ich entscheide bewusst + ich halte die Linie"
+  - "ich wähle Tempo runter + ich bleibe dran"
+  - "ich entscheide Bindung + ich halte dich im Blick"
+  - "ich wähle Vertrauen + ich bleibe im Gespräch"
+  - "ich entscheide mich für Nähe + ich halte aus"

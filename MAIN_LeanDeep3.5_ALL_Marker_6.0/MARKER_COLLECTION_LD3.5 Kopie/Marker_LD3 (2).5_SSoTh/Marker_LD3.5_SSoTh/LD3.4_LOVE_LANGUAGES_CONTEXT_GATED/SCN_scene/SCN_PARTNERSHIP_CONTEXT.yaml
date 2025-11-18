@@ -1,0 +1,29 @@
+id: SCN_PARTNERSHIP_CONTEXT
+version: "3.4"
+lang: de
+frame:
+  signal: ["scene"]
+  concept: "Partnerschaftsdialog"
+  pragmatics: "romantische Dyade"
+  narrative: "Wir-Bezug, Intimität, Bindung"
+tags: [scene, relationship]
+pattern:
+  - "\\b(mein\\s?e?r? Partner(in)?|Partner:in|Beziehung|wir zwei|unsere Beziehung|als Paar|Partnerschaft)\\b"
+  - "\\b(Date|Partnerschaftsgespräch|Paartherapie|Beziehungsarbeit)\\b"
+composed_of:
+  window:
+    utterances: 20
+  min_hits: 2
+detect_class:
+  rule: "activate(scene, hysteresis=1hit, decay=30 turns)"
+examples:
+  - "Ich möchte mit dir über unsere Beziehung sprechen."
+  - "Wir zwei brauchen mal wieder ein Date nur für uns."
+  - "Mein Partner und ich wollen in die Paartherapie starten."
+  - "Unsere Beziehung fühlt sich gerade etwas angespannt an."
+  - "Als Paar schaffen wir das, wenn wir miteinander reden."
+  - "Ich habe heute ein Partnerschaftsgespräch eingeplant."
+  - "Wir arbeiten aktiv an unserer Partnerschaft."
+  - "Meine Partnerin und ich haben das Wochenende freigeräumt."
+  - "Unsere Beziehung profitiert davon, wenn wir zuhören."
+  - "Ich wünsche mir mehr Beziehungsarbeit von uns beiden."

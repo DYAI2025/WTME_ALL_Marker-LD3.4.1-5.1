@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "version", "frame"],
+  "properties": {
+    "id": { "type": "string" },
+    "version": { "type": "string", "enum": ["3.1.4"] },
+    "frame": {
+      "type": "object",
+      "required": ["signal", "concept", "pragmatics", "narrative"],
+      "properties": {
+        "signal": { "type": ["array", "string"] },
+        "concept": { "type": "string" },
+        "pragmatics": { "type": "string" },
+        "narrative": { "type": "string" }
+      }
+    },
+    "pattern": { "type": "object" },
+    "composed_of": { "type": "array", "items": { "type": "string" } },
+    "detect_class": { "type": "string" },
+    "activation": { "type": "object" },
+    "scoring": { "type": "object" },
+    "examples": { "type": "array", "items": { "type": ["string", "object"] } },
+    "metadata": { "type": "object" }
+  }
+}

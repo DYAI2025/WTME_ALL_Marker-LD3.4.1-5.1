@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SADNESS_EXPRESSIONS
+frame:
+  signal: ["semantic"]
+  concept: "Traurigkeit ausdrücken"
+  pragmatics: "Affect"
+  narrative: "micro"
+composed_of: [ATO_SADNESS_WORD, ATO_SOFTENING]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "ich vermisse … hätte es anders machen sollen"
+  - "so schade … tut mir leid"
+  - "fühle mich schuldig … schwer auszuhalten"
+  - "allein damit … traurig"
+  - "hätte früher reden sollen … bereue es"

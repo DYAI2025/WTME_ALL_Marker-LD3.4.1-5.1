@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_DELAYING_MOVE
+frame:
+  signal: ["semantic"]
+  concept: "Aufschubbewegung"
+  pragmatics: "Prokrastination"
+  narrative: "micro"
+composed_of: [ATO_DELAY_WORD, ATO_PROBABILISTIC]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "mach ich heute noch … vielleicht morgen"
+  - "ich verspreche … doch erst später"
+  - "bin dran … aber keine Zeit"
+  - "gleich … nach dem Meeting"
+  - "heute fix … oder morgen"

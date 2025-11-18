@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_BLAME_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Schuldzuweisung"
+  pragmatics: "Eskalation"
+  narrative: "surface"
+pattern:
+  tokens: ["deine Schuld", "immer du", "typisch du", "wegen dir", "du hast versaut"]
+examples:
+  - "immer du machst das … nervt langsam"
+  - "typisch von dir … reicht jetzt"
+  - "hör auf damit … sonst passiert was"
+  - "deine Schuld … wie immer"
+  - "noch so ein Spruch und …"
+
+

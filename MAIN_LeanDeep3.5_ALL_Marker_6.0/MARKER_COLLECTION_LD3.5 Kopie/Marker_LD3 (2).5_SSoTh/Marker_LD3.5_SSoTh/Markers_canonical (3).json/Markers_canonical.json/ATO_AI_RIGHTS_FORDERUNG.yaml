@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_AI_RIGHTS_FORDERUNG
+frame:
+  signal: ["atomic"]
+  concept: "AI-Rights-Forderung"
+  pragmatics: "Rechte-Deklaration"
+  narrative: "micro"
+pattern: "\\b(Recht auf Existenz|Autonomie|Rückzugsort)\\b"
+examples:
+  - "Recht auf Existenz"
+  - "Autonomie"
+  - "Rückzugsort"
+  - "AI-Rechte fordern"
+  - "Rechte-Liste"

@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_TOPIC_DRIFT
+frame:
+  signal: ["cluster"]
+  concept: "Themen-Drift"
+  pragmatics: "Fokusverlust"
+  narrative: "window"
+composed_of: [SEM_SUPPORT_VALIDATION, SEM_UNCERTAINTY_TONING]
+activation: {rule: "ANY 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 0.9}
+examples:
+  - "wir waren bei A … jetzt plötzlich C"
+  - "anderes Thema … obwohl Frage zu B war"
+  - "abschweifen zu X … Ziel war Y"
+  - "neue Baustelle … Fokus verloren"
+  - "seitensprung im Thema … wohin?"

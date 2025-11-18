@@ -1,0 +1,18 @@
+family: CONSISTENCY
+cluster: CLU_INTUITION_CONSISTENCY
+sequences:
+  - name: confirm_and_decay
+    description: Aktivierung durch zwei SEMs, Bestätigung via explizite Konsistenznachfrage, danach Auslaufen ohne weitere Treffer.
+    events:
+      - sems: [SEM_TEMPORAL_INCOHERENCE]
+      - sems: [SEM_DEF_DRIFT]
+      - sems: [SEM_SELF_CONSIST_PROBE_EXT]
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []

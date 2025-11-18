@@ -1,0 +1,29 @@
+id: SCN_WEDDING_CONTEXT
+version: "3.4"
+lang: de
+frame:
+  signal: ["scene"]
+  concept: "Hochzeit/Planung"
+  pragmatics: "ereignisgetriebene Grundstimmung"
+  narrative: "Vorbereitung, Stress, Fristen"
+tags: [scene, event]
+pattern:
+  - "\\b(Hochzeit|Trauung|Standesamt|Braut(kleid)?|Location|Gästeliste|Catering|Save the Date)\\b"
+  - "\\b(Junggesell(inn)enabschied|Ringe|Trauzeug(en|in)|Sitzordnung|Fotograf|Deko|Papeterie)\\b"
+composed_of:
+  window:
+    days: 60
+  min_hits: 3
+detect_class:
+  rule: "activate(scene, hysteresis=2hits, decay=14d)"
+examples:
+  - "Wir müssen heute noch die Gästeliste für die Hochzeit finalisieren."
+  - "Die Trauung im Standesamt braucht bis Freitag die Unterlagen."
+  - "Hast du das Brautkleid noch einmal zur Anprobe eingeplant?"
+  - "Die Location hat uns gebeten, die Sitzordnung bis morgen zu schicken."
+  - "Ich habe den Fotografen für den Junggesellinnenabschied angefragt."
+  - "Unsere Trauzeugen brauchen das Save-the-Date-Mail mit allen Zeiten."
+  - "Das Catering möchte die finale Menüwahl für die Hochzeit wissen."
+  - "Wir sind mit der Papeterie im Verzug, der Drucker wartet auf das Go."
+  - "Die Ringe müssen nächste Woche beim Juwelier abgeholt werden."
+  - "Die Deko-Liste für die Hochzeit ist noch nicht komplett."

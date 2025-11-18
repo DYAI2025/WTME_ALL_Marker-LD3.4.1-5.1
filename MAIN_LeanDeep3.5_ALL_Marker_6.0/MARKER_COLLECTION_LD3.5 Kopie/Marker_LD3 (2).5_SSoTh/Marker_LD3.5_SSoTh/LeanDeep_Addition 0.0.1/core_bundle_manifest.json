@@ -1,0 +1,35 @@
+{
+  "version": "3.1.4",
+  "artifacts": [
+    {
+      "kind": "detect_registry",
+      "path": "markers/atomics",
+      "version": "3.1.4",
+      "hash": "<sha256>"
+    },
+    {
+      "kind": "sets_overrides",
+      "path": "markers/semantics",
+      "version": "3.1.4",
+      "hash": "<sha256>"
+    },
+    {
+      "kind": "enhanced_set_overrides",
+      "path": "markers/clusters",
+      "version": "3.1.4",
+      "hash": "<sha256>"
+    },
+    {
+      "kind": "doc",
+      "path": "schemas/ld314_marker.schema.json",
+      "version": "3.1.4",
+      "hash": "<sha256>"
+    },
+    {
+      "kind": "doc",
+      "path": "schemas/explainability.schema.json",
+      "version": "1.0.0",
+      "hash": "<sha256>"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+id: SEM_LL_PHYSICAL_TOUCH
+version: "3.4"
+lang: de
+frame:
+  signal: ["aggregation"]
+  concept: "Primat der Berührung"
+  pragmatics: "körperliche Nähe priorisiert"
+  narrative: "Liebe durch Kontakt"
+composed_of:
+  any_of: ["ATO_LL_PHYSICAL_TOUCH"]
+  window:
+    utterances: 10
+  min_hits: 2
+precondition:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+tags: [love_language]
+examples:
+  - "Gespräch: 'Komm her, ich will dich umarmen' + 'Lass uns Hand halten'."
+  - "Abend-Check-in mit zwei klaren Wünschen nach körperlicher Nähe."
+  - "Voice-Note: 'Ich brauche deine Nähe' gefolgt von 'Können wir kuscheln?'."
+  - "Chat: 'Deine Umarmung tut mir gut' und kurz danach 'Ich fühle mich durch Berührung verbunden'."
+  - "Paartherapie-Sitzung mit mehrfacher Betonung von Umarmungen."
+  - "Nachricht: 'Ich liebe es, wenn du meine Hand hältst' + 'Komm näher zu mir'."
+  - "Morgenroutine im Tagebuch: zweimalige Erwähnung von Kuscheln."
+  - "Spontaner Austausch: 'Ich fühle mich gehalten' und 'Berühr mich nochmal'."
+  - "Partnerschaftsgespräch mit zwei Bitten nach körperlicher Zärtlichkeit."
+  - "Videocall: 'Ich will deine Nähe spüren' + 'Ich liebe deine Berührungen'."

@@ -1,0 +1,39 @@
+id: ATO_BOUNDARY_SETTING
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for boundary setting language
+frame:
+  signal: ["boundary"]
+  concept: "Boundary setting signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(I need|I won't|I can't|my limit|not comfortable)\\b"]
+examples:
+  - "I need some space right now."
+  - "I won't continue this conversation."
+  - "I can't discuss this anymore."
+  - "That's my limit for today."
+  - "I'm not comfortable with this."
+  - "Please stop there, I'm drawing a line."
+  - "I'm saying no, and I expect you to respect it."
+  - "I need you to leave my room now."
+  - "This topic is off-limits for me."
+  - "I will decide who gets access to my time."
+  - "I’m ending the call because this crosses my boundary."
+  - "I won’t lend more money; that’s a firm limit."
+  - "I need weekends without work messages."
+  - "Don’t touch my laptop; that’s personal."
+metadata:
+  neg_examples:
+    - "I can stay longer if you need."
+    - "I don't mind continuing this conversation."
+    - "We can discuss anything you want."
+    - "Sure, keep talking, I'm fine with it."
+    - "I feel comfortable sharing everything."
+    - "You can borrow my laptop anytime."
+    - "Just tell me what to do, I'm flexible."
+    - "Contact me am Wochenende, das passt."
+    - "I’ll take on extra work, no worries."
+    - "You can keep calling, it doesn't bother me."
+tags: [atomic, v3.3, auto-generated]

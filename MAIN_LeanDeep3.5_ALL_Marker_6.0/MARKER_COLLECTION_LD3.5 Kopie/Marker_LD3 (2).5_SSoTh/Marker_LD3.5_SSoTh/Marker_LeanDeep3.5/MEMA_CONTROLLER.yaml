@@ -1,0 +1,42 @@
+name: MEMA_CONTROLLER
+label: "Controller"
+class: meta
+version: 3.5
+languages: [de]
+meaning: Archetyp des Kontrolleurs.
+activates_if:
+  all_of:
+    - CLU_CONTROL_PATTERN
+effects:
+  indices:
+    control: +0.2
+notes: Übt Macht aus.
+examples:
+  positive_de:
+    - "Das ist keine Diskussion."
+    - "Wir machen das so, Ende."
+    - "Du folgst der Reihenfolge, verstanden?"
+    - "Ich setze die Regeln, klar?"
+    - "Bis morgen 10:00 – ohne Ausnahme."
+    - "Anweisungen folgen."
+    - "Kein Widerspruch."
+    - "Entscheide ich."
+    - "Regeln befolgen."
+    - "Autoritäre Ansage."
+  negative_de:
+    - "Besprechen wir."
+    - "Meinung zählt."
+    - "Zusammen entscheiden."
+    - "Kein Druck."
+    - "Frei wählen."
+    - "Autonomie."
+    - "Gleichberechtigt."
+    - "Keine Vorgaben."
+    - "Offen Ideen."
+    - "Partnerschaft."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "controller"
+  interpretant: "effect_on_state: {control: +0.2}"
+  connotation: ["archetype", "control"]

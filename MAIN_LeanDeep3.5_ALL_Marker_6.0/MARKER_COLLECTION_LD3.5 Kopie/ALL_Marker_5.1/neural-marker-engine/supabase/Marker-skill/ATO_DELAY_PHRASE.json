@@ -1,0 +1,48 @@
+{
+  "marker_id": "ATO_DELAY_PHRASE",
+  "marker_type": "ATO",
+  "version": "1.0",
+  "schema": "LeanDeep 4.0",
+  "created_date": "2025-11-10",
+  "definition": {
+    "name": "ATO_DELAY_PHRASE",
+    "category": "Atomic Topic Orientation",
+    "description": "Sprachliche Muster, die auf zeitliches Aufschieben oder Verzögern einer Aktion, Entscheidung oder Diskussion hinweisen.",
+    "semantic_family": ["AVOIDANCE", "TEMPORAL", "POSTPONEMENT"],
+    "activation_conditions": [
+      "Vorschlag zur zeitlichen Verschiebung",
+      "Bitte um spätere Behandlung",
+      "Verzögerungsvokabular"
+    ]
+  },
+  "examples": [
+    {
+      "text": "später bereden",
+      "context": "Kommunikationsverzögerung",
+      "intensity": 0.6
+    },
+    {
+      "text": "können wir das verschieben",
+      "context": "Terminaufschiebung",
+      "intensity": 0.65
+    },
+    {
+      "text": "lass uns das nochmal anschauen",
+      "context": "Entscheidungsverzögerung",
+      "intensity": 0.55
+    }
+  ],
+  "linguistic_patterns": [
+    "später [bereden|besprechen|machen]",
+    "[können|sollen] wir [später|morgen|nächste woche]",
+    "verschieben [auf|bis]",
+    "nochmal [anschauen|überlegen]"
+  ],
+  "metadata": {
+    "building_block_for": ["SEM_AVOIDANT_BEHAVIOR"],
+    "can_combine_with": ["ATO_HEDGING_VOCAB"],
+    "domain": "interpersonal_communication",
+    "valence": "neutral_to_negative",
+    "note": "Referenz-Marker für Kontrastierung mit SEM_LOGISTICAL_PRESSURE"
+  }
+}

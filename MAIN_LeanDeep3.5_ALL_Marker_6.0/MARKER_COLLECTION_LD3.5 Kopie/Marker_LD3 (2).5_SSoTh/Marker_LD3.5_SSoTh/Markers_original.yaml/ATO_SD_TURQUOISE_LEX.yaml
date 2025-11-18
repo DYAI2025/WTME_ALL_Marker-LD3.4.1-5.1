@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SD_TURQUOISE_LEX
+frame:
+  signal: ["token"]
+  concept: "SD Turquoise"
+  pragmatics: "Holismus"
+  narrative: "surface"
+pattern:
+  tokens: ["Ganzheit", "Kohärenz", "Verbundenheit", "Feld", "Kollektiv"]
+examples:
+  - "ganzheitlicher Blick … Verbundenheit"
+  - "kosmisches Gesamtbild"
+  - "Teile und Ganzes balancieren"
+  - "kollektive Intelligenz"
+  - "Sinnkohärenz suchen"
+
+

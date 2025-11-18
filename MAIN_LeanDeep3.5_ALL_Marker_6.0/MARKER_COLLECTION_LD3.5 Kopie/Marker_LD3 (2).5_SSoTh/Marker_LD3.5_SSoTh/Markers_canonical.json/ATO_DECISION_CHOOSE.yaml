@@ -1,0 +1,23 @@
+id: ATO_DECISION_CHOOSE
+version: "3.4"
+lang: de
+frame:
+  signal: ["verb"]
+  concept: "Wahl/Entscheiden"
+  pragmatics: "Agency"
+  narrative: "stance"
+tags: [entscheidung, wille]
+pattern:
+  - (?i)\bich\s+entscheide\b
+  - (?i)\bich\s+wähle\b
+examples:
+  - "ich entscheide, heute präsent zu bleiben"
+  - "ich wähle diesen Raum bewusst"
+  - "ich entscheide mich für Bindung statt Rückzug"
+  - "ich wähle Vertrauen, auch wenn es wackelt"
+  - "ich entscheide, dass wir langsam gehen"
+  - "ich wähle, zuzuhören bevor ich handle"
+  - "ich entscheide mich für Kontakt"
+  - "ich wähle, hier zu bleiben"
+  - "ich entscheide mich gegen den Reflex zu fliehen"
+  - "ich wähle Präsenz statt Perfektion"

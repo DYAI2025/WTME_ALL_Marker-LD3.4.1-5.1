@@ -1,0 +1,61 @@
+id: ATO_SUBSTANCE_DENIAL
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for denial in substance use disorders
+frame:
+  signal:
+  - denial
+  concept: Addiction minimization language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(just one more|it's not a problem|I can stop anytime|everyone does it|not addicted)\b
+examples:
+  positive:
+  - "Just one more drink won't hurt."
+  - "It's not a problem, I have it under control."
+  - "I can stop anytime I want."
+  - "Everyone does this, it's normal."
+  - "I'm not addicted, I just enjoy it."
+  - "One more cigarette is fine."
+  - "No issue here, I manage it."
+  - "I quit whenever I choose."
+  - "Friends do it too."
+  - "Not hooked, just recreational."
+  - "Another pill won't matter."
+  - "It's under control, trust me."
+  - "I stop on my terms."
+  - "Common habit, nothing wrong."
+  - "Enjoyment, not addiction."
+  - "One last hit is okay."
+  - "No problem at all."
+  - "I control it fully."
+  - "Others do worse."
+  - "Not dependent."
+  negative:
+  - "I need to stop after this drink."
+  - "It's becoming a problem."
+  - "I can't stop easily."
+  - "Not everyone does this."
+  - "I might be addicted."
+  - "No more cigarettes for me."
+  - "This is an issue."
+  - "Stopping is hard."
+  - "Not normal for most."
+  - "I am hooked."
+  - "No more pills."
+  - "Out of control."
+  - "I can't quit."
+  - "Uncommon and bad."
+  - "Definitely addicted."
+  - "No last hit."
+  - "Big problem."
+  - "No control."
+  - "Worse than others."
+  - "Totally dependent."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

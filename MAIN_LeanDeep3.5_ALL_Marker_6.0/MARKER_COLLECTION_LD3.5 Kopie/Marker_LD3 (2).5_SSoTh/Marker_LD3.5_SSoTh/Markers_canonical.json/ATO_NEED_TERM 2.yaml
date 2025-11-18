@@ -1,0 +1,23 @@
+id: ATO_NEED_TERM
+version: "3.4"
+lang: de
+frame:
+  signal: ["term"]
+  concept: "Bedürfnis-Sprache"
+  pragmatics: "Abhängigkeit"
+  narrative: "frame"
+tags: [bedürfnis]
+pattern:
+  - (?i)^\s*ich\s+(brauche|benötige)\b
+  - (?i)\bich\s+(brauche|benötige)\b
+examples:
+  - "ich brauche gerade deine ruhige Stimme"
+  - "ich benötige ein wenig Halt von dir"
+  - "ich brauche Zeit, um nachzufühlen"
+  - "ich benötige diesen Zwischenraum"
+  - "ich brauche deine Präsenz, bevor wir planen"
+  - "ich benötige eine Pause, die wir gemeinsam halten"
+  - "ich brauche eine Rückfrage von dir"
+  - "ich benötige gerade nur dein Zuhören"
+  - "ich brauche, dass wir das langsam angehen"
+  - "ich benötige einen täglichen Check-in"

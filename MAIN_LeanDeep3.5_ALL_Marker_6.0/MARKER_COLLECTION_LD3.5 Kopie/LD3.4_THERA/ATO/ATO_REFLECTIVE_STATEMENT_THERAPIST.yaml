@@ -19,8 +19,102 @@ activation:
 scoring:
   weight: 1.0
 examples:
-  positive: []
-  negative: []
+  positive: 
+Es klingt, als ob du dich sehr verletzt fühlst, wenn deine Eltern das sagen.
+Sie wirken heute etwas angespannt, als hättest du gerade eine schwierige Situation erlebt.
+Wenn ich Sie richtig verstehe, fühlen Sie sich oft allein, auch wenn Sie mit Menschen zusammen sind.
+Sie sagen, dass es Ihnen schwerfällt, Vertrauen zu anderen zu haben, weil Ihre Erfahrungen so waren.
+Es klingt, als ob diese Erinnerung sehr schmerzhaft für Sie ist, besonders die Details, die Sie beschrieben haben.
+Sie wirken traurig, als würden Sie sich nicht mehr so stark um Ihr Kind kümmern wollen.
+Wenn ich Sie richtig verstehe, haben Sie Angst, dass alles wieder passiert, genau wie damals.
+Sie sagen, dass Sie sich oft unsicher fühlen, wenn andere auf Sie reagieren, besonders im Beruf.
+Es klingt, als ob die Wut, die Sie jetzt spüren, aus einer tieferen Enttäuschung stammt.
+Sie wirken nachdenklich, als würden Sie über die Konsequenzen Ihrer Entscheidung nachdenken.
+Wenn ich Sie richtig verstehe, ist es für Sie wichtig, dass man Ihnen zuhört, bevor man etwas sagt.
+Sie sagen, dass Sie sich nicht wertgeschätzt fühlen, wenn Ihre Bemühungen ignoriert werden.
+Es klingt, als ob die Vorstellung, wieder zu arbeiten, sehr viel Energie kostet, aber auch ein bisschen Hoffnung gibt.
+Sie wirken erleichtert, als hätten Sie endlich jemanden gefunden, der das versteht, was Sie durchmachen.
+Wenn ich Sie richtig verstehe, hat die Zeit, die Sie alleine verbracht haben, Ihnen geholfen, klarer zu sehen, aber auch einsam gemacht.
+Sie sagen, dass Sie sich schuldig fühlen, weil Sie nicht mehr da sein konnten, als Ihre Mutter krank war.
+Es klingt, als ob das Thema Familie für Sie immer noch sehr belastend ist, besonders die Rolle, die Sie darin spielen.
+Sie wirken besorgt, als hätten Sie Angst, dass Ihre Ängste wieder auftauchen, wenn Sie zurück zur Arbeit gehen.
+Wenn ich Sie richtig verstehe, ist es für Sie ein großer Schritt, dass Sie bereit sind, mit Ihrem Partner darüber zu sprechen.
+Sie sagen, dass Sie sich müde fühlen, aber gleichzeitig hoffen, dass es irgendwann besser wird.
+Es klingt, als ob die Unterstützung, die Sie von Ihren Freunden bekommen, Ihnen hilft, nicht ganz allein zu sein.
+Sie wirken nachdenklich, als würden Sie über die Gründe für Ihre Reaktionen nachdenken.
+Wenn ich Sie richtig verstehe, fühlt sich das Aufgeben des Alkohols für Sie weniger wie eine Strafe und mehr wie ein Schritt in Richtung Heilung.
+Sie sagen, dass Sie sich sicherer fühlen, wenn Sie wissen, dass Sie jederzeit Hilfe bekommen können.
+Es klingt, als ob die Trauer, die Sie empfinden, mit dem Verlust verbunden ist, den Sie nie wirklich begleitet haben.
+Sie wirken erschöpft, als hätten Sie sich lange gegen etwas gewehrt, das jetzt überwältigend ist.
+Wenn ich Sie richtig verstehe, ist es für Sie wichtig, dass Ihre Gefühle erkannt und akzeptiert werden, auch wenn sie unangenehm sind.
+Sie sagen, dass Sie sich selbst nicht verstehen, weil Ihre Emotionen so schnell wechseln.
+Es klingt, als ob das Gefühl, nicht genug zu sein, tief verwurzelt ist und von früheren Erfahrungen kommt.
+Sie wirken zögerlich, als würden Sie sich fragen, ob Sie wirklich bereit sind, diesen Schritt zu tun.
+Wenn ich Sie richtig verstehe, ist die Angst vor dem Scheitern stärker als die Sehnsucht nach Veränderung.
+Sie sagen, dass Sie sich nicht gut genug fühlen, wenn Sie Fehler machen, obwohl Sie wissen, dass das normal ist.
+Es klingt, als ob das Gefühl der Unruhe, das Sie beschreiben, mit einer Art innerer Spannung verbunden ist, die Sie nicht loswerden können.
+Sie wirken entschlossen, als hätten Sie sich für einen neuen Weg entschieden, auch wenn er schwierig ist.
+Wenn ich Sie richtig verstehe, ist es für Sie ein großer Fortschritt, dass Sie sich jetzt trauen, über Ihre Ängste zu sprechen.
+Sie sagen, dass Sie sich in der Nähe Ihres Partners wohl fühlen, aber gleichzeitig Angst haben, dass er weggehen könnte.
+Es klingt, als ob die Gedanken über Ihre Kindheit immer noch stark in Ihrer Gegenwart präsent sind, besonders wenn Sie Stress haben.
+Sie wirken verwirrt, als würden Sie versuchen, zwischen verschiedenen Identitäten oder Rollen zu unterscheiden.
+Wenn ich Sie richtig verstehe, fühlen Sie sich oft nicht ernst genommen, wenn Sie Ihre Sorgen äußern.
+Sie sagen, dass Sie sich isoliert fühlen, obwohl Sie mit vielen Menschen in Kontakt stehen.
+Es klingt, als ob die Erinnerung an das letzte Mal, als Sie gelacht haben, sehr weit zurückliegt.
+Sie wirken angespannt, als hätten Sie Angst, dass Ihre Worte falsch interpretiert werden.
+Wenn ich Sie richtig verstehe, ist es für Sie eine große Herausforderung, sich emotional zu öffnen, weil Sie befürchten, verletzt zu werden.
+Sie sagen, dass Sie sich oft überfordert fühlen, wenn Sie versuchen, Ihre Emotionen zu regulieren.
+Es klingt, als ob die Angst vor der Zukunft Sie davon abhält, in die Gegenwart zu leben.
+Sie wirken müde, als hätten Sie viele Jahre lang auf andere Rücksicht genommen, ohne dafür Anerkennung zu erhalten.
+Wenn ich Sie richtig verstehe, ist es für Sie wichtig, dass Ihre Grenzen respektiert werden, aber Sie haben Schwierigkeiten, sie klar zu kommunizieren.
+Sie sagen, dass Sie sich manchmal wie ein Fremder in Ihrem eigenen Körper fühlen.
+Es klingt, als ob die Erinnerung an das erste Mal, als Sie sich geliebt gefühlt haben, immer noch sehr lebendig ist.
+Sie wirken nachdenklich, als würden Sie über die möglichen Auswirkungen Ihrer Entscheidung auf andere nachdenken.
+  negative: 
+Ich bin mir nicht sicher, ob das funktioniert. (Keine Reflexion, sondern Unsicherheit)
+Das ist doch kein Problem. (Abwertung, keine Spiegelung)
+Sie sollten das mal versuchen. (Rat, keine Reflexion)
+Das ist jetzt nicht relevant. (Verdrängung, keine Spiegelung)
+Was willst du damit sagen? (Fragen statt Spiegeln)
+Das ist doch logisch. (Verachtung, keine Spiegelung)
+Das ist doch völlig falsch. (Korrektur, keine Reflexion)
+Hör auf, so zu reden. (Befehl, keine Spiegelung)
+Das ist doch nur ein kleiner Fehler. (Minimierung, keine Spiegelung)
+Warum machst du dir so viele Gedanken? (Verurteilung, keine Spiegelung)
+Ich bin mir nicht sicher, ob das funktioniert. (Keine Reflexion, sondern Unsicherheit)
+Das ist doch kein Problem. (Abwertung, keine Spiegelung)
+Sie sollten das mal versuchen. (Rat, keine Reflexion)
+Das ist jetzt nicht relevant. (Verdrängung, keine Spiegelung)
+Was willst du damit sagen? (Fragen statt Spiegeln)
+Das ist doch logisch. (Verachtung, keine Spiegelung)
+Das ist doch völlig falsch. (Korrektur, keine Reflexion)
+Hör auf, so zu reden. (Befehl, keine Spiegelung)
+Das ist doch nur ein kleiner Fehler. (Minimierung, keine Spiegelung)
+Warum machst du dir so viele Gedanken? (Verurteilung, keine Spiegelung)
+Das ist ja vollkommen absurd. (Verachtung, keine Spiegelung)
+Du übertreibst wieder. (Abwertung, keine Spiegelung)
+Das ist doch offensichtlich. (Verachtung, keine Spiegelung)
+Mach einfach, was ich sage. (Befehl, keine Spiegelung)
+Das ist doch nur ein kleines Ding. (Minimierung, keine Spiegelung)
+Du hast doch gar keinen Grund, das so zu fühlen. (Negation der Empfindung, keine Spiegelung)
+Das ist doch nicht so schlimm. (Minimierung, keine Spiegelung)
+Hör auf, dich so zu benehmen. (Befehl, keine Spiegelung)
+Das ist doch nur ein Zufall. (Abwehr, keine Spiegelung)
+Du bist doch nicht wirklich so gemeint. (Verneinung der Intention, keine Spiegelung)
+Das ist doch egal. (Verdrängung, keine Spiegelung)
+Du hast doch schon genug Probleme. (Abwertung, keine Spiegelung)
+Das ist doch nur ein kleiner Schritt. (Minimierung, keine Spiegelung)
+Du sollst nicht so sentimental sein. (Verurteilung, keine Spiegelung)
+Das ist doch kein echtes Problem. (Abwertung, keine Spiegelung)
+Du kannst das doch alleine lösen. (Verdrängung, keine Spiegelung)
+Das ist doch nur ein Moment der Schwäche. (Minimierung, keine Spiegelung)
+Du musst nicht so dramatisch sein. (Verurteilung, keine Spiegelung)
+Das ist doch nicht so wichtig. (Verdrängung, keine Spiegelung)
+Du hast doch keine Ahnung, was du da sagst. (Verachtung, keine Spiegelung)
+Das ist doch nur ein kleiner Fehler. (Minimierung, keine Spiegelung)
+Du hast doch schon genug getan. (Abwertung, keine Spiegelung)
+Das ist doch nicht so schlimm. (Minimierung, keine Spiegelung)
+Du sollst nicht so emotional sein. (Verurteilu
 tags:
 - atomic
 - therapist_move

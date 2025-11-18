@@ -1,0 +1,89 @@
+{
+  "marker_id": "ATO_FRUSTRATION",
+  "marker_type": "ATO",
+  "version": "1.0",
+  "schema": "LeanDeep 4.0",
+  "created_date": "2025-11-10",
+  "definition": {
+    "name": "ATO_FRUSTRATION",
+    "category": "Atomic Topic Orientation",
+    "description": "Ein bereits existierender, allgemeiner Marker, der Frustration, Ärger oder emotionalen Stress ausdrückt. Dient als Baustein für komplexere semantische Marker.",
+    "semantic_family": ["EMOTION", "FRUSTRATION", "STRESS"],
+    "activation_conditions": [
+      "Explizite Frustrations-Ausdrücke",
+      "Ärger-Vokabular",
+      "Stress-Indikatoren",
+      "Negative emotionale Intensität"
+    ]
+  },
+  "examples": [
+    {
+      "text": "Der Horror ey",
+      "context": "Starke Frustration",
+      "intensity": 0.8
+    },
+    {
+      "text": "Nervig Ey..",
+      "context": "Mittlere Frustration",
+      "intensity": 0.6
+    },
+    {
+      "text": "bin total genervt",
+      "context": "Explizite Frustration",
+      "intensity": 0.7
+    },
+    {
+      "text": "Oh fuck",
+      "context": "Schock/Frustration",
+      "intensity": 0.75
+    },
+    {
+      "text": "echt so nervig",
+      "context": "Anhaltende Frustration",
+      "intensity": 0.65
+    },
+    {
+      "text": "Ätzend",
+      "context": "Allgemeine Frustration",
+      "intensity": 0.6
+    },
+    {
+      "text": "stresst noch mehr",
+      "context": "Eskalierender Stress",
+      "intensity": 0.75
+    },
+    {
+      "text": "WTF",
+      "context": "Ungläubige Frustration",
+      "intensity": 0.7
+    },
+    {
+      "text": "Wahnsinn",
+      "context": "Überwältigung",
+      "intensity": 0.65
+    },
+    {
+      "text": "Oh man. Diese Stadt.",
+      "context": "Resignation/Frustration",
+      "intensity": 0.7
+    }
+  ],
+  "linguistic_patterns": [
+    "der horror",
+    "nervig",
+    "[total|voll|so] genervt",
+    "oh [fuck|man|gott]",
+    "[echt|voll|so] [nervig|ätzend]",
+    "wtf",
+    "wahnsinn",
+    "stresst",
+    "ätzend"
+  ],
+  "metadata": {
+    "building_block_for": ["SEM_LOGISTICAL_PRESSURE", "SEM_AVOIDANT_BEHAVIOR"],
+    "can_combine_with": ["ATO_EXTERNAL_CONSTRAINT", "ATO_PLANNING_FAILURE"],
+    "domain": "emotional_state",
+    "valence": "negative",
+    "note": "Muss im kontextuellen Zusammenhang mit anderen ATOs stehen für SEM_LOGISTICAL_PRESSURE"
+  }
+}

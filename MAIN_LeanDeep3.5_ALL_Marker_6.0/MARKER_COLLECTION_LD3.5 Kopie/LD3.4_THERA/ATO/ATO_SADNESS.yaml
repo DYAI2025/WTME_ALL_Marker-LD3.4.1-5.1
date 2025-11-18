@@ -16,7 +16,57 @@ pattern:
 activation:
   rule: ANY 1
 examples:
-  positive: []
+  positive: 
+Ich bin heute so traurig, dass ich gar nicht weiß, wie ich weitermachen soll.
+Ich weine schon wieder, weil ich einfach nicht mehr kann.
+Ich fühle mich so niedergeschlagen, als hätte ich keine Energie mehr.
+Es ist melancholisch, wenn ich an die vergangenen Zeiten denke.
+Ich fühle mich leer, als ob alles Sinnlos wäre.
+Ich bin deprimiert, seit ich die Nachricht erhalten habe.
+Ich bin total down, nachdem das Treffen abgesagt wurde.
+Ich bin traurig, dass ich meine Großmutter nie mehr sehen werde.
+Ich weine ständig, weil ich das Gefühl habe, niemanden zu haben.
+Ich fühle mich niedergeschlagen, weil ich meinen Job verloren habe.
+Die melancholische Stimmung hält schon seit Tagen an.
+Ich bin leer, als hätte ich alle Kraft verloren.
+Ich bin deprimiert, weil ich meine Familie nicht mehr sehe.
+Ich bin down, weil ich mich nicht mehr zurecht finde.
+Ich bin traurig, dass ich nicht mehr so stark bin wie früher.
+Ich weine, weil ich einfach nicht mehr weitermache will.
+Ich fühle mich niedergeschlagen, weil ich nichts erreicht habe.
+Es ist melancholisch, wenn ich an die alten Zeiten denke.
+Ich fühle mich leer, als wäre mein Leben ohne Sinn.
+Ich bin deprimiert, weil ich mich selbst nicht mehr mag.
+Ich bin down, weil ich das Gefühl habe, verlassen zu sein.
+Ich bin traurig, dass ich nicht mehr so glücklich bin wie vorher.
+Ich weine, weil ich einfach nicht mehr weitermache kann.
+Ich fühle mich niedergeschlagen, weil ich nicht mehr weiß, was ich tun soll.
+Es ist melancholisch, wenn ich an die gemeinsamen Momente denke.
+Ich fühle mich leer, als hätte ich alles verloren.
+Ich bin deprimiert, weil ich mich nicht mehr auf etwas freuen kann.
+Ich bin down, weil ich das Gefühl habe, kein Ziel zu haben.
+Ich bin traurig, dass ich nicht mehr so stark bin wie andere.
+Ich weine, weil ich einfach nicht mehr weitermache will.
+Ich fühle mich niedergeschlagen, weil ich nicht mehr weiß, was ich tun soll.
+Es ist melancholisch, wenn ich an die vergangenen Zeiten denke.
+Ich fühle mich leer, als hätte ich alle Hoffnung verloren.
+Ich bin deprimiert, weil ich mich nicht mehr auf etwas freue.
+Ich bin down, weil ich das Gefühl habe, verloren zu sein.
+Ich bin traurig, dass ich nicht mehr so stark bin wie früher.
+Ich weine, weil ich einfach nicht mehr weitermache kann.
+Ich fühle mich niedergeschlagen, weil ich nicht mehr weiß, was ich tun soll.
+Es ist melancholisch, wenn ich an die gemeinsamen Momente denke.
+Ich fühle mich leer, als hätte ich alles verloren.
+Ich bin deprimiert, weil ich mich nicht mehr auf etwas freue.
+Ich bin down, weil ich das Gefühl habe, kein Ziel zu haben.
+Ich bin traurig, dass ich nicht mehr so stark bin wie andere.
+Ich weine, weil ich einfach nicht mehr weitermache will.
+Ich fühle mich niedergeschlagen, weil ich nicht mehr weiß, was ich tun soll.
+Es ist melancholisch, wenn ich an die vergangenen Zeiten denke.
+Ich fühle mich leer, als hätte ich alle Hoffnung verloren.
+Ich bin deprimiert, weil ich mich nicht mehr auf etwas freue.
+Ich bin down, weil ich das Gefühl habe, verloren zu sein.
+Ich bin traurig, dass ich nicht mehr so stark bin wie früher.
   negative: []
 tags:
 - sadness

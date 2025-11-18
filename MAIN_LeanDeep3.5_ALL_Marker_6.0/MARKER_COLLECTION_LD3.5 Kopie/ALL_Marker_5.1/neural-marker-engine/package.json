@@ -1,0 +1,33 @@
+{
+  "name": "neural-marker-engine",
+  "version": "1.0.0",
+  "description": "Neural-enabled LeanDeep marker detection engine with Supabase integration",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "migrate": "tsx src/scripts/migrate-markers.ts",
+    "test": "tsx src/scripts/test-engine.ts",
+    "dev": "tsx watch src/scripts/test-engine.ts"
+  },
+  "keywords": [
+    "leandeep",
+    "markers",
+    "nlp",
+    "neural",
+    "supabase"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "yaml": "^2.3.4",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0",
+    "tsx": "^4.7.0"
+  }
+}

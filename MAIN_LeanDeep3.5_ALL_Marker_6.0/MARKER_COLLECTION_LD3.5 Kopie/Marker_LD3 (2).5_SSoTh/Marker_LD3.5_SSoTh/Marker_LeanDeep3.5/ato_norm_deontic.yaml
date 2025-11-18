@@ -1,0 +1,17 @@
+id: ATO_DEONTIC_MODAL
+version: "3.1.4"
+frame:
+  signal: [ "deontic", "modal" ]
+  concept: "Pflicht/Soll/Muss-Sprache"
+  pragmatics: "Normhinweis"
+  narrative: "atomic"
+pattern:
+  type: "regex_any"
+  rules:
+  - "(?i)\\b(muss|musst|müssen|soll|sollte|verpflichtet)\\b"
+examples:
+- "Das muss so sein."
+- "Du solltest das beachten."
+- "Wir sind verpflichtet, ..."
+- "Es muss erledigt werden."
+- "Das Team soll liefern."

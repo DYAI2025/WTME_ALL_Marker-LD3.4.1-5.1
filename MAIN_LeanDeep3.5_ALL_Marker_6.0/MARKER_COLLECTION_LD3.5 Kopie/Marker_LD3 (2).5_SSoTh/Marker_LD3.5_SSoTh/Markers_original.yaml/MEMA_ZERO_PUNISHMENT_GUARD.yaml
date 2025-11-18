@@ -1,0 +1,20 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_ZERO_PUNISHMENT_GUARD
+frame:
+  signal: ["policy"]
+  concept: "Zero-Punishment Guard"
+  pragmatics: "Empathie-Bias"
+  narrative: "policy"
+composed_of: [CLU_INTUITION_SUPPORT, CLU_UNCERTAINTY_CASCADE]
+activation: {rule: "AT_LEAST 1 IN 6 messages"}
+metadata:
+  policy_hooks:
+    on_confirm(CLU_INTUITION_SUPPORT): {decrease_penalties: ["SEM_UNCERTAINTY_TONING"], factor: 0.5, ttl: 6}
+    on_confirm(CLU_INTUITION_UNCERTAINTY): {raise_evidence_threshold: true}
+examples:
+  - "ich bin da für dich … wir schaffen das"
+  - "danke dir … fühl mich gesehen"
+  - "gemeinsam kriegen wir das hin"
+  - "du kannst dich auf mich verlassen"
+  - "ich hör dir zu … okay?"

@@ -1,0 +1,18 @@
+family: SUPPORT
+cluster: CLU_INTUITION_SUPPORT
+sequences:
+  - name: confirm_and_decay
+    description: Sadness + Trust aktivieren, Validierung bestätigt, dann Abflauen.
+    events:
+      - sems: [SEM_SADNESS_EXPRESSIONS]
+      - sems: [SEM_TRUST_SIGNALING]
+      - sems: [SEM_SUPPORT_VALIDATION]
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []

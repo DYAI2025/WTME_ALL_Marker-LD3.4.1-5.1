@@ -1,0 +1,39 @@
+id: ATO_CARE_CHECKIN
+version: "3.4"
+schema: "LeanDeep"
+frame:
+  signal: ["care", "checkin"]
+  concept: "Caring-Check-in"
+  pragmatics: "Bindung/Sicherheit"
+  narrative: "prosocial"
+tags: [care, support]
+pattern:
+  regex: "\\b(wie\\s+geht\\s+es\\s+dir|kurz\\s+einchecken|alles\\s+okay|kommst\\s+du\\s+klar)\\b"
+  flags: ["IGNORECASE"]
+examples:
+  - "Wie geht es dir?"
+  - "Ich wollte kurz einchecken."
+  - "Alles okay?"
+  - "Kommst du klar?"
+  - "Nur kurz nachfragen."
+  - "Hey, wie fühlst du dich heute mit allem?"
+  - "Ich wollte hören, ob du irgendwas brauchst."
+  - "Kann ich dir gerade irgendwie den Rücken freihalten?"
+  - "Magst du erzählen, wie dein Tag war?"
+  - "Ich checke nur kurz ein: brauchst du eine Pause?"
+  - "Wie kommst du mit der Situation zurecht, soll ich helfen?"
+  - "Ich bin da – sag Bescheid, wenn was drückt, okay?"
+  - "Du wirkst erschöpft, möchtest du kurz reden?"
+  - "Alles gut bei dir, oder brennt etwas an?"
+metadata:
+  neg_examples:
+    - "Mach einfach weiter, wir haben keine Zeit zum Plaudern."
+    - "Ich habe nicht nachgefragt, weil es egal ist."
+    - "Wir müssen das Thema durchziehen, ohne auf Befinden zu achten."
+    - "Du wirst schon klarkommen, ich frage nicht nach."
+    - "Mir ist egal, wie dein Tag war."
+    - "Ich brauche kein Update, Hauptsache du lieferst."
+    - "Wenn etwas nicht passt, sag es nicht mir."
+    - "Ich checke nicht ein, das ist deine Baustelle."
+    - "Dein Befinden ist Nebensache, Ergebnisse zählen."
+    - "Ich will keine Details hören, erledig es einfach."

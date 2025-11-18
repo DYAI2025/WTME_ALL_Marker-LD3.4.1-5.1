@@ -1,0 +1,29 @@
+schema: "LeanDeep"
+version: "3.4"
+namespace: "consistency_external"
+
+defaults:
+  scoring:
+    window_messages: 5
+    norm: zscore
+    thresholds: { warn: 0.60, alert: 0.75, critical: 0.85 }
+
+markers:
+  - id: SEM_FACT_CONFLICT_EXTERNAL
+    frame:
+      signal: ["Wert-/Zahlendreher im selben Slot"]
+      concept: "Zahlen-/Faktenwiderspruch bei identischem Attribut"
+    composed_of: [ATO_NUMBER_MENTION]
+    pattern:
+      - detect_class: metric
+        rule: "same_slot_numbers_conflict(prev_of_other, current_of_other)"
+        tolerance: 0.05
+        distance_window_messages: 8
+    score: 0.70
+    metadata: { type: SEM }
+    examples:
+      - '"5 Meetings" ↔ "12 Meetings".'
+      - '"3 Tage" ↔ "7 Tage".'
+      - '"100 EUR" ↔ "150 EUR".'
+      - '"2,5 Stunden" ↔ "1 Stunde".'
+      - '"10 Personen" ↔ "8 Personen".'

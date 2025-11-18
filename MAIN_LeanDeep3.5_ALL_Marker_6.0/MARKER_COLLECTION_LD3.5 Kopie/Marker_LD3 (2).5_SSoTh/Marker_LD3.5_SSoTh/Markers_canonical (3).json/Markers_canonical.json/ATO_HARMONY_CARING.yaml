@@ -1,0 +1,14 @@
+id: "ATO_HARMONY_CARING"
+frame:
+  signal: "Harmonie, Fürsorge, Gemeinschaft"
+  concept: "Grün-Level empathische Verbindung"
+  pragmatics: "Identifiziert Caring-Verhalten"
+  narrative: "Wir sind alle verbunden"
+pattern: "\\b(harmonie|fürsorge|empathie|gemeinschaft|teilen|verbunden|umwelt|gleichberechtigung)\\b"
+examples: 
+  - "harmonisches Miteinander"
+  - "Fürsorge zeigen"
+  - "empathisch verstehen"
+  - "Gemeinschaft stärken"
+  - "alle verbunden"
+  - "Der Weg des auditiven Propheten: Nicht nur erkennen, was gehört wird – sondern was dadurch geschieht."

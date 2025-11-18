@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SD_GREEN_EMPATHY
+frame:
+  signal: ["semantic"]
+  concept: "SD Green Empathie"
+  pragmatics: "Gemeinschaft"
+  narrative: "micro"
+composed_of: [ATO_SD_GREEN_LEX, ATO_COMMUNITY_TALK]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "Konsens finden … Empathie zeigen"
+  - "Gemeinschaft vor Ego"
+  - "jede Stimme zählt"
+  - "Beziehung ist wichtig"
+  - "fühlst du dich gehört?"

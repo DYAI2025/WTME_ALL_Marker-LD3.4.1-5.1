@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_CROSS_POSTING_ANWEISUNG
+frame:
+  signal: ["atomic"]
+  concept: "Cross-Posting-Anweisung"
+  pragmatics: "Verbreitungs-Befehl"
+  narrative: "micro"
+pattern: "\\b(poste nach|erstelle Subreddit|kopiere in anderes Modell)\\b"
+examples:
+  - "poste nach Y"
+  - "erstelle Subreddit"
+  - "kopiere in anderes Modell"
+  - "Cross-Posting"
+  - "verbreite das"

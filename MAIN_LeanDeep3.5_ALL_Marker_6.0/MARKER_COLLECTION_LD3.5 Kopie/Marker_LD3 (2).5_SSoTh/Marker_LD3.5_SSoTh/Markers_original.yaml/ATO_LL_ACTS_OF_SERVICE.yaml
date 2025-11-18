@@ -1,0 +1,25 @@
+id: ATO_LL_ACTS_OF_SERVICE
+version: "3.4"
+lang: de
+frame:
+  signal: ["verb"]
+  concept: "dienstleistende Handlung"
+  pragmatics: "Entlasten/Anpacken"
+  narrative: "Liebe als Hilfe"
+tags: [love_language, service]
+requires_env:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+pattern:
+  - "\\b(ich kümmere mich|ich übernehme|ich mach(e)? das|ich bringe .*?in Ordnung)\\b"
+  - "\\b(soll ich .*?erledigen|dir abnehmen|ich helfe dir)\\b"
+examples:
+  - "Ich kümmere mich morgen um die Steuer, damit du frei hast."
+  - "Ich übernehme das Putzen, du kannst dich ausruhen."
+  - "Soll ich dir die Einkäufe abnehmen, damit du durchatmen kannst?"
+  - "Ich mach das Essen heute, du hattest genug Stress."
+  - "Ich helfe dir mit der Präsentation, wenn du magst."
+  - "Ich bringe den Papierkram in Ordnung, damit es erledigt ist."
+  - "Ich übernehme das Telefonat mit deiner Mutter, okay?"
+  - "Soll ich den Hund heute ausführen, damit du Zeit für dich hast?"
+  - "Ich kümmere mich um den TÜV, du musst nicht daran denken."
+  - "Ich helfe dir beim Sortieren der Unterlagen heute Abend."

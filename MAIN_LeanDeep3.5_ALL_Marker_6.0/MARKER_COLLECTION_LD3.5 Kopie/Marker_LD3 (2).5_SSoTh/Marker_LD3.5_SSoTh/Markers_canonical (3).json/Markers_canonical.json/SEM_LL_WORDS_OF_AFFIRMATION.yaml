@@ -1,0 +1,27 @@
+id: SEM_LL_WORDS_OF_AFFIRMATION
+version: "3.4"
+lang: de
+frame:
+  signal: ["aggregation"]
+  concept: "Primat der Worte"
+  pragmatics: "verbale Bestärkung priorisiert"
+  narrative: "Liebe über Sprache"
+composed_of:
+  any_of: ["ATO_LL_WORDS_OF_AFFIRMATION"]
+  window:
+    utterances: 10
+  min_hits: 2
+precondition:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+tags: [love_language]
+examples:
+  - "Innerhalb weniger Nachrichten: 'Ich schätze dich' + 'Deine Geduld ist großartig'."
+  - "Partnerschafts-Dialog mit zwei Bestätigungen: 'Danke dir' und 'Ich bin stolz auf dich'."
+  - "Gespräch, in dem mehrfach 'du bist so gut darin' und 'das bedeutet mir viel' auftauchen."
+  - "Szene, in der die Partnerin sagt 'ich bewundere, wie du das machst' und direkt danach 'du bist großartig'."
+  - "Dialog: 'Sag mir, dass du mich liebst' gefolgt von 'deine Art zu hören ist großartig'."
+  - "Paartherapie-Ausschnitt mit zwei ernst gemeinten 'Danke dir' in zehn Turns."
+  - "Nachrichtenfolge: 'Ich schätze, was du tust' + 'du gibst mir so viel Halt durch deine Worte'."
+  - "Voice-Note Transkript mit mehrfachen Anerkennungen innerhalb kurzer Zeit."
+  - "Abendgespräch, in dem er zweimal betont 'Ich bin so stolz auf dich'."
+  - "Chatverlauf: 'Deine Pflege für uns ist großartig' und 'Ich bewundere deine Stärke'."

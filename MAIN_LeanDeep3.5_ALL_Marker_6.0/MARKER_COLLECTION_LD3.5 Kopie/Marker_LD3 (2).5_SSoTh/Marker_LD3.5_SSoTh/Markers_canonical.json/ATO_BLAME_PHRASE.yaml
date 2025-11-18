@@ -1,0 +1,34 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_BLAME_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Schuldzuweisung"
+  pragmatics: "Eskalation"
+  narrative: "surface"
+pattern:
+  tokens: ["deine Schuld", "immer du", "typisch du", "wegen dir", "du hast versaut"]
+examples:
+  - "Immer du machst das, du bist an allem schuld."
+  - "Typisch von dir, du versaust es jedes Mal."
+  - "Hör auf damit, wegen dir ist das ganze Projekt gekippt."
+  - "Das ist deine Schuld, wie immer, du lernst es nie."
+  - "Noch so ein Spruch, und ich erinnere alle daran, dass du alles versaut hast."
+  - "Du hast das vermasselt, niemand sonst."
+  - "Wegen dir sitzen wir jetzt in diesem Chaos."
+  - "Das war allein deine Entscheidung, du trägst die Verantwortung."
+  - "Du hast den Termin verpasst, das musst du ausbaden."
+  - "Immer du verursachst den Ärger, typisch du."
+metadata:
+  neg_examples:
+    - "Wir tragen das gemeinsam, niemand bekommt die Schuld."
+    - "Ich suche nicht nach dem Schuldigen, sondern nach Lösungen."
+    - "Das war ein Systemfehler, nicht die Verantwortung einer Person."
+    - "Lass uns Ursachen analysieren, ohne jemanden anzuklagen."
+    - "Ich weiß, dass du dein Bestes gegeben hast – kein Vorwurf."
+    - "Wir lernen daraus, ohne die Schuld abzuschieben."
+    - "Es gab mehrere Faktoren, niemand trägt das allein."
+    - "Ich spreche von Verbesserungen, nicht von Schuld."
+    - "Wir lösen das gemeinsam, statt Finger zu zeigen."
+    - "Die Verantwortung liegt beim Prozess, nicht bei dir."
+

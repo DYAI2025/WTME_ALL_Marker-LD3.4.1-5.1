@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_TRUST_SIGNALING
+frame:
+  signal: ["semantic"]
+  concept: "Vertrauen signalisieren"
+  pragmatics: "Bindung"
+  narrative: "micro"
+composed_of: [ATO_TRUST_PHRASE, ATO_SUPPORT_PHRASE]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "ich bin da für dich … wir schaffen das"
+  - "danke dir … fühl mich gesehen"
+  - "gemeinsam kriegen wir das hin"
+  - "du kannst dich auf mich verlassen"
+  - "ich hör dir zu … okay?"

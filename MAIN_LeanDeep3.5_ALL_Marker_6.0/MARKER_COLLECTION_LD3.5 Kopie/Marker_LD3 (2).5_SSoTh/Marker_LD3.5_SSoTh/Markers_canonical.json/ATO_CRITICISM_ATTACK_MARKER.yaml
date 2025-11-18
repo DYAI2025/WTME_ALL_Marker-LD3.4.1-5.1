@@ -1,0 +1,58 @@
+name: ATO_CRITICISM_ATTACK_MARKER
+label: "Kritik-Attacke"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Persönliche Angriffe oder harte Kritik"
+patterns:
+  - type: regex
+    value: "(du bist immer so|das ist typisch für dich|du machst alles falsch|unfähig|idiotisch)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "criticism_attack"
+  interpretant: "effect_on_state: {conflict: +0.25, trust: -0.2}"
+examples:
+  positive_de:
+    - "Du bist immer so."
+    - "Das ist typisch für dich."
+    - "Du machst alles falsch."
+    - "Unfähig!"
+    - "Idiotisch von dir."
+    - "Immer dein Fehler."
+    - "Typisch dumm."
+    - "Alles falsch machen."
+    - "Voll unfähig."
+    - "Idiotischer Move."
+    - "So bist du immer."
+    - "Typisch du."
+    - "Falsch total."
+    - "Unfähigkeit pur."
+    - "Idiotisch handeln."
+    - "Fehler immer dein."
+    - "Dumm typisch."
+    - "Machen falsch alles."
+    - "Pur unfähig."
+    - "Move idiotisch."
+  negative_de:
+    - "Du bist super."
+    - "Das ist gut für dich."
+    - "Du machst alles richtig."
+    - "Fähig!"
+    - "Klug von dir."
+    - "Nie dein Fehler."
+    - "Nicht dumm."
+    - "Alles richtig machen."
+    - "Voll fähig."
+    - "Kluger Move."
+    - "So bist du toll."
+    - "Nicht typisch."
+    - "Richtig total."
+    - "Fähigkeit pur."
+    - "Klug handeln."
+    - "Fehler nicht dein."
+    - "Nicht dumm."
+    - "Machen richtig alles."
+    - "Pur fähig."
+    - "Move klug."

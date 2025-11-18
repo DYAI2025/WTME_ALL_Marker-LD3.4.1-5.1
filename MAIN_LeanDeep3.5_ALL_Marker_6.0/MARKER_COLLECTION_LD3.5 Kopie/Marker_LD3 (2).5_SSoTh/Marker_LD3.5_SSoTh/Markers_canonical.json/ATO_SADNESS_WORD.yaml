@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SADNESS_WORD
+frame:
+  signal: ["token"]
+  concept: "Traurigkeit"
+  pragmatics: "Niedergeschlagen"
+  narrative: "surface"
+pattern:
+  tokens: ["traurig", "schade", "bedrückt", "vermisse", "allein", "leer"]
+examples:
+  - "ich vermisse … hätte es anders machen sollen"
+  - "so schade … tut mir leid"
+  - "fühle mich schuldig … schwer auszuhalten"
+  - "allein damit … traurig"
+  - "hätte früher reden sollen … bereue es"
+
+

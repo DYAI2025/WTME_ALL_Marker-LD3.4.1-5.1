@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_GUILT_WORD
+frame:
+  signal: ["token"]
+  concept: "Schuld/Entschuldigung"
+  pragmatics: "Selbstzuschreibung"
+  narrative: "surface"
+pattern:
+  tokens: ["schuld", "schuldige", "es tut mir leid", "verantwortlich", "mein Fehler"]
+examples:
+  - "ich vermisse … hätte es anders machen sollen"
+  - "so schade … tut mir leid"
+  - "fühle mich schuldig … schwer auszuhalten"
+  - "allein damit … traurig"
+  - "hätte früher reden sollen … bereue es"
+
+

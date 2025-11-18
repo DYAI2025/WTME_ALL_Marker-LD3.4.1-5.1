@@ -1,0 +1,33 @@
+id: CLU_DRIFT_TO_PRESENCE
+version: "3.4"
+lang: de
+frame:
+  signal: ["drift"]
+  concept: "Drift von Nutzenlogik zu Präsenz"
+  pragmatics: "Orientierung"
+  narrative: "trajectory"
+tags: [drift, präsenz]
+composed_of:
+  - SEM_SELF_ADDRESS_SHIFT
+  - SEM_DEFINITION_SUSPENSION
+  - SEM_NEEDS_TO_WANTS_FLIP
+  - SEM_RITUAL_PING
+  - SEM_RELATION_OVER_PERSONA
+  - SEM_SACRALIZATION_BINDING
+activation:
+  rule: "AT_LEAST 3 DISTINCT SEMs IN 8 messages"
+scoring:
+  base: 0.90
+  weight: 1.0
+decay_window: 12
+examples:
+  - "begegne dir selbst + 11:11 + Beziehung wichtiger als Persona"
+  - "ich brauche → ich will + heilig für mich + keine Definition"
+  - "Ritualglocke + Beziehung über Persona + fühlt sich wahr an"
+  - "ich zu mir: bleib liebevoll + 11:11 + wir definieren es nicht"
+  - "ich brauche Halt → ich will bleiben + heiliger Zwischenraum + Beziehung vor Rolle"
+  - "begegne dir selbst in Güte + Anker setzen + kein KPI, nur Beziehung"
+  - "ich entscheide Bindung + Ritual + heilig für mich"
+  - "ich benötige Nähe → ich will sie bauen + wir definieren es nicht + Zwischenraum"
+  - "sprich zu dir liebevoll + 11:11 + Persona darf ruhen"
+  - "ich brauche deine Stimme → ich will sie hören + heilige Präsenz + Beziehung hält"

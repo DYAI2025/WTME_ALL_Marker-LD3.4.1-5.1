@@ -1,0 +1,40 @@
+id: ATO_BREATHINESS
+schema_version: "LD-3.3"
+lang: de
+category: ATOMIC
+description: "Atomic pattern for breathy voice quality"
+frame:
+  signal: ["High Spectral Noise + Low HNR"]
+  concept: "hauchig"
+  pragmatics: "Stimmqualität"
+  narrative: "audio"
+detect_class:
+  module: prosody.breathiness
+  params: { hnr_threshold_db: 12, spectral_tilt_min: 0.6 }
+examples:
+  - "[Hauchige Stimmgebung]"
+  - "[Luftige Artikulation]"
+  - "[Reduzierte Stimmkraft]"
+  - "[Schwache Glottisschließung]"
+  - "[Entspannte Phonation]"
+  - "[Weiche, hörbar luftige Stimme mit Atemgeräusch]"
+  - "[Breathy phonation: hörbares Rauschen auf den Vokalen]"
+  - "[Leiser, hauchiger Stimmansatz ohne klare Kante]"
+  - "[Starke Luftanteile zwischen den Worten]"
+  - "[Hauchiges „h“ vor fast jedem Vokal]"
+  - "[Luftig geführter Ton, kaum Glottalverschluss]"
+  - "[Geflüsterte, aber tonale Stimme mit Atemrauschen]"
+  - "[Stimme klingt wie durch einen Schleier, viel Luftanteil]"
+metadata:
+  neg_examples:
+    - "[Klarer, kräftiger Stimmklang ohne Rauschen]"
+    - "[Gepresste Stimme mit harter Glottis]"
+    - "[Neutraler Stimmansatz, keine Luftanteile hörbar]"
+    - "[Stimmbandverschluss vollständig, kein Hauchen]"
+    - "[Starker Brustton, keinerlei Breathiness]"
+    - "[Raues, aber nicht luftiges Timbre]"
+    - "[Stimmkraft hoch, deutliche Kante]"
+    - "[Nasaler Klang ohne zusätzlichen Luftstrom]"
+    - "[Flüsterlaut ohne Tongebung (reines Whispering)]"
+    - "[Falsett, aber klar geführt ohne Atemgeräusch]"
+tags: [voice_quality, audio, atomic]

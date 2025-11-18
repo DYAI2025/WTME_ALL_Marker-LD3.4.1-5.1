@@ -1,0 +1,34 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_COMMIT_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Zusage"
+  pragmatics: "Verbindlichkeit"
+  narrative: "surface"
+pattern:
+  tokens: ["ich verspreche", "fix", "heute noch", "ich kümmere mich", "terminiert"]
+examples:
+  - "Mach ich heute noch, du bekommst das Update bis 18 Uhr."
+  - "Ich verspreche dir, dass ich das Formular heute abschicke."
+  - "Ich kümmere mich darum und melde das Ergebnis am Abend."
+  - "Gleich nach dem Meeting setze ich das um."
+  - "Heute fix – du hast die Unterlagen vor Feierabend."
+  - "Ich committe mich, das Ticket bis Freitag zu schließen."
+  - "Ich nehme das in die Hand und halte den Termin morgen ein."
+  - "Ich verspreche, dass du spätestens Montag Bescheid bekommst."
+  - "Ich garantiere, dass ich es heute priorisiere."
+  - "Ich kümmere mich persönlich darum und sage dir Bescheid, sobald es erledigt ist."
+metadata:
+  neg_examples:
+    - "Vielleicht mache ich das irgendwann."
+    - "Ich verspreche lieber nichts."
+    - "Mal schauen, ob ich dazu komme."
+    - "Ich nehme es mir vor, aber keine Garantie."
+    - "Ich weiß nicht, ob ich das schaffe."
+    - "Mach du das, ich habe keinen Plan."
+    - "Wir lassen das offen, ohne Termin."
+    - "Ich will mich nicht festlegen."
+    - "Vielleicht klappt es, vielleicht nicht."
+    - "Ich habe keine Zeit, also eher nicht."
+

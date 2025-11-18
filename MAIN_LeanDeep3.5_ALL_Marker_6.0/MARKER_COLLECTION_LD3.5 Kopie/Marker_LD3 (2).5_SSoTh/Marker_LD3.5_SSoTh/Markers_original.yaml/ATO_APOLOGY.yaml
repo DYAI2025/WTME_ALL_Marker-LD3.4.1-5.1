@@ -1,0 +1,58 @@
+name: ATO_APOLOGY
+label: "Entschuldigung"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Ausdrücke der Reue oder Entschuldigung für ein Verhalten oder eine Aussage"
+patterns:
+  - type: regex
+    value: "(tut mir leid|entschuldige|verzeih mir|mein Fehler|sorry|das war dumm von mir)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "apology_expression"
+  interpretant: "effect_on_state: {trust: +0.15, conflict: -0.2}"
+examples:
+  positive_de:
+    - "Tut mir leid."
+    - "Entschuldige bitte."
+    - "Verzeih mir das."
+    - "Das war mein Fehler."
+    - "Sorry, ich war daneben."
+    - "Es tut mir leid, dass ich das gesagt habe."
+    - "Ich entschuldige mich."
+    - "Das war nicht in Ordnung von mir."
+    - "Bitte verzeih."
+    - "Ich bedauere das."
+    - "Entschuldigung für den Ton."
+    - "War nicht so gemeint, sorry."
+    - "Ich hab überreagiert, tut leid."
+    - "Verzeihung, mein Fehler."
+    - "Das tut mir wirklich leid."
+    - "Ich entschuldige mich aufrichtig."
+    - "Sorry für die Verzögerung."
+    - "Bitte nimm meine Entschuldigung an."
+    - "Das war unangemessen, verzeih."
+    - "Ich bereue das, sorry."
+  negative_de:
+    - "Das ist dein Problem."
+    - "Mach ich nicht."
+    - "Kein Bedarf."
+    - "Vergiss es."
+    - "Ich hab recht."
+    - "Du bist schuld."
+    - "Weiter so."
+    - "Ignorier das."
+    - "Keine Zeit."
+    - "Das nervt mich."
+    - "Hör auf."
+    - "Das war okay."
+    - "Kein Grund zur Entschuldigung."
+    - "Ich steh dazu."
+    - "Du übertreibst."
+    - "Mach allein."
+    - "Kein Kompromiss."
+    - "Verteidige mich."
+    - "Blame dich."
+    - "Konflikt hoch."

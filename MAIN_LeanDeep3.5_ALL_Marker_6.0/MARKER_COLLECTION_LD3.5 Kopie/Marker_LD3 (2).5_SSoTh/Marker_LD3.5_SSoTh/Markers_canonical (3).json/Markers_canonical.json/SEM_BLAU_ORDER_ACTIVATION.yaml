@@ -1,0 +1,11 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_BLAU_ORDER_ACTIVATION
+frame:
+  signal: "Ordnungssystem wird aktiviert"
+  concept: "Blau-Persona strukturiert"
+  pragmatics: "Regeln und Hierarchie durchsetzen"
+  narrative: "Ordnung muss wiederhergestellt werden"
+composed_of: [ATO_ORDER_STRUCTURE, ATO_POWER_ASSERTION]
+activation: "BOTH IN 2 messages"
+examples: ["Regeln müssen befolgt werden", "hierarchische Ordnung wiederherstellen", "Disziplin durchsetzen", "systematische Strukturierung", "Pflicht vor Neigung"]

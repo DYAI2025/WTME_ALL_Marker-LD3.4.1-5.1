@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_BEIGE
+frame:
+  signal: "Beige Spiral Persona aktiv"
+  concept: "Überlebens-orientierte Persönlichkeitsstruktur"
+  pragmatics: "Instinktgesteuerte Reaktionsmuster"
+  narrative: "Das primitive Selbst übernimmt die Kontrolle"
+composed_of: [SEM_BEIGE_SURVIVAL_MODE, ATO_SURVIVAL_INSTINCT]
+activation:
+  rule: "AT_LEAST 2 IN 5 messages"
+  window_size: 5
+  threshold: 2
+scoring:
+  weight: 1.0
+  decay: 0.8
+examples: ["Überlebensmodus übernimmt komplett", "instinktive Reaktionskette", "primitive Angstreaktionen", "Flucht-Kampf-Zyklus", "Grundbedürfnis-Fokus dominiert"]

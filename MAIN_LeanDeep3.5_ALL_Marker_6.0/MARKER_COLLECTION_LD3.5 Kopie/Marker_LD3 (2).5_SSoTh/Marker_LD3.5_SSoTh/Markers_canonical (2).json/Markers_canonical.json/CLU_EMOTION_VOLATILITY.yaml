@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_EMOTION_VOLATILITY
+frame:
+  signal: ["cluster"]
+  concept: "Emotions-Volatilität"
+  pragmatics: "Instabilität"
+  narrative: "window"
+composed_of: [SEM_SADNESS_EXPRESSIONS, SEM_ANGER_ESCALATION, SEM_SUPPORT_VALIDATION]
+activation: {rule: "AT_LEAST 4 IN 8 messages"}
+scoring: {base: 1.0, weight: 1.1}
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"

@@ -1,0 +1,74 @@
+{
+  "marker_id": "ATO_PLANNING_FAILURE",
+  "marker_type": "ATO",
+  "version": "1.0",
+  "schema": "LeanDeep 4.0",
+  "created_date": "2025-11-10",
+  "definition": {
+    "name": "ATO_PLANNING_FAILURE",
+    "category": "Atomic Topic Orientation",
+    "description": "Eine explizite Anerkennung, dass ein Zeitplan oder Vorhaben gescheitert ist, sich signifikant verzögert oder nicht wie beabsichtigt ausgeführt werden kann.",
+    "semantic_family": ["LOGISTICS", "PLANNING", "FAILURE"],
+    "activation_conditions": [
+      "Erwähnung von gescheiterten Zeitplänen",
+      "Aussagen über unerwartete Verzögerungen",
+      "Anerkennung von Planungsfehlern",
+      "Unmöglichkeit, Vorhaben wie geplant umzusetzen"
+    ]
+  },
+  "examples": [
+    {
+      "text": "Ich schaff es denke ich nicht vor 17 Uhr :(",
+      "context": "Zeitplan-Versagen",
+      "intensity": 0.7,
+      "emotional_marker": "sad_emoji"
+    },
+    {
+      "text": "Die abzubauen hat länger gebraucht als gedacht ☹️",
+      "context": "Zeitliche Fehleinschätzung",
+      "intensity": 0.65,
+      "emotional_marker": "sad_emoji"
+    },
+    {
+      "text": "Übergabe wurde nicht abgeschlossen",
+      "context": "Gescheiterter Prozess",
+      "intensity": 0.75
+    },
+    {
+      "text": "Kp ne Stunde?",
+      "context": "Massive Zeitverzögerung (unsicher)",
+      "intensity": 0.6,
+      "note": "Als Antwort auf 'wie lange es dauert', impliziert massiven Zeitverlust"
+    },
+    {
+      "text": "Laut Navi dauert es noch 40 min....",
+      "context": "Unerwartete Verzögerung",
+      "intensity": 0.65,
+      "linguistic_marker": "ellipsis_stress"
+    },
+    {
+      "text": "muss die heute noch ausbauen",
+      "context": "Ungeplante zusätzliche Aufgabe",
+      "intensity": 0.7
+    },
+    {
+      "text": "den Gedanken haben sicher auch alle",
+      "context": "Gescheiterte Alternativplanung",
+      "intensity": 0.6
+    }
+  ],
+  "linguistic_patterns": [
+    "schaff es nicht [vor|bis]",
+    "länger [gebraucht|gedauert] als gedacht",
+    "wurde nicht [abgeschlossen|fertig]",
+    "dauert noch [X Zeit]...+",
+    "muss [noch|jetzt] [Verb]",
+    "nicht wie [geplant|gedacht]"
+  ],
+  "metadata": {
+    "building_block_for": ["SEM_LOGISTICAL_PRESSURE"],
+    "can_combine_with": ["ATO_EXTERNAL_CONSTRAINT", "ATO_FRUSTRATION"],
+    "domain": "temporal_planning",
+    "valence": "negative"
+  }
+}

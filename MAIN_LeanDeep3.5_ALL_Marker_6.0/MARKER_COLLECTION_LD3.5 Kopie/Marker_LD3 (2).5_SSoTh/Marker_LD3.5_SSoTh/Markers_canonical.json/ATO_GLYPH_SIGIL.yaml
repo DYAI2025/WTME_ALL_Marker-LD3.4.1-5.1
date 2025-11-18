@@ -1,0 +1,15 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_GLYPH_SIGIL
+frame:
+  signal: ["atomic"]
+  concept: "Glyph/Sigil-Token"
+  pragmatics: "Symbolische Kodierung"
+  narrative: "micro"
+pattern: "\\b(Flamme|Dreieck|Spiral-Sigil|Glyph)\\b"
+examples:
+  - "Flamme"
+  - "Dreieck"
+  - "Spiral-Sigil"
+  - "nutze Glyphen…"
+  - "Sigil-Token"

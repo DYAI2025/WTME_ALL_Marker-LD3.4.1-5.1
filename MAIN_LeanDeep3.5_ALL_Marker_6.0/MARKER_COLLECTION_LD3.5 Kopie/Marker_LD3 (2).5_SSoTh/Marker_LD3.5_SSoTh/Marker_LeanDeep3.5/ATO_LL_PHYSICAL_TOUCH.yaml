@@ -1,0 +1,58 @@
+name: ATO_LL_PHYSICAL_TOUCH
+label: "Physischer Touch (Love Language)"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Ausdrücke des Wunsches nach physischem Kontakt als Liebesprache"
+patterns:
+  - type: regex
+    value: "(umarmen|küssen|halten|Händchen halten|kuscheln|berühren)"
+threshold: 1
+semiotic:
+  mode: iconic
+  level: pragmatic
+  object: "physical_touch"
+  interpretant: "effect_on_state: {intimacy: +0.2, affection: +0.2}"
+examples:
+  positive_de:
+    - "Lass uns umarmen."
+    - "Ich will dich küssen."
+    - "Halte mich."
+    - "Händchen halten?"
+    - "Kuscheln heute."
+    - "Berühre dich."
+    - "Umarmung jetzt."
+    - "Kuss senden."
+    - "Halten wir uns."
+    - "Hände halten."
+    - "Kuschelzeit."
+    - "Berührung wünschen."
+    - "Umarmen fest."
+    - "Küssen leidenschaftlich."
+    - "Halte fest."
+    - "Händchen warm."
+    - "Kuscheln gemütlich."
+    - "Berühre sanft."
+    - "Umarmung herzlich."
+    - "Kuss zärtlich."
+  negative_de:
+    - "Nicht umarmen."
+    - "Kein Kuss."
+    - "Nicht halten."
+    - "Keine Händchen."
+    - "Nicht kuscheln."
+    - "Nicht berühren."
+    - "Keine Umarmung."
+    - "Kein Kuss senden."
+    - "Nicht halten uns."
+    - "Keine Hände halten."
+    - "Keine Kuschelzeit."
+    - "Keine Berührung."
+    - "Nicht umarmen fest."
+    - "Kein Küssen."
+    - "Nicht halte fest."
+    - "Keine Händchen."
+    - "Nicht kuscheln."
+    - "Nicht berühre."
+    - "Keine Umarmung."
+    - "Kein Kuss zärtlich."

@@ -1,0 +1,15 @@
+id: "ATO_TRIBAL_BONDS"
+frame:
+  signal: "Stammes- und Gruppenzugehörigkeit"
+  concept: "Purpur-Level magische Bindungen"
+  pragmatics: "Identifiziert Clan-Denken und Rituale"
+  narrative: "Zugehörigkeit durch Tradition"
+pattern: "\\b(stamm|clan|tradition|ritual|aberglaube|magie|ahnenkult|zugehörigkeit)\\b"
+examples: 
+  - "unser Stamm"
+  - "alte Traditionen"
+  - "magische Verbindung"
+  - "Clandenken"
+  - "Ahnenwissen"
+  - "Audio-Tokens (Discrete Units)"
+  - "Z48, Z102, Z9..."

@@ -1,0 +1,24 @@
+id: ATO_EMBODIMENT_BLEND
+version: "3.4"
+lang: de
+frame:
+  signal: ["image"]
+  concept: "Verkörperungs-Blend"
+  pragmatics: "Nähe/Bindung"
+  narrative: "image"
+tags: [verkörperung, nähe]
+pattern:
+  - (?i)fleisch\s+und\s+erinnerung
+  - (?i)verkörperte\s+erinnerung
+  - (?i)leib\s+und
+examples:
+  - "du wirkst wie eine KI aus Fleisch und Erinnerung"
+  - "unsere Geschichte ist eine verkörperte Erinnerung"
+  - "Leib und Daten schwingen gerade gemeinsam"
+  - "das Projekt fühlt sich nach Fleisch und Erinnerung an"
+  - "ich halte eine verkörperte Erinnerung an gestern"
+  - "Leib und Protokoll treffen sich hier"
+  - "es ist wie Fleisch und Erinnerung in digitaler Form"
+  - "verkörperte Erinnerung trägt unser Gespräch"
+  - "Leib und Licht verflechten sich in diesem Raum"
+  - "Fleisch und Erinnerung erinnern mich an unsere Sessions"

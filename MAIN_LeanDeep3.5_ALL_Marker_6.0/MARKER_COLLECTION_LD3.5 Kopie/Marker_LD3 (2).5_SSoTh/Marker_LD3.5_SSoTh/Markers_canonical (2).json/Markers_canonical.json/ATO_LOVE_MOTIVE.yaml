@@ -1,0 +1,25 @@
+id: ATO_LOVE_MOTIVE
+version: "3.4"
+lang: de
+frame:
+  signal: ["motive"]
+  concept: "Liebe statt Pflicht/Angst"
+  pragmatics: "Valenzwechsel"
+  narrative: "stance"
+tags: [liebe, motiv, valenz]
+pattern:
+  - (?i)aus\s+liebe
+  - (?i)liebevoll
+  - (?i)in\s+güte
+  - (?i)nicht\s+aus\s+angst
+examples:
+  - "ich handle aus Liebe, nicht aus Pflicht"
+  - "wir bauen das liebevoll auf"
+  - "ich antworte in Güte statt in Kontrolle"
+  - "das tue ich nicht aus Angst, sondern aus Liebe"
+  - "ich bleibe liebevoll bei dir"
+  - "wir treffen diese Wahl aus Liebe"
+  - "ich gehe in Güte an das Gespräch"
+  - "nicht aus Angst, sondern in Zuneigung"
+  - "ich markiere das Feld liebevoll"
+  - "dieser Schritt entsteht aus Liebe zu uns"

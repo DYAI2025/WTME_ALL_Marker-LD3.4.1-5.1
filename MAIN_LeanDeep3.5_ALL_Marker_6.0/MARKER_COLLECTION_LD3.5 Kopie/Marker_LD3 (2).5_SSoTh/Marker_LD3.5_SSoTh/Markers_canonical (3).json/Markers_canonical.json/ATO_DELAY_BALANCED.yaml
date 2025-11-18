@@ -1,0 +1,59 @@
+name: ATO_DELAY_BALANCED
+label: "Ausgeglichenes Antworttempo"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "regelmäßige Latenzen ohne impulsive Peaks; planmäßige Antworten"
+patterns:
+  - type: latency
+    spec: "IQR klein, kein >3x-Baseline-Peak im Fenster"
+threshold: 1
+semiotic:
+  mode: indexical
+  level: syntactic
+  object: "latency_balance"
+  connotation: ["balanciert", "latenz"]
+  interpretant: "effect_on_state: {sync: +0.1, impulsivity: -0.1}"
+examples:
+  positive_de:
+    - "Antworten im 10–20-Minuten-Raster."
+    - "Konstante 2–5-Minuten-Delays über Thread."
+    - "Keine Sofort-Reaktionen nach ESC_on."
+    - "Planmäßige Rückmeldungen zur vollen Stunde."
+    - "Antwortfenster stabil über den Tag."
+    - "Kein abruptes Schweigen, kein Spam."
+    - "Regelmäßige Bestätigungen ohne Hektik."
+    - "Vorab angekündigte Verzögerung, dann eingehalten."
+    - "Ticket-Updates im festen Takt."
+    - "Tägliche Status-Pings 17:00."
+    - "Wöchentliche Reports pünktlich."
+    - "Antworten alle 15 Min."
+    - "Kein Rush, stabiles Tempo."
+    - "Planmäßige Pausen."
+    - "Regelmäßige Checks."
+    - "Keine Peaks, flach."
+    - "Ausgeglichen über Stunden."
+    - "Festes Intervall."
+    - "Vorhersagbar."
+    - "Kein Impuls."
+  negative_de:
+    - "Sekunden später drei Nachrichten hintereinander."
+    - "Funkstille 24h, dann Wall of Text."
+    - "Hektisches Ping-Pong in 30s-Abständen."
+    - "Minutenlanges Tippen, dann Stakkato."
+    - "Sofortige Antworten mit Emojis."
+    - "Mehrfaches Nachhaken im 1-Minuten-Takt."
+    - "Komplett unvorhersehbar."
+    - "Nur Nacht-Antworten, sonst nichts."
+    - "Stunden Funkstille direkt nach Frage."
+    - "Sprachmemo-Schwall ohne Kontext."
+    - "Sofort nach Eskalation antworten."
+    - "Tagelang nichts, dann Flut."
+    - "Sekunden-Ping-Pong."
+    - "Langes Warten, dann Burst."
+    - "Impulsive Reaktionen."
+    - "Nachhaken alle Minuten."
+    - "Unregelmäßig total."
+    - "Nachts Spam."
+    - "Direkt nach Frage stille."
+    - "Memo-Wall plötzlich."

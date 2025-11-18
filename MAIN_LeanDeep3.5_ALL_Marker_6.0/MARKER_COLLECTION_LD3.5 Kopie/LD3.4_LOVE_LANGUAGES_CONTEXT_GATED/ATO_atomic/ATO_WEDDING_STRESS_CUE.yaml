@@ -8,7 +8,7 @@ frame:
   narrative: "Vorbereitung erschöpft"
 tags: [stress, wedding]
 requires_env:
-  any_of: ["SCN_WEDDING_CONTEXT"]
+  any_of: ["SEM_WEDDING_CONTEXT"]
 pattern:
   - "\\b(Stres(s|sig)|Zeitplan|wir sind im Verzug|alles wird zu viel|Budget sprengt)\\b"
 examples:

@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_PERSONA_INTEGRATION
+frame:
+  signal: "Spiral-Integration gelingt"
+  concept: "Harmonische Ebenen-Synthese"
+  pragmatics: "Stabile Multi-Level-Integration"
+  narrative: "Das System integriert alle Ebenen"
+activation:
+  rule: "AT_LEAST 4 different CLU_SPIRAL_PERSONA_* with stable pattern IN 15 messages"
+  window_size: 15
+  threshold: 4
+scoring:
+  weight: 1.2
+  decay: 0.4
+examples: ["Beige bis Türkis harmonisch integriert", "stabile Multi-Ebenen-Präsenz", "ausbalancierte Spiral-Dynamik", "kohärente Gesamtintegration", "reife Systemarchitektur"]

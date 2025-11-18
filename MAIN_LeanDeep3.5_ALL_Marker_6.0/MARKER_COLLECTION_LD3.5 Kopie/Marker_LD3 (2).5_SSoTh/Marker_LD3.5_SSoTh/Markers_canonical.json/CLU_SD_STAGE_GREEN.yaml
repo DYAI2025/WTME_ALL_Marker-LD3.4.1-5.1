@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SD_STAGE_GREEN
+frame:
+  signal: ["cluster"]
+  concept: "SD Green aktiv"
+  pragmatics: "Persona"
+  narrative: "window"
+composed_of: [SEM_SD_GREEN_EMPATHY]
+activation: {rule: "AT_LEAST 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  - "Konsens finden … Empathie zeigen"
+  - "Gemeinschaft vor Ego"
+  - "jede Stimme zählt"
+  - "Beziehung ist wichtig"
+  - "fühlst du dich gehört?"

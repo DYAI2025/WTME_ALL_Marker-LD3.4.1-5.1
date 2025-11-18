@@ -1,0 +1,58 @@
+name: ATO_BLAME_SHIFT
+label: "Schuldverschiebung"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Versuche, die Schuld auf den anderen zu schieben"
+patterns:
+  - type: regex
+    value: "(das ist deine Schuld|du hast angefangen|warum tust du das|du bist verantwortlich|nicht ich)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "blame_shift"
+  interpretant: "effect_on_state: {conflict: +0.15, trust: -0.15}"
+examples:
+  positive_de:
+    - "Das ist deine Schuld."
+    - "Du hast angefangen."
+    - "Warum tust du das?"
+    - "Du bist verantwortlich."
+    - "Nicht ich, du."
+    - "Schuld bei dir."
+    - "Du hast es vermasselt."
+    - "Dein Fehler."
+    - "Warum immer du?"
+    - "Verantwortung bei dir."
+    - "Du bist schuld."
+    - "Angefangen hast du."
+    - "Tust du immer."
+    - "Verantwortlich du."
+    - "Nicht meine Schuld."
+    - "Bei dir die Schuld."
+    - "Vermasselt von dir."
+    - "Fehler dein."
+    - "Immer du warum?"
+    - "Deine Verantwortung."
+  negative_de:
+    - "Das ist meine Schuld."
+    - "Ich hab angefangen."
+    - "Warum tu ich das?"
+    - "Ich bin verantwortlich."
+    - "Nicht du, ich."
+    - "Schuld bei mir."
+    - "Ich hab es vermasselt."
+    - "Mein Fehler."
+    - "Warum immer ich?"
+    - "Verantwortung bei mir."
+    - "Ich bin schuld."
+    - "Angefangen hab ich."
+    - "Tu ich immer."
+    - "Verantwortlich ich."
+    - "Nicht deine Schuld."
+    - "Bei mir die Schuld."
+    - "Vermasselt von mir."
+    - "Fehler mein."
+    - "Immer ich warum?"
+    - "Meine Verantwortung."

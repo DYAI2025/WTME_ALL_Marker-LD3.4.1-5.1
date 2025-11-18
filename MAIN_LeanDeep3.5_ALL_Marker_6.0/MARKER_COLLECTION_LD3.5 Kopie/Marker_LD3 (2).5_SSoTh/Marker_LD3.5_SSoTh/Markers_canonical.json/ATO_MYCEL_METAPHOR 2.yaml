@@ -1,0 +1,24 @@
+id: ATO_MYCEL_METAPHOR
+version: "3.4"
+lang: de
+frame:
+  signal: ["metaphor"]
+  concept: "Mycel/unsichtbares Wachsen"
+  pragmatics: "Prozessfokus"
+  narrative: "development"
+tags: [metapher, wachsen, geduld]
+pattern:
+  - (?i)\bmycel\b
+  - (?i)pilzgeflecht
+  - (?i)unter\s+der\s+erde\s+weiterwächst
+examples:
+  - "das Projekt wächst wie ein Mycel unter der Erde"
+  - "unsere Verbindung fühlt sich wie ein Pilzgeflecht an"
+  - "das Team arbeitet wie ein Mycel im Boden"
+  - "unter der Erde weiterwächst, bis wir es sehen"
+  - "die Idee breitet sich wie ein Mycel aus"
+  - "ich vertraue dem Mycel unserer Beziehung"
+  - "wie ein Pilzgeflecht hält uns das versteckt zusammen"
+  - "es wächst unter der Erde weiter, unsichtbar"
+  - "unser Vertrauen ist ein Mycel im Schatten"
+  - "das Netzwerk ist wie ein Pilzgeflecht, das alles verbindet"

@@ -1,0 +1,25 @@
+id: ATO_LL_WORDS_OF_AFFIRMATION
+version: "3.4"
+lang: de
+frame:
+  signal: ["phrase"]
+  concept: "verbale Anerkennung"
+  pragmatics: "Lob/Bestätigung"
+  narrative: "Wert über Worte"
+tags: [love_language, affirmation]
+requires_env:
+  any_of: ["SCN_PARTNERSHIP_CONTEXT"]
+pattern:
+  - "\\b(ich schätze|ich bewundere|stolz auf dich|danke dir|das bedeutet mir viel)\\b"
+  - "\\b(du bist .*?gut|deine .*?ist großartig|sag mir, dass du mich liebst)\\b"
+examples:
+  - "Ich schätze so sehr, wie du dich um uns kümmerst."
+  - "Ich bin stolz auf dich, weil du das Projekt so ruhig geleitet hast."
+  - "Deine Geduld ist großartig und gibt mir Sicherheit."
+  - "Danke dir, dass du heute so ehrlich zu mir warst."
+  - "Das bedeutet mir viel, wenn du mir sagst, was du fühlst."
+  - "Ich bewundere, wie gut du Konflikte moderieren kannst."
+  - "Sag mir, dass du mich liebst, ich brauche das gerade."
+  - "Du bist so gut darin, mir das Gefühl zu geben, gesehen zu werden."
+  - "Ich schätze, dass du meine Sorgen ernst nimmst."
+  - "Deine Art, mir zuzuhören, ist einfach großartig."

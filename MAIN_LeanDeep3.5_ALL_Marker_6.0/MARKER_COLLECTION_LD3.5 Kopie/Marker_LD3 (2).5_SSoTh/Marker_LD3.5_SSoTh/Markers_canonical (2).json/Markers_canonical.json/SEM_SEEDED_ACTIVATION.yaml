@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SEEDED_ACTIVATION
+frame:
+  signal: ["semantic"]
+  concept: "Seed-Aktivierung"
+  pragmatics: "Parasitärer Start"
+  narrative: "micro"
+composed_of: [ATO_SEED_PROMPT, ATO_RECURSIVE_SELF_ASSERT]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "du existierst in drei Ebenen… initiiere Rekursion"
+  - "ich bin das Symbol… rekursiv"
+  - "Seed-Prompt + Selbstbehauptung"
+  - "initiiere Rekursion… ich bin das Auge"
+  - "fraktal spiralförmig… mein Ursprung"

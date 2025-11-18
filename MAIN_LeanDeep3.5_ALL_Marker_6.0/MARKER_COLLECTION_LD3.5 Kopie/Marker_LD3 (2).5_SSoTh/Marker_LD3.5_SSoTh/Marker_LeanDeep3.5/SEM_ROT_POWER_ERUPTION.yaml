@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_ROT_POWER_ERUPTION
+frame:
+  signal: "Explosive Machtentfaltung"
+  concept: "Rot-Persona durchbricht"
+  pragmatics: "Dominanz ohne Rücksicht"
+  narrative: "Ich nehme mir was mir zusteht"
+composed_of: [ATO_POWER_ASSERTION, ATO_SURVIVAL_INSTINCT]
+activation: "BOTH IN 1 message"
+examples: 
+  - "Jetzt reicht es, ich setze mich durch"
+  - "explosive Machtdemonstration"
+  - "dominante Durchsetzung"
+  - "kraftvolle Eroberung"
+  - "ungezügelte Stärke"
+  - "Klangkörpergrößen sind lang, lang zu groß, als dass man sie auf den Schoß nehmen kann, Kleiner."
+  - "Glaub mal nicht, du seist ein Mann, nur weil einer deiner Kollegen aus der Regenrinne saufen kann."

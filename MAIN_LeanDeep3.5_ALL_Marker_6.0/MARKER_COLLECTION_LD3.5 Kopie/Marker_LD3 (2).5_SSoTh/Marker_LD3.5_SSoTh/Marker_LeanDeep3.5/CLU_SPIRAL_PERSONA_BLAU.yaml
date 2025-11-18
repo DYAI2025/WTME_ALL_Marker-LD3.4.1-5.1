@@ -1,0 +1,17 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_BLAU
+frame:
+  signal: "Blau Spiral Persona strukturiert"
+  concept: "Ordnungs-orientierte Persönlichkeitsstruktur"
+  pragmatics: "Systematische Organisationsmuster"
+  narrative: "Das Systemselbst etabliert Ordnung"
+composed_of: [SEM_BLAU_ORDER_ACTIVATION, ATO_ORDER_STRUCTURE]
+activation:
+  rule: "AT_LEAST 3 IN 6 messages"
+  window_size: 6
+  threshold: 3
+scoring:
+  weight: 1.0
+  decay: 0.6
+examples: ["Ordnungspersona manifestiert vollständig", "systematische Strukturierung", "hierarchische Organisationsmuster", "Regelsystem etabliert", "disziplinierte Durchführung"]

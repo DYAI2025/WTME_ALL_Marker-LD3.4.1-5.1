@@ -1,0 +1,80 @@
+name: CLU_INTIMACY_PLAY
+label: "Intimitätsspiel"
+class: cluster
+version: 1.0
+languages: [de]
+intent: "Spielerische oder direkte Signale von Intimität und Nähe"
+temperature_semantics:
+  external: WARM
+  latent: SPIELERISCH
+window:
+  size_messages: 15
+gates:
+  min_msgs: 3
+  require_bilateral: true
+score:
+  method: weighted_k_of_n
+  threshold: 0.65
+ingredients:
+  require:
+    - ATO_AFFECTION_SHOW
+    - ATO_HUMOR_LIGHT
+  k_of_n: {k: 2, of: [ATO_ROMANTIC_SIGNAL_DIRECT, ATO_LL_PHYSICAL_TOUCH, ATO_LL_QUALITY_TIME]}
+negative_evidence:
+  any_of: [ATO_BOUNDARY_STRICT, ATO_AFFECT_FLAT]
+emits:
+  indices:
+    intimacy: +0.3
+    trust: +0.15
+    conflict: -0.1
+conflicts_with:
+  - CLU_HEATED_CONFLICT
+semiotic:
+  mode: iconic
+  level: pragmatic
+  object: "intimacy_signal"
+  connotation: ["intimität", "spiel"]
+  interpretant: "effect_on_state: {intimacy: +0.3, sync: +0.1}"
+examples:
+  positive_de:
+    - "Hab dich lieb ❤️"
+    - "Kuss 😘"
+    - "Vermisse dich."
+    - "Fühl dich umarmt."
+    - "Schatz, bis bald."
+    - "Haha, komm her 😄"
+    - "Lass uns kuscheln."
+    - "Du fehlst mir."
+    - "Liebling, schlaf gut."
+    - "Mehr Zeit zusammen?"
+    - "Knuddler."
+    - "Bussi."
+    - "Herzchen."
+    - "Du bist toll."
+    - "Umarmung."
+    - "Küss dich."
+    - "Liebe dich."
+    - "Schatzi."
+    - "Vermisst."
+    - "Stolz ❤️"
+  negative_de:
+    - "Ok."
+    - "Bestätigt."
+    - "Scope bleibt."
+    - "Protokoll folgt."
+    - "Frist 30.09."
+    - "Ticket erstellt."
+    - "Zur Kenntnis."
+    - "Notiert."
+    - "Erledigt."
+    - "Termin passt."
+    - "Agenda einhalten."
+    - "Review planen."
+    - "Budget checken."
+    - "Milestone setzen."
+    - "Update teilen."
+    - "Freigabe geben."
+    - "Prozess folgen."
+    - "Abnahme machen."
+    - "Notiz nehmen."
+    - "Status updaten."

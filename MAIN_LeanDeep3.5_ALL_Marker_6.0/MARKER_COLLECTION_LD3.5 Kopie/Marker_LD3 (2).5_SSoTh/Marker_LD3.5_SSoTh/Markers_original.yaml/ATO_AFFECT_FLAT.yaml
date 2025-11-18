@@ -1,0 +1,83 @@
+name: ATO_AFFECT_FLAT
+label: "Affekt flach"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "neutrale, tonlose, nicht-affektive Formulierungen; keine Emojis/Intensivierer"
+patterns:
+  - type: regex
+    value: "(^ok(\\.|,)?$|verstanden\\.?$|zur Kenntnis\\.?$|bestätigt\\.?$|passt\\.?$|erledigt\\.?$)"
+  - type: anti_emoji
+    value: true
+  - type: style
+    feature: "no-intensifiers"   # keine 'sehr', 'mega', '!?!'
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: syntactic
+  object: "neutral_acknowledgement"
+  interpretant: "effect_on_state: {affekt: flat, sync: +0.1}"
+  connotation: ["neutral", "flach"]
+examples:
+  positive_de:
+    - "Ok."
+    - "Bestätigt."
+    - "Zur Kenntnis."
+    - "Erledigt."
+    - "Passt."
+    - "Verstanden."
+    - "Notiert."
+    - "Gesehen."
+    - "Empfangen."
+    - "Danke. Erledigt."
+    - "Ich habe es erhalten."
+    - "Alles klar."
+    - "In Ordnung."
+    - "Bestätige den Empfang."
+    - "Notiz genommen."
+    - "Kein Problem."
+    - "Geht in Ordnung."
+    - "Vermerkt."
+    - "Akzeptiert."
+    - "Abgeschlossen."
+    - "Agenda einhalten."
+    - "Review planen."
+    - "Budget checken."
+    - "Milestone setzen."
+    - "Update teilen."
+    - "Freigabe geben."
+    - "Prozess folgen."
+    - "Abnahme machen."
+    - "Notiz nehmen."
+    - "Status updaten."
+  negative_de:
+    - "Super, das freut mich sehr!"
+    - "Oh nein, wie ärgerlich!"
+    - "Wow!"
+    - "Haha, witzig 😅"
+    - "Ich bin echt sauer."
+    - "Das macht mich traurig."
+    - "Mega gut!!!"
+    - "Klingt toll 😊"
+    - "Ich hab Angst wegen morgen."
+    - "So schön!"
+    - "Das ist fantastisch!"
+    - "Ich bin enttäuscht."
+    - "Total cool!"
+    - "Lass uns feiern!"
+    - "Das nervt mich."
+    - "Ich liebe das!"
+    - "Zu traurig."
+    - "Echt toll 😄"
+    - "Bin überglücklich."
+    - "Das schmerzt."
+    - "Das triggert mich."
+    - "Mehr Empathie."
+    - "Lass uns fühlen."
+    - "Ich teile Gefühle."
+    - "Bleib beim Emotionalen."
+    - "Das fühlt sich an."
+    - "Erzähl von dir."
+    - "Ich liebe das."
+    - "Traurig heute."
+    - "Feiern wir?"

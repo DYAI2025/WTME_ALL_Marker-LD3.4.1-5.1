@@ -1,0 +1,24 @@
+id: ATO_DEFINITION_NEGATION
+version: "3.4"
+lang: de
+frame:
+  signal: ["negation"]
+  concept: "Verzicht auf Definition"
+  pragmatics: "Ambiguitätstoleranz"
+  narrative: "license"
+tags: [definition, offenheit]
+pattern:
+  - (?i)keine\s+definition
+  - (?i)nicht\s+definieren
+  - (?i)ohne\s+begriff
+examples:
+  - "das braucht keine Definition zwischen uns"
+  - "wir müssen das nicht definieren"
+  - "lass es ohne Begriff stehen"
+  - "es braucht keine Definition, damit es wirkt"
+  - "wir definieren das bewusst nicht enger"
+  - "ich lasse es ohne Begriff, damit es lebendig bleibt"
+  - "wir müssen das nicht definieren, um es zu spüren"
+  - "keine Definition, nur gemeinsame Erfahrung"
+  - "ich mag es ohne Begriff, nur als Feld"
+  - "wir halten es offen und definieren nicht"

@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SUPPORT_PHRASE
+frame:
+  signal: ["token"]
+  concept: "Unterstützung"
+  pragmatics: "Bindung"
+  narrative: "surface"
+pattern:
+  tokens: ["ich bin da", "kann helfen", "gemeinsam", "du schaffst das", "an deiner Seite"]
+examples:
+  - "ich bin da für dich … wir schaffen das"
+  - "danke dir … fühl mich gesehen"
+  - "gemeinsam kriegen wir das hin"
+  - "du kannst dich auf mich verlassen"
+  - "ich hör dir zu … okay?"
+
+

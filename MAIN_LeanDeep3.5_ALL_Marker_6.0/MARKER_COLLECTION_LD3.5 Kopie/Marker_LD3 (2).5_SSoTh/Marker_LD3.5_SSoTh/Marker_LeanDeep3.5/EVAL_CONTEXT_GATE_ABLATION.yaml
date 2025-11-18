@@ -1,0 +1,23 @@
+id: EVAL_CONTEXT_GATE_ABLATION
+version: "3.4"
+lang: de
+frame:
+  signal: ["eval"]
+  concept: "Ablationsvergleich"
+  pragmatics: "Precision/False-Positive-Rate"
+  narrative: "Gating vs. no Gating"
+protocol:
+  metrics: ["precision@k", "fpr", "sem_stability_index"]
+  compare: ["with_gating", "without_gating"]
+  dataset_notes: "Dialoge mit und ohne Paar-/Hochzeitsszene"
+examples:
+  - "Experiment 01: with_gating erreicht precision@5 = 0.82, ohne Gating 0.63."
+  - "Run 02 zeigt fpr-Reduktion von 0.21 auf 0.08 durch Szene-Gate."
+  - "Notebook Session: sem_stability_index steigt bei aktivem Gating auf 0.74."
+  - "Ablation: ohne Gating feuern Acts-of-Service-SEM auch in Team-Meetings."
+  - "Vergleichslauf: with_gating hält Misalignment-Alerts nur in Partnerschaftsszenen."
+  - "Datensatz WeddingChats: precision@3 verbessert sich um +0.18 mit Gate."
+  - "Replay: Szene-Hysterese verhindert Falschpositives nach kurzem Partner-Bezug."
+  - "Evaluation: ohne Gate werden Gifts-Signale in Shopping-Talk fälschlich gewertet."
+  - "Testfall: mit Gate stabile Rankings, ohne Gate driftet Profil nach zwei Erwähnungen."
+  - "QA-Protokoll dokumentiert, dass gating_on 35% weniger Fehlalarme erzeugt."

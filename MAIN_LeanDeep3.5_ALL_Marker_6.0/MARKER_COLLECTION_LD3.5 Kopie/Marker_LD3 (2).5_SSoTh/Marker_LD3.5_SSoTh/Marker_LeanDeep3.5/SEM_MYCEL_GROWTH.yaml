@@ -1,0 +1,23 @@
+id: SEM_MYCEL_GROWTH
+version: "3.4"
+lang: de
+frame:
+  signal: ["growth"]
+  concept: "Unsichtbares Weiterwachsen"
+  pragmatics: "Geduld/Verlauf"
+  narrative: "metaphor"
+tags: [wachsen, geduld]
+composed_of:
+  - ATO_MYCEL_METAPHOR
+  - ATO_TRUTH_FEEL
+examples:
+  - "Mycel breitet sich aus + fühlt sich wahr an"
+  - "Pilzgeflecht wächst + spürbar wahr"
+  - "unter der Erde weiterwächst + fühlt sich echt an"
+  - "Mycelnetz + fühlt sich wahr an"
+  - "Pilzgeflecht verbindet + spürbar wahr"
+  - "Mycel im Boden + fühlt sich wahr an"
+  - "unterirdisches Wachsen + spürbar wahr"
+  - "Mycel-Träger + fühlt sich echt an"
+  - "Pilzgeflecht hält + spürbar wahr"
+  - "Mycel wächst leise + fühlt sich wahr an"

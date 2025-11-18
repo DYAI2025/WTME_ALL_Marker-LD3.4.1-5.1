@@ -1,0 +1,73 @@
+name: ATO_COURTESY_FORMAL
+label: "Formelle Höflichkeit"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "höflich-formelle Marker ohne Intimität"
+patterns:
+  - type: regex
+    value: "(bitte|danke|vielen Dank|Bestätigung|gem\\. Vereinbarung|wie vereinbart|freundliche Grüße|mit Dank)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: syntactic
+  object: "politeness"
+  connotation: ["höflich", "formal"]
+  interpretant: "effect_on_state: {trust: +0.05, affekt: neutral}"
+examples:
+  positive_de:
+    - "Bitte um Bestätigung."
+    - "Vielen Dank für die Unterlagen."
+    - "Wie vereinbart sende ich die Datei."
+    - "Gem. Vereinbarung erfolgt die Freigabe heute."
+    - "Danke für die Rückmeldung."
+    - "Mit Dank, bis später."
+    - "Freundliche Grüße."
+    - "Bitte fristgerecht einreichen."
+    - "Danke. Erhalten."
+    - "Wie besprochen, s. Anhang."
+    - "Vielen Dank im Voraus."
+    - "Bitte lassen Sie es mich wissen."
+    - "Mit besten Grüßen."
+    - "Danke für die Kooperation."
+    - "Gemäß Plan."
+    - "Freundlichst."
+    - "Vielen Dank für die Info."
+    - "Bitte bestätigen Sie."
+    - "Mit Dankeschön."
+    - "Wie abgesprochen."
+    - "Vielen Dank für Update."
+    - "Bitte um Rückmeldung."
+    - "Mit Grüßen."
+    - "Danke für Kooperation."
+  negative_de:
+    - "Hab dich lieb."
+    - "Knuddler."
+    - "Küsschen."
+    - "Ey, mach mal flott."
+    - "Haha, cool!"
+    - "Bin mega happy!"
+    - "Fühl dich gedrückt."
+    - "Bussi."
+    - "Herzchen für dich."
+    - "Du bist der Beste."
+    - "Komm her, Umarmung."
+    - "Ich vermisse dich."
+    - "Schatz, alles gut?"
+    - "Lass uns chillen."
+    - "Du Rockstar!"
+    - "Mega geil!"
+    - "Fühl dich geknuddelt."
+    - "Küss dich."
+    - "Liebling, bis bald."
+    - "Du machst mich happy."
+    - "Das triggert mich."
+    - "Mehr Empathie."
+    - "Lass uns fühlen."
+    - "Ich teile Gefühle."
+    - "Bleib beim Emotionalen."
+    - "Das fühlt sich an."
+    - "Erzähl von dir."
+    - "Ich liebe das."
+    - "Traurig heute."
+    - "Feiern wir?"

@@ -1,0 +1,42 @@
+id: CLU_INTUITION_PRESENCE_BINDING
+version: "3.4"
+lang: de
+frame:
+  signal: ["intuition", "weak-aggregation"]
+  concept: "Vorahnung: Präsenz/Bindung"
+  pragmatics: "Fokus schärfen"
+  narrative: "hypothesis"
+tags: [intuition, presence, bonding, learning]
+composed_of:
+  - SEM_SELF_ADDRESS_SHIFT
+  - SEM_RITUAL_PING
+  - SEM_LIMINAL_FIELD_PRESENCE
+  - SEM_SACRALIZATION_BINDING
+  - SEM_RELATION_OVER_PERSONA
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+scoring:
+  base: 0.50
+  weight: 1.0
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 6
+    confirm_rule: "AT_LEAST 1 of [SEM_RELATION_OVER_PERSONA, SEM_LIMINAL_FIELD_PRESENCE] IN confirm_window"
+    multiplier_on_confirm: 1.5
+    decay_window: 10
+  telemetry_keys:
+    confirmed: "INT_PRESENCE_BINDING.confirmed"
+    retracted: "INT_PRESENCE_BINDING.retracted"
+    ewma_precision: "INT_PRESENCE_BINDING.ewma_precision"
+examples:
+  - "aus Liebe zu mir + Zwischenraum als Feld"
+  - "11:11 + fühlt sich wahr an + Beziehung vor Persona"
+  - "begegne dir selbst + heilig für mich + Beziehung bleibt"
+  - "sprich zu dir liebevoll + Zwischenraum + Ritual"
+  - "ich zu mir: bleib da + heilige Präsenz + Maske fällt"
+  - "Ritualkerze + Beziehung wichtiger als Rolle + fühlt sich wahr an"
+  - "Zwischenraum halten + aus Liebe handeln + Persona tritt zurück"
+  - "Anker setzen + heiliges Feld + Beziehung bleibt"
+  - "begegne dir selbst + 11:11 Ping + Zwischenraum öffnen"
+  - "ich zu mir: nicht aus Angst + heilig für mich + Beziehung über Persona"

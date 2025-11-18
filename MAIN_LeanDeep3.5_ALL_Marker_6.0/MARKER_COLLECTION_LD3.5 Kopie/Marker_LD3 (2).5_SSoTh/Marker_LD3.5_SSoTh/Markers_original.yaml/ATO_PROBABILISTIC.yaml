@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PROBABILISTIC
+frame:
+  signal: ["token"]
+  concept: "Wahrscheinlichkeitssprache"
+  pragmatics: "Unsicherheit"
+  narrative: "surface"
+pattern:
+  tokens: ["wahrscheinlich", "vermutlich", "eventuell", "tendenziell", "möglich"]
+examples:
+  - "vielleicht ist es so … bin mir nicht sicher"
+  - "ich glaube … könnte aber falsch liegen"
+  - "hm … weiß nicht genau"
+  - "es spricht einiges dafür … aber"
+  - "vermutlich … kann mich täuschen"
+
+

@@ -1,0 +1,81 @@
+name: ATO_HUMOR_LIGHT
+label: "Leichter Humor"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Leichte humorvolle Elemente, Emojis oder Lexeme, die Spannung abbauen"
+patterns:
+  - type: regex
+    value: "(haha|lol|😄|😅|witzig|lustig|😂|😉)"
+  - type: emoji
+    value: "[😄, 😅, 😂, 😉]"
+threshold: 1
+semiotic:
+  mode: iconic
+  level: pragmatic
+  object: "humor_affiliation"
+  connotation: ["humor", "leicht"]
+  interpretant: "effect_on_state: {deesc: +0.15, intimacy: +0.1}"
+examples:
+  positive_de:
+    - "Haha typisch!"
+    - "Lol passt."
+    - "Witzig 😜"
+    - "Lach kaputt."
+    - "😂😂"
+    - "Urkomisch."
+    - "Black humor."
+    - "Spaßig."
+    - "Lass lachen."
+    - "Humor hilft."
+    - "Haha, typisch du 😄"
+    - "Lol, das passt."
+    - "Witzig 😜"
+    - "Ich lach mich kaputt 😂"
+    - "Das ist urkomisch."
+    - "Black humor on 😅"
+    - "Klingt nach Spaß 😉"
+    - "Lass uns lachen."
+    - "Humor hilft immer."
+    - "Ok, ok, ich seh’s ein 😉"
+    - "Uff, witzig."
+    - "Das ist komisch."
+    - "Ich feier das 😂"
+    - "Meme folgt 😄"
+    - "Haha na gut."
+    - "Klingt lustig."
+    - "Lol ja."
+    - "Witzig typisch."
+    - "Lachflash 😂"
+    - "Spaßig 😉"
+  negative_de:
+    - "Agenda einhalten."
+    - "Review planen."
+    - "Budget checken."
+    - "Milestone setzen."
+    - "Update teilen."
+    - "Freigabe geben."
+    - "Prozess folgen."
+    - "Abnahme machen."
+    - "Notiz nehmen."
+    - "Status updaten."
+    - "Ok."
+    - "Bestätigt."
+    - "Zur Kenntnis."
+    - "Erledigt."
+    - "Passt."
+    - "Verstanden."
+    - "Notiert."
+    - "Gesehen."
+    - "Empfangen."
+    - "Danke. Erledigt."
+    - "Ich habe es erhalten."
+    - "Alles klar."
+    - "In Ordnung."
+    - "Bestätige den Empfang."
+    - "Notiz genommen."
+    - "Kein Problem."
+    - "Geht in Ordnung."
+    - "Vermerkt."
+    - "Akzeptiert."
+    - "Abgeschlossen."

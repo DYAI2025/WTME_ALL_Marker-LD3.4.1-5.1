@@ -1,0 +1,37 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_CIRCULARITY_TOKENS
+frame:
+  signal: ["token"]
+  concept: "Zirkel-Hinweise"
+  pragmatics: "Loop"
+  narrative: "surface"
+pattern:
+  tokens: ["wieder", "nochmal", "erneut", "immer wieder", "zurück"]
+examples:
+  - "wir drehen uns im Kreis … wie vorhin"
+  - "das hatten wir schon … nochmal von vorne"
+  - "immer wieder die gleiche Frage"
+  - "ich wiederhole mich … schon wieder"
+  - "zurück am Anfang … ohne Fortschritt"
+  - "Erneut dieselbe Diskussion, wieder und wieder."
+  - "Wir sind erneut an genau der gleichen Stelle gelandet."
+  - "Kannst du es nochmal sagen, wir fangen offenbar von vorne an."
+  - "Schon wieder drehen wir die Schleife, zurück zum Ausgangspunkt."
+  - "Es fühlt sich an, als würden wir immer wieder bei Null starten."
+  - "Wir gehen erneut denselben Kreis, kein Schritt nach vorn."
+  - "Und wiederholt sich das Spiel – zurück auf Los."
+  - "Nochmals dieselbe Antwort, wir kommen keinen cm weiter."
+metadata:
+  neg_examples:
+    - "Wir machen einen klaren Schritt nach vorn." 
+    - "Das ist neu, wir betreten frisches Terrain." 
+    - "Wir verlassen den Kreis und bringen eine Alternative ein."
+    - "Das Thema ist abgeschlossen, wir kehren nicht zurück."
+    - "Ich wiederhole mich nicht, wir gehen weiter."
+    - "Kein Déjà-vu – neue Argumente auf dem Tisch."
+    - "Wir halten die Schleife an und treffen eine Entscheidung."
+    - "Das Gespräch macht Fortschritte statt Schleifen."
+    - "Ich möchte nicht zurück, sondern vorwärts denken."
+    - "Wir brechen den Wiederholungszyklus bewusst auf."
+

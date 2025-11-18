@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_DELAY_WORD
+frame:
+  signal: ["token"]
+  concept: "Aufschub"
+  pragmatics: "Prokrastination"
+  narrative: "surface"
+pattern:
+  tokens: ["später", "morgen", "gleich", "bald", "nachher"]
+examples:
+  - "mach ich heute noch … vielleicht morgen"
+  - "ich verspreche … doch erst später"
+  - "bin dran … aber keine Zeit"
+  - "gleich … nach dem Meeting"
+  - "heute fix … oder morgen"
+
+

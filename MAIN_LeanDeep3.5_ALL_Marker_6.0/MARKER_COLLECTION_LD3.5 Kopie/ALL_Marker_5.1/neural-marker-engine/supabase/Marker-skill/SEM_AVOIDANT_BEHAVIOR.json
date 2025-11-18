@@ -1,0 +1,56 @@
+{
+  "marker_id": "SEM_AVOIDANT_BEHAVIOR",
+  "marker_type": "SEM",
+  "version": "1.0",
+  "schema": "LeanDeep 4.0",
+  "created_date": "2025-11-10",
+  "definition": {
+    "name": "SEM_AVOIDANT_BEHAVIOR",
+    "category": "Semantic Marker",
+    "description": "Ein semantisches Muster, das Vermeidungsverhalten in der zwischenmenschlichen Kommunikation identifiziert. Charakterisiert durch das Aufschieben von Entscheidungen, Diskussionen oder Handlungen durch vage, nicht-verbindliche Sprache.",
+    "semantic_family": ["AVOIDANCE", "INTERPERSONAL", "COMMUNICATION"],
+    "composed_of": ["ATO_DELAY_PHRASE", "ATO_HEDGING_VOCAB"]
+  },
+  "activation_rules": {
+    "strict_composition_rule": "Mindestens zwei (≥2) unterschiedliche ATOs müssen im relevanten Zeitfenster erkannt werden",
+    "required_ato_combinations": [["ATO_DELAY_PHRASE", "ATO_HEDGING_VOCAB"]],
+    "temporal_window": "1-3 Nachrichten",
+    "minimum_ato_types": 2,
+    "context_requirement": "Thema muss interpersonell sein, nicht logistisch"
+  },
+  "examples": [
+    {
+      "id": "example_avoidant_01",
+      "valid": true,
+      "text": "Können wir vielleicht später bereden? Xx",
+      "detected_atos": [
+        {
+          "type": "ATO_DELAY_PHRASE",
+          "anchor": "später bereden"
+        },
+        {
+          "type": "ATO_HEDGING_VOCAB",
+          "anchor": "vielleicht"
+        }
+      ],
+      "sem_activated": true,
+      "activation_reason": "≥2 ATOs: {ATO_DELAY_PHRASE, ATO_HEDGING_VOCAB}",
+      "intensity": 0.65,
+      "families": ["AVOIDANCE"]
+    }
+  ],
+  "metadata": {
+    "domain": "interpersonal_communication",
+    "valence": "neutral_to_negative",
+    "intensity_category": "medium",
+    "requires_context": true,
+    "context_window": "1-3 messages",
+    "contrast_with": ["SEM_LOGISTICAL_PRESSURE"],
+    "use_cases": [
+      "Kommunikationsanalyse",
+      "Vermeidungsverhalten-Erkennung",
+      "Interpersonelle Dynamik"
+    ],
+    "note": "Dient als Kontrast-Marker zu SEM_LOGISTICAL_PRESSURE (interpersonell vs. logistisch)"
+  }
+}

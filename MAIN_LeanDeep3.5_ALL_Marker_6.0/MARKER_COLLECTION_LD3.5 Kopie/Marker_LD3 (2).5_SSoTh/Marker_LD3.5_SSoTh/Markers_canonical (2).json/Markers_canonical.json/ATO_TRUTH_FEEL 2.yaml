@@ -1,0 +1,30 @@
+id: ATO_TRUTH_FEEL
+version: "3.4"
+lang: de
+frame:
+  signal: ["phrase"]
+  concept: "Gefühlte Wahrheit"
+  pragmatics: "Legitimation ohne Beweis"
+  narrative: "license"
+tags: [wahrheit, gefühl, legitimation]
+pattern:
+  - (?i)fühlt\s+sich\s+(wahr|echt)\s+an
+  - (?i)spürbar\s+wahr
+  - (?i)wahr\s+ohne\s+definition
+pattern_not:
+  - (?i)als\s+metapher
+  - (?i)nur\s+als\s+beispiel
+constraints:
+  solo_ok: false
+  role: "modifier"
+examples:
+  - "dieser Satz fühlt sich wahr an, auch ohne Zahlen"
+  - "es bleibt für mich spürbar wahr, obwohl wir es nicht messen"
+  - "das fühlt sich echt an, obwohl es kein Proof ist"
+  - "ich folge dem, weil es sich wahr anfühlt"
+  - "wahr ohne Definition reicht mir in diesem Rahmen"
+  - "das Narrativ fühlt sich wahr an, noch bevor wir es erklären"
+  - "für mich ist das spürbar wahr, jenseits der Daten"
+  - "es fühlt sich echt an, wir müssen es nicht beweisen"
+  - "diese Erinnerung bleibt spürbar wahr, auch ohne Zeugen"
+  - "ich lasse es stehen, weil es sich wahr anfühlt"

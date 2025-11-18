@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_SD_BEIGE_LEX
+frame:
+  signal: ["token"]
+  concept: "SD Beige"
+  pragmatics: "Grundbedürfnisse"
+  narrative: "surface"
+pattern:
+  tokens: ["Sicherheit", "Überleben", "Nahrung", "Gefahr", "Ruhe"]
+examples:
+  - "kurze Sequenz A … kurze Sequenz B"
+  - "Beispiel mit zwei Signalen in einem Satz"
+  - "Signal 1 … später Signal 2 im Kontext"
+  - "Kombination aus Token X und Y"
+  - "Variante mit ähnlicher Semantik"
+
+

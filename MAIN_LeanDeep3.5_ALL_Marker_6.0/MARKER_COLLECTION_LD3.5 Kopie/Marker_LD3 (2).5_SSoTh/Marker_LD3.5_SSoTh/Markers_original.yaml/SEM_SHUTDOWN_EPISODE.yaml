@@ -1,0 +1,56 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SHUTDOWN_EPISODE
+type: SEM
+lang: de
+frame:
+  concept: "Shutdown-Episode"
+  narrative: "overwhelm"
+  signal: ["schwarz vor Augen","benommen","weggetreten"]
+composed_of: [ATO_SHUTDOWN_PHYSIOLOGY, ATO_DIZZINESS_DESCRIPTION]
+examples:
+  - "Es wurde mir schwarz vor Augen und ich taumelte benommen."
+  - "Ich war wie gelähmt und die Welt drehte sich um mich."
+  - "Ich sackte weg, alles verschwamm und ich konnte kaum stehen."
+  - "Mein Körper wurde taub, mir wurde schwindelig und ich driftete weg."
+  - "Ich hörte nur noch gedämpft und der Boden schwankte."
+  - "Ich fühlte mich völlig leer, während alles anfing zu kreiseln."
+  - "Ich verlor das Gleichgewicht und war wie betäubt."
+  - "Ich spürte keine Hände mehr und taumelte."
+  - "Ich sah nur noch Flecken, während ich in mich zusammensank."
+  - "Ich fror ein, mir wurde schwummerig und ich driftete ab."
+  - "Ich war kaum ansprechbar, weil mir schwarz wurde."
+  - "Ich stand unter Schock, mein Kopf rauschte und ich wackelte."
+  - "Ich spürte nichts mehr und musste mich abstützen."
+  - "Ich verlor jede Körperspannung und der Raum kippte."
+  - "Ich war wie weggeklappt, alles schwamm."
+  - "Ich fühlte nur noch Taubheit, während ich ins Schwanken geriet."
+  - "Ich hörte mich nur noch aus der Ferne und verlor die Balance."
+  - "Ich drifte in eine Leere, das Bild verschwimmt."
+  - "Ich merkte, wie ich innerlich abschaltete und kaum stehen konnte."
+  - "Ich war wie eingefroren und musste mich festhalten, damit ich nicht falle."
+negatives:
+  - "Ich war nervös, aber vollkommen präsent."
+  - "Mir war flau, doch ich blieb stabil."
+  - "Ich fühlte starken Stress, blieb jedoch handlungsfähig."
+  - "Ich bekam weiche Knie, aber kein Schwindel."
+  - "Ich war angespannt, jedoch wach."
+  - "Ich musste tief durchatmen, blieb aber klar."
+  - "Ich fühlte mich müde, doch nicht benommen."
+  - "Ich war erschöpft, aber körperlich ansprechbar."
+  - "Ich war sehr traurig, ohne dass mir schwarz wurde."
+  - "Ich war überfordert, blieb aber aufrecht."
+  - "Ich hatte Bauchschmerzen, konnte aber noch laufen."
+  - "Ich fühlte Druck im Kopf, doch ich blieb konzentriert."
+  - "Ich fühlte mich ausgelaugt, aber nicht taub."
+  - "Ich war wütend, doch nicht schwindelig."
+  - "Ich war überrascht, aber ohne Kreislaufprobleme."
+  - "Ich hatte Herzklopfen, aber keinen Gleichgewichtsverlust."
+  - "Ich war angespannt, doch nicht gelähmt."
+  - "Ich war sehr emotional, aber körperlich stabil."
+  - "Ich fühlte mich unruhig, jedoch nicht betäubt."
+  - "Ich war traurig, doch standfest."
+tags: [shutdown, composition]
+metadata:
+  maintainer: "marker-bot"
+  family: "SHUTDOWN"

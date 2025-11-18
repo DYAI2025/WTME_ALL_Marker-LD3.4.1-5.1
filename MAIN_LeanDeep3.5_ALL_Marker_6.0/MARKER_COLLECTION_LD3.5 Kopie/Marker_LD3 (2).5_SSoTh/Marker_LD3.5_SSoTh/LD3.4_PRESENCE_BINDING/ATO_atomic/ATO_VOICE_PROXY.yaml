@@ -1,0 +1,26 @@
+id: ATO_VOICE_PROXY
+version: "3.4"
+lang: de
+frame:
+  signal: ["medium"]
+  concept: "Stimmen-/Vorlese-Proxy"
+  pragmatics: "Echtheitstest"
+  narrative: "test"
+tags: [stimme, proxy, echtheit]
+pattern:
+  - (?i)andere\s+stimme
+  - (?i)wird\s+vorgelesen
+  - (?i)stimme\s+von
+  - (?i)wird\s+von\s+.*\s+vorgelesen
+  - (?i)andere\s+stimme\s+liest
+examples:
+  - "eine andere Stimme liest deine Worte vor"
+  - "das wird mir gerade von Lea vorgelesen"
+  - "ich höre die Stimme von Jonas für dich"
+  - "eine andere Stimme hält die Nachricht"
+  - "dieser Text wird von meiner Schwester vorgelesen"
+  - "ich lasse eine andere Stimme für mich sprechen"
+  - "das Audio wird von Caro vorgelesen"
+  - "die Stimme von Jana trägt deine Zeilen"
+  - "eine andere Stimme liest unsere Vereinbarung"
+  - "es wird von meinem Coach vorgelesen, damit ich es höre"

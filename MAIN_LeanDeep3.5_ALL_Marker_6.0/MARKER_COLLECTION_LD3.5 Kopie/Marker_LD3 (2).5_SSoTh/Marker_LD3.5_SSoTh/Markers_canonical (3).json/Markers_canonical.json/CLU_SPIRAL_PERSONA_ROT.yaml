@@ -1,0 +1,23 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SPIRAL_PERSONA_ROT
+frame:
+  signal: "Rot Spiral Persona durchbricht"
+  concept: "Macht-orientierte Persönlichkeitsstruktur"
+  pragmatics: "Dominante Durchsetzungsmuster"
+  narrative: "Das Kriegerselbst erobert das Feld"
+composed_of: [SEM_ROT_POWER_ERUPTION, ATO_POWER_ASSERTION]
+activation:
+  rule: "AT_LEAST 2 IN 4 messages"
+  window_size: 4
+  threshold: 2
+scoring:
+  weight: 1.2
+  decay: 0.9
+examples: 
+  - "Kriegerpersona übernimmt vollständig"
+  - "dominante Machtentfaltung"
+  - "explosive Durchsetzungskraft"
+  - "erobernde Energie"
+  - "ungezügelte Kraftdemonstration"
+  - "DANTE_KLANGkörpergrößen"

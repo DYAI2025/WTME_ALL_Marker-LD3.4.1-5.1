@@ -1,0 +1,42 @@
+name: MEMA_MEDIATOR
+label: "Mediator"
+class: meta
+version: 3.5
+languages: [de]
+meaning: Archetyp des Vermittlers.
+activates_if:
+  all_of:
+    - CLU_REPAIR_FLOW
+effects:
+  indices:
+    deesc: +0.3
+notes: Vermittelt und repariert.
+examples:
+  positive_de:
+    - "Es tut mir leid – lass uns reden."
+    - "Ich höre dir zu – wie lösen wir das?"
+    - "Ich bin da, wir schaffen das."
+    - "Okay, confirm – Schlussstrich."
+    - "Lass uns das gemeinsam klären."
+    - "Entschuldige, reden."
+    - "Support bei dir."
+    - "Abschluss ok."
+    - "Klärung einleiten."
+    - "Empathie zeigen."
+  negative_de:
+    - "Ignorier das."
+    - "Kein Bedarf."
+    - "Weiterkämpfen."
+    - "Kein Repair."
+    - "Eskalieren."
+    - "Vorwurf machen."
+    - "Defensiv bleiben."
+    - "Schweigen."
+    - "Abbrechen."
+    - "Konflikt halten."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "mediator"
+  interpretant: "effect_on_state: {deesc: +0.3}"
+  connotation: ["archetype", "repair"]

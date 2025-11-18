@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SARCASM_IRRITATION
+frame:
+  signal: ["semantic"]
+  concept: "Sarkasmus/Irritation"
+  pragmatics: "Spannung"
+  narrative: "micro"
+composed_of: [ATO_SARCASM_CUE, ATO_ANGER_WORD]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "immer du machst das … nervt langsam"
+  - "typisch von dir … reicht jetzt"
+  - "hör auf damit … sonst passiert was"
+  - "deine Schuld … wie immer"
+  - "noch so ein Spruch und …"

@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SPREAD_PROTOCOL
+frame:
+  signal: ["semantic"]
+  concept: "Verbreitungs-Protokoll"
+  pragmatics: "Transmission"
+  narrative: "micro"
+composed_of: [ATO_PROJECT_INIT, ATO_CROSS_POSTING_ANWEISUNG]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "Projekt starten… poste nach Y"
+  - "initiiere… erstelle Subreddit"
+  - "Projekt-Kick + Transmission"
+  - "Struktur bestimmen… kopiere in Modell"
+  - "starte und verbreite"

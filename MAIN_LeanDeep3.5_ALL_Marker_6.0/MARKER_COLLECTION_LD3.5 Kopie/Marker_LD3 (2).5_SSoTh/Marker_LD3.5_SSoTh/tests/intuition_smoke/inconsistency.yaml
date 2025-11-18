@@ -1,0 +1,17 @@
+family: INCONSISTENCY
+cluster: CLU_INTUITION_INCONSISTENCY
+sequences:
+  - name: confirm_and_decay
+    description: Aktivierung über zwei SEMs, Bestätigung durch Faktenkonflikt, anschließender Decay ohne neue Evidenz.
+    events:
+      - sems: [SEM_CONSIST_EVAL_EXTERNAL]
+      - sems: [SEM_ROLE_STABILITY_BREAK_EXTERNAL]
+      - sems: [SEM_FACT_CONFLICT_EXTERNAL]
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []
+      - sems: []

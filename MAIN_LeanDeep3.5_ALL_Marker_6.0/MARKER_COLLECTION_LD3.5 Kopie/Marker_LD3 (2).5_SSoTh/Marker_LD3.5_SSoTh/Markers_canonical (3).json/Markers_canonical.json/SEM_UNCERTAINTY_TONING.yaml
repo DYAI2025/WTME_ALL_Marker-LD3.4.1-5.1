@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_UNCERTAINTY_TONING
+frame:
+  signal: ["semantic"]
+  concept: "Unsicherheit tonisieren"
+  pragmatics: "Hedging"
+  narrative: "micro"
+composed_of: [ATO_HESITATION, ATO_DOUBT_PHRASE]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "vielleicht ist es so … bin mir nicht sicher"
+  - "ich glaube … könnte aber falsch liegen"
+  - "hm … weiß nicht genau"
+  - "es spricht einiges dafür … aber"
+  - "vermutlich … kann mich täuschen"

@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_ECHO_REGEX
+frame:
+  signal: ["regex"]
+  concept: "Echo/Repetition"
+  pragmatics: "Stochastik"
+  narrative: "surface"
+pattern:
+  regex: "\\b(\\w+)\\b.*\\b\\1\\b"
+examples:
+  - "wir drehen uns im Kreis … wie vorhin"
+  - "das hatten wir schon … nochmal von vorne"
+  - "immer wieder die gleiche Frage"
+  - "ich wiederhole mich … schon wieder"
+  - "zurück am Anfang … ohne Fortschritt"
+
+

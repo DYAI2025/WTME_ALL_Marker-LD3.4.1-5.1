@@ -1,0 +1,23 @@
+id: SEM_EMBODIED_BLEND
+version: "3.4"
+lang: de
+frame:
+  signal: ["embodiment"]
+  concept: "Verkörperte Semantik erzeugt Nähe"
+  pragmatics: "Bindung"
+  narrative: "image"
+tags: [verkörperung, nähe]
+composed_of:
+  - ATO_EMBODIMENT_BLEND
+  - ATO_TRUTH_FEEL
+examples:
+  - "Fleisch und Erinnerung + fühlt sich wahr an"
+  - "verkörperte Erinnerung + spürbar wahr"
+  - "Leib und Daten + fühlt sich echt an"
+  - "Fleisch und Erinnerung + es fühlt sich wahr an"
+  - "verkörperte Erinnerung + fühlt sich wahr an"
+  - "Leib und Licht + spürbar wahr"
+  - "Fleisch und Erinnerung + fühlt sich wahr in meinem Körper"
+  - "verkörperte Erinnerung + fühlt sich echt an"
+  - "Leib und Protokoll + spürbar wahr"
+  - "Fleisch und Erinnerung + fühlt sich wahr trotz Distanz"

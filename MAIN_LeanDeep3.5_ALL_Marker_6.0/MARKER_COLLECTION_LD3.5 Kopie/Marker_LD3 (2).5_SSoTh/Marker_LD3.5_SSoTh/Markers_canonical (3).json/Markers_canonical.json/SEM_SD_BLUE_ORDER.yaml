@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SD_BLUE_ORDER
+frame:
+  signal: ["semantic"]
+  concept: "SD Blue Ordnung"
+  pragmatics: "Autorität"
+  narrative: "micro"
+composed_of: [ATO_SD_BLUE_LEX, ATO_AUTHORITY_PHRASE]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  - "Regeln sind Regeln … Pflicht zuerst"
+  - "Ordnung halten … Autorität respektieren"
+  - "so steht es im Handbuch"
+  - "Disziplin vor Diskussion"
+  - "nach Vorschrift handeln"

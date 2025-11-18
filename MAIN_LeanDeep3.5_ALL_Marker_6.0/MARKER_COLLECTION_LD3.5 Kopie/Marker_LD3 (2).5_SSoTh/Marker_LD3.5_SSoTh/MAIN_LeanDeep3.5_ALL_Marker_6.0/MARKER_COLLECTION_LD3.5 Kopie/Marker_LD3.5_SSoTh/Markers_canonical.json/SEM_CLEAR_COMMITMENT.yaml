@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_CLEAR_COMMITMENT
+frame:
+  signal: ["semantic"]
+  concept: "klare Zusage"
+  pragmatics: "Verbindlichkeit"
+  narrative: "micro"
+composed_of: [ATO_COMMIT_PHRASE, ATO_TRUST_PHRASE]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "mach ich heute noch … vielleicht morgen"
+  - "ich verspreche … doch erst später"
+  - "bin dran … aber keine Zeit"
+  - "gleich … nach dem Meeting"
+  - "heute fix … oder morgen"

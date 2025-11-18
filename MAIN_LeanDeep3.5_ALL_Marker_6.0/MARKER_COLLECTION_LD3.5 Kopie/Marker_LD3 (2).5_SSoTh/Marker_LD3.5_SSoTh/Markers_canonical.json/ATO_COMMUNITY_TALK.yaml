@@ -1,0 +1,38 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_COMMUNITY_TALK
+frame:
+  signal: ["token"]
+  concept: "Gemeinschaft/Empathie"
+  pragmatics: "Beziehung"
+  narrative: "surface"
+pattern:
+  tokens: ["Gemeinschaft", "Konsens", "Empathie", "alle Stimmen", "wir"]
+examples:
+  - "Konsens finden … Empathie zeigen"
+  - "Gemeinschaft vor Ego"
+  - "jede Stimme zählt"
+  - "Beziehung ist wichtig"
+  - "fühlst du dich gehört?"
+  - "Lasst uns alle Stimmen einbeziehen, bevor wir entscheiden."
+  - "Wir achten darauf, dass niemand sich ausgeschlossen fühlt."
+  - "Gemeinsam schaffen wir das, weil wir aufeinander hören."
+  - "Ich will verstehen, wie es euch damit geht."
+  - "Wir sind ein Team, wir tragen das zusammen."
+  - "Empathie zuerst – wie wirkt das auf unsere Gemeinschaft?"
+  - "Wir planen solidarisch, damit alle profitieren."
+  - "Ich möchte, dass du dich in der Runde gesehen fühlst."
+  - "Lasst uns Konsens suchen statt Mehrheitsdruck."
+metadata:
+  neg_examples:
+    - "Ich entscheide alleine, fertig."
+    - "Mir egal, wie ihr das seht."
+    - "Wir brauchen keine Gespräche, nur Ergebnisse."
+    - "Das Team ist zweitrangig, Hauptsache ich gewinne."
+    - "Wenn jemand sich ausgeschlossen fühlt, ist das sein Problem."
+    - "Ich habe keine Zeit für Empathie."
+    - "Wir stimmen nicht ab; ich gebe die Richtung vor."
+    - "Es zählt nur die Mehrheit, nicht jede einzelne Stimme."
+    - "Gefühle sind hier fehl am Platz."
+    - "Das ist kein Teamthema, sondern mein Projekt."
+

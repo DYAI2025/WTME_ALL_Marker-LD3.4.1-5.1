@@ -1,0 +1,24 @@
+id: ATO_WEDDING_TASK_NEGOTIATION
+version: "3.4"
+lang: de
+frame:
+  signal: ["dialogue_act"]
+  concept: "Aufgabenteilung"
+  pragmatics: "Aushandeln/Delegation"
+  narrative: "Koordination rund um Hochzeit"
+tags: [wedding, negotiation]
+requires_env:
+  any_of: ["SCN_WEDDING_CONTEXT"]
+pattern:
+  - "\\b(wer übernimmt|kannst du bitte|ich nehme .*?, du .*?|Deadline|To[- ]?do)\\b"
+examples:
+  - "Wer übernimmt die Abstimmung mit dem Fotografen?"
+  - "Kannst du bitte die Ringe morgen abholen?"
+  - "Ich nehme die Deko, du checkst das Catering, einverstanden?"
+  - "Welche Deadline hat die Papeterie für die Menükarten?"
+  - "Kannst du bitte die To-do-Liste aktualisieren?"
+  - "Wer übernimmt den Kontakt zum Standesamt diese Woche?"
+  - "Ich nehme die Sitzordnung, du kümmerst dich ums Budget."
+  - "Kannst du bitte den DJ anrufen und die Zeiten bestätigen?"
+  - "Die Deadline für die Gästezahlen ist Freitag, wer macht das?"
+  - "Ich nehme die Blumen, du organisierst den Shuttle für die Gäste."

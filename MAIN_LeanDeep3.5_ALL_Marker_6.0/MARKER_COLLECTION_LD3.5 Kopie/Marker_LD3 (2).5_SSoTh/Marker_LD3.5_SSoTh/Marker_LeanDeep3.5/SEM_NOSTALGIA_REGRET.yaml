@@ -1,0 +1,16 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_NOSTALGIA_REGRET
+frame:
+  signal: ["semantic"]
+  concept: "Nostalgie/Bedauern"
+  pragmatics: "Rückblick"
+  narrative: "micro"
+composed_of: [ATO_REGRET_WORD, ATO_SADNESS_WORD]
+activation: {rule: "BOTH IN 2 messages"}
+examples:
+  - "ich vermisse … hätte es anders machen sollen"
+  - "so schade … tut mir leid"
+  - "fühle mich schuldig … schwer auszuhalten"
+  - "allein damit … traurig"
+  - "hätte früher reden sollen … bereue es"

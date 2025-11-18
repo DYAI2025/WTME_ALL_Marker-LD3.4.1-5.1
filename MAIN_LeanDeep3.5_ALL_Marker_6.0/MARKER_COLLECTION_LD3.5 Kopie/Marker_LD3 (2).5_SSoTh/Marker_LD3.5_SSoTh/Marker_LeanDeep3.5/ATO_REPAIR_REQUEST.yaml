@@ -1,0 +1,58 @@
+name: ATO_REPAIR_REQUEST
+label: "Reparatur-Anfrage"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Anfragen nach Reparatur oder Klärung eines Konflikts"
+patterns:
+  - type: regex
+    value: "(lass uns das klären|können wir reden|bitte erklär|lass uns reparieren|wie können wir das lösen)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "repair_request"
+  interpretant: "effect_on_state: {deesc: +0.1, trust: +0.1}"
+examples:
+  positive_de:
+    - "Lass uns das klären."
+    - "Können wir reden?"
+    - "Bitte erklär mir das."
+    - "Lass uns reparieren."
+    - "Wie können wir das lösen?"
+    - "Wir sollten das besprechen."
+    - "Klärung bitte."
+    - "Lass uns drüber reden."
+    - "Reparieren wir das."
+    - "Lösung finden?"
+    - "Erkläre bitte."
+    - "Reden wir offen."
+    - "Klär das mit mir."
+    - "Lass uns anpassen."
+    - "Wie lösen wir?"
+    - "Besprechen wir."
+    - "Bitte Klärung."
+    - "Drüber reden."
+    - "Reparatur jetzt."
+    - "Finde Lösung."
+  negative_de:
+    - "Kein Bedarf zu klären."
+    - "Reden? Nein."
+    - "Erklär nichts."
+    - "Nicht reparieren."
+    - "Kein Lösen."
+    - "Nicht besprechen."
+    - "Keine Klärung."
+    - "Nicht drüber reden."
+    - "Keine Reparatur."
+    - "Keine Lösung."
+    - "Erkläre nicht."
+    - "Nicht offen reden."
+    - "Nicht klären."
+    - "Nicht anpassen."
+    - "Nicht lösen."
+    - "Nicht besprechen."
+    - "Keine Bitte."
+    - "Nicht reden."
+    - "Keine Reparatur."
+    - "Keine Lösung."

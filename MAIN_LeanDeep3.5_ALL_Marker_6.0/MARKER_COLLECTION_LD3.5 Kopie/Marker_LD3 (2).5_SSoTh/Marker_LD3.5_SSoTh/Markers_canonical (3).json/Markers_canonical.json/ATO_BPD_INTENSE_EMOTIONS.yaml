@@ -1,0 +1,61 @@
+id: ATO_BPD_INTENSE_EMOTIONS
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for intense emotional swings in borderline personality disorder
+frame:
+  signal:
+  - intense emotions
+  concept: Emotional instability language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(overwhelmed|hate you|love you|can't handle|everything is terrible)\b
+examples:
+  positive:
+  - "I'm so overwhelmed, I can't handle this anymore."
+  - "I hate you for leaving me like this."
+  - "I love you more than anything, don't go."
+  - "Everything is terrible, I feel so empty."
+  - "This pain is unbearable, I need you now."
+  - "I'm furious, how could you do this?"
+  - "I adore you, you're my everything."
+  - "This is the worst day of my life."
+  - "I can't stand this feeling inside."
+  - "You're amazing, I need you forever."
+  - "I'm devastated, nothing matters now."
+  - "I despise myself for this."
+  - "You're perfect, don't change."
+  - "This agony is too much."
+  - "I worship the ground you walk on."
+  - "I'm shattered, help me."
+  - "I loathe this situation."
+  - "You're my savior, stay with me."
+  - "Everything hurts so deeply."
+  - "I cherish you intensely."
+  negative:
+  - "I'm a bit stressed, but I'll manage."
+  - "I dislike that you left."
+  - "I care about you a lot."
+  - "Things are tough, but okay."
+  - "The pain is manageable."
+  - "I'm annoyed, but not furious."
+  - "I like you quite a bit."
+  - "This is bad, but not terrible."
+  - "I can cope with this."
+  - "You're nice, I appreciate you."
+  - "I'm sad, but not devastated."
+  - "I don't like myself much."
+  - "You're good as you are."
+  - "This hurts a little."
+  - "I value you."
+  - "I'm upset, but okay."
+  - "I resent this mildly."
+  - "You're important to me."
+  - "It's painful, but bearable."
+  - "I respect you."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

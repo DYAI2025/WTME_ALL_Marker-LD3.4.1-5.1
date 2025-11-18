@@ -1,0 +1,18 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_CIRCULARITY_TOKENS
+frame:
+  signal: ["token"]
+  concept: "Zirkel-Hinweise"
+  pragmatics: "Loop"
+  narrative: "surface"
+pattern:
+  tokens: ["wieder", "nochmal", "erneut", "immer wieder", "zurück"]
+examples:
+  - "wir drehen uns im Kreis … wie vorhin"
+  - "das hatten wir schon … nochmal von vorne"
+  - "immer wieder die gleiche Frage"
+  - "ich wiederhole mich … schon wieder"
+  - "zurück am Anfang … ohne Fortschritt"
+
+

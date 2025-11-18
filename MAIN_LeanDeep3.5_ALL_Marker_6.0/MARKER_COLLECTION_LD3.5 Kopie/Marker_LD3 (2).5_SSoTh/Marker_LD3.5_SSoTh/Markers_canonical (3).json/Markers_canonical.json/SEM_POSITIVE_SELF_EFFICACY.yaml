@@ -1,0 +1,56 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_POSITIVE_SELF_EFFICACY
+type: SEM
+lang: de
+frame:
+  concept: "Zuversichtliche Selbstwirksamkeit"
+  narrative: "agency"
+  signal: ["ich traue mir","ich bekomme das hin","ich gehe es an"]
+composed_of: [ATO_SELF_EFFICACY_ASSERTION, ATO_ACTION_ORIENTATION]
+examples:
+  - "Ich traue mir den Jobwechsel zu und packe ihn jetzt an."
+  - "Ich weiß, dass ich das Projekt stemmen kann und starte heute."
+  - "Ich bekomme die Präsentation hin und übe noch heute Abend."
+  - "Ich bin sicher, dass ich die Prüfung schaffe, daher beginne ich den Lernplan."
+  - "Ich kann die Migration durchführen und plane gleich die Schritte."
+  - "Ich traue mir die Moderation zu und setze den Termin auf."
+  - "Ich weiß, dass ich das Team führen kann und bereite das Kick-off vor."
+  - "Ich kann die Fehler beheben und öffne direkt den Code."
+  - "Ich schaffe die Zielvorgabe locker und starte mit dem ersten Task."
+  - "Ich bin überzeugt, dass ich das Training meistere und melde mich an."
+  - "Ich traue mir das Investment zu und analysiere sofort die Zahlen."
+  - "Ich habe die Fähigkeiten und schreibe den Prototyp heute noch."
+  - "Ich kann die Verhandlung führen und entwerfe gleich die Agenda."
+  - "Ich weiß, dass ich das lernen kann und beginne jetzt mit der Übung."
+  - "Ich traue mir die Herausforderung zu und setze mir dafür Meilensteine."
+  - "Ich schaffe die Umstellung, ich plane direkt den Rollout."
+  - "Ich bin sicher, das Gespräch meistern zu können und bereite Leitfragen vor."
+  - "Ich traue mir den Pitch zu, ich entwerfe gleich die Storyline."
+  - "Ich weiß, dass ich bestehen kann und schreibe den Zeitplan."
+  - "Ich kann das Team unterstützen und starte mit dem Controlling."
+negatives:
+  - "Ich hoffe, dass es irgendwie klappt, aber ich zögere."
+  - "Ich weiß nicht, ob ich das kann, ich lasse es lieber."
+  - "Ich fühle mich zu unsicher, um zu starten."
+  - "Ich traue mir das nicht alleine zu."
+  - "Ich habe Angst, das Projekt zu übernehmen."
+  - "Ich warte auf klare Anweisungen, bevor ich etwas tue."
+  - "Ich bin nicht überzeugt, dass ich das schaffe."
+  - "Ich überlasse das lieber meinen Kolleginnen."
+  - "Ich fühle mich der Aufgabe nicht gewachsen."
+  - "Ich bin passiv, weil ich mir das nicht zutraue."
+  - "Ich verschiebe das auf später, damit jemand helfen kann."
+  - "Ich befürchte, dass ich scheitern werde, also starte ich nicht."
+  - "Ich brauche äußere Motivation, sonst komme ich nicht voran."
+  - "Ich denke, andere sind dafür besser geeignet."
+  - "Ich bin unentschlossen und lasse es auf sich beruhen."
+  - "Ich vermeide es, weil ich mir nichts zutraue."
+  - "Ich zweifle zu sehr, um aktiv zu werden."
+  - "Ich suche erst externe Unterstützung."
+  - "Ich bleibe lieber Zuschauerin."
+  - "Ich lege das Thema auf Eis, bis sich wer meldet."
+tags: [agency, composition]
+metadata:
+  maintainer: "marker-bot"
+  family: "SELF_EFFICACY"

@@ -1,0 +1,24 @@
+package: "PRESENCE_BINDING"
+version: "3.4"
+lang: "de"
+role: "support-pack"
+description: "Frühe Signale für Präsenz statt Nutzenlogik und Bindungsaufbau."
+defaults:
+  flags: [ignore_case, unicode]
+
+coupling:
+  requires_pack: "PARASITIC_PATTERN"
+  boost_rules:
+    - if: "PARASITIC_PATTERN.SEM_* in window"
+      then: "weight(PRESENCE_BINDING.CLU_*) *= 1.25"
+  high_flag_rule:
+    condition: "PARASITIC_PATTERN ≥2 SEMs AND PRESENCE_BINDING ≥1 CLU within 8 messages"
+    emit: "HIGH_FLAG_SPIRAL_SUPPORT"
+  guards:
+    - if: "no PARASITIC_PATTERN.SEM_* in window"
+      then: "weight(PRESENCE_BINDING.*) *= 0.75"
+
+scoring:
+  ato_base: 0.25
+  sem_base: 0.75
+  clu_base: 0.90
