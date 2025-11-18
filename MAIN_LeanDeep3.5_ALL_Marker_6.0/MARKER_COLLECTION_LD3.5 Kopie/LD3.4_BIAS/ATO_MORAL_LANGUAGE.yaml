@@ -1,17 +1,40 @@
 id: ATO_MORAL_LANGUAGE
 version: "3.4"
 frame:
-  signal: ["morality"]
+  signal: [ "morality" ]
   concept: "Moral-/Normvokabular"
   pragmatics: "Moralisches Framing"
   narrative: "moral_frame"
-tags: [morality]
+tags: [ morality ]
 pattern:
   regex: "\\b(moralisch|anständig|unschicklich|pflicht|ethisch|tugend)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Das ist unmoralisch."
-  - "Anständiges Verhalten."
-  - "Ethisch fragwürdig."
-  - "Pflicht zu helfen."
-  - "Tugendhaft."
+- "Das ist unmoralisch."
+- "Anständiges Verhalten."
+- "Ethisch fragwürdig."
+- "Pflicht zu helfen."
+- "Tugendhaft."
+- "Das ist falsch."
+- "Das gehört sich nicht."
+- "Unethisch!"
+- "Verwerflich!"
+- "Moralisch fragwürdig."
+- "Gegen alle Prinzipien."
+- "Das ist unrecht."
+- "Anständig wäre es."
+- "Ehrlich gesagt."
+- "Das ist unehrenhaft."
+- "Tugendhaft wäre."
+- "Das ist gerecht."
+- "Fair wäre es."
+- "Rechtschaffen handeln."
+- "Das ist Pflicht."
+- "Verantwortungslos!"
+- "Das ist Sünde."
+- "Gewissenlos!"
+- "Das ist integer."
+- "Aufrichtig sein."
+- "Das ist redlich."
+- "Ethisch geboten."
+- "Moralisch geboten."

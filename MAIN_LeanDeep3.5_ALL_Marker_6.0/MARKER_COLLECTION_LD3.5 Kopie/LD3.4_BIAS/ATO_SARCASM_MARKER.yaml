@@ -1,17 +1,40 @@
 id: ATO_SARCASM_MARKER
 version: "3.4"
 frame:
-  signal: ["sarcasm"]
+  signal: [ "sarcasm" ]
   concept: "Sarkasmus-Hinweise"
   pragmatics: "Kontextinvertierung"
   narrative: "tone"
-tags: [sarcasm, tone]
+tags: [ sarcasm, tone ]
 pattern:
   regex: "(\\bja\\s*klar\\b|\\bna\\s*toll\\b|\".*\"\\s*|-\\s*/s\\b)"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Ja klar."
-  - "Na toll."
-  - "\"Super gemacht\" (ironisch)."
-  - "fantastisch… /s"
-  - "‚Ganz großartig.‘"
+- "Ja klar."
+- "Na toll."
+- "\"Super gemacht\" (ironisch)."
+- "fantastisch… /s"
+- "‘Ganz großartig.’"
+- "Na toll! /s"
+- "Wunderbar! /s"
+- "Großartig! /s"
+- "Klasse Idee! /s"
+- "Super gemacht! /s"
+- "Genial! /s"
+- "Brilliant! /s"
+- "Fantastisch! /s"
+- "Perfekt! /s"
+- "Ausgezeichnet! /s"
+- "Hervorragend! /s"
+- "Prima! /s"
+- "Fabelhaft! /s"
+- "Sensationell! /s"
+- "Sagenhaft! /s"
+- "Traumhaft! /s"
+- "Herrlich! /s"
+- "Köstlich! /s"
+- "Entzückend! /s"
+- "Bezaubernd! /s"
+- "Hinreißend! /s"
+- "Umwerfend! /s"
+- "Atemberaubend! /s"

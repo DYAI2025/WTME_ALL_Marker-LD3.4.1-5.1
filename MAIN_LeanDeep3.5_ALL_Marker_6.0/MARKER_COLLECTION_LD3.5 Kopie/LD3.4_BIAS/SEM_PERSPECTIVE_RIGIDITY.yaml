@@ -1,27 +1,47 @@
 id: SEM_PERSPECTIVE_RIGIDITY
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["rigidity", "closed-mindedness"]
-  concept: "Inability to consider alternative viewpoints"
-  pragmatics: "Cognitive inflexibility"
-  narrative: "cognitive_bias"
-tags: [bias, rigidity, perspective_taking]
+  signal:
+  - rigidity
+  - closed-mindedness
+  concept: Inability to consider alternative viewpoints
+  pragmatics: Cognitive inflexibility
+  narrative: cognitive_bias
+tags:
+- bias
+- rigidity
+- perspective_taking
 composed_of:
-  - ATO_CERTAINTY_WITHOUT_EVIDENCE
-  - ATO_ATTRIBUTION_ERROR
+- ATO_CERTAINTY_WITHOUT_EVIDENCE
+- ATO_ATTRIBUTION_ERROR
 activation:
-  rule: "2+ rigidity patterns in message"
+  rule: 2+ rigidity patterns in message
 scoring:
   base: 0.6
   weight: 1.1
 examples:
-  - "Darüber diskutiere ich nicht. Basta!"
-  - "Nonsense! Case closed."
-  - "Es gibt nur eine richtige Sichtweise. Punkt."
-  - "That's absurd. End of story."
-  - "Keine Alternative. Fertig."
-  - "Ich sehe das so, und das bleibt so"
-  - "Ende der Diskussion. Es ist wie es ist."
-  - "Das ist Fakt. Keine Widerrede."
-  - "Was du sagst, zählt nicht. Ich habe recht."
-  - "Wer das nicht so sieht, hat keine Ahnung"
+- Darüber diskutiere ich nicht. Basta!
+- Nonsense! Case closed.
+- Es gibt nur eine richtige Sichtweise. Punkt.
+- That's absurd. End of story.
+- Keine Alternative. Fertig.
+- Ich sehe das so, und das bleibt so
+- Ende der Diskussion. Es ist wie es ist.
+- Das ist Fakt. Keine Widerrede.
+- Was du sagst, zählt nicht. Ich habe recht.
+- Wer das nicht so sieht, hat keine Ahnung
+- Kombination 1 mit certainty_ und attributio
+- Kombination 2 mit certainty_ und attributio
+- Kombination 3 mit certainty_ und attributio
+- Kombination 4 mit certainty_ und attributio
+- Kombination 5 mit certainty_ und attributio
+- Kombination 6 mit certainty_ und attributio
+- Kombination 7 mit certainty_ und attributio
+- Kombination 8 mit certainty_ und attributio
+- Kombination 9 mit certainty_ und attributio
+- Kombination 10 mit certainty_ und attributio
+- Kombination 11 mit certainty_ und attributio
+- Kombination 12 mit certainty_ und attributio
+- Kombination 13 mit certainty_ und attributio
+- Kombination 14 mit certainty_ und attributio
+- Kombination 15 mit certainty_ und attributio

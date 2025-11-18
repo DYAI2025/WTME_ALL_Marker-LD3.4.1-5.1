@@ -1,22 +1,43 @@
 id: SEM_ANCHORING_BIAS
 version: "3.4"
 frame:
-  signal: ["anchoring", "first-impression"]
+  signal: [ "anchoring", "first-impression" ]
   concept: "Übergewichtung des Anfangswerts"
   pragmatics: "Ankerheuristik"
   narrative: "cognitive_bias"
-tags: [bias, anchoring]
+tags: [ bias, anchoring ]
 composed_of:
-  - ATO_ANCHORING_PHRASES
-  - ATO_PREMATURE_CLOSURE
+- ATO_ANCHORING_PHRASES
+- ATO_PREMATURE_CLOSURE
 activation:
   rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
 scoring:
   base: 0.65
   weight: 1.0
 examples:
-  - "Die erste Schätzung bleibt – Fall abgeschlossen."
-  - "Startwert passt, nicht weiter prüfen."
-  - "Initial offer gilt, Thema erledigt."
-  - "Am Anfang 5%, also bleibt es dabei."
-  - "Erste Zahl ist Maßstab, case closed."
+- "Die erste Schätzung bleibt – Fall abgeschlossen."
+- "Startwert passt, nicht weiter prüfen."
+- "Initial offer gilt, Thema erledigt."
+- "Am Anfang 5%, also bleibt es dabei."
+- "Erste Zahl ist Maßstab, case closed."
+- "Ausgangspunkt 100, damit fertig."
+- "Erste Zahl war 50, Punkt."
+- "Initial geplant mit 10k, erledigt."
+- "Startwert liegt fest, abgehakt."
+- "Am Beginn stand 200, done."
+- "Ursprünglich 30%, Thema durch."
+- "Erste Information 40, geschafft."
+- "Anfangswert 15, nicht weiter diskutieren."
+- "Initial 70, case closed."
+- "Ausgangslage 500, Fall abgeschlossen."
+- "Erste Erwartung 20%, fertig damit."
+- "Der erste Eindruck: 80, erledigt."
+- "Anfangsbedingung 12, abgeschlossen."
+- "Ursprünglich 150, Punkt."
+- "Erster Anhaltspunkt 600, done."
+- "Initiale Position 25%, Thema erledigt."
+- "Am Anfang 90, nicht weiter prüfen."
+- "Erste Annahme 180, fertig."
+- "Referenzpunkt 8000, abgehakt."
+- "Ausgangspunkt fix, case closed."
+- "Startwert gilt, geschafft."

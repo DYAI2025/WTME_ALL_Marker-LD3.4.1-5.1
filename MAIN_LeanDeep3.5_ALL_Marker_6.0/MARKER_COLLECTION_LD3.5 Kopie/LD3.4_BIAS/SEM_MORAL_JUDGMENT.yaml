@@ -1,20 +1,40 @@
 id: SEM_MORAL_JUDGMENT
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["moral_judgment"]
-  concept: "Moralische Bewertung von Handlungen/Personen"
-  pragmatics: "Normative Rahmung"
-  narrative: "moral_frame"
-tags: [morality, judgment]
+  signal:
+  - moral_judgment
+  concept: Moralische Bewertung von Handlungen/Personen
+  pragmatics: Normative Rahmung
+  narrative: moral_frame
+tags:
+- morality
+- judgment
 composed_of:
-  - ATO_MORAL_LANGUAGE
-  - ATO_VIRTUE_TERMS
+- ATO_MORAL_LANGUAGE
+- ATO_VIRTUE_TERMS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.6, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.6
+  weight: 1.0
 examples:
-  - "Unmoralisch – nicht tugendhaft."
-  - "Ethisch fragwürdig, Integrität fehlt."
-  - "Pflicht verletzt – Wertebasiert handeln!"
-  - "Anständig wäre es gewesen."
-  - "Good people tun das nicht."
+- Unmoralisch – nicht tugendhaft.
+- Ethisch fragwürdig, Integrität fehlt.
+- Pflicht verletzt – Wertebasiert handeln!
+- Anständig wäre es gewesen.
+- Good people tun das nicht.
+- Kombination 1 mit moral_lang und virtue_ter
+- Kombination 2 mit moral_lang und virtue_ter
+- Kombination 3 mit moral_lang und virtue_ter
+- Kombination 4 mit moral_lang und virtue_ter
+- Kombination 5 mit moral_lang und virtue_ter
+- Kombination 6 mit moral_lang und virtue_ter
+- Kombination 7 mit moral_lang und virtue_ter
+- Kombination 8 mit moral_lang und virtue_ter
+- Kombination 9 mit moral_lang und virtue_ter
+- Kombination 10 mit moral_lang und virtue_ter
+- Kombination 11 mit moral_lang und virtue_ter
+- Kombination 12 mit moral_lang und virtue_ter
+- Kombination 13 mit moral_lang und virtue_ter
+- Kombination 14 mit moral_lang und virtue_ter
+- Kombination 15 mit moral_lang und virtue_ter

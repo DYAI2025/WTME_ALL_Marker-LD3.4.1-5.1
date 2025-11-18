@@ -1,20 +1,40 @@
 id: SEM_TENTATIVE_INFERENCE
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["tentative_inference"]
-  concept: "Vorläufige Schlussfolgerung"
-  pragmatics: "Hypothesenstatus"
-  narrative: "uncertainty"
-tags: [uncertainty, inference]
+  signal:
+  - tentative_inference
+  concept: Vorläufige Schlussfolgerung
+  pragmatics: Hypothesenstatus
+  narrative: uncertainty
+tags:
+- uncertainty
+- inference
 composed_of:
-  - ATO_TENTATIVE_VERBS
-  - ATO_PROBABILISTIC_TERMS
+- ATO_TENTATIVE_VERBS
+- ATO_PROBABILISTIC_TERMS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Scheint mit 60% zu klappen."
-  - "Looks like low risk."
-  - "Wirkt wahrscheinlich gut."
-  - "Appears unlikely."
-  - "Tendenziell 40–60%."
+- Scheint mit 60% zu klappen.
+- Looks like low risk.
+- Wirkt wahrscheinlich gut.
+- Appears unlikely.
+- Tendenziell 40–60%.
+- Kombination 1 mit tentative_ und probabilis
+- Kombination 2 mit tentative_ und probabilis
+- Kombination 3 mit tentative_ und probabilis
+- Kombination 4 mit tentative_ und probabilis
+- Kombination 5 mit tentative_ und probabilis
+- Kombination 6 mit tentative_ und probabilis
+- Kombination 7 mit tentative_ und probabilis
+- Kombination 8 mit tentative_ und probabilis
+- Kombination 9 mit tentative_ und probabilis
+- Kombination 10 mit tentative_ und probabilis
+- Kombination 11 mit tentative_ und probabilis
+- Kombination 12 mit tentative_ und probabilis
+- Kombination 13 mit tentative_ und probabilis
+- Kombination 14 mit tentative_ und probabilis
+- Kombination 15 mit tentative_ und probabilis

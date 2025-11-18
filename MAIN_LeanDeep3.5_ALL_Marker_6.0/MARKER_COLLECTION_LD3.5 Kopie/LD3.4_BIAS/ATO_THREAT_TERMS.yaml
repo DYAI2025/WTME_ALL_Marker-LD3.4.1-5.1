@@ -1,17 +1,40 @@
 id: ATO_THREAT_TERMS
 version: "3.4"
 frame:
-  signal: ["threat"]
+  signal: [ "threat" ]
   concept: "Bedrohungs-/Gefahrenwörter"
   pragmatics: "Gefahreneinschätzung"
   narrative: "risk"
-tags: [threat, risk]
+tags: [ threat, risk ]
 pattern:
   regex: "\\b(Gefahr|bedrohlich|Angriff|unsicher|kritisch|Alarm)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Akute Gefahr."
-  - "Bedrohlich."
-  - "Angriff droht."
-  - "Unsichere Lage."
-  - "Alarmzeichen."
+- "Akute Gefahr."
+- "Bedrohlich."
+- "Angriff droht."
+- "Unsichere Lage."
+- "Alarmzeichen."
+- "Bedrohung."
+- "Gefahr."
+- "Risiko."
+- "Warnung."
+- "Vorsicht."
+- "Achtung."
+- "Alarm."
+- "Notfall."
+- "Krise."
+- "Problem."
+- "Schwierigkeit."
+- "Hindernis."
+- "Hürde."
+- "Barriere."
+- "Blockade."
+- "Gefährdung."
+- "Gefährlich."
+- "Kritisch."
+- "Alarmierend."
+- "Besorgniserregend."
+- "Bedenklich."
+- "Prekär."
+- "Brisant."

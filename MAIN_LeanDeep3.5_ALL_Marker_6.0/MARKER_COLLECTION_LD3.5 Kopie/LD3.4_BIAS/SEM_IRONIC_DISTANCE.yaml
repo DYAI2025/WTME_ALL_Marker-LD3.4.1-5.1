@@ -1,20 +1,39 @@
 id: SEM_IRONIC_DISTANCE
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["irony"]
-  concept: "Ironische Distanzierung"
-  pragmatics: "Nicht-wörtliche Zustimmung"
-  narrative: "tone"
-tags: [irony]
+  signal:
+  - irony
+  concept: Ironische Distanzierung
+  pragmatics: Nicht-wörtliche Zustimmung
+  narrative: tone
+tags:
+- irony
 composed_of:
-  - ATO_IRONY_PUNCTUATION
-  - ATO_SARCASM_MARKER
+- ATO_IRONY_PUNCTUATION
+- ATO_SARCASM_MARKER
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "„Klasse“ – ja klar."
-  - "\"Perfekt\" – na toll."
-  - "‚Super.‘ – /s"
-  - "\"Toll gemacht\" – ironisch."
-  - "„Großartig“ – eindeutig sarkastisch."
+- „Klasse“ – ja klar.
+- '"Perfekt" – na toll.'
+- ‚Super.‘ – /s
+- '"Toll gemacht" – ironisch.'
+- „Großartig“ – eindeutig sarkastisch.
+- Kombination 1 mit irony_punc und sarcasm_ma
+- Kombination 2 mit irony_punc und sarcasm_ma
+- Kombination 3 mit irony_punc und sarcasm_ma
+- Kombination 4 mit irony_punc und sarcasm_ma
+- Kombination 5 mit irony_punc und sarcasm_ma
+- Kombination 6 mit irony_punc und sarcasm_ma
+- Kombination 7 mit irony_punc und sarcasm_ma
+- Kombination 8 mit irony_punc und sarcasm_ma
+- Kombination 9 mit irony_punc und sarcasm_ma
+- Kombination 10 mit irony_punc und sarcasm_ma
+- Kombination 11 mit irony_punc und sarcasm_ma
+- Kombination 12 mit irony_punc und sarcasm_ma
+- Kombination 13 mit irony_punc und sarcasm_ma
+- Kombination 14 mit irony_punc und sarcasm_ma
+- Kombination 15 mit irony_punc und sarcasm_ma

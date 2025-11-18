@@ -1,20 +1,41 @@
 id: SEM_EMOTIONAL_SUPPORT
 version: "3.4"
 frame:
-  signal: ["emotional_support"]
+  signal: [ "emotional_support" ]
   concept: "Emotionale Stütze"
   pragmatics: "Caring + Präsenz"
   narrative: "prosocial"
-tags: [support, empathy]
+tags: [ support, empathy ]
 composed_of:
-  - ATO_EMPATHY_MARKERS
-  - ATO_SUPPORTIVE_LANGUAGE
+- ATO_EMPATHY_MARKERS
+- ATO_SUPPORTIVE_LANGUAGE
 activation:
   rule: "BOTH IN 1 message"
 scoring: { base: 0.55, weight: 1.0 }
 examples:
-  - "Ich fühle mit dir – ich bin da."
-  - "Das muss schwer sein – wir schaffen das."
-  - "You're not alone – reach out anytime."
-  - "Verstehe dich – stolz auf dich."
-  - "Hier für dich – gemeinsam stark."
+- "Ich fühle mit dir – ich bin da."
+- "Das muss schwer sein – wir schaffen das."
+- "You're not alone – reach out anytime."
+- "Verstehe dich – stolz auf dich."
+- "Hier für dich – gemeinsam stark."
+- "Ich verstehe – du schaffst das."
+- "Tut mir leid – ich helfe dir."
+- "Kann nachvollziehen – ich unterstütze."
+- "Höre dir zu – gemeinsam schaffen wir's."
+- "Ist verständlich – du bist stark."
+- "Sehe deinen Schmerz – ich stehe hinter dir."
+- "Nehme dich ernst – du kannst auf mich zählen."
+- "Deine Gefühle sind wichtig – ich halte zu dir."
+- "Respektiere deine Sicht – du hast Unterstützung."
+- "Das berührt mich – ich bin an deiner Seite."
+- "Teile deinen Kummer – du bekommst Hilfe."
+- "Erkenne deine Not – ich trage mit."
+- "Das bewegt mich – du hast Rückendeckung."
+- "An deiner Seite – ich stärke dich."
+- "Mitgefühl – du bist nicht allein."
+- "Spüre deine Last – ich fange auf."
+- "Geht mir nah – du hast Netz."
+- "Verstehe Lage – ich sichere ab."
+- "Nachvollziehbar – du bekommst Unterstützung."
+- "Fühle Trauer – ich ermutige dich."
+- "Verdienst Unterstützung – ich bin Verbündeter."

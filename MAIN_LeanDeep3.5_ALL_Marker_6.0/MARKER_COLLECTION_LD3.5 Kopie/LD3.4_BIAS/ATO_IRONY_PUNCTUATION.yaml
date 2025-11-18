@@ -1,17 +1,38 @@
 id: ATO_IRONY_PUNCTUATION
 version: "3.4"
 frame:
-  signal: ["irony"]
+  signal: [ "irony" ]
   concept: "Ironie-Signale (Anführungsz., /s)"
   pragmatics: "Tonhinweise"
   narrative: "tone"
-tags: [irony, sarcasm]
+tags: [ irony, sarcasm ]
 pattern:
   regex: "([„“\"'].*[\"'“”])|(/s\\b)"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "„Super“"
-  - "\"Großartig\""
-  - "‚Klasse.‘"
-  - "yeah… /s"
-  - "\"Perfekt\""
+- "„Super“"
+- "\"Großartig\""
+- "‘Klasse.’"
+- "yeah… /s"
+- "\"Perfekt\""
+- "Toll gemacht! /s"
+- "„Super Idee“"
+- "\"Klasse!\" /s"
+- "‘Wunderbar.’"
+- "Phantastisch! /s"
+- "„Genial“"
+- "\"Ausgezeichnet\" /s"
+- "‘Brillant’ /s"
+- "Hervorragend! /s"
+- "„Großartig“ /s"
+- "\"Prima\" /s"
+- "‘Fabelhaft’"
+- "Herrlich! /s"
+- "„Wundervoll“"
+- "Traumhaft /s"
+- "\"Sagenhaft\""
+- "‘Sensationell’ /s"
+- "Unglaublich gut! /s"
+- "„Mega stark“ /s"
+- "\"Echt toll\" /s"
+- "‘Sehr hilfreich’ /s"

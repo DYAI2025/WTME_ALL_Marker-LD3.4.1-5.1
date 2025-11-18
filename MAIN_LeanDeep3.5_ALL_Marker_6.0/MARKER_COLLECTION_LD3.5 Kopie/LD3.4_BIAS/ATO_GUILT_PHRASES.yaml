@@ -1,17 +1,39 @@
 id: ATO_GUILT_PHRASES
 version: "3.4"
 frame:
-  signal: ["guilt"]
+  signal: [ "guilt" ]
   concept: "Schuld-/Entschuldigungsmarker"
   pragmatics: "Selbstzuschreibung/Bitte um Verzeihung"
   narrative: "affect"
-tags: [affect, guilt]
+tags: [ affect, guilt ]
 pattern:
   regex: "\\b(meine\\s+Schuld|es\\s+tut\\s+mir\\s+leid|schuld\\s+an|verzeih|sorry)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Es tut mir leid."
-  - "Meine Schuld."
-  - "Ich bin schuld an…"
-  - "Verzeih bitte."
-  - "Sorry dafür."
+- "Es tut mir leid."
+- "Meine Schuld."
+- "Ich bin schuld an…"
+- "Verzeih bitte."
+- "Sorry dafür."
+- "Es ist meine Schuld."
+- "Ich hätte es wissen müssen."
+- "Mein Fehler."
+- "Ich habe versagt."
+- "Ich bin verantwortlich."
+- "Ich bereue es."
+- "Ich fühle mich schuldig."
+- "Hätte ich nur..."
+- "Ich habe Mist gebaut."
+- "Das war falsch von mir."
+- "Ich trage die Verantwortung."
+- "Ich bin der Schuldige."
+- "Es liegt an mir."
+- "Ich habe es verbockt."
+- "Mein Versagen."
+- "Ich habe dich enttäuscht."
+- "Das geht auf meine Kappe."
+- "Ich war's."
+- "Meine Verfehlung."
+- "Ich stehe in der Schuld."
+- "Ich mache mir Vorwürfe."
+- "Das belastet mein Gewissen."

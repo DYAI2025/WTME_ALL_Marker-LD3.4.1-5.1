@@ -1,39 +1,60 @@
 id: CLU_INTUITION_BIAS
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["intuition", "weak-aggregation"]
-  concept: "Emerging bias pattern hypothesis"
-  pragmatics: "Early bias detection for intervention"
-  narrative: "hypothesis"
-tags: [intuition, bias, hypothesis, learning]
+  signal:
+  - intuition
+  - weak-aggregation
+  concept: Emerging bias pattern hypothesis
+  pragmatics: Early bias detection for intervention
+  narrative: hypothesis
+tags:
+- intuition
+- bias
+- hypothesis
+- learning
 composed_of:
-  - SEM_CONFIRMATION_BIAS
-  - SEM_PERSPECTIVE_RIGIDITY
-  - SEM_INGROUP_OUTGROUP_BIAS
+- SEM_CONFIRMATION_BIAS
+- SEM_PERSPECTIVE_RIGIDITY
+- SEM_INGROUP_OUTGROUP_BIAS
 activation:
-  rule: "AT_LEAST 2 DISTINCT bias ATOs IN 5 messages"
+  rule: AT_LEAST 2 DISTINCT bias ATOs IN 5 messages
 scoring:
   base: 0.5
   weight: 1.0
 metadata:
   intuition:
-    state: "provisional"
+    state: provisional
     confirm_window: 5
-    confirm_rule: "AT_LEAST 1 bias SEM IN confirm_window"
+    confirm_rule: AT_LEAST 1 bias SEM IN confirm_window
     multiplier_on_confirm: 2.0
     decay_window: 8
   telemetry_keys:
-    counter_confirmed: "INT_BIAS.confirmed"
-    counter_retracted: "INT_BIAS.retracted"
-    ewma_precision: "INT_BIAS.ewma_precision"
+    counter_confirmed: INT_BIAS.confirmed
+    counter_retracted: INT_BIAS.retracted
+    ewma_precision: INT_BIAS.ewma_precision
 examples:
-  - "Early generalization followed by certainty markers"
-  - "Stereotyping language with emerging rigidity"
-  - "Multiple weak bias signals clustering"
-  - "Attribution errors starting to compound"
-  - "Initial us-vs-them language formation"
-  - "Early stereotyping + 'case closed' vibe"
-  - "Initial 'always/never' + dismissal of nuance"
-  - "Subtle us–them hint + fast generalization"
-  - "Premature certainty + ignoring alternate causes"
-  - "Quick label + selective memory"
+- Early generalization followed by certainty markers
+- Stereotyping language with emerging rigidity
+- Multiple weak bias signals clustering
+- Attribution errors starting to compound
+- Initial us-vs-them language formation
+- Early stereotyping + 'case closed' vibe
+- Initial 'always/never' + dismissal of nuance
+- Subtle us–them hint + fast generalization
+- Premature certainty + ignoring alternate causes
+- Quick label + selective memory
+- Kombination 1 mit sem_confir und sem_perspe
+- Kombination 2 mit sem_confir und sem_perspe
+- Kombination 3 mit sem_confir und sem_perspe
+- Kombination 4 mit sem_confir und sem_perspe
+- Kombination 5 mit sem_confir und sem_perspe
+- Kombination 6 mit sem_confir und sem_perspe
+- Kombination 7 mit sem_confir und sem_perspe
+- Kombination 8 mit sem_confir und sem_perspe
+- Kombination 9 mit sem_confir und sem_perspe
+- Kombination 10 mit sem_confir und sem_perspe
+- Kombination 11 mit sem_confir und sem_perspe
+- Kombination 12 mit sem_confir und sem_perspe
+- Kombination 13 mit sem_confir und sem_perspe
+- Kombination 14 mit sem_confir und sem_perspe
+- Kombination 15 mit sem_confir und sem_perspe

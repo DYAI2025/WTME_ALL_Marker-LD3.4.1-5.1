@@ -1,17 +1,38 @@
 id: ATO_ANCHORING_PHRASES
 version: "3.4"
 frame:
-  signal: ["first_value", "anchor"]
+  signal: [ "first_value", "anchor" ]
   concept: "Früher Referenzwert dominiert"
   pragmatics: "Ankerheuristik (Startwert-Effekt)"
   narrative: "cognitive_bias"
-tags: [bias, anchoring]
+tags: [ bias, anchoring ]
 pattern:
   regex: "\\b(erste\\s+Zahl|Ausgangspunkt|Startwert|initial\\s+offer|am\\s+Anfang\\s+waren)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Die erste Zahl war 10k."
-  - "Vom Ausgangspunkt weichen wir nicht ab."
-  - "Der Startwert passt."
-  - "Initial offer steht."
-  - "Am Anfang waren es 5%, also…"
+- "Die erste Zahl war 10k."
+- "Vom Ausgangspunkt weichen wir nicht ab."
+- "Der Startwert passt."
+- "Initial offer steht."
+- "Am Anfang waren es 5%, also…"
+- "Von Anfang an dachte ich 100€."
+- "Ursprünglich war der Preis bei 50."
+- "Beim ersten Mal hieß es 20%."
+- "Zuerst wurde 1000 genannt."
+- "Initial war geplant mit 5k."
+- "Am Beginn stand die Zahl 8."
+- "Der Ausgangspunkt war 200."
+- "Die erste Information lautete 30."
+- "Ursprünglich sollte es 15 sein."
+- "Der Anfangswert war 2500."
+- "Die initiale Schätzung lag bei 70."
+- "Zu Beginn wurde 40% gesagt."
+- "Die erste Erwartung war 10."
+- "Der erste Eindruck: 500."
+- "Die Ausgangslage war bei 3k."
+- "Die Anfangsbedingung lautete 12."
+- "Der erste Anhaltspunkt: 600."
+- "Die initiale Position war 25%."
+- "Am Anfang stand die Zahl 90."
+- "Die ursprüngliche Annahme: 150."
+- "Der erste Referenzpunkt war 8000."

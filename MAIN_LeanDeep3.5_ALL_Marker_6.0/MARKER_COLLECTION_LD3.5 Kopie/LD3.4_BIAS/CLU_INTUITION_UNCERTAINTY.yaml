@@ -1,36 +1,60 @@
 id: CLU_INTUITION_UNCERTAINTY
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["intuition","weak-aggregation"]
-  concept: "Vorahnung: Unsicherheit/Hedging"
-  pragmatics: "Hypothesen vorsichtig testen"
-  narrative: "hypothesis"
-tags: [intuition, uncertainty, hedging, learning]
+  signal:
+  - intuition
+  - weak-aggregation
+  concept: 'Vorahnung: Unsicherheit/Hedging'
+  pragmatics: Hypothesen vorsichtig testen
+  narrative: hypothesis
+tags:
+- intuition
+- uncertainty
+- hedging
+- learning
 composed_of:
-  - SEM_UNCERTAINTY_TONING
-  - SEM_TENTATIVE_INFERENCE
-  - SEM_PROBABILISTIC_LANGUAGE
-activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
-scoring: { base: 0.5, weight: 1.0 }
+- SEM_UNCERTAINTY_TONING
+- SEM_TENTATIVE_INFERENCE
+- SEM_PROBABILISTIC_LANGUAGE
+activation:
+  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+scoring:
+  base: 0.5
+  weight: 1.0
 metadata:
   intuition:
-    state: "provisional"
+    state: provisional
     confirm_window: 5
-    confirm_rule: "AT_LEAST 1 of [SEM_UNCERTAINTY_TONING, SEM_TENTATIVE_INFERENCE] IN confirm_window"
+    confirm_rule: AT_LEAST 1 of [SEM_UNCERTAINTY_TONING, SEM_TENTATIVE_INFERENCE] IN confirm_window
     multiplier_on_confirm: 1.5
     decay_window: 7
   telemetry_keys:
-    counter_confirmed: "INT_UNCERT.confirmed"
-    counter_retracted: "INT_UNCERT.retracted"
-    ewma_precision: "INT_UNCERT.ewma_precision"
+    counter_confirmed: INT_UNCERT.confirmed
+    counter_retracted: INT_UNCERT.retracted
+    ewma_precision: INT_UNCERT.ewma_precision
 examples:
-  - "… 'vielleicht' + 'weiß nicht' …"
-  - "… Zögern + Vermutung …"
-  - "… Abschwächung + Zweifel …"
-  - "… probabilistische Formulierungen …"
-  - "… Relativierung + Hedging …"
-  - "… 'könnte sein' + Unsicherheitsmarker …"
-  - "… Alternativhypothese + Frageintonation …"
-  - "… 'tendenziell' + Bandbreitenangabe …"
-  - "… 'unter Vorbehalt' + weiche Modalität …"
-  - "… 'noch nicht sicher' + Provisorium …"
+- … 'vielleicht' + 'weiß nicht' …
+- … Zögern + Vermutung …
+- … Abschwächung + Zweifel …
+- … probabilistische Formulierungen …
+- … Relativierung + Hedging …
+- … 'könnte sein' + Unsicherheitsmarker …
+- … Alternativhypothese + Frageintonation …
+- … 'tendenziell' + Bandbreitenangabe …
+- … 'unter Vorbehalt' + weiche Modalität …
+- … 'noch nicht sicher' + Provisorium …
+- Kombination 1 mit sem_uncert und sem_tentat
+- Kombination 2 mit sem_uncert und sem_tentat
+- Kombination 3 mit sem_uncert und sem_tentat
+- Kombination 4 mit sem_uncert und sem_tentat
+- Kombination 5 mit sem_uncert und sem_tentat
+- Kombination 6 mit sem_uncert und sem_tentat
+- Kombination 7 mit sem_uncert und sem_tentat
+- Kombination 8 mit sem_uncert und sem_tentat
+- Kombination 9 mit sem_uncert und sem_tentat
+- Kombination 10 mit sem_uncert und sem_tentat
+- Kombination 11 mit sem_uncert und sem_tentat
+- Kombination 12 mit sem_uncert und sem_tentat
+- Kombination 13 mit sem_uncert und sem_tentat
+- Kombination 14 mit sem_uncert und sem_tentat
+- Kombination 15 mit sem_uncert und sem_tentat

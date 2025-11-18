@@ -1,20 +1,41 @@
 id: SEM_DISTRUST_ACCUSATION
 version: "3.4"
 frame:
-  signal: ["accusation", "distrust"]
+  signal: [ "accusation", "distrust" ]
   concept: "Misstrauensvorwurf"
   pragmatics: "Kooperationsrisiko"
   narrative: "social"
-tags: [trust, accusation]
+tags: [ trust, accusation ]
 composed_of:
-  - ATO_DISTRUST_MARKERS
-  - ATO_RELIABILITY_TERMS
+- ATO_DISTRUST_MARKERS
+- ATO_RELIABILITY_TERMS
 activation:
   rule: "BOTH IN 1 message"
 scoring: { base: 0.55, weight: 1.0 }
 examples:
-  - "Traue dir nicht – nicht verlässlich."
-  - "Shady und unpünktlich."
-  - "Dubios – SLA bricht."
-  - "Fragwürdig – kein Commitment."
-  - "Fishy, keine Zuverlässigkeit."
+- "Traue dir nicht – nicht verlässlich."
+- "Shady und unpünktlich."
+- "Dubios – SLA bricht."
+- "Fragwürdig – kein Commitment."
+- "Fishy, keine Zuverlässigkeit."
+- "Ich misstraue – unzuverlässig."
+- "Du lügst – nicht berechenbar."
+- "Glaube dir nicht – keine Konstanz."
+- "Verdächtig – nicht stabil."
+- "Unglaubwürdig – nicht solide."
+- "Skeptisch – kein SLA."
+- "Zweifel habe ich – nicht tragfähig."
+- "Misstrauisch – nicht standhaft."
+- "Du täuschst – nicht dauerhaft."
+- "Du betrügst – nicht robust."
+- "Nicht vertrauenswürdig – inkonsistent."
+- "Unehrlich – nicht gleichbleibend."
+- "Hinterhältig – nicht stetig."
+- "Falsch – nicht kontinuierlich."
+- "Verlogen – unterbrochen."
+- "Nicht integer – wankend."
+- "Unzuverlässig – nicht fest."
+- "Nicht glaubhaft – nicht beständig."
+- "Argwöhnisch – keine Vertrauensbasis."
+- "Zweifelhaft – nicht sicher."
+- "Suspekt – keine Zuverlässigkeit."

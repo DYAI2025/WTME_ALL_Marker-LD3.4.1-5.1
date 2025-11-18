@@ -1,17 +1,40 @@
 id: ATO_REGRET_PHRASES
 version: "3.4"
 frame:
-  signal: ["regret"]
+  signal: [ "regret" ]
   concept: "Bedauern/Zurückwunsch"
   pragmatics: "Kontrafaktisches Denken"
   narrative: "affect"
-tags: [affect, regret]
+tags: [ affect, regret ]
 pattern:
   regex: "\\b(hätte\\s+ich\\s+nur|wäre\\s+es\\s+anders|bereue|zu\\s+spät|schade\\s+darum)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Hätte ich nur früher begonnen."
-  - "Wäre es anders gelaufen…"
-  - "Ich bereue das."
-  - "Es ist zu spät."
-  - "Schade darum."
+- "Hätte ich nur früher begonnen."
+- "Wäre es anders gelaufen…"
+- "Ich bereue das."
+- "Es ist zu spät."
+- "Schade darum."
+- "Hätte ich nur."
+- "Wenn ich doch."
+- "Ich wünschte."
+- "Zu spät jetzt."
+- "Verpasste Chance."
+- "Nie wieder."
+- "Das bereue ich."
+- "Wenn ich das gewusst hätte."
+- "Hätte ich anders gemacht."
+- "Leider vertan."
+- "Versäumt."
+- "Verpasst."
+- "Vorbei die Zeit."
+- "Unwiederbringlich."
+- "Hätte sein können."
+- "Leider nicht genutzt."
+- "Zu spät erkannt."
+- "Vergebene Chance."
+- "Hätte ich damals nur."
+- "Wenn ich zurückdenke."
+- "Das tut mir leid."
+- "Ich bedaure es."
+- "Hätte besser sein können."

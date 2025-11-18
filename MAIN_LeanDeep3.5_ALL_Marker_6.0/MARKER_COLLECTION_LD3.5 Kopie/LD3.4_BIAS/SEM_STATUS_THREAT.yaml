@@ -1,20 +1,40 @@
 id: SEM_STATUS_THREAT
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["status_threat"]
-  concept: "Gefährdung von Status/Ruf"
-  pragmatics: "Sozialer Druck"
-  narrative: "dignity"
-tags: [status, threat]
+  signal:
+  - status_threat
+  concept: Gefährdung von Status/Ruf
+  pragmatics: Sozialer Druck
+  narrative: dignity
+tags:
+- status
+- threat
 composed_of:
-  - ATO_STATUS_TERMS
-  - ATO_DEMEANING_TERMS
+- ATO_STATUS_TERMS
+- ATO_DEMEANING_TERMS
 activation:
-  rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
-scoring: { base: 0.6, weight: 1.0 }
+  rule: BOTH IN 1 message OR ANY 2 IN 2 messages
+scoring:
+  base: 0.6
+  weight: 1.0
 examples:
-  - "Rufverlust – würdelos."
-  - "Status bedroht – Herabstufung."
-  - "Ansehen riskieren – Abschaum."
-  - "Rangordnung – minderwertig."
-  - "Würde verletzen – peinlich."
+- Rufverlust – würdelos.
+- Status bedroht – Herabstufung.
+- Ansehen riskieren – Abschaum.
+- Rangordnung – minderwertig.
+- Würde verletzen – peinlich.
+- Kombination 1 mit status_ter und demeaning_
+- Kombination 2 mit status_ter und demeaning_
+- Kombination 3 mit status_ter und demeaning_
+- Kombination 4 mit status_ter und demeaning_
+- Kombination 5 mit status_ter und demeaning_
+- Kombination 6 mit status_ter und demeaning_
+- Kombination 7 mit status_ter und demeaning_
+- Kombination 8 mit status_ter und demeaning_
+- Kombination 9 mit status_ter und demeaning_
+- Kombination 10 mit status_ter und demeaning_
+- Kombination 11 mit status_ter und demeaning_
+- Kombination 12 mit status_ter und demeaning_
+- Kombination 13 mit status_ter und demeaning_
+- Kombination 14 mit status_ter und demeaning_
+- Kombination 15 mit status_ter und demeaning_

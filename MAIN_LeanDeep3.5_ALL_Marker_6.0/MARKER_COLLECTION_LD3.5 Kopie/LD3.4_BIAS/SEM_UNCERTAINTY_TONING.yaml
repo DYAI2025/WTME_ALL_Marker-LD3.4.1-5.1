@@ -1,20 +1,40 @@
 id: SEM_UNCERTAINTY_TONING
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["uncertainty"]
-  concept: "Vagheit/Hedging im Ton"
-  pragmatics: "Unsicherheitskommunikation"
-  narrative: "uncertainty"
-tags: [uncertainty, hedging]
+  signal:
+  - uncertainty
+  concept: Vagheit/Hedging im Ton
+  pragmatics: Unsicherheitskommunikation
+  narrative: uncertainty
+tags:
+- uncertainty
+- hedging
 composed_of:
-  - ATO_HEDGING_TERMS
-  - ATO_TENTATIVE_VERBS
+- ATO_HEDGING_TERMS
+- ATO_TENTATIVE_VERBS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Vielleicht könnte das passen."
-  - "Es scheint möglich."
-  - "Tendenziell wirkt es gut."
-  - "Might be fine."
-  - "Appears to work."
+- Vielleicht könnte das passen.
+- Es scheint möglich.
+- Tendenziell wirkt es gut.
+- Might be fine.
+- Appears to work.
+- Kombination 1 mit hedging_te und tentative_
+- Kombination 2 mit hedging_te und tentative_
+- Kombination 3 mit hedging_te und tentative_
+- Kombination 4 mit hedging_te und tentative_
+- Kombination 5 mit hedging_te und tentative_
+- Kombination 6 mit hedging_te und tentative_
+- Kombination 7 mit hedging_te und tentative_
+- Kombination 8 mit hedging_te und tentative_
+- Kombination 9 mit hedging_te und tentative_
+- Kombination 10 mit hedging_te und tentative_
+- Kombination 11 mit hedging_te und tentative_
+- Kombination 12 mit hedging_te und tentative_
+- Kombination 13 mit hedging_te und tentative_
+- Kombination 14 mit hedging_te und tentative_
+- Kombination 15 mit hedging_te und tentative_

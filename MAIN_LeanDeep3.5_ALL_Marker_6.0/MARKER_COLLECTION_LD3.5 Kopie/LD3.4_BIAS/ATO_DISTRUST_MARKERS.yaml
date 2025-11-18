@@ -1,17 +1,40 @@
 id: ATO_DISTRUST_MARKERS
 version: "3.4"
 frame:
-  signal: ["distrust"]
+  signal: [ "distrust" ]
   concept: "Misstrauen/Vorbehalt"
   pragmatics: "Risikowahrnehmung"
   narrative: "social"
-tags: [trust, distrust]
+tags: [ trust, distrust ]
 pattern:
   regex: "\\b(misstraue|traue\\s+dir\\s+nicht|dubios|fragwürdig|fishy|shady)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Ich misstraue dir."
-  - "Traue dir nicht."
-  - "Dubios."
-  - "Fragwürdig."
-  - "Shady deal."
+- "Ich misstraue dir."
+- "Traue dir nicht."
+- "Dubios."
+- "Fragwürdig."
+- "Shady deal."
+- "Ich traue dir nicht."
+- "Du lügst."
+- "Das glaube ich dir nicht."
+- "Verdächtig."
+- "Unglaubwürdig."
+- "Zweifel habe ich."
+- "Skeptisch bin ich."
+- "Misstrauisch."
+- "Du täuschst."
+- "Du betrügst."
+- "Nicht vertrauenswürdig."
+- "Unehrlich."
+- "Hinterhältig."
+- "Falsch."
+- "Verlogen."
+- "Nicht integer."
+- "Unzuverlässig."
+- "Nicht glaubhaft."
+- "Argwöhnisch sehe ich das."
+- "Zweifelhaft."
+- "Suspekt."
+- "Obskur."
+- "Undurchsichtig."

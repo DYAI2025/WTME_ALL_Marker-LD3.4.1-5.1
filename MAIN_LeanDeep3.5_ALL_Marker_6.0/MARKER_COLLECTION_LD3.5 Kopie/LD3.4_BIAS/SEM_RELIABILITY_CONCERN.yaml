@@ -1,20 +1,41 @@
 id: SEM_RELIABILITY_CONCERN
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["concern", "reliability"]
-  concept: "Sorge um Verlässlichkeit"
-  pragmatics: "Planungsrisiko"
-  narrative: "coordination"
-tags: [reliability, concern]
+  signal:
+  - concern
+  - reliability
+  concept: Sorge um Verlässlichkeit
+  pragmatics: Planungsrisiko
+  narrative: coordination
+tags:
+- reliability
+- concern
 composed_of:
-  - ATO_RELIABILITY_TERMS
-  - ATO_DISTRUST_MARKERS
+- ATO_RELIABILITY_TERMS
+- ATO_DISTRUST_MARKERS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Zuverlässig genug? Habe Zweifel."
-  - "SLA unsicher – misstraue."
-  - "Pünktlichkeit fraglich."
-  - "Verlässlichkeit? Fishy."
-  - "Commitment wackelig."
+- Zuverlässig genug? Habe Zweifel.
+- SLA unsicher – misstraue.
+- Pünktlichkeit fraglich.
+- Verlässlichkeit? Fishy.
+- Commitment wackelig.
+- Kombination 1 mit reliabilit und distrust_m
+- Kombination 2 mit reliabilit und distrust_m
+- Kombination 3 mit reliabilit und distrust_m
+- Kombination 4 mit reliabilit und distrust_m
+- Kombination 5 mit reliabilit und distrust_m
+- Kombination 6 mit reliabilit und distrust_m
+- Kombination 7 mit reliabilit und distrust_m
+- Kombination 8 mit reliabilit und distrust_m
+- Kombination 9 mit reliabilit und distrust_m
+- Kombination 10 mit reliabilit und distrust_m
+- Kombination 11 mit reliabilit und distrust_m
+- Kombination 12 mit reliabilit und distrust_m
+- Kombination 13 mit reliabilit und distrust_m
+- Kombination 14 mit reliabilit und distrust_m
+- Kombination 15 mit reliabilit und distrust_m

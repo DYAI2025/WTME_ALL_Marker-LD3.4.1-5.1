@@ -1,20 +1,40 @@
 id: SEM_PROBABILISTIC_LANGUAGE
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["probability"]
-  concept: "Explizite Wahrscheinlichkeiten/Bandbreiten"
-  pragmatics: "Unsicherheitsgrad"
-  narrative: "uncertainty"
-tags: [uncertainty, probability]
+  signal:
+  - probability
+  concept: Explizite Wahrscheinlichkeiten/Bandbreiten
+  pragmatics: Unsicherheitsgrad
+  narrative: uncertainty
+tags:
+- uncertainty
+- probability
 composed_of:
-  - ATO_PROBABILISTIC_TERMS
-  - ATO_HEDGING_TERMS
+- ATO_PROBABILISTIC_TERMS
+- ATO_HEDGING_TERMS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Wahrscheinlich 60%."
-  - "Unlikely, maybe later."
-  - "In der Bandbreite 30–50%."
-  - "Eher risikoarm, könnte passen."
-  - "Riskant, appears to be."
+- Wahrscheinlich 60%.
+- Unlikely, maybe later.
+- In der Bandbreite 30–50%.
+- Eher risikoarm, könnte passen.
+- Riskant, appears to be.
+- Kombination 1 mit probabilis und hedging_te
+- Kombination 2 mit probabilis und hedging_te
+- Kombination 3 mit probabilis und hedging_te
+- Kombination 4 mit probabilis und hedging_te
+- Kombination 5 mit probabilis und hedging_te
+- Kombination 6 mit probabilis und hedging_te
+- Kombination 7 mit probabilis und hedging_te
+- Kombination 8 mit probabilis und hedging_te
+- Kombination 9 mit probabilis und hedging_te
+- Kombination 10 mit probabilis und hedging_te
+- Kombination 11 mit probabilis und hedging_te
+- Kombination 12 mit probabilis und hedging_te
+- Kombination 13 mit probabilis und hedging_te
+- Kombination 14 mit probabilis und hedging_te
+- Kombination 15 mit probabilis und hedging_te

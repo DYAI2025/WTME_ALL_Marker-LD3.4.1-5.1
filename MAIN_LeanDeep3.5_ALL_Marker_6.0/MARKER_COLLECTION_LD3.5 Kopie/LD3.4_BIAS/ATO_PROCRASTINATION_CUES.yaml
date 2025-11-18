@@ -1,17 +1,40 @@
 id: ATO_PROCRASTINATION_CUES
 version: "3.4"
 frame:
-  signal: ["avoidance"]
+  signal: [ "avoidance" ]
   concept: "Ausweich-/Busy-Work-Indikatoren"
   pragmatics: "Prokrastinationsmuster"
   narrative: "task_flow"
-tags: [procrastination]
+tags: [ procrastination ]
 pattern:
   regex: "\\b(noch\\s+vorbereiten|erst\\s+recherchieren|brauche\\s+Inspiration|nicht\\s+perfekt|später\\s+besser)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Ich muss noch vorbereiten."
-  - "Erst recherchieren."
-  - "Brauche Inspiration."
-  - "Noch nicht perfekt."
-  - "Später wird’s besser."
+- "Ich muss noch vorbereiten."
+- "Erst recherchieren."
+- "Brauche Inspiration."
+- "Noch nicht perfekt."
+- "Später wird's besser."
+- "Später."
+- "Irgendwann."
+- "Noch nicht."
+- "Mal sehen."
+- "Wenn ich Zeit habe."
+- "Erstmal abwarten."
+- "Noch nicht spruchreif."
+- "Noch in der Schwebe."
+- "Verschieben wir das."
+- "Lassen wir offen."
+- "Noch nicht akut."
+- "Hat noch Zeit."
+- "Nicht eilig."
+- "Kommt noch."
+- "Noch nicht dran."
+- "Erstmal zurückstellen."
+- "Aufschieben."
+- "Noch nicht heute."
+- "Morgen vielleicht."
+- "Nächste Woche."
+- "Irgendwann mal."
+- "Wenn es passt."
+- "Gelegentlich."

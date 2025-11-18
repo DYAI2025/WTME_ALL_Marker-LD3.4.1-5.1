@@ -1,17 +1,39 @@
 id: ATO_RESPECT_TERMS
 version: "3.4"
 frame:
-  signal: ["respect"]
+  signal: [ "respect" ]
   concept: "Respekt-/Achtungssprache"
   pragmatics: "Würde-Bezug"
   narrative: "dignity"
-tags: [respect, dignity]
+tags: [ respect, dignity ]
 pattern:
   regex: "\\b(respekt(voll)?|auf\\s+Augenhöhe|würd(e|ig)|anständig\\s+reden)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Respektvoll bleiben."
-  - "Auf Augenhöhe."
-  - "Würdig behandeln."
-  - "Anständig reden."
-  - "Respekt, bitte."
+- "Respektvoll bleiben."
+- "Auf Augenhöhe."
+- "Würdig behandeln."
+- "Anständig reden."
+- "Respekt, bitte."
+- "Ich respektiere dich."
+- "Ich achte dich."
+- "Ich schätze dich."
+- "Du bist wertvoll."
+- "Ich ehre dich."
+- "Du verdienst Respekt."
+- "Ich würdige dich."
+- "Du bist wichtig."
+- "Ich erkenne dich an."
+- "Du hast meine Hochachtung."
+- "Ich bewundere dich."
+- "Du bist bedeutsam."
+- "Ich halte große Stücke auf dich."
+- "Du bist ehrenwert."
+- "Ich zolle dir Tribut."
+- "Du bist achtbar."
+- "Ich bringe dir Wertschätzung entgegen."
+- "Du bist respektabel."
+- "Ich begegne dir mit Achtung."
+- "Du bist würdevoll."
+- "Ich respektiere deine Meinung."
+- "Ich achte deine Grenzen."

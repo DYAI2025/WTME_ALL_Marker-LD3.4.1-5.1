@@ -1,22 +1,42 @@
 id: ATO_GENERALIZATION_MARKER
 version: "3.4"
 frame:
-  signal: ["generalization", "absolutism"]
+  signal: [ "generalization", "absolutism" ]
   concept: "Sweeping generalizations without nuance"
   pragmatics: "Overgeneralization bias detection"
   narrative: "bias_pattern"
-tags: [bias, generalization, absolutism]
-pattern: 
+tags: [ bias, generalization, absolutism ]
+pattern:
   regex: "\\b(alle|immer|niemals?|jede[rs]?|everyone|always|never|all)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Alle Politiker lügen"
-  - "Frauen können niemals..."
-  - "Men always think that..."
-  - "Jeder weiß doch, dass..."
-  - "Nobody ever understands"
-  - "Immer sind es dieselben Probleme"
-  - "Alle Teenager sind respektlos"
-  - "Never trust a lawyer"
-  - "Jeder macht das so"
-  - "All politicians are corrupt"
+- "Alle Politiker lügen"
+- "Frauen können niemals..."
+- "Men always think that..."
+- "Jeder weiß doch, dass..."
+- "Nobody ever understands"
+- "Immer sind es dieselben Probleme"
+- "Alle Teenager sind respektlos"
+- "Never trust a lawyer"
+- "Jeder macht das so"
+- "All politicians are corrupt"
+- "Immer das Gleiche."
+- "Nie klappt es."
+- "Alle sind so."
+- "Ständig passiert das."
+- "Stets dieselbe Geschichte."
+- "Typisch!"
+- "Ohne Ausnahme."
+- "Ausnahmslos."
+- "Durchweg so."
+- "Grundsätzlich falsch."
+- "Pauschal abgelehnt."
+- "Insgesamt schlecht."
+- "Prinzipiell unmöglich."
+- "Generell problematisch."
+- "Allgemein bekannt."
+- "Überall dasselbe."
+- "Bei allen so."
+- "Immerzu."
+- "Allemal."
+- "Jederzeit."

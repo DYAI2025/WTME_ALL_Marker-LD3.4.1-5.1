@@ -1,20 +1,46 @@
 id: SEM_ESCALATION_MOVE
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["escalation"]
-  concept: "Eskalationsschritt/Drohung"
-  pragmatics: "Konfliktintensivierung"
-  narrative: "conflict"
-tags: [escalation, conflict]
+  signal:
+  - escalation
+  concept: Eskalationsschritt/Drohung
+  pragmatics: Konfliktintensivierung
+  narrative: conflict
+tags:
+- escalation
+- conflict
 composed_of:
-  - ATO_ESCALATION_LEXICON
-  - ATO_NEGATIVE_FEEDBACK_TOKEN
+- ATO_ESCALATION_LEXICON
+- ATO_NEGATIVE_FEEDBACK_TOKEN
 activation:
-  rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
-scoring: { base: 0.65, weight: 1.0 }
+  rule: BOTH IN 1 message OR ANY 2 IN 2 messages
+scoring:
+  base: 0.65
+  weight: 1.0
 examples:
-  - "Schluss jetzt, sonst Konsequenzen."
-  - "Mir reicht’s – Anzeige."
-  - "Kündige, wenn das so bleibt."
-  - "Das ist lächerlich – jetzt reicht’s."
-  - "Eskalier nicht, sonst…"
+examples:
+- Schluss jetzt, sonst Konsequenzen.
+- Mir reicht's – Anzeige.
+- Kündige, wenn das so bleibt.
+- Das ist lächerlich – jetzt reicht's.
+- Eskalier nicht, sonst…
+- Jetzt reicht's – Das ist schlecht!
+- Das geht zu weit – Mangelhaft!
+- So nicht – Fehler über Fehler!
+- Nie wieder – Ungenügend!
+- Frechheit – Das ist falsch!
+- Unerträglich – Nicht akzeptabel!
+- Ich platze – Lächerlich!
+- Der Gipfel – Schlecht gemacht!
+- Unfassbar – Unzulänglich!
+- Unmöglich – Das geht nicht!
+- Das lasse ich nicht zu – Mangelhaft!
+- Genug ist genug – Fehler!
+- Das ist zu viel – Falsch!
+- Ich halte nicht aus – Unzureichend!
+- Grenzen überschritten – Nicht gut genug!
+- Am Ende – Enttäuschend!
+- Schreit zum Himmel – Unbefriedigend!
+- Skandalös – Suboptimal!
+- Empörend – Schwach!
+- Das wars – Das ist schlecht!

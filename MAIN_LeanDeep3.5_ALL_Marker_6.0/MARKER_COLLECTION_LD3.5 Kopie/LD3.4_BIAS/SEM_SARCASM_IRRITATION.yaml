@@ -1,20 +1,41 @@
 id: SEM_SARCASM_IRRITATION
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["sarcasm", "irritation"]
-  concept: "Sarkasmus mit genervtem Unterton"
-  pragmatics: "Gesichtsbedrohung"
-  narrative: "tone"
-tags: [sarcasm, irritation]
+  signal:
+  - sarcasm
+  - irritation
+  concept: Sarkasmus mit genervtem Unterton
+  pragmatics: Gesichtsbedrohung
+  narrative: tone
+tags:
+- sarcasm
+- irritation
 composed_of:
-  - ATO_SARCASM_MARKER
-  - ATO_NEGATIVE_FEEDBACK_TOKEN
+- ATO_SARCASM_MARKER
+- ATO_NEGATIVE_FEEDBACK_TOKEN
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.6, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.6
+  weight: 1.0
 examples:
-  - "Ja klar, großartig – das ist schlecht."
-  - "Na toll, wieder lächerlich."
-  - "\"Super gemacht\" – awful."
-  - "Fantastisch… /s – nutzlos."
-  - "Ganz großartig, peinlich."
+- Ja klar, großartig – das ist schlecht.
+- Na toll, wieder lächerlich.
+- '"Super gemacht" – awful.'
+- Fantastisch… /s – nutzlos.
+- Ganz großartig, peinlich.
+- Kombination 1 mit sarcasm_ma und negative_f
+- Kombination 2 mit sarcasm_ma und negative_f
+- Kombination 3 mit sarcasm_ma und negative_f
+- Kombination 4 mit sarcasm_ma und negative_f
+- Kombination 5 mit sarcasm_ma und negative_f
+- Kombination 6 mit sarcasm_ma und negative_f
+- Kombination 7 mit sarcasm_ma und negative_f
+- Kombination 8 mit sarcasm_ma und negative_f
+- Kombination 9 mit sarcasm_ma und negative_f
+- Kombination 10 mit sarcasm_ma und negative_f
+- Kombination 11 mit sarcasm_ma und negative_f
+- Kombination 12 mit sarcasm_ma und negative_f
+- Kombination 13 mit sarcasm_ma und negative_f
+- Kombination 14 mit sarcasm_ma und negative_f
+- Kombination 15 mit sarcasm_ma und negative_f

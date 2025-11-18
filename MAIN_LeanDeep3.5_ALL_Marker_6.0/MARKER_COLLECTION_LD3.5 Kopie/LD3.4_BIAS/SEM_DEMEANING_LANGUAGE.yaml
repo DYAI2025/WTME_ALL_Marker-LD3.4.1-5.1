@@ -1,20 +1,41 @@
 id: SEM_DEMEANING_LANGUAGE
 version: "3.4"
 frame:
-  signal: ["demeaning"]
+  signal: [ "demeaning" ]
   concept: "Herabsetzung/Entwürdigung"
   pragmatics: "Dehumanisierung"
   narrative: "dignity"
-tags: [demeaning, dignity]
+tags: [ demeaning, dignity ]
 composed_of:
-  - ATO_DEMEANING_TERMS
-  - ATO_MOCKING_LEXICON
+- ATO_DEMEANING_TERMS
+- ATO_MOCKING_LEXICON
 activation:
   rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
 scoring: { base: 0.65, weight: 1.0 }
 examples:
-  - "Abschaum – lächerlich."
-  - "Würdelos – Clown."
-  - "Minderwertig – armselig."
-  - "Erniedrigen – peinlich."
-  - "Untermensch – loser."
+- "Abschaum – lächerlich."
+- "Würdelos – Clown."
+- "Minderwertig – armselig."
+- "Erniedrigen – peinlich."
+- "Untermensch – loser."
+- "Dreck – Besserwisser."
+- "Wertlos – wie originell!"
+- "Inkompetent – ach wirklich?"
+- "Versager – na klar!"
+- "Erbärmlich – wie geistreich!"
+- "Jämmerlich – so clever!"
+- "Unwürdig – Wahnsinn!"
+- "Mickrig – wie witzig!"
+- "Nichtsnutzig – meine Güte!"
+- "Armselig – echt jetzt?"
+- "Bedeutungslos – Donnerwetter!"
+- "Peinlich – wie aufregend!"
+- "Beschämend – so spannend!"
+- "Amateurhaft – welch Einsicht!"
+- "Dilettantisch – wie tiefgründig!"
+- "Stümperhaft – so bedeutsam!"
+- "Schwach – welch Weisheit!"
+- "Unprofessionell – wie erhellend!"
+- "Unterste Schublade – ach nein!"
+- "Unwissenheit pur – wie unerwartet!"
+- "Völlig unfähig – so originell!"

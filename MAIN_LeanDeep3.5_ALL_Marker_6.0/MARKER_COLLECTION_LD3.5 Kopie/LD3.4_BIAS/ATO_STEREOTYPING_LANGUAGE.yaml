@@ -1,22 +1,40 @@
 id: ATO_STEREOTYPING_LANGUAGE
 version: "3.4"
 frame:
-  signal: ["stereotype", "categorization"]
+  signal: [ "stereotype", "categorization" ]
   concept: "Group-based stereotyping language"
   pragmatics: "Stereotype activation"
   narrative: "bias_pattern"
-tags: [bias, stereotype, categorization]
+tags: [ bias, stereotype, categorization ]
 pattern:
   regex: "(typisch|halt|eben)\\s+\\w+isch|people\\s+like\\s+(you|them)"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "typisch männlich"
-  - "Das ist halt so eine Frauensache"
-  - "people like you always"
-  - "Die Deutschen sind eben..."
-  - "those people typically"
-  - "typisch asiatisch"
-  - "halt italienisch eben"
-  - "People like them can't be trusted"
-  - "Das ist einfach typisch Frau"
-  - "People like you never change"
+- "typisch männlich"
+- "Das ist halt so eine Frauensache"
+- "people like you always"
+- "Die Deutschen sind eben..."
+- "those people typically"
+- "typisch asiatisch"
+- "halt italienisch eben"
+- "People like them can't be trusted"
+- "Das ist einfach typisch Frau"
+- "People like you never change"
+- "Typisch Mann."
+- "Typisch Frau."
+- "Alle Ausländer."
+- "Die Jugend heute."
+- "Die Alten."
+- "Typisch Deutsch."
+- "So sind die halt."
+- "Die sind alle gleich."
+- "Klischee erfüllt."
+- "Vorurteil bestätigt."
+- "Wie erwartet von denen."
+- "Schublade passt."
+- "Kategorie klar."
+- "Label zutreffend."
+- "Stereotyp erkennbar."
+- "Pauschales Urteil."
+- "Vorschnelle Einordnung."
+- "Typische Eigenschaften."

@@ -1,17 +1,38 @@
 id: ATO_COMMITMENT_PHRASES
 version: "3.4"
 frame:
-  signal: ["commitment"]
+  signal: [ "commitment" ]
   concept: "Konkrete Zusage/Verpflichtung"
   pragmatics: "Plan/Verbindlichkeit"
   narrative: "task_flow"
-tags: [commitment, planning]
+tags: [ commitment, planning ]
 pattern:
   regex: "\\b(ich\\s+mache\\s+das|ich\\s+kümmere\\s+mich|ich\\s+übernehme|commit|fixe\\s+bis)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Ich mache das."
-  - "Ich kümmere mich darum."
-  - "Ich übernehme das Ticket."
-  - "I commit to Friday."
-  - "Fixe bis Montag."
+- "Ich mache das."
+- "Ich kümmere mich darum."
+- "Ich übernehme das Ticket."
+- "I commit to Friday."
+- "Fixe bis Montag."
+- "Ich verspreche es."
+- "Zugesagt!"
+- "Mache ich definitiv."
+- "Fest eingeplant."
+- "Verbindliche Zusage."
+- "Garantiert erledigt."
+- "Ich stehe dazu."
+- "Absolut sicher, dass ich das mache."
+- "Verlässlich umgesetzt."
+- "Definitiv dabei."
+- "Ohne Wenn und Aber."
+- "Ich verpflichte mich."
+- "Zugesichert."
+- "Bindende Vereinbarung."
+- "Ich halte mein Wort."
+- "Feste Zusage meinerseits."
+- "Darauf kannst du zählen."
+- "Das ist gesetzt."
+- "Ich ziehe das durch."
+- "Unum stößlich geplant."
+- "Mein Ehrenwort."

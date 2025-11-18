@@ -1,17 +1,37 @@
 id: ATO_ANXIETY_TERMS
 version: "3.4"
 frame:
-  signal: ["anxiety"]
+  signal: [ "anxiety" ]
   concept: "Sorge/Angst-Gefühlssprache"
   pragmatics: "Affektive Bedrohungsreaktion"
   narrative: "affect"
-tags: [anxiety, affect]
+tags: [ anxiety, affect ]
 pattern:
   regex: "\\b(Angst|Sorge|Panik|mulmig|unheimlich|nervös)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Ich habe Angst."
-  - "Große Sorge."
-  - "Panik."
-  - "Mulmiges Gefühl."
-  - "Ich bin nervös."
+- "Ich habe Angst."
+- "Große Sorge."
+- "Panik."
+- "Mulmiges Gefühl."
+- "Ich bin nervös."
+- "Das macht mir Angst."
+- "Ich mache mir Sorgen."
+- "Keine Panik, aber..."
+- "Mir ist total unheimlich."
+- "Ich fühle mich nervös."
+- "Angst vor dem Scheitern."
+- "Sorge, dass es nicht klappt."
+- "Panik steigt in mir auf."
+- "Mulmiges Bauchgefühl."
+- "Unheimlich unangenehm."
+- "Total nervös deswegen."
+- "Angst lähmt mich."
+- "Sorge bereitet mir das."
+- "Panisch werde ich."
+- "Mulmig wird mir dabei."
+- "Unheimlich bedrohlich."
+- "Nervös macht mich das."
+- "Angstgefühle kommen hoch."
+- "Sorgen plagen mich."
+- "Panik erfasst mich."

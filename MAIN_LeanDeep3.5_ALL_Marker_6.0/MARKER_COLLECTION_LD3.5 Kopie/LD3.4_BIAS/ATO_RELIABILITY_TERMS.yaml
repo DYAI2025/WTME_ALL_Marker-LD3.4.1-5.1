@@ -1,17 +1,40 @@
 id: ATO_RELIABILITY_TERMS
 version: "3.4"
 frame:
-  signal: ["reliability"]
+  signal: [ "reliability" ]
   concept: "Verlässlichkeit/Verfügbarkeit"
   pragmatics: "Planbarkeit"
   narrative: "coordination"
-tags: [reliability, planning]
+tags: [ reliability, planning ]
 pattern:
   regex: "\\b(zuverlässig|pünktlich|verlässlich|uptime|SLA|commitment)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Zuverlässig und pünktlich."
-  - "Hohe Uptime."
-  - "SLA-konform."
-  - "Verlässlich."
-  - "Commitment wichtig."
+- "Zuverlässig und pünktlich."
+- "Hohe Uptime."
+- "SLA-konform."
+- "Verlässlich."
+- "Commitment wichtig."
+- "Zuverlässig."
+- "Verlässlich."
+- "Berechenbar."
+- "Konstant."
+- "Stabil."
+- "Solide."
+- "Sicher."
+- "Vertrauenswürdig."
+- "Beständig."
+- "Fest."
+- "Tragfähig."
+- "Standhaft."
+- "Unerschütterlich."
+- "Dauerhaft."
+- "Nachhaltig."
+- "Robust."
+- "Resilient."
+- "Widerstandsfähig."
+- "Konsistent."
+- "Gleichbleibend."
+- "Stetig."
+- "Kontinuierlich."
+- "Ununterbrochen."

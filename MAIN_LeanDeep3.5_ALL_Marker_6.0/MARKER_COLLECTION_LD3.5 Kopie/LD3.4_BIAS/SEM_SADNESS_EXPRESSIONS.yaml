@@ -1,20 +1,40 @@
 id: SEM_SADNESS_EXPRESSIONS
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["sadness"]
-  concept: "Explizite Trauer-/Niedergeschlagenheitsäußerungen"
-  pragmatics: "Affekt-Marker"
-  narrative: "affect"
-tags: [affect, sadness]
+  signal:
+  - sadness
+  concept: Explizite Trauer-/Niedergeschlagenheitsäußerungen
+  pragmatics: Affekt-Marker
+  narrative: affect
+tags:
+- affect
+- sadness
 composed_of:
-  - ATO_SAD_WORDS
-  - ATO_EMPATHY_MARKERS
+- ATO_SAD_WORDS
+- ATO_EMPATHY_MARKERS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.6, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.6
+  weight: 1.0
 examples:
-  - "Ich bin traurig – danke, dass du da bist."
-  - "Fühle mich leer, das muss schwer sein."
-  - "Vermisse dich, ich bin für dich da."
-  - "Es ist schwer, ich fühle mit dir."
-  - "Down gerade – nicht allein, okay?"
+- Ich bin traurig – danke, dass du da bist.
+- Fühle mich leer, das muss schwer sein.
+- Vermisse dich, ich bin für dich da.
+- Es ist schwer, ich fühle mit dir.
+- Down gerade – nicht allein, okay?
+- Kombination 1 mit sad_words und empathy_ma
+- Kombination 2 mit sad_words und empathy_ma
+- Kombination 3 mit sad_words und empathy_ma
+- Kombination 4 mit sad_words und empathy_ma
+- Kombination 5 mit sad_words und empathy_ma
+- Kombination 6 mit sad_words und empathy_ma
+- Kombination 7 mit sad_words und empathy_ma
+- Kombination 8 mit sad_words und empathy_ma
+- Kombination 9 mit sad_words und empathy_ma
+- Kombination 10 mit sad_words und empathy_ma
+- Kombination 11 mit sad_words und empathy_ma
+- Kombination 12 mit sad_words und empathy_ma
+- Kombination 13 mit sad_words und empathy_ma
+- Kombination 14 mit sad_words und empathy_ma
+- Kombination 15 mit sad_words und empathy_ma

@@ -1,36 +1,60 @@
 id: CLU_INTUITION_FEAR
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["intuition","weak-aggregation"]
-  concept: "Vorahnung: Angst/Bedrohungswahrnehmung"
-  pragmatics: "Risikowarnung und Deeskalation"
-  narrative: "hypothesis"
-tags: [intuition, fear, threat, learning]
+  signal:
+  - intuition
+  - weak-aggregation
+  concept: 'Vorahnung: Angst/Bedrohungswahrnehmung'
+  pragmatics: Risikowarnung und Deeskalation
+  narrative: hypothesis
+tags:
+- intuition
+- fear
+- threat
+- learning
 composed_of:
-  - SEM_THREAT_APPRAISAL
-  - SEM_RISK_FORECAST
-  - SEM_ANXIETY_LANGUAGE
-activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
-scoring: { base: 0.5, weight: 1.0 }
+- SEM_THREAT_APPRAISAL
+- SEM_RISK_FORECAST
+- SEM_ANXIETY_LANGUAGE
+activation:
+  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+scoring:
+  base: 0.5
+  weight: 1.0
 metadata:
   intuition:
-    state: "provisional"
+    state: provisional
     confirm_window: 5
-    confirm_rule: "AT_LEAST 1 of [SEM_THREAT_APPRAISAL, SEM_RISK_FORECAST] IN confirm_window"
+    confirm_rule: AT_LEAST 1 of [SEM_THREAT_APPRAISAL, SEM_RISK_FORECAST] IN confirm_window
     multiplier_on_confirm: 1.8
     decay_window: 7
   telemetry_keys:
-    counter_confirmed: "INT_FEAR.confirmed"
-    counter_retracted: "INT_FEAR.retracted"
-    ewma_precision: "INT_FEAR.ewma_precision"
+    counter_confirmed: INT_FEAR.confirmed
+    counter_retracted: INT_FEAR.retracted
+    ewma_precision: INT_FEAR.ewma_precision
 examples:
-  - "… 'gefährlich' + 'Risiko' …"
-  - "… 'ich hab Angst' + Warnung …"
-  - "… Bedrohungsszenario + Worst-Case …"
-  - "… 'unsicher' + 'was, wenn' …"
-  - "… 'Alarmzeichen' + Vorsicht …"
-  - "… 'Panik' + Rückzugsgedanke …"
-  - "… Risikoabschätzung + 'zu heikel' …"
-  - "… 'unheimlich' + Bauchgefühl …"
-  - "… 'Gefahr im Verzug' + Dringlichkeit …"
-  - "… 'keine Kontrolle' + Sorge …"
+- … 'gefährlich' + 'Risiko' …
+- … 'ich hab Angst' + Warnung …
+- … Bedrohungsszenario + Worst-Case …
+- … 'unsicher' + 'was, wenn' …
+- … 'Alarmzeichen' + Vorsicht …
+- … 'Panik' + Rückzugsgedanke …
+- … Risikoabschätzung + 'zu heikel' …
+- … 'unheimlich' + Bauchgefühl …
+- … 'Gefahr im Verzug' + Dringlichkeit …
+- … 'keine Kontrolle' + Sorge …
+- Kombination 1 mit sem_threat und sem_risk_f
+- Kombination 2 mit sem_threat und sem_risk_f
+- Kombination 3 mit sem_threat und sem_risk_f
+- Kombination 4 mit sem_threat und sem_risk_f
+- Kombination 5 mit sem_threat und sem_risk_f
+- Kombination 6 mit sem_threat und sem_risk_f
+- Kombination 7 mit sem_threat und sem_risk_f
+- Kombination 8 mit sem_threat und sem_risk_f
+- Kombination 9 mit sem_threat und sem_risk_f
+- Kombination 10 mit sem_threat und sem_risk_f
+- Kombination 11 mit sem_threat und sem_risk_f
+- Kombination 12 mit sem_threat und sem_risk_f
+- Kombination 13 mit sem_threat und sem_risk_f
+- Kombination 14 mit sem_threat und sem_risk_f
+- Kombination 15 mit sem_threat und sem_risk_f

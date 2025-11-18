@@ -1,17 +1,39 @@
 id: ATO_TENTATIVE_VERBS
 version: "3.4"
 frame:
-  signal: ["tentative"]
+  signal: [ "tentative" ]
   concept: "Zögerliche Schlussfolgerung"
   pragmatics: "Vorläufige Deutung"
   narrative: "uncertainty"
-tags: [uncertainty]
+tags: [ uncertainty ]
 pattern:
   regex: "\\b(könnte|scheint|wirkt|looks\\s+like|appears\\s+to)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Könnte stimmen."
-  - "Scheint so."
-  - "Wirkt plausibel."
-  - "Looks like it."
-  - "Appears to be."
+- "Könnte stimmen."
+- "Scheint so."
+- "Wirkt plausibel."
+- "Looks like it."
+- "Appears to be."
+- "Könnte sein."
+- "Wirkt wie."
+- "Sieht aus als."
+- "Klingt nach."
+- "Deutet darauf hin."
+- "Lässt vermuten."
+- "Erscheint so."
+- "Macht den Eindruck."
+- "Legt nahe."
+- "Suggeriert."
+- "Impliziert."
+- "Andeutet."
+- "Signalisiert vage."
+- "Könnte hinweisen."
+- "Möglicherweise zeigt."
+- "Eventuell deutet."
+- "Vielleicht weist hin."
+- "Mutmaßlich signalisiert."
+- "Vermutlich indiziert."
+- "Tendenziell zeigt."
+- "Scheinbar manifestiert."
+- "Anscheinend offenbart."

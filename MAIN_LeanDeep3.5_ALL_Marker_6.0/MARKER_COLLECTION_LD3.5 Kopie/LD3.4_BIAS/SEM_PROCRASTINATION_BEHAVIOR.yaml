@@ -1,20 +1,39 @@
 id: SEM_PROCRASTINATION_BEHAVIOR
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["avoidance"]
-  concept: "Ausweichverhalten statt Aufgabe"
-  pragmatics: "Busy-Work"
-  narrative: "task_flow"
-tags: [procrastination]
+  signal:
+  - avoidance
+  concept: Ausweichverhalten statt Aufgabe
+  pragmatics: Busy-Work
+  narrative: task_flow
+tags:
+- procrastination
 composed_of:
-  - ATO_PROCRASTINATION_CUES
-  - ATO_DELAYING_PHRASES
+- ATO_PROCRASTINATION_CUES
+- ATO_DELAYING_PHRASES
 activation:
-  rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message OR ANY 2 IN 2 messages
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Erst recherchieren – morgen dann."
-  - "Noch vorbereiten – nach dem Meeting."
-  - "Nicht perfekt – später besser."
-  - "Brauche Inspiration – gleich."
-  - "Aufschub – wenn Zeit."
+- Erst recherchieren – morgen dann.
+- Noch vorbereiten – nach dem Meeting.
+- Nicht perfekt – später besser.
+- Brauche Inspiration – gleich.
+- Aufschub – wenn Zeit.
+- Kombination 1 mit procrastin und delaying_p
+- Kombination 2 mit procrastin und delaying_p
+- Kombination 3 mit procrastin und delaying_p
+- Kombination 4 mit procrastin und delaying_p
+- Kombination 5 mit procrastin und delaying_p
+- Kombination 6 mit procrastin und delaying_p
+- Kombination 7 mit procrastin und delaying_p
+- Kombination 8 mit procrastin und delaying_p
+- Kombination 9 mit procrastin und delaying_p
+- Kombination 10 mit procrastin und delaying_p
+- Kombination 11 mit procrastin und delaying_p
+- Kombination 12 mit procrastin und delaying_p
+- Kombination 13 mit procrastin und delaying_p
+- Kombination 14 mit procrastin und delaying_p
+- Kombination 15 mit procrastin und delaying_p

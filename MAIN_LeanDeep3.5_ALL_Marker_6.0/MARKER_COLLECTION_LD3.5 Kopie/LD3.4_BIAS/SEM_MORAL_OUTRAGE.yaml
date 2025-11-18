@@ -1,20 +1,40 @@
 id: SEM_MORAL_OUTRAGE
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["moral_outrage"]
-  concept: "Empörung/Skandalisierung"
-  pragmatics: "Affektive Normdurchsetzung"
-  narrative: "moral_frame"
-tags: [morality, outrage]
+  signal:
+  - moral_outrage
+  concept: Empörung/Skandalisierung
+  pragmatics: Affektive Normdurchsetzung
+  narrative: moral_frame
+tags:
+- morality
+- outrage
 composed_of:
-  - ATO_OUTRAGE_MARKERS
-  - ATO_MORAL_LANGUAGE
+- ATO_OUTRAGE_MARKERS
+- ATO_MORAL_LANGUAGE
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.6, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.6
+  weight: 1.0
 examples:
-  - "Skandal – schäme dich!"
-  - "Empörend und unethisch."
-  - "Unfassbar unmoralisch."
-  - "Shame! Disgrace!"
-  - "Alarmierend unanständig."
+- Skandal – schäme dich!
+- Empörend und unethisch.
+- Unfassbar unmoralisch.
+- Shame! Disgrace!
+- Alarmierend unanständig.
+- Kombination 1 mit outrage_ma und moral_lang
+- Kombination 2 mit outrage_ma und moral_lang
+- Kombination 3 mit outrage_ma und moral_lang
+- Kombination 4 mit outrage_ma und moral_lang
+- Kombination 5 mit outrage_ma und moral_lang
+- Kombination 6 mit outrage_ma und moral_lang
+- Kombination 7 mit outrage_ma und moral_lang
+- Kombination 8 mit outrage_ma und moral_lang
+- Kombination 9 mit outrage_ma und moral_lang
+- Kombination 10 mit outrage_ma und moral_lang
+- Kombination 11 mit outrage_ma und moral_lang
+- Kombination 12 mit outrage_ma und moral_lang
+- Kombination 13 mit outrage_ma und moral_lang
+- Kombination 14 mit outrage_ma und moral_lang
+- Kombination 15 mit outrage_ma und moral_lang

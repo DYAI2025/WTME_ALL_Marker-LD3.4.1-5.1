@@ -1,17 +1,40 @@
 id: ATO_MOCKING_LEXICON
 version: "3.4"
 frame:
-  signal: ["mocking"]
+  signal: [ "mocking" ]
   concept: "Spott/Verhöhnung"
   pragmatics: "Herabsetzender Ton"
   narrative: "tone"
-tags: [mocking, disrespect]
+tags: [ mocking, disrespect ]
 pattern:
   regex: "\\b(lächerlich|armselig|peinlich|loser|clown|Besserwisser)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Lächerlich."
-  - "Armselig."
-  - "Peinlich."
-  - "Clown."
-  - "Besserwisser."
+- "Lächerlich."
+- "Armselig."
+- "Peinlich."
+- "Clown."
+- "Besserwisser."
+- "Ach wirklich?"
+- "Na klar!"
+- "Wie originell!"
+- "So geistreich!"
+- "Donnerwetter!"
+- "Meine Güte!"
+- "Ach nein!"
+- "Echt jetzt?"
+- "Wie witzig!"
+- "So clever!"
+- "Wahnsinn!"
+- "Unglaublich!"
+- "Sensationell!"
+- "Wie aufregend!"
+- "So spannend!"
+- "Was für eine Überraschung!"
+- "Wie unerwartet!"
+- "So originell!"
+- "Welch Einsicht!"
+- "Wie tiefgründig!"
+- "So bedeutsam!"
+- "Welch Weisheit!"
+- "Wie erhellend!"

@@ -1,20 +1,41 @@
 id: SEM_GUILT_ADMISSION
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["guilt", "apology"]
-  concept: "Schuldbekenntnis/Bitte um Verzeihung"
-  pragmatics: "Selbstzuschreibung"
-  narrative: "affect"
-tags: [guilt, apology]
+  signal:
+  - guilt
+  - apology
+  concept: Schuldbekenntnis/Bitte um Verzeihung
+  pragmatics: Selbstzuschreibung
+  narrative: affect
+tags:
+- guilt
+- apology
 composed_of:
-  - ATO_GUILT_PHRASES
-  - ATO_SAD_WORDS
+- ATO_GUILT_PHRASES
+- ATO_SAD_WORDS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.65, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.65
+  weight: 1.0
 examples:
-  - "Es tut mir leid, ich bin traurig darüber."
-  - "Meine Schuld – es fühlt sich schwer an."
-  - "Verzeih bitte, ich bereue es."
-  - "Sorry, ich vermisse die alte Zeit."
-  - "Ich bin schuld – es tut mir leid."
+- Es tut mir leid, ich bin traurig darüber.
+- Meine Schuld – es fühlt sich schwer an.
+- Verzeih bitte, ich bereue es.
+- Sorry, ich vermisse die alte Zeit.
+- Ich bin schuld – es tut mir leid.
+- Es tut mir leid - Meine Schuld.
+- Ich bereue - Verzeih mir.
+- Mein Fehler - Ich haette es wissen muessen.
+- Ich bin schuld - Es liegt an mir.
+- Ich habe versagt - Ich trage Verantwortung.
+- Haette ich nur - Das bereue ich.
+- Ich fuehle mich schuldig - Mein Versagen.
+- Ich habe Mist gebaut - Das war falsch.
+- Ich bin der Schuldige - Meine Kappe.
+- Ich habe enttaeuscht - Meine Verfehlung.
+- Sorry dafuer - Ich war's.
+- Ich stehe in Schuld - Belastet Gewissen.
+- Mache mir Vorwuerfe - Ich habe verbockt.
+- Liegt an mir - Ich bin verantwortlich.
+- Mein Verschulden - Haette anders handeln muessen.

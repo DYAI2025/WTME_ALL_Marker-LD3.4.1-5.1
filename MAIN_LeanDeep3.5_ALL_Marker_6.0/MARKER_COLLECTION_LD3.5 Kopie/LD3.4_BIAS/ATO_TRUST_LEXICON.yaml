@@ -1,17 +1,39 @@
 id: ATO_TRUST_LEXICON
 version: "3.4"
 frame:
-  signal: ["trust"]
+  signal: [ "trust" ]
   concept: "Vertrauens-/Zuverlässigkeitsmarker"
   pragmatics: "Beziehung/Koordination"
   narrative: "prosocial"
-tags: [trust, reliability]
+tags: [ trust, reliability ]
 pattern:
   regex: "\\b(vertraue|zuverlässig|verlässlich|trust|reliable|SLA)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Ich vertraue dir."
-  - "Bist du zuverlässig?"
-  - "reliable partner"
-  - "SLA einhalten"
-  - "vertrauenswürdig"
+- "Ich vertraue dir."
+- "Bist du zuverlässig?"
+- "reliable partner"
+- "SLA einhalten"
+- "vertrauenswürdig"
+- "Du bist vertrauenswürdig."
+- "Ich glaube dir."
+- "Du bist ehrlich."
+- "Ich kann mich auf dich verlassen."
+- "Du bist zuverlässig."
+- "Ich öffne mich dir."
+- "Du bist integer."
+- "Ich fühle mich sicher bei dir."
+- "Du bist authentisch."
+- "Ich glaube an dich."
+- "Du bist glaubwürdig."
+- "Ich schenke dir Vertrauen."
+- "Du bist aufrichtig."
+- "Ich verlasse mich auf dich."
+- "Du bist loyal."
+- "Ich traue dir."
+- "Du bist treu."
+- "Ich bin offen zu dir."
+- "Du bist verlässlich."
+- "Ich gebe dir Kredit."
+- "Du hast mein Vertrauen."
+- "Ich baue auf dich."

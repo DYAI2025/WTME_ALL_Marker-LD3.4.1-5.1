@@ -1,20 +1,41 @@
 id: SEM_RISK_FORECAST
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["risk", "forecast"]
-  concept: "Risiko-Prognose"
-  pragmatics: "Vorausschau"
-  narrative: "risk"
-tags: [risk, forecast]
+  signal:
+  - risk
+  - forecast
+  concept: Risiko-Prognose
+  pragmatics: Vorausschau
+  narrative: risk
+tags:
+- risk
+- forecast
 composed_of:
-  - ATO_RISK_TERMS
-  - ATO_PROBABILISTIC_TERMS
+- ATO_RISK_TERMS
+- ATO_PROBABILISTIC_TERMS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Wahrscheinlichkeit 40%, Worst-Case droht."
-  - "Forecast unsicher, Risiko mittel."
-  - "Exposure 30–50%."
-  - "Riskant mit 60% Chance."
-  - "Low risk, unlikely."
+- Wahrscheinlichkeit 40%, Worst-Case droht.
+- Forecast unsicher, Risiko mittel.
+- Exposure 30–50%.
+- Riskant mit 60% Chance.
+- Low risk, unlikely.
+- Kombination 1 mit risk_terms und probabilis
+- Kombination 2 mit risk_terms und probabilis
+- Kombination 3 mit risk_terms und probabilis
+- Kombination 4 mit risk_terms und probabilis
+- Kombination 5 mit risk_terms und probabilis
+- Kombination 6 mit risk_terms und probabilis
+- Kombination 7 mit risk_terms und probabilis
+- Kombination 8 mit risk_terms und probabilis
+- Kombination 9 mit risk_terms und probabilis
+- Kombination 10 mit risk_terms und probabilis
+- Kombination 11 mit risk_terms und probabilis
+- Kombination 12 mit risk_terms und probabilis
+- Kombination 13 mit risk_terms und probabilis
+- Kombination 14 mit risk_terms und probabilis
+- Kombination 15 mit risk_terms und probabilis

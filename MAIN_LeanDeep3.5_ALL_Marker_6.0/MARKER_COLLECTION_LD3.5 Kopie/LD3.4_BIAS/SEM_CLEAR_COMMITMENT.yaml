@@ -1,20 +1,41 @@
 id: SEM_CLEAR_COMMITMENT
 version: "3.4"
 frame:
-  signal: ["commitment"]
+  signal: [ "commitment" ]
   concept: "Klare, datierte Zusage"
   pragmatics: "Planbarkeit"
   narrative: "task_flow"
-tags: [commitment, planning]
+tags: [ commitment, planning ]
 composed_of:
-  - ATO_COMMITMENT_PHRASES
-  - ATO_RELIABILITY_TERMS
+- ATO_COMMITMENT_PHRASES
+- ATO_RELIABILITY_TERMS
 activation:
   rule: "BOTH IN 1 message"
 scoring: { base: 0.55, weight: 1.0 }
 examples:
-  - "Ich übernehme – fixe bis Montag."
-  - "Commit to Friday – pünktlich."
-  - "Ich mache das heute – zuverlässig."
-  - "Übernehme das Ticket – SLA passt."
-  - "Ich kümmere mich, termingerecht."
+- "Ich übernehme – fixe bis Montag."
+- "Commit to Friday – pünktlich."
+- "Ich mache das heute – zuverlässig."
+- "Übernehme das Ticket – SLA passt."
+- "Ich kümmere mich, termingerecht."
+- "Ich verspreche es – zuverlässig."
+- "Zugesagt bis Donnerstag – pünktlich."
+- "Mache ich definitiv – verlässlich."
+- "Fest eingeplant – termingerecht."
+- "Verbindliche Zusage – konstant."
+- "Garantiert erledigt – stabil."
+- "Ich stehe dazu – sicher."
+- "Absolut sicher mache ich – beständig."
+- "Verlässlich umgesetzt – robust."
+- "Definitiv dabei – konsistent."
+- "Ohne Wenn und Aber – zuverlässig."
+- "Ich verpflichte mich – tragfähig."
+- "Zugesichert bis Mittwoch – pünktlich."
+- "Bindende Vereinbarung – fest."
+- "Ich halte mein Wort – standhaft."
+- "Feste Zusage meinerseits – dauerhaft."
+- "Darauf kannst du zählen – verlässlich."
+- "Das ist gesetzt – berechenbar."
+- "Ich ziehe das durch – solide."
+- "Mein Ehrenwort – vertrauenswürdig."
+- "Vertraglich zugesagt – sicher."

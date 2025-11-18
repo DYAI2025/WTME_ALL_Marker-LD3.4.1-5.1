@@ -1,17 +1,38 @@
 id: ATO_ATTRIBUTION_ERROR
 version: "3.4"
 frame:
-  signal: ["dispositional_blame", "fundamental_attribution"]
+  signal: [ "dispositional_blame", "fundamental_attribution" ]
   concept: "Ursachenzuschreibung auf stabile Eigenschaften"
   pragmatics: "Fundamentaler Attributionsfehler"
   narrative: "cognitive_bias"
-tags: [bias, attribution, blame]
+tags: [ bias, attribution, blame ]
 pattern:
   regex: "\\b(typisch\\s+für\\s+ihn|sie\\s+ist\\s+eben\\s+so|that's\\s+just\\s+how\\s+they\\s+are|angeboren|Charaktersache)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Das ist typisch für ihn."
-  - "Sie ist eben so."
-  - "That’s just how they are."
-  - "Das ist angeboren."
-  - "Reine Charaktersache."
+- "Das ist typisch für ihn."
+- "Sie ist eben so."
+- "That's just how they are."
+- "Das ist angeboren."
+- "Reine Charaktersache."
+- "Das liegt an seiner Persönlichkeit."
+- "Sie kann nicht anders."
+- "Das ist sein Charakter."
+- "Das liegt in ihrer Natur."
+- "Er ist einfach faul."
+- "Sie ist von Natur aus unsozial."
+- "Das ist sein Wesen."
+- "Sie ist grundsätzlich aggressiv."
+- "Er ist immer unzuverlässig."
+- "Das ist ihre Art."
+- "Er ist eben inkompetent."
+- "Sie ist charakterlich schwach."
+- "Das liegt an ihm persönlich."
+- "Sie ist dispositional so."
+- "Das ist seine Eigenschaft."
+- "Sie hat diese negative Anlage."
+- "Er ist veranlagt zur Faulheit."
+- "Das ist ihr Temperament."
+- "Er ist grundlegend egoistisch."
+- "Sie ist wesensgemäß hinterhältig."
+- "Das ist sein Naturell."

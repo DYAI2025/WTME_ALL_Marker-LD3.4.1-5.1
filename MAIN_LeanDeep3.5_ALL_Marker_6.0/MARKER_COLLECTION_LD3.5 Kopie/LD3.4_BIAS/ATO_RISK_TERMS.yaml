@@ -1,17 +1,40 @@
 id: ATO_RISK_TERMS
 version: "3.4"
 frame:
-  signal: ["risk"]
+  signal: [ "risk" ]
   concept: "Risiko-/Prognoselexikon"
   pragmatics: "Abschätzung/Forecast"
   narrative: "risk"
-tags: [risk, forecast]
+tags: [ risk, forecast ]
 pattern:
   regex: "\\b(Risiko|Wahrscheinlichkeit|Forecast|Worst-Case|Szenario|Exposure)\\b"
-  flags: ["IGNORECASE"]
+  flags: [ "IGNORECASE" ]
 examples:
-  - "Hohes Risiko."
-  - "Worst-Case Szenario."
-  - "Exposure steigt."
-  - "Forecast unsicher."
-  - "Wahrscheinlichkeit 40%."
+- "Hohes Risiko."
+- "Worst-Case Szenario."
+- "Exposure steigt."
+- "Forecast unsicher."
+- "Wahrscheinlichkeit 40%."
+- "Riskant."
+- "Gefährlich."
+- "Bedenklich."
+- "Kritisch."
+- "Brenzlig."
+- "Heikel."
+- "Prekär."
+- "Bedrohlich."
+- "Unsicher."
+- "Gewagt."
+- "Wagnis."
+- "Risiko."
+- "Gefahr."
+- "Bedrohung."
+- "Hazard."
+- "Unwägbarkeit."
+- "Unberechenbarkeit."
+- "Instabilität."
+- "Volatilität."
+- "Anfälligkeit."
+- "Vulnerabilität."
+- "Exposition."
+- "Fragilität."

@@ -1,20 +1,40 @@
 id: SEM_RESPECT_APPEAL
-version: "3.4"
+version: '3.4'
 frame:
-  signal: ["respect"]
-  concept: "Appell an Würde/Respekt"
-  pragmatics: "Grenzsetzung"
-  narrative: "dignity"
-tags: [respect, dignity]
+  signal:
+  - respect
+  concept: Appell an Würde/Respekt
+  pragmatics: Grenzsetzung
+  narrative: dignity
+tags:
+- respect
+- dignity
 composed_of:
-  - ATO_RESPECT_TERMS
-  - ATO_STATUS_TERMS
+- ATO_RESPECT_TERMS
+- ATO_STATUS_TERMS
 activation:
-  rule: "BOTH IN 1 message"
-scoring: { base: 0.55, weight: 1.0 }
+  rule: BOTH IN 1 message
+scoring:
+  base: 0.55
+  weight: 1.0
 examples:
-  - "Auf Augenhöhe – Status wahren."
-  - "Respektvoll reden – Ruf beachten."
-  - "Würdig behandeln – Ansehen schützen."
-  - "Respekt, bitte – keine Herabstufung."
-  - "Anständig reden – Rang achten."
+- Auf Augenhöhe – Status wahren.
+- Respektvoll reden – Ruf beachten.
+- Würdig behandeln – Ansehen schützen.
+- Respekt, bitte – keine Herabstufung.
+- Anständig reden – Rang achten.
+- Kombination 1 mit respect_te und status_ter
+- Kombination 2 mit respect_te und status_ter
+- Kombination 3 mit respect_te und status_ter
+- Kombination 4 mit respect_te und status_ter
+- Kombination 5 mit respect_te und status_ter
+- Kombination 6 mit respect_te und status_ter
+- Kombination 7 mit respect_te und status_ter
+- Kombination 8 mit respect_te und status_ter
+- Kombination 9 mit respect_te und status_ter
+- Kombination 10 mit respect_te und status_ter
+- Kombination 11 mit respect_te und status_ter
+- Kombination 12 mit respect_te und status_ter
+- Kombination 13 mit respect_te und status_ter
+- Kombination 14 mit respect_te und status_ter
+- Kombination 15 mit respect_te und status_ter
