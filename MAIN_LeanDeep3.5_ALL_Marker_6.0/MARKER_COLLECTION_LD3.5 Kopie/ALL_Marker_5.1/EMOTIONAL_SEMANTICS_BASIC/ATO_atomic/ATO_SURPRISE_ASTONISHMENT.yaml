@@ -1,0 +1,92 @@
+id: ATO_SURPRISE_ASTONISHMENT
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for surprise, astonishment, and amazement expressions"
+
+frame:
+  signal:
+    [
+      "überraschung",
+      "erstaunen",
+      "verwunderung",
+      "überrascht",
+      "surprise",
+      "amazed",
+    ]
+  concept: "Neutral-to-positive emotional valence - surprise and astonishment"
+  pragmatics: "Expression of surprise and wonder"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(überrasch|überrascht|überraschung)\b'
+  - '(?i)\b(erstaun|erstaunt|erstaunlich)\b'
+  - '(?i)\b(verwunder|verwundert|verwunderlich)\b'
+  - '(?i)\b(surprise|surprised|surprising|amazed)\b'
+  - '(?i)\b(verblüff|verblüfft|verblüffend)\b'
+  - '(?i)\b(fassungslos|sprachlos|ungläubig)\b'
+  - '(?i)\b(wow|krass|unglaublich|wahnsinn)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Das überrascht mich wirklich sehr!"
+  - "Ich bin total erstaunt über diese Wendung."
+  - "Wow, das ist ja unglaublich!"
+  - "Diese Nachricht hat mich verblüfft."
+  - "Ich bin sprachlos vor Verwunderung."
+  - "Das ist ja eine Überraschung!"
+  - "Ich bin total surprised!"
+  - "Das erstaunt mich sehr."
+  - "Ich bin fassungslos über dieses Ergebnis."
+  - "Wahnsinn, das hätte ich nicht erwartet!"
+  - "Das ist erstaunlich und überraschend zugleich."
+  - "Ich bin total verblüfft davon."
+  - "Das überrascht mich positiv!"
+  - "Ich bin erstaunt, wie gut das funktioniert."
+  - "Wow, das ist krass!"
+  - "Diese Entwicklung verwundert mich."
+  - "Ich bin total amazed!"
+  - "Das ist eine unglaubliche Überraschung."
+  - "Ich bin sprachlos und erstaunt."
+  - "Das verblüfft mich immer wieder."
+  - "Ich bin überrascht und begeistert."
+  - "Wahnsinn, das ist ja erstaunlich!"
+  - "Diese Nachricht macht mich fassungslos."
+  - "Ich bin total surprised by this!"
+  - "Das ist verwunderlich und interessant."
+  - "Wow, ich bin echt überrascht!"
+  - "Das erstaunt mich jedes Mal aufs Neue."
+  - "Ich bin verblüfft über deine Fähigkeiten."
+  - "Das ist eine positive Überraschung!"
+  - "Ich bin sprachlos vor Erstaunen."
+  - "Krass, das hätte ich nie gedacht!"
+  - "Diese Wendung überrascht mich total."
+  - "Ich bin erstaunt und beeindruckt."
+  - "Das ist unglaublich überraschend!"
+  - "Ich bin fassungslos über diese Leistung."
+  - "Wow, das ist ja wahnsinnig gut!"
+  - "Diese Entwicklung verblüfft mich sehr."
+  - "Ich bin total amazed by your work!"
+  - "Das überrascht mich auf angenehme Weise."
+  - "Ich bin erstaunt über diese Möglichkeit."
+  - "Das ist verwunderlich und faszinierend."
+  - "Ich bin sprachlos vor Überraschung."
+  - "Wahnsinn, das ist erstaunlich!"
+  - "Diese Nachricht hat mich total surprised."
+  - "Ich bin verblüfft und begeistert zugleich."
+  - "Das ist eine unglaubliche Wendung!"
+  - "Ich bin fassungslos, wie schnell das ging."
+  - "Wow, ich bin echt erstaunt!"
+  - "Das überrascht mich immer wieder positiv."
+  - "Ich bin total amazed und happy!"
+
+tags:
+  [atomic, emotion, neutral, positive, surprise, astonishment, amazement, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for surprise and astonishment"

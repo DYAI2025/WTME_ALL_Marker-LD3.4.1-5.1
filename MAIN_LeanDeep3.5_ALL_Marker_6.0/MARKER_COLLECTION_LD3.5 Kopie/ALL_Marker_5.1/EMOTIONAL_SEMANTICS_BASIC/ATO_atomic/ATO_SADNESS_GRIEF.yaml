@@ -1,0 +1,83 @@
+id: ATO_SADNESS_GRIEF
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for sadness, grief, and melancholic emotional expressions"
+
+frame:
+  signal: ["traurig", "trauer", "melancholie", "betrübt", "sad", "grief"]
+  concept: "Negative emotional valence - sadness and grief"
+  pragmatics: "Expression of sadness and loss"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(traurig|trauer|betrauern)\b'
+  - '(?i)\b(betrübt|niedergeschlagen|deprimiert)\b'
+  - '(?i)\b(melancholisch|wehmütig|schwermütig)\b'
+  - '(?i)\b(sad|sadness|grief|sorrowful)\b'
+  - '(?i)\b(kummer|leid|schmerz)\b'
+  - '(?i)\b(weinen|tränen|geweint)\b'
+  - '(?i)\b(verlust|vermissen|sehnsucht)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Ich bin heute so traurig und weiß nicht warum."
+  - "Der Verlust schmerzt mich sehr."
+  - "Ich fühle eine tiefe Melancholie in mir."
+  - "Das macht mich wirklich betrübt."
+  - "Ich vermisse dich so sehr, dass es wehtut."
+  - "Mein Herz ist schwer vor Trauer."
+  - "Ich könnte einfach nur weinen."
+  - "Diese Nachricht hat mich sehr niedergeschlagen."
+  - "Ich fühle mich leer und traurig."
+  - "Der Kummer sitzt tief in meiner Seele."
+  - "Ich bin voller Wehmut, wenn ich daran denke."
+  - "Das Leid ist kaum zu ertragen."
+  - "Tränen laufen mir über die Wangen."
+  - "Ich fühle einen tiefen Schmerz in mir."
+  - "Die Sehnsucht nach besseren Zeiten quält mich."
+  - "Ich bin so niedergeschlagen heute."
+  - "Mein Herz blutet vor Trauer."
+  - "Ich fühle mich schwermütig und allein."
+  - "Der Verlust hat eine Leere hinterlassen."
+  - "Ich bin erfüllt von stiller Traurigkeit."
+  - "Das macht mich unendlich sad."
+  - "Ich trage schwer an diesem Kummer."
+  - "Die Trauer überwältigt mich manchmal."
+  - "Ich fühle mich wie in einem grauen Nebel."
+  - "Meine Seele weint innerlich."
+  - "Ich bin voller Schmerz und Traurigkeit."
+  - "Diese Erinnerung macht mich wehmütig."
+  - "Ich fühle eine bleierne Schwere."
+  - "Der Abschied hat mich sehr betrübt."
+  - "Ich bin von tiefer Melancholie erfüllt."
+  - "Das Vermissen tut so weh."
+  - "Ich fühle mich innerlich zerrissen vor Trauer."
+  - "Mein Herz ist voller Kummer."
+  - "Ich bin so niedergeschlagen, dass ich kaum sprechen kann."
+  - "Die Tränen wollen einfach nicht aufhören."
+  - "Ich fühle einen dumpfen Schmerz in der Brust."
+  - "Diese Situation macht mich unglaublich traurig."
+  - "Ich bin erfüllt von stiller Trauer."
+  - "Das Leid lastet schwer auf mir."
+  - "Ich fühle mich verloren in meiner Traurigkeit."
+  - "Meine Seele ist voller Wehmut."
+  - "Ich bin so betrübt über diese Entwicklung."
+  - "Der Schmerz des Verlustes ist überwältigend."
+  - "Ich fühle eine tiefe, dunkle Traurigkeit."
+  - "Mein Herz ist schwer wie Blei."
+  - "Ich bin von Kummer und Sorge erfüllt."
+  - "Die Melancholie umhüllt mich wie ein Schleier."
+  - "Ich fühle mich so sad und leer."
+  - "Diese Trauer wird mich nie ganz verlassen."
+  - "Ich bin voller Sehnsucht und Schmerz."
+
+tags: [atomic, emotion, negative, sadness, grief, melancholy, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for sadness and grief"

@@ -1,0 +1,83 @@
+id: ATO_JOY_HAPPINESS
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for joy, happiness, and positive emotional expressions"
+
+frame:
+  signal: ["freude", "glück", "fröhlich", "begeistert", "happy", "joy"]
+  concept: "Positive emotional valence - joy and happiness"
+  pragmatics: "Expression of positive emotional state"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(freude|freuen|gefreut|erfreut)\b'
+  - '(?i)\b(glück|glücklich|beglückt)\b'
+  - '(?i)\b(fröhlich|heiter|vergnügt)\b'
+  - '(?i)\b(begeister|enthusiastisch)\b'
+  - '(?i)\b(happy|joy|joyful|delighted)\b'
+  - '(?i)\b(froh|erfreut|zufrieden)\b'
+  - '(?i)\b(strahlend|leuchtend|glänzend)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Ich freue mich so sehr auf das Wochenende!"
+  - "Das macht mich wirklich glücklich."
+  - "Ich bin total begeistert von dieser Idee!"
+  - "Heute fühle ich mich besonders fröhlich."
+  - "Das hat mir große Freude bereitet."
+  - "Ich bin so froh, dass du da bist."
+  - "Diese Nachricht hat mich sehr erfreut."
+  - "Ich strahle vor Glück!"
+  - "Das ist einfach wunderbar und macht mich happy."
+  - "Ich bin voller Begeisterung für dieses Projekt."
+  - "Mein Herz hüpft vor Freude."
+  - "Ich könnte vor Glück in die Luft springen!"
+  - "Das erfüllt mich mit tiefer Zufriedenheit."
+  - "Ich bin überglücklich mit diesem Ergebnis."
+  - "Diese Überraschung hat mich sehr gefreut."
+  - "Ich fühle mich heute richtig vergnügt."
+  - "Das bringt so viel Freude in mein Leben."
+  - "Ich bin total happy darüber!"
+  - "Meine Stimmung ist heute strahlend gut."
+  - "Ich genieße jeden Moment dieser Freude."
+  - "Das macht mich unglaublich froh."
+  - "Ich bin erfüllt von innerer Heiterkeit."
+  - "Diese Erfahrung beglückt mich sehr."
+  - "Ich spüre pure Freude in mir."
+  - "Das lässt mein Herz vor Glück singen."
+  - "Ich bin so enthusiastisch bei der Sache!"
+  - "Diese Momente erfüllen mich mit Glückseligkeit."
+  - "Ich fühle mich beschwingt und fröhlich."
+  - "Das bereitet mir unbändige Freude."
+  - "Ich bin voller Lebensfreude heute."
+  - "Diese Nachricht macht mich richtig glücklich."
+  - "Ich strahle vor lauter Begeisterung."
+  - "Das erfüllt mich mit warmem Glücksgefühl."
+  - "Ich bin total erfreut über diese Entwicklung."
+  - "Mein Herz ist voller Freude und Dankbarkeit."
+  - "Ich fühle mich wie auf Wolke sieben."
+  - "Das macht mich einfach nur happy und zufrieden."
+  - "Ich bin überaus froh über diese Wendung."
+  - "Diese Begegnung hat mir viel Freude geschenkt."
+  - "Ich bin mit Begeisterung dabei!"
+  - "Das lässt mich vor Glück strahlen."
+  - "Ich fühle eine tiefe, ruhige Zufriedenheit."
+  - "Diese Erfahrung erfüllt mich mit Heiterkeit."
+  - "Ich bin so glücklich, dass ich weinen könnte."
+  - "Das bringt so viel Licht und Freude in meinen Tag."
+  - "Ich bin total begeistert und kann es kaum erwarten!"
+  - "Mein Herz tanzt vor Freude."
+  - "Ich fühle mich beschenkt und glücklich."
+  - "Das erfüllt mich mit strahlender Lebensfreude."
+  - "Ich bin einfach nur froh und dankbar."
+
+tags: [atomic, emotion, positive, joy, happiness, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for joy and happiness"

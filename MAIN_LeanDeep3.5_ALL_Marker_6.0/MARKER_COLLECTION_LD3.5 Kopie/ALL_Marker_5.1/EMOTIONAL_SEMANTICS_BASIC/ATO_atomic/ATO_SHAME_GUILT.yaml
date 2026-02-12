@@ -1,0 +1,83 @@
+id: ATO_SHAME_GUILT
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for shame, guilt, and embarrassment expressions"
+
+frame:
+  signal: ["scham", "schuld", "peinlich", "schämen", "shame", "guilt"]
+  concept: "Negative emotional valence - shame and guilt"
+  pragmatics: "Expression of shame and self-blame"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(scham|schämen|beschämt|verschämt)\b'
+  - '(?i)\b(schuld|schuldig|schuldgefühl)\b'
+  - '(?i)\b(peinlich|blamiert|verlegen)\b'
+  - '(?i)\b(shame|ashamed|embarrassed|guilty)\b'
+  - '(?i)\b(reue|bereuen|bereut)\b'
+  - '(?i)\b(unwürdig|unwert|minderwertig)\b'
+  - '(?i)\b(versagt|versagen|versager)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Ich schäme mich so sehr für mein Verhalten."
+  - "Die Schuld lastet schwer auf mir."
+  - "Das ist mir total peinlich!"
+  - "Ich fühle mich beschämt und klein."
+  - "Meine Schuldgefühle quälen mich."
+  - "Ich bin so ashamed of myself."
+  - "Das ist mir unglaublich peinlich."
+  - "Ich fühle tiefe Reue für meine Taten."
+  - "Meine Scham ist überwältigend."
+  - "Ich fühle mich schuldig und unwürdig."
+  - "Das ist mir so embarrassing!"
+  - "Ich schäme mich in Grund und Boden."
+  - "Die Schuld frisst mich innerlich auf."
+  - "Ich bin total blamiert vor allen."
+  - "Meine Schuldgefühle lassen mich nicht los."
+  - "Ich fühle mich so guilty und schlecht."
+  - "Das ist mir furchtbar peinlich."
+  - "Ich bereue meine Entscheidung zutiefst."
+  - "Meine Scham kennt keine Grenzen."
+  - "Ich fühle mich unwürdig und minderwertig."
+  - "Das ist mir total shameful!"
+  - "Ich schäme mich für meine Fehler."
+  - "Die Schuld drückt mich nieder."
+  - "Ich bin so verlegen und beschämt."
+  - "Meine Reue ist aufrichtig und tief."
+  - "Ich fühle mich wie ein Versager."
+  - "Das ist mir unendlich peinlich."
+  - "Ich trage schwer an meiner Schuld."
+  - "Meine Scham brennt in mir."
+  - "Ich fühle mich total ashamed!"
+  - "Das ist mir so unangenehm und peinlich."
+  - "Ich bereue es von ganzem Herzen."
+  - "Meine Schuldgefühle sind erdrückend."
+  - "Ich schäme mich vor mir selbst."
+  - "Die Schuld lässt mich nicht schlafen."
+  - "Ich bin total embarrassed!"
+  - "Das ist mir furchtbar unangenehm."
+  - "Ich fühle tiefe Scham und Reue."
+  - "Meine Schuld ist groß und schwer."
+  - "Ich bin so blamiert und beschämt."
+  - "Das ist mir unglaublich shameful!"
+  - "Ich schäme mich für meine Schwäche."
+  - "Die Schuldgefühle zerfressen mich."
+  - "Ich fühle mich unwürdig deiner Liebe."
+  - "Das ist mir total peinlich vor allen."
+  - "Ich bereue jeden Moment davon."
+  - "Meine Scham ist kaum zu ertragen."
+  - "Ich fühle mich guilty und verloren."
+  - "Das ist mir so embarrassing und schlimm."
+  - "Ich schäme mich zutiefst für mein Versagen."
+
+tags: [atomic, emotion, negative, shame, guilt, embarrassment, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for shame and guilt"

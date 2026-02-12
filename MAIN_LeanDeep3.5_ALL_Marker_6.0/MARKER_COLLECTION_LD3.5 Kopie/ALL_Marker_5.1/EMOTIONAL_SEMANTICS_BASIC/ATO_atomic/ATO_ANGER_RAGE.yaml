@@ -1,0 +1,83 @@
+id: ATO_ANGER_RAGE
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for anger, rage, and aggressive emotional expressions"
+
+frame:
+  signal: ["wut", "ärger", "zorn", "wütend", "angry", "rage"]
+  concept: "Negative emotional valence - anger and aggression"
+  pragmatics: "Expression of anger and frustration"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(wut|wütend|wüten)\b'
+  - '(?i)\b(ärger|ärgern|verärgert|ärgerlich)\b'
+  - '(?i)\b(zorn|zornig|erzürnt)\b'
+  - '(?i)\b(angry|anger|rage|furious)\b'
+  - '(?i)\b(sauer|stinksauer|stinkwütend)\b'
+  - '(?i)\b(frustriert|frustration|genervt)\b'
+  - '(?i)\b(empört|entrüstet|aufgebracht)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Ich bin so wütend, dass ich schreien könnte!"
+  - "Das macht mich wirklich ärgerlich."
+  - "Ich koche vor Wut innerlich."
+  - "Diese Ungerechtigkeit macht mich zornig."
+  - "Ich bin total sauer auf dich!"
+  - "Das frustriert mich unglaublich."
+  - "Ich bin so angry über diese Situation."
+  - "Mein Ärger wächst von Minute zu Minute."
+  - "Ich bin empört über dieses Verhalten!"
+  - "Die Wut steigt in mir hoch."
+  - "Ich bin stinksauer und enttäuscht."
+  - "Das macht mich rasend vor Wut."
+  - "Ich bin total aufgebracht deswegen."
+  - "Mein Zorn ist kaum zu bändigen."
+  - "Ich bin so genervt von dieser Situation!"
+  - "Die Frustration frisst mich innerlich auf."
+  - "Ich bin erzürnt über diese Behandlung."
+  - "Das macht mich furious!"
+  - "Ich platze gleich vor Wut."
+  - "Mein Ärger ist grenzenlos."
+  - "Ich bin total verärgert über diesen Vorfall."
+  - "Die Wut brennt in meiner Brust."
+  - "Ich bin so frustriert, dass ich nicht mehr kann."
+  - "Das macht mich stinkwütend!"
+  - "Ich bin entrüstet über diese Frechheit."
+  - "Mein Zorn kocht über."
+  - "Ich bin so sauer, dass ich zittere."
+  - "Die Wut lässt mich nicht los."
+  - "Ich bin total genervt und angry."
+  - "Das macht mich rasend!"
+  - "Ich bin voller Ärger und Frustration."
+  - "Meine Wut ist berechtigt und stark."
+  - "Ich bin aufgebracht und empört zugleich."
+  - "Das macht mich so ärgerlich, dass ich explodiere."
+  - "Ich bin zornig auf die ganze Situation."
+  - "Die Frustration macht mich fertig."
+  - "Ich bin stinksauer und will schreien!"
+  - "Mein Ärger ist nicht mehr zu kontrollieren."
+  - "Ich bin wütend und enttäuscht."
+  - "Das macht mich furious und hilflos."
+  - "Ich koche vor Zorn."
+  - "Ich bin total verärgert und genervt."
+  - "Die Wut übermannt mich."
+  - "Ich bin so sauer, dass mir die Worte fehlen."
+  - "Das macht mich erzürnt und fassungslos."
+  - "Ich bin voller Rage und Frustration."
+  - "Mein Ärger brennt wie Feuer."
+  - "Ich bin aufgebracht über diese Ungerechtigkeit."
+  - "Die Wut macht mich blind."
+  - "Ich bin so angry, dass ich zittere vor Wut."
+
+tags: [atomic, emotion, negative, anger, rage, frustration, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for anger and rage"

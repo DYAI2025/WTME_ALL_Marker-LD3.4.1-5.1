@@ -1,0 +1,84 @@
+id: ATO_DISGUST_AVERSION
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for disgust, aversion, and repulsion expressions"
+
+frame:
+  signal:
+    ["ekel", "abscheu", "widerwillen", "angewidert", "disgust", "repulsion"]
+  concept: "Negative emotional valence - disgust and aversion"
+  pragmatics: "Expression of disgust and repulsion"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(ekel|ekeln|ekelhaft|eklig)\b'
+  - '(?i)\b(abscheu|abscheulich|verabscheuen)\b'
+  - '(?i)\b(widerwillen|widerwärtig|widerlich)\b'
+  - '(?i)\b(disgust|disgusting|repulsive|revolting)\b'
+  - '(?i)\b(angewidert|abgestoßen|angeekelt)\b'
+  - '(?i)\b(abstoßend|grausig|grässlich)\b'
+  - '(?i)\b(übel|übel wird mir|kotzreiz)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Das ist mir absolut ekelhaft."
+  - "Ich empfinde Abscheu vor diesem Verhalten."
+  - "Das widert mich total an!"
+  - "Ich fühle Ekel in mir aufsteigen."
+  - "Diese Situation ist mir widerlich."
+  - "Mir wird übel bei dem Gedanken."
+  - "Ich bin total angewidert davon."
+  - "Das ist so disgusting!"
+  - "Ich verabscheue diese Praktiken."
+  - "Mein Widerwillen ist groß."
+  - "Das ist mir grässlich und abstoßend."
+  - "Ich fühle mich angeekelt."
+  - "Diese Vorstellung ist ekelhaft."
+  - "Mir wird schlecht vor Ekel."
+  - "Das ist absolut abscheulich!"
+  - "Ich bin total abgestoßen davon."
+  - "Dieser Anblick ist widerlich."
+  - "Ich empfinde tiefen Widerwillen."
+  - "Das ist so repulsive!"
+  - "Mir wird übel, wenn ich daran denke."
+  - "Ich fühle Ekel und Abscheu zugleich."
+  - "Das ist grausig und eklig."
+  - "Ich bin angewidert von diesem Verhalten."
+  - "Diese Situation ist widerwärtig."
+  - "Mir kommt der Kotzreiz bei dem Gedanken."
+  - "Das ist absolut abstoßend für mich."
+  - "Ich verabscheue das zutiefst."
+  - "Mein Ekel ist kaum zu beschreiben."
+  - "Das ist so revolting und grässlich."
+  - "Ich fühle mich total angeekelt."
+  - "Diese Vorstellung ist widerlich."
+  - "Mir wird übel vor Abscheu."
+  - "Das ist ekelhaft und abstoßend."
+  - "Ich bin total disgusted!"
+  - "Mein Widerwillen wächst ständig."
+  - "Das ist grausig und abscheulich."
+  - "Ich fühle Ekel in jeder Faser."
+  - "Diese Situation widert mich an."
+  - "Mir wird schlecht vor Widerwillen."
+  - "Das ist so widerlich, dass ich wegschauen muss."
+  - "Ich bin angewidert und abgestoßen."
+  - "Dieser Gedanke ist ekelhaft."
+  - "Ich verabscheue das aus tiefstem Herzen."
+  - "Mein Ekel ist überwältigend."
+  - "Das ist absolut repulsive und grässlich."
+  - "Ich fühle mich total angeekelt davon."
+  - "Diese Vorstellung ist widerwärtig."
+  - "Mir wird übel bei diesem Anblick."
+  - "Das ist eklig und abstoßend zugleich."
+  - "Ich bin voller Abscheu und Ekel."
+
+tags: [atomic, emotion, negative, disgust, aversion, repulsion, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for disgust and aversion"

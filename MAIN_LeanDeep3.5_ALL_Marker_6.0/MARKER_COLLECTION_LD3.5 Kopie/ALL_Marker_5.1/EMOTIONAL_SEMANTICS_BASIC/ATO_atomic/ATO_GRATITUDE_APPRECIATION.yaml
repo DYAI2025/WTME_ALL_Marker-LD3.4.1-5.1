@@ -1,0 +1,84 @@
+id: ATO_GRATITUDE_APPRECIATION
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for gratitude, appreciation, and thankfulness expressions"
+
+frame:
+  signal:
+    ["dankbarkeit", "danke", "dankbar", "wertschätzung", "grateful", "thankful"]
+  concept: "Positive emotional valence - gratitude and appreciation"
+  pragmatics: "Expression of gratitude and appreciation"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(dank|danke|dankbar|dankbarkeit)\b'
+  - '(?i)\b(wertschätz|wertschätzung|schätzen)\b'
+  - '(?i)\b(grateful|gratitude|thankful|thanks)\b'
+  - '(?i)\b(anerkennung|anerkenne|würdigen)\b'
+  - '(?i)\b(appreciate|appreciation|appreciative)\b'
+  - '(?i)\b(gesegnet|segen|glücklich schätzen)\b'
+  - '(?i)\b(verdanken|zu verdanken)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Ich bin so dankbar für deine Hilfe."
+  - "Danke, dass du für mich da bist!"
+  - "Ich schätze dich sehr wert."
+  - "Meine Dankbarkeit ist grenzenlos."
+  - "Ich bin total grateful for this!"
+  - "Danke von ganzem Herzen!"
+  - "Ich wertschätze deine Unterstützung sehr."
+  - "Meine Dankbarkeit kennt keine Grenzen."
+  - "Ich bin so thankful für alles."
+  - "Danke, dass es dich gibt!"
+  - "Ich schätze jeden Moment mit dir."
+  - "Meine Wertschätzung für dich ist riesig."
+  - "Ich bin voller Dankbarkeit und Freude."
+  - "Thanks for everything you do!"
+  - "Ich verdanke dir so viel."
+  - "Danke für deine Geduld und Liebe."
+  - "Ich bin grateful beyond words."
+  - "Meine Dankbarkeit ist tief und echt."
+  - "Ich schätze deine Gegenwart sehr."
+  - "Danke, dass du mich verstehst!"
+  - "Ich bin so appreciative of your help."
+  - "Meine Wertschätzung wächst jeden Tag."
+  - "Ich bin dankbar für jeden neuen Tag."
+  - "Danke für deine bedingungslose Unterstützung!"
+  - "Ich schätze mich glücklich, dich zu kennen."
+  - "Meine Dankbarkeit erfüllt mein Herz."
+  - "Ich bin so thankful for your presence."
+  - "Danke für alles, was du tust!"
+  - "Ich wertschätze deine Ehrlichkeit sehr."
+  - "Meine Dankbarkeit ist unbeschreiblich."
+  - "Ich bin gesegnet, dich zu haben."
+  - "Danke für deine Freundschaft!"
+  - "Ich schätze deine Weisheit und Güte."
+  - "Meine Wertschätzung ist aufrichtig und tief."
+  - "Ich bin grateful for every moment."
+  - "Danke, dass du an mich glaubst!"
+  - "Ich verdanke dir mein Glück."
+  - "Meine Dankbarkeit lässt sich kaum ausdrücken."
+  - "Ich bin so appreciative of everything."
+  - "Danke für deine Liebe und Fürsorge!"
+  - "Ich schätze deine Treue sehr wert."
+  - "Meine Dankbarkeit ist mein größtes Gefühl."
+  - "Ich bin thankful beyond measure."
+  - "Danke für deine Inspiration!"
+  - "Ich wertschätze deine Authentizität."
+  - "Meine Dankbarkeit trägt mich durch den Tag."
+  - "Ich bin so grateful to have you."
+  - "Danke für deine Kraft und Stärke!"
+  - "Ich schätze jeden Augenblick mit dir."
+  - "Meine Wertschätzung ist ewig und unerschütterlich."
+
+tags: [atomic, emotion, positive, gratitude, appreciation, thankfulness, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for gratitude and appreciation"

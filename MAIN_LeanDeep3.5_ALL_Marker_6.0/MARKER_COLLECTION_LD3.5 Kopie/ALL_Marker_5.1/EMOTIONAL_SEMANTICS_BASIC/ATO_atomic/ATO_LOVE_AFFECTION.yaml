@@ -1,0 +1,83 @@
+id: ATO_LOVE_AFFECTION
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for love, affection, and tender emotional expressions"
+
+frame:
+  signal: ["liebe", "zuneigung", "zärtlich", "liebevoll", "love", "affection"]
+  concept: "Positive emotional valence - love and affection"
+  pragmatics: "Expression of love and tenderness"
+  narrative: "emotional_expression"
+
+pattern:
+  - '(?i)\b(liebe|lieben|geliebt|verliebt)\b'
+  - '(?i)\b(zuneigung|zugeneigt|herzlich)\b'
+  - '(?i)\b(zärtlich|zärtlichkeit|innig)\b'
+  - '(?i)\b(love|loving|beloved|affection)\b'
+  - '(?i)\b(liebevoll|hingebungsvoll|warmherzig)\b'
+  - '(?i)\b(vernarrt|vergöttert|anbeten)\b'
+  - '(?i)\b(schatz|liebling|herzchen)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  - "Ich liebe dich von ganzem Herzen."
+  - "Meine Zuneigung zu dir wächst jeden Tag."
+  - "Du bist mir so unendlich wichtig."
+  - "Ich fühle tiefe Liebe für dich."
+  - "Deine Zärtlichkeit berührt mich sehr."
+  - "Ich bin total verliebt in dich!"
+  - "Mein Herz schlägt nur für dich."
+  - "Ich empfinde große Zuneigung für dich."
+  - "Du bist mein Ein und Alles."
+  - "Ich liebe es, mit dir zusammen zu sein."
+  - "Deine liebevolle Art macht mich glücklich."
+  - "Ich bin so vernarrt in dich."
+  - "Meine Liebe zu dir ist grenzenlos."
+  - "Du bist mein Schatz und mein Liebling."
+  - "Ich fühle eine innige Verbundenheit zu dir."
+  - "Deine Zärtlichkeit lässt mein Herz schmelzen."
+  - "Ich liebe jeden Moment mit dir."
+  - "Mein Herz ist voller Liebe für dich."
+  - "Du bist der wichtigste Mensch in meinem Leben."
+  - "Ich bin so warmherzig dir gegenüber."
+  - "Deine Liebe gibt mir Kraft."
+  - "Ich fühle mich so geliebt von dir."
+  - "Meine Zuneigung kennt keine Grenzen."
+  - "Du bist mein Herzchen, mein Alles."
+  - "Ich liebe dich mehr als Worte sagen können."
+  - "Deine liebevolle Umarmung tröstet mich."
+  - "Ich bin hingebungsvoll dir ergeben."
+  - "Meine Liebe zu dir ist tief und echt."
+  - "Du bist mein geliebter Mensch."
+  - "Ich fühle innige Zärtlichkeit für dich."
+  - "Deine Liebe erfüllt mein Leben mit Sinn."
+  - "Ich bin so verliebt wie am ersten Tag."
+  - "Mein Herz gehört nur dir."
+  - "Ich liebe deine Art, dein Wesen, einfach alles."
+  - "Deine Zuneigung bedeutet mir die Welt."
+  - "Ich bin voller Liebe und Dankbarkeit."
+  - "Du bist mein Schatz, mein Liebling, mein Leben."
+  - "Ich fühle eine tiefe, zärtliche Liebe."
+  - "Deine liebevolle Gegenwart bereichert mich."
+  - "Ich liebe dich mit jeder Faser meines Seins."
+  - "Meine Zuneigung zu dir ist unerschütterlich."
+  - "Du bist mein geliebtes Herzchen."
+  - "Ich bin so warmherzig und liebevoll dir gegenüber."
+  - "Deine Liebe ist mein größtes Geschenk."
+  - "Ich fühle mich so geliebt und geborgen bei dir."
+  - "Mein Herz ist erfüllt von inniger Liebe."
+  - "Ich liebe dich bedingungslos und ewig."
+  - "Deine Zärtlichkeit ist wie Balsam für meine Seele."
+  - "Ich bin total vernarrt und verliebt in dich."
+  - "Meine Liebe zu dir ist das Schönste in meinem Leben."
+
+tags: [atomic, emotion, positive, love, affection, tenderness, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for love and affection"
