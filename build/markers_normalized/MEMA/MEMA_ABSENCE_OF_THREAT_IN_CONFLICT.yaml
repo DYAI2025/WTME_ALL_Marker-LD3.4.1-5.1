@@ -1,0 +1,49 @@
+id: MEMA_ABSENCE_OF_THREAT_IN_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Konflikt ohne Drohungen
+  concept: 'Omission: Threats fehlen'
+  pragmatics: Deeskalationsdisziplin
+  narrative: controlled_deescalation
+patterns: []
+examples:
+  positive:
+  - "A: Ich bin richtig sauer.\nB: Verstehe, das war schlecht von mir.\nA: Ich will, dass wir das klären.\nB: Lass uns heute Abend ruhig reden."
+  - "A: Das nervt mich extrem.\nB: Okay, ich höre zu.\nA: Ich brauche eine Änderung.\nB: Vorschlag: wir teilen die Aufgaben neu."
+  - "A: So kann es nicht weitergehen.\nB: Stimmt, das war mein Fehler.\nA: Wie lösen wir das?\nB: Schritt eins: ich übernehme morgen den Part."
+  - "A: Ich bin verletzt.\nB: Danke, dass du es sagst.\nA: Bitte nimm das ernst.\nB: Ich nehme Verantwortung."
+  - "A: Ich fühle mich übergangen.\nB: Das wollte ich nicht.\nA: Was können wir konkret tun?\nB: Ich blocke mir dafür Zeit am Freitag."
+  negative:
+  - "A: Das nervt mich extrem.\nB: Okay, ich höre zu.\nA: ich wuensche mir eine Änderung.\nB: Vorschlag: wir teilen die Aufgaben neu."
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+tags:
+- mema
+- omission
+- deeskalation
+- positiv
+rating: 1
+activation:
+  rule: "CONFLICT_WINDOW_END"
+scoring:
+  base: 2.2
+  weight: 0.6
+  decay: 0.0
+  formula: "linear"
+window:
+  messages: 30
+detect_class: "absence_meta"
+criteria:
+  target_set: "threat"
+  window_messages: 30
+  min_E_hits: 3
+  strict_zero: true

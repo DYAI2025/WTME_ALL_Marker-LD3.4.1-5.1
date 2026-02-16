@@ -1,0 +1,25 @@
+id: ATO_ROLE_PERFORMANCE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Rollenerfüllung
+  pragmatics: Perfekte Ausführung sozialer Rollen
+  narrative: Ich spiele meine Rolle gut
+patterns:
+- type: regex
+  value: "(meine Rolle|Aufgabe erfüllen|wie es sein soll|richtig machen)"
+examples:
+  positive:
+  - das ist meine Rolle
+  - ich erfülle meine Aufgabe
+  - so wie es sein soll
+  - ich mache das richtig
+  - jeder hat seine Rolle
+  negative: []
+tags: []
+rating: 1

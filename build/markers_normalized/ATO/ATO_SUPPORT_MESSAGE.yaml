@@ -1,0 +1,35 @@
+id: ATO_SUPPORT_MESSAGE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - support
+  concept: Explizite Unterstützungsbotschaft
+  pragmatics: Ressourcenangebot
+  narrative: prosocial
+patterns:
+- type: regex
+  value: \b(bist\s+nicht\s+allein|ich\s+bin\s+da|melde\s+dich\s+jederzeit|ich\s+unterstütze\s+dich)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Du bist nicht allein.
+  - Ich bin da.
+  - Melde dich jederzeit.
+  - Ich unterstütze dich.
+  - Wir schaffen das.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- support
+rating: 2

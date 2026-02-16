@@ -1,0 +1,54 @@
+id: CLU_DYSREGULATION_PATTERN
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - Dysregulation
+  concept: Schwierigkeiten in Emotionsregulation
+  pragmatics: Risikomuster
+  narrative: affect
+patterns: []
+examples:
+  positive:
+  - … überwältigt … überwältigt … überwältigt … (keine Selbstunterstützung).
+  - … intensiv + Angst … wiederholt ohne ich schaffe das.
+  - … stark genug … mehrfach … keine Selbst-Coping-Phrase.
+  - … hin- und hergerissen … Angst … erneut überwältigt.
+  - … extrem … unsicher … überwältigt …
+  - … emotional überrollt … keine Akzeptanz …
+  - … extrem heftig … wiederholt …
+  - … Gefühle zu stark … keine Selbsthilfe …
+  - … intensiver Affekt … keine Regulierung …
+  - … stark genug blockiert … wiederholt …
+  negative:
+  - … überwältigt … überwältigt … überwältigt … (wenige Selbstunterstützung).
+  - … stark genug … mehrfach … wenige Selbst-Coping-Phrase.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags: []
+rating: 1
+composed_of:
+- SEM_EMOTIONAL_OVERWHELM
+- SEM_EMOTIONAL_ACCEPTANCE
+- SEM_SELF_SUPPORT_STATEMENT
+activation:
+  rule: "AT_LEAST 3 SEM_EMOTIONAL_OVERWHELM IN 10 messages"
+  window: 10
+  confirm_window: 6
+  cooldown_messages: 4
+scoring:
+  base: 0.6
+  weight: 1.15
+metadata:
+  family: AFFECT
+  constraints:
+    absent:
+      within_window: 10
+      sem:
+      - SEM_SELF_SUPPORT_STATEMENT

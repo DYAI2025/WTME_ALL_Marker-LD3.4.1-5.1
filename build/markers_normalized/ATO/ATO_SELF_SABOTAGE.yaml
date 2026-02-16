@@ -1,0 +1,25 @@
+id: ATO_SELF_SABOTAGE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Selbstsabotage / destruktives Verhalten
+  pragmatics: bewusste Selbstschädigung als Kick
+  narrative: Zerstörung als Befreiung
+patterns:
+- type: regex
+  value: "(nicht schlafen|trinke zu viel|sabotiere mich|zerstöre es)"
+examples:
+  positive:
+  - ich schlafe einfach nicht
+  - ich trinke zu viel, obwohl ich weiß...
+  - ich sabotiere mich selbst
+  - ich zerstöre es immer wieder
+  - ich mache das, was mir schadet
+  negative: []
+tags: []
+rating: 1

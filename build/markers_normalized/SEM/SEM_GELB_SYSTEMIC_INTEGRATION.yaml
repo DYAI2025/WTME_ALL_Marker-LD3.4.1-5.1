@@ -1,0 +1,37 @@
+id: SEM_GELB_SYSTEMIC_INTEGRATION
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - Systemische Integration läuft
+  concept: Gelb-Persona integriert
+  pragmatics: Komplexität flexibel navigieren
+  narrative: Alles hat seinen Platz im System
+patterns: []
+examples:
+  positive:
+  - systemische Zusammenhänge verstehen
+  - integrale Perspektive entwickeln
+  - flexible Komplexitätsnavigation
+  - adaptive Systemgestaltung
+  - emergente Lösungsfindung
+  - Stille ist kein Nullwert – sie ist ein semantischer Boden
+  - Die Bedeutung liegt nicht im Knall – sondern im Kontrast zum Vorher.
+  - 'Delta-Encodings: Modelle, die nicht den Klang selbst, sondern seine Veränderung analysieren'
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- ATO_INTEGRAL_THINKING
+- ATO_HOLISTIC_FLOW
+activation: "ANY 2 IN 2 messages"

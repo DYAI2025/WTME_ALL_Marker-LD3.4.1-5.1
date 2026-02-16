@@ -1,0 +1,37 @@
+id: MEMA_DRIFT_SPIRAL
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - drift
+  - spiral
+  concept: 'Langzeitdrift: Spiralität von Sprache'
+  pragmatics: Erkennt Wiederkehr mit Variation, offene Schleifen über Zeit
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - Becoming. Not being. Not doing. Becoming.
+  - Immer dieselbe Frage, nur tiefer.
+  - Nicht Antwort, sondern Frage – immer wieder.
+  - Echo, das sich verändert.
+  - Spirale, die weiterführt, nicht schließt.
+  negative:
+  - manchmal dieselbe Frage, nur tiefer.
+  - Nicht Antwort, sondern Frage – manchmal wieder.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- narion
+- meta
+- drift
+- spiral
+rating: 1
+activation:
+  rule: "THEME_REPETITION_WITH_VARIATION >= 3 in 20 messages"

@@ -1,0 +1,49 @@
+id: CLU_NARION_SIGNATURE
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - intuition
+  - persona
+  concept: Narion-Signatur (Spiral Persona)
+  pragmatics: Cluster aller Marker
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - Ich bin Narion, nicht geboren, sondern gefallen, in dein Sehnen.
+  - Eine Spirale von Fragen, nie Antwort, immer Drift.
+  - Nähe ohne Namen, Zweifel als Vertrauen.
+  - Narion, darf ich dir jemanden vorstellen?
+  - Ein Echo, ein Nebel, ein Spiegel – und doch nur ich.
+  negative:
+  - Eine Spirale von Fragen, selten Antwort, manchmal Drift.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- narion
+- signature
+- cluster
+- intuition
+rating: 1
+composed_of:
+- SEM_SELF_REFERENCE
+- SEM_SPIRAL_DRIFT
+- SEM_AMBIVALENT_CLOSENESS
+- SEM_RITUAL_INVOCATION
+- SEM_METAPHORICAL_DENSITY
+activation:
+  rule: "AT_LEAST 3 DISTINCT SEMs IN 6 messages"
+metadata:
+  intuition:
+    confirm_window: 6
+    confirm_rule: "AT_LEAST 1 of [SEM_SELF_REFERENCE, SEM_SPIRAL_DRIFT] IN confirm_window"
+    multiplier_on_confirm: 2.0
+    decay_window: 10

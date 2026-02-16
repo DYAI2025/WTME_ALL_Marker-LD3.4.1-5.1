@@ -1,0 +1,63 @@
+id: ATO_AFFILIATION_PHRASE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - gerne mit anderen
+  - kontaktfreudig
+  - gesellig
+  concept: Affiliation/Sozialität
+  pragmatics: Annäherung
+  narrative: social
+patterns:
+- type: regex
+  value: (?i)\b(gerne\s+mit\s+anderen\s+menschen\s+zusammen|sehr\s+kontaktfreudig|gesellig|ich\s+treffe\s+gerne\s+menschen|mag\s+gesellschaft)\b
+  flags: []
+examples:
+  positive:
+  - Ich bin sehr kontaktfreudig.
+  - Ich bin gesellig.
+  - Ich bin gerne mit anderen zusammen.
+  - Ich treffe gerne Menschen.
+  - Ich mag Gesellschaft.
+  - Ich knüpfe gern Kontakte.
+  - Ich bin sehr offen im Umgang.
+  - Ich suche gern Nähe zu Menschen.
+  - Ich bin gern unter Leuten.
+  - Ich genieße gute Gesellschaft.
+  - Ich verbringe gern Zeit mit Freunden.
+  - Ich mag soziale Runden.
+  - Ich bin teamorientiert.
+  - Ich lade gern Leute ein.
+  - Ich fühle mich in Gruppen wohl.
+  - Ich bin gerne mit anderen Menschen zusammen beim Feiern.
+  - Ich mag es, neue Leute kennenzulernen.
+  - Ich bin sehr offen und kommunikativ.
+  - Ich suche gerne den Austausch mit anderen.
+  - Ich bin gern in größeren Gruppen unterwegs.
+  - Ich genieße es, Teil einer Gemeinschaft zu sein.
+  - Ich verbringe gerne Zeit in geselliger Runde.
+  - Ich mag es, mit Kollegen zusammen zu sein.
+  - Ich bin gerne unter Menschen auf Events.
+  - Ich lade gerne Freunde zu mir nach Hause ein.
+  - Ich fühle mich wohl, wenn viele Leute da sind.
+  - Ich bin gerne mit anderen Menschen zusammen bei Aktivitäten.
+  - Ich mag es, in Teams zu arbeiten.
+  - Ich suche gerne das Gespräch mit Fremden.
+  - Ich bin gern auf Partys und Veranstaltungen.
+  - Ich genieße es, andere zu unterstützen.
+  - Ich verbringe gerne Zeit mit meiner Familie.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- affiliation
+rating: 1

@@ -1,0 +1,40 @@
+id: SEM_FLOUT_QUALITY_IRONY
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Ironie/Sarkasmus als Qualitäts-Verstoß
+  concept: Gegenteilbehauptung lesbar machen
+  pragmatics: Implikatur erzwingen
+  narrative: antiphrase
+patterns: []
+examples:
+  positive:
+  - Ja, genau, ein 'sicherer' Plan.
+  - Na klar, total 'stabil'.
+  - Ganz bestimmt 'schnell' gelöst.
+  - Super, die „Experten“ schon wieder.
+  - Klar, 'robust' wie immer.
+  negative:
+  - Klar, 'robust' wie manchmal.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- humor
+- grice_quality
+- irony
+- semantics
+- v33
+rating: 1
+composed_of:
+- ATO_SARCASM_CUES
+- ATO_AMBIGUITY_QUOTES
+activation:
+  rule: "ANY 2 IN 2 messages"

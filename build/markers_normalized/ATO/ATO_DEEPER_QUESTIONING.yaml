@@ -1,0 +1,37 @@
+id: ATO_DEEPER_QUESTIONING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - deeper_questioning
+  concept: Vertiefende Nachfrage / Nachbohren
+  pragmatics: Exploration / Klärung
+  narrative: interaction
+patterns:
+- type: regex
+  value: \b(kannst du genauer|erzähl mir mehr|was steckt dahinter|wie genau|was genau meinst du)
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Kannst du genauer erklären, was du meinst?
+  - Erzähl mir mehr darüber.
+  - Was steckt dahinter?
+  - Wie genau lief das ab?
+  - Was genau meinst du damit?
+  - "Hilf mir zu verstehen: worum geht's dir da?"
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- question
+- probing
+rating: 1

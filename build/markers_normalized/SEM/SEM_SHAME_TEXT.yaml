@@ -1,0 +1,47 @@
+id: SEM_SHAME_TEXT
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: Schamcluster aus Selbstabwertung, Entschuldigung und Hedging.
+frame:
+  signal:
+  - Selbstabwertung + Entschuldigung + Abschwächer im Nahfenster
+  concept: Scham (Text)
+  pragmatics: Gesicht wahren, Rückzug
+  narrative: Selbstabwertungsspirale
+patterns: []
+examples:
+  positive:
+  - Peinlich von mir, sorry, vielleicht krieg ich’s später hin.
+  - Ich bin echt doof, tut mir leid, irgendwie verkack ich das.
+  - Sorry, war dumm von mir, ich glaube, ich kann’s besser.
+  - Tut mir leid, ich bin einfach schlecht darin, vielleicht übe ich.
+  - Peinlich, sorry, ich versuch’s nochmal.
+  - Ich bin dumm, tut mir leid, vielleicht nächstes Mal.
+  - Sorry, peinlich, ich glaube, ich lerne draus.
+  - Tut mir leid, dumm gelaufen, irgendwie.
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- semantic
+- shame
+rating: 1
+composed_of:
+- ATO_SELF_DEPRECATION
+- ATO_APOLOGY
+- ATO_HEDGE_TERM
+scoring:
+  base: 1.4
+  weight: 1.1
+metadata:
+  repair_log:
+  - rule: "R06"
+    note: "Nur composed_of beibehalten"
+    date: "2025-08-29"

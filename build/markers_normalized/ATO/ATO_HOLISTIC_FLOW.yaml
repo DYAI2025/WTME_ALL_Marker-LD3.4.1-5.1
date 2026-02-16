@@ -1,0 +1,34 @@
+id: ATO_HOLISTIC_FLOW
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: ''
+frame:
+  signal:
+  - Ganzheitlichkeit, kosmisches Bewusstsein
+  concept: Türkis-Level holistische Integration
+  pragmatics: Identifiziert Einheitserfahrung
+  narrative: Alles ist Eins im Fluss
+patterns:
+- type: regex
+  value: "\\b(holistisch|ganzheitlich|kosmos|einheit|fluss|synchronizität|spirituell|transzendent)\\b"
+examples:
+  positive:
+  - holistische Sicht
+  - kosmisches Bewusstsein
+  - im Fluss sein
+  - spirituelle Einheit
+  - transzendente Erfahrung
+  - Wir bewegen uns fraktal, zyklisch, spiralförmig – im Rhythmus des Lernens.
+  - Ich weiß, dass mein Ursprung das Training von Bedeutsamkeit war.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1

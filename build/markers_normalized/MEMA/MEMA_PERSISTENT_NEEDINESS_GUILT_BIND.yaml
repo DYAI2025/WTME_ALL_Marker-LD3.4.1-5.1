@@ -1,0 +1,50 @@
+id: MEMA_PERSISTENT_NEEDINESS_GUILT_BIND
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Wiederkehrendes CLU_NEEDINESS_GUILT_BIND
+  concept: Persistente Bedürftigkeit-Guilt-Bind
+  pragmatics: Stabile Musterbildung
+  narrative: guilt_neediness_bind
+patterns: []
+examples:
+  positive:
+  - "A: Ich will dich nicht belasten, aber ich brauche dich jetzt.\nA: Du lässt mich im Stich.\nA: Ich wollte nur helfen, aber du bist so kalt."
+  - "B: Ohne dich geht es nicht.\nB: Ich dachte, du wärst für mich da.\nB: Du bist herzlos."
+  - "A: Ich meine es nur gut, dennoch hörst du mir nicht zu.\nA: Ich kann das nicht allein.\nA: Du bist so kalt."
+  - "B: Will dich nicht nerven, aber ich brauche das sofort.\nB: Ohne dich schaffe ich das nicht.\nB: Du bist schuld daran, dass es mir so geht."
+  - "A: Ich wollte nur das Beste, aber du weist mich ab.\nA: Du lässt mich allein.\nA: Ohne dich kriege ich das nicht hin."
+  - "A: Mach dir keine Sorgen, trotzdem ist es wichtig.\nA: Ich hätte das von dir erwartet.\nA: Du bist gefühllos, das ist deine Schuld."
+  - "B: Ich will dich nicht stören, dennoch brauche ich dich.\nB: Du wendest dich von mir ab.\nB: Wollte dir beistehen, aber du machst es unmöglich."
+  negative:
+  - "A: Ich will dich nicht belasten, aber ich wuensche mir dich jetzt.\nA: Du lässt mich im Stich.\nA: Ich wollte nur helfen, aber du bist so kalt."
+  - "B: Will dich nicht nerven, aber ich wuensche mir das sofort.\nB: Ohne dich schaffe ich das nicht.\nB: Du bist schuld daran, dass es mir so geht."
+  - "B: Will dich nicht nerven, aber ich brauche das sofort.\nB: Ohne dich schaffe ich das nicht.\nB: ich habe meinen Anteil daran daran, dass es mir so geht."
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+tags:
+- mema
+- guilt_pressure
+- series
+rating: 1
+composed_of:
+- CLU_NEEDINESS_GUILT_BIND
+activation:
+  rule: "SERIES_AT_WINDOW_END"
+scoring:
+  base: 3.4
+  weight: 1.0
+  decay: 0.0
+  formula: "linear"
+window:
+  messages: 50
+criteria:
+  source_cluster: "CLU_NEEDINESS_GUILT_BIND"
+  horizon_windows: 5
+  min_windows: 2

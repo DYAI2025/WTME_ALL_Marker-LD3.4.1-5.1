@@ -1,0 +1,45 @@
+id: ATO_EMOTIONAL_EXCLAMATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - starke Emotion
+  - Gefühlsausbruch
+  - emotionale Reaktion
+  concept: Emotionale Eskalation
+  pragmatics: Verstärkung des Konflikts
+  narrative: Gefühlsausbruch
+patterns:
+- type: regex
+  value: (?i)unfair
+- type: regex
+  value: (?i)hasse das
+- type: regex
+  value: (?i)kannst du nicht
+- type: regex
+  value: (?i)unmöglich
+- type: regex
+  value: (?i)hör auf
+examples:
+  positive:
+  - Das ist unfair, wie du mich behandelst!
+  - Ich hasse das, ehrlich!
+  - Das kannst du nicht einfach so machen!
+  - Unmöglich! So redest du nicht mit mir.
+  - Hör auf!
+  negative:
+  - ich mag nicht besonders das, ehrlich!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- emotional
+rating: 1
+activation:
+  rule: ANY 1

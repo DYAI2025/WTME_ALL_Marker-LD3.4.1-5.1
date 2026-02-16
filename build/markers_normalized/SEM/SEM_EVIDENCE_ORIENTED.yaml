@@ -1,0 +1,49 @@
+id: SEM_EVIDENCE_ORIENTED
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - evidence_oriented
+  concept: Evidenz-/Belegzentrierte Argumentation
+  pragmatics: Begründung, Standardsetzung
+  narrative: reasoning
+patterns: []
+examples:
+  positive:
+  - Bitte Quellen nennen und kurz auflisten.
+  - Welche Daten stützen das? Bulletpoints reichen.
+  - 'Beweisstandard hoch: peer-reviewed oder nichts.'
+  - Liste die Annahmen, dann die Schlussfolgerung.
+  - Ohne Messwerte keine Aussage – her damit.
+  - Belege ändern, sonst Hypothese verwerfen.
+  - 'Standard anheben: RCTs statt Beobachtung.'
+  - 'Kurz: Datenpunkte A–C, daraus folgt D.'
+  - Erst Evidenz, dann Meinung.
+  - Bitte Evidenzpfad skizzieren.
+  negative:
+  - Ohne Messwerte wenige Aussage – her damit.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- evidence
+- proof
+- listing
+rating: 1
+composed_of:
+  any_of:
+  - ATO_PROOF_SEEKING_BEHAVIOR
+  - SEM_LISTING
+  - SEM_PROOF_STD_SHIFT
+activation:
+  rule: "AT_LEAST 2 IN 4 messages"
+  window: 4
+scoring:
+  base: 0.62
+  weight: 1.10

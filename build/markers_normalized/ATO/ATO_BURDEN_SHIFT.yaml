@@ -1,0 +1,37 @@
+id: ATO_BURDEN_SHIFT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - burden_shift
+  concept: Verantwortung/Last verlagern
+  pragmatics: Accountability-Shift
+  narrative: conflict_micro
+patterns:
+- type: regex
+  value: "(?i)\b(du hast entschieden|du wolltest das so|deine aufgabe|du bist dran|liegt bei dir)\b"
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Du hast entschieden.
+  - Du wolltest das so.
+  - Das ist deine Aufgabe.
+  - Du bist jetzt dran.
+  - Das liegt bei dir.
+  - Du hattest die Verantwortung.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- burden
+- responsibility
+rating: 1

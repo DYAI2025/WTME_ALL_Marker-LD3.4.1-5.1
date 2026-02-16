@@ -1,0 +1,44 @@
+id: CLU_HOUSEHOLD_ROUTINE_CONFLICTS
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Cluster von Konflikten um alltägliche Haushaltsroutinen.
+frame:
+  signal:
+  - Haushaltsanweisungen + Widerstand
+  concept: Haushaltsroutine-Konflikte
+  pragmatics: Alltägliche Machtkämpfe um Haushaltsorganisation
+  narrative: Routine-Konfliktdynamik
+patterns: []
+examples:
+  positive:
+  - Räum auf! - Das ist nicht meine Schuld, dass es unordentlich ist!
+  - Mach Hausaufgaben! - Ich will nicht, das ist unfair!
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- cluster
+- family
+- routine
+- chores
+- resistance
+- daily
+rating: 2
+activation:
+  rule: "WEIGHTED_AND"
+scoring:
+  base: 1.3
+  weight: 0.5
+  decay: 0.02
+  formula: "logistic"
+window:
+  messages: 50
+detect_class: "E"
+criteria: "Kombination von Haushaltsanweisungen und Widerstandsmustern"

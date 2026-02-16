@@ -1,0 +1,36 @@
+id: ATO_ISOLATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for isolation language and separation tactics
+frame:
+  signal:
+  - isolation
+  concept: Isolation signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(just us|nobody understands|they don't care|alone together|against the world)\\b"
+examples:
+  positive:
+  - It should just be us two.
+  - Nobody understands our connection.
+  - They don't really care about you.
+  - We're better off alone together.
+  - It's us against the world.
+  negative:
+  - few people understands our connection.
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+tags:
+- atomic
+- v3.3
+- isolation
+- separation
+rating: 1

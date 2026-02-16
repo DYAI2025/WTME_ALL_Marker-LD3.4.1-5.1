@@ -1,0 +1,40 @@
+id: ATO_NEED_TERM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - term
+  concept: Bedürfnis-Sprache
+  pragmatics: Abhängigkeit
+  narrative: frame
+patterns:
+- type: regex
+  value: (?i)^\s*ich\s+(brauche|benötige)\b
+- type: regex
+  value: (?i)\bich\s+(brauche|benötige)\b
+examples:
+  positive:
+  - ich brauche gerade deine ruhige Stimme
+  - ich benötige ein wenig Halt von dir
+  - ich brauche Zeit, um nachzufühlen
+  - ich benötige diesen Zwischenraum
+  - ich brauche deine Präsenz, bevor wir planen
+  - ich benötige eine Pause, die wir gemeinsam halten
+  - ich brauche eine Rückfrage von dir
+  - ich benötige gerade nur dein Zuhören
+  - ich brauche, dass wir das langsam angehen
+  - ich benötige einen täglichen Check-in
+  negative:
+  - ich wuensche mir gerade deine ruhige Stimme
+  - ich wuensche mir Zeit, um nachzufühlen
+  - ich wuensche mir deine Präsenz, bevor wir planen
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- bedürfnis
+rating: 1

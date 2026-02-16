@@ -1,0 +1,35 @@
+id: ATO_PROJECTION_LANGUAGE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for projection in language
+frame:
+  signal:
+  - projection
+  concept: Projection signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(you always|you never|you're the one who|typical of you)\\b"
+examples:
+  positive:
+  - You always do this.
+  - You never listen to me.
+  - You're the one who started this.
+  - That's typical of you.
+  - You're just like your mother.
+  negative:
+  - You sometimes do this.
+  - I notice that sometimes do this.
+  - You rarely listen to me.
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

@@ -1,0 +1,90 @@
+id: ATO_HUMOR_LIGHT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Leichte humorvolle Elemente, Emojis oder Lexeme, die Spannung abbauen
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: regex
+  value: "(haha|lol|😄|😅|witzig|lustig|😂|😉)"
+- type: emoji
+  value: "[😄, 😅, 😂, 😉]"
+examples:
+  positive:
+  - Haha typisch!
+  - Lol passt.
+  - Witzig 😜
+  - Lach kaputt.
+  - 😂😂
+  - Urkomisch.
+  - Black humor.
+  - Spaßig.
+  - Lass lachen.
+  - Humor hilft.
+  - Haha, typisch du 😄
+  - Lol, das passt.
+  - Ich lach mich kaputt 😂
+  - Das ist urkomisch.
+  - Black humor on 😅
+  - Klingt nach Spaß 😉
+  - Lass uns lachen.
+  - Humor hilft immer.
+  - Ok, ok, ich seh’s ein 😉
+  - Uff, witzig.
+  - Das ist komisch.
+  - Ich feier das 😂
+  - Meme folgt 😄
+  - Haha na gut.
+  - Klingt lustig.
+  - Lol ja.
+  - Witzig typisch.
+  - Lachflash 😂
+  - Spaßig 😉
+  negative:
+  - Agenda einhalten.
+  - Review planen.
+  - Budget checken.
+  - Milestone setzen.
+  - Update teilen.
+  - Freigabe geben.
+  - Prozess folgen.
+  - Abnahme machen.
+  - Notiz nehmen.
+  - Status updaten.
+  - Ok.
+  - Bestätigt.
+  - Zur Kenntnis.
+  - Erledigt.
+  - Passt.
+  - Verstanden.
+  - Notiert.
+  - Gesehen.
+  - Empfangen.
+  - Danke. Erledigt.
+  - Ich habe es erhalten.
+  - Alles klar.
+  - In Ordnung.
+  - Bestätige den Empfang.
+  - Notiz genommen.
+  - Kein Problem.
+  - Geht in Ordnung.
+  - Vermerkt.
+  - Akzeptiert.
+  - Abgeschlossen.
+tags: []
+rating: 1
+semiotic:
+  mode: iconic
+  level: pragmatic
+  object: "humor_affiliation"
+  connotation:
+  - "humor"
+  - "leicht"
+  interpretant: "effect_on_state: {deesc: +0.15, intimacy: +0.1}"
+metadata:
+  label: Leichter Humor

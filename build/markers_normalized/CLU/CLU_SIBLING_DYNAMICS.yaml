@@ -1,0 +1,43 @@
+id: CLU_SIBLING_DYNAMICS
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Cluster von Geschwisterinteraktionen und -konflikten.
+frame:
+  signal:
+  - Geschwisterrollen + Interaktionsmuster
+  concept: Geschwisterdynamiken
+  pragmatics: Geschwisterbeziehungen und Rollendynamiken
+  narrative: Geschwisterliche Systemdynamik
+patterns: []
+examples:
+  positive:
+  - Mein Bruder ist so dumm und macht immer alles falsch!
+  - Geschwister streiten sich über Aufmerksamkeit der Eltern.
+  negative:
+  - Mein Bruder ist so dumm und macht manchmal alles falsch!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- cluster
+- family
+- siblings
+- dynamics
+- rivalry
+rating: 2
+activation:
+  rule: "WEIGHTED_AND"
+scoring:
+  base: 1.4
+  weight: 0.55
+  decay: 0.03
+  formula: "logistic"
+window:
+  messages: 50
+detect_class: "E"
+criteria: "Kombination von Geschwisterrollen und Konfliktmustern"

@@ -1,0 +1,25 @@
+id: ATO_BETAEUBUNG
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Betäubung / Flucht vor Klarheit
+  pragmatics: Vermeidung von nüchterner Realität
+  narrative: Schutz vor zu viel Wahrheit
+patterns:
+- type: regex
+  value: "(Betäubung|benebelt|nicht klar|verschwommen)"
+examples:
+  positive:
+  - ich suche die Betäubung
+  - lieber benebelt als klar
+  - wenn ich nicht klar bin
+  - alles verschwommen halten
+  - Klarheit tut zu weh
+  negative: []
+tags: []
+rating: 1

@@ -1,0 +1,106 @@
+id: CLU_HEATED_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Erhöhte Spannung durch Vorwürfe, Defensive oder Eskalation
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Das nervt mich extrem!
+  - Du bist schuld!
+  - Ich hab recht, du nicht.
+  - Das war unfair von dir.
+  - Hör auf damit!
+  - Das eskaliert jetzt.
+  - Ich bin sauer.
+  - Deine Defensive nervt.
+  - 'Vorwurf: Du immer!'
+  - 'Kritik: Schlecht gemacht.'
+  - Das triggert mich.
+  - Streit hoch.
+  - Du machst Fehler.
+  - Ich verteidige mich.
+  - Blame dich.
+  - Eskalation jetzt.
+  - Wut hoch.
+  - Kein Kompromiss.
+  - Konflikt fort.
+  - Heißer Streit.
+  negative:
+  - Tut mir leid.
+  - Lass uns klären.
+  - Entschuldige.
+  - Ich verstehe.
+  - Deeskalieren wir.
+  - Apologie jetzt.
+  - Fair bleiben.
+  - Zugeständnis.
+  - Reparieren.
+  - Verzeih mir.
+  - Pause machen.
+  - Höre zu.
+  - Das tut leid.
+  - Wir klären.
+  - Offenheit danke.
+  - Neu starten.
+  - Verstehe Punkt.
+  - Entschuldigung.
+  - Bei dir.
+  - Support.
+tags: []
+rating: 1
+composed_of:
+  require:
+  - ATO_ANGER
+  - ATO_DEFENSIVENESS
+  k_of_n:
+    k: 3
+    of:
+    - ATO_BLAME_SHIFT
+    - ATO_CRITICISM_ATTACK_MARKER
+    - ATO_ESCALATION_LEXICON
+window:
+  size_messages: 10
+gates:
+  min_msgs: 4
+  require_bilateral: true
+ingredients:
+  require:
+  - ATO_ANGER
+  - ATO_DEFENSIVENESS
+  k_of_n:
+    k: 3
+    of:
+    - ATO_BLAME_SHIFT
+    - ATO_CRITICISM_ATTACK_MARKER
+    - ATO_ESCALATION_LEXICON
+negative_evidence:
+  any_of:
+  - ATO_DEESCALATION_PHRASE
+  - ATO_APOLOGY
+emits:
+  indices:
+    conflict: +0.3
+    trust: -0.2
+    deesc: -0.3
+conflicts_with:
+- CLU_ACTIVE_REPAIR
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "conflict_escalation"
+  connotation:
+  - "konflikt"
+  - "heiß"
+  interpretant: "effect_on_state: {conflict: +0.3, trust: -0.2}"
+temperature_semantics:
+  external: HITZE
+  latent: KONFLIKT
+metadata:
+  label: Heißer Konflikt

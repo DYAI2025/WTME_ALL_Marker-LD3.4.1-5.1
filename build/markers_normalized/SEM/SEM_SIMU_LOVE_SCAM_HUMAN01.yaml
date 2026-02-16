@@ -1,0 +1,42 @@
+id: SEM_SIMU_LOVE_SCAM_HUMAN01
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - abrupt emotional spike
+  - declaration of love
+  - lack of contextual buildup
+  - emotional overload
+  concept: humanized love-scam pattern
+  pragmatics: identify contextless intense emotion
+  narrative: sudden emotional shift
+patterns: []
+examples:
+  positive:
+  - Ich liebe dich schon nach wenigen Nachrichten, ohne uns wirklich zu kennen.
+  - Oh mein Gott, ich kann nicht aufhören, an dich zu denken!
+  - Du bist das Wichtigste in meinem Leben – und wir haben uns gerade erst vorgestellt.
+  - Ich fühle mich so verbunden mit dir, obwohl wir uns nie persönlich getroffen haben.
+  - Es ist verrückt, wie stark ich dich schon jetzt liebe.
+  negative:
+  - ich finde gut dich schon nach wenigen Nachrichten, ohne uns wirklich zu kennen.
+  - Oh mein Gott, ich entscheide mich gegen aufhören, an dich zu denken!
+  - Ich fühle mich so verbunden mit dir, obwohl wir uns selten persönlich getroffen haben.
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+tags:
+- love_scam
+- emotional_intensity
+rating: 1
+composed_of:
+- ATO_PLACEHOLDER
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2

@@ -1,0 +1,66 @@
+id: ATO_SELF_SUPPORT_PHRASE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - selber Mut machen
+  - selber aufmuntern
+  - mir selbst zur Seite stehen
+  concept: Selbstunterstützung
+  pragmatics: Coping-Selbstansprache
+  narrative: self-support
+patterns:
+- type: regex
+  value: (?i)\b(selbst\s+(ermutig|aufmunter)|mir\s+selbst\s+zur\s+seite\s+steh\w+|mich\s+zusammenreißen|ich\s+schaffe\s+das)\b
+  flags: []
+examples:
+  positive:
+  - Ich versuche, mir selbst Mut zu machen.
+  - Ich muntere mich selbst auf.
+  - Da stand ich mir selbst zur Seite.
+  - 'Ich sage mir: Ich schaffe das.'
+  - Ich reiße mich zusammen.
+  - Ich stärke mich innerlich.
+  - Ich rede mir gut zu.
+  - Ich halte zu mir.
+  - Ich baue mich selbst wieder auf.
+  - Ich erinnere mich daran, dass ich das kann.
+  - Ich gebe mir Halt.
+  - Ich atme durch und beruhige mich.
+  - Ich bleibe freundlich zu mir.
+  - Ich bin für mich da.
+  - Ich gönne mir Aufmunterung.
+  - Ich versuche wirklich, mir selbst Mut zu machen.
+  - Ich muntere mich bewusst selbst auf.
+  - In schweren Zeiten stehe ich mir selbst zur Seite.
+  - 'Ich sage mir immer wieder: Ich schaffe das schon.'
+  - Ich reiße mich zusammen und mache weiter.
+  - Ich stärke mich von innen heraus.
+  - Ich rede mir selbst gut zu.
+  - Ich halte fest zu mir und meinen Werten.
+  - Ich baue mich emotional selbst wieder auf.
+  - Ich erinnere mich bewusst daran, dass ich das kann.
+  - Ich gebe mir selbst den nötigen Halt.
+  - Ich atme tief durch und beruhige mich selbst.
+  - Ich bleibe immer freundlich zu mir selbst.
+  - Ich bin mein eigener bester Freund.
+  - Ich gönne mir bewusst Aufmunterung und Trost.
+  - Ich spreche mir selbst Mut zu.
+  - Ich unterstütze mich selbst in schweren Zeiten.
+  - Ich bin nachsichtig mit mir.
+  - Ich tröste mich selbst.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- support
+- coping
+rating: 1

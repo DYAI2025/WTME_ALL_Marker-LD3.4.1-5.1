@@ -1,0 +1,41 @@
+id: CLU_QA_RIDDLE_FORMATS
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - Q&A/Rätsel-Formate wiederholt
+  concept: Narrative Strategie gebündelt
+  pragmatics: Erwartungsmanagement
+  narrative: qa_loop
+patterns: []
+examples:
+  positive:
+  - Mehrere Wie-viele-X-Witze nacheinander.
+  - Rätsel-Turn wiederholt.
+  - Frage→Antwort als Running-Gag.
+  - Q&A-Struktur mit Twist.
+  - Format als Gag-Träger.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- humor
+- narrative
+- cluster
+- v33
+rating: 1
+composed_of:
+- SEM_PUN_RIDDLE_QA
+activation:
+  rule: "AT_LEAST 2 IN 20 messages"
+scoring:
+  base: 1.8
+  weight: 1.3

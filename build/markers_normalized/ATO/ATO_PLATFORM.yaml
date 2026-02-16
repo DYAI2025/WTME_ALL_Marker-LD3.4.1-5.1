@@ -1,0 +1,35 @@
+id: ATO_PLATFORM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for platform-related terms
+frame:
+  signal:
+  - platform
+  concept: Platform signal word
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\bplatform\\b"
+examples:
+  positive:
+  - This platform doesn't work well for us
+  - Can we switch to another platform?
+  - The platform has limitations
+  - I prefer a different platform for this
+  - Which platform do you usually use?
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

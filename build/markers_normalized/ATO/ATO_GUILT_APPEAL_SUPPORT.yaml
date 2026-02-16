@@ -1,0 +1,49 @@
+id: ATO_GUILT_APPEAL_SUPPORT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Schuldappell an Unterstützung
+  concept: Du lässt mich im Stich
+  pragmatics: Guilt-Induktion
+  narrative: appeal
+patterns:
+- type: regex
+  value: '(?i)\b(ich dachte, du w(ä|a)rst (immer )?f(ü|u)r mich da|du l(ä|a)sst mich (im stich|allein)|ich h(ä|a)tte das von dir erwartet)\b'
+examples:
+  positive:
+  - Ich dachte, du wärst für mich da.
+  - Du lässt mich im Stich.
+  - Ich hätte das von dir erwartet.
+  - Ich dachte immer, du bist an meiner Seite.
+  - Du lässt mich gerade völlig allein zurück.
+  - Ich hatte gehofft, du stehst zu mir.
+  - Du lässt mich hängen, wenn ich dich brauche.
+  - Dachte, ich könnte mich auf dich verlassen.
+  - Du wendest dich von mir ab.
+  - Ich zählte darauf, dass du da bist.
+  negative:
+  - Ich dachte manchmal, du bist an meiner Seite.
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+tags:
+- ato
+- guilt
+- appeal
+rating: 1
+activation:
+  rule: "ANY 1 IN 25 messages"
+scoring:
+  base: 2.4
+  weight: 0.8
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 25

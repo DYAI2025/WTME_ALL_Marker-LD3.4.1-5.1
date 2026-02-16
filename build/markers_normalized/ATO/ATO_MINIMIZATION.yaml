@@ -1,0 +1,36 @@
+id: ATO_MINIMIZATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - minimization
+  concept: Verharmlosung/Downplaying
+  pragmatics: Abwehrstrategie
+  narrative: bias_pattern
+patterns:
+- type: regex
+  value: \b(nur\s+ein\s+bisschen|nicht\s+so\s+schlimm|halb\s+so\s+wild|eigentlich\s+okay)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Nur ein bisschen.
+  - Nicht so schlimm.
+  - Halb so wild.
+  - Eigentlich okay.
+  - War ja nichts.
+  negative:
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+  - Danke, dass du mir das sagst. Ich denke darueber nach.
+tags:
+- bias
+- defense
+rating: 2

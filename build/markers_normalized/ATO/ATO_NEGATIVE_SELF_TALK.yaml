@@ -1,0 +1,33 @@
+id: ATO_NEGATIVE_SELF_TALK
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for negative self-talk in depression
+frame:
+  signal:
+  - negative self-talk
+  concept: Depressive language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: (?i)\b(I am worthless|nothing will get better|I hate myself|hopeless)\b
+examples:
+  positive:
+  - I am worthless and nothing will ever change.
+  - I hate myself for failing again.
+  - Nothing will get better, it's hopeless.
+  - I am not good enough for anyone.
+  - Life is meaningless and I can't go on.
+  negative:
+  - I am valuable and things will improve.
+  - I like myself despite mistakes.
+  - Things will get better with time.
+  - I am good enough as I am.
+  - Life has meaning and I can continue.
+tags:
+- behavioral_pattern
+- atomic
+- v3.4
+rating: 1

@@ -1,0 +1,69 @@
+id: ATO_DELAY_BALANCED
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: regelmäßige Latenzen ohne impulsive Peaks; planmäßige Antworten
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: latency
+  spec: "IQR klein, kein >3x-Baseline-Peak im Fenster"
+examples:
+  positive:
+  - Antworten im 10–20-Minuten-Raster.
+  - Konstante 2–5-Minuten-Delays über Thread.
+  - Keine Sofort-Reaktionen nach ESC_on.
+  - Planmäßige Rückmeldungen zur vollen Stunde.
+  - Antwortfenster stabil über den Tag.
+  - Kein abruptes Schweigen, kein Spam.
+  - Regelmäßige Bestätigungen ohne Hektik.
+  - Vorab angekündigte Verzögerung, dann eingehalten.
+  - Ticket-Updates im festen Takt.
+  - Tägliche Status-Pings 17:00.
+  - Wöchentliche Reports pünktlich.
+  - Antworten alle 15 Min.
+  - Kein Rush, stabiles Tempo.
+  - Planmäßige Pausen.
+  - Regelmäßige Checks.
+  - Keine Peaks, flach.
+  - Ausgeglichen über Stunden.
+  - Festes Intervall.
+  - Vorhersagbar.
+  - Kein Impuls.
+  negative:
+  - Sekunden später drei Nachrichten hintereinander.
+  - Funkstille 24h, dann Wall of Text.
+  - Hektisches Ping-Pong in 30s-Abständen.
+  - Minutenlanges Tippen, dann Stakkato.
+  - Sofortige Antworten mit Emojis.
+  - Mehrfaches Nachhaken im 1-Minuten-Takt.
+  - Komplett unvorhersehbar.
+  - Nur Nacht-Antworten, sonst nichts.
+  - Stunden Funkstille direkt nach Frage.
+  - Sprachmemo-Schwall ohne Kontext.
+  - Sofort nach Eskalation antworten.
+  - Tagelang nichts, dann Flut.
+  - Sekunden-Ping-Pong.
+  - Langes Warten, dann Burst.
+  - Impulsive Reaktionen.
+  - Nachhaken alle Minuten.
+  - Unregelmäßig total.
+  - Nachts Spam.
+  - Direkt nach Frage stille.
+  - Memo-Wall plötzlich.
+tags: []
+rating: 1
+semiotic:
+  mode: indexical
+  level: syntactic
+  object: "latency_balance"
+  connotation:
+  - "balanciert"
+  - "latenz"
+  interpretant: "effect_on_state: {sync: +0.1, impulsivity: -0.1}"
+metadata:
+  label: Ausgeglichenes Antworttempo

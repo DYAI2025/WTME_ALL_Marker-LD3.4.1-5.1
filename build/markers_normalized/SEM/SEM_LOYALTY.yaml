@@ -1,0 +1,47 @@
+id: SEM_LOYALTY
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Ich stehe zu dir
+  - Du kannst auf mich zählen
+  - Egal was passiert
+  concept: Loyalität
+  pragmatics: Bindung stärken
+  narrative: commitment
+patterns: []
+examples:
+  positive:
+  - Du kannst auf mich zählen – immer.
+  - Ich stehe zu dir, komme was wolle.
+  - Egal was passiert, ich bin bei dir.
+  - Ich bin immer für dich da.
+  - Auf mich kannst du bauen.
+  - Unsere Verbindung halte ich für unerschütterlich.
+  - Ich lasse dich nie im Stich.
+  - Du hast meine volle Unterstützung.
+  - Gemeinsam schaffen wir alles.
+  - Du bist nie allein, versprochen.
+  negative:
+  - Du kannst auf mich zählen – manchmal.
+  - Ich bin manchmal für dich da.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- loyalty
+- commitment
+rating: 1
+composed_of:
+- ATO_INVITING_RESONANCE
+- ATO_SVT_BEZIEHUNG_DU_BOTSCHAFT
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.4
+  weight: 1.1

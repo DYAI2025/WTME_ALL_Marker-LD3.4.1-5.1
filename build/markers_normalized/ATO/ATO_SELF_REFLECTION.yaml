@@ -1,0 +1,35 @@
+id: ATO_SELF_REFLECTION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for self-reflective language
+frame:
+  signal:
+  - self reflection
+  concept: Self reflection signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(I realize|I understand|I see|I recognize|I notice)\\b"
+examples:
+  positive:
+  - I realize this might be difficult.
+  - I understand your perspective now.
+  - I see what you're getting at.
+  - I recognize my role in this.
+  - I notice I've been doing this.
+  negative:
+  - Can you pass the salt?
+  - The meeting is at 2 PM.
+  - I went shopping yesterday.
+  - The weather should be better tomorrow.
+  - Did you read the email?
+  - I need to get gas.
+  - The meeting is in the conference room.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

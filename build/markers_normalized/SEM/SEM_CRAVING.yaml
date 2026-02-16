@@ -1,0 +1,41 @@
+id: EMO_CRAVING
+schema: LeanDeep
+version: '5.1'
+layer: UNKNOWN
+lang: de
+description: Ausdruck von Appetit oder Lust auf etwas.
+frame:
+  signal:
+  - hab Lust auf
+  - könnte gerade
+  - brauch jetzt unbedingt
+  concept: Verlangen
+  pragmatics: Selbstoffenbarung eines Bedürfnisses
+  narrative: sehnsucht
+patterns: []
+examples:
+  positive:
+  - Ich hab so Lust auf Schokolade.
+  - Könnte jetzt echt ein Bier gebrauchen.
+  - Brauch unbedingt einen Kaffee.
+  - Hätte gerade gern eine Massage.
+  - Sehnsucht nach einem Strandurlaub.
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- semantic
+- emotional
+- craving
+rating: 1
+composed_of:
+- ATO_DESIRE_VERB
+- ATO_OBJECT_OF_DESIRE
+scoring:
+  base: 1.4
+  weight: 1.1

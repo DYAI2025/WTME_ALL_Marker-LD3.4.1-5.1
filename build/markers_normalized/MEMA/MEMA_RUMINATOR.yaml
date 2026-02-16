@@ -1,0 +1,47 @@
+id: MEMA_RUMINATOR
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: Archetyp des Grüblers.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Wir drehen uns im Kreis.
+  - Ich kann das nicht.
+  - Es bringt nichts.
+  - Immer wieder dasselbe.
+  - Warum versuche ich es überhaupt?
+  - Immer dasselbe.
+  - Hilflos hier.
+  - Kein Ausweg.
+  - Grübeln endlos.
+  - Resigniere.
+  negative:
+  - Vorankommen.
+  - Ich kann das.
+  - Neuer Ansatz.
+  - Bringt was.
+  - Schaffen das.
+  - Bewegung.
+  - Hilfe suchen.
+  - Ausweg finden.
+  - Stoppen Grübeln.
+  - Aktiv werden.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "ruminator"
+  interpretant: "effect_on_state: {stagnation: +0.2}"
+  connotation:
+  - "archetype"
+  - "rumination"
+metadata:
+  label: Ruminator

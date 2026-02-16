@@ -1,0 +1,48 @@
+id: ATO_BOUNDARY_SET
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Grenzsetzung
+  - Kontaktminimierung/-abbruch
+  concept: Selbstschutz / Abgrenzung
+  pragmatics: Kontakt begrenzen, Distanz herstellen
+  narrative: Autonomie wahren
+patterns:
+- type: regex
+  value: '(?i)\bkontakt\s+minimier\w*\b'
+- type: regex
+  value: '(?i)\bkontaktabbruch\b'
+- type: regex
+  value: '(?i)\bwerde\s+(dir\s+)?nicht\s+mehr?\s+antworten\b'
+- type: regex
+  value: '(?i)\bkein(en)?\s+kontakt\b'
+- type: regex
+  value: '(?i)\brespektier(e)?\s+meine\s+grenz\w*\b'
+- type: regex
+  value: '(?i)\bich\s+ziehe\s+eine\s+klare\s+grenze\b'
+examples:
+  positive:
+  - Ich glaube, wir sollten den Kontakt minimieren.
+  - Ich werde nicht mehr antworten.
+  - Bitte respektiere meine Grenze.
+  - Kein Kontakt für eine Weile.
+  - Ich ziehe eine klare Grenze.
+  - Ich brauche Abstand.
+  - Das ist mir zu viel – ich grenze mich ab.
+  negative:
+  - wenige Kontakt für eine Weile.
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+tags:
+- boundary
+- autonomy
+- atomic
+rating: 1

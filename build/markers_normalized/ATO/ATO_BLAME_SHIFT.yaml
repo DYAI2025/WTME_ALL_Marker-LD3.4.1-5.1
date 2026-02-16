@@ -1,0 +1,35 @@
+id: ATO_BLAME_SHIFT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for blame shifting language
+frame:
+  signal:
+  - blame shift
+  concept: Blame shifting signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(you made me|you forced me|because of you|your fault)\\b"
+examples:
+  positive:
+  - You made me do this.
+  - You forced me into this situation.
+  - This happened because of you.
+  - It's your fault this went wrong.
+  - You're the reason I reacted this way.
+  negative:
+  - I felt do this.
+  - I take responsibility for my part this went wrong.
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

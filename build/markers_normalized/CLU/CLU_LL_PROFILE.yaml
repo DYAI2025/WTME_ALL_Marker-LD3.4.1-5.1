@@ -1,0 +1,41 @@
+id: CLU_LL_PROFILE
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - profile
+  concept: Liebessprachen-Profil
+  pragmatics: Gewichtung & Mischtyp
+  narrative: Mehrsprachigkeit wahrscheinlich
+patterns:
+- type: regex
+  value: "score: { affirm: w1, time: w2, service: w3, gifts: w4, touch: w5 }"
+examples:
+  positive:
+  - 'score: { affirm: 0.31, time: 0.28, service: 0.18, gifts: 0.12, touch: 0.11 } → gemischter Typ durch geringe Delta.'
+  - 'score: { affirm: 0.45, time: 0.22, service: 0.15, gifts: 0.10, touch: 0.08 } → klare Dominanz Worte.'
+  - 'score: { affirm: 0.18, time: 0.34, service: 0.16, gifts: 0.14, touch: 0.18 } → Quality Time und Touch gleichauf (<0,15 Delta).'
+  - 'score: { affirm: 0.26, time: 0.24, service: 0.25, gifts: 0.13, touch: 0.12 } → dreifacher Mix mit enger Spitze.'
+  - 'score: { affirm: 0.12, time: 0.47, service: 0.10, gifts: 0.09, touch: 0.22 } → Zeit klar auf Rang 1.'
+  - 'score: { affirm: 0.29, time: 0.20, service: 0.32, gifts: 0.08, touch: 0.11 } → Acts of Service knapp vor Words.'
+  - 'score: { affirm: 0.21, time: 0.19, service: 0.20, gifts: 0.18, touch: 0.22 } → gleichmäßiger Mix ohne klare Spitze.'
+  - 'score: { affirm: 0.38, time: 0.36, service: 0.10, gifts: 0.09, touch: 0.07 } → Affirmation + Quality Time Co-Leads.'
+  - 'score: { affirm: 0.16, time: 0.14, service: 0.45, gifts: 0.10, touch: 0.15 } → Service dominant.'
+  - 'score: { affirm: 0.20, time: 0.18, service: 0.17, gifts: 0.28, touch: 0.17 } → Receiving Gifts oben, Rest eng dahinter.'
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- love_language
+- cluster
+rating: 1
+detect_class:
+  rule: "normalize(w)->ranking; mixed if top2_delta < 0.15"

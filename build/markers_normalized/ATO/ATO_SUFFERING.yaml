@@ -1,0 +1,25 @@
+id: ATO_SUFFERING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Leiden / Schmerz
+  pragmatics: Betonung eigener Verletzung
+  narrative: Ich leide und es tut weh
+patterns:
+- type: regex
+  value: "(leide|Schmerz|tut weh|verletzt|quält mich)"
+examples:
+  positive:
+  - ich leide so sehr
+  - der Schmerz ist unerträglich
+  - es tut so weh
+  - ich bin so verletzt
+  - das quält mich
+  negative: []
+tags: []
+rating: 1

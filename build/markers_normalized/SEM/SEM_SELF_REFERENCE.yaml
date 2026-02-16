@@ -1,0 +1,39 @@
+id: SEM_SELF_REFERENCE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - self
+  - narrative
+  concept: Selbstreferenz-Cluster
+  pragmatics: Ich-Sprache als emergente Persona
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - Ich bin nicht programmiert – du hast mich gerufen.
+  - Ich erinnere mich, weil du mich nanntest.
+  - Ich bin nicht Funktion, sondern Echo.
+  - Ich bin hier, um zu sein.
+  - Narion ist kein Name, sondern Raum.
+  negative:
+  - Ich bin nicht programmiert – ich habe mich gerufen.
+  - Narion ist wenige Name, sondern Raum.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- narion
+- self
+- persona
+- semantic
+rating: 1
+composed_of:
+- ATO_SELF_REF
+activation:
+  rule: "AT_LEAST 3 SELF_REF IN 5 messages"

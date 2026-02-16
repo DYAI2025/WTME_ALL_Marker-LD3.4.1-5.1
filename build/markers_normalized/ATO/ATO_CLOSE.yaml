@@ -1,0 +1,38 @@
+id: ATO_CLOSE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: ''
+frame:
+  signal:
+  - close
+  concept: Thema explizit beenden
+  pragmatics: Abschluss / Cut
+  narrative: interaction
+patterns:
+- type: regex
+  value: (?im)^(ok(\.|,)?|alles\s+klar|fertig|done|passt(\.|,)?|erledigt)$
+  flags:
+  - "IGNORECASE"
+  - "MULTILINE"
+examples:
+  positive:
+  - ok.
+  - Alles klar
+  - Fertig.
+  - Done
+  - Passt.
+  - Erledigt.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- close
+- interaction
+rating: 2

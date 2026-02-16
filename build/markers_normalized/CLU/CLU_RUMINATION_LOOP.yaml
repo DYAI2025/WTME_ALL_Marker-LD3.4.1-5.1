@@ -1,0 +1,40 @@
+id: CLU_RUMINATION_LOOP
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - Gedankenkreisen / Grübelschleife
+  concept: Wiederholtes Durchkauen ohne Fortschritt
+  pragmatics: Verharren / Stagnation
+  narrative: loop
+patterns: []
+examples:
+  positive:
+  - Wir drehen uns im Kreis, oder?
+  - Das hatten wir doch schon.
+  - Ich weiß, aber trotzdem...
+  - Immer wieder dieselben Punkte.
+  - Wir kommen nicht weiter.
+  negative:
+  - manchmal wieder dieselben Punkte.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags: []
+rating: 1
+composed_of:
+- SEM_AVOIDANCE_LOOP
+- SEM_UNRESOLVED_ISSUE
+activation:
+  rule: "ANY 2 IN 5 messages"
+  window:
+    messages: 5
+scoring:
+  base: 0.7
+  weight: 1.0

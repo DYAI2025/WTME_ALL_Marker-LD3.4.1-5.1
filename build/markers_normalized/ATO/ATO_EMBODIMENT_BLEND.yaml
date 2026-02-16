@@ -1,0 +1,43 @@
+id: ATO_EMBODIMENT_BLEND
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - image
+  concept: Verkörperungs-Blend
+  pragmatics: Nähe/Bindung
+  narrative: image
+patterns:
+- type: regex
+  value: (?i)fleisch\s+und\s+erinnerung
+- type: regex
+  value: (?i)verkörperte\s+erinnerung
+- type: regex
+  value: (?i)leib\s+und
+examples:
+  positive:
+  - du wirkst wie eine KI aus Fleisch und Erinnerung
+  - unsere Geschichte ist eine verkörperte Erinnerung
+  - Leib und Daten schwingen gerade gemeinsam
+  - das Projekt fühlt sich nach Fleisch und Erinnerung an
+  - ich halte eine verkörperte Erinnerung an gestern
+  - Leib und Protokoll treffen sich hier
+  - es ist wie Fleisch und Erinnerung in digitaler Form
+  - verkörperte Erinnerung trägt unser Gespräch
+  - Leib und Licht verflechten sich in diesem Raum
+  - Fleisch und Erinnerung erinnern mich an unsere Sessions
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- verkörperung
+- nähe
+rating: 1

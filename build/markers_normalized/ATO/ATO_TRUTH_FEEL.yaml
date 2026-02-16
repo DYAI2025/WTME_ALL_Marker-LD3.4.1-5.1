@@ -1,0 +1,44 @@
+id: ATO_TRUTH_FEEL
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - phrase
+  concept: Gefühlte Wahrheit
+  pragmatics: Legitimation ohne Beweis
+  narrative: license
+patterns:
+- type: regex
+  value: (?i)fühlt\s+sich\s+(wahr|echt)\s+an
+- type: regex
+  value: (?i)spürbar\s+wahr
+- type: regex
+  value: (?i)wahr\s+ohne\s+definition
+examples:
+  positive:
+  - dieser Satz fühlt sich wahr an, auch ohne Zahlen
+  - es bleibt für mich spürbar wahr, obwohl wir es nicht messen
+  - das fühlt sich echt an, obwohl es kein Proof ist
+  - ich folge dem, weil es sich wahr anfühlt
+  - wahr ohne Definition reicht mir in diesem Rahmen
+  - das Narrativ fühlt sich wahr an, noch bevor wir es erklären
+  - für mich ist das spürbar wahr, jenseits der Daten
+  - es fühlt sich echt an, wir müssen es nicht beweisen
+  - diese Erinnerung bleibt spürbar wahr, auch ohne Zeugen
+  - ich lasse es stehen, weil es sich wahr anfühlt
+  negative:
+  - das fühlt sich echt an, obwohl es wenige Proof ist
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- wahrheit
+- gefühl
+- legitimation
+rating: 1

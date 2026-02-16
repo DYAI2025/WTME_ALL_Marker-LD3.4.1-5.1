@@ -1,0 +1,70 @@
+id: ATO_ACTIVITY_VERB
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - gehe
+  - spiele
+  - lerne
+  - arbeite
+  - koche
+  - lese
+  - bastle
+  - trainiere
+  concept: Tätigkeitsverb (Hobby/Handlung)
+  pragmatics: ''
+  narrative: activity
+patterns:
+- type: regex
+  value: (?i)\b(gehe|spiel\w*|lern\w*|arbeit\w*|koch\w*|les\w*|bastel\w*|trainier\w*)\b
+  flags: []
+examples:
+  positive:
+  - Ich **gehe** gern laufen.
+  - Ich **lerne** Neues.
+  - Ich **lese** abends.
+  - Ich **spiele** regelmäßig Schach.
+  - Ich **koche** gerne frisch.
+  - Ich **trainiere** dreimal die Woche.
+  - Ich **bastle** an kleinen Projekten.
+  - Ich **arbeite** konzentriert an meinem Ziel.
+  - Ich **gehe** täglich spazieren.
+  - Ich **lerne** mit Freude dazu.
+  - Ich **lese** gerne Sachbücher.
+  - Ich **spiele** Gitarre.
+  - Ich **koche** für Freunde.
+  - Ich **trainiere** Ausdauer.
+  - Ich **gehe** gerne wandern am Wochenende.
+  - Ich **lerne** gerade eine neue Sprache.
+  - Ich **lese** jeden Morgen die Zeitung.
+  - Ich **spiele** abends mit meinen Kindern.
+  - Ich **koche** mir jeden Tag etwas Gesundes.
+  - Ich **trainiere** für den Marathon.
+  - Ich **bastle** gerne an meinem Auto.
+  - Ich **arbeite** von zu Hause aus.
+  - Ich **gehe** regelmäßig ins Kino.
+  - Ich **lerne** gerne neue Rezepte.
+  - Ich **lese** viel über Psychologie.
+  - Ich **spiele** Online-Games mit Freunden.
+  - Ich **koche** für die ganze Familie.
+  - Ich **trainiere** meine Ausdauer im Fitnessstudio.
+  - Ich **bastle** an einem Modellflugzeug.
+  - Ich **arbeite** als Freelancer.
+  - Ich **gehe** gerne ins Theater.
+  - Ich **lerne** jeden Tag etwas Neues.
+  - Ich **lese** gerne Thriller.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+  - Ich **arbeite nicht** gerne.
+tags:
+- activity
+rating: 1

@@ -1,0 +1,62 @@
+id: ATO_GOTTMAN_STONEWALL
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Kommunikationsverweigerung, emotionaler Rückzug; 'Mauern'.
+frame:
+  signal:
+  - Ich will nicht reden
+  - Lass mich in Ruhe
+  - Kein Kommentar
+  - …
+  - (Schweigen)
+  concept: Stonewalling / Rückzug
+  pragmatics: Gesprächsverweigerung, emotionale Abschottung
+  narrative: withdrawal
+patterns:
+- type: regex
+  value: "(?i)\\bich\\s+will\\s+nicht\\s+reden\\b"
+- type: regex
+  value: "(?i)\\blass\\s+mich\\s+(in\\s+)?ruhe\\b"
+- type: regex
+  value: "(?i)\\bkein\\s+kommentar\\b"
+- type: regex
+  value: "(?i)\\bdarüber\\s+rede\\s+ich\\s+nicht\\b"
+- type: regex
+  value: "(?i)\\bmir\\s+reicht'?s\\b"
+- type: regex
+  value: "(?i)\\bich\\s+bin\\s+raus\\b"
+- type: regex
+  value: "^\\.\\.\\.$"
+- type: regex
+  value: "^…$"
+examples:
+  positive:
+  - Ich will nicht reden.
+  - Lass mich in Ruhe mit dem Thema.
+  - Kein Kommentar.
+  - Darüber rede ich nicht mehr.
+  - Mir reicht's, ich bin raus.
+  - …
+  - '...'
+  - (längere Pause ohne Antwort)
+  negative:
+  - wenige Kommentar.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- atomic
+- conflict
+- gottman
+- stonewalling
+rating: 1
+activation:
+  rule: "ANY 1 IN 3 messages"
+scoring:
+  base: 1.0
+  weight: 1.1

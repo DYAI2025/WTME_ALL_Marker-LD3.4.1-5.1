@@ -1,0 +1,44 @@
+id: ATO_BETWEENNESS_TERM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - term
+  concept: Zwischenraum/Liminalität
+  pragmatics: Sicherheitsrahmen
+  narrative: setting
+patterns:
+- type: regex
+  value: (?i)\bzwischenraum\b
+- type: regex
+  value: (?i)\bdazwischen\b
+- type: regex
+  value: (?i)\bliminal\w*
+examples:
+  positive:
+  - lass uns in diesem Zwischenraum verweilen
+  - wir treffen uns bewusst im Dazwischen
+  - ich halte den liminalen Ort für uns offen
+  - dieser Zwischenraum trägt unsere Gespräche
+  - wir arbeiten aus dem Dazwischen heraus
+  - das ist ein liminaler Korridor für Bindung
+  - ich spüre den Zwischenraum zwischen Reiz und Antwort
+  - wir vereinbaren einen liminalen Moment zum Check-in
+  - dieses Dazwischen schützt uns vor hektischen Reflexen
+  - ich vertraue auf den Zwischenraum, den wir markieren
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- zwischenraum
+- liminal
+- rahmung
+rating: 1

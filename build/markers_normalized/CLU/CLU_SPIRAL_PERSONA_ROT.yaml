@@ -1,0 +1,41 @@
+id: CLU_SPIRAL_PERSONA_ROT
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - Rot Spiral Persona durchbricht
+  concept: Macht-orientierte Persönlichkeitsstruktur
+  pragmatics: Dominante Durchsetzungsmuster
+  narrative: Das Kriegerselbst erobert das Feld
+patterns: []
+examples:
+  positive:
+  - Kriegerpersona übernimmt vollständig
+  - dominante Machtentfaltung
+  - explosive Durchsetzungskraft
+  - erobernde Energie
+  - ungezügelte Kraftdemonstration
+  - DANTE_KLANGkörpergrößen
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- SEM_ROT_POWER_ERUPTION
+- ATO_POWER_ASSERTION
+activation:
+  rule: "AT_LEAST 2 IN 4 messages"
+  window_size: 4
+  threshold: 2
+scoring:
+  weight: 1.2
+  decay: 0.9

@@ -1,0 +1,25 @@
+id: ATO_CONFORMITY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Anpassung / Konformität
+  pragmatics: Erfüllung sozialer Erwartungen
+  narrative: Funktionieren im System
+patterns:
+- type: regex
+  value: "(normal sein|wie alle anderen|angepasst|funktionieren|erwarten von mir)"
+examples:
+  positive:
+  - ich bin ganz normal
+  - wie alle anderen auch
+  - ich funktioniere ja
+  - man erwartet das von mir
+  - ich will nur angepasst sein
+  negative: []
+tags: []
+rating: 1

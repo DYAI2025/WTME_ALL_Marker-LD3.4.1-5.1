@@ -1,0 +1,45 @@
+id: CLU_FUNDRAISING_READINESS
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - fundraising
+  - readiness
+  concept: fundraising_readiness
+  pragmatics: assessment
+  narrative: assessment
+patterns: []
+examples:
+  positive:
+  - Wir wachsen 20% MoM und Team voll committed – bereit für Seed.
+  - Retention stabil, 120 Kunden, erfahrenes Kernteam.
+  - Kundenbasis skaliert, Senior Team all-in, jetzt Kapitalrunde.
+  - Traktion + Seniorität – wir öffnen gerade die Runde.
+  - Solide Zahlen und committed Team – Raise wird vorbereitet.
+  negative:
+  - Kundenbasis skaliert, Senior Team some-in, jetzt Kapitalrunde.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- fundraising
+- readiness
+rating: 1
+composed_of:
+- SEM_TRACTION_SIGNALS
+- SEM_TEAM_SENIORITY
+activation:
+  rule: "AT_LEAST 1 EACH [SEM_TRACTION_SIGNALS, SEM_TEAM_SENIORITY] IN window.messages=6"
+scoring:
+  base: 0.7
+  weight: 2.0
+metadata:
+  readiness:
+    heuristic: "traction_weight=1.2 team_weight=1.0"
+    note: "Early signal of fundraising viability"

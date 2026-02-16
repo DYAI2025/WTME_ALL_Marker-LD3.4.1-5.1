@@ -1,0 +1,53 @@
+id: CLU_INTUITION_UNCERTAINTY
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - intuition
+  - weak-aggregation
+  concept: 'Vorahnung: Unsicherheit/Vorsicht'
+  pragmatics: Hypothesen vorsichtig testen
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - Hedging- und Vermutungs‑Formulierungen häufen sich leicht
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- intuition
+- uncertainty
+- hedging
+- learning
+rating: 2
+composed_of:
+- SEM_UNCERTAINTY_TONING
+- SEM_TENTATIVE_INFERENCE
+- SEM_PROBABILISTIC_LANGUAGE
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+scoring:
+  base: 0.5
+  weight: 1.0
+criteria: ""
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_UNCERTAINTY_TONING, SEM_TENTATIVE_INFERENCE] IN confirm_window"
+    multiplier_on_confirm: 1.5
+    decay_window: 7
+    penalize_false: 1.0
+  telemetry_keys:
+    counter_confirmed: "INT_UNCERT.confirmed"
+    counter_retracted: "INT_UNCERT.retracted"
+    ewma_precision: "INT_UNCERT.ewma_precision"

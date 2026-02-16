@@ -1,0 +1,53 @@
+id: CLU_INTUITION_SUPPORT
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - intuition
+  - weak-aggregation
+  concept: 'Vorahnung: Unterstützung/Bindung'
+  pragmatics: Ressourcenfokus, Verstärkung positiver Dynamik
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - mehrere Validierungs-/Empathie‑Signale verteilt
+  negative:
+  - Can you pass the salt?
+  - The meeting is at 2 PM.
+  - I went shopping yesterday.
+  - The weather should be better tomorrow.
+  - Did you read the email?
+  - I need to get gas.
+  - The meeting is in the conference room.
+tags:
+- intuition
+- support
+- bonding
+- learning
+rating: 2
+composed_of:
+- SEM_SUPPORT_VALIDATION
+- SEM_TRUST_SIGNALING
+- SEM_EMOTIONAL_SUPPORT
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 6 messages"
+scoring:
+  base: 0.5
+  weight: 1.0
+criteria: ""
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 6
+    confirm_rule: "AT_LEAST 1 of [SEM_SUPPORT_VALIDATION, SEM_EMOTIONAL_SUPPORT] IN confirm_window"
+    multiplier_on_confirm: 1.75
+    decay_window: 8
+    penalize_false: 1.0
+  telemetry_keys:
+    counter_confirmed: "INT_SUPPORT.confirmed"
+    counter_retracted: "INT_SUPPORT.retracted"
+    ewma_precision: "INT_SUPPORT.ewma_precision"

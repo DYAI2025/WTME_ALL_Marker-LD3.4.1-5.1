@@ -1,0 +1,30 @@
+id: ATO_GUILT_WORD
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Schuld/Entschuldigung
+  pragmatics: Selbstzuschreibung
+  narrative: surface
+patterns: []
+examples:
+  positive:
+  - ich vermisse … hätte es anders machen sollen
+  - so schade … tut mir leid
+  - fühle mich schuldig … schwer auszuhalten
+  - allein damit … traurig
+  - hätte früher reden sollen … bereue es
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags: []
+rating: 2

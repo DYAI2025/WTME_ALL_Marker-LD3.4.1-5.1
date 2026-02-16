@@ -1,0 +1,25 @@
+id: ATO_CRITICISM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Kritik / Tadel
+  pragmatics: Aufzeigen von Fehlern und Mängeln
+  narrative: Ich kritisiere und tadle
+patterns:
+- type: regex
+  value: "(kritisiere|schlecht gemacht|Fehler|nicht gut genug|mangelhaft)"
+examples:
+  positive:
+  - ich kritisiere das
+  - schlecht gemacht
+  - voller Fehler
+  - nicht gut genug
+  - völlig mangelhaft
+  negative: []
+tags: []
+rating: 1

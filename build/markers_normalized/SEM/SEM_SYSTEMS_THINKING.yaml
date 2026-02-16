@@ -1,0 +1,40 @@
+id: SEM_SYSTEMS_THINKING
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - systems
+  concept: Systemisch/Wechselwirkung
+  pragmatics: Ursache-Wirkung-Netze
+  narrative: reasoning
+patterns: []
+examples:
+  positive:
+  - Wenn A dann B – teilweise wahr.
+  - Kette aus Faktoren – nicht ganze Geschichte.
+  - Netz von Effekten – Details später.
+  - Mehrere Ursachen – nur das Wichtige.
+  - Dynamik – Rest folgt.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- systems
+- reasoning
+rating: 1
+composed_of:
+- ATO_CAUSAL_CHAIN
+- ATO_PARTIAL_TRUTH
+activation:
+  rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
+scoring:
+  base: 0.6
+  weight: 1.0

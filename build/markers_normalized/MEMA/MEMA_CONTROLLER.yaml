@@ -1,0 +1,47 @@
+id: MEMA_CONTROLLER
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: Archetyp des Kontrolleurs.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Das ist keine Diskussion.
+  - Wir machen das so, Ende.
+  - Du folgst der Reihenfolge, verstanden?
+  - Ich setze die Regeln, klar?
+  - Bis morgen 10:00 – ohne Ausnahme.
+  - Anweisungen folgen.
+  - Kein Widerspruch.
+  - Entscheide ich.
+  - Regeln befolgen.
+  - Autoritäre Ansage.
+  negative:
+  - Besprechen wir.
+  - Meinung zählt.
+  - Zusammen entscheiden.
+  - Kein Druck.
+  - Frei wählen.
+  - Autonomie.
+  - Gleichberechtigt.
+  - Keine Vorgaben.
+  - Offen Ideen.
+  - Partnerschaft.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "controller"
+  interpretant: "effect_on_state: {control: +0.2}"
+  connotation:
+  - "archetype"
+  - "control"
+metadata:
+  label: Controller

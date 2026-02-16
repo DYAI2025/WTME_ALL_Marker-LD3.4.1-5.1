@@ -1,0 +1,25 @@
+id: ATO_MORAL_AUTHORITY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Moralische Autorität
+  pragmatics: Anspruch auf moralische Überlegenheit
+  narrative: Ich weiß, was richtig ist
+patterns:
+- type: regex
+  value: "(ich weiß|richtige Weg|moralisch|Werte|Anstand)"
+examples:
+  positive:
+  - ich weiß was richtig ist
+  - der richtige Weg
+  - moralisch verwerflich
+  - echte Werte
+  - Anstand und Moral
+  negative: []
+tags: []
+rating: 1

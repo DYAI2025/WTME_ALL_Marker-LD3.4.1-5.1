@@ -1,0 +1,36 @@
+id: ATO_CONTROL
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for controlling language and behavior
+frame:
+  signal:
+  - control
+  concept: Control signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(you can't|not allowed|you should|must|have to|need my permission)\\b"
+examples:
+  positive:
+  - You can't make that decision alone.
+  - You're not allowed to see them.
+  - You should ask me first.
+  - You must follow my guidance.
+  - You need my permission for this.
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+tags:
+- atomic
+- v3.3
+- control
+- dominance
+rating: 1

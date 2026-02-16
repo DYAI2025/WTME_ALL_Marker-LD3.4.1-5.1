@@ -1,0 +1,60 @@
+id: SEM_SVT_APPEAL_DIRECT
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - expliziter Appell
+  - Imperativ/Bitte/Aufforderung
+  concept: Appellebene (Schulz von Thun)
+  pragmatics: Lenkung/Handlungsaufforderung
+  narrative: Direkte Bitte
+patterns:
+- type: regex
+  value: "^fahr"
+- type: regex
+  value: "^schicken sie"
+- type: regex
+  value: "^könntest du bitte"
+- type: regex
+  value: "solltest du"
+- type: regex
+  value: "müsstest du"
+examples:
+  positive:
+  - 'examples:'
+  - '- "Fahr los!"'
+  - '- "Schicken Sie mir den Bericht!"'
+  - '- "Könntest du bitte das Fenster schließen?"'
+  - '- "Du solltest das sofort überprüfen."'
+  - '- "Hör jetzt bitte auf damit!"'
+  - Mach bitte das Licht aus.
+  - Gib mir kurz Bescheid.
+  - Bitte hör zu.
+  - Ruf mich heute an.
+  - Lass das jetzt.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- needs_review
+- sem_composition_exception
+- schulz_von_thun
+- appeal
+rating: 1
+activation:
+  rule: "ANY at sentence start"
+metadata:
+  source:
+    semantische_grabber_id: "SGR_SVT_APPEAL_DIRECT_01"
+    created_at: "2025-07-20T11:48:12.759155"
+    created_by: "FRAUSAR_GUI_v2"
+    source_version: "1.0.1"
+    schema_version: "3.3"

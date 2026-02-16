@@ -1,0 +1,38 @@
+id: CLU_MODE_SWITCH
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - cluster
+  concept: Moduswechsel (rational↔affektiv)
+  pragmatics: Stilbruch
+  narrative: window
+patterns: []
+examples:
+  positive:
+  - kurze Sequenz A … kurze Sequenz B
+  - Beispiel mit zwei Signalen in einem Satz
+  - Signal 1 … später Signal 2 im Kontext
+  - Kombination aus Token X und Y
+  - Variante mit ähnlicher Semantik
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- SEM_SD_ORANGE_ACHIEVE
+- SEM_SADNESS_EXPRESSIONS
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages"
+scoring:
+  base: 1.0
+  weight: 1.0

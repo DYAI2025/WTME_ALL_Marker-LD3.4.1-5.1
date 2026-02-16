@@ -1,0 +1,104 @@
+id: ATO_PRIDE_CONFIDENCE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Atomic marker for pride, confidence, and self-assurance expressions
+frame:
+  signal:
+  - stolz
+  - selbstbewusst
+  - selbstsicher
+  - proud
+  - confident
+  concept: Positive emotional valence - pride and confidence
+  pragmatics: Expression of pride and self-confidence
+  narrative: emotional_expression
+patterns:
+- type: regex
+  value: '(?i)\b(stolz|stolz sein|stolz auf)\b'
+- type: regex
+  value: '(?i)\b(selbstbewusst|selbstbewusstsein|selbstsicher)\b'
+- type: regex
+  value: '(?i)\b(proud|pride|confident|confidence)\b'
+- type: regex
+  value: '(?i)\b(selbstvertrauen|vertrauen in mich)\b'
+- type: regex
+  value: '(?i)\b(stark|stärke|kraftvoll)\b'
+- type: regex
+  value: '(?i)\b(kann ich|schaffe ich|kriege ich hin)\b'
+- type: regex
+  value: '(?i)\b(erfolgreich|erfolg|geschafft)\b'
+examples:
+  positive:
+  - Ich bin so stolz auf meine Leistung!
+  - Mein Selbstbewusstsein wächst jeden Tag.
+  - Ich bin confident in meinen Fähigkeiten.
+  - Das habe ich erfolgreich gemeistert!
+  - Ich bin stolz auf mich selbst.
+  - Meine Selbstsicherheit ist stark.
+  - Ich kann das schaffen, da bin ich mir sicher!
+  - Mein Selbstvertrauen ist unerschütterlich.
+  - Ich bin proud of what I've achieved.
+  - Das kriege ich hin, ganz bestimmt!
+  - Ich fühle mich stark und selbstbewusst.
+  - Mein Stolz auf diese Arbeit ist berechtigt.
+  - Ich bin confident and ready!
+  - Das habe ich geschafft, ich bin stolz!
+  - Meine Selbstsicherheit trägt mich.
+  - Ich vertraue in meine Stärke.
+  - Ich bin so proud of myself!
+  - Mein Selbstbewusstsein ist gewachsen.
+  - Ich kann das, ich glaube an mich!
+  - Der Erfolg macht mich stolz.
+  - Ich bin selbstsicher und kraftvoll.
+  - Mein Selbstvertrauen ist groß.
+  - Ich bin confident in my decisions.
+  - Das schaffe ich mit links!
+  - Ich bin stolz auf meinen Fortschritt.
+  - Meine Stärke überrascht mich selbst.
+  - Ich bin so selbstbewusst wie nie zuvor.
+  - Mein Stolz ist berechtigt und echt.
+  - Ich kann das meistern, da bin ich sicher!
+  - Mein Selbstvertrauen wächst stetig.
+  - Ich bin proud and confident!
+  - Das kriege ich hin, ohne Zweifel!
+  - Ich fühle mich stark und erfolgreich.
+  - Mein Selbstbewusstsein strahlt nach außen.
+  - Ich bin stolz auf meine Entwicklung.
+  - Meine Selbstsicherheit ist spürbar.
+  - Ich vertraue meinen Fähigkeiten voll und ganz.
+  - Ich bin so confident right now!
+  - Das habe ich erfolgreich bewältigt!
+  - Mein Stolz erfüllt mich mit Freude.
+  - Ich bin selbstbewusst und mutig.
+  - Meine Stärke ist meine größte Ressource.
+  - Ich kann das schaffen, ich bin stark genug!
+  - Mein Selbstvertrauen ist mein Anker.
+  - Ich bin proud of my journey.
+  - Das kriege ich hin, ich weiß es!
+  - Ich fühle mich selbstsicher und bereit.
+  - Mein Stolz auf mich selbst wächst.
+  - Ich bin confident and capable!
+  - Meine Selbstsicherheit ist meine Superkraft.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- atomic
+- emotion
+- positive
+- pride
+- confidence
+- self-assurance
+- v3.4
+rating: 1
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for pride and confidence"

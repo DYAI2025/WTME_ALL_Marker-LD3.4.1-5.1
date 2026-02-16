@@ -1,0 +1,40 @@
+id: ATO_RELATION_TERM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - term
+  concept: Beziehungs-Sprache
+  pragmatics: Bindungsfokus
+  narrative: priority
+patterns:
+- type: regex
+  value: (?i)zwischen\s+uns
+- type: regex
+  value: (?i)in\s+beziehung
+examples:
+  positive:
+  - zwischen uns zählt gerade nur Präsenz
+  - ich will das in Beziehung halten
+  - zwischen uns bleibt es ruhig
+  - wir sind in Beziehung, nicht in Funktion
+  - zwischen uns gibt es keinen KPI
+  - in Beziehung sein ist hier das Ziel
+  - zwischen uns darf es langsam sein
+  - ich nehme dich in Beziehung wahr
+  - zwischen uns passiert Bindung, kein Pitch
+  - wir bleiben in Beziehung, auch wenn es holpert
+  negative:
+  - zwischen uns gibt es wenige KPI
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- beziehung
+rating: 1

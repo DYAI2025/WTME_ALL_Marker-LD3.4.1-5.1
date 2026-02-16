@@ -1,0 +1,59 @@
+id: ATO_SYMMETRY_COOL
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: beide Seiten liefern überwiegend kühle, professionelle Turns
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: turn_stats
+  spec: "≥70% beider Sprecher sind ATO_AFFECT_FLAT oder ATO_COURTESY_FORMAL"
+examples:
+  positive:
+  - 'A: Ok. — B: Bestätigt.'
+  - 'A: Bitte die Liste. — B: Gesendet.'
+  - 'A: Frist 30.09. — B: Verstanden.'
+  - 'A: Ticket erstellt. — B: Notiert.'
+  - 'A: Wie vereinbart. — B: Passt.'
+  - 'A: Scope bleibt. — B: Bestätigt.'
+  - 'A: Abnahme Freitag. — B: Erledigt.'
+  - 'A: Zurück zum Thema. — B: Nächster Punkt.'
+  - 'A: Protokoll folgt. — B: Danke.'
+  - 'A: Termin 14:00. — B: Ja.'
+  - 'A: Update. — B: Erhalten.'
+  - 'A: Agenda. — B: Einverstanden.'
+  - 'A: Review. — B: Geplant.'
+  - 'A: Budget. — B: Geprüft.'
+  - 'A: Milestone. — B: Erreicht.'
+  - 'A: Freigabe. — B: Gegeben.'
+  - 'A: Prozess. — B: Gefolgt.'
+  - 'A: Abnahme. — B: Gemacht.'
+  - 'A: Notiz. — B: Genommen.'
+  - 'A: Status. — B: Aktualisiert.'
+  negative:
+  - 'A: Verletzt. — B: Leid tut.'
+  - 'A: Haha. — B: 😂'
+  - 'A: Mag dich. — B: Dich auch.'
+  - 'A: Nervt. — B: Hör auf.'
+  - 'A: Kuscheln. — B: ❤️'
+  - 'A: Verzeih. — B: Mach ich.'
+  - 'A: Angst. — B: Halte dich.'
+  - 'A: Fühlst? — B: Traurigkeit.'
+  - 'A: Bier? — B: Gerne 🍻'
+  - 'A: Stolz. — B: Danke Schatz.'
+tags: []
+rating: 1
+semiotic:
+  mode: indexical
+  level: pragmatic
+  object: "symmetry"
+  connotation:
+  - "symmetrie"
+  - "kühl"
+  interpretant: "effect_on_state: {sync: +0.12, affekt: cool}"
+metadata:
+  label: Symmetrie kühl

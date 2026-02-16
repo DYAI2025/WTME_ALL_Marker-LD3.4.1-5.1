@@ -1,0 +1,30 @@
+id: ATO_TRUST_PHRASE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Vertrauen signalisieren
+  pragmatics: Bindung
+  narrative: surface
+patterns: []
+examples:
+  positive:
+  - ich bin da für dich … wir schaffen das
+  - danke dir … fühl mich gesehen
+  - gemeinsam kriegen wir das hin
+  - du kannst dich auf mich verlassen
+  - ich hör dir zu … okay?
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags: []
+rating: 2

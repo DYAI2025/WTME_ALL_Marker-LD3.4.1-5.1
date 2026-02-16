@@ -1,0 +1,35 @@
+id: ATO_WHATSAPP
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for WhatsApp platform mentions
+frame:
+  signal:
+  - whatsapp
+  concept: WhatsApp platform signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\bwhatsapp\\b"
+examples:
+  positive:
+  - Let's continue on WhatsApp
+  - Do you have WhatsApp?
+  - WhatsApp is more convenient
+  - Send me your WhatsApp number
+  - We could use WhatsApp instead
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 2

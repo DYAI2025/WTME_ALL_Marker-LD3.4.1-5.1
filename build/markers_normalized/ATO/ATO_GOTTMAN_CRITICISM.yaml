@@ -1,0 +1,62 @@
+id: ATO_GOTTMAN_CRITICISM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Erkennung von kritisierenden Äußerungen nach Gottmans Konfliktmustern.
+frame:
+  signal:
+  - du machst immer
+  - du machst nie
+  - du bist so
+  - du verstehst nie
+  - typisch für dich
+  concept: 'Gottman: Kritik'
+  pragmatics: Persönlichkeitskritik statt Verhaltensfeedback
+  narrative: Destruktive Kommunikation
+patterns:
+- type: regex
+  value: "(?i)\\bdu machst immer \\w+"
+- type: regex
+  value: "(?i)\\bdu machst nie \\w+"
+- type: regex
+  value: "(?i)\\bdu bist so \\w+"
+- type: regex
+  value: "(?i)\\bdu verstehst nie \\w+"
+- type: regex
+  value: "(?i)\\btypisch für dich\\b"
+- type: regex
+  value: "(?i)\\bdu kannst nie \\w+"
+- type: regex
+  value: "(?i)\\bdu willst nie \\w+"
+examples:
+  positive:
+  - Du machst immer alles falsch!
+  - Du machst nie das, was ich sage.
+  - Du bist so egoistisch.
+  - Du verstehst nie, was ich meine.
+  - Typisch für dich, wieder zu spät.
+  negative:
+  - Du machst manchmal alles falsch!
+  - ich erlebe es so, dass immer alles falsch!
+  - Du machst selten das, was ich sage.
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+tags:
+- atomic
+- gottman
+- criticism
+- conflict
+- destructive
+rating: 1
+activation:
+  rule: "ANY 1"
+scoring:
+  base: 1.5
+  weight: 0.6
+  decay: 0.03
+  formula: "logistic"
+window:
+  messages: 30

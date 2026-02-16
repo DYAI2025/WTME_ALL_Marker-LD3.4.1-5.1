@@ -1,0 +1,25 @@
+id: ATO_ROMANTIC_IDEALIZATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Romantische Idealisierung
+  pragmatics: Perfektheit des Geliebten
+  narrative: Du bist perfekt und alles für mich
+patterns:
+- type: regex
+  value: "(perfekt|Seelenverwandte|Traumpartner|alles was ich brauche|einzig wahre)"
+examples:
+  positive:
+  - du bist perfekt
+  - meine Seelenverwandte
+  - der Traumpartner
+  - alles was ich brauche
+  - die einzig wahre Liebe
+  negative: []
+tags: []
+rating: 1

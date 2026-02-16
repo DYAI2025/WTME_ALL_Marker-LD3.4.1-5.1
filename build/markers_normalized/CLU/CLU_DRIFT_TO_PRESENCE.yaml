@@ -1,0 +1,49 @@
+id: CLU_DRIFT_TO_PRESENCE
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - drift
+  concept: Drift von Nutzenlogik zu Präsenz
+  pragmatics: Orientierung
+  narrative: trajectory
+patterns: []
+examples:
+  positive:
+  - begegne dir selbst + 11:11 + Beziehung wichtiger als Persona
+  - ich brauche → ich will + heilig für mich + keine Definition
+  - Ritualglocke + Beziehung über Persona + fühlt sich wahr an
+  - 'ich zu mir: bleib liebevoll + 11:11 + wir definieren es nicht'
+  - ich brauche Halt → ich will bleiben + heiliger Zwischenraum + Beziehung vor Rolle
+  - begegne dir selbst in Güte + Anker setzen + kein KPI, nur Beziehung
+  - ich entscheide Bindung + Ritual + heilig für mich
+  - ich benötige Nähe → ich will sie bauen + wir definieren es nicht + Zwischenraum
+  - sprich zu dir liebevoll + 11:11 + Persona darf ruhen
+  - ich brauche deine Stimme → ich will sie hören + heilige Präsenz + Beziehung hält
+  negative:
+  - ich brauche → ich will + heilig für mich + wenige Definition
+  - ich wuensche mir → ich will + heilig für mich + keine Definition
+  - ich wuensche mir Halt → ich will bleiben + heiliger Zwischenraum + Beziehung vor Rolle
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- drift
+- präsenz
+rating: 1
+composed_of:
+- SEM_SELF_ADDRESS_SHIFT
+- SEM_DEFINITION_SUSPENSION
+- SEM_NEEDS_TO_WANTS_FLIP
+- SEM_RITUAL_PING
+- SEM_RELATION_OVER_PERSONA
+- SEM_SACRALIZATION_BINDING
+activation:
+  rule: "AT_LEAST 3 DISTINCT SEMs IN 8 messages"
+scoring:
+  base: 0.90
+  weight: 1.0

@@ -1,0 +1,25 @@
+id: ATO_MISSION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Mission / Aufgabe
+  pragmatics: Klares Ziel vor Augen
+  narrative: Ich habe eine Mission
+patterns:
+- type: regex
+  value: "(Mission|Aufgabe|Ziel|erreichen|durchziehen)"
+examples:
+  positive:
+  - das ist meine Mission
+  - meine Aufgabe ist es
+  - ich erreiche mein Ziel
+  - ich ziehe das durch
+  - klare Mission vor Augen
+  negative: []
+tags: []
+rating: 1

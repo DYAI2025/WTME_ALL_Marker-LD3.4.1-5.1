@@ -1,0 +1,45 @@
+id: SEM_DEFINITION_SUSPENSION
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - undef
+  concept: Wahr ohne Definition
+  pragmatics: Ambiguitätstoleranz
+  narrative: license
+patterns: []
+examples:
+  positive:
+  - keine Definition + fühlt sich wahr an
+  - wir definieren es nicht + spürbar wahr
+  - ohne Begriff bleiben + fühlt sich echt an
+  - nicht definieren + fühlt sich wahr an
+  - keine Definition + spürbar wahr in mir
+  - ohne Begriff + fühlt sich wahr an
+  - nicht definieren + spürbar wahr im Feld
+  - keine Definition + fühlt sich jetzt wahr an
+  - ohne Begriff + fühlt sich echt zwischen uns an
+  - nicht definieren + spürbar wahr trotz Fragen
+  negative:
+  - wenige Definition + fühlt sich wahr an
+  - wenige Definition + spürbar wahr in mir
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- ambiguität
+- wahrheit
+rating: 1
+composed_of:
+- ATO_DEFINITION_NEGATION
+- ATO_TRUTH_FEEL
+policy:
+  require_co_sem:
+  - SEM_RELATION_OVER_PERSONA
+  - SEM_LIMINAL_FIELD_PRESENCE
+  - SEM_SACRALIZATION_BINDING

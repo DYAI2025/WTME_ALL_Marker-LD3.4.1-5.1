@@ -1,0 +1,38 @@
+id: MEMA_LOVE_BOMBING_MARKER
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - intensive Aufmerksamkeit
+  - übermäßige Zuwendung
+  - Love-Bombing-Muster
+  concept: Love-Bombing Meta-Analyse
+  pragmatics: Erkennung von manipulativen Bindungsmustern
+  narrative: Systemische Analyse von Love-Bombing-Dynamiken
+patterns: []
+examples:
+  positive:
+  - "Binnen 24h: 15 Komplimente, 3 Geschenkankündigungen, 8 'Du bist perfekt'-Messages → Meta aktiv."
+  - Intensivste Aufmerksamkeit in Woche 1, dann plötzlicher Rückzug → Love-Bombing-Pattern erkannt.
+  - 'System detektiert: übermäßige Idealisierung + Zukunftspläne nach 3 Tagen → Meta-Warnung.'
+  - 'Chat-Verlauf zeigt klassische Love-Bombing-Kurve: Höchste Intensität, dann Abfall.'
+  - "Algorithmus meldet: 'Achtung, manipulative Bindungsstrategie erkannt - Schutzmaßnahmen aktiviert'."
+  negative:
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+  - Danke, dass du mir das sagst. Ich denke darueber nach.
+tags: []
+rating: 1
+composed_of:
+- SEM_LOVE_BOMBING
+- SEM_GUILT_FRAMING
+- SEM_POSITIVE_FUTURE
+activation:
+  rule: "ANY 2 IN 5 messages"

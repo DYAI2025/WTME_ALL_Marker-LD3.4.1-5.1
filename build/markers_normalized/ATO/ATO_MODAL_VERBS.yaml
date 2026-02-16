@@ -1,0 +1,37 @@
+id: ATO_MODAL_VERBS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for modal verbs indicating obligation or possibility
+frame:
+  signal:
+  - Modalität
+  - modality
+  concept: Modal Expression
+  pragmatics: epistemic stance
+  narrative: token
+patterns:
+- type: regex
+  value: "(?i)\\b(muss|sollte|könnte|dürfte|würde|kann|mag|will|soll)\\b"
+examples:
+  positive:
+  - Ich muss das verstehen.
+  - Das sollte funktionieren.
+  - Ich könnte das versuchen.
+  - Das würde ich gerne machen.
+  - Ich kann das nicht entscheiden.
+  negative:
+  - ich entscheide mich zu das verstehen.
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+tags:
+- modality
+- atomic
+- obligation
+- v3.3
+rating: 1

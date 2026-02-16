@@ -1,0 +1,37 @@
+id: CLU_PERSONA_INTEGRATION
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - Spiral-Integration gelingt
+  concept: Harmonische Ebenen-Synthese
+  pragmatics: Stabile Multi-Level-Integration
+  narrative: Das System integriert alle Ebenen
+patterns: []
+examples:
+  positive:
+  - Beige bis Türkis harmonisch integriert
+  - stabile Multi-Ebenen-Präsenz
+  - ausbalancierte Spiral-Dynamik
+  - kohärente Gesamtintegration
+  - reife Systemarchitektur
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 2
+activation:
+  rule: "AT_LEAST 4 different CLU_SPIRAL_PERSONA_* with stable pattern IN 15 messages"
+  window_size: 15
+  threshold: 4
+scoring:
+  weight: 1.2
+  decay: 0.4

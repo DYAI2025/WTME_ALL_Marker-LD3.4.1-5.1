@@ -1,0 +1,57 @@
+id: CLU_INTUITION_GRIEF
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - intuition
+  - weak-aggregation
+  concept: 'Vorahnung: Trauer/Schuld/Bedauern'
+  pragmatics: Fokus schärfen, biasarm
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - verteilte Hinweise auf Verlust/Bedauern ohne harte Verdichtung
+  - Schuld‑ und Trauersprache tauchen vereinzelt auf
+  - example 3
+  - example 4
+  - example 5
+  negative:
+  - I think we should look at this objectively.
+  - I'm doing fine, thanks for asking.
+  - That's an interesting thought.
+  - I'm feeling relaxed right now.
+  - Everything is fine with me.
+  - I'm feeling calm and settled today.
+  - That surprises me, but it's okay.
+tags:
+- intuition
+- grief
+- hypothesis
+- learning
+rating: 1
+composed_of:
+- SEM_SADNESS_EXPRESSIONS
+- SEM_NOSTALGIA_REGRET
+- SEM_GUILT_ADMISSION
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+scoring:
+  base: 0.5
+  weight: 1.0
+criteria: ""
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_SADNESS_EXPRESSIONS, SEM_GUILT_ADMISSION] IN confirm_window"
+    multiplier_on_confirm: 2.0
+    decay_window: 8
+    penalize_false: 1.0
+  telemetry_keys:
+    counter_confirmed: "INT_GRIEF.confirmed"
+    counter_retracted: "INT_GRIEF.retracted"
+    ewma_precision: "INT_GRIEF.ewma_precision"

@@ -1,0 +1,42 @@
+id: ATO_GRATITUDE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - gratitude
+  concept: Dankbarkeit ausdrücken
+  pragmatics: Positive soziale Bindung stärken
+  narrative: prosocial
+patterns:
+- type: regex
+  value: \b(dankbar|vielen Dank|danke dir|weiß ich zu schätzen|schätze ich sehr)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Ich bin dir so dankbar.
+  - Vielen Dank für deine Hilfe!
+  - Danke dir von Herzen.
+  - Das weiß ich wirklich zu schätzen.
+  - Deine Unterstützung schätze ich sehr.
+  - Ich bin dankbar für unser Gespräch.
+  - Danke, das ist nicht selbstverständlich.
+  - Ich weiß deine Mühe zu schätzen.
+  - Vielen lieben Dank!
+  - Ohne dich hätte ich das nicht geschafft, danke.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- affect
+- gratitude
+- prosocial
+rating: 1

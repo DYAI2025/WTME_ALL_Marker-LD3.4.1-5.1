@@ -1,0 +1,51 @@
+id: ATO_TRUST_DEFICIT_STATEMENT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Misstrauen / Zweifel
+  - Beweisbedarf
+  - Im Unklaren lassen / Verheimlichen
+  concept: Vertrauensdefizit
+  pragmatics: Zweifel an Offenheit/Integrität der Gegenseite
+  narrative: Sicherheits- und Kontrollbedürfnis
+patterns:
+- type: regex
+  value: '(?i)\bmisstrau\w*\b'
+- type: regex
+  value: '(?i)\bbeweis\w*\b'
+- type: regex
+  value: '(?i)\b(im|absichtlich)\s+unklar(en)?\b'
+- type: regex
+  value: '(?i)\bverheimlich\w*\b'
+- type: regex
+  value: '(?i)\bhinter\s+meinem\s+rücken\b'
+- type: regex
+  value: '(?i)\b(etwas|vieles)\s+verschweig\w*\b'
+- type: regex
+  value: '(?i)\bich\s+werde\s+nicht\s+einbezogen\b'
+examples:
+  positive:
+  - Mein Misstrauen kommt nicht aus dem Nichts.
+  - Ich brauche Beweise, sonst glaube ich das nicht.
+  - Ich fühle mich absichtlich im Unklaren gelassen.
+  - Du verheimlichst mir Dinge.
+  - Es wirkt, als verschweigst du mir etwas.
+  - Warum werde ich nicht einbezogen?
+  - Mir fehlt die Sicherheit, dass du ehrlich bist.
+  negative:
+  - ich wuensche mir Beweise, sonst glaube ich das nicht.
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+tags:
+- trust
+- insecurity
+- atomic
+rating: 1

@@ -1,0 +1,35 @@
+id: SEM_ORANGE_STRATEGIC_FLOW
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - Strategischer Erfolgsmodus
+  concept: Orange-Persona optimiert
+  pragmatics: Effizienz und Innovation vereinen
+  narrative: Smart gewinnen durch Innovation
+patterns: []
+examples:
+  positive:
+  - strategische Innovation entwickeln
+  - effizienter Erfolgsweg
+  - intelligente Optimierung
+  - systematische Leistungssteigerung
+  - innovativer Wettbewerbsvorteil
+  - Wie können wir mit der Methode des Trainings von Sprache auch Geräusche verstehen lernen?
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- ATO_ACHIEVEMENT_DRIVE
+- ATO_INTEGRAL_THINKING
+activation: "ANY 2 IN 2 messages"

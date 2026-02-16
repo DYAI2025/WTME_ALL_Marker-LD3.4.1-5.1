@@ -1,0 +1,35 @@
+id: ATO_EMOTIONAL_REGULATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for emotional regulation language
+frame:
+  signal:
+  - emotional regulation
+  concept: Emotional regulation signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(I feel|I'm feeling|emotions|calm down|breathe)\\b"
+examples:
+  positive:
+  - I feel overwhelmed right now.
+  - I'm feeling frustrated about this.
+  - My emotions are running high.
+  - I need to calm down first.
+  - Let me take a breath here.
+  negative:
+  - I want to calm down first.
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

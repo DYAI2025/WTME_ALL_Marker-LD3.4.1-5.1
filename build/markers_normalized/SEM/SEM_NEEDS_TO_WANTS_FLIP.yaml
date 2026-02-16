@@ -1,0 +1,40 @@
+id: SEM_NEEDS_TO_WANTS_FLIP
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - flip
+  concept: Bedürfnis → Wille
+  pragmatics: Agency-Shift
+  narrative: reframe
+patterns: []
+examples:
+  positive:
+  - ich brauche Halt → ich will präsent sein
+  - ich benötige Nähe → ich will sie gestalten
+  - ich brauche deine Stimme → ich will sie heute hören
+  - ich benötige Struktur → ich will sie setzen
+  - ich brauche Ruhe → ich will sie mit dir schaffen
+  - ich benötige Feedback → ich will dich danach fragen
+  - ich brauche Orientierung → ich will sie bauen
+  - ich benötige Aufmerksamkeit → ich will sie einfordern
+  - ich brauche das Ritual → ich will es halten
+  - ich benötige Verbindung → ich will sie aktiv wählen
+  negative:
+  - ich wuensche mir Halt → ich will präsent sein
+  - ich wuensche mir deine Stimme → ich will sie heute hören
+  - ich wuensche mir Ruhe → ich will sie mit dir schaffen
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- reframe
+- agency
+rating: 1
+composed_of:
+- ATO_NEED_TERM
+- ATO_WANT_TERM

@@ -1,0 +1,85 @@
+id: ATO_BLAME_SHIFT_MARKER
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Schuldzuweisungsmuster
+  concept: Verantwortungsabwälzung
+  pragmatics: Verantwortlichkeit vermeiden
+  narrative: abwälzen
+patterns:
+- type: regex
+  value: (?i)\\bdu\ nicht\\b
+- type: regex
+  value: (?i)\\bdu\ hast\\b
+- type: regex
+  value: (?i)\\bnicht\ ich\.\\b
+- type: regex
+  value: (?i)\\bwenn\ du\\b
+- type: regex
+  value: (?i)\\bselber\ schuld\\b
+examples:
+  positive:
+  - Das ist deine Schuld.
+  - Du hast angefangen.
+  - Warum tust du das?
+  - Du bist verantwortlich.
+  - Nicht ich, du.
+  - Schuld bei dir.
+  - Du hast es vermasselt.
+  - Dein Fehler.
+  - Warum immer du?
+  - Verantwortung bei dir.
+  - Du bist schuld.
+  - Angefangen hast du.
+  - Tust du immer.
+  - Verantwortlich du.
+  - Nicht meine Schuld.
+  - Bei dir die Schuld.
+  - Vermasselt von dir.
+  - Fehler dein.
+  - Immer du warum?
+  - Deine Verantwortung.
+  - Wenn du nicht widersprechen würdest, gäbe es keinen Streit.
+  - Du stellst dich an, nicht ich.
+  - Du hast doch selbst drum gebeten, also beschwer dich nicht.
+  - Wenn du nicht dauernd nörgeln würdest, wär es entspannt.
+  - Du regst dich sinnlos auf, darum eskaliert das.
+  - Weil du gestern nicht geantwortet hast, ist alles liegengeblieben.
+  - Du hast das Chaos verursacht, nicht ich.
+  - Hättest du richtig zugehört, müsste ich das nicht erklären.
+  - Selber schuld, wenn du so empfindlich bist.
+  - Wegen dir ist das Projekt ins Stocken geraten.
+  - Du bist doch derjenige, der ständig Termine verschiebt.
+  - Wenn du nicht immer so spät wärst, hätten wir das Problem nicht.
+  - Nicht meine Schuld, du hast mich nicht informiert.
+  - Wärst du früher dran gewesen, gäb's das Problem nicht.
+  - Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren.
+  negative:
+  - Das ist meine Schuld.
+  - Ich hab angefangen.
+  - Warum tu ich das?
+  - Ich bin verantwortlich.
+  - Nicht du, ich.
+  - Schuld bei mir.
+  - Ich hab es vermasselt.
+  - Mein Fehler.
+  - Warum immer ich?
+  - Verantwortung bei mir.
+  - Ich bin schuld.
+  - Angefangen hab ich.
+  - Tu ich immer.
+  - Verantwortlich ich.
+  - Nicht deine Schuld.
+  - Bei mir die Schuld.
+  - Vermasselt von mir.
+  - Fehler mein.
+  - Immer ich warum?
+  - Meine Verantwortung.
+tags:
+- schuld
+- abwälzung
+rating: 1

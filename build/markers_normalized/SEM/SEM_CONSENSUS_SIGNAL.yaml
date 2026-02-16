@@ -1,0 +1,40 @@
+id: SEM_CONSENSUS_SIGNAL
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - consensus
+  concept: Explizites Einholen/Zeigen von Konsens
+  pragmatics: Koordination
+  narrative: interaction
+patterns: []
+examples:
+  positive:
+  - Wie wirkt das? – Ich bin da.
+  - Feedback bitte – melde dich jederzeit.
+  - Kurze Rückmeldung – wir schaffen das.
+  - Spiegeln? – Du bist nicht allein.
+  - Passt das? – Ich unterstütze dich.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- consensus
+- coordination
+rating: 1
+composed_of:
+- ATO_REQUEST_FOR_FEEDBACK
+- ATO_SUPPORT_MESSAGE
+activation:
+  rule: "BOTH IN 1 message"
+scoring:
+  base: 0.55
+  weight: 1.0

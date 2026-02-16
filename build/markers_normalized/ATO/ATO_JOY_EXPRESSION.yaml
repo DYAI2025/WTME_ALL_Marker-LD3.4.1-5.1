@@ -1,0 +1,70 @@
+id: ATO_JOY_EXPRESSION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Freude
+  - erfreut
+  - glücklich
+  - Spaß
+  - lacht
+  - lächelt
+  concept: Freude/Glück ausdrücken
+  pragmatics: ''
+  narrative: positive_affect
+patterns:
+- type: regex
+  value: (?i)\b(freude|erfreut\w*|gl(ü|ue)cklich(?:ste[nmr]?|er|es|e|en)?|spa(ß|ss)\b|lach\w*|l(ä|ae)chel\w*)\b
+  flags: []
+examples:
+  positive:
+  - Ich empfinde **Freude**.
+  - Ich bin **erfreut**.
+  - Ich war **am glücklichsten**, als ...
+  - Das macht mir **Spaß**.
+  - Er **lacht** oft und **lächelt**.
+  - Ich **freue** mich sehr.
+  - Das **erfüllt** mich mit **Freude**.
+  - Ich bin richtig **glücklich**.
+  - Das macht mir **viel Spaß**.
+  - Ich könnte vor **Freude** platzen.
+  - Die Stimmung macht mich **glücklich**.
+  - Ich **lache** aus vollem Herzen.
+  - Ein **Lächeln** breitet sich aus.
+  - Ich empfinde pure **Freude** dabei.
+  - Ich bin total **erfreut** über die Nachricht.
+  - Ich war **am glücklichsten**, als wir uns kennenlernten.
+  - Das Spiel macht mir riesigen **Spaß**.
+  - Wir **lachen** zusammen und **lächeln** uns an.
+  - Ich **freue** mich wie ein kleines Kind.
+  - Das **erfüllt** mich mit tiefer **Freude**.
+  - Ich bin heute richtig **glücklich** und zufrieden.
+  - Das Tanzen macht mir unglaublichen **Spaß**.
+  - Wir **lachen** bis uns die Tränen kommen.
+  - Ich könnte vor lauter **Freude** in die Luft springen.
+  - Die gute Stimmung macht mich richtig **glücklich**.
+  - Ich **lache** vor Freude aus vollem Herzen.
+  - Ein breites **Lächeln** breitet sich über mein Gesicht aus.
+  - Die **Freude** überwältigt mich förmlich.
+  - Ich bin so **erfreut** über deinen Besuch! 😊
+  - Das war der **glücklichste** Tag meines Lebens.
+  - Kochen macht mir einfach **Spaß**.
+  - Wir **lachen** und **lächeln** den ganzen Tag.
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+  - Der **Spaßvogel** kam zu spät.
+  - Das war **glücklich** gewählt.
+  - Freude **kam nicht** auf.
+tags:
+- affect
+- joy
+rating: 1

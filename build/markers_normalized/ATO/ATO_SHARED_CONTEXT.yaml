@@ -1,0 +1,43 @@
+id: ATO_SHARED_CONTEXT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - shared_context
+  concept: Geteilter Kontext explizit genannt
+  pragmatics: Verankerung / Bezug herstellen
+  narrative: interaction
+patterns:
+- type: regex
+  value: \b(wie besprochen|wie verabredet|vom letzten mal|im kontext von|zurück zu|wie vereinbart)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Wie besprochen machen wir weiter.
+  - Wie verabredet starten wir jetzt.
+  - Vom letzten Mal weiter.
+  - Im Kontext von gestern.
+  - Zurück zur Roadmap.
+  - 'Wie vereinbart: Nächste Schritte.'
+  - 'Wie besprochen: wir priorisieren.'
+  - 'Wie verabredet: Start um 10.'
+  - 'Vom letzten Mal: Offenes klären.'
+  - Im Kontext von Q3.
+  - Zurück zur Entscheidung.
+  - 'Wie vereinbart: Budget-Review.'
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- context
+- reference
+rating: 1

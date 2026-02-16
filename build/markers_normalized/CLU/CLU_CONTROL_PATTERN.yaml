@@ -1,0 +1,71 @@
+id: CLU_CONTROL_PATTERN
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Direkte Kontrolle durch Autoritätsausübung.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Wir machen das jetzt so.
+  - Ich erwarte bis morgen ein Update.
+  - Als Vater bestimme ich, wann Schlafenszeit ist.
+  - Halt dich an die Vorgaben.
+  - Ich gebe die Richtung vor.
+  - Folge meinen Anweisungen.
+  - Kein Widerspruch.
+  - Ich entscheide.
+  - Regeln befolgen.
+  - Autoritäre Ansage.
+  negative:
+  - Lass uns besprechen.
+  - Deine Meinung zählt.
+  - Wir entscheiden zusammen.
+  - Kein Druck.
+  - Frei wählen.
+  - Autonomie respektieren.
+  - Gleichberechtigt.
+  - Keine Vorgaben.
+  - Offen für Ideen.
+  - Partnerschaftlich.
+tags: []
+rating: 1
+composed_of:
+  require:
+  - SEM_CONTROL_LEX
+  - SEM_PARENTAL_AUTHORITY
+  k_of_n:
+    k: 1
+    of: []
+window:
+  size_messages: 6
+gates:
+  min_msgs: 2
+ingredients:
+  require:
+  - SEM_CONTROL_LEX
+  - SEM_PARENTAL_AUTHORITY
+  k_of_n:
+    k: 1
+    of: []
+emits:
+  indices:
+    control: +0.2
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "control"
+  interpretant: "effect_on_state: {control: +0.2}"
+  connotation:
+  - "autorität"
+  - "pattern"
+temperature_semantics:
+  external: AUTORITÄT
+  latent: MACHT
+metadata:
+  label: Control Pattern

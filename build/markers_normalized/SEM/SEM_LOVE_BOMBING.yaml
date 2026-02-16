@@ -1,0 +1,58 @@
+id: SEM_LOVE_BOMBING
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - du bist mein ein und alles
+  - ich liebe dich mehr als alles andere
+  - ohne dich bin ich nichts
+  - ich kann nicht mehr ohne dich
+  - ich denke nur an dich
+  concept: Love Bombing
+  pragmatics: emotionale Überwältigung
+  narrative: Abhängigkeitsaufbau
+patterns: []
+examples:
+  positive:
+  - Du bist mein Ein und Alles!
+  - Ich liebe dich mehr als alles andere auf der Welt.
+  - Ohne dich kann ich nicht mehr leben.
+  - Ich denke Tag und Nacht nur an dich.
+  - Du bist das Beste, was mir je passiert ist.
+  - Mein Herz schlägt nur für dich.
+  - Keiner versteht mich so wie du.
+  - Ich will nie wieder ohne dich sein.
+  - Du bist mein Lebensinhalt.
+  - Ich kann mir ein Leben ohne dich nicht mehr vorstellen.
+  - Seit du in meinem Leben bist, gibt es nur noch Licht.
+  - Du bist das Einzige, was für mich zählt – alles andere ist egal.
+  - Ich weiß, wir kennen uns kaum, aber ich spüre, dass du mein Seelenverwandter bist.
+  - Mit dir habe ich endlich das Gefühl, vollständig zu sein.
+  - Du bist wie ein Wunder für mich – ich werde dich niemals gehen lassen.
+  - Ich habe noch nie jemanden so sehr geliebt wie dich – du bist einzigartig.
+  - Ich würde alles für dich aufgeben, sofort.
+  - Wenn du mich verlässt, bricht meine ganze Welt zusammen.
+  - Ich denke jede Sekunde an dich – du bist in meinem Kopf und meinem Herzen.
+  - Ich will dich heiraten, am liebsten sofort – du bist meine Zukunft.
+  negative:
+  - ich finde gut dich mehr als alles andere auf der Welt.
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+tags:
+- love_bombing
+- dependency
+rating: 1
+composed_of:
+- ATO_LOVE_BOMBING
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2

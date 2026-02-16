@@ -1,0 +1,42 @@
+id: SEM_TEAM_SENIORITY
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - team
+  - seniority
+  concept: team_seniority_commitment
+  pragmatics: credibility
+  narrative: team
+patterns: []
+examples:
+  positive:
+  - Unser CTO war früher bei SAP und wir sind alle Vollzeit dran.
+  - Ex-Google Engineer und das Team ist all-in.
+  - Die Gründer haben 10 Jahre Erfahrung und haben ihre Jobs gekündigt.
+  - Senior Product Lead (ex-Amazon) plus committed Co-Founder Team.
+  - Wir sind ein erfahrenes Kernteam, 100% fokussiert.
+  negative:
+  - Unser CTO war früher bei SAP und wir sind einige Vollzeit dran.
+  - Ex-Google Engineer und das Team ist some-in.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- team
+- credibility
+- seniority
+rating: 1
+composed_of:
+- ATO_TEAM_EXPERIENCE
+- ATO_COMMITMENT_PHRASE
+activation:
+  rule: "BOTH_IN_4_messages"
+scoring:
+  base: 1.0
+  weight: 1.5

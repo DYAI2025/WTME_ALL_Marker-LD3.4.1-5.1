@@ -1,0 +1,41 @@
+id: ATO_PROOF_SEEKING_BEHAVIOR
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - aktiv Beweise/Funde suchen, um Annahme zu stützen
+  concept: Beweis-/Kontrollsuche
+  pragmatics: Eskalationsrisiko
+  narrative: Bestätigungsfalle
+patterns:
+- type: regex
+  value: '(?i)\b(beweis(e)?\s+suchen|etwas\s+finden\s+wollen)\b'
+- type: regex
+  value: '(?i)\b(nach\s+belegen\s+schauen)\b'
+- type: regex
+  value: '(?i)\b(in\s+(mein|dein)\s+handy\s+schau\w*)\b'
+- type: regex
+  value: '(?i)\b(ich\s+will\s+etwas\s+bestätigt\s+sehen)\b'
+examples:
+  positive:
+  - Du willst ja etwas finden, was dir das beweist.
+  - Ich suche Belege dafür.
+  - Ich würde ins Handy schauen.
+  - Ich will bestätigt sehen, was ich vermute.
+  - Ich brauche Funde, sonst glaube ich es nicht.
+  negative:
+  - ich wuensche mir Funde, sonst glaube ich es nicht.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- proof
+- control
+- atomic
+rating: 1

@@ -1,0 +1,47 @@
+id: MEMA_GASLIGHTER
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: Archetyp des Realitätsverdrehers.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - So war das nie, du erinnerst dich falsch.
+  - Ich habe immer gesagt, dass wir das so machen.
+  - Das bildest du dir ein – objektiv war es anders.
+  - Du verdrehst mir die Worte im Mund.
+  - Du bist zu empfindlich, das ist kein echtes Problem.
+  - Erfunden.
+  - Niemals.
+  - Täuschung.
+  - Schuldumkehr.
+  - Fakten verdrehen.
+  negative:
+  - Gesagt ja.
+  - Richtig erinnern.
+  - Verstehe.
+  - Wirklich so.
+  - Ernst kein Scherz.
+  - Fakt ist.
+  - Wahrheit anerkennen.
+  - Keine Täuschung.
+  - Verantwortung.
+  - Klare Fakten.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "gaslighter"
+  interpretant: "effect_on_state: {trust: -0.2}"
+  connotation:
+  - "archetype"
+  - "gaslighting"
+metadata:
+  label: Gaslighter

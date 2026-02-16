@@ -1,0 +1,35 @@
+id: ATO_GASLIGHTING_INDICATORS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for gaslighting language indicators
+frame:
+  signal:
+  - gaslighting
+  concept: Gaslighting signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(you're crazy|you're imagining|that never happened|you're being dramatic)\\b"
+examples:
+  positive:
+  - You're crazy if you think that.
+  - You're imagining things.
+  - That never happened.
+  - You're being dramatic.
+  - You're making this up.
+  negative:
+  - That rarely happened.
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

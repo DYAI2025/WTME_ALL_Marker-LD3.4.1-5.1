@@ -1,0 +1,30 @@
+id: ATO_DELAY_WORD
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Aufschub
+  pragmatics: Prokrastination
+  narrative: surface
+patterns: []
+examples:
+  positive:
+  - mach ich heute noch … vielleicht morgen
+  - ich verspreche … doch erst später
+  - bin dran … aber keine Zeit
+  - gleich … nach dem Meeting
+  - heute fix … oder morgen
+  negative:
+  - bin dran … aber wenige Zeit
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags: []
+rating: 2

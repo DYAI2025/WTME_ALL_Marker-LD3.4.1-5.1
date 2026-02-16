@@ -1,0 +1,50 @@
+id: SEM_PERFORMATIVE_HELPLESSNESS
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Stilisierte Hilflosigkeit + Appell
+  concept: Performative Hilflosigkeit
+  pragmatics: Caregiver-Zwang
+  narrative: guilt_neediness_bind
+patterns: []
+examples:
+  positive:
+  - Ohne dich schaffe ich das nicht – ich dachte, du wärst für mich da.
+  - Ich kann das nicht allein, du lässt mich doch nicht im Stich, oder?
+  - Allein krieg ich das nicht hin, ich hätte da auf dich gezählt.
+  - Ohne dich geht es nicht, ich dachte immer, du bist an meiner Seite.
+  - Ich schaffe das nicht, du lässt mich gerade völlig allein.
+  - Bin völlig hilflos ohne dich, dachte du stehst zu mir.
+  - Kann das unmöglich allein, du lässt mich hängen.
+  - Ohne deine Hilfe bin ich aufgeschmissen, ich zählte auf dich.
+  - Allein schaffe ich das nicht, du wendest dich von mir ab.
+  - Ich brauche dich, sonst klappt das nicht – dachte, ich kann mich auf dich verlassen.
+  negative:
+  - Ohne dich geht es nicht, ich dachte manchmal, du bist an meiner Seite.
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+tags:
+- sem
+- neediness
+- guilt_pressure
+rating: 1
+composed_of:
+- ATO_HELPLESSNESS_DEPENDENCY
+- ATO_GUILT_APPEAL_SUPPORT
+activation:
+  rule: "ANY 2 IN 30 messages"
+scoring:
+  base: 3.1
+  weight: 0.9
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 30

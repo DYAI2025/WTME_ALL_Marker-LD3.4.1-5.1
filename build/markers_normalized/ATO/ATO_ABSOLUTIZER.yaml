@@ -1,0 +1,63 @@
+id: ATO_ABSOLUTIZER
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Absolutisierer markieren rigide, polarisierende Aussagen.
+frame:
+  signal:
+  - immer
+  - nie
+  - ständig
+  - auf jeden Fall
+  concept: Absolutheit / Polarisierung
+  pragmatics: Diskussion schließen, Deutungshoheit beanspruchen
+  narrative: Schwarz-Weiß-Rahmung
+patterns:
+- type: regex
+  value: '(?i)\bimmer\b'
+- type: regex
+  value: '(?i)\bnie\b'
+- type: regex
+  value: '(?i)\bständig\b'
+- type: regex
+  value: '(?i)\bauf\s+jeden\s+fall\b'
+examples:
+  positive:
+  - Du kommst immer zu spät.
+  - Das hat nie funktioniert.
+  - Er meckert ständig.
+  - Auf jeden Fall machen wir das so.
+  - Ich bin immer der Dumme, echt.
+  - Nie hört hier jemand zu.
+  - Wir gewinnen immer, ohne Ausnahme.
+  - Das ist auf jeden Fall falsch.
+  - Du bist nie für mich da.
+  - Das ist immer dasselbe mit dir.
+  - Ich habe ständig das Gefühl, gegen eine Wand zu reden.
+  - Wir müssen das auf jeden Fall heute klären.
+  - Es gibt nie eine einfache Lösung.
+  negative:
+  - Du kommst manchmal zu spät.
+  - Das hat selten funktioniert.
+  - Er meckert ab und zu.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- atomic
+- absolutizer
+- text
+rating: 1
+metadata:
+  repair_log:
+  - rule: "R09"
+    note: "Frame vervollständigt"
+    date: "2025-08-29"
+  - rule: "R10"
+    note: "ATO-Default aktiviert"
+    date: "2025-08-29"
+  - rule: "R08"
+    note: "Beispiele ergänzt"
+    date: "2025-08-29"

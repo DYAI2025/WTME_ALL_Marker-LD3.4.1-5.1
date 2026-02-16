@@ -1,0 +1,65 @@
+id: ATO_CRITICISM_ATTACK_MARKER
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Persönliche Angriffe oder harte Kritik
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: regex
+  value: "(du bist immer so|das ist typisch für dich|du machst alles falsch|unfähig|idiotisch)"
+examples:
+  positive:
+  - Du bist immer so.
+  - Das ist typisch für dich.
+  - Du machst alles falsch.
+  - Unfähig!
+  - Idiotisch von dir.
+  - Immer dein Fehler.
+  - Typisch dumm.
+  - Alles falsch machen.
+  - Voll unfähig.
+  - Idiotischer Move.
+  - So bist du immer.
+  - Typisch du.
+  - Falsch total.
+  - Unfähigkeit pur.
+  - Idiotisch handeln.
+  - Fehler immer dein.
+  - Dumm typisch.
+  - Machen falsch alles.
+  - Pur unfähig.
+  - Move idiotisch.
+  negative:
+  - Du bist super.
+  - Das ist gut für dich.
+  - Du machst alles richtig.
+  - Fähig!
+  - Klug von dir.
+  - Nie dein Fehler.
+  - Nicht dumm.
+  - Alles richtig machen.
+  - Voll fähig.
+  - Kluger Move.
+  - So bist du toll.
+  - Nicht typisch.
+  - Richtig total.
+  - Fähigkeit pur.
+  - Klug handeln.
+  - Fehler nicht dein.
+  - Machen richtig alles.
+  - Pur fähig.
+  - Move klug.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "criticism_attack"
+  interpretant: "effect_on_state: {conflict: +0.25, trust: -0.2}"
+metadata:
+  label: Kritik-Attacke

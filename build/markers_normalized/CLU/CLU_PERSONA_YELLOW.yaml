@@ -1,0 +1,46 @@
+id: CLU_PERSONA_YELLOW
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - persona
+  - aggregation
+  concept: Spiral/Value-Persona YELLOW (indikativ, nicht beweisend)
+  pragmatics: schnelles Screening, evidenzbasiert
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - <Muster>
+  - <System>
+  - <Kontextwechsel>
+  - <Trade-off>
+  - <Hebel>
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- persona
+- YELLOW
+- screening
+rating: 1
+composed_of:
+- SEM_SYSTEMS_THINKING
+- SEM_CONTEXT_SWITCH
+- SEM_TRADEOFF_LANGUAGE
+activation:
+  rule: "AT_LEAST 2 IN 6 messages"
+scoring:
+  base: 1.0
+  weight: 1.0
+metadata:
+  persona:
+    evidence_policy: "family-scoped"

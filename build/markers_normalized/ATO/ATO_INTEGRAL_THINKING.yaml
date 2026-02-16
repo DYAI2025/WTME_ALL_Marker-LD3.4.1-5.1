@@ -1,0 +1,34 @@
+id: ATO_INTEGRAL_THINKING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: ''
+frame:
+  signal:
+  - Systemisches, integrales Denken
+  concept: Gelb-Level flexibles Verstehen
+  pragmatics: Erkennt Meta-Perspektiven
+  narrative: Alles ist miteinander verwoben
+patterns:
+- type: regex
+  value: "\\b(system|integral|flexibel|paradox|komplex|emergent|adaptiv|perspektive)\\b"
+examples:
+  positive:
+  - systemisches Denken
+  - integrale Sichtweise
+  - flexible Anpassung
+  - komplexe Zusammenhänge
+  - emergente Eigenschaften
+  - Rekurrenter Aufmerksamkeit
+  - Silence-Aware Loss Functions
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1

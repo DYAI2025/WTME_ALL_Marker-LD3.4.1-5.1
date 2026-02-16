@@ -1,0 +1,40 @@
+id: CLU_SPIRAL_PERSONA_BLAU
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - Blau Spiral Persona strukturiert
+  concept: Ordnungs-orientierte Persönlichkeitsstruktur
+  pragmatics: Systematische Organisationsmuster
+  narrative: Das Systemselbst etabliert Ordnung
+patterns: []
+examples:
+  positive:
+  - Ordnungspersona manifestiert vollständig
+  - systematische Strukturierung
+  - hierarchische Organisationsmuster
+  - Regelsystem etabliert
+  - disziplinierte Durchführung
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 2
+composed_of:
+- SEM_BLAU_ORDER_ACTIVATION
+- ATO_ORDER_STRUCTURE
+activation:
+  rule: "AT_LEAST 3 IN 6 messages"
+  window_size: 6
+  threshold: 3
+scoring:
+  weight: 1.0
+  decay: 0.6

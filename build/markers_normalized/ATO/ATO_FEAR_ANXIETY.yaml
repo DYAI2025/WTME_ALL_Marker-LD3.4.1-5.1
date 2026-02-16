@@ -1,0 +1,105 @@
+id: ATO_FEAR_ANXIETY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Atomic marker for fear, anxiety, and worry expressions
+frame:
+  signal:
+  - angst
+  - furcht
+  - sorge
+  - ängstlich
+  - fear
+  - anxiety
+  concept: Negative emotional valence - fear and anxiety
+  pragmatics: Expression of fear and worry
+  narrative: emotional_expression
+patterns:
+- type: regex
+  value: '(?i)\b(angst|ängstlich|verängstigt)\b'
+- type: regex
+  value: '(?i)\b(furcht|fürchten|furchtsam)\b'
+- type: regex
+  value: '(?i)\b(sorge|sorgen|besorgt)\b'
+- type: regex
+  value: '(?i)\b(fear|afraid|scared|anxious)\b'
+- type: regex
+  value: '(?i)\b(panik|panisch|panikanfall)\b'
+- type: regex
+  value: '(?i)\b(nervös|nervosität|aufgeregt)\b'
+- type: regex
+  value: '(?i)\b(beunruhigt|unruhig|bange)\b'
+examples:
+  positive:
+  - Ich habe Angst vor dem, was kommt.
+  - Die Sorge lässt mich nicht schlafen.
+  - Ich bin so nervös und aufgeregt.
+  - Diese Situation macht mir große Furcht.
+  - Ich fühle mich ängstlich und unsicher.
+  - Die Angst schnürt mir die Kehle zu.
+  - Ich bin besorgt um deine Gesundheit.
+  - Panik steigt in mir auf.
+  - Ich bin so scared vor dieser Prüfung.
+  - Mein Herz rast vor Angst.
+  - Ich fühle mich total anxious heute.
+  - Die Furcht lähmt mich.
+  - Ich bin voller Sorge und Unruhe.
+  - Diese Ungewissheit macht mir Angst.
+  - Ich bin panisch vor Angst.
+  - Meine Nervosität wächst ständig.
+  - Ich fühle mich beunruhigt und bange.
+  - Die Angst sitzt mir im Nacken.
+  - Ich bin so afraid, dass etwas schiefgeht.
+  - Meine Sorgen werden immer größer.
+  - Ich bin verängstigt und zittere.
+  - Die Furcht vor dem Unbekannten quält mich.
+  - Ich bin total nervös und kann nicht stillsitzen.
+  - Diese Angst ist überwältigend.
+  - Ich fühle mich furchtsam und klein.
+  - Die Panik übermannt mich manchmal.
+  - Ich bin so besorgt, dass ich nicht denken kann.
+  - Mein Herz klopft vor Angst bis zum Hals.
+  - Ich bin voller Unruhe und Bange.
+  - Die Angst frisst mich innerlich auf.
+  - Ich bin scared to death vor dieser Situation.
+  - Meine Nervosität ist kaum zu kontrollieren.
+  - Ich fühle eine lähmende Furcht.
+  - Die Sorge um die Zukunft belastet mich.
+  - Ich bin panisch und weiß nicht weiter.
+  - Meine Angst ist irrational aber real.
+  - Ich fühle mich ängstlich und verletzlich.
+  - Die Furcht lässt mich nicht los.
+  - Ich bin so anxious, dass ich zittere.
+  - Meine Sorgen kreisen ständig im Kopf.
+  - Ich bin beunruhigt über diese Entwicklung.
+  - Die Angst macht mich handlungsunfähig.
+  - Ich fühle mich verängstigt und allein.
+  - Mein Herz schlägt wild vor Furcht.
+  - Ich bin so nervös, dass mir schlecht wird.
+  - Die Panik lässt mich nicht atmen.
+  - Ich bin voller Angst und Zweifel.
+  - Diese Ungewissheit beunruhigt mich sehr.
+  - Ich fühle eine tiefe, dunkle Furcht.
+  - Meine Angst vor dem Versagen ist groß.
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- atomic
+- emotion
+- negative
+- fear
+- anxiety
+- worry
+- v3.4
+rating: 1
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for fear and anxiety"

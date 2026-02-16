@@ -1,0 +1,68 @@
+id: MEMA_COEXISTENCE_PROTOCOL
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: 'Meta-Zustand: funktionale Koexistenz mit affektarmer, stabiler Zusammenarbeit'
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Ok. Termin 14:00 passt. Ich sende die Datei.
+  - Wie vereinbart sende ich das Protokoll.
+  - Bitte im Rahmen bleiben. Scope ist fix.
+  - Ticket erstellt. Frist bestätigt.
+  - Danke. Erledigt.
+  - 'Nächster Punkt: Freigabe.'
+  - 'Zurück zum Thema: Angebot.'
+  - Ich übernehme Versand, du die Rechnung.
+  - Statusupdate täglich 17:00.
+  - Abnahme am Freitag.
+  - Agenda einhalten.
+  - Review planen.
+  - Budget checken.
+  - Milestone setzen.
+  - Update teilen.
+  - Freigabe geben.
+  - Prozess folgen.
+  - Abnahme machen.
+  - Notiz nehmen.
+  - Status updaten.
+  negative:
+  - Ich entschuldige mich für vorhin.
+  - Ich vermisse dich.
+  - Das macht mich wütend.
+  - Haha, witzig 😅
+  - ❤️
+  - Lass uns kuscheln.
+  - Das tat weh.
+  - Feiern wir das? 🎉
+  - Bitte verzeih mir.
+  - Ich bin traurig.
+  - Lass uns reden.
+  - Das triggert mich.
+  - Mehr Empathie.
+  - Lass uns fühlen.
+  - Ich teile Gefühle.
+  - Bleib beim Emotionalen.
+  - Das fühlt sich an.
+  - Erzähl von dir.
+  - Ich liebe das.
+  - Traurig heute.
+  - Feiern wir?
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "coexistence_state"
+  interpretant: "effect_on_state: {sync: +0.1, deesc: -0.05}"
+  connotation:
+  - "koexistenz"
+  - "protokoll"
+metadata:
+  label: Koexistenz-Protokoll

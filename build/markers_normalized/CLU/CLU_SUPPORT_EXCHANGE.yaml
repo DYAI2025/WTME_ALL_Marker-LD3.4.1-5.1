@@ -1,0 +1,38 @@
+id: CLU_SUPPORT_EXCHANGE
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - cluster
+  concept: Unterstützungs-Austausch
+  pragmatics: Ressourcen
+  narrative: window
+patterns: []
+examples:
+  positive:
+  - ich bin da für dich … wir schaffen das
+  - danke dir … fühl mich gesehen
+  - gemeinsam kriegen wir das hin
+  - du kannst dich auf mich verlassen
+  - ich hör dir zu … okay?
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags: []
+rating: 1
+composed_of:
+- SEM_SUPPORT_VALIDATION
+- SEM_TRUST_SIGNALING
+activation:
+  rule: "AT_LEAST 3 IN 7 messages"
+scoring:
+  base: 1.0
+  weight: 1.0

@@ -1,0 +1,63 @@
+id: ATO_CORPORATE_DOUBLESPEAK
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Erkennung von typischen Begriffen und Phrasen der Unternehmenssprache, die oft zur Verschleierung von Inhalten oder zur Abstraktion verwendet werden.
+frame:
+  signal:
+  - synergie
+  - skalieren
+  - leverage
+  - alignment
+  concept: Unternehmenssprache
+  pragmatics: Verschleierung durch Abstraktion
+  narrative: corporate
+patterns:
+- type: regex
+  value: "(?i)\\b(synergie.?effekte?|synergien)\\b"
+- type: regex
+  value: "(?i)\\b(skalier(en|bar|ung))\\b"
+- type: regex
+  value: "(?i)\\b(leverage|hebel.?wirkung)\\b"
+- type: regex
+  value: "(?i)\\b(alignment|aligned)\\b"
+- type: regex
+  value: "(?i)\\b(low.?hanging.?fruits?)\\b"
+examples:
+  positive:
+  - Wir müssen die Synergieeffekte nutzen
+  - Das lässt sich gut skalieren
+  - Wir sollten unsere Assets leveragen
+  - Sind alle aligned bei diesem Thema?
+  - Lasst uns die low-hanging fruits ernten
+  - Wir müssen die Stakeholder ins Boot holen
+  - Das ist ein Game Changer für unsere Strategie
+  - Wir müssen die KPIs im Blick behalten
+  - Das ist ein Paradigmenwechsel
+  - Wir sollten die Roadmap anpassen
+  - Wir müssen die Vision klar kommunizieren
+  - Das ist ein Win-Win-Szenario
+  - Wir müssen die Effizienz steigern
+  - Das ist ein Best Practice Beispiel
+  - Wir sollten die Value Proposition klarstellen
+  - Das ist ein Thought Leader in der Branche
+  - Wir müssen die Stakeholder-Engagement erhöhen
+  - Das ist ein Disruptor im Markt
+  - Wir sollten die Customer Journey optimieren
+  - Das ist ein Core Competency für uns
+  - Wir müssen die Pain Points adressieren
+  negative:
+  - Sind einige aligned bei diesem Thema?
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- atomic
+- corporate
+- business
+- sprache
+rating: 1

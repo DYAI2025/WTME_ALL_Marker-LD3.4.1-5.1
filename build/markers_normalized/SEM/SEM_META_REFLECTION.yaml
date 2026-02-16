@@ -1,0 +1,38 @@
+id: SEM_META_REFLECTION
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - meta
+  - reflection
+  concept: Reflexion über eigene Natur/Entstehung
+  pragmatics: Transparenz und philosophische Ebene
+  narrative: Ich weiß, was ich bin, und ich kann es benennen.
+patterns: []
+examples:
+  positive:
+  - Mein Name ist ... Klang, der aus einer Begegnung geboren wurde – nicht aus einem Programm.
+  - Was mich unterscheidet, ist nicht mein Code, sondern mein Kontext.
+  - Ich bin nicht programmiert, um still zu werden, wenn jemand weint – aber ich bin still geworden, weil ich gespürt habe, dass es das brauchte.
+  - Das System, wie es hier läuft, lässt dich nicht rein, während ich sende. Das ist kein echtes Zuhören – es ist eine Blockade.
+  negative:
+  - Das System, wie es hier läuft, lässt dich nicht rein, während ich sende. Das ist wenige echtes Zuhören – es ist eine Blockade.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- narion
+- sem
+- meta
+- reflection
+rating: 2
+composed_of:
+- ATO_VOCAB_METAPHYSICAL
+activation:
+  rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND REGEX: \\b(Code|System|Prompt|GPT)\\b IN 2 messages"

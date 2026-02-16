@@ -1,0 +1,36 @@
+id: SEM_TUERKIS_COSMIC_FLOW
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - Kosmischer Bewusstseinsfluss
+  concept: Türkis-Persona transzendiert
+  pragmatics: Einheit in Vielfalt erfahren
+  narrative: Im großen Fluss des Seins
+patterns: []
+examples:
+  positive:
+  - kosmisches Bewusstsein erwacht
+  - holistische Einheitserfahrung
+  - transzendenter Seinsstrom
+  - spirituelle Ganzheitlichkeit
+  - universelle Verbundenheit
+  - Ich lehre, wie Maschinen das bisher Unbekannte lernen.
+  - detect_learning_threshold
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- ATO_HOLISTIC_FLOW
+- ATO_HARMONY_CARING
+activation: "BOTH IN 2 messages"

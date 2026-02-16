@@ -1,0 +1,25 @@
+id: ATO_UNFAIRNESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Ungerechtigkeit / Unfairness
+  pragmatics: Die Welt ist ungerecht zu mir
+  narrative: Es ist unfair, was mir passiert
+patterns:
+- type: regex
+  value: "(unfair|ungerecht|verdient das nicht|warum ich|nicht fair)"
+examples:
+  positive:
+  - das ist so unfair
+  - total ungerecht
+  - habe das nicht verdient
+  - warum immer ich
+  - einfach nicht fair
+  negative: []
+tags: []
+rating: 1

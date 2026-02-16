@@ -1,0 +1,41 @@
+id: ATO_COMPETITIVE_FRAME
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - competition
+  concept: Vergleich/Gewinnen als Bezugsrahmen
+  pragmatics: Leistungs-/Rangordnung
+  narrative: motive_achievement
+patterns:
+- type: regex
+  value: (?i)\b(gewinnen|gewinn(e|en)|wettbewerb|besser\s+als\s+(alle|andere)|(?:alle|andere)\s+schlagen|übertreffen|uebertreffen)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Ich will gewinnen.
+  - Im Wettbewerb setze ich mich durch.
+  - Ich bin besser als alle anderen.
+  - Wir schlagen die Konkurrenz.
+  - Ich will sie übertreffen.
+  - 'Vergleich: Wir liegen vorn.'
+  - Ich will der Schnellste sein.
+  - Ich will die anderen hinter mir lassen.
+  - Ich strebe den Sieg an.
+  - Wir wollen Platz 1 erreichen.
+  negative:
+  - Ich bin besser als einige anderen.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- competition
+- ranking
+rating: 1

@@ -1,0 +1,25 @@
+id: ATO_COURAGE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Mut / Tapferkeit
+  pragmatics: Bereitschaft zur Konfrontation
+  narrative: Ich stelle mich der Herausforderung
+patterns:
+- type: regex
+  value: "(mutig|tapfer|stell mich|kämpfe|wage es)"
+examples:
+  positive:
+  - ich bin mutig genug
+  - ich stelle mich dem
+  - ich kämpfe dafür
+  - ich wage es
+  - tapfer vorangehen
+  negative: []
+tags: []
+rating: 1

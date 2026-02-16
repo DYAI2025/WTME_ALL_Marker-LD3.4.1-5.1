@@ -1,0 +1,47 @@
+id: SEM_REPAIR_SEQUENCE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - repair_sequence
+  concept: Explizite Repair-Abfolge
+  pragmatics: Wiedergutmachung / Alignment
+  narrative: repair
+patterns: []
+examples:
+  positive:
+  - Tut mir leid. – Gesehen. – Einverstanden.
+  - Sorry. – Zur Kenntnis. – Passt.
+  - Entschuldige. – Ok, hab’s. – Genau.
+  - Mein Fehler. – Notiert. – Richtig, so machen wir’s.
+  - Es tut mir leid. – Verstanden. – Passt für mich.
+  - Es tut mir leid. – Zur Kenntnis. – Passt.
+  - Sorry. – Gesehen. – Einverstanden.
+  - Entschuldige. – Verstanden. – Genau so.
+  - Mein Fehler. – Ok. – Richtig.
+  - Tut mir leid. – Notiert. – Passt für mich.
+  negative:
+  - Can you pass the salt?
+  - The meeting is at 2 PM.
+  - I went shopping yesterday.
+  - The weather should be better tomorrow.
+  - Did you read the email?
+  - I need to get gas.
+  - The meeting is in the conference room.
+tags:
+- repair
+rating: 1
+composed_of:
+  sequence_any:
+  - ATO_APOLOGY
+  - ATO_ACKNOWLEDGE
+  - ATO_CONFIRM
+activation:
+  rule: "SEQUENCE IN 3 messages"
+  window: 3
+scoring:
+  base: 0.65
+  weight: 1.05

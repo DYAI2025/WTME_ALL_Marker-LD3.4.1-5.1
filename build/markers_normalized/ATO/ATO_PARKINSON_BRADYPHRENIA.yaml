@@ -1,0 +1,34 @@
+id: ATO_PARKINSON_BRADYPHRENIA
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for bradyphrenia in Parkinson's disease
+frame:
+  signal:
+  - bradyphrenia
+  concept: Slowed cognitive processing
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: (?i)\b(just|only|simply|briefly|slowly)\b
+examples:
+  positive:
+  - Just yes.
+  - Only no.
+  - Simply okay.
+  - Briefly, fine.
+  - Slowly, stop.
+  negative:
+  - Yes, I agree completely.
+  - No, that's not right.
+  - Okay, let's proceed.
+  - Fine, thank you.
+  - Stop immediately.
+tags:
+- atomic
+- v3.4
+- diagnostic
+- neuropsychological
+rating: 1

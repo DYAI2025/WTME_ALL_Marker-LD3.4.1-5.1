@@ -1,0 +1,38 @@
+id: CLU_GOALPOST_SHIFT
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - cluster
+  concept: Goalpost-Shift
+  pragmatics: Kriteriumswechsel
+  narrative: window
+patterns: []
+examples:
+  positive:
+  - früher war mir Sicherheit wichtig … jetzt Freiheit
+  - habe meine Prioritäten geändert
+  - erst Leistung … nun Gemeinschaft
+  - ich sehe das heute anders
+  - Werte neu sortiert
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- SEM_SD_ORANGE_ACHIEVE
+- SEM_UNCERTAINTY_TONING
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages"
+scoring:
+  base: 1.0
+  weight: 1.1

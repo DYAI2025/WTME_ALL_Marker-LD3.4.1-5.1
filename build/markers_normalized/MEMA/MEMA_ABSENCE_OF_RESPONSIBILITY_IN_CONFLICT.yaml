@@ -1,0 +1,58 @@
+id: MEMA_ABSENCE_OF_RESPONSIBILITY_IN_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Konflikt ohne Verantwortungsübernahme
+  concept: 'Omission: Keine klaren Commitments oder Accountability'
+  pragmatics: Hinweis auf Schuldverschiebung
+  narrative: blame_loop
+patterns: []
+examples:
+  positive:
+  - "A: Du hast den Rollout ohne Tests freigegeben.\nB: Du hast das Formular nicht geprüft.\nA: Du schiebst alles auf Operations.\nB: Du hast das ganze Ding ja angezettelt."
+  - "A: Du hast das Budget gesperrt.\nB: Du hast die Freigabe nie angefordert.\nA: Du verweist auf Compliance.\nB: Du drückst mir die Eskalation rein."
+  - "A: Du hast das Team gestern alleine stehen lassen.\nB: Du warst genauso nicht erreichbar.\nA: Du hebst die Hände.\nB: Du tust so, als sei das nicht dein Bereich."
+  - "A: Du hast keinerlei Update in Jira geschrieben.\nB: Du hast die Stories nicht sauber geschnitten.\nA: Du ignorierst unsere Hinweise.\nB: Du bist genauso mit schuld."
+  - "A: Du hast den Kundenversprechen zugestimmt.\nB: Du warst im Call dabei.\nA: Du schickst mich jetzt in die Schusslinie.\nB: Du hättest halt widersprechen können."
+  - "A: Du hast wieder jeden Alarm stummgeschaltet.\nB: Du hast den Dienstplan gerafft.\nA: Du willst nur sauber rauskommen.\nB: Du hättest das Monitoring konfigurieren müssen."
+  - "A: Du hast den Vertrag falsch gelesen.\nB: Du hast die Klauseln unterschrieben.\nA: Du verschweigst das Board-Briefing.\nB: Du ziehst dich jetzt fein raus."
+  - "A: Du hast die Übergabe nicht dokumentiert.\nB: Du hast sämtliche Infos in deinem Kopf behalten.\nA: Du rufst es jetzt als meine Pflicht aus.\nB: Du suchst nur jemanden zum Abwälzen."
+  - "A: Du hast die Schicht getauscht, ohne zu fragen.\nB: Du hast keinen Vertreter benannt.\nA: Du willst alles an die Hotline abtreten.\nB: Du bist doch genau so Teil des Problems."
+  - "A: Du hast den Fehler nicht kommuniziert.\nB: Du hast das Ticket geschlossen.\nA: Du tust so, als wäre es mein System.\nB: Du hättest dich selbst darum kümmern können."
+  negative:
+  - "A: Du hast das Budget gesperrt.\nB: Du hast die Freigabe selten angefordert.\nA: Du verweist auf Compliance.\nB: Du drückst mir die Eskalation rein."
+  - "A: Du hast wenige Update in Jira geschrieben.\nB: Du hast die Stories nicht sauber geschnitten.\nA: Du ignorierst unsere Hinweise.\nB: Du bist genauso mit schuld."
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- meta
+- absence
+- conflict
+- accountability
+rating: 1
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+absence_sets:
+  RESPONSIBILITY:
+    tags:
+    - responsibility
+    - commitment
+    ids:
+    - ATO_COMMITMENT
+    - SEM_ACCOUNTABILITY
+emit:
+  per_speaker: true

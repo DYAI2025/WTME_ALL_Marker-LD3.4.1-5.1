@@ -1,0 +1,73 @@
+id: CLU_REPAIR_FLOW
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Sequenz zur Reparatur von Konflikten.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Lass uns das klären.
+  - Wie können wir das lösen?
+  - Ich bin für dich da – wir schaffen das.
+  - Okay, confirm – ich mach’s zu.
+  - Bestätigt – wir schließen diesen Punkt.
+  - Entschuldige, lass reden.
+  - 'Support: Bei dir.'
+  - 'Abschluss: Ok.'
+  - Klärung einleiten.
+  - Empathie zeigen.
+  negative:
+  - Ignorier das.
+  - Kein Bedarf.
+  - Weiterkämpfen.
+  - Kein Repair.
+  - Eskalieren.
+  - Vorwurf machen.
+  - Defensiv bleiben.
+  - Schweigen.
+  - Abbrechen.
+  - Konflikt halten.
+tags: []
+rating: 1
+composed_of:
+  require:
+  - ATO_REPAIR_REQUEST
+  - CLU_EMOTIONAL_SUPPORT
+  - SEM_CLOSURE_PROTOCOL
+  k_of_n:
+    k: 2
+    of: []
+window:
+  size_messages: 5
+gates:
+  min_msgs: 2
+ingredients:
+  require:
+  - ATO_REPAIR_REQUEST
+  - CLU_EMOTIONAL_SUPPORT
+  - SEM_CLOSURE_PROTOCOL
+  k_of_n:
+    k: 2
+    of: []
+emits:
+  indices:
+    deesc: +0.3
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "repair"
+  interpretant: "effect_on_state: {deesc: +0.3}"
+  connotation:
+  - "flow"
+  - "deeskalation"
+temperature_semantics:
+  external: DEESCALATION
+  latent: EMPATHIE
+metadata:
+  label: Repair Flow

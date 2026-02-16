@@ -1,0 +1,27 @@
+id: ATO_SPEECH_RATE_VARIATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - (Spricht sehr schnell, dann plötzlich sehr langsam)
+  - (Wechselt abrupt zwischen schnellem und langsamem Sprechen)
+  - (Beschleunigt die Sprechgeschwindigkeit bei Aufregung)
+  - (Verlangsamt die Sprechgeschwindigkeit bei Nachdenklichkeit)
+  - (Spricht in kurzen, abgehackten Sätzen, dann in langen, fließenden)
+  - (Variiert die Sprechgeschwindigkeit, um Emotionen auszudrücken)
+  - (Spricht mit unterschiedlichem Tempo, um Spannung aufzubauen)
+  - (Passt die Sprechgeschwindigkeit an den Inhalt an)
+  - (Spricht mal stockend, mal flüssig)
+  - (Wechselt zwischen schnellem und bedächtigem Sprechen)
+  negative: []
+tags: []
+rating: 1

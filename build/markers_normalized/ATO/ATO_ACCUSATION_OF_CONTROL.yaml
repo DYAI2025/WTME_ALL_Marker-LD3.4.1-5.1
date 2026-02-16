@@ -1,0 +1,52 @@
+id: ATO_ACCUSATION_OF_CONTROL
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Kontroll-/Manipulationsvorwurf
+  concept: Macht-/Kontrollzuschreibung
+  pragmatics: Negatives Intent unterstellen
+  narrative: Kontrollnarrativ
+patterns:
+- type: regex
+  value: '(?i)\bkontrollier\w*\b'
+- type: regex
+  value: '(?i)\bkontrollzwang\b'
+- type: regex
+  value: '(?i)\bversuchst?\s+.*\s+zu\s+kontrollier\w*\b'
+- type: regex
+  value: '(?i)\b(manipulier\w*|manipulation)\b'
+- type: regex
+  value: '(?i)\bbevormund\w*\b'
+- type: regex
+  value: '(?i)\bdu\s+verunsicherst\s+mich\s+absichtlich\b'
+examples:
+  positive:
+  - Du versuchst mich zu kontrollieren.
+  - Das ist Manipulation.
+  - Ich fühle mich bevormundet.
+  - Du kontrollierst, was ich sagen darf.
+  - Das wirkt wie Kontrollzwang.
+  - Ich erlebe das als manipulativ.
+  - Es fühlt sich an, als wolltest du mich steuern.
+  - Hör auf, mich so zu bevormunden.
+  - Das ist ein klarer Versuch der Manipulation.
+  - Du willst immer alles kontrollieren.
+  - Ich lasse mich nicht von dir manipulieren.
+  - Dein Kontrollzwang engt mich ein.
+  negative:
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+  - Danke, dass du mir das sagst. Ich denke darueber nach.
+tags:
+- accusation
+- control
+- atomic
+rating: 1

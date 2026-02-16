@@ -1,0 +1,49 @@
+id: MEMA_ABSENCE_OF_DEROGATION_IN_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Konflikt ohne Beleidigungen
+  concept: 'Omission: Derogation fehlt'
+  pragmatics: Selbstregulation im Streit
+  narrative: controlled_deescalation
+patterns: []
+examples:
+  positive:
+  - "A: Du hast gestern wieder nicht geschrieben.\nB: Ich war überfordert, es tut mir leid.\nA: So geht das nicht weiter.\nB: Lass uns das heute in Ruhe klären."
+  - "A: Ich habe das Gefühl, du hörst mir nicht zu.\nB: Ich verstehe, dass dich das verletzt.\nA: Ich brauche mehr Verlässlichkeit.\nB: Okay, ich kann das anpassen."
+  - "A: Warum kommst du immer zu spät?\nB: Mein Fehler, ich plane schlecht.\nA: Dann sag wenigstens vorher Bescheid.\nB: Mache ich."
+  - "A: Du hast die Abmachung gebrochen.\nB: Stimmt, das war nicht okay.\nA: Bitte nimm das ernst.\nB: Ja, ich übernehme Verantwortung."
+  - "A: Das fühlt sich unfair an.\nB: Danke, dass du es sagst.\nA: Ich will verstehen, was bei dir los ist.\nB: Ich erklär's dir gern."
+  negative:
+  - "A: Ich habe das Gefühl, du hörst mir nicht zu.\nB: Ich verstehe, dass dich das verletzt.\nA: ich wuensche mir mehr Verlässlichkeit.\nB: Okay, ich kann das anpassen."
+  - "A: Warum kommst du manchmal zu spät?\nB: Mein Fehler, ich plane schlecht.\nA: Dann sag wenigstens vorher Bescheid.\nB: Mache ich."
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- mema
+- omission
+- deeskalation
+- positiv
+rating: 1
+activation:
+  rule: "CONFLICT_WINDOW_END"
+scoring:
+  base: 2.2
+  weight: 0.6
+  decay: 0.0
+  formula: "linear"
+window:
+  messages: 30
+detect_class: "absence_meta"
+criteria:
+  target_set: "derogation"
+  window_messages: 30
+  min_E_hits: 3
+  strict_zero: true

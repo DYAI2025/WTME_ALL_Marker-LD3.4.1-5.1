@@ -1,0 +1,41 @@
+id: CLU_DESTRUCTIVE_SELF_PROTECTION_MARKER
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - kann nicht mehr
+  - tut mir leid
+  - bin fertig
+  concept: Negative Emotion
+  pragmatics: Leid ausdrücken
+  narrative: sadness
+patterns: []
+examples:
+  positive:
+  - Ich hab nie gesagt, dass ich das verspreche – du hast das einfach so angenommen.
+  - Also wenn du denkst, dass das alles meine Schuld ist, dann… okay.
+  - Du hast mich in diese Situation gebracht – ich hatte keine Wahl.
+  - Jetzt verdrehst du mir wieder das Wort im Mund.
+  - Du willst immer, dass ich perfekt bin – das ist nicht fair.
+  negative:
+  - Ich hab selten gesagt, dass ich das verspreche – du hast das einfach so angenommen.
+  - Du hast mich in diese Situation gebracht – ich hatte wenige Wahl.
+  - ich habe mich in diese Situation gebracht – ich hatte keine Wahl.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- affect
+- emotion
+rating: 1
+composed_of:
+- SEM_GENERIC_PATTERN
+activation:
+  rule: AT_LEAST 2 IN 5 messages
+scoring:
+  base: 1.5
+  weight: 1.2

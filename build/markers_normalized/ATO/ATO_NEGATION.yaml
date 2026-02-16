@@ -1,0 +1,37 @@
+id: ATO_NEGATION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - negation
+  concept: Verneinung / Ablehnung
+  pragmatics: Grenze / Abgrenzung
+  narrative: interaction
+patterns:
+- type: regex
+  value: \b(nein|nicht|keinesfalls|auf keinen fall|stimmt nicht)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Nein.
+  - Das stimmt nicht.
+  - Keinesfalls.
+  - Auf keinen Fall.
+  - Nicht so.
+  - Das sehe ich nicht so.
+  negative:
+  - wenige.
+  - Auf wenige Fall.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- negation
+- boundary
+rating: 2

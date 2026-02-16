@@ -1,0 +1,36 @@
+id: ATO_POWERLESSNESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: ''
+frame:
+  signal:
+  - powerlessness
+  concept: Macht-/Kontrollverlust
+  pragmatics: Risikofokus
+  narrative: affect
+patterns:
+- type: regex
+  value: \b(ohnmacht|machtlos|keine\s+Kontrolle|ausgeliefert|überfordert)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Ohnmacht.
+  - Machtlos.
+  - Keine Kontrolle.
+  - Ausgeliefert.
+  - Überfordert.
+  negative:
+  - wenige Kontrolle.
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+tags:
+- affect
+- control
+rating: 2

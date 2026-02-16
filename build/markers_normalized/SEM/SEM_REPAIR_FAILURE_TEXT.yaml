@@ -1,0 +1,46 @@
+id: SEM_REPAIR_FAILURE_TEXT
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: Reparaturinitiativen bleiben erfolglos und enden im Themenwechsel.
+frame:
+  signal:
+  - "'hä?/wer?' gefolgt von keiner Klärung und Umschalten"
+  concept: Reparatur scheitert
+  pragmatics: Kooperationsbruch, Missverständnisverfestigung
+  narrative: offene Schleife
+patterns: []
+examples:
+  positive:
+  - Hä?... egal, anderes Thema.
+  - Wie bitte?... lassen wir’s, weiter.
+  - Wer?... egal, zurück zum Budget.
+  - Was meinst du?... passt schon, nächster Punkt.
+  - Hä?... anyway, zum Meeting morgen.
+  - Wie bitte?... egal, weiter geht’s.
+  - Wer?... egal, anderes Thema.
+  - Was meinst du?... egal, zurück.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- semantic
+- repair_failure
+rating: 1
+composed_of:
+- ATO_REPAIR_REQUEST
+scoring:
+  base: 1.4
+  weight: 1.1
+metadata:
+  justification: "1 ATO plus Sequenzbedingung (fehlende Antwort)."
+  repair_log:
+  - rule: "R07"
+    note: "1-ATO gerechtfertigt"
+    date: "2025-08-29"

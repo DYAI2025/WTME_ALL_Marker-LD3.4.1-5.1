@@ -1,0 +1,64 @@
+id: ATO_GIVING_UP_PHRASE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - gebe schnell auf
+  - Kopf in den Sand
+  concept: Resignation
+  pragmatics: Aufgeben
+  narrative: resignation
+patterns:
+- type: regex
+  value: (?i)\b(gebe?\s+schnell\s+auf|kopf\s+in\s+den\s+sand\s+steck\w+|lass\w*\s+es\s+sein|brech\w*\s+ab|ich\s+werfe\s+hin)\b
+  flags: []
+examples:
+  positive:
+  - Ich gebe schnell auf.
+  - Ich stecke den Kopf in den Sand.
+  - Dann lasse ich es sein.
+  - Ich breche das Thema ab.
+  - Ich werfe hin.
+  - Ich kapituliere.
+  - Ich lasse es gut sein.
+  - Ich gebe auf, es hat keinen Sinn.
+  - Ich lasse davon ab.
+  - Ich ziehe mich zurück und beende es.
+  - Ich höre auf, mich anzustrengen.
+  - Ich schaffe das nicht, ich bin raus.
+  - Ich gebe mich geschlagen.
+  - Ich stelle es ein.
+  - Ich beende es hier.
+  - Ich gebe viel zu schnell auf bei Problemen.
+  - Ich stecke lieber den Kopf in den Sand, als mich zu stellen.
+  - Ach, dann lasse ich es einfach sein.
+  - Ich breche das jetzt ab, bringt nichts.
+  - Ich werfe das Handtuch und gehe.
+  - Okay, ich kapituliere vor dieser Aufgabe.
+  - Ich lasse es besser gut sein mit dem Projekt.
+  - Ich gebe auf, das wird nie was.
+  - Ich lasse komplett davon ab.
+  - Ich ziehe mich zurück und höre auf.
+  - Ich höre auf, mich damit abzumühen.
+  - Ich schaffe das eh nicht, ich steige aus.
+  - Ich gebe mich geschlagen bei dem Problem.
+  - Ich stelle das Vorhaben jetzt ein.
+  - Ich beende das hier und jetzt.
+  - Ich schmeiße das Projekt hin.
+  - Ich lasse die Finger davon.
+  - Ich gebe den Kampf auf.
+  - Ich höre auf zu kämpfen.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- resignation
+rating: 1

@@ -1,0 +1,49 @@
+id: SEM_CLOSURE_PROTOCOL
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - closure_protocol
+  concept: Standardisierte Beendigung einer Einheit
+  pragmatics: Konvergenz, Abschlussordnung
+  narrative: coordination
+patterns: []
+examples:
+  positive:
+  - Bestätigt. Dann schließen wir das – Haken dran.
+  - Okay, confirm – ich mach’s zu.
+  - Passt → close → Thema beendet.
+  - Ja, so machen wir’s; Abschluss jetzt.
+  - Confirm. Ich setze den Schlussstrich.
+  - Bestätigt – wir schließen diesen Punkt.
+  - Einigkeit – ich beende den Thread.
+  - Confirm → close. Weiter.
+  - Gesehen; ich markiere als abgeschlossen.
+  - Check, Thema zu. Nächstes.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- closure
+- finalize
+- protocol
+rating: 1
+composed_of:
+  sequence_any:
+  - - "ATO_CONFIRM"
+    - "ATO_CLOSE"
+    - "ATO_SUBJECT_CLOSED"
+activation:
+  rule: "SEQUENCE IN 4 messages"
+  window: 4
+scoring:
+  base: 0.7
+  weight: 1.15

@@ -1,0 +1,32 @@
+id: ATO_SURVIVAL_INSTINCT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Überlebensmuster, instinktive Reaktionen
+  concept: Beige-Level primitives Überleben
+  pragmatics: Erkennt unmittelbare Bedrohungswahrnehmung
+  narrative: Rückzug auf Grundbedürfnisse
+patterns:
+- type: regex
+  value: "\\b(überleben|instinkt|hunger|durst|angst|flucht|kampf|gefahr)\\b"
+examples:
+  positive:
+  - Ich muss überleben
+  - instinktiv reagiert
+  - pure Angst
+  - Fluchtreflex
+  - Grundbedürfnisse
+  negative:
+  - ich entscheide mich zu überleben
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags: []
+rating: 2

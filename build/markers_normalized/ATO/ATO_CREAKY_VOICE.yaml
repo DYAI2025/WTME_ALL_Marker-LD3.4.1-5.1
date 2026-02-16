@@ -1,0 +1,38 @@
+id: ATO_CREAKY_VOICE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Atomic pattern for creaky voice/vocal fry
+frame:
+  signal:
+  - Low F0 + Irregular Pulses
+  concept: knarren
+  pragmatics: Stimmqualität
+  narrative: audio
+patterns: []
+examples:
+  positive:
+  - '[Knarrstimme erkannt]'
+  - '[Vocal Fry]'
+  - '[Tiefe, unregelmäßige Stimmgebung]'
+  - '[Entspannte Stimmlippen]'
+  - '[Charakteristische Rauheit]'
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- voice_quality
+- audio
+- atomic
+rating: 1
+detect_class:
+  module: prosody.creaky_voice
+  params:
+    f0_threshold_hz: 80
+    irregularity_index: 0.4

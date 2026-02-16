@@ -1,0 +1,46 @@
+id: SEM_PROJECTION_TEXT
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: Vorwurf an andere spiegelt eigene zuvor markierte Tendenz.
+frame:
+  signal:
+  - "'Du bist X' kurz nach eigener thematisch passender Aussage"
+  concept: Projektion (Text)
+  pragmatics: Selbstschutz, Schuldverschiebung
+  narrative: Spiegelung
+patterns: []
+examples:
+  positive:
+  - Ich war wohl zu hart... Du bist so herzlos.
+  - Ich hab’s vermasselt... Du bist unfähig.
+  - Ich bin unsicher... Ihr seid so arrogant.
+  - Ich hab keine Zeit... Du bist faul.
+  - Mir rutscht das raus... Du bist respektlos.
+  - Ich überreagiere... Du bist hysterisch.
+  - Ich hab Angst... Du bist schwach.
+  - Ich war unfair... Du bist gemein.
+  negative:
+  - Ich hab wenige Zeit... Du bist faul.
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+tags:
+- semantic
+- projection
+rating: 1
+composed_of:
+- ATO_PROJECTION_2P_TRAIT
+scoring:
+  base: 1.4
+  weight: 1.1
+metadata:
+  justification: "1 ATO plus Sequenzregel (Selbstmarkierung → Vorwurf)."
+  repair_log:
+  - rule: "R07"
+    note: "1-ATO gerechtfertigt"
+    date: "2025-08-29"

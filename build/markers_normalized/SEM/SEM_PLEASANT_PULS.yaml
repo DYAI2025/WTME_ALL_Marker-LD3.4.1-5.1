@@ -1,0 +1,50 @@
+id: SEM_PLEASANT_PULS
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - pleasant_puls
+  concept: Ruhiger, gleichmäßiger, ausgeglichener Gesprächspuls
+  pragmatics: Stabilität / Sicherheit
+  narrative: regulation
+patterns: []
+examples:
+  positive:
+  - <placeholder> – passt. – ok, gesehen. – <placeholder> – einverstanden.
+  - <tbd> – verstanden – notiert – <ref_missing> – passt für mich.
+  - <todo> – ok – gesehen – <null> – ja, genau.
+  - <placeholder> – einverstanden – ok – <tbd> – passt.
+  - <ref_missing> – verstanden – zur Kenntnis – <placeholder> – passt so.
+  - <placeholder> – ok – <placeholder> – passt – gesehen.
+  - <tbd> – einverstanden – <todo> – zur Kenntnis – passt.
+  - <null> – verstanden – <placeholder> – ok – passt so.
+  - <placeholder> – notiert – <placeholder> – ok – passt für mich.
+  - <ref_missing> – ok – <tbd> – gesehen – passt.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- pleasant
+- steady
+- regulation
+rating: 1
+composed_of:
+  required:
+  - ATO_PLACEHOLDER
+  any_of:
+  - ATO_CONFIRM
+  - ATO_ACKNOWLEDGE
+activation:
+  rule: "PLACEHOLDER >= 2 IN 10 AND (CONFIRM >= 4 IN 10 OR ACKNOWLEDGE >= 4 IN 10 OR (CONFIRM >= 2 IN 10 AND ACKNOWLEDGE >= 2 IN 10))"
+  window: 10
+scoring:
+  base: 0.55
+  weight: 1.0

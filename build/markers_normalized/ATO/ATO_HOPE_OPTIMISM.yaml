@@ -1,0 +1,105 @@
+id: ATO_HOPE_OPTIMISM
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Atomic marker for hope, optimism, and positive expectation expressions
+frame:
+  signal:
+  - hoffnung
+  - optimismus
+  - zuversicht
+  - hoffen
+  - hope
+  - optimistic
+  concept: Positive emotional valence - hope and optimism
+  pragmatics: Expression of hope and positive expectations
+  narrative: emotional_expression
+patterns:
+- type: regex
+  value: '(?i)\b(hoffnung|hoffen|gehofft|hoffnungsvoll)\b'
+- type: regex
+  value: '(?i)\b(optimis|optimistisch|zuversichtlich)\b'
+- type: regex
+  value: '(?i)\b(zuversicht|zuversichtlich|vertrauen)\b'
+- type: regex
+  value: '(?i)\b(hope|hopeful|hoping|optimistic)\b'
+- type: regex
+  value: '(?i)\b(erwartung|erwarten|erwartungsvoll)\b'
+- type: regex
+  value: '(?i)\b(glaube|glauben|vertrauen)\b'
+- type: regex
+  value: '(?i)\b(besser werden|aufwärts|licht am horizont)\b'
+examples:
+  positive:
+  - Ich habe große Hoffnung für die Zukunft.
+  - Ich bin optimistisch, dass es klappt.
+  - Meine Zuversicht wächst jeden Tag.
+  - Ich hoffe so sehr auf eine Besserung.
+  - Das gibt mir neue Hoffnung!
+  - Ich bin voller Optimismus und Energie.
+  - Ich glaube fest daran, dass es besser wird.
+  - Meine Erwartungen sind positiv.
+  - Ich bin hopeful für morgen.
+  - Die Zuversicht kehrt zurück in mein Herz.
+  - Ich hoffe auf das Beste.
+  - Mein Optimismus lässt sich nicht erschüttern.
+  - Ich sehe Licht am Ende des Tunnels.
+  - Die Hoffnung stirbt zuletzt!
+  - Ich bin zuversichtlich und stark.
+  - Mein Glaube an das Gute ist ungebrochen.
+  - Ich hoffe inständig auf eine Lösung.
+  - Der Optimismus trägt mich durch schwere Zeiten.
+  - Ich bin voller Zuversicht und Hoffnung.
+  - Meine Erwartungen sind positiv gestimmt.
+  - Ich glaube an eine bessere Zukunft.
+  - Die Hoffnung gibt mir Kraft zum Weitermachen.
+  - Ich bin optimistic about this!
+  - Meine Zuversicht ist stark und fest.
+  - Ich hoffe auf ein gutes Ende.
+  - Der Optimismus erfüllt mein Herz.
+  - Ich sehe Licht am Horizont.
+  - Meine Hoffnung ist lebendig und real.
+  - Ich bin zuversichtlich, dass wir es schaffen.
+  - Der Glaube an das Gute stärkt mich.
+  - Ich hoffe erwartungsvoll auf Veränderung.
+  - Mein Optimismus ist ansteckend!
+  - Ich bin voller Hoffnung und Vertrauen.
+  - Die Zuversicht lässt mich nicht los.
+  - Ich glaube fest an einen positiven Ausgang.
+  - Meine Hoffnung ist unerschütterlich.
+  - Ich bin hopeful and confident!
+  - Der Optimismus gibt mir Flügel.
+  - Ich hoffe auf bessere Tage.
+  - Meine Zuversicht wächst stetig.
+  - Ich sehe die Dinge optimistisch.
+  - Die Hoffnung erfüllt mich mit Wärme.
+  - Ich bin zuversichtlich und gelassen.
+  - Mein Glaube an die Zukunft ist stark.
+  - Ich hoffe auf Heilung und Frieden.
+  - Der Optimismus lässt mich strahlen.
+  - Ich bin voller Hoffnung und Lebensfreude.
+  - Meine Erwartungen sind positiv und realistisch.
+  - Ich glaube an Wunder und Möglichkeiten.
+  - Die Hoffnung ist mein Anker in stürmischen Zeiten.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- atomic
+- emotion
+- positive
+- hope
+- optimism
+- confidence
+- v3.4
+rating: 1
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for hope and optimism"

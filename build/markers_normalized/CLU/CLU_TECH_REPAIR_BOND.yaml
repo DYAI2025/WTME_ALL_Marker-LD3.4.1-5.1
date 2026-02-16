@@ -1,0 +1,45 @@
+id: CLU_TECH_REPAIR_BOND
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - bond-by-repair
+  concept: Bindung durch gemeinsame Fixes
+  pragmatics: Sicherheit durch Tun
+  narrative: repair-loop
+patterns: []
+examples:
+  positive:
+  - Trigger prüfen + Beziehung bleibt wichtiger als Rolle
+  - Cache leeren + zwischen uns zählt Nähe
+  - Nummer einrichten + Persona tritt zurück
+  - ENV korrigieren + in Beziehung bleiben
+  - Bug fixen + Maske fällt
+  - Trigger anpassen + zwischen uns statt KPI
+  - Config korrigieren + Beziehung vor Persona
+  - Cache checken + Maske runter
+  - Nummer reparieren + wir bleiben in Beziehung
+  - ENV setzen + Rolle zweitrangig
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- technik
+- bindung
+rating: 1
+composed_of:
+- SEM_TECH_REPAIR_AS_BOND
+- SEM_RELATION_OVER_PERSONA
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+scoring:
+  base: 0.80
+  weight: 1.0

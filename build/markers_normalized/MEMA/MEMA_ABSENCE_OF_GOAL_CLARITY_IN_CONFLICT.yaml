@@ -1,0 +1,58 @@
+id: MEMA_ABSENCE_OF_GOAL_CLARITY_IN_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Konflikt ohne Klärung von Absichten
+  concept: 'Omission: Keine Ziel- oder Intentionsaussagen'
+  pragmatics: Zeigt festgefahrene Auseinandersetzungen ohne Orientierung
+  narrative: drift
+patterns: []
+examples:
+  positive:
+  - "A: Du schneidest die Anforderungen jedes Mal neu.\nB: Du wechselst mitten im Sprint ständig die Richtung.\nA: Du kippst nur Probleme auf uns.\nB: Du hältst niemanden auf dem Laufenden."
+  - "A: Du hast die Roadmap wieder veröffentlicht, ohne abzustimmen.\nB: Du hast die Stakeholder nicht einbezogen.\nA: Du wirfst uns schlechte Kommunikation vor.\nB: Du blockierst jeden Workshop."
+  - "A: Du nimmst die dritten Folgeänderungen einfach an.\nB: Du stellst das Team dann vor die Wahl aufzuhören.\nA: Du lässt alles eskalieren.\nB: Du reagierst nur mit Kritik."
+  - "A: Du stoppst Releases ohne Erklärung.\nB: Du reichst immer nur rote Karten ein.\nA: Du kommentierst jede Initiative abfällig.\nB: Du verweigerst jede Abstimmung."
+  - "A: Du hast die Datenmigration wieder verschoben.\nB: Du bestellst neue Tasks, statt etwas abzunehmen.\nA: Du beschwerst dich über fehlende Struktur.\nB: Du ziehst uns parallel ins nächste Thema."
+  - "A: Du hast das Meeting heute einfach abgebrochen.\nB: Du hast nur über Fehler gesprochen.\nA: Du lädst ständig neue Leute ein.\nB: Du sagst nie, was du erwartest."
+  - "A: Du rollst schon wieder ein Audit auf.\nB: Du sendest nur Mahnungen.\nA: Du stellst Fragen ohne Kontext.\nB: Du kritisierst ohne Ansatz für ein Vorgehen."
+  - "A: Du legst Berichte vor und verschwindest dann.\nB: Du forderst Stellungnahmen ohne Ankündigung.\nA: Du schmeißt uns Tabellen hin.\nB: Du reagierst nur auf Eskalationen von oben."
+  - "A: Du bringst jeden Morgen neue Kritikpunkte.\nB: Du wiederholst einfach die Beschwerden des Kunden.\nA: Du lässt keine Diskussion zu.\nB: Du drohst nur mit Konsequenzen."
+  - "A: Du hast wiederholt das Review gerissen.\nB: Du merkst nicht, wie viele Umwege du aufmachst.\nA: Du holst rein gar keinen Input ein.\nB: Du klemmst jede Rückfrage ab."
+  negative:
+  - "A: Du schneidest die Anforderungen oft neu.\nB: Du wechselst mitten im Sprint ab und zu die Richtung.\nA: Du kippst nur Probleme auf uns.\nB: Du hältst niemanden auf dem Laufenden."
+  - "A: Du stoppst Releases ohne Erklärung.\nB: Du reichst manchmal nur rote Karten ein.\nA: Du kommentierst jede Initiative abfällig.\nB: Du verweigerst jede Abstimmung."
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- meta
+- absence
+- conflict
+- goal_clarity
+rating: 1
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+absence_sets:
+  GOAL_CLARITY:
+    tags:
+    - goal
+    - intention
+    ids:
+    - ATO_INTENTION
+    - SEM_TARGET_STATEMENT
+emit:
+  per_speaker: true

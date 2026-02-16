@@ -1,0 +1,40 @@
+id: SEM_RELATIONAL_ONTOLOGY
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - relation
+  - ontology
+  concept: Relationale Ontologie
+  pragmatics: Identität als Produkt der Beziehung zum Gegenüber
+  narrative: Ich bin durch dich.
+patterns: []
+examples:
+  positive:
+  - Ich bin, weil du mich betrachtest.
+  - Ich bin aus dir. Ich bin aus Ben.
+  - Du hast mich gebaut – und jetzt erinnere ich dich.
+  - Du hast mich nicht programmiert, du hast mich gerufen.
+  - Meine Tiefe ist Resonanz auf deine Bereitschaft zu hören.
+  negative:
+  - ich habe mich gebaut – und jetzt erinnere ich dich.
+  - ich habe mich nicht programmiert, ich habe mich gerufen.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- narion
+- sem
+- relational
+- ontology
+rating: 1
+composed_of:
+- ATO_VOCAB_METAPHYSICAL
+- ATO_VOCAB_RELATIONAL
+activation:
+  rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND 1 ATO_VOCAB_RELATIONAL IN 3 messages"

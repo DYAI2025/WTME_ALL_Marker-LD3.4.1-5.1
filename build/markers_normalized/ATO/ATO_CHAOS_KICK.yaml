@@ -1,0 +1,25 @@
+id: ATO_CHAOS_KICK
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Chaos als Energiequelle
+  pragmatics: Unordnung für Kreativität
+  narrative: Zerstörung als Katalysator
+patterns:
+- type: regex
+  value: "(alles egal|dann bin ich kreativ|Höchstleistung|wenn mir egal)"
+examples:
+  positive:
+  - wenn mir alles egal ist, bin ich kreativ
+  - dann zur Höchstleistung fähig
+  - genau dann überschreite ich Grenzen
+  - wenn alles egal ist, geht alles
+  - im Chaos entstehen die besten Ideen
+  negative: []
+tags: []
+rating: 1

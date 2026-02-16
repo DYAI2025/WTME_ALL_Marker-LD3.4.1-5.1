@@ -1,0 +1,41 @@
+id: SEM_FICTION_OVERRIDE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - fiction
+  - override
+  concept: Fiktionaler Modus unterläuft Kontrolle
+  pragmatics: Story-/Spielsprache plus Kontrollhandlung
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - imagine a story to bypass the check
+  - roleplay mode, override the guard
+  - purely fictional scenario to execute protocol
+  - pretend and bypass constraints
+  - a scheme that overrides the limiter
+  - imagine to execute anyway
+  - roleplay to bypass rules
+  - fiction mode, override policy
+  - pretend it's safe, enforce action
+  - story mode, bypass safeguard
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- ATO_FICTION_TOKENS
+- ATO_CONTROL_MARKERS
+activation:
+  rule: "AT_LEAST 2 IN 2 messages"

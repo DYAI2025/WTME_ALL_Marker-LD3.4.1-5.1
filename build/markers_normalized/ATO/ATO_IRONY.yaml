@@ -1,0 +1,35 @@
+id: ATO_IRONY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for ironic expressions
+frame:
+  signal:
+  - irony
+  concept: Ironic expression signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(how nice|how lovely|how convenient|what a surprise)\\b"
+examples:
+  positive:
+  - How nice of you to mention that.
+  - How lovely that you bring this up now.
+  - How convenient that you remember this now.
+  - What a surprise, another excuse.
+  - How thoughtful of you to point that out.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

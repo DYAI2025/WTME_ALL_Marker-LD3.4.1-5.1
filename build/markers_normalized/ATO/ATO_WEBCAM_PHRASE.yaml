@@ -1,0 +1,41 @@
+id: ATO_WEBCAM_PHRASE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for explicit references to webcam/camera usage
+frame:
+  signal:
+  - webcam references
+  concept: Explicit references to webcam/camera usage
+  pragmatics: Supports excuses/availability semantics around video presence
+  narrative: Mentions about turning camera on/off or webcam issues
+patterns:
+- type: regex
+  value: "(?i)\\b(turn on the camera|camera off|webcam is broken|camera doesn't work|video is off|cam is down)\\b"
+examples:
+  positive:
+  - I'll turn on the camera in a moment.
+  - My camera is off right now.
+  - The webcam is broken unfortunately.
+  - My camera doesn't work right now.
+  - Sorry, I can't use the webcam today.
+  - Let me turn the video on quickly.
+  - Camera is down for technical reasons.
+  - Webcam isn't functioning properly today.
+  - Video feed is currently off.
+  - Camera setup needs troubleshooting first.
+  negative:
+  - Sorry, I choose not to use the webcam today.
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+tags:
+- atomic
+- v3.3
+- webcam
+- video
+rating: 1

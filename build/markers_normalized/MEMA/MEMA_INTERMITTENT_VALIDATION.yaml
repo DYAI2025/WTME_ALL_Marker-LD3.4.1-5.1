@@ -1,0 +1,44 @@
+id: MEMA_INTERMITTENT_VALIDATION
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Wechsel zwischen Idealisierung und Entwertung
+  concept: Intermittierende Verstärkung
+  pragmatics: Emotionale Abhängigkeitserzeugung
+  narrative: trauma_bonding
+patterns: []
+examples:
+  positive:
+  - Ich liebe es, wie du immer genau weißt, was du sagen musst ❤️
+  - Du bist unglaublich, ich wüsste nicht, was ich ohne dich täte
+  - Ich weiß nicht, warum du nicht unterstützender sein kannst
+  - Manchmal frage ich mich, ob dir diese Beziehung überhaupt wichtig ist
+  negative:
+  - Ich liebe es, wie du manchmal genau weißt, was du sagen musst ❤️
+  - ich finde gut es, wie du immer genau weißt, was du sagen musst ❤️
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+tags:
+- meta
+- validation
+- trauma_bonding
+- manipulation
+- narcissistic
+rating: 2
+activation:
+  rule: "TEMPORAL SHIFT DETECTED"
+scoring:
+  base: 3.2
+  weight: 0.92
+  decay: 0.005
+  formula: "logistic"
+window:
+  messages: 50
+  temporal_window: "72h"

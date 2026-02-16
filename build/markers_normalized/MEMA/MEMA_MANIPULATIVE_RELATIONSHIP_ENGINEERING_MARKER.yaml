@@ -1,0 +1,39 @@
+id: MEMA_MANIPULATIVE_RELATIONSHIP_ENGINEERING_MARKER
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: en
+description: ''
+frame:
+  signal:
+  - systematische Manipulation
+  - Beziehungsmanipulation
+  - Engineering-Muster
+  concept: Manipulative Beziehungsgestaltung
+  pragmatics: Meta-Analyse manipulativer Beziehungsstrategien
+  narrative: Erkennung systematischer Beziehungsmanipulation
+patterns: []
+examples:
+  positive:
+  - 'Systematische Abfolge: Love-Bombing → Gaslighting → Guilt-Framing → Meta erkennt Engineering.'
+  - Algorithmus detektiert geplante Manipulationssequenz über mehrere Wochen.
+  - 'Pattern-Matching zeigt klassische Manipulation-Pipeline: Idealisierung → Abwertung → Kontrolle.'
+  - "Meta-System meldet: 'Beziehungsmanipulation erkannt - Schutzprotokoll aktiviert'."
+  - Zeitreihen-Analyse zeigt systematische Manipulation statt spontaner Konflikte.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- SEM_GASLIGHTING
+- SEM_LOVE_BOMBING
+- SEM_GUILT_FRAMING
+- CLU_PSYCHOLOGICAL_DIGITAL_MANIPULATION
+activation:
+  rule: "ANY 3 IN 7 messages"

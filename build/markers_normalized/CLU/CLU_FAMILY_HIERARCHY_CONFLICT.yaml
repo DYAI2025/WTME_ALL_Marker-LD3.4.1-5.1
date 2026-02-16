@@ -1,0 +1,45 @@
+id: CLU_FAMILY_HIERARCHY_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Cluster von hierarchischen Konflikten in Familiensystemen.
+frame:
+  signal:
+  - Hierarchische Familienstruktur + Konflikte
+  concept: Familiäre Hierarchiekonflikte
+  pragmatics: Machtstrukturen und Rollenkonflikte in Familien
+  narrative: Familiäre Systemdynamik
+patterns: []
+examples:
+  positive:
+  - Papa sagt mach Hausaufgaben, aber ich will nicht!
+  - Mama bestimmt immer, das ist unfair!
+  - Die Kinder hören nicht auf elterliche Anweisungen.
+  negative:
+  - Mama bestimmt manchmal, das ist unfair!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- cluster
+- family
+- hierarchy
+- conflict
+- authority
+- resistance
+rating: 2
+activation:
+  rule: "WEIGHTED_AND"
+scoring:
+  base: 1.6
+  weight: 0.65
+  decay: 0.02
+  formula: "logistic"
+window:
+  messages: 50
+detect_class: "E"
+criteria: "Kombination von elterlicher Autorität und kindlichem Widerstand"

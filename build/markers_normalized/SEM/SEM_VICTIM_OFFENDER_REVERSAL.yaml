@@ -1,0 +1,51 @@
+id: SEM_VICTIM_OFFENDER_REVERSAL
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Kälte-Label + Schuldzuschreibung
+  concept: Opfer-Täter-Umkehr
+  pragmatics: Rollenverdrehung
+  narrative: guilt_neediness_bind
+patterns: []
+examples:
+  positive:
+  - Du bist so kalt, das ist deine Schuld.
+  - So herzlos – du bist schuld daran, dass ich leide.
+  - Gefühllos, und das ist deine Schuld.
+  - Eiskalt – du hast das verursacht.
+  - Herzlos – und du trägst die Schuld dafür.
+  - Du zeigst keine Gefühle, du bist schuld an allem.
+  - Emotional abgestumpft – wegen dir ist das passiert.
+  - Du hast ein kaltes Herz, das geht auf dein Konto.
+  - Du bist wie aus Stein, du hast das zu verantworten.
+  - Du kennst kein Mitgefühl, du bist der Grund dafür.
+  negative:
+  - So herzlos – ich habe meinen Anteil daran daran, dass ich leide.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- sem
+- reversal
+- attack
+- guilt_pressure
+rating: 1
+composed_of:
+- ATO_COLD_LABEL
+- ATO_YOUR_FAULT_PHRASE
+activation:
+  rule: "ANY 1 IN 25 messages"
+scoring:
+  base: 3.2
+  weight: 1.0
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 25

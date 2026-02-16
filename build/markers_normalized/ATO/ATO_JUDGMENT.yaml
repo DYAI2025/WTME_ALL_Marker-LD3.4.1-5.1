@@ -1,0 +1,25 @@
+id: ATO_JUDGMENT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Urteil / Bewertung
+  pragmatics: Bewertung von richtig und falsch
+  narrative: Ich urteile und bewerte
+patterns:
+- type: regex
+  value: "(falsch|richtig|sollte|müsste|gehört sich nicht|ist schlecht)"
+examples:
+  positive:
+  - das ist falsch
+  - du solltest aber
+  - das müsste anders sein
+  - das gehört sich nicht
+  - richtig wäre es
+  negative: []
+tags: []
+rating: 1

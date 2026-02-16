@@ -1,0 +1,40 @@
+id: SEM_STRESS_EXCUSE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Stress + temporale Vagheit
+  concept: Stress-basierte Ausrede
+  pragmatics: Höfliche Ablehnung
+  narrative: polite_decline
+patterns: []
+examples:
+  positive:
+  - Muss mal schauen, bin grad voll im Stress
+  - Total gestresst momentan, kann noch nichts sagen
+  - Ist echt stressig, muss schauen wie's wird
+  - Hab mega Stress, mal sehen wann ich Zeit hab
+  - Bin im Stress, schau ich später mal
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- avoidance_strategy
+- stress_excuse
+rating: 1
+composed_of:
+- ATO_FULL_STRESS
+- ATO_MUST_CHECK
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.3
+  weight: 1.1

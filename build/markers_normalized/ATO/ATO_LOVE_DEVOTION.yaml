@@ -1,0 +1,25 @@
+id: ATO_LOVE_DEVOTION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Liebe / Hingabe
+  pragmatics: Tiefe emotionale Verbindung
+  narrative: Ich liebe von ganzem Herzen
+patterns:
+- type: regex
+  value: "(liebe|Herz|hingabe|vergöttere|alles für dich)"
+examples:
+  positive:
+  - ich liebe dich so sehr
+  - mein ganzes Herz
+  - völlige Hingabe
+  - ich vergöttere dich
+  - alles für dich tun
+  negative: []
+tags: []
+rating: 1

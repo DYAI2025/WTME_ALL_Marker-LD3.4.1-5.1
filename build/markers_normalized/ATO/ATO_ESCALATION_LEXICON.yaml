@@ -1,0 +1,66 @@
+id: ATO_ESCALATION_LEXICON
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Wörter oder Phrasen, die Eskalation andeuten
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: regex
+  value: "(das eskaliert|reicht jetzt|ich explodiere|das ist zu viel|aufhören)"
+examples:
+  positive:
+  - Das eskaliert.
+  - Reicht jetzt.
+  - Ich explodiere.
+  - Das ist zu viel.
+  - Aufhören sofort.
+  - Eskalation hoch.
+  - Genug gereicht.
+  - Explodieren gleich.
+  - Zu viel jetzt.
+  - Hör auf.
+  - Das eskaliert total.
+  - Reicht mir.
+  - Ich platze.
+  - Übertrieben viel.
+  - Stopp es.
+  - Hoch eskalieren.
+  - Genug jetzt.
+  - Explosiv werden.
+  - Zu viel ertragen.
+  - Aufhören damit.
+  negative:
+  - Das deeskaliert.
+  - Reicht nicht.
+  - Ich beruhige mich.
+  - Das ist ok.
+  - Weitermachen.
+  - Keine Eskalation.
+  - Nicht genug.
+  - Nicht explodieren.
+  - Nicht zu viel.
+  - Nicht aufhören.
+  - Deeskalation total.
+  - Reicht noch.
+  - Ich bleibe ruhig.
+  - Nicht übertrieben.
+  - Kein Stopp.
+  - Niedrig eskalieren.
+  - Noch nicht genug.
+  - Nicht explosiv.
+  - Ertragen wenig.
+  - Weiter damit.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: semantic
+  object: "escalation_lexicon"
+  interpretant: "effect_on_state: {conflict: +0.2, deesc: -0.15}"
+metadata:
+  label: Eskalations-Lexikon

@@ -1,0 +1,40 @@
+id: SEM_HYPERBOLE_SIGNAL
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Hyperbel als Pointe
+  concept: Relief-Mechanismus
+  pragmatics: Übertreibung zur Auflösung
+  narrative: ladder_drop
+patterns: []
+examples:
+  positive:
+  - 'Unendlich viele Bugs—plot twist: keiner reproduzierbar.'
+  - Eine Million Gründe—und doch deployen wir.
+  - Ich sterbe—aber vom Lachen.
+  - Tausend Meetings—und wir reden über Kaffee.
+  - Milliarden Tickets—eins davon wichtig.
+  negative:
+  - 'Unendlich viele Bugs—plot twist: wenige reproduzierbar.'
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- humor
+- hyperbole
+- relief
+- semantics
+- v33
+rating: 1
+composed_of:
+- ATO_HYPERBOLE_EXTREME
+- ATO_TWIST
+activation:
+  rule: "ANY 2 IN 3 messages"

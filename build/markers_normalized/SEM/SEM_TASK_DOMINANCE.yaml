@@ -1,0 +1,79 @@
+id: SEM_TASK_DOMINANCE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: Task-Turns dominieren gegenüber Beziehungs-/Emotionssprache
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - 'Nächster Punkt: Freigabe. — Protokoll folgt.'
+  - Ticket erstellt. — Frist bestätigt.
+  - Scope bleibt. — Abnahme Freitag.
+  - 'Zurück zum Thema: Angebot. — To-do: Budget.'
+  - Ok. Erledigt. — Bitte bestätigen.
+  - 'Wie vereinbart. — Nächster Schritt: Review.'
+  - Termin 14:00. — Ich sende die Datei.
+  - Checkliste durchgehen. — Statusupdate 17:00.
+  - Backlog-Item priorisiert. — SLA 24h.
+  - Prozessschritt 2 abgeschlossen. — Übergabe.
+  - Agenda einhalten. — Milestone checken.
+  - Review ansetzen. — Budget prüfen.
+  - Update teilen. — Freigabe geben.
+  - Prozess folgen. — Abnahme machen.
+  - Notiz nehmen. — Status updaten.
+  - Sprint planen. — Epic abschließen.
+  - User Story. — Bugfix.
+  - Deployment. — Audit.
+  - KPI Check. — Retrospektive.
+  - Kanban updaten. — Change Request.
+  - Deployment planen.
+  - Audit durchführen.
+  - KPI messen.
+  - Retrospektive halten.
+  - Kanban Board managen.
+  - Change Request prüfen.
+  - Epic tracken.
+  - User Story verfeinern.
+  - Bugfix deployen.
+  - Sprint reviewen.
+  negative:
+  - Das verletzt mich.
+  - Wie fühlst du dich?
+  - Ich bin traurig.
+  - Ich vermisse dich.
+  - Danke für deine Nähe.
+  - Lass uns darüber reden.
+  - Ich brauche eine Entschuldigung.
+  - Kuscheln später?
+  - Feiern wir das? 🎉
+  - Du bedeutest mir viel.
+  - Das triggert mich.
+  - Mehr Empathie.
+  - Lass uns fühlen.
+  - Ich teile Gefühle.
+  - Bleib beim Emotionalen.
+  - Das fühlt sich an.
+  - Erzähl von dir.
+  - Ich liebe das.
+  - Traurig heute.
+  - Feiern wir?
+tags: []
+rating: 1
+window:
+  size_messages: 30
+semiotic:
+  mode: symbolic
+  level: semantic
+  object: "task_focus"
+  connotation:
+  - "aufgabe"
+  - "dominanz"
+  interpretant: "effect_on_state: {task_dominance: +0.25, intimacy: -0.1}"
+metadata:
+  label: Aufgaben-Dominanz

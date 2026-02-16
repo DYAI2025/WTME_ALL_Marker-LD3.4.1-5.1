@@ -1,0 +1,41 @@
+id: EMO_LIGHT_HUMOR_CRITIQUE
+schema: LeanDeep
+version: '5.1'
+layer: UNKNOWN
+lang: de
+description: Humorvolle, sanfte Form der Kritik ohne verletzende Absicht.
+frame:
+  signal:
+  - nicht dein Ernst
+  - musst du wohl noch üben
+  - na das war ja was
+  concept: Leichte, witzige Kritik
+  pragmatics: Wahrung der Beziehung durch Humor
+  narrative: kritik_mit_lächeln
+patterns: []
+examples:
+  positive:
+  - Na, das war ja mal eine kreative Ausrede.
+  - Du hast wohl heimlich bei den Schildkröten gelernt, was Tempo angeht.
+  - Also da gibt’s noch Luft nach oben.
+  - Nett, aber ich geb dir nur eine 4+.
+  - Nicht schlecht – für einen Anfänger.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- semantic
+- humor
+- critique
+rating: 1
+composed_of:
+- ATO_CRITIQUE_ELEMENT
+- ATO_HUMOR_SIGNAL
+scoring:
+  base: 1.4
+  weight: 1.1

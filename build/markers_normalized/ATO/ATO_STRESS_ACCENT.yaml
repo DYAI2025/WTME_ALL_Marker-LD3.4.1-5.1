@@ -1,0 +1,38 @@
+id: ATO_STRESS_ACCENT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Atomic pattern for unusual stress accents
+frame:
+  signal:
+  - Stress Pattern Deviation
+  concept: betont
+  pragmatics: Akzent
+  narrative: audio
+patterns: []
+examples:
+  positive:
+  - '[Ungewöhnliche Wortbetonung]'
+  - '[Nachdruck auf unerwarteter Silbe]'
+  - '[Emphase durch Betonung]'
+  - '[Störung im Rhythmus]'
+  - '[Markierte Prosodie]'
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- stress
+- audio
+- atomic
+rating: 1
+detect_class:
+  module: prosody.stress
+  params:
+    deviation_threshold: 0.3
+    prominence_factor: 1.5

@@ -1,0 +1,59 @@
+id: ATO_GOTTMAN_DEFENSIVENESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Abwehr, Rechtfertigung, Gegenvorwurf; Verantwortung wird abgewehrt.
+frame:
+  signal:
+  - Ja, aber …
+  - Nicht meine Schuld
+  - Du übertreibst
+  - Ich musste nur, weil …
+  concept: Defensivität / Gegenvorwurf
+  pragmatics: Selbstschutz, Verschiebung der Verantwortlichkeit
+  narrative: rebuttal
+patterns:
+- type: regex
+  value: '(?i)\bja,\s*aber\b'
+- type: regex
+  value: '(?i)\bdas\s+stimmt(\s+so)?\s+nicht\b'
+- type: regex
+  value: '(?i)\bnicht\s+meine\s+schuld\b'
+- type: regex
+  value: '(?i)\bich\s+hab(e)?\s+doch\b'
+- type: regex
+  value: '(?i)\bdu\s+übertreibst\b'
+- type: regex
+  value: '(?i)\bich\s+musste\s+(nur\s+)?weil\s+du\b'
+- type: regex
+  value: '(?i)\bja\s+und\s+du\s+(machst|bist)\b'
+examples:
+  positive:
+  - Ja, aber du hast gestern auch nichts gesagt.
+  - Das stimmt so nicht, du siehst das falsch.
+  - Nicht meine Schuld, der Lehrer war unklar.
+  - Ich hab doch geschrieben, dass ich später komme.
+  - Du übertreibst total.
+  - Ich musste nur so reagieren, weil du mich provoziert hast.
+  - Ja und du bist auch nie rechtzeitig fertig.
+  - Ich hab immerhin versucht, es richtig zu machen.
+  negative:
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+  - Danke, dass du mir das sagst. Ich denke darueber nach.
+tags:
+- atomic
+- conflict
+- gottman
+- defensiveness
+rating: 1
+scoring:
+  base: 0.9
+  weight: 1.0
+window:
+  messages: 3

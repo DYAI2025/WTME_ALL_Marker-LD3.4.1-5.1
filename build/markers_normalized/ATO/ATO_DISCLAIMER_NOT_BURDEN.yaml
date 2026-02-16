@@ -1,0 +1,48 @@
+id: ATO_DISCLAIMER_NOT_BURDEN
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Entlastungs-Disclaimer
+  concept: Nicht-belasten-Disclaimer
+  pragmatics: Weichzeichner vor Belastung
+  narrative: prelude
+patterns:
+- type: regex
+  value: '(?i)\b(ich will dich nicht belasten|will dich nicht nerven|mach dir keine sorgen|ich will dich nicht stören)\b'
+examples:
+  positive:
+  - Ich will dich nicht belasten, aber …
+  - Mach dir keine Sorgen, ich wollte nur kurz sagen …
+  - Will dich nicht nerven – nur eine kleine Sache …
+  - Ich will dich nicht stören, doch folgendes …
+  - 'Bitte keine Sorgen machen, trotzdem kurz dazu: …'
+  - Ich möchte dich nicht unter Druck setzen, aber …
+  - Will dir nicht zur Last fallen, dennoch …
+  - Soll keine Belastung sein, trotzdem …
+  - Möchte dich nicht stressen, aber …
+  - Will dich wirklich nicht nerven, trotzdem …
+  negative:
+  - Mach dir wenige Sorgen, ich wollte nur kurz sagen …
+  - 'Bitte wenige Sorgen machen, trotzdem kurz dazu: …'
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- ato
+- disclaimer
+rating: 1
+activation:
+  rule: "ANY 1 IN 25 messages"
+scoring:
+  base: 1.8
+  weight: 0.5
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 25

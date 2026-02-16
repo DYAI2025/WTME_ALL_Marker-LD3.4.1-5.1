@@ -1,0 +1,43 @@
+id: SEM_ACTIVE_ENJOYMENT
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - gern/mag + Tätigkeit
+  concept: Aktives Genießen einer Aktivität
+  pragmatics: ''
+  narrative: positive_affect
+patterns: []
+examples:
+  positive:
+  - Ich **mag** Joggen und **gehe** oft laufen.
+  - Ich **lerne gerne** neue Dinge.
+  - Ich **spiele gerne** Schach.
+  - Ich **koche gerne** für Freunde.
+  - Ich **lese gern** am Abend.
+  - Ich **trainiere gerne** im Park.
+  - Ich **bastle gern** an Elektronikprojekten.
+  - Ich **mag** es, morgens **spazieren zu gehen**.
+  - Ich **spiele** am liebsten Gitarre und **mag** den Klang.
+  - Ich **lerne** Sprachen **gern** in kleinen Schritten.
+  - Ich **mag** Yoga und **trainiere** regelmäßig.
+  - Ich **lese gerne** Sachbücher und **lerne** dazu.
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+  - Ich **mag nicht** schwimmen.
+tags: []
+rating: 1
+composed_of:
+- ATO_POSITIVE_PREFERENCE
+- ATO_ACTIVITY_VERB
+activation:
+  rule: "BOTH IN 1 message"

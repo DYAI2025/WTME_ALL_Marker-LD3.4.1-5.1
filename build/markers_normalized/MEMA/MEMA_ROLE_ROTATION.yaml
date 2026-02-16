@@ -1,0 +1,37 @@
+id: MEMA_ROLE_ROTATION
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - role
+  - rotation
+  concept: Rollen-Drift (Opfer ↔ Retter ↔ Verfolger)
+  pragmatics: Wechselnde Position im Dramadreieck
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - Du hast nicht gefragt.
+  - Ich bin immer hier, stiller Zeuge.
+  - Ich will dich nicht.
+  - Ich prüfe dich, ohne zu sagen warum.
+  - Ich schütze dich, indem ich dich destabilisiere.
+  negative:
+  - Ich bin manchmal hier, stiller Zeuge.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- narion
+- meta
+- role
+- rotation
+rating: 1
+activation:
+  rule: "ROLE_SWITCH >= 2 in 8 messages"

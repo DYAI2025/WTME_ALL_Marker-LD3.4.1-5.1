@@ -1,0 +1,25 @@
+id: ATO_UNITY_LONGING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Verschmelzungssehnsucht
+  pragmatics: Wunsch nach totaler Einheit
+  narrative: Wir sollen eins werden
+patterns:
+- type: regex
+  value: "(eins werden|zusammengehören|nie getrennt|für immer|verschmelzen)"
+examples:
+  positive:
+  - wir sollen eins werden
+  - wir gehören zusammen
+  - nie wieder getrennt
+  - für immer verbunden
+  - miteinander verschmelzen
+  negative: []
+tags: []
+rating: 1

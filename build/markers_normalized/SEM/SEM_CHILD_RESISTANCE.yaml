@@ -1,0 +1,44 @@
+id: SEM_CHILD_RESISTANCE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: Semantische Kombination von Kinderrolle und defensiven Mustern.
+frame:
+  signal:
+  - Kinderrolle + Defensive Muster
+  concept: Kindlicher Widerstand
+  pragmatics: Widerstand gegen elterliche Autorität
+  narrative: Autonomiestreben
+patterns: []
+examples:
+  positive:
+  - 'Kind: Das ist nicht meine Schuld!'
+  - Unser Kind will nicht reden.
+  - 'Die Kleinen sagen immer: Das stimmt nicht!'
+  negative:
+  - 'Die Kleinen sagen manchmal: Das stimmt nicht!'
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- semantic
+- family
+- child
+- resistance
+- defensive
+rating: 2
+activation:
+  rule: "WEIGHTED_AND"
+scoring:
+  base: 1.3
+  weight: 0.5
+  decay: 0.03
+  formula: "logistic"
+window:
+  messages: 30
+detect_class: "D"
+criteria: "Kombination aus Kinderrolle und defensiven Reaktionsmustern"

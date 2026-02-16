@@ -1,0 +1,55 @@
+id: SEM_CONSENSUS_BUILDING
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - consensus_building
+  concept: Gemeinsame Zustimmung/Abgleich herstellen
+  pragmatics: Einbindung & Alignment
+  narrative: cooperation
+patterns: []
+examples:
+  positive:
+  - Passt das für dich? – Gesehen.
+  - Feedback erwünscht – einverstanden?
+  - Klingt gut – bestätigen wir das so?
+  - Danke, notiert – passt für mich.
+  - Ich bin dabei – ok?
+  - Einverstanden – kurze Rückmeldung noch.
+  - Verstanden – ja, so machen wir’s.
+  - Ich unterstütze das – confirm?
+  - Passt – go von deiner Seite?
+  - Gesehen – ich bestätige.
+  - 'Check: Sind wir aligned? – Genau, sind wir.'
+  - Ok von dir? – Ja, passt.
+  - Kurz Nicken reicht – verstanden.
+  - Ich trag’s ein – einverstanden?
+  - Deal? – Deal.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- consensus
+- alignment
+- feedback
+rating: 1
+composed_of:
+  any_of:
+  - ATO_REQUEST_FOR_FEEDBACK
+  - ATO_ACKNOWLEDGE
+  - ATO_CONFIRM
+  - ATO_SUPPORT_MESSAGE
+activation:
+  rule: "AT_LEAST 2 IN 2 messages"
+  window: 2
+scoring:
+  base: 0.58
+  weight: 1.03

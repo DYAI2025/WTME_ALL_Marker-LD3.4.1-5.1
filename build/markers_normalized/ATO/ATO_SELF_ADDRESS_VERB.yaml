@@ -1,0 +1,43 @@
+id: ATO_SELF_ADDRESS_VERB
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - imperative
+  concept: Selbstansprache
+  pragmatics: Affektregulation
+  narrative: move
+patterns:
+- type: regex
+  value: (?i)begegne\s+dir\s+selbst
+- type: regex
+  value: (?i)sprich\s+zu\s+dir
+- type: regex
+  value: (?i)\bich\s+zu\s+mir\b
+examples:
+  positive:
+  - begegne dir selbst ganz sanft in diesem Moment
+  - sprich zu dir wie zu einem guten Freund
+  - 'ich zu mir: wir bleiben ruhig'
+  - begegne dir selbst mit einem tiefen Atem
+  - sprich zu dir, bevor du antwortest
+  - 'ich zu mir: bleib präsent'
+  - begegne dir selbst heute ohne Urteil
+  - sprich zu dir leise, dass du sicher bist
+  - 'ich zu mir sage: du darfst bleiben'
+  - begegne dir selbst jeden Morgen in Ruhe
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- selbstansprache
+- regulation
+rating: 1

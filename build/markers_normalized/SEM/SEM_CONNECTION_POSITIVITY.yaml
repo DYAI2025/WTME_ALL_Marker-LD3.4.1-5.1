@@ -1,0 +1,49 @@
+id: SEM_CONNECTION_POSITIVITY
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - Dankbarkeit
+  - Kompliment
+  - Humor
+  - Vertrauensäußerung
+  - positive Rückmeldung
+  concept: connection positivity
+  pragmatics: express positive rapport
+  narrative: strengthening bond
+patterns: []
+examples:
+  positive:
+  - Danke, dass du immer für mich da bist.
+  - Dein Humor macht meinen Tag heller.
+  - Ich schätze deine Offenheit sehr.
+  - Es ist toll, wie wir uns gegenseitig inspirieren.
+  - Deine Rückmeldungen helfen mir enorm.
+  - Du bringst mich zum Lachen, wenn ich es am meisten brauche.
+  - Unsere Gespräche geben mir so viel Energie.
+  - Ich vertraue dir voll und ganz.
+  - Mit dir an meiner Seite fühle ich mich stark.
+  - Ich bewundere deine Empathie.
+  negative:
+  - Danke, dass du manchmal für mich da bist.
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+tags:
+- connection
+- positivity
+- empathy
+rating: 1
+composed_of:
+- ATO_PLACEHOLDER
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.5
+  weight: 1.2

@@ -12,7 +12,8 @@ pattern:
 - (?i)\\bwenn\ du\\b
 - (?i)\\bselber\ schuld\\b
 examples:
- - "Das ist deine Schuld."
+  positive:
+    - "Das ist deine Schuld."
     - "Du hast angefangen."
     - "Warum tust du das?"
     - "Du bist verantwortlich."
@@ -32,22 +33,22 @@ examples:
     - "Fehler dein."
     - "Immer du warum?"
     - "Deine Verantwortung."
-- Wenn du nicht widersprechen würdest, gäbe es keinen Streit.
-- Du stellst dich an, nicht ich.
-- Du hast doch selbst drum gebeten, also beschwer dich nicht.
-- Wenn du nicht dauernd nörgeln würdest, wär es entspannt.
-- Du regst dich sinnlos auf, darum eskaliert das.
-- Weil du gestern nicht geantwortet hast, ist alles liegengeblieben.
-- Du hast das Chaos verursacht, nicht ich.
-- Hättest du richtig zugehört, müsste ich das nicht erklären.
-- Selber schuld, wenn du so empfindlich bist.
-- Wegen dir ist das Projekt ins Stocken geraten.
-- Du bist doch derjenige, der ständig Termine verschiebt.
-- Wenn du nicht immer so spät wärst, hätten wir das Problem nicht.
-- Nicht meine Schuld, du hast mich nicht informiert.
-- Wärst du früher dran gewesen, gäb's das Problem nicht.
-- Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren.
-negative_de:
+    - "Wenn du nicht widersprechen würdest, gäbe es keinen Streit."
+    - "Du stellst dich an, nicht ich."
+    - "Du hast doch selbst drum gebeten, also beschwer dich nicht."
+    - "Wenn du nicht dauernd nörgeln würdest, wär es entspannt."
+    - "Du regst dich sinnlos auf, darum eskaliert das."
+    - "Weil du gestern nicht geantwortet hast, ist alles liegengeblieben."
+    - "Du hast das Chaos verursacht, nicht ich."
+    - "Hättest du richtig zugehört, müsste ich das nicht erklären."
+    - "Selber schuld, wenn du so empfindlich bist."
+    - "Wegen dir ist das Projekt ins Stocken geraten."
+    - "Du bist doch derjenige, der ständig Termine verschiebt."
+    - "Wenn du nicht immer so spät wärst, hätten wir das Problem nicht."
+    - "Nicht meine Schuld, du hast mich nicht informiert."
+    - "Wärst du früher dran gewesen, gäb's das Problem nicht."
+    - "Wenn du pünktlich wärst, müssten wir jetzt nicht diskutieren."
+  negative:
     - "Das ist meine Schuld."
     - "Ich hab angefangen."
     - "Warum tu ich das?"

@@ -1,0 +1,37 @@
+id: CLU_SD_STAGE_GREEN
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - cluster
+  concept: SD Green aktiv
+  pragmatics: Persona
+  narrative: window
+patterns: []
+examples:
+  positive:
+  - Konsens finden … Empathie zeigen
+  - Gemeinschaft vor Ego
+  - jede Stimme zählt
+  - Beziehung ist wichtig
+  - fühlst du dich gehört?
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 2
+composed_of:
+- SEM_SD_GREEN_EMPATHY
+activation:
+  rule: "AT_LEAST 3 IN 7 messages"
+scoring:
+  base: 1.0
+  weight: 1.0

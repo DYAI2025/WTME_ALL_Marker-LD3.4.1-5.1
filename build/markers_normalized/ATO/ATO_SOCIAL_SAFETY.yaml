@@ -1,0 +1,25 @@
+id: ATO_SOCIAL_SAFETY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Soziale Sicherheit
+  pragmatics: Schutz durch Zugehörigkeit
+  narrative: Teil des Systems sein
+patterns:
+- type: regex
+  value: "(dazugehören|nicht auffallen|sicher|Teil sein|wie man das macht)"
+examples:
+  positive:
+  - ich will dazugehören
+  - bloß nicht auffallen
+  - so macht man das eben
+  - ich bin Teil davon
+  - das ist sicher so
+  negative: []
+tags: []
+rating: 1

@@ -1,0 +1,34 @@
+id: ATO_ACHIEVEMENT_DRIVE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: ''
+frame:
+  signal:
+  - Leistung, Erfolg, Innovation
+  concept: Orange-Level strategisches Erreichen
+  pragmatics: Erkennt Erfolgsorientierung
+  narrative: Ich will gewinnen und innovieren
+patterns:
+- type: regex
+  value: "\\b(erfolg|leistung|innovation|strategie|effizient|gewinn|fortschritt|wettbewerb)\\b"
+examples:
+  positive:
+  - strategischer Erfolg
+  - Leistung optimieren
+  - Innovation vorantreiben
+  - effizienter Gewinn
+  - Wettbewerbsvorteil
+  - Sprache ist strukturierter Schall. Geräusche sind oft unstrukturiert – rohes, semantisch ungebändigtes Material.
+  - AudioSet, ESC-50, FSD50K
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1

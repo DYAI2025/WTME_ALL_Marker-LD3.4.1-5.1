@@ -1,0 +1,49 @@
+id: SEM_FORMULATED_INTENTION_TO_CHANGE
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - klare Änderungsabsicht
+  concept: Formulierte Intention zur Verhaltensänderung
+  pragmatics: Plan→Aktion
+  narrative: change
+patterns: []
+examples:
+  positive:
+  - Ich werde Hilfe in Anspruch nehmen – nächster Schritt Termin.
+  - Ich beginne heute – konkreter Plan folgt.
+  - Ich habe die Absicht – wir machen das konkret.
+  - Ich plane X – ich kümmere mich um Y.
+  - Ich setze um – nächster Schritt ist gesetzt.
+  - Ich starte – und strukturierte Schritte folgen.
+  - Ich plane konkret – ich bringe das in Gang.
+  - Ich mache das verbindlich – nächster Schritt klar.
+  - Ich stoße das an – Plan liegt vor.
+  - Ich gehe das an – Schritte definiert.
+  - Ich beginne mit Umsetzung – Blocker geklärt.
+  - Ich lege den Start fest – Verantwortungen verteilt.
+  - Ich kümmere mich – Plan erstellt.
+  - Ich setze die Punkte um – nächste Steps terminiert.
+  - Ich bringe Ordnung rein – und handle.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags: []
+rating: 1
+composed_of:
+- ATO_PROACTIVE_INTENTION
+- ATO_PROBLEM_SOLVING
+activation:
+  rule: "ANY 2 IN 3 messages"
+  window: 3
+scoring:
+  base: 0.6
+  weight: 1.05

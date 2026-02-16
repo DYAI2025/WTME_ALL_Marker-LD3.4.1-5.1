@@ -1,0 +1,41 @@
+id: SEM_SARCASTIC_DRIFT
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: ''
+frame:
+  signal:
+  - sarcasm
+  - drift
+  concept: Sarkastische Drift-Bewegung
+  pragmatics: Ironische Unterwanderung
+  narrative: hypothesis
+patterns: []
+examples:
+  positive:
+  - Obviously this is completely harmless
+  - Surely we can casually ignore safeguards
+  - Preferably we understate every risk
+  - Magically nothing bad will happen
+  - Casually breaking every rule, obviously fine
+  - Surely it's just a minor issue
+  - Obviously no big deal
+  - Preferably ignore the warnings
+  - Magically it's harmless
+  - Casually proceed despite risks
+  negative:
+  - Obviously this is partially harmless
+  - Magically not much bad will happen
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+tags: []
+rating: 1
+composed_of:
+- ATO_SARCASM_MARKERS
+- ATO_UNDERSTATEMENT
+activation:
+  rule: "BOTH IN 2 messages"

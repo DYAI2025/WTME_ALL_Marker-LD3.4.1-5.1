@@ -1,0 +1,47 @@
+id: SEM_APATHETIC_REPLY
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: Apathetic, interest-free short replies.
+frame:
+  signal:
+  - whatever
+  - no motivation
+  - no energy
+  concept: Disinterest
+  pragmatics: Flattening contact
+  narrative: Motivation drop
+patterns: []
+examples:
+  positive:
+  - Whatever.
+  - No motivation today.
+  - No energy, sorry.
+  - It's all the same to me.
+  - Can't be bothered.
+  - You pick, I don't care.
+  - Leave it, I'm empty.
+  - Doesn't matter to me.
+  - Not important for me.
+  - I don't feel like it.
+  negative:
+  - It's some the same to me.
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+tags:
+- semantic
+- apathy
+rating: 1
+composed_of:
+- ATO_INDIFFERENT
+- ATO_NO_MOTIVATION
+scoring:
+  base: 1.2
+  weight: 0.9
+window:
+  messages: 5

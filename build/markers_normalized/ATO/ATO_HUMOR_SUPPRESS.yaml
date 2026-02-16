@@ -1,0 +1,73 @@
+id: ATO_HUMOR_SUPPRESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Humor/Emojis deutlich seltener als persönliche Baseline; nüchterner Stil
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: comparative
+  feature: "emoji_rate_drop"
+  spec: "drop>=50% vs. 7d-baseline"
+- type: style
+  feature: "no-laughter-lexeme"
+examples:
+  positive:
+  - Ok. Ich sende die Liste heute.
+  - Verstanden. Keine Anmerkungen.
+  - Bitte die Datei prüfen.
+  - Ich bestätige den Termin.
+  - Erledigt. Nächster Punkt.
+  - Protokoll folgt um 18:00.
+  - Wie vereinbart keine Änderungen.
+  - Ticket erstellt.
+  - Scope bestätigt.
+  - Frist bleibt bestehen.
+  - Statusupdate kommt.
+  - Agenda einhalten.
+  - Review planen.
+  - Budget checken.
+  - Milestone setzen.
+  - Update teilen.
+  - Freigabe geben.
+  - Prozess folgen.
+  - Abnahme machen.
+  - Notiz nehmen.
+  - Status updaten.
+  negative:
+  - Haha, na gut 😄
+  - Klingt lustig 😅
+  - lol
+  - Das war witzig.
+  - 😂
+  - Ok, ok, ich seh’s ein 😉
+  - Uff, black humor hilft gerade.
+  - Das ist schon komisch.
+  - Ich feier das 😂
+  - Meme dazu folgt.
+  - Haha, typisch du!
+  - Lol, das passt.
+  - Witzig 😜
+  - Lach mich kaputt.
+  - 😂😂
+  - Das ist urkomisch.
+  - Black humor.
+  - Spaßig.
+  - Lass lachen.
+  - Humor hilft.
+tags: []
+rating: 1
+semiotic:
+  mode: indexical
+  level: pragmatic
+  object: "humor_absence"
+  connotation:
+  - "unterdrückt"
+  - "humorlos"
+  interpretant: "effect_on_state: {affekt: flat, deesc: -0.05}"
+metadata:
+  label: Humor unterdrückt

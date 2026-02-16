@@ -1,0 +1,35 @@
+id: ATO_SILENT_TREATMENT_INDICATORS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for silent treatment indicators
+frame:
+  signal:
+  - silent treatment
+  concept: Silent treatment signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(not talking|won't speak|giving silence|ignoring you)\\b"
+examples:
+  positive:
+  - I'm not talking to you.
+  - I won't speak until you apologize.
+  - I'm giving you the silent treatment.
+  - I'm ignoring you now.
+  - Don't expect me to respond.
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

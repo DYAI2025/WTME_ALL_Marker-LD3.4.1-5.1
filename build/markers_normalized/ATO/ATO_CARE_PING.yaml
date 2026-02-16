@@ -1,0 +1,66 @@
+id: ATO_CARE_PING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Kurzer Care-Ping ohne Erwartungsdruck
+  concept: Care Ping
+  pragmatics: Kontakt halten
+  narrative: maintenance
+patterns:
+- type: regex
+  value: '(?i)\bkurz(?:er)? ping\b'
+- type: regex
+  value: '(?i)\bhab(?:e)? an dich gedacht\b'
+- type: regex
+  value: '(?i)\bkurzes? hallo\b'
+- type: regex
+  value: '(?i)\bkurz(?:er)? check-?in\b'
+- type: regex
+  value: '(?i)\bpflege-?hallo\b'
+examples:
+  positive:
+  - Kurzer Ping
+  - Nur ein kurzes Hallo!
+  - Hab an dich gedacht.
+  - Mini Check-in - alles gut?
+  - Nur ein Pflege-Hallo.
+  - Kurzer Check-in, wollte dir nur einen lieben Gruss dalassen.
+  - Hallo du, ich schick dir ein kleines Care-Ping.
+  - 'Nur ein kurzer Gedanke: Hoffe, dein Tag ist okay.'
+  - Ich wollte einfach kurz winken - fuehl dich gesehen.
+  - 'Hier ein kleiner Ping: Wenn du was brauchst, ich bin da.'
+  - Mini-Nachricht, um Hallo zu sagen und dich zu erinnern, dass du wichtig bist.
+  - Kurzes Hab dich im Blick - kein To-do, nur Waerme.
+  - Ich lasse dir ein Herz da und frage, wie du dich heute fuehlst.
+  - Nur ein ganz kurzes alles gut bei dir? ohne Druck.
+  negative:
+  - Kannst du mir sofort helfen, es ist dringend?
+  - Ich brauche deine Arbeitsergebnisse, bitte schnell.
+  - Warum meldest du dich nicht, das enttaeuscht mich.
+  - Schick mir die Dateien, das ist wichtig.
+  - Ich rufe dich an, wir muessen was klaeren.
+  - Brauche Feedback zu meiner Praesentation, bitte heute noch.
+  - Du hast mich vergessen, das fuehlt sich mies an.
+  - Ich will ausfuehrlich sprechen, Reservier dir eine Stunde.
+  - Das ist keine Begruessung, sondern eine Mahnung.
+  - Wir haben ein Problem, melde dich sofort.
+tags:
+- ato
+- positiv
+- ritual
+rating: 1
+activation:
+  rule: "ANY 1 IN 30 messages"
+scoring:
+  base: 1.6
+  weight: 0.4
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 30
+metadata:
+  updated_at: "2025-08-19T10:30:00Z"

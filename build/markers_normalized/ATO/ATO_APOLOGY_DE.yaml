@@ -1,0 +1,45 @@
+id: ATO_APOLOGY_DE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Entschuldigung / Reue
+  concept: Fehleranerkennung
+  pragmatics: Beziehungsreparatur durch Übernahme
+  narrative: Verantwortungsübernahme
+patterns:
+- type: regex
+  value: '(?i)\bsorry\b'
+- type: regex
+  value: '(?i)\bentschuldig\w*\b'
+- type: regex
+  value: '(?i)\btut\s+mir\s+leid\b'
+- type: regex
+  value: '(?i)\bmein(e|en)?\s+fehler\b'
+- type: regex
+  value: '(?i)\bdafür\s+übernehme\s+ich\s+die\s+verantwortung\b'
+examples:
+  positive:
+  - Sorry, das war nicht okay.
+  - Es tut mir leid.
+  - Entschuldige bitte.
+  - Mein Fehler.
+  - Dafür übernehme ich die Verantwortung.
+  - Ich hätte anders handeln sollen – tut mir leid.
+  - Ich entschuldige mich dafür.
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- apology
+- repair
+- atomic
+rating: 1

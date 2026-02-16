@@ -1,0 +1,40 @@
+id: SEM_TECH_REPAIR_AS_BOND
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - tech-repair
+  concept: Kleinreparaturen binden
+  pragmatics: Sicherheit durch Tun
+  narrative: repair
+patterns: []
+examples:
+  positive:
+  - Trigger prüfen + es fühlt sich sicher an
+  - Cache leeren + es wird ruhiger
+  - Nummer einrichten + ich fühl mich gehalten
+  - ENV korrigieren + es wird ruhiger
+  - Config korrigieren + ich fühle mich getragen
+  - Trigger anpassen + es fühlt sich sicher an
+  - Cache checken + es wird ruhiger in mir
+  - Nummer fixen + ich fühl mich gehalten
+  - ENV setzen + es fühlt sich sicher an
+  - Bug korrigieren + ich werde getragen
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- technik
+- bindung
+rating: 1
+composed_of:
+- ATO_TECH_FIX
+- ATO_SAFETY_AFFECT

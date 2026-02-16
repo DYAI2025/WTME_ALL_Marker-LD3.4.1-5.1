@@ -1,0 +1,47 @@
+id: MEMA_MINIMIZER
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: Archetyp des Herunterspielers.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Ist doch kein Drama, wirklich.
+  - Übertreib nicht, war fast nichts.
+  - Lass uns das nicht so groß machen.
+  - Halb so wild, weiter jetzt.
+  - Das stellt ihr alle zu groß dar.
+  - Egal, vergiss es.
+  - Nicht wichtig.
+  - Übertreibung.
+  - Kein Ding.
+  - Bagatelle.
+  negative:
+  - Großes Problem.
+  - Ernst nehmen.
+  - Verletzt tief.
+  - Besprechen.
+  - Relevant.
+  - Nicht ignorieren.
+  - Wichtig.
+  - Eskaliert.
+  - Ernsthaft.
+  - Nicht herunterspielen.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "minimizer"
+  interpretant: "effect_on_state: {deesc: +0.05}"
+  connotation:
+  - "archetype"
+  - "minimization"
+metadata:
+  label: Minimizer

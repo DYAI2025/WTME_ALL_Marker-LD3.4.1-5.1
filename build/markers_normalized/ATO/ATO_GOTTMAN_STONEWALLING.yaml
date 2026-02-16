@@ -1,0 +1,62 @@
+id: ATO_GOTTMAN_STONEWALLING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Erkennung von Kommunikationsverweigerung nach Gottmans Konfliktmustern.
+frame:
+  signal:
+  - ich will nicht reden
+  - lass mich in Ruhe
+  - darüber rede ich nicht
+  - ich habe nichts zu sagen
+  - mir reicht's
+  concept: 'Gottman: Mauern'
+  pragmatics: Kommunikationsverweigerung und emotionaler Rückzug
+  narrative: Defensive Kommunikation
+patterns:
+- type: regex
+  value: "(?i)\\bich will nicht reden\\b"
+- type: regex
+  value: "(?i)\\blass mich in Ruhe\\b"
+- type: regex
+  value: "(?i)\\bdarüber rede ich nicht\\b"
+- type: regex
+  value: "(?i)\\bich habe nichts zu sagen\\b"
+- type: regex
+  value: "(?i)\\bmir reicht'?s\\b"
+- type: regex
+  value: "(?i)\\bkein Kommentar\\b"
+- type: regex
+  value: "(?i)\\bich bin raus\\b"
+examples:
+  positive:
+  - Ich will nicht reden.
+  - Lass mich in Ruhe mit dem Thema.
+  - Darüber rede ich nicht mehr.
+  - Ich habe nichts zu sagen.
+  - Mir reicht's, ich bin raus.
+  negative:
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+  - Danke, dass du mir das sagst. Ich denke darueber nach.
+tags:
+- atomic
+- gottman
+- stonewalling
+- conflict
+- withdrawal
+rating: 1
+activation:
+  rule: "ANY 1"
+scoring:
+  base: 1.6
+  weight: 0.55
+  decay: 0.04
+  formula: "logistic"
+window:
+  messages: 30

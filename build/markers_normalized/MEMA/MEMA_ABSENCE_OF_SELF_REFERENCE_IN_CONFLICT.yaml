@@ -1,0 +1,60 @@
+id: MEMA_ABSENCE_OF_SELF_REFERENCE_IN_CONFLICT
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: de
+description: ''
+frame:
+  signal:
+  - Konflikt ohne Selbstbezug
+  concept: 'Omission: Selbstreferenz fehlt trotz Streit'
+  pragmatics: Hinweis auf externalisierte Perspektiven
+  narrative: controlled_distance
+patterns: []
+examples:
+  positive:
+  - "A: Seit Wochen wartest du nicht auf Rückmeldung.\nB: Du hättest den Termin selbst sichern können.\nA: Du verschiebst immer wieder die Verantwortung.\nB: Du siehst nur deinen Kalender, nicht den Prozess."
+  - "A: Deine Abteilung liefert nie rechtzeitig.\nB: Du setzt unrealistische Deadlines.\nA: Deine Planung ignoriert die Kapazitäten.\nB: Du gehst ständig über unsere Grenzen."
+  - "A: Du hältst dich nicht an unsere Vereinbarungen.\nB: Du schmeißt ständig neue Aufgaben rein.\nA: Du lässt Nacharbeit einfach bei uns liegen.\nB: Du verkennst, wie komplex das Thema ist."
+  - "A: Du weichst kritischen Fragen immer aus.\nB: Du provozierst mit Unterstellungen.\nA: Du stellst das Team vor vollendete Tatsachen.\nB: Du ignorierst sämtliche Rückmeldungen."
+  - "A: Du blockierst jeden Vorschlag aus dem Projektteam.\nB: Du willst einfach nur deinen eigenen Plan durchdrücken.\nA: Du lässt keine Diskussion zu.\nB: Du wartest nur darauf, Fehler zu finden."
+  - "A: Du machst wieder alles von deinem Bauchgefühl abhängig.\nB: Du klammerst dich an veraltete Prozesse.\nA: Du siehst nicht, wie viel Schaden das anrichtet.\nB: Du übergehst jedes Warnsignal."
+  - "A: Du setzt andere unter Druck, statt Lösungen zu suchen.\nB: Du dramatisierst jede Verzögerung.\nA: Du stellst das Board gegen uns.\nB: Du nutzt jede Abweichung für Schuldzuweisungen."
+  - "A: Du hast das Protokoll komplett ignoriert.\nB: Du warst es, der die Anforderungen täglich änderte.\nA: Du lässt jede Abstimmung platzen.\nB: Du respektierst keine Freigaben."
+  - "A: Du gehst wieder mit Halbwissen in die Präsentation.\nB: Du sabotierst die Vorbereitung durch ständige Änderungen.\nA: Du spielst Risiken herunter.\nB: Du blendest jede Konsequenz aus."
+  - "A: Du bringst das Team in Schwierigkeiten mit deinen Zusagen.\nB: Du verteilst Aufgaben ohne Ressourcen zu prüfen.\nA: Du setzt Meetings an, obwohl nichts geklärt ist.\nB: Du siehst die Auswirkungen
+    auf die Partner nicht."
+  negative:
+  - "A: Seit Wochen wartest du nicht auf Rückmeldung.\nB: Du hättest den Termin selbst sichern können.\nA: Du verschiebst manchmal wieder die Verantwortung.\nB: Du siehst nur deinen Kalender, nicht den
+    Prozess."
+  - "A: Deine Abteilung liefert selten rechtzeitig.\nB: Du setzt unrealistische Deadlines.\nA: Deine Planung ignoriert die Kapazitäten.\nB: Du gehst ab und zu über unsere Grenzen."
+  - "A: Du hältst dich nicht an unsere Vereinbarungen.\nB: Du schmeißt ab und zu neue Aufgaben rein.\nA: Du lässt Nacharbeit einfach bei uns liegen.\nB: Du verkennst, wie komplex das Thema ist."
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- meta
+- absence
+- conflict
+- self_reference
+rating: 1
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+absence_sets:
+  SELF_REFERENCE:
+    tags:
+    - self_reference
+    - pronoun_ich
+    ids:
+    - ATO_PRONOUN_ICH
+    - ATO_SELF_STATEMENT
+emit:
+  per_speaker: true

@@ -1,0 +1,43 @@
+id: CLU_GOTTMAN_TOXICITY_CLUSTER
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Cluster toxischer Kommunikationsmuster nach Gottman.
+frame:
+  signal:
+  - Multiple Gottman-Destruktoren
+  concept: 'Gottman: Toxizitäts-Cluster'
+  pragmatics: Akkumulation beziehungsschädigender Kommunikation
+  narrative: Destruktive Beziehungsdynamik
+patterns: []
+examples:
+  positive:
+  - Du machst immer alles falsch! Du bist wirklich dumm! Das stimmt nicht! Ich will nicht mehr reden!
+  negative:
+  - Du machst manchmal alles falsch! Du bist wirklich dumm! Das stimmt nicht! Ich will nicht mehr reden!
+  - ich erlebe es so, dass immer alles falsch! Du bist wirklich dumm! Das stimmt nicht! Ich will nicht mehr reden!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags:
+- cluster
+- gottman
+- toxicity
+- destructive
+- escalation
+- severe
+rating: 2
+activation:
+  rule: "WEIGHTED_AND"
+scoring:
+  base: 2.0
+  weight: 0.8
+  decay: 0.05
+  formula: "logistic"
+window:
+  messages: 50
+detect_class: "E"
+criteria: "Häufung mehrerer Gottman-Destruktoren in kurzer Zeit"

@@ -1,0 +1,45 @@
+id: ATO_SARCASM_CUES
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Sarkasmus-Cue
+  concept: Antiphrase / Gegenteilbehauptung
+  pragmatics: Qualitäts-Maxime flouten
+  narrative: aside
+patterns:
+- type: regex
+  value: "(?i)ja(,)? genau"
+- type: regex
+  value: "(?i)na klar( doch)?"
+- type: regex
+  value: "(?i)ganz bestimmt"
+- type: regex
+  value: "(?i)/s\\b"
+- type: regex
+  value: "(?i)super(,)? (na klar|logisch)"
+examples:
+  positive:
+  - Ja, genau, das hat super funktioniert.
+  - Na klar doch, völlig risikofrei.
+  - Ganz bestimmt ist das eine Abkürzung.
+  - Klar, wir sind alle Millionäre /s
+  - Super, logisch, total einfach.
+  negative:
+  - Klar, wir sind einige Millionäre /s
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- humor
+- sarcasm
+- grice_quality
+- atomic
+- v33
+rating: 1

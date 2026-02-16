@@ -1,0 +1,58 @@
+id: ATO_BREATHINESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Atomic pattern for breathy voice quality
+frame:
+  signal:
+  - High Spectral Noise + Low HNR
+  concept: hauchig
+  pragmatics: Stimmqualität
+  narrative: audio
+patterns: []
+examples:
+  positive:
+  - '[Hauchige Stimmgebung]'
+  - '[Luftige Artikulation]'
+  - '[Reduzierte Stimmkraft]'
+  - '[Schwache Glottisschließung]'
+  - '[Entspannte Phonation]'
+  - '[Weiche, hörbar luftige Stimme mit Atemgeräusch]'
+  - '[Breathy phonation: hörbares Rauschen auf den Vokalen]'
+  - '[Leiser, hauchiger Stimmansatz ohne klare Kante]'
+  - '[Starke Luftanteile zwischen den Worten]'
+  - '[Hauchiges „h“ vor fast jedem Vokal]'
+  - '[Luftig geführter Ton, kaum Glottalverschluss]'
+  - '[Geflüsterte, aber tonale Stimme mit Atemrauschen]'
+  - '[Stimme klingt wie durch einen Schleier, viel Luftanteil]'
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+tags:
+- voice_quality
+- audio
+- atomic
+rating: 1
+detect_class:
+  module: prosody.breathiness
+  params:
+    hnr_threshold_db: 12
+    spectral_tilt_min: 0.6
+metadata:
+  neg_examples:
+  - "[Klarer, kräftiger Stimmklang ohne Rauschen]"
+  - "[Gepresste Stimme mit harter Glottis]"
+  - "[Neutraler Stimmansatz, keine Luftanteile hörbar]"
+  - "[Stimmbandverschluss vollständig, kein Hauchen]"
+  - "[Starker Brustton, keinerlei Breathiness]"
+  - "[Raues, aber nicht luftiges Timbre]"
+  - "[Stimmkraft hoch, deutliche Kante]"
+  - "[Nasaler Klang ohne zusätzlichen Luftstrom]"
+  - "[Flüsterlaut ohne Tongebung (reines Whispering)]"
+  - "[Falsett, aber klar geführt ohne Atemgeräusch]"

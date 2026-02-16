@@ -1,0 +1,43 @@
+id: MEMA_DIGITAL_PRESENCE_MANIPULATION
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: en
+description: Meta marker for systematic manipulation of digital presence and availability
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Technical excuses used strategically to control level of intimacy and exposure.
+  - Webcam availability manipulated to maintain power dynamics in relationships.
+  - Video presence controlled to manage information flow and emotional access.
+  - Camera excuses escalate when deeper engagement or accountability is requested.
+  - Digital presence manipulation as tool for maintaining relational control.
+  - Professional context where video control maintains hierarchical advantages.
+  - Therapeutic setting where camera manipulation controls therapeutic intimacy.
+  - Educational context where video presence used to manage authority dynamics.
+  - Team dynamics where digital presence becomes tool for influence and control.
+  - Long-term pattern where technical control enables broader relational manipulation.
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+tags:
+- mema
+- v3.3
+- digital-manipulation
+- presence-control
+rating: 1
+composed_of:
+- SEM_WEBCAM_EXCUSE
+- SEM_CONTROL_ESCALATION
+- CLU_BOUNDARY_VIOLATION_PATTERNS
+criteria: "Strategic pattern of controlling digital engagement through technical excuses and presence manipulation"

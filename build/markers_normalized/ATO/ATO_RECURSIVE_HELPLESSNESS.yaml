@@ -1,0 +1,60 @@
+id: ATO_RECURSIVE_HELPLESSNESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Systematische Ablehnung von Lösungen zur Problemaufrechterhaltung
+  concept: Rekursive Hilflosigkeitsspiralen
+  pragmatics: Bindung durch Fürsorgerolle
+  narrative: learned_helplessness
+patterns: []
+examples:
+  positive:
+  - Ich bin so überfordert mit der Arbeit → Ich kann nicht delegieren, niemand macht es richtig → Ich kann den Job nicht wechseln, es ist zu riskant
+  - Ich fühle mich so einsam → Ich kann keine neuen Leute kennenlernen, ich bin zu ängstlich → Online-Dating funktioniert bei mir nicht
+  - Ich habe Probleme mit Geld → Ich kann nicht sparen, es kommt immer was dazwischen → Einen Nebenjob kann ich nicht machen, zu anstrengend
+  - Ich bin unglücklich in der Beziehung → Ich kann nicht darüber reden, er versteht es nicht → Verlassen kann ich ihn auch nicht
+  - Ich schlafe kaum → Ich kann nicht früher ins Bett, dann liege ich nur wach → Schlafmittel helfen mir nicht, da werde ich abhängig
+  - Ich packe meine Aufgaben nicht → Ich kann keine Liste machen, das überfordert mich → Coaching bringt nichts, das habe ich probiert
+  - Mein Rücken tut weh → Ich kann nicht zum Physio, da sind nur Wartelisten → Zuhause üben klappt nicht, dafür fehlt mir die Kraft
+  - Ich verliere immer Freundschaften → Ich kann es ihnen nicht erklären, das versteht keiner → Neue Leute kennenlernen geht auch nicht, ich bin zu komisch
+  - Die Wohnung ist chaotisch → Ich kann nicht aufräumen, mir fehlt Energie → Hilfe holen geht nicht, niemand möchte das sehen
+  - Ich komme beruflich nicht voran → Ich kann keinen Kurs machen, der kostet zu viel → Bewerben bringt nichts, die nehmen mich sowieso nicht
+  negative:
+  - Ich bin so überfordert mit der Arbeit → ich entscheide mich gegen delegieren, niemand macht es richtig → Ich kann den Job nicht wechseln, es ist zu riskant
+  - Ich fühle mich so einsam → Ich kann wenige neuen Leute kennenlernen, ich bin zu ängstlich → Online-Dating funktioniert bei mir nicht
+  - Ich habe Probleme mit Geld → Ich kann nicht sparen, es kommt manchmal was dazwischen → Einen Nebenjob kann ich nicht machen, zu anstrengend
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+tags:
+- attentional
+- helplessness
+- codependency
+- spiral
+rating: 1
+activation:
+  rule: "SPIRAL PATTERN IN 3 messages"
+scoring:
+  base: 2.7
+  weight: 0.81
+  decay: 0.02
+  formula: "logistic"
+window:
+  messages: 10
+metadata:
+  neg_examples:
+  - "Ich bin überfordert, deshalb habe ich einen Delegations-Workshop gebucht."
+  - "Ich fühlte mich einsam, also melde ich mich bei zwei Freundinnen."
+  - "Ich habe Geldsorgen, deswegen mache ich mit meinem Banker einen Sparplan."
+  - "In der Beziehung ist es schwer, wir gehen nächste Woche in die Paarberatung."
+  - "Ich packe meine Aufgaben nicht, also teste ich heute eine neue Planungstechnik."
+  - "Mein Rücken tut weh, daher gehe ich zweimal in der Woche zur Physiotherapie."
+  - "Ich habe Angst, Freundschaften zu verlieren, also spreche ich offen über meine Gefühle."
+  - "Die Wohnung ist chaotisch, ich habe eine Freundin zum gemeinsamen Aufräumen eingeladen."
+  - "Beruflich geht nichts weiter, deshalb bewerbe ich mich jetzt aktiv auf zwei Stellen."
+  - "Ich schlafe schlecht, also probiere ich ein Einschlafritual und reduziere Bildschirmzeit."

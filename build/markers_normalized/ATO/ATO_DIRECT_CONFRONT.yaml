@@ -1,0 +1,45 @@
+id: ATO_DIRECT_CONFRONT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - direkte Ansprache
+  - Anklage
+  - Vorwurf
+  concept: Konfrontation
+  pragmatics: Eskalation von Konflikten
+  narrative: Auseinandersetzung
+patterns:
+- type: regex
+  value: (?i)immer recht
+- type: regex
+  value: (?i)warum tust du
+- type: regex
+  value: (?i)deine Schuld
+- type: regex
+  value: (?i)hör auf
+- type: regex
+  value: (?i)Genug jetzt
+examples:
+  positive:
+  - Du hast immer recht, was?
+  - Warum tust du das ständig?
+  - Das ist alles deine Schuld!
+  - Hör auf damit, das nervt!
+  - Genug jetzt, ich kann nicht mehr!
+  negative:
+  - Du hast manchmal recht, was?
+  - Warum tust du das ab und zu?
+  - Genug jetzt, ich entscheide mich gegen mehr!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- confront
+rating: 2
+activation:
+  rule: ANY 1

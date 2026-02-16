@@ -1,0 +1,46 @@
+id: ATO_PLATONIC_BOUNDARY_MARKER
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - Klare Betonung von Freundschaft, Abgrenzung von Romantik.
+  concept: Platonische Grenzziehung
+  pragmatics: Deeskalation romantischer Spannung, Erwartungsmanagement.
+  narrative: boundary
+patterns:
+- type: regex
+  value: (?i)als freund(in)? wichtig
+- type: regex
+  value: (?i)freundschaft.*nicht aufs spiel
+- type: regex
+  value: (?i)sehe dich wie (einen|eine) (bruder|schwester)
+- type: regex
+  value: (?i)wichtig, dass wir freunde bleiben
+- type: regex
+  value: (?i)froh, dich als freund(in)? zu haben
+- type: regex
+  value: (?i)nur freundschaftlich
+examples:
+  positive:
+  - Du bist mir als Freund so wichtig.
+  - Ich möchte unsere Freundschaft auf keinen Fall aufs Spiel setzen.
+  - Ich sehe dich wirklich wie einen Bruder.
+  - Ich bin einfach nur froh, dich als Freundin zu haben.
+  - Mir ist super wichtig, dass wir Freunde bleiben, egal was passiert.
+  - Ich hoffe, zwischen uns bleibt alles rein freundschaftlich.
+  negative:
+  - Ich möchte unsere Freundschaft auf wenige Fall aufs Spiel setzen.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- boundary
+- platonic
+- friendzone
+rating: 1

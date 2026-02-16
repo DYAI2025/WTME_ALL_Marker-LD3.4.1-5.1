@@ -1,0 +1,47 @@
+id: MEMA_CODE_VIOLATION_SIGNATURE
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: en
+description: ''
+frame:
+  signal:
+  - Humor-Code erkannt (Maximen-/Register-Muster)
+  concept: Joking-Frame etabliert
+  pragmatics: Nicht-bona-fide Kommunikation
+  narrative: frame_lock
+patterns: []
+examples:
+  positive:
+  - Mehrere Maximenflouts + Q&A-Jokes im Fenster.
+  - Register-Clash + Rätsel-Form wiederholt.
+  - Ambiguitätssignale + Antiphrase ballen sich.
+  - Ironie-Kette plus Format-Wiederkehr.
+  - Joking-Frame über mehrere Beiträge stabil.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- humor
+- meta
+- code_violation
+- v33
+rating: 1
+composed_of:
+- CLU_MAXIM_FLOUTING
+- CLU_QA_RIDDLE_FORMATS
+activation:
+  rule: "ANY 2 IN 30 messages"
+scoring:
+  base: 2.3
+  weight: 1.5
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 30
+  seconds: 3600

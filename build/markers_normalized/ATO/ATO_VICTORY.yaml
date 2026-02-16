@@ -1,0 +1,25 @@
+id: ATO_VICTORY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - token
+  concept: Sieg / Triumph
+  pragmatics: Erfolg und Überwindung
+  narrative: Ich siege über die Hindernisse
+patterns:
+- type: regex
+  value: "(gewonnen|Sieg|triumphiert|überwunden|geschafft)"
+examples:
+  positive:
+  - ich habe gewonnen
+  - das ist mein Sieg
+  - ich habe triumphiert
+  - überwunden und geschafft
+  - erfolgreich durchgekämpft
+  negative: []
+tags: []
+rating: 1

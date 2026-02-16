@@ -1,0 +1,58 @@
+id: CLU_INTUITION_POSITIVE_AFFECT
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: ''
+frame:
+  signal:
+  - geballte positive SEMs über kurze Zeit
+  concept: 'Vorahnung stabilen Wohlbefindens (Familie: POSITIVE_AFFECT)'
+  pragmatics: ''
+  narrative: positive_affect
+patterns: []
+examples:
+  positive:
+  - … **mag** X und **spiele gerne** … **blicke positiv** …
+  - … **zufrieden** … **lächelt** spontan …
+  - … **stolz** auf Fortschritt … **positive Lebenseinstellung** …
+  - … **lacht** mit anderen … **blickt zuversichtlich** nach vorn …
+  - … **zufrieden** mit Ergebnis … **lächelt** … **optimistisch** …
+  - … **mag** Training … **geht gern** laufen … **ist zuversichtlich** …
+  - … **stolz** auf Team … **positive Zukunft** …
+  - … **lacht** herzlich … **zufrieden** … **blickt positiv** …
+  - … **spielt gern** … **kulturelle Aktivität** … **optimistisch** …
+  - … **lächelt** oft … **zufrieden** … **Zuversicht** …
+  - … **mag** Gartenarbeit … **blickt positiv** auf Woche …
+  - … **zufrieden** mit Ruhe … **lächelt** ohne Grund …
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags: []
+rating: 1
+composed_of:
+- HINT_POSITIVE_AFFECT
+- SEM_ACTIVE_ENJOYMENT
+- SEM_POSITIVE_OUTLOOK
+- SEM_EXPRESSED_SATISFACTION
+- SEM_REPORTED_NONVERBAL_JOY
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+  window: 5
+  confirm_window: 6
+  cooldown_messages: 2
+scoring:
+  base: 0.6
+  weight: 1.1
+metadata:
+  family: AFFECT
+  intuition:
+    state: "provisional"
+    confirm_window: 10
+    confirm_rule: "AT_LEAST 1 of [SEM_EXPRESSED_SATISFACTION, SEM_POSITIVE_OUTLOOK] IN confirm_window"
+    decay_window: 14

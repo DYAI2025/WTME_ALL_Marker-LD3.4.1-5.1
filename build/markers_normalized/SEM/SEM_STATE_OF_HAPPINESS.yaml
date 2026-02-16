@@ -1,0 +1,42 @@
+id: SEM_STATE_OF_HAPPINESS
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: de
+description: ''
+frame:
+  signal:
+  - glücklich + wenn-Kondition
+  concept: Zustand von Glück mit Bedingung
+  pragmatics: ''
+  narrative: positive_affect
+patterns: []
+examples:
+  positive:
+  - Am **glücklichsten** bin ich, **wenn** ich mich geborgen fühle.
+  - Ich bin **glücklich**, **wenn** andere glücklich sind.
+  - Ich bin **glücklich**, **wenn** ich draußen bin.
+  - Ich bin **am glücklichsten**, **wenn** ich Zeit mit Freunden habe.
+  - Ich fühle mich **glücklich**, **wenn** ich Musik höre.
+  - Ich bin **glücklich**, **wenn** die Sonne scheint.
+  - Ich fühle **Freude**, **wenn** ich etwas Neues lerne.
+  - Ich bin **glücklich**, **wenn** ich helfen kann.
+  - Ich werde **glücklich**, **wenn** ich erfolgreich bin.
+  - Ich bin **glücklich**, **wenn** wir gemeinsam lachen.
+  - Ich bin **glücklich**, **wenn** ich zur Ruhe komme.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+  - Ich **wäre** glücklich, **wenn** es nicht regnete.
+tags: []
+rating: 1
+composed_of:
+- ATO_JOY_EXPRESSION
+- ATO_CONDITION_CUE
+activation:
+  rule: "BOTH IN 1 message"

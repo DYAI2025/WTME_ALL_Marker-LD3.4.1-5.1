@@ -1,0 +1,52 @@
+id: ATO_DENIAL
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Explizite Verleugnungs- oder Abstreit-Formeln.
+frame:
+  signal:
+  - das stimmt nicht
+  - habe ich nie gesagt
+  - ist nie passiert
+  - das war nicht so
+  concept: Verleugnung
+  pragmatics: Verantwortung abwehren
+  narrative: Gegen-Erzählung
+patterns:
+- type: regex
+  value: "(?i)\\bdas\\s+stimmt\\s+nicht\\b"
+- type: regex
+  value: "(?i)\\bhabe\\s+ich\\s+nie\\s+gesagt\\b"
+- type: regex
+  value: "(?i)\\bist\\s+nie\\s+passiert\\b"
+- type: regex
+  value: "(?i)\\bdas\\s+war\\s+nicht\\s+so\\b"
+examples:
+  positive:
+  - Das stimmt nicht.
+  - Habe ich nie gesagt.
+  - Das ist nie passiert.
+  - So war das nicht gemeint.
+  - Das war nicht so.
+  - Das habe ich nicht getan.
+  - Nie ist das passiert.
+  - Das ist falsch so.
+  negative:
+  - Habe ich selten gesagt.
+  - Das ist selten passiert.
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+tags:
+- atomic
+- denial
+- text
+rating: 1
+metadata:
+  repair_log:
+  - rule: "R09"
+    note: "Frame ergänzt"
+    date: "2025-08-29"

@@ -1,0 +1,35 @@
+id: ATO_TRIANGULATION_LANGUAGE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for triangulation in communication
+frame:
+  signal:
+  - triangulation
+  concept: Triangulation signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(told me|said about you|everyone thinks|others agree)\\b"
+examples:
+  positive:
+  - Someone told me you were upset.
+  - They said about you that...
+  - Everyone thinks you're being difficult.
+  - Others agree with me on this.
+  - I heard from someone that you...
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+tags:
+- atomic
+- v3.3
+- auto-generated
+rating: 1

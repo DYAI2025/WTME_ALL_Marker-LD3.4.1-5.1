@@ -1,0 +1,63 @@
+id: ACT_FRIENDSHIP_MAINTENANCE
+schema: LeanDeep
+version: '5.1'
+layer: UNKNOWN
+lang: de
+description: ''
+frame:
+  signal:
+  - Regelmäßige kurze Care-Kontakte
+  concept: Maintenance Rituals
+  pragmatics: Beziehungsaufbau
+  narrative: low_pressure_care
+patterns:
+- type: regex
+  value: '(?i)\bwie war dein tag\b'
+- type: regex
+  value: '(?i)\bkurzes update\b'
+- type: regex
+  value: '(?i)\bdenk an dich\b'
+- type: regex
+  value: '(?i)\bkleines lebenszeichen\b'
+- type: regex
+  value: '(?i)\bwollte mal hören wie es dir geht\b'
+examples:
+  positive:
+  - Kurzes Update:...
+  - Denk an dich!
+  - Wie war dein Tag?
+  - Kleines Lebenszeichen von mir
+  - Wollte mal hören, wie es dir geht
+  - 'Schneller Check-in: Alles gut bei dir?'
+  - Hab gerade an dich gedacht
+  - 'Kurze Frage: Wie läuft deine Woche?'
+  - Sending good vibes
+  - Hoffe, du hattest einen schönen Tag
+  - Kleiner Gruß aus dem Alltag
+  - Wollte dir nur einen schönen Abend wünschen
+  - "Denkpause: Wie geht's dir denn so?"
+  - Kurzes Hallo zwischen Tür und Angel
+  - 'Freundschafts-Ping: Alles okay bei dir?'
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- act
+- friendship
+- ritual
+- maintenance
+rating: 1
+activation:
+  rule: "ANY 1 IN 30 messages"
+scoring:
+  base: 1.7
+  weight: 0.4
+  decay: 0.01
+  formula: "logistic"
+window:
+  messages: 30

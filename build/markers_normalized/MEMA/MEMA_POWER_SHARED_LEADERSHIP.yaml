@@ -1,0 +1,57 @@
+id: MEMA_POWER_SHARED_LEADERSHIP
+schema: LeanDeep
+version: '5.1'
+layer: MEMA
+lang: en
+description: ''
+frame:
+  signal:
+  - power_shared_leadership
+  concept: Machtmotiv wird in geteilte, anschlussfähige Führung überführt
+  pragmatics: Führungsimpuls + Ownership → Alignment → Entscheidung mit Buy‑in
+  narrative: assert→align→decide
+patterns: []
+examples:
+  positive:
+  - Führungsimpuls → Einbindung → Confirm→Close.
+  - Ownership/Entscheidung → Konsens → Abschluss.
+  - Rahmen setzen → Alignment holen → Protokollierter Schluss.
+  - Einfluss zeigen → Zustimmung sichern → sauber beenden.
+  - Ansage → Abgleich → Entscheidung mit Buy‑in.
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags:
+- leadership
+- alignment
+- decision
+rating: 1
+requires:
+  clu_pool:
+  - CLU_POWER_MOTIVE_ACTIVE
+  sem_pool:
+  - SEM_CONSENSUS_SIGNAL
+  - SEM_CLOSURE_PROTOCOL
+activation:
+  window: 10
+  rule:
+    all_of:
+    - "CLU_POWER_MOTIVE_ACTIVE >= 1 in last 6"
+    - "SEM_CONSENSUS_SIGNAL >= 1 in last 3"
+    - "SEM_CLOSURE_PROTOCOL >= 1 in last 4"
+  inhibitors:
+  - "SEM_FORMAT_POLICING >= 1 AFTER SEM_CONSENSUS_SIGNAL BEFORE SEM_CLOSURE_PROTOCOL"
+scoring:
+  base: 0.79
+  weights:
+    CLU_POWER_MOTIVE_ACTIVE: 0.25
+    SEM_CONSENSUS_SIGNAL: 0.35
+    SEM_CLOSURE_PROTOCOL: 0.40
+evidence_capture:
+  keep_snippets: 6
+fire_when: "conditions_met_first_time"

@@ -1,0 +1,36 @@
+id: ATO_MINIMIZING
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Atomic pattern for minimizing language and dismissive expressions
+frame:
+  signal:
+  - minimization
+  concept: Minimizing signal
+  pragmatics: lexical indicator
+  narrative: surface
+patterns:
+- type: regex
+  value: "(?i)\\b(just|only|not a big deal|overreacting|get over it|making this bigger)\\b"
+examples:
+  positive:
+  - It's just a small thing, don't worry.
+  - You're only being dramatic about this.
+  - It's not a big deal, really.
+  - You're overreacting to the situation.
+  - Just get over it and move on.
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+tags:
+- atomic
+- v3.3
+- minimizing
+- dismissive
+rating: 1

@@ -1,0 +1,27 @@
+id: ATO_PITCH_SPREAD_NARROW
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - (Spricht monoton)
+  - (Stimme klingt flach und ausdruckslos)
+  - (Keine Variation in der Tonhöhe)
+  - (Spricht mit gleichbleibender Stimmlage)
+  - (Stimme klingt leise und gedämpft)
+  - (Keine Betonung in der Sprache)
+  - (Spricht ohne Emotionen in der Stimme)
+  - (Stimme klingt kraftlos)
+  - (Spricht sehr ruhig und gleichmäßig)
+  - (Stimme klingt wie ein Summen)
+  negative: []
+tags: []
+rating: 1

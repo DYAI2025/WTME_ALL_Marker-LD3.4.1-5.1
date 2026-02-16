@@ -1,0 +1,63 @@
+id: ATO_POSITIVE_REGARD
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Ausdrücke positiver Wertschätzung oder Anerkennung
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: regex
+  value: "(gut gemacht|ich schätze das|danke für|stolz auf dich|das ist toll)"
+examples:
+  positive:
+  - Gut gemacht!
+  - Ich schätze das.
+  - Danke für deine Hilfe.
+  - Stolz auf dich.
+  - Das ist toll.
+  - Super Arbeit.
+  - Ich wertschätze dich.
+  - Danke sehr.
+  - Du bist großartig.
+  - Das freut mich.
+  - Perfekt umgesetzt.
+  - Ich bin beeindruckt.
+  - Danke für den Einsatz.
+  - Stolz darauf.
+  - Toll gemacht.
+  - Super!
+  - Wertschätzung pur.
+  - Danke herzlich.
+  - Großartig du.
+  - Freut mich sehr.
+  negative:
+  - Schlecht gemacht.
+  - Ich schätze das nicht.
+  - Kein Danke.
+  - Nicht stolz.
+  - Das ist schlecht.
+  - Miese Arbeit.
+  - Wertschätze nicht.
+  - Du bist nicht großartig.
+  - Das freut mich nicht.
+  - Fehlerhaft umgesetzt.
+  - Nicht beeindruckt.
+  - Kein Danke für Einsatz.
+  - Nicht super.
+  - Keine Wertschätzung.
+  - Kein herzlich.
+  - Nicht großartig.
+  - Freut mich nicht.
+tags: []
+rating: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "positive_regard"
+  interpretant: "effect_on_state: {trust: +0.15, intimacy: +0.1}"
+metadata:
+  label: Positive Anerkennung

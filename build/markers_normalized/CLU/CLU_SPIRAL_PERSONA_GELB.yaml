@@ -1,0 +1,42 @@
+id: CLU_SPIRAL_PERSONA_GELB
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: en
+description: ''
+frame:
+  signal:
+  - Gelb Spiral Persona integriert
+  concept: System-orientierte Persönlichkeitsstruktur
+  pragmatics: Integrale Navigationsmuster
+  narrative: Das Integral-Selbst navigiert Komplexität
+patterns: []
+examples:
+  positive:
+  - Integral-Persona vollständig aktiviert
+  - systemische Navigationsmuster
+  - komplexe Integrationsfähigkeit
+  - flexible Adaptivität
+  - emergente Lösungslogik
+  - Rekurrenter Aufmerksamkeit
+  - Silence-Aware Loss Functions
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []
+rating: 1
+composed_of:
+- SEM_GELB_SYSTEMIC_INTEGRATION
+- ATO_INTEGRAL_THINKING
+activation:
+  rule: "AT_LEAST 2 IN 5 messages"
+  window_size: 5
+  threshold: 2
+scoring:
+  weight: 1.3
+  decay: 0.4

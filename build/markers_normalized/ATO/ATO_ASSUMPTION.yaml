@@ -1,0 +1,38 @@
+id: ATO_ASSUMPTION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - assumption
+  - hypothesis
+  concept: explicit_assumption
+  pragmatics: uncertainty_flag
+  narrative: reasoning
+patterns:
+- type: regex
+  value: "\b(gehen davon aus|nehmen an|annahme|angenommen|hypothese|unter der annahme)\b"
+- type: regex
+  value: "\b(basiert auf der annahme|unsere annahme ist)\b"
+examples:
+  positive:
+  - Wir gehen davon aus, dass die Conversion bei 5% liegt.
+  - Angenommen wir halten die Churn stabil, dann ...
+  - Unsere Annahme ist, dass der Markt sich verdoppelt.
+  - Das basiert auf der Hypothese, dass Nutzer wöchentlich zurückkehren.
+  - Wir nehmen an, dass wir Q4 profitabel sind.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- assumption
+- reasoning
+- uncertainty
+rating: 1

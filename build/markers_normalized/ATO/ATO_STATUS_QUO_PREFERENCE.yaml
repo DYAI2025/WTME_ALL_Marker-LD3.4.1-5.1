@@ -1,0 +1,42 @@
+id: ATO_STATUS_QUO_PREFERENCE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ''
+frame:
+  signal:
+  - status_quo
+  concept: "Präferenz: 'alles bleibt wie es ist'"
+  pragmatics: Veränderungsabwehr / Stabilitätswunsch
+  narrative: motive_safety
+patterns:
+- type: regex
+  value: (?i)\b(alles\s+so\s+lassen|so\s+bleibt\s+wie\s+es\s+ist|blo(ß|ss)\s+nichts\s+(ändern|verändern)|keine\s+ver(ä|ae)nderung(en)?|status\s*quo)\b
+  flags:
+  - "IGNORECASE"
+examples:
+  positive:
+  - Am liebsten wäre mir, wenn alles so bleibt wie es ist.
+  - Bloß nichts ändern – so passt es.
+  - Status quo behalten, bitte.
+  - Ich will, dass alles so bleibt.
+  - Keine Veränderungen jetzt.
+  - Es funktioniert – also nichts anfassen.
+  - Lass es so, wie’s ist.
+  - Warum ändern? Das läuft doch.
+  - Ich mag keine Änderungen am Setup.
+  - Bitte alles so lassen.
+  negative:
+  - wenige Veränderungen jetzt.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- stability
+- habit
+- no_change
+rating: 1

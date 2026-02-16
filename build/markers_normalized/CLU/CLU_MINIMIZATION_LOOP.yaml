@@ -1,0 +1,72 @@
+id: CLU_MINIMIZATION_LOOP
+schema: LeanDeep
+version: '5.1'
+layer: CLU
+lang: de
+description: Wiederholtes Herunterspielen von Konflikten über Zeit.
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns: []
+examples:
+  positive:
+  - Es war nur eine Kleinigkeit.
+  - Mach keinen Aufriss, ist nicht der Rede wert.
+  - Du übertreibst, das war fast nichts.
+  - Halb so wild, ehrlich.
+  - Lass gut sein, kein Drama.
+  - Ist doch egal, vergiss es.
+  - Nicht so wichtig, weiter.
+  - Übertreib nicht.
+  - Kein Ding.
+  - Bagatelle, wirklich.
+  negative:
+  - Das ist ein großes Problem!
+  - Wir müssen das ernst nehmen.
+  - Das verletzt mich tief.
+  - Lass uns das besprechen.
+  - Das ist relevant.
+  - Ignorier das nicht.
+  - Wichtig für mich.
+  - Das eskaliert.
+  - Ernsthaft jetzt.
+  - Nicht herunterspielen.
+tags: []
+rating: 1
+composed_of:
+  require:
+  - SEM_MINIMIZATION
+  - ATO_MINIMIZING
+  k_of_n:
+    k: 2
+    of: []
+window:
+  size_messages: 8
+gates:
+  min_msgs: 2
+ingredients:
+  require:
+  - SEM_MINIMIZATION
+  - ATO_MINIMIZING
+  k_of_n:
+    k: 2
+    of: []
+emits:
+  indices:
+    conflict: -0.1
+    deesc: +0.05
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "minimization"
+  interpretant: "effect_on_state: {conflict: -0.1}"
+  connotation:
+  - "herunterspielen"
+  - "loop"
+temperature_semantics:
+  external: RUHE
+  latent: DEVALUATION
+metadata:
+  label: Minimization Loop
