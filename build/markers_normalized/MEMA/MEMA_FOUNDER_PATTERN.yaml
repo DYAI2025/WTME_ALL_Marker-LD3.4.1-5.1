@@ -35,12 +35,24 @@ rating: 1
 scoring:
   base: 0.0
   weight: 1.0
-  aggregation: "trend_delta"
+  aggregation: trend_delta
 meta_logic:
-  scope: "multi_session"
+  scope: multi_session
   window_sessions: 5
-  rule: "TRACK frequency(ATO_UNCERTAINTY, ATO_ASSUMPTION, SEM_TRACTION_SIGNALS, SEM_TEAM_SENIORITY) RETURN dominant_positive, dominant_negative"
+  rule: TRACK frequency(ATO_UNCERTAINTY, ATO_ASSUMPTION, SEM_TRACTION_SIGNALS, SEM_TEAM_SENIORITY) RETURN dominant_positive, dominant_negative
 metadata:
   insight:
-    note: "Detects stability vs volatility in founder narrative"
+    note: Detects stability vs volatility in founder narrative
     version: 1
+detect_class: pattern_detection
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+activation:
+  rule: composite_trigger
+  window: 10
+window:
+  messages: 10

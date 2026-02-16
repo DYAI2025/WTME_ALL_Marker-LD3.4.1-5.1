@@ -34,4 +34,10 @@ rating: 2
 composed_of:
 - ATO_STRUCT_PAUSE
 activation:
-  rule: "IF previous_message_is_question THEN (current_contains '?') AND (ELLIPSIS '...' OR reflective counter-question)"
+  rule: IF previous_message_is_question THEN (current_contains '?') AND (ELLIPSIS '...' OR reflective counter-question)
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

@@ -37,6 +37,12 @@ rating: 1
 composed_of:
 - ATO_NONVERBAL_JOY_VERB
 activation:
-  rule: "ANY 1 IN 1 message"
+  rule: ANY 1 IN 1 message
 metadata:
-  notes: "Textuell berichtete Beobachtung; keine echte Sensorik."
+  notes: Textuell berichtete Beobachtung; keine echte Sensorik.
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

@@ -45,8 +45,10 @@ composed_of:
   optional:
   - ATO_CONFIRM
 activation:
-  rule: "AT_LEAST 2 IN 3 messages"
+  rule: AT_LEAST 2 IN 3 messages
   window: 3
 scoring:
   base: 0.62
   weight: 1.08
+window:
+  messages: 4

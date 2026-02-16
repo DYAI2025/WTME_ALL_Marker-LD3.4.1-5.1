@@ -39,3 +39,9 @@ activation:
 scoring:
   base: 1.5
   weight: 1.2
+  multiplier: 2.0
+ld5_family: GRIEF
+ld5_multiplier: 2.0
+ld5_cooldown: 5
+window:
+  messages: 6

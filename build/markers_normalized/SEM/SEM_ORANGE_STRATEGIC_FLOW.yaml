@@ -32,4 +32,10 @@ rating: 1
 composed_of:
 - ATO_ACHIEVEMENT_DRIVE
 - ATO_INTEGRAL_THINKING
-activation: "ANY 2 IN 2 messages"
+activation: ANY 2 IN 2 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

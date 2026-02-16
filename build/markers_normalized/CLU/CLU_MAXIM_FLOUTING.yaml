@@ -37,7 +37,13 @@ composed_of:
 - SEM_AMBIGUITY_FLAG
 - SEM_REGISTER_CLASH
 activation:
-  rule: "AT_LEAST 2 IN 10 messages"
+  rule: AT_LEAST 2 IN 10 messages
 scoring:
   base: 2.0
   weight: 1.4
+  multiplier: 1.0
+ld5_family: PROCESS
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+window:
+  messages: 6

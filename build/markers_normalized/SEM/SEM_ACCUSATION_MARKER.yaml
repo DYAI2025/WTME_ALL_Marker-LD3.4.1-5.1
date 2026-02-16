@@ -53,7 +53,9 @@ composed_of:
 - ATO_ACCUSATION_PHRASE
 - ATO_SUPERLATIVE_PHRASE
 activation:
-  rule: "ANY 1"
+  rule: ANY 1
 scoring:
   base: 1.5
   weight: 1.2
+window:
+  messages: 4

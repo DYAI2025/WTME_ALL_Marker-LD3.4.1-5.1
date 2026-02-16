@@ -37,4 +37,10 @@ rating: 1
 composed_of:
 - ATO_POSITIVE_OUTLOOK_CUE
 activation:
-  rule: "ANY 1 IN 1 message"
+  rule: ANY 1 IN 1 message
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

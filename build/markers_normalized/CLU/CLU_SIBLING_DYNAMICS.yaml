@@ -31,13 +31,17 @@ tags:
 - rivalry
 rating: 2
 activation:
-  rule: "WEIGHTED_AND"
+  rule: WEIGHTED_AND
 scoring:
   base: 1.4
   weight: 0.55
   decay: 0.03
-  formula: "logistic"
+  formula: logistic
+  multiplier: 1.0
 window:
   messages: 50
-detect_class: "E"
-criteria: "Kombination von Geschwisterrollen und Konfliktmustern"
+detect_class: E
+criteria: Kombination von Geschwisterrollen und Konfliktmustern
+ld5_family: PROCESS
+ld5_multiplier: 1.0
+ld5_cooldown: 5

@@ -42,8 +42,10 @@ composed_of:
   - SEM_LISTING
   - SEM_PROOF_STD_SHIFT
 activation:
-  rule: "AT_LEAST 2 IN 4 messages"
+  rule: AT_LEAST 2 IN 4 messages
   window: 4
 scoring:
   base: 0.62
   weight: 1.10
+window:
+  messages: 4

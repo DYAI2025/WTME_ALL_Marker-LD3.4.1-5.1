@@ -12,11 +12,11 @@ frame:
   narrative: attachment_insecurity
 patterns:
 - type: regex
-  value: '(?i)\b(alles gut mit uns|magst du mich( noch)?|bist du( noch)? da)\b'
+  value: (?i)\b(alles gut mit uns|magst du mich( noch)?|bist du( noch)? da)\b
 - type: regex
-  value: '(?i)\b(liebst du mich noch|sind wir okay)\b'
+  value: (?i)\b(liebst du mich noch|sind wir okay)\b
 - type: regex
-  value: '(?i)\b(stimmt etwas nicht|ist zwischen uns alles gut)\b'
+  value: (?i)\b(stimmt etwas nicht|ist zwischen uns alles gut)\b
 examples:
   positive:
   - Ist alles gut mit uns?
@@ -49,11 +49,15 @@ tags:
 - attachment
 rating: 1
 activation:
-  rule: "ANY 2 IN 20 messages"
+  rule: ANY 2 IN 20 messages
 scoring:
   base: 2.3
   weight: 0.65
   decay: 0.015
-  formula: "logistic"
+  formula: logistic
+  multiplier: 2.0
 window:
   messages: 20
+ld5_family: GRIEF
+ld5_multiplier: 2.0
+ld5_cooldown: 5

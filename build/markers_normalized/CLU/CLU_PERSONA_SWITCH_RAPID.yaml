@@ -29,9 +29,15 @@ examples:
 tags: []
 rating: 2
 activation:
-  rule: "AT_LEAST 3 different CLU_SPIRAL_PERSONA_* IN 10 messages"
+  rule: AT_LEAST 3 different CLU_SPIRAL_PERSONA_* IN 10 messages
   window_size: 10
   threshold: 3
 scoring:
   weight: 1.5
   decay: 0.9
+  multiplier: 1.0
+ld5_family: PERSONA
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+window:
+  messages: 6

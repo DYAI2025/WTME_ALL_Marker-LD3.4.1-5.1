@@ -51,8 +51,10 @@ composed_of:
   - ATO_MINI_DEADLINE
   - ATO_CLOSE
 activation:
-  rule: "AT_LEAST 3 IN 4 messages"
+  rule: AT_LEAST 3 IN 4 messages
   window: 4
 scoring:
   base: 0.6
   weight: 1.15
+window:
+  messages: 4

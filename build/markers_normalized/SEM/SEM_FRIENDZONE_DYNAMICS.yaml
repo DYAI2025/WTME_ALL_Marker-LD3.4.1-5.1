@@ -41,3 +41,5 @@ activation:
 scoring:
   base: 1.5
   weight: 1.3
+window:
+  messages: 4

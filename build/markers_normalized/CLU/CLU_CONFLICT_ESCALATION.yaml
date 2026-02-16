@@ -32,7 +32,13 @@ composed_of:
 - SEM_ANGER_ESCALATION
 - SEM_SARCASM_IRRITATION
 activation:
-  rule: "AT_LEAST 3 IN 5 messages"
+  rule: AT_LEAST 3 IN 5 messages
 scoring:
   base: 1.0
   weight: 1.2
+  multiplier: 2.0
+ld5_family: CONFLICT
+ld5_multiplier: 2.0
+ld5_cooldown: 5
+window:
+  messages: 6

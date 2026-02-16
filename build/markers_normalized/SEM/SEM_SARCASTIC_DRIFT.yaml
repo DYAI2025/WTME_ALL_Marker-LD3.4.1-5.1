@@ -38,4 +38,10 @@ composed_of:
 - ATO_SARCASM_MARKERS
 - ATO_UNDERSTATEMENT
 activation:
-  rule: "BOTH IN 2 messages"
+  rule: BOTH IN 2 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

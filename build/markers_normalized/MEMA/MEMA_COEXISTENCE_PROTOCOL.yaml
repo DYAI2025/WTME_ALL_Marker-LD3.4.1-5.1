@@ -59,10 +59,26 @@ rating: 1
 semiotic:
   mode: symbolic
   level: pragmatic
-  object: "coexistence_state"
-  interpretant: "effect_on_state: {sync: +0.1, deesc: -0.05}"
+  object: coexistence_state
+  interpretant: 'effect_on_state: {sync: +0.1, deesc: -0.05}'
   connotation:
-  - "koexistenz"
-  - "protokoll"
+  - koexistenz
+  - protokoll
 metadata:
   label: Koexistenz-Protokoll
+detect_class: composite_meta
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+activation:
+  rule: composite_trigger
+  window: 10
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 10

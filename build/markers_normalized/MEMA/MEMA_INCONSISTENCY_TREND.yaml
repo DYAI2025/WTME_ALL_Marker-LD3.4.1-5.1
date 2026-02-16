@@ -22,3 +22,19 @@ examples:
   - That sounds like an important topic for you.
 tags: []
 rating: 2
+detect_class: trend_analysis
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+activation:
+  rule: composite_trigger
+  window: 10
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 20

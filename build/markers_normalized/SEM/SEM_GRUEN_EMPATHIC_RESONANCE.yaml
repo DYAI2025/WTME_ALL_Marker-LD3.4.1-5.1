@@ -32,4 +32,10 @@ rating: 1
 composed_of:
 - ATO_HARMONY_CARING
 - ATO_TRIBAL_BONDS
-activation: "BOTH IN 3 messages"
+activation: BOTH IN 3 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

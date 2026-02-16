@@ -33,7 +33,13 @@ composed_of:
 - SEM_ANGER_ESCALATION
 - SEM_SUPPORT_VALIDATION
 activation:
-  rule: "AT_LEAST 4 IN 8 messages"
+  rule: AT_LEAST 4 IN 8 messages
 scoring:
   base: 1.0
   weight: 1.1
+  multiplier: 2.0
+ld5_family: GRIEF
+ld5_multiplier: 2.0
+ld5_cooldown: 5
+window:
+  messages: 6

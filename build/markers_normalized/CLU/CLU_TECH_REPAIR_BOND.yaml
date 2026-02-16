@@ -39,7 +39,13 @@ composed_of:
 - SEM_TECH_REPAIR_AS_BOND
 - SEM_RELATION_OVER_PERSONA
 activation:
-  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
 scoring:
-  base: 0.80
+  base: 0.8
   weight: 1.0
+  multiplier: 1.75
+ld5_family: SUPPORT
+ld5_multiplier: 1.75
+ld5_cooldown: 5
+window:
+  messages: 6

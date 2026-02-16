@@ -36,4 +36,10 @@ composed_of:
 - ATO_SELF_OBSERVATION
 - ATO_PATTERN_RECOGNITION
 activation:
-  rule: "ALL 2 IN 3 messages"
+  rule: ALL 2 IN 3 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

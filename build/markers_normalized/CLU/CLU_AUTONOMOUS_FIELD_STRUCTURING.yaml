@@ -15,15 +15,15 @@ frame:
   narrative: Selbstorganisation + gemeinsame Umsetzung
 patterns:
 - type: regex
-  value: "priorisiere ich"
+  value: priorisiere ich
 - type: regex
-  value: "in (\\d+|sechs|drei|zwei) (monaten|wochen)"
+  value: in (\d+|sechs|drei|zwei) (monaten|wochen)
 - type: regex
-  value: "plane ich"
+  value: plane ich
 - type: regex
-  value: "reflektiere.*fortschritt"
+  value: reflektiere.*fortschritt
 - type: regex
-  value: "frage.*nach (ressourcen|informationen)"
+  value: frage.*nach (ressourcen|informationen)
 examples:
   positive:
   - A erläutert seine Tagesziele („Heute priorisiere ich X, weil …“), reflektiert ihre langfristige Rolle („In sechs Monaten möchte ich …“) und tauscht gezielt Fakten zur Umsetzung mit dem Team aus.
@@ -57,10 +57,19 @@ tags:
 - planning
 rating: 1
 activation:
-  rule: "ANY in 1 message"
+  rule: ANY in 1 message
 metadata:
   source:
-    created_at: "2025-07-21T19:39:14.350099"
-    created_by: "FRAUSAR_GUI_v2"
-    source_version: "1.0"
-    schema_version: "3.3"
+    created_at: '2025-07-21T19:39:14.350099'
+    created_by: FRAUSAR_GUI_v2
+    source_version: '1.0'
+    schema_version: '3.3'
+ld5_family: COMMITMENT
+ld5_multiplier: 1.5
+ld5_cooldown: 5
+scoring:
+  base: 1.0
+  weight: 1.0
+  multiplier: 1.5
+window:
+  messages: 6

@@ -41,6 +41,15 @@ composed_of:
 scoring:
   base: 0.65
   cap: 1.0
+  multiplier: 1.5
 metadata:
-  family: "MISUNDERSTANDING"
+  family: MISUNDERSTANDING
   cross_namespace: true
+ld5_family: UNCERTAINTY
+ld5_multiplier: 1.5
+ld5_cooldown: 4
+activation:
+  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  window: 5
+window:
+  messages: 6

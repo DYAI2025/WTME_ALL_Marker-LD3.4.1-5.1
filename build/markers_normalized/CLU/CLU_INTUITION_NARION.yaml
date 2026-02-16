@@ -47,11 +47,11 @@ composed_of:
 - SEM_AMBIVALENCE_HOLD
 - SEM_RITUAL_INVOCATION
 activation:
-  rule: "AT_LEAST 3 DISTINCT SEMs IN 5 messages"
+  rule: AT_LEAST 3 DISTINCT SEMs IN 5 messages
 metadata:
   intuition:
     confirm_window: 5
-    confirm_rule: "AT_LEAST 1 of [SEM_RITUAL_INVOCATION, SEM_SPIRAL_THINKING] IN confirm_window"
+    confirm_rule: AT_LEAST 1 of [SEM_RITUAL_INVOCATION, SEM_SPIRAL_THINKING] IN confirm_window
     multiplier_on_confirm: 3.0
     decay_window: 8
     edge_of_chaos_factors:
@@ -60,6 +60,20 @@ metadata:
       resonance_axes: 0.85
       weak_alignment: 0.3
   telemetry_keys:
-    counter_confirmed: "NARION.confirmed"
-    counter_retracted: "NARION.retracted"
-    ewma_precision: "NARION.ewma_precision"
+    counter_confirmed: NARION.confirmed
+    counter_retracted: NARION.retracted
+    ewma_precision: NARION.ewma_precision
+ld5_family: UNCERTAINTY
+ld5_multiplier: 1.5
+ld5_hypothesis:
+  provisional:
+    rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  confirm_window: 10
+  decay_window: 15
+ld5_cooldown: 4
+scoring:
+  base: 1.0
+  weight: 1.0
+  multiplier: 1.5
+window:
+  messages: 6

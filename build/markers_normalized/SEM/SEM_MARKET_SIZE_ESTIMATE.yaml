@@ -35,7 +35,9 @@ composed_of:
 - ATO_NUMERIC_ESTIMATE
 - ATO_FINANCIAL_TERM
 activation:
-  rule: "ANY 2 IN 2 messages"
+  rule: ANY 2 IN 2 messages
 scoring:
   base: 0.6
   weight: 1.9
+window:
+  messages: 4

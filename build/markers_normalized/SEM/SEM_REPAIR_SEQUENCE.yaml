@@ -40,8 +40,10 @@ composed_of:
   - ATO_ACKNOWLEDGE
   - ATO_CONFIRM
 activation:
-  rule: "SEQUENCE IN 3 messages"
+  rule: SEQUENCE IN 3 messages
   window: 3
 scoring:
   base: 0.65
   weight: 1.05
+window:
+  messages: 4

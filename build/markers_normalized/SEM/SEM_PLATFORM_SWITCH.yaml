@@ -44,3 +44,9 @@ composed_of:
 - ATO_PERSONAL
 window:
   messages: 3
+activation:
+  rule: ANY 2 IN 4 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic

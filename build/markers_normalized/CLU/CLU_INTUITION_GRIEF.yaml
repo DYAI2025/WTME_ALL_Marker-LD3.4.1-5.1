@@ -38,20 +38,31 @@ composed_of:
 - SEM_NOSTALGIA_REGRET
 - SEM_GUILT_ADMISSION
 activation:
-  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
+  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
 scoring:
   base: 0.5
   weight: 1.0
-criteria: ""
+  multiplier: 2.0
+criteria: ''
 metadata:
   intuition:
-    state: "provisional"
+    state: provisional
     confirm_window: 5
-    confirm_rule: "AT_LEAST 1 of [SEM_SADNESS_EXPRESSIONS, SEM_GUILT_ADMISSION] IN confirm_window"
+    confirm_rule: AT_LEAST 1 of [SEM_SADNESS_EXPRESSIONS, SEM_GUILT_ADMISSION] IN confirm_window
     multiplier_on_confirm: 2.0
     decay_window: 8
     penalize_false: 1.0
   telemetry_keys:
-    counter_confirmed: "INT_GRIEF.confirmed"
-    counter_retracted: "INT_GRIEF.retracted"
-    ewma_precision: "INT_GRIEF.ewma_precision"
+    counter_confirmed: INT_GRIEF.confirmed
+    counter_retracted: INT_GRIEF.retracted
+    ewma_precision: INT_GRIEF.ewma_precision
+ld5_family: GRIEF
+ld5_multiplier: 2.0
+ld5_hypothesis:
+  provisional:
+    rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  confirm_window: 10
+  decay_window: 15
+ld5_cooldown: 5
+window:
+  messages: 6

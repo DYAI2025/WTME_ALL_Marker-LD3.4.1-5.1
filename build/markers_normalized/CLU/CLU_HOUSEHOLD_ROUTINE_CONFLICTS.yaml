@@ -32,13 +32,17 @@ tags:
 - daily
 rating: 2
 activation:
-  rule: "WEIGHTED_AND"
+  rule: WEIGHTED_AND
 scoring:
   base: 1.3
   weight: 0.5
   decay: 0.02
-  formula: "logistic"
+  formula: logistic
+  multiplier: 2.0
 window:
   messages: 50
-detect_class: "E"
-criteria: "Kombination von Haushaltsanweisungen und Widerstandsmustern"
+detect_class: E
+criteria: Kombination von Haushaltsanweisungen und Widerstandsmustern
+ld5_family: CONFLICT
+ld5_multiplier: 2.0
+ld5_cooldown: 5

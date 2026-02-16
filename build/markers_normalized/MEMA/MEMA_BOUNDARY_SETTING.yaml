@@ -50,7 +50,7 @@ composed_of:
 - CLU_EXAMPLE_MARKER
 - CLU_INTUITION_CONFLICT
 activation:
-  rule: "ANY 2 IN 5 messages"
+  rule: ANY 2 IN 5 messages
 scoring:
   base: 2.0
   weight: 1.4
@@ -59,23 +59,30 @@ window:
   messages: 60
 metadata:
   neg_examples:
-  - "Tag 1: Einmalige Frustrationsäußerung. Tag 5: Konstruktive Lösung – kein Boundary-Zyklus."
-  - "Msg5-8: Kurze Irritation ohne Follow-up. Msg30: Thema gelöst – keine wiederkehrende Grenzsetzung."
-  - "Gespräch 1: Konflikt besprochen und beigelegt. Keine Wiederholung – kein Meta-Pattern."
-  - "Woche 1: Einmalige Grenz-Ansage. Woche 2-4: Harmonische Kommunikation – kein Zyklus."
-  - "Msg10-13: Unsicherheit ohne Eskalation. Rest: Klare, sichere Kommunikation – kein Boundary-Pattern."
-  - "Tag 2: Einmaliger Ärger-Ausdruck, danach Resolution – kein wiederkehrender Enforcement."
-  - "Gespräch 1: Problem adressiert. Gespräch 2: Problem gelöst – keine Grenz-Spirale."
-  - "Msg20-23: Einmalige Konflikt-Signale. Danach: Positive Entwicklung – kein Meta-Level Pattern."
-  - "Woche 1: Grenze gesetzt und respektiert. Keine Wiederholung nötig – kein Boundary-Zyklus."
-  - "Tag 3: Einmalige Vorahnung ohne Bestätigung. Rest: Stabile Interaktion – kein Gold-Level Muster."
-  - "Msg15-18: Kurzes Missverständnis geklärt. Keine Wiederholung – kein enforcement cycle."
-  - "Gespräch 1: Einmalige Spannung. Gespräch 2-3: Vertrauen aufgebaut – keine Boundary-Dynamik."
-  - "Woche 2: Einmaliges CLU-Signal. Danach: Entspannung – kein wiederkehrender Grenzsetzungs-Versuch."
-  - "Tag 5: Kurze Irritation. Tag 7-10: Konstruktive Zusammenarbeit – kein Meta-Pattern erkennbar."
-  - "Msg25-28: Einmalige Unsicherheit. Rest: Klare Entscheidungen – keine Grenz-Spirale."
-  - "Gespräch 1: Problem angesprochen und verstanden. Keine Eskalation – kein Boundary cycle."
-  - "Woche 1: Einmalige Konflikt-Vorahnung. Woche 2-4: Stabile Beziehung – kein Gold-Level erreicht."
-  - "Msg32-35: Kurze Spannung ohne Wiederholung. Thema abgeschlossen – kein enforcement pattern."
-  - "Tag 6: Einmalige Grenz-Äußerung, respektiert. Keine Wiederholung – kein Meta-Zyklus."
-  - "Gespräch 1: Einmaliger Konflikt resolved. Gespräch 2-3: Harmonie – keine wiederkehrende Boundary-Dynamik."
+  - 'Tag 1: Einmalige Frustrationsäußerung. Tag 5: Konstruktive Lösung – kein Boundary-Zyklus.'
+  - 'Msg5-8: Kurze Irritation ohne Follow-up. Msg30: Thema gelöst – keine wiederkehrende Grenzsetzung.'
+  - 'Gespräch 1: Konflikt besprochen und beigelegt. Keine Wiederholung – kein Meta-Pattern.'
+  - 'Woche 1: Einmalige Grenz-Ansage. Woche 2-4: Harmonische Kommunikation – kein Zyklus.'
+  - 'Msg10-13: Unsicherheit ohne Eskalation. Rest: Klare, sichere Kommunikation – kein Boundary-Pattern.'
+  - 'Tag 2: Einmaliger Ärger-Ausdruck, danach Resolution – kein wiederkehrender Enforcement.'
+  - 'Gespräch 1: Problem adressiert. Gespräch 2: Problem gelöst – keine Grenz-Spirale.'
+  - 'Msg20-23: Einmalige Konflikt-Signale. Danach: Positive Entwicklung – kein Meta-Level Pattern.'
+  - 'Woche 1: Grenze gesetzt und respektiert. Keine Wiederholung nötig – kein Boundary-Zyklus.'
+  - 'Tag 3: Einmalige Vorahnung ohne Bestätigung. Rest: Stabile Interaktion – kein Gold-Level Muster.'
+  - 'Msg15-18: Kurzes Missverständnis geklärt. Keine Wiederholung – kein enforcement cycle.'
+  - 'Gespräch 1: Einmalige Spannung. Gespräch 2-3: Vertrauen aufgebaut – keine Boundary-Dynamik.'
+  - 'Woche 2: Einmaliges CLU-Signal. Danach: Entspannung – kein wiederkehrender Grenzsetzungs-Versuch.'
+  - 'Tag 5: Kurze Irritation. Tag 7-10: Konstruktive Zusammenarbeit – kein Meta-Pattern erkennbar.'
+  - 'Msg25-28: Einmalige Unsicherheit. Rest: Klare Entscheidungen – keine Grenz-Spirale.'
+  - 'Gespräch 1: Problem angesprochen und verstanden. Keine Eskalation – kein Boundary cycle.'
+  - 'Woche 1: Einmalige Konflikt-Vorahnung. Woche 2-4: Stabile Beziehung – kein Gold-Level erreicht.'
+  - 'Msg32-35: Kurze Spannung ohne Wiederholung. Thema abgeschlossen – kein enforcement pattern.'
+  - 'Tag 6: Einmalige Grenz-Äußerung, respektiert. Keine Wiederholung – kein Meta-Zyklus.'
+  - 'Gespräch 1: Einmaliger Konflikt resolved. Gespräch 2-3: Harmonie – keine wiederkehrende Boundary-Dynamik.'
+detect_class: composite_meta
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h

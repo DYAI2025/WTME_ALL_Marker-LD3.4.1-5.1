@@ -31,7 +31,13 @@ rating: 2
 composed_of:
 - SEM_SD_RED_ASSERT
 activation:
-  rule: "AT_LEAST 3 IN 7 messages"
+  rule: AT_LEAST 3 IN 7 messages
 scoring:
   base: 1.0
   weight: 1.0
+  multiplier: 1.0
+ld5_family: PERSONA
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+window:
+  messages: 6

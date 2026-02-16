@@ -38,12 +38,14 @@ tags:
 rating: 1
 composed_of:
   sequence_any:
-  - - "ATO_CONFIRM"
-    - "ATO_CLOSE"
-    - "ATO_SUBJECT_CLOSED"
+  - - ATO_CONFIRM
+    - ATO_CLOSE
+    - ATO_SUBJECT_CLOSED
 activation:
-  rule: "SEQUENCE IN 4 messages"
+  rule: SEQUENCE IN 4 messages
   window: 4
 scoring:
   base: 0.7
   weight: 1.15
+window:
+  messages: 4

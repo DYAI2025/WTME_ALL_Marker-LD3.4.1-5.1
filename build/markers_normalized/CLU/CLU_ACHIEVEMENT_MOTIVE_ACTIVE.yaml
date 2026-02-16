@@ -39,13 +39,19 @@ activation:
   window: 6
   rule:
     all_of:
-    - "SEM_STATUS_RECOGNITION >= 1"
-    - "SEM_EXCELLENCE_DRIVE >= 1"
+    - SEM_STATUS_RECOGNITION >= 1
+    - SEM_EXCELLENCE_DRIVE >= 1
 scoring:
-  base: 0.70
+  base: 0.7
   weights:
     SEM_STATUS_RECOGNITION: 0.45
     SEM_EXCELLENCE_DRIVE: 0.55
+  multiplier: 1.5
 evidence_capture:
   keep_snippets: 5
-fire_when: "conditions_met_first_time"
+fire_when: conditions_met_first_time
+ld5_family: COMMITMENT
+ld5_multiplier: 1.5
+ld5_cooldown: 5
+window:
+  messages: 6

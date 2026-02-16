@@ -48,8 +48,10 @@ composed_of:
   - SEM_RISK_FORECAST
   - SEM_RELIABILITY_CONCERN
 activation:
-  rule: "AT_LEAST 3 IN 5 messages"
+  rule: AT_LEAST 3 IN 5 messages
   window: 5
 scoring:
   base: 0.62
   weight: 1.08
+window:
+  messages: 4

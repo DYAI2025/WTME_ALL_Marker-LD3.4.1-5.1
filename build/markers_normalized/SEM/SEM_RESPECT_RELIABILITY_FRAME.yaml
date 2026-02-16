@@ -12,13 +12,13 @@ frame:
   narrative: Werteabgleich
 patterns:
 - type: regex
-  value: '(?i)\brespekt\b|\brespektier\w*\b'
+  value: (?i)\brespekt\b|\brespektier\w*\b
 - type: regex
-  value: '(?i)\bverlässlich(keit)?\b|\bzuverlässig(keit)?\b'
+  value: (?i)\bverlässlich(keit)?\b|\bzuverlässig(keit)?\b
 - type: regex
-  value: '(?i)\b(acht(ung)?|würde)\b'
+  value: (?i)\b(acht(ung)?|würde)\b
 - type: regex
-  value: '(?i)\b(so\s+ist\s+es\s+respektvoll)\b'
+  value: (?i)\b(so\s+ist\s+es\s+respektvoll)\b
 examples:
   positive:
   - Das ist für mich eine Frage von Respekt.
@@ -48,3 +48,11 @@ tags:
 - reliability
 - semantics
 rating: 1
+activation:
+  rule: ANY 1
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

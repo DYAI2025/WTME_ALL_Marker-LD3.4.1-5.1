@@ -35,8 +35,17 @@ composed_of:
   - - SEM_CLOSURE_PROTOCOL
     - SEM_CLEAR_COMMITMENT
 activation:
-  rule: "SEQUENCE IN 10 messages"
+  rule: SEQUENCE IN 10 messages
   window: 10
 scoring:
   base: 0.7
   weight: 1.2
+detect_class: pattern_detection
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+window:
+  messages: 10

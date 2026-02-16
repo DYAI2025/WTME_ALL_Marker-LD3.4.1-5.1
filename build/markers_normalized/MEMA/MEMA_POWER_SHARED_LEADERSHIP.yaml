@@ -41,11 +41,11 @@ activation:
   window: 10
   rule:
     all_of:
-    - "CLU_POWER_MOTIVE_ACTIVE >= 1 in last 6"
-    - "SEM_CONSENSUS_SIGNAL >= 1 in last 3"
-    - "SEM_CLOSURE_PROTOCOL >= 1 in last 4"
+    - CLU_POWER_MOTIVE_ACTIVE >= 1 in last 6
+    - SEM_CONSENSUS_SIGNAL >= 1 in last 3
+    - SEM_CLOSURE_PROTOCOL >= 1 in last 4
   inhibitors:
-  - "SEM_FORMAT_POLICING >= 1 AFTER SEM_CONSENSUS_SIGNAL BEFORE SEM_CLOSURE_PROTOCOL"
+  - SEM_FORMAT_POLICING >= 1 AFTER SEM_CONSENSUS_SIGNAL BEFORE SEM_CLOSURE_PROTOCOL
 scoring:
   base: 0.79
   weights:
@@ -54,4 +54,13 @@ scoring:
     SEM_CLOSURE_PROTOCOL: 0.40
 evidence_capture:
   keep_snippets: 6
-fire_when: "conditions_met_first_time"
+fire_when: conditions_met_first_time
+detect_class: composite_meta
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+window:
+  messages: 10

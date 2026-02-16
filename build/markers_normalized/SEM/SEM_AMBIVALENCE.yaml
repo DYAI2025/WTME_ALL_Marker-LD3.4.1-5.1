@@ -33,4 +33,10 @@ rating: 1
 composed_of:
 - ATO_PLACEHOLDER
 activation:
-  rule: "ANY 1"
+  rule: ANY 1
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

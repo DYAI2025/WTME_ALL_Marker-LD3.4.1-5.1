@@ -38,7 +38,20 @@ composed_of:
 - CLU_SPIRAL_PERSONA_GELB
 - CLU_SPIRAL_PERSONA_TUERKIS
 activation:
-  rule: "AT_LEAST 2 DISTINCT CLUs IN 10 messages"
+  rule: AT_LEAST 2 DISTINCT CLUs IN 10 messages
 metadata:
-  transition_rule: "if prev_stage.score >= 0.6 and next_stage.score - prev_stage.score >= 0.3 within 10 messages → TRANSITION(prev→next)"
+  transition_rule: if prev_stage.score >= 0.6 and next_stage.score - prev_stage.score >= 0.3 within 10 messages → TRANSITION(prev→next)
   min_persistence: 3
+detect_class: composite_meta
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 10

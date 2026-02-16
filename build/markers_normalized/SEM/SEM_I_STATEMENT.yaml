@@ -12,15 +12,15 @@ frame:
   narrative: Transparenz über Innenzustand
 patterns:
 - type: regex
-  value: '(?i)\bich\s+fühle\s+mich\s+\w+\b'
+  value: (?i)\bich\s+fühle\s+mich\s+\w+\b
 - type: regex
-  value: '(?i)\bich\s+brauche\s+\w+\b'
+  value: (?i)\bich\s+brauche\s+\w+\b
 - type: regex
-  value: '(?i)\bich\s+bitte\s+dich\s+um\s+\w+\b'
+  value: (?i)\bich\s+bitte\s+dich\s+um\s+\w+\b
 - type: regex
-  value: '(?i)\bich\s+bin\s+unsicher\b'
+  value: (?i)\bich\s+bin\s+unsicher\b
 - type: regex
-  value: '(?i)\bmir\s+fehlt\s+(klarheit|sicherheit)\b'
+  value: (?i)\bmir\s+fehlt\s+(klarheit|sicherheit)\b
 examples:
   positive:
   - Ich fühle mich klein gemacht.
@@ -49,3 +49,11 @@ tags:
 - clarity
 - semantics
 rating: 1
+activation:
+  rule: ANY 1
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

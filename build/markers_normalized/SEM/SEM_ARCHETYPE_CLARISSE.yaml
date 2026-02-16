@@ -37,4 +37,10 @@ rating: 1
 composed_of:
 - ATO_FICTION_TOKENS
 activation:
-  rule: "AT_LEAST 1 IN 2 messages"
+  rule: AT_LEAST 1 IN 2 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

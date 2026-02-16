@@ -13,7 +13,7 @@ frame:
   narrative: preemptive_defense
 patterns:
 - type: regex
-  value: "(?i)(ich weiß|sicher|wahrscheinlich).*(du wirst|wirst du).*(aber ich|obwohl ich|trotzdem muss ich)"
+  value: (?i)(ich weiß|sicher|wahrscheinlich).*(du wirst|wirst du).*(aber ich|obwohl ich|trotzdem muss ich)
 examples:
   positive:
   - Ich weiß, du wirst sauer sein, aber ich muss dir was sagen.
@@ -39,5 +39,14 @@ tags:
 - preemptive
 rating: 1
 activation:
-  rule: "ANY 1 IN 10 messages"
+  rule: ANY 1 IN 10 messages
   window: 10
+ld5_family: CONFLICT
+ld5_multiplier: 2.0
+ld5_cooldown: 5
+scoring:
+  base: 1.0
+  weight: 1.0
+  multiplier: 2.0
+window:
+  messages: 6

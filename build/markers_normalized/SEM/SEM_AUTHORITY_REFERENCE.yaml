@@ -34,7 +34,9 @@ composed_of:
 - ATO_APPEAL_TO_AUTHORITY_EXPERT
 - ATO_APPEAL_TO_AUTHORITY_STUDY
 activation:
-  rule: "BOTH IN 1 message"
+  rule: BOTH IN 1 message
 scoring:
   base: 0.6
   weight: 1.0
+window:
+  messages: 4

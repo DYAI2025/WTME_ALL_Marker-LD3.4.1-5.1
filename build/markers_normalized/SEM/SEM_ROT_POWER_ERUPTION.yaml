@@ -33,4 +33,10 @@ rating: 1
 composed_of:
 - ATO_POWER_ASSERTION
 - ATO_SURVIVAL_INSTINCT
-activation: "BOTH IN 1 message"
+activation: BOTH IN 1 message
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

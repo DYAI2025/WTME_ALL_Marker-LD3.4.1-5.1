@@ -37,3 +37,9 @@ composed_of:
 - ATO_BLAME_SHIFT_MARKER
 activation:
   rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

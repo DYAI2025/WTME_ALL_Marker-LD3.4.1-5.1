@@ -37,4 +37,10 @@ composed_of:
 - ATO_VOCAB_METAPHYSICAL
 - ATO_VOCAB_RELATIONAL
 activation:
-  rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND 1 ATO_VOCAB_RELATIONAL IN 3 messages"
+  rule: AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND 1 ATO_VOCAB_RELATIONAL IN 3 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

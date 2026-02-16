@@ -40,11 +40,15 @@ scoring:
   base: 1.4
   weight: 1.1
 metadata:
-  justification: "SEM mit 1 ATO + Kontextregel (Affekt-Abwesenheit) gemäß LD3.4 zulässig."
+  justification: SEM mit 1 ATO + Kontextregel (Affekt-Abwesenheit) gemäß LD3.4 zulässig.
   repair_log:
-  - rule: "R06"
-    note: "Sekundäre Pattern-Regeln entfernt, nur composed_of behalten"
-    date: "2025-08-29"
-  - rule: "R07"
-    note: "1-ATO-Semantik mit justification abgesichert"
-    date: "2025-08-29"
+  - rule: R06
+    note: Sekundäre Pattern-Regeln entfernt, nur composed_of behalten
+    date: '2025-08-29'
+  - rule: R07
+    note: 1-ATO-Semantik mit justification abgesichert
+    date: '2025-08-29'
+activation:
+  rule: ANY 1
+window:
+  messages: 4

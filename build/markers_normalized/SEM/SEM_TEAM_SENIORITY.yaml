@@ -36,7 +36,9 @@ composed_of:
 - ATO_TEAM_EXPERIENCE
 - ATO_COMMITMENT_PHRASE
 activation:
-  rule: "BOTH_IN_4_messages"
+  rule: BOTH_IN_4_messages
 scoring:
   base: 1.0
   weight: 1.5
+window:
+  messages: 4

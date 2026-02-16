@@ -70,5 +70,9 @@ scoring:
   weight: 1.0
 metadata:
   repair_log:
-  - rule: "R00-R06 applied"
-    date: "2025-08-07"
+  - rule: R00-R06 applied
+    date: '2025-08-07'
+activation:
+  rule: ANY 1
+window:
+  messages: 4

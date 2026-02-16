@@ -53,5 +53,19 @@ activation:
   confirm_window: 4
   cooldown_messages: 5
 metadata:
-  maintainer: "marker-bot"
-  family: "SHUTDOWN"
+  maintainer: marker-bot
+  family: SHUTDOWN
+ld5_family: GRIEF
+ld5_multiplier: 2.0
+ld5_hypothesis:
+  provisional:
+    rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  confirm_window: 10
+  decay_window: 15
+ld5_cooldown: 5
+scoring:
+  base: 1.0
+  weight: 1.0
+  multiplier: 2.0
+window:
+  messages: 6

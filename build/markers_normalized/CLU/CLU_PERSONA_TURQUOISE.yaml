@@ -37,10 +37,16 @@ composed_of:
 - SEM_LONG_HORIZON
 - SEM_ECOLOGICAL_METAPHOR
 activation:
-  rule: "AT_LEAST 2 IN 6 messages"
+  rule: AT_LEAST 2 IN 6 messages
 scoring:
   base: 1.0
   weight: 1.0
+  multiplier: 1.0
 metadata:
   persona:
-    evidence_policy: "family-scoped"
+    evidence_policy: family-scoped
+ld5_family: PERSONA
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+window:
+  messages: 6

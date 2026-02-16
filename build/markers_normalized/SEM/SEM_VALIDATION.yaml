@@ -41,8 +41,10 @@ composed_of:
   - ATO_SUPPORT_MESSAGE
   - ATO_ACKNOWLEDGE
 activation:
-  rule: "AT_LEAST 2 IN 2 messages"
+  rule: AT_LEAST 2 IN 2 messages
   window: 2
 scoring:
   base: 0.6
   weight: 1.05
+window:
+  messages: 4

@@ -34,7 +34,9 @@ composed_of:
 - ATO_CAUSAL_CHAIN
 - ATO_PARTIAL_TRUTH
 activation:
-  rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
+  rule: BOTH IN 1 message OR ANY 2 IN 2 messages
 scoring:
   base: 0.6
   weight: 1.0
+window:
+  messages: 4

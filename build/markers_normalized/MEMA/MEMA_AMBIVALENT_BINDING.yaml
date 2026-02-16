@@ -34,4 +34,17 @@ tags:
 - binding
 rating: 1
 activation:
-  rule: "AMBIVALENCE + CLOSENESS >= 2 in 8 messages"
+  rule: AMBIVALENCE + CLOSENESS >= 2 in 8 messages
+detect_class: composite_meta
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 10

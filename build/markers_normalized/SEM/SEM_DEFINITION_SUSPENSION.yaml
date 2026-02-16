@@ -43,3 +43,11 @@ policy:
   - SEM_RELATION_OVER_PERSONA
   - SEM_LIMINAL_FIELD_PRESENCE
   - SEM_SACRALIZATION_BINDING
+activation:
+  rule: ANY 2 IN 4 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

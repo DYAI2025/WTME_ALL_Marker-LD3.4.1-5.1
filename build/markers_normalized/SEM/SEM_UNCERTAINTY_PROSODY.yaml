@@ -12,7 +12,7 @@ frame:
   narrative: Prosodische Bündelung
 patterns:
 - detect_class: count
-  rule: ">=2 of [FILLER, PAUSE_LONG, SPEECHRATE_DROP, F0_RISE_FINAL] within 1 turn"
+  rule: '>=2 of [FILLER, PAUSE_LONG, SPEECHRATE_DROP, F0_RISE_FINAL] within 1 turn'
 examples:
   positive:
   - Ähm … [Pause] … ist das okay? (steigend)
@@ -45,3 +45,7 @@ scoring:
   base: 0.66
 metadata:
   type: SEM
+activation:
+  rule: ANY 2 IN 4 messages
+window:
+  messages: 4

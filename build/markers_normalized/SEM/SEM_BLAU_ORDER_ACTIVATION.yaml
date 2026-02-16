@@ -31,4 +31,10 @@ rating: 2
 composed_of:
 - ATO_ORDER_STRUCTURE
 - ATO_POWER_ASSERTION
-activation: "BOTH IN 2 messages"
+activation: BOTH IN 2 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

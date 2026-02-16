@@ -32,13 +32,26 @@ composed_of:
 - CLU_INTUITION_SUPPORT
 - CLU_UNCERTAINTY_CASCADE
 activation:
-  rule: "AT_LEAST 1 IN 6 messages"
+  rule: AT_LEAST 1 IN 6 messages
 metadata:
   policy_hooks:
     on_confirm(CLU_INTUITION_SUPPORT):
       decrease_penalties:
-      - "SEM_UNCERTAINTY_TONING"
+      - SEM_UNCERTAINTY_TONING
       factor: 0.5
       ttl: 6
     on_confirm(CLU_INTUITION_UNCERTAINTY):
       raise_evidence_threshold: true
+detect_class: composite_meta
+ld5_ars:
+  scale:
+  - 0.0
+  - 5.0
+  decay_lambda: 0.85
+  decay_unit: 24h
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 10

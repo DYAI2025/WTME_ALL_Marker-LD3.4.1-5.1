@@ -34,20 +34,31 @@ composed_of:
 - SEM_SARCASM_IRRITATION
 - SEM_ESCALATION_MOVE
 activation:
-  rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages"
+  rule: AT_LEAST 2 DISTINCT SEMs IN 4 messages
 scoring:
   base: 0.5
   weight: 1.0
-criteria: ""
+  multiplier: 2.0
+criteria: ''
 metadata:
   intuition:
-    state: "provisional"
+    state: provisional
     confirm_window: 4
-    confirm_rule: "AT_LEAST 1 of [SEM_ESCALATION_MOVE, SEM_NEGATIVE_FEEDBACK] IN confirm_window"
+    confirm_rule: AT_LEAST 1 of [SEM_ESCALATION_MOVE, SEM_NEGATIVE_FEEDBACK] IN confirm_window
     multiplier_on_confirm: 2.0
     decay_window: 6
     penalize_false: 1.0
   telemetry_keys:
-    counter_confirmed: "INT_CONFLICT.confirmed"
-    counter_retracted: "INT_CONFLICT.retracted"
-    ewma_precision: "INT_CONFLICT.ewma_precision"
+    counter_confirmed: INT_CONFLICT.confirmed
+    counter_retracted: INT_CONFLICT.retracted
+    ewma_precision: INT_CONFLICT.ewma_precision
+ld5_family: CONFLICT
+ld5_multiplier: 2.0
+ld5_hypothesis:
+  provisional:
+    rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  confirm_window: 10
+  decay_window: 15
+ld5_cooldown: 5
+window:
+  messages: 6

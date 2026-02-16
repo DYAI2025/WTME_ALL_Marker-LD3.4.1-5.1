@@ -32,4 +32,10 @@ composed_of:
 - ATO_SD_BLUE_LEX
 - ATO_AUTHORITY_PHRASE
 activation:
-  rule: "BOTH IN 1 message"
+  rule: BOTH IN 1 message
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

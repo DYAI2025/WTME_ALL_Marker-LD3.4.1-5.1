@@ -32,9 +32,15 @@ composed_of:
 - SEM_TEMPORAL_CONFLICT_EXTERNAL
 - SEM_SELF_CONSIST_PROBE_EXT
 activation:
-  rule: "ANY 2 IN 6 messages"
+  rule: ANY 2 IN 6 messages
   window:
     messages: 6
 scoring:
   base: 0.6
   weight: 1.0
+  multiplier: 1.0
+ld5_family: PERSONA
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+window:
+  messages: 6

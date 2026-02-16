@@ -36,7 +36,15 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - "ATO_LL_PHYSICAL_TOUCH"
+  - ATO_LL_PHYSICAL_TOUCH
   window:
     utterances: 10
   min_hits: 2
+activation:
+  rule: ANY 1
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

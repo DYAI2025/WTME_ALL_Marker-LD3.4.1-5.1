@@ -42,3 +42,9 @@ scoring:
   base: 2.0
   weight: 1.5
   pattern_bonus: 0.3
+  multiplier: 1.5
+ld5_family: UNCERTAINTY
+ld5_multiplier: 1.5
+ld5_cooldown: 4
+window:
+  messages: 6

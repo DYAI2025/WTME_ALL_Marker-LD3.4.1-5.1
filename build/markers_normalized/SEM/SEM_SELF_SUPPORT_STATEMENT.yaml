@@ -41,7 +41,9 @@ rating: 1
 composed_of:
 - ATO_SELF_SUPPORT_PHRASE
 activation:
-  rule: "ANY 1 IN 1 message"
+  rule: ANY 1 IN 1 message
 scoring:
   base: 0.55
   weight: 1.0
+window:
+  messages: 4

@@ -35,11 +35,17 @@ composed_of:
 - SEM_RISK_ACKNOWLEDGEMENT
 - ATO_UNCERTAINTY
 activation:
-  rule: "AT_LEAST 2 DISTINCT [SEM_RISK_ACKNOWLEDGEMENT, ATO_UNCERTAINTY] IN window.messages=5"
+  rule: AT_LEAST 2 DISTINCT [SEM_RISK_ACKNOWLEDGEMENT, ATO_UNCERTAINTY] IN window.messages=5
 scoring:
   base: 0.6
   weight: 1.9
+  multiplier: 1.0
 metadata:
   risk:
-    heuristic: "risk_ack_weight=1.1 uncertainty_weight=1.0"
-    note: "Higher score => more explicit unmanaged risk"
+    heuristic: risk_ack_weight=1.1 uncertainty_weight=1.0
+    note: Higher score => more explicit unmanaged risk
+ld5_family: PROCESS
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+window:
+  messages: 6

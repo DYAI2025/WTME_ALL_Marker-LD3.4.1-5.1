@@ -38,13 +38,14 @@ composed_of:
 - SEM_EMOTIONAL_ACCEPTANCE
 - SEM_SELF_SUPPORT_STATEMENT
 activation:
-  rule: "AT_LEAST 3 SEM_EMOTIONAL_OVERWHELM IN 10 messages"
+  rule: AT_LEAST 3 SEM_EMOTIONAL_OVERWHELM IN 10 messages
   window: 10
   confirm_window: 6
   cooldown_messages: 4
 scoring:
   base: 0.6
   weight: 1.15
+  multiplier: 2.0
 metadata:
   family: AFFECT
   constraints:
@@ -52,3 +53,8 @@ metadata:
       within_window: 10
       sem:
       - SEM_SELF_SUPPORT_STATEMENT
+ld5_family: GRIEF
+ld5_multiplier: 2.0
+ld5_cooldown: 5
+window:
+  messages: 6

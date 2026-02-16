@@ -12,7 +12,7 @@ frame:
   narrative: Mehrsprachigkeit wahrscheinlich
 patterns:
 - type: regex
-  value: "score: { affirm: w1, time: w2, service: w3, gifts: w4, touch: w5 }"
+  value: 'score: { affirm: w1, time: w2, service: w3, gifts: w4, touch: w5 }'
 examples:
   positive:
   - 'score: { affirm: 0.31, time: 0.28, service: 0.18, gifts: 0.12, touch: 0.11 } → gemischter Typ durch geringe Delta.'
@@ -38,4 +38,16 @@ tags:
 - cluster
 rating: 1
 detect_class:
-  rule: "normalize(w)->ranking; mixed if top2_delta < 0.15"
+  rule: normalize(w)->ranking; mixed if top2_delta < 0.15
+ld5_family: PERSONA
+ld5_multiplier: 1.0
+ld5_cooldown: 5
+activation:
+  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  window: 5
+scoring:
+  base: 1.0
+  weight: 1.0
+  multiplier: 1.0
+window:
+  messages: 6

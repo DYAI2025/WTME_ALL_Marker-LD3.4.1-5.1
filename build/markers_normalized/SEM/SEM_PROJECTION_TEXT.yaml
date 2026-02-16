@@ -39,8 +39,12 @@ scoring:
   base: 1.4
   weight: 1.1
 metadata:
-  justification: "1 ATO plus Sequenzregel (Selbstmarkierung → Vorwurf)."
+  justification: 1 ATO plus Sequenzregel (Selbstmarkierung → Vorwurf).
   repair_log:
-  - rule: "R07"
-    note: "1-ATO gerechtfertigt"
-    date: "2025-08-29"
+  - rule: R07
+    note: 1-ATO gerechtfertigt
+    date: '2025-08-29'
+activation:
+  rule: ANY 1
+window:
+  messages: 4

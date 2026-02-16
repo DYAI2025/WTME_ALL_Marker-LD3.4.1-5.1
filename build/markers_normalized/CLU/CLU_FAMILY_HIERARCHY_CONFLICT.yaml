@@ -33,13 +33,17 @@ tags:
 - resistance
 rating: 2
 activation:
-  rule: "WEIGHTED_AND"
+  rule: WEIGHTED_AND
 scoring:
   base: 1.6
   weight: 0.65
   decay: 0.02
-  formula: "logistic"
+  formula: logistic
+  multiplier: 2.0
 window:
   messages: 50
-detect_class: "E"
-criteria: "Kombination von elterlicher Autorität und kindlichem Widerstand"
+detect_class: E
+criteria: Kombination von elterlicher Autorität und kindlichem Widerstand
+ld5_family: CONFLICT
+ld5_multiplier: 2.0
+ld5_cooldown: 5

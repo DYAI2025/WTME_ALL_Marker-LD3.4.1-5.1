@@ -43,8 +43,10 @@ composed_of:
   - ATO_CONTROL_PHRASES
   - ATO_SOVEREIGNTY_OVER_SUBJECT
 activation:
-  rule: "AT_LEAST 2 IN 4 messages"
+  rule: AT_LEAST 2 IN 4 messages
   window: 4
 scoring:
   base: 0.65
   weight: 1.10
+window:
+  messages: 4

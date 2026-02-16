@@ -36,7 +36,9 @@ composed_of:
 - ATO_TRACTION_EVIDENCE
 - ATO_CUSTOMER_COUNT
 activation:
-  rule: "BOTH_IN_3_messages"
+  rule: BOTH_IN_3_messages
 scoring:
   base: 1.0
   weight: 1.4
+window:
+  messages: 4

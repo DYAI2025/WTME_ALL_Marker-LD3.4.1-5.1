@@ -47,5 +47,11 @@ composed_of:
   - ATO_MINI_DEADLINE
   - ATO_ACKNOWLEDGE
 activation:
-  rule: "BOTH IN 2 messages"
+  rule: BOTH IN 2 messages
   window: 2
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

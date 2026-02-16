@@ -36,4 +36,10 @@ rating: 1
 composed_of:
 - ATO_SELF_REF
 activation:
-  rule: "AT_LEAST 3 SELF_REF IN 5 messages"
+  rule: AT_LEAST 3 SELF_REF IN 5 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4

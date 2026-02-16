@@ -35,11 +35,17 @@ composed_of:
 - SEM_TRACTION_SIGNALS
 - SEM_TEAM_SENIORITY
 activation:
-  rule: "AT_LEAST 1 EACH [SEM_TRACTION_SIGNALS, SEM_TEAM_SENIORITY] IN window.messages=6"
+  rule: AT_LEAST 1 EACH [SEM_TRACTION_SIGNALS, SEM_TEAM_SENIORITY] IN window.messages=6
 scoring:
   base: 0.7
   weight: 2.0
+  multiplier: 1.5
 metadata:
   readiness:
-    heuristic: "traction_weight=1.2 team_weight=1.0"
-    note: "Early signal of fundraising viability"
+    heuristic: traction_weight=1.2 team_weight=1.0
+    note: Early signal of fundraising viability
+ld5_family: COMMITMENT
+ld5_multiplier: 1.5
+ld5_cooldown: 5
+window:
+  messages: 6

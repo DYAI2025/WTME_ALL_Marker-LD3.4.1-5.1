@@ -35,4 +35,10 @@ rating: 1
 composed_of:
 - ATO_AMBIVALENZ
 activation:
-  rule: "AT_LEAST 2 AMBIVALENZ IN 3 messages"
+  rule: AT_LEAST 2 AMBIVALENZ IN 3 messages
+scoring:
+  base: 1.0
+  weight: 1.0
+  formula: logistic
+window:
+  messages: 4
