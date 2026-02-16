@@ -1,0 +1,27 @@
+id: ATO_PERSONAL
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for personal/private context requests
+frame:
+  signal: ["personal", "private"]
+  concept: "Personal context signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(personal|private|intimate)\\b"]
+examples:
+  positive:
+  - "This is getting too personal"
+  - "Let's keep this private"
+  - "Can we talk more personally?"
+  - "I prefer private conversations"
+  - "This feels too intimate for here"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: [atomic, v3.3, auto-generated]

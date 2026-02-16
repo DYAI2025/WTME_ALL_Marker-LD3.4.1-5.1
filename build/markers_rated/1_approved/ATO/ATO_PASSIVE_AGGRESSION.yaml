@@ -1,0 +1,27 @@
+id: ATO_PASSIVE_AGGRESSION
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for passive aggressive language
+frame:
+  signal: ["passive aggression"]
+  concept: "Passive aggressive signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(whatever|fine|if you say so|as you wish)\\b"]
+examples:
+  positive:
+  - "Whatever you think is best."
+  - "Fine, we'll do it your way."
+  - "If you say so, I guess."
+  - "As you wish, I won't argue."
+  - "Whatever makes you happy."
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+tags: [atomic, v3.3, auto-generated]

@@ -1,0 +1,34 @@
+id: ATO_DIRECT_CONFRONT
+frame:
+  signal:
+  - direkte Ansprache
+  - Anklage
+  - Vorwurf
+  concept: Konfrontation
+  pragmatics: Eskalation von Konflikten
+  narrative: Auseinandersetzung
+pattern:
+- (?i)immer recht
+- (?i)warum tust du
+- (?i)deine Schuld
+- (?i)hör auf
+- (?i)Genug jetzt
+activation:
+  rule: ANY 1
+examples:
+  positive:
+  - Du hast immer recht, was?
+  - Warum tust du das ständig?
+  - Das ist alles deine Schuld!
+  - Hör auf damit, das nervt!
+  - Genug jetzt, ich kann nicht mehr!
+  negative:
+  - Du hast manchmal recht, was?
+  - Warum tust du das ab und zu?
+  - Genug jetzt, ich entscheide mich gegen mehr!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags:
+- confront

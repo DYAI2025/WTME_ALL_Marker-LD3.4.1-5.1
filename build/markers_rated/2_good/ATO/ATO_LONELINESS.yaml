@@ -1,0 +1,27 @@
+id: ATO_LONELINESS
+version: "3.4"
+schema: "LeanDeep"
+frame:
+  signal: ["loneliness"]
+  concept: "Einsamkeitslexikon"
+  pragmatics: "Affektlage"
+  narrative: "affect"
+tags: [affect, loneliness]
+pattern:
+  regex: "\\b(einsam|allein|isoliert|niemand\\s+da|verlassen)\\b"
+  flags: ["IGNORECASE"]
+examples:
+  positive:
+  - "Ich bin einsam."
+  - "Ganz allein."
+  - "Fühle mich isoliert."
+  - "Niemand ist da."
+  - "Verlassen."
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.

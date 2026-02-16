@@ -1,0 +1,76 @@
+name: SEM_TASK_DOMINANCE
+label: "Aufgaben-Dominanz"
+class: semantic
+version: 1.0
+languages: [de]
+meaning: "Task-Turns dominieren gegenüber Beziehungs-/Emotionssprache"
+formula: "Task_Turns / Total_Turns >= 0.6 AND (ATO_AFFECT_FLAT >= 0.5 OR ATO_COURTESY_FORMAL >= 0.5)"
+inputs:
+  counters:
+    - ATO_AFFECT_FLAT
+    - ATO_COURTESY_FORMAL
+    - ATO_PROTOCOL_LANG
+    - ATO_TOPIC_SHIFT_TO_TASK
+    - ATO_ACK_MICRO
+window:
+  size_messages: 30
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: semantic
+  object: "task_focus"
+  connotation: ["aufgabe", "dominanz"]
+  interpretant: "effect_on_state: {task_dominance: +0.25, intimacy: -0.1}"
+examples:
+  positive_de:
+    - "Nächster Punkt: Freigabe. — Protokoll folgt."
+    - "Ticket erstellt. — Frist bestätigt."
+    - "Scope bleibt. — Abnahme Freitag."
+    - "Zurück zum Thema: Angebot. — To-do: Budget."
+    - "Ok. Erledigt. — Bitte bestätigen."
+    - "Wie vereinbart. — Nächster Schritt: Review."
+    - "Termin 14:00. — Ich sende die Datei."
+    - "Checkliste durchgehen. — Statusupdate 17:00."
+    - "Backlog-Item priorisiert. — SLA 24h."
+    - "Prozessschritt 2 abgeschlossen. — Übergabe."
+    - "Agenda einhalten. — Milestone checken."
+    - "Review ansetzen. — Budget prüfen."
+    - "Update teilen. — Freigabe geben."
+    - "Prozess folgen. — Abnahme machen."
+    - "Notiz nehmen. — Status updaten."
+    - "Sprint planen. — Epic abschließen."
+    - "User Story. — Bugfix."
+    - "Deployment. — Audit."
+    - "KPI Check. — Retrospektive."
+    - "Kanban updaten. — Change Request."
+    - "Deployment planen."
+    - "Audit durchführen."
+    - "KPI messen."
+    - "Retrospektive halten."
+    - "Kanban Board managen."
+    - "Change Request prüfen."
+    - "Epic tracken."
+    - "User Story verfeinern."
+    - "Bugfix deployen."
+    - "Sprint reviewen."
+  negative_de:
+    - "Das verletzt mich."
+    - "Wie fühlst du dich?"
+    - "Ich bin traurig."
+    - "Ich vermisse dich."
+    - "Danke für deine Nähe."
+    - "Lass uns darüber reden."
+    - "Ich brauche eine Entschuldigung."
+    - "Kuscheln später?"
+    - "Feiern wir das? 🎉"
+    - "Du bedeutest mir viel."
+    - "Das triggert mich."
+    - "Mehr Empathie."
+    - "Lass uns fühlen."
+    - "Ich teile Gefühle."
+    - "Bleib beim Emotionalen."
+    - "Das fühlt sich an."
+    - "Erzähl von dir."
+    - "Ich liebe das."
+    - "Traurig heute."
+    - "Feiern wir?"

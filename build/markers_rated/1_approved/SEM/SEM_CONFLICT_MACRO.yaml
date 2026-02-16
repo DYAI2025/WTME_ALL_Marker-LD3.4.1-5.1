@@ -1,0 +1,40 @@
+id: SEM_CONFLICT_MACRO
+schema_version: "LD-3.3"
+version: "3.3"
+last_updated: "2025-08-19"
+lang: de
+category: SEMANTIC
+description: "Vollständige Eskalationskette nach Gottman: Kritik, Defensivität, Verachtung (ggf. Stonewalling)."
+frame:
+  signal: ["Kritik + Defensivität + Verachtung (+ ggf. Stonewalling) in kurzer Sequenz"]
+  concept: "Makro-Eskalation"
+  pragmatics: "Rascher Beziehungsabstieg, Deeskalationsbarrieren"
+  narrative: "attack_counterattack_derision"
+composed_of:
+- ATO_GOTTMAN_CRITICISM
+- ATO_GOTTMAN_DEFENSIVENESS
+- ATO_GOTTMAN_CONTEMPT
+- ATO_GOTTMAN_STONEWALL
+activation:
+  rule: "ANY 3 IN 5 messages"
+scoring:
+  base: 1.8
+  weight: 1.2
+examples:
+  positive:
+  - "Du bist immer unzuverlässig. — Ja, aber gestern warst du spät. — Lächerlich."
+  - "Du machst nie, was du sagst. — Das stimmt so nicht. — 🙄"
+  - "Typisch du. — Nicht meine Schuld. — So peinlich."
+  - "Alles falsch wegen dir. — Ich hab doch geschrieben! — Na klar, Meister."
+  - "Du versaust es jedes Mal. — Du übertreibst. — Armselig."
+  - "Du bist immer zu spät. — Ja und du bist nie vorbereitet. — Wie dumm … — (Stille)"
+  - "Nie hörst du zu. — Ja, aber du auch nicht. — 🤦"
+  negative:
+  - Du bist manchmal unzuverlässig. — Ja, aber gestern warst du spät. — Lächerlich.
+  - Du machst selten, was du sagst. — Das stimmt so nicht. — 🙄
+  - ich erlebe es so, dass nie, was du sagst. — Das stimmt so nicht. — 🙄
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags: [semantic, conflict, gottman, escalation]

@@ -1,0 +1,33 @@
+id: ATO_WANT_TERM
+version: "3.4"
+lang: de
+frame:
+  signal: ["term"]
+  concept: "Willens-Sprache"
+  pragmatics: "Agency"
+  narrative: "frame"
+tags: [wille, agency]
+pattern:
+- (?i)^\s*ich\s+will\b
+- (?i)\bich\s+will\b
+- (?i)\bich\s+entscheide\b
+examples:
+  positive:
+  - "ich will präsent bleiben"
+  - "ich will uns nicht verlieren"
+  - "ich entscheide, dass wir offen sprechen"
+  - "ich will hier ganz sein"
+  - "ich will den Kontakt halten"
+  - "ich entscheide mich fürs langsame Vorgehen"
+  - "ich will bei dir bleiben, auch wenn es ruckelt"
+  - "ich entscheide, das Gespräch zu vertiefen"
+  - "ich will, dass wir heute nur fühlen"
+  - "ich entscheide, mich nicht zu verstecken"
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.

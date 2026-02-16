@@ -1,0 +1,53 @@
+name: CLU_CONTROL_PATTERN
+label: "Control Pattern"
+class: cluster
+version: 3.5
+languages: [de]
+intent: Direkte Kontrolle durch Autoritätsausübung.
+temperature_semantics:
+  external: AUTORITÄT
+  latent: MACHT
+window:
+  size_messages: 6
+gates:
+  min_msgs: 2
+score:
+  method: weighted_k_of_n
+  threshold: 0.55
+ingredients:
+  require:
+    - SEM_CONTROL_LEX
+    - SEM_PARENTAL_AUTHORITY
+  k_of_n: {k: 1, of: []}
+emits:
+  indices:
+    control: +0.2
+examples:
+  positive_de:
+    - "Wir machen das jetzt so."
+    - "Ich erwarte bis morgen ein Update."
+    - "Als Vater bestimme ich, wann Schlafenszeit ist."
+    - "Halt dich an die Vorgaben."
+    - "Ich gebe die Richtung vor."
+    - "Folge meinen Anweisungen."
+    - "Kein Widerspruch."
+    - "Ich entscheide."
+    - "Regeln befolgen."
+    - "Autoritäre Ansage."
+  negative_de:
+    - "Lass uns besprechen."
+    - "Deine Meinung zählt."
+    - "Wir entscheiden zusammen."
+    - "Kein Druck."
+    - "Frei wählen."
+    - "Autonomie respektieren."
+    - "Gleichberechtigt."
+    - "Keine Vorgaben."
+    - "Offen für Ideen."
+    - "Partnerschaftlich."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "control"
+  interpretant: "effect_on_state: {control: +0.2}"
+  connotation: ["autorität", "pattern"]

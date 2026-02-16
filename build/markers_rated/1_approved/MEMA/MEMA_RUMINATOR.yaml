@@ -1,0 +1,42 @@
+name: MEMA_RUMINATOR
+label: "Ruminator"
+class: meta
+version: 3.5
+languages: [de]
+meaning: Archetyp des Grüblers.
+activates_if:
+  all_of:
+    - CLU_RUMINATION_ENRICHED
+effects:
+  indices:
+    stagnation: +0.2
+notes: Führt zu Stagnation.
+examples:
+  positive_de:
+    - "Wir drehen uns im Kreis."
+    - "Ich kann das nicht."
+    - "Es bringt nichts."
+    - "Immer wieder dasselbe."
+    - "Warum versuche ich es überhaupt?"
+    - "Immer dasselbe."
+    - "Hilflos hier."
+    - "Kein Ausweg."
+    - "Grübeln endlos."
+    - "Resigniere."
+  negative_de:
+    - "Vorankommen."
+    - "Ich kann das."
+    - "Neuer Ansatz."
+    - "Bringt was."
+    - "Schaffen das."
+    - "Bewegung."
+    - "Hilfe suchen."
+    - "Ausweg finden."
+    - "Stoppen Grübeln."
+    - "Aktiv werden."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "ruminator"
+  interpretant: "effect_on_state: {stagnation: +0.2}"
+  connotation: ["archetype", "rumination"]

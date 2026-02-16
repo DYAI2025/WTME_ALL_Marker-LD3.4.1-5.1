@@ -1,0 +1,24 @@
+id: "ATO_TRIBAL_BONDS"
+frame:
+  signal: "Stammes- und Gruppenzugehörigkeit"
+  concept: "Purpur-Level magische Bindungen"
+  pragmatics: "Identifiziert Clan-Denken und Rituale"
+  narrative: "Zugehörigkeit durch Tradition"
+pattern: "\\b(stamm|clan|tradition|ritual|aberglaube|magie|ahnenkult|zugehörigkeit)\\b"
+examples:
+  positive:
+  - "unser Stamm"
+  - "alte Traditionen"
+  - "magische Verbindung"
+  - "Clandenken"
+  - "Ahnenwissen"
+  - "Audio-Tokens (Discrete Units)"
+  - "Z48, Z102, Z9..."
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

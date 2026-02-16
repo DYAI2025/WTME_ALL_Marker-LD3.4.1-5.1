@@ -1,0 +1,33 @@
+id: CLU_SVT_MESSAGE_INCONGRUENCE_MARKER
+frame:
+  signal:
+  - sag mal
+  - hör zu
+  - verstehst du
+  concept: Kommunikationsmuster
+  pragmatics: Dialog führen
+  narrative: exchange
+composed_of:
+- SEM_GENERIC_PATTERN
+activation:
+  rule: AT_LEAST 2 IN 5 messages
+scoring:
+  base: 1.5
+  weight: 1.2
+examples:
+  positive:
+  - Die Ampel ist grün, aber du bist ja eine schlechte Fahrerin.
+  - Ihr Bericht ist sachlich korrekt, aber Sie sind einfach unzuverlässig.
+  - Die Zahlen stimmen, aber du bist einfach zu langsam.
+  - Es ist Fakt, dass die Deadline morgen ist, aber du hast ja eh keine Zeit.
+  - Es wurde beschlossen, dass dein Team die Führung übernimmt, obwohl du offensichtlich überfordert bist.
+  negative:
+  - Es ist Fakt, dass die Deadline morgen ist, aber du hast ja eh wenige Zeit.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- communication

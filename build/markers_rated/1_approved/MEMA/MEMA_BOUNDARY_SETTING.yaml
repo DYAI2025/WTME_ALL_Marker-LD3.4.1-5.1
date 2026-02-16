@@ -1,0 +1,74 @@
+id: MEMA_BOUNDARY_SETTING
+lang: de
+category: MEMA
+description: "Meta-Marker: wiederkehrende Grenzsetzungen / Boundary-dynamik (über mehrere CLUs)."
+frame:
+  signal: ["Grenzsetzung wiederkehrend"]
+  concept: "Boundary enforcement cycle"
+  pragmatics: "Grenzen markieren, Soziales Regulieren"
+  narrative: "spiral"
+composed_of:
+- CLU_EXAMPLE_MARKER
+- CLU_INTUITION_CONFLICT
+activation:
+  rule: "ANY 2 IN 5 messages"
+scoring:
+  base: 2.0
+  weight: 1.4
+  decay: 0.02
+window:
+  messages: 60
+examples:
+  positive:
+  - "Tag 1: CLU_INTUITION_CONFLICT triggered (Msg1-4). Tag 3: CLU_INTUITION_CONFLICT erneut (Msg12-15) – Boundary-Zyklus erkennbar."
+  - "Woche 1: 'Das ist nicht ok' (CLU detektiert). Woche 2: Erneute Konflikt-Vorahnung – wiederkehrende Grenzsetzung."
+  - "Msg5-9: Erste Eskalations-Vorahnung. Msg20-24: Zweite Vorahnung mit Ärger – Boundary-Pattern etabliert."
+  - "Gespräch 1: CLU_INTUITION_CONFLICT bestätigt. Gespräch 2: Erneut CLU triggered – Grenzen werden wiederholt markiert."
+  - "Tag 1: 'So nicht mehr' mit Konflikt-Signalen. Tag 5: Wiederholung des Musters – Boundary enforcement cycle."
+  - "Msg10-13: Sarkasmus + Ärger + Unsicherheit detektiert. Msg28-31: Gleiche Kombination – Grenz-Spirale sichtbar."
+  - "Woche 1: Konflikt-Vorahnung provisional. Woche 2: Bestätigt. Woche 3: Erneut triggered – langfristiger Boundary-Zyklus."
+  - "Msg15-18: Erste Warnsignale (2 SEMs in 4 Msgs). Msg40-43: Zweite Warnsignale – Grenze wird wiederholt gesetzt."
+  - "Tag 2: CLU_INTUITION_CONFLICT (provisional). Tag 4: Confirmed. Tag 7: Erneut provisional – Boundary-Dynamik über Zeit."
+  - "Gespräch 1: 'Das geht so nicht weiter' + CLU. Gespräch 3: Wiederholung – Meta-Muster der Grenzsetzung."
+  - "Msg8-11: Ärger-Eskalation + Sarkasmus. Msg35-38: Gleiche SEMs – wiederkehrender Boundary-Versuch."
+  - "Woche 2: Konflikt-Vorahnung mit Unsicherheit. Woche 4: Erneute Vorahnung – Grenz-Zyklus stabilisiert sich."
+  - "Tag 3: CLU triggered (2 distinct SEMs). Tag 8: Erneut triggered – Boundary enforcement wird zum Muster."
+  - "Msg22-25: Erste Eskalations-Intuition. Msg50-53: Zweite Intuition – langfristiger Grenzsetzungs-Spiral."
+  - "Gespräch 2: CLU_INTUITION_CONFLICT confirmed. Gespräch 4: Erneut confirmed – Meta-Level Boundary-Pattern."
+  - "Woche 1: 'Ich setze hier eine Grenze' + Konflikt-Signale. Woche 3: Wiederholung – Boundary cycle etabliert."
+  - "Msg12-15: Sarkasmus + Ärger kombiniert. Msg38-41: Gleiche Kombination erneut – Grenz-Spirale läuft."
+  - "Tag 4: Konflikt-Vorahnung (AT_LEAST 2 SEMs). Tag 10: Erneut – wiederkehrende Boundary-Dynamik sichtbar."
+  - "Gespräch 1: Erste Warnung mit CLU. Gespräch 3: Zweite Warnung – Meta-Muster der sozialen Regulation."
+  - "Msg18-21: Ärger + Unsicherheit + Sarkasmus. Msg45-48: Wiederholung – Boundary enforcement cycle gold-level."
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+metadata:
+  neg_examples:
+  - "Tag 1: Einmalige Frustrationsäußerung. Tag 5: Konstruktive Lösung – kein Boundary-Zyklus."
+  - "Msg5-8: Kurze Irritation ohne Follow-up. Msg30: Thema gelöst – keine wiederkehrende Grenzsetzung."
+  - "Gespräch 1: Konflikt besprochen und beigelegt. Keine Wiederholung – kein Meta-Pattern."
+  - "Woche 1: Einmalige Grenz-Ansage. Woche 2-4: Harmonische Kommunikation – kein Zyklus."
+  - "Msg10-13: Unsicherheit ohne Eskalation. Rest: Klare, sichere Kommunikation – kein Boundary-Pattern."
+  - "Tag 2: Einmaliger Ärger-Ausdruck, danach Resolution – kein wiederkehrender Enforcement."
+  - "Gespräch 1: Problem adressiert. Gespräch 2: Problem gelöst – keine Grenz-Spirale."
+  - "Msg20-23: Einmalige Konflikt-Signale. Danach: Positive Entwicklung – kein Meta-Level Pattern."
+  - "Woche 1: Grenze gesetzt und respektiert. Keine Wiederholung nötig – kein Boundary-Zyklus."
+  - "Tag 3: Einmalige Vorahnung ohne Bestätigung. Rest: Stabile Interaktion – kein Gold-Level Muster."
+  - "Msg15-18: Kurzes Missverständnis geklärt. Keine Wiederholung – kein enforcement cycle."
+  - "Gespräch 1: Einmalige Spannung. Gespräch 2-3: Vertrauen aufgebaut – keine Boundary-Dynamik."
+  - "Woche 2: Einmaliges CLU-Signal. Danach: Entspannung – kein wiederkehrender Grenzsetzungs-Versuch."
+  - "Tag 5: Kurze Irritation. Tag 7-10: Konstruktive Zusammenarbeit – kein Meta-Pattern erkennbar."
+  - "Msg25-28: Einmalige Unsicherheit. Rest: Klare Entscheidungen – keine Grenz-Spirale."
+  - "Gespräch 1: Problem angesprochen und verstanden. Keine Eskalation – kein Boundary cycle."
+  - "Woche 1: Einmalige Konflikt-Vorahnung. Woche 2-4: Stabile Beziehung – kein Gold-Level erreicht."
+  - "Msg32-35: Kurze Spannung ohne Wiederholung. Thema abgeschlossen – kein enforcement pattern."
+  - "Tag 6: Einmalige Grenz-Äußerung, respektiert. Keine Wiederholung – kein Meta-Zyklus."
+  - "Gespräch 1: Einmaliger Konflikt resolved. Gespräch 2-3: Harmonie – keine wiederkehrende Boundary-Dynamik."
+tags: [meta, boundary, escalation]
+schema_version: "3.4"

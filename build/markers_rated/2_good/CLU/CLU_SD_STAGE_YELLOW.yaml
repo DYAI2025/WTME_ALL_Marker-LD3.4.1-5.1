@@ -1,0 +1,26 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SD_STAGE_YELLOW
+frame:
+  signal: ["cluster"]
+  concept: "SD Yellow aktiv"
+  pragmatics: "Persona"
+  narrative: "window"
+composed_of: [SEM_SD_YELLOW_SYSTEMS]
+activation: {rule: "AT_LEAST 3 IN 7 messages"}
+scoring: {base: 1.0, weight: 1.0}
+examples:
+  positive:
+  - "Systeme vernetzen … Komplexität integrieren"
+  - "mehrperspektivisch denken"
+  - "Kontext abhängige Lösung"
+  - "Patterns über Zeit"
+  - "Metaebene betrachten"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

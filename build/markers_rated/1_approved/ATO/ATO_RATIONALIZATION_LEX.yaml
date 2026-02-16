@@ -1,0 +1,42 @@
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+id: ATO_RATIONALIZATION_LEX
+lang: de
+category: ATOMIC
+description: "Rationalisierungslexik markiert kognitive Rechtfertigungen."
+frame:
+  signal: ["objektiv", "rational betrachtet", "logisch gesehen", "statistisch", "aus Gründen der"]
+  concept: "Rationalisierung"
+  pragmatics: "Affekt distanzieren, Verhalten rechtfertigen"
+  narrative: "Begründungsnarrativ"
+pattern:
+- '(?i)\bobjektiv\b'
+- '(?i)\brational\s+betrachtet\b'
+- '(?i)\blogisch\s+gesehen\b'
+- '(?i)\bstatistisch\b'
+- '(?i)\baus\s+gründen\s+der\b'
+activation_logic: "ANY 1"
+examples:
+  positive:
+  - "Objektiv war das die beste Entscheidung."
+  - "Rational betrachtet ist das kein Problem."
+  - "Logisch gesehen musste ich so handeln."
+  - "Statistisch ist das Risiko minimal."
+  - "Aus Gründen der Effizienz machen wir das so."
+  - "Objektiv betrachtet war das notwendig."
+  - "Statistisch gesehen kaum relevant."
+  - "Logisch gesehen die einzige Option."
+  negative:
+  - Rational betrachtet ist das wenige Problem.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags: [atomic, rationalization, text]
+metadata:
+  repair_log:
+  - {rule: "R09", note: "Frame ergänzt", date: "2025-08-29"}
+  - {rule: "R10", note: "ATO-Default", date: "2025-08-29"}

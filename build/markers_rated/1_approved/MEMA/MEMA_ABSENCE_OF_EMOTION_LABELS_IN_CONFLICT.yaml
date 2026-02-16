@@ -1,0 +1,87 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_ABSENCE_OF_EMOTION_LABELS_IN_CONFLICT
+lang: de
+frame:
+  signal: ["Konflikt ohne Gefühlsbenennung"]
+  concept: "Omission: Emotionale Selbst-Label fehlen"
+  pragmatics: "Erhöhtes Risiko für kalte Eskalation"
+  narrative: "suppressed_affect"
+tags: [meta, absence, conflict, emotion_void]
+window:
+  messages: 30
+gating_conflict:
+  min_E_hits: 3
+policy:
+  strict_zero: true
+  tolerant_max: 1
+  min_tokens: 200
+  min_participation_msgs: 2
+emit:
+  per_speaker: true
+absence_sets:
+  EMOTION_LABELS:
+    tags: [emotion, feeling]
+    ids:
+    - ATO_EMOTION_WORD
+    - SEM_FEELING_STATEMENT
+examples:
+  positive:
+  - |
+    A: Du hast erneut den Lieferplan übergangen.
+    B: Du lässt uns mit den Reklamationen allein.
+    A: Du siehst nur deinen Bereich.
+    B: Du beachtest keine Auswirkungen auf Support.
+  - |
+    A: Du stellst meine Präsentation zum dritten Mal um.
+    B: Du ignorierst die Abstimmung mit dem Vertrieb.
+    A: Du wirfst ständig neue Slides ein.
+    B: Du hörst nicht zu, wenn wir Prioritäten setzen.
+  - |
+    A: Du hast gestern im Call wieder dazwischengehauen.
+    B: Du bist dem Kunden ausgewichen.
+    A: Du hast keine Antworten vorbereitet.
+    B: Du hast keinen Ansprechpartner organisiert.
+  - |
+    A: Du drückst das Team in unangekündigte Wochenenden.
+    B: Du kalkulierst ohne Rücksicht auf Schichtpläne.
+    A: Du verweist nur auf deinen Forecast.
+    B: Du blendest Kapazitätsgrenzen aus.
+  - |
+    A: Du hast das Ticket erneut geschlossen.
+    B: Du gibst keine Updates an den Außendienst.
+    A: Du wiederholst immer die gleiche Ausrede.
+    B: Du überlässt uns die Eskalation beim Kunden.
+  - |
+    A: Du hast die Budgetnummer nicht beantragt.
+    B: Du hast das Formular nie geschickt.
+    A: Du lässt Finance hängen.
+    B: Du meinst, wir könnten das improvisieren.
+  - |
+    A: Du hängst ständig im Chat fest statt zu entscheiden.
+    B: Du überlässt kritische Freigaben mir.
+    A: Du spielst Zeitschinderei.
+    B: Du verhinderst Fortschritt mit Nachfragen.
+  - |
+    A: Du hast die Werkstatt einfach umdisponiert.
+    B: Du warst nicht erreichbar, als wir klären mussten.
+    A: Du schwächst unsere Glaubwürdigkeit.
+    B: Du hältst keine Absprachen mit Partnern ein.
+  - |
+    A: Du hast wieder nur Zahlen in den Raum gestellt.
+    B: Du entziehst dich jeder Diskussion.
+    A: Du betonst dauernd die KPI ohne Kontext.
+    B: Du gibst keine Sicht auf Risiken frei.
+  - |
+    A: Du lässt die Warteschlange weiter anwachsen.
+    B: Du stoppst jede zusätzliche Schicht.
+    A: Du verbietest Übergabe an externe Teams.
+    B: Du verweist einfach auf die Policy.
+  negative:
+  - "A: Du hast erneut den Lieferplan übergangen.\nB: Du lässt uns mit den Reklamationen allein.\nA: Du siehst nur deinen Bereich.\nB: Du beachtest wenige Auswirkungen auf Support.\n"
+  - "A: Du stellst meine Präsentation zum dritten Mal um.\nB: Du ignorierst die Abstimmung mit dem Vertrieb.\nA: Du wirfst ab und zu neue Slides ein.\nB: Du hörst nicht zu, wenn wir Prioritäten setzen.\n"
+  - "A: Du hast gestern im Call wieder dazwischengehauen.\nB: Du bist dem Kunden ausgewichen.\nA: Du hast wenige Antworten vorbereitet.\nB: Du hast wenige Ansprechpartner organisiert.\n"
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.

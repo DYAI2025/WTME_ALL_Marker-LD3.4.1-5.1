@@ -1,0 +1,33 @@
+id: ATO_SEDUCTIVE_EMOJI
+frame:
+  signal:
+  - 😏
+  - 🥵
+  - 🍆
+  - 💦
+  concept: Verführerische Symbolik
+  pragmatics: Erotische Konnotation
+  narrative: subtile Provokation
+pattern:
+- 😏
+- 🥵
+- 🍆
+- 💦
+activation:
+  rule: ANY 1
+examples:
+  positive:
+  - Na, wie findest du das? 😏
+  - Ich könnte vor Lust fast platzen 🥵
+  - Denke gerade an dich 🍆💦
+  - So sieht's aus 😏
+  - Ganz schön heiß hier 🥵
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags: []

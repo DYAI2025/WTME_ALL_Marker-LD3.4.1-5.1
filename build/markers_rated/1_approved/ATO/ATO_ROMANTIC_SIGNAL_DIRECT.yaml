@@ -1,0 +1,58 @@
+name: ATO_ROMANTIC_SIGNAL_DIRECT
+label: "Direktes romantisches Signal"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Direkte romantische oder flirtende Ausdrücke"
+patterns:
+  - type: regex
+    value: "(ich liebe dich|du bist sexy|lass uns daten|küsst dich|herz für dich)"
+threshold: 1
+semiotic:
+  mode: iconic
+  level: pragmatic
+  object: "romantic_signal"
+  interpretant: "effect_on_state: {intimacy: +0.25, trust: +0.1}"
+examples:
+  positive_de:
+    - "Ich liebe dich."
+    - "Du bist sexy."
+    - "Lass uns daten."
+    - "Küsst dich."
+    - "Herz für dich."
+    - "Du machst mich an."
+    - "Romantischer Abend?"
+    - "Ich will dich."
+    - "Flirt mit dir."
+    - "Liebevoll umarmen."
+    - "Du bist mein Schatz."
+    - "Kuss an dich."
+    - "Herzchen senden."
+    - "Sexy du."
+    - "Date vorschlagen."
+    - "Liebe ausdrücken."
+    - "Anmachen."
+    - "Abend romantisch."
+    - "Will dich küssen."
+    - "Flirten jetzt."
+  negative_de:
+    - "Ich hasse dich."
+    - "Du bist unsexy."
+    - "Kein Date."
+    - "Kein Kuss."
+    - "Kein Herz."
+    - "Machst mich ab."
+    - "Kein romantischer Abend."
+    - "Will dich nicht."
+    - "Kein Flirt."
+    - "Nicht umarmen."
+    - "Nicht mein Schatz."
+    - "Kein Kuss."
+    - "Kein Herzchen."
+    - "Unsexy."
+    - "Date ablehnen."
+    - "Keine Liebe."
+    - "Nicht anmachen."
+    - "Abend nicht romantisch."
+    - "Nicht küssen."
+    - "Nicht flirten."

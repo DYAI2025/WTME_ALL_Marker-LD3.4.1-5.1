@@ -1,0 +1,36 @@
+id: SEM_EXAMPLE_MARKER
+lang: de
+category: SEMANTIC
+description: "Wiederkehrender Bedeutungskern: Selbstabwertung / Schuldgefühle kombiniert mit Relativierung."
+frame:
+  signal: ["Selbstvorwurf + Abschwächung"]
+  concept: "self-deprecation / culpa"
+  pragmatics: "Beziehungswirkung: verstärkte Schuld/Scham"
+  narrative: "drift"
+composed_of:
+- ATO_EXAMPLE_SIGNAL
+- ATO_EXAMPLE_EMOTION
+activation:
+  rule: "ANY 2 IN 3 messages"
+scoring:
+  base: 1.4
+  weight: 1.1
+window:
+  messages: 30
+examples:
+  positive:
+  - "Ja, aber ich vermassle das doch sowieso."
+  - "Ja, aber das ist meine Schuld, ich weiß."
+  - "Es liegt bestimmt wieder an mir, ja, aber..."
+  - "Ich mach das falsch, ich bin schuld."
+  - "Wahrscheinlich habe ich alles verhauen, ja, aber..."
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags: [semantic, self-blame]
+schema_version: "3.4"

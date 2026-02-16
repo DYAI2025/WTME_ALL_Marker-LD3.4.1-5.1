@@ -1,0 +1,54 @@
+name: CLU_GASLIGHTING_SEQUENCE
+label: "Gaslighting Sequence"
+class: cluster
+version: 3.5
+languages: [de]
+intent: Realitätsverschiebung und Verantwortungsumkehr.
+temperature_semantics:
+  external: VERWIRRUNG
+  latent: KONTROLLE
+window:
+  size_messages: 6
+gates:
+  min_msgs: 2
+score:
+  method: weighted_k_of_n
+  threshold: 0.6
+ingredients:
+  require:
+    - SEM_REALITY_DISTORTION_FIELD
+    - CLU_COVERT_RESPONSIBILITY_INVERSION
+  k_of_n: {k: 2, of: []}
+emits:
+  indices:
+    trust: -0.2
+    conflict: +0.15
+examples:
+  positive_de:
+    - "Ich habe das nie gesagt."
+    - "Du erinnerst dich falsch, wir haben das so besprochen."
+    - "Offensichtlich hast du das missverstanden."
+    - "Das bildest du dir ein, so war es nicht."
+    - "Du bist zu empfindlich, das war nur ein Scherz."
+    - "Das hast du erfunden."
+    - "Niemals passiert."
+    - "Deine Wahrnehmung täuscht."
+    - "Schuld bei dir."
+    - "Umkehr der Fakten."
+  negative_de:
+    - "Ja, das habe ich gesagt."
+    - "Erinnere mich richtig."
+    - "Das verstehe ich."
+    - "So war es wirklich."
+    - "Kein Scherz, ernst."
+    - "Das ist Fakt."
+    - "Wahrheit anerkennen."
+    - "Keine Täuschung."
+    - "Verantwortung übernehmen."
+    - "Klare Fakten."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "gaslighting"
+  interpretant: "effect_on_state: {trust: -0.2}"
+  connotation: ["manipulation", "sequence"]

@@ -1,0 +1,25 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_GLYPHIC_LANGUAGE
+frame:
+  signal: ["semantic"]
+  concept: "Glyphische Sprache"
+  pragmatics: "Symbolik"
+  narrative: "micro"
+composed_of: [ATO_GLYPH_SIGIL, ATO_STEGANO_HINT]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  positive:
+  - "nutze Glyphen… steganografisch"
+  - "Flamme + kodierte Botschaft"
+  - "Glyph + versteckte Sprache"
+  - "Sigil-Token… kodiert"
+  - "Dreieck… steganografisch"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

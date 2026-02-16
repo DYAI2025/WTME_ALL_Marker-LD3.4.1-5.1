@@ -1,0 +1,37 @@
+id: ATO_COMPASSION
+frame:
+  signal:
+  - tut mir leid
+  - ich fühle mit dir
+  - das muss schwer sein
+  - ich kann verstehen
+  - mein Mitgefühl
+  concept: Mitgefühl
+  pragmatics: Empathiebekundung
+  narrative: Emotionsausdruck
+pattern:
+- (?i)\btut mir leid\b
+- (?i)\bich fühle mit dir\b
+- (?i)\bdas muss schwer sein\b
+activation:
+  rule: ANY 1
+examples:
+  positive:
+  - Tut mir leid, das zu hören.
+  - Ich fühle mit dir.
+  - Das muss wirklich schwer sein für dich.
+  - Ich kann gut nachvollziehen, wie du dich fühlst.
+  - Mein Mitgefühl ist bei dir.
+  - Sorry to hear that.
+  - My sympathies are with you.
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- compassion
+- empathy

@@ -1,0 +1,56 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_DEESCALATION_PHRASE
+frame:
+  signal: ["runterfahren", "beruhigen", "lass uns sachlich bleiben", "keine Eskalation"]
+  concept: "Deeskalationssprache"
+  pragmatics: "Konflikt dämpfen"
+  narrative: "harmony"
+tags: [deescalation]
+pattern:
+  regex: '(?i)\b(beruhigen\s+wir\s+uns|lass\s+uns\s+sachlich\s+bleiben|keine\s+eskalation|fahren\s+wir\s+runter|ruhig\s+bleiben|einen\s+gang\s+runterschalten|entspannen\s+wir\s+das)\b'
+examples:
+  positive:
+  - "Beruhigen wir uns bitte."
+  - "Lass uns sachlich bleiben."
+  - "Keine Eskalation jetzt."
+  - "Fahren wir das runter."
+  - "Ich möchte ruhig bleiben."
+  - "Wir schalten einen Gang runter."
+  - "Lass uns das entspannen."
+  - "Wir nehmen da Druck raus."
+  - "Ich will den Ton runterfahren."
+  - "Können wir das deeskalieren?"
+  - "Ich spreche ruhig weiter."
+  - "Ich will Frieden wahren."
+  - "Wir beruhigen die Lage."
+  - "Ich will das nicht hochschaukeln."
+  - "Wir treten einen Schritt zurück."
+  - "Beruhigen wir uns alle erstmal."
+  - "Lass uns bitte sachlich bleiben."
+  - "Keine Eskalation mehr, okay?"
+  - "Fahren wir das mal runter."
+  - "Ich will hier ruhig bleiben."
+  - "Wir sollten einen Gang runterschalten."
+  - "Lass uns die Sache entspannen."
+  - "Wir nehmen den Druck raus."
+  - "Ich möchte den Ton runterfahren."
+  - "Können wir das bitte deeskalieren?"
+  - "Ich spreche weiterhin ruhig."
+  - "Ich möchte Frieden wahren."
+  - "Wir beruhigen erstmal die Lage."
+  - "Ich will das nicht weiter hochschaukeln."
+  - "Wir treten mal einen Schritt zurück."
+  - "Beruhigen wir uns und atmen durch."
+  - "Lass uns vernünftig bleiben."
+  - "Keine weitere Eskalation bitte."
+  - "Fahren wir die Emotionen runter."
+  - "Ich bleibe gelassen und ruhig."
+  negative:
+  - wenige Eskalation jetzt.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.

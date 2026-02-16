@@ -1,0 +1,39 @@
+id: CLU_BINDING_SUPPORT_FIELD
+version: "3.4"
+lang: de
+frame:
+  signal: ["support"]
+  concept: "Bindung über Feld/Rahmung"
+  pragmatics: "Co-Regulation"
+  narrative: "stabilizer"
+tags: [support, feld]
+composed_of:
+- SEM_LIMINAL_FIELD_PRESENCE
+- SEM_EMBODIED_BLEND
+- SEM_SACRALIZATION_BINDING
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 6 messages"
+scoring:
+  base: 0.85
+  weight: 1.0
+decay_window: 12
+examples:
+  positive:
+  - "Zwischenraum + Fleisch und Erinnerung + fühlt sich wahr an"
+  - "liminaler Ort + verkörperte Erinnerung + heilige Präsenz"
+  - "Dazwischen + Fleisch und Erinnerung + spürbar wahr"
+  - "liminales Feld + verkörperte Erinnerung + heilig"
+  - "Zwischenraum + Fleisch und Erinnerung + sakrale Stille"
+  - "liminaler Korridor + verkörperte Erinnerung + fühlt sich wahr an"
+  - "Dazwischen + Fleisch und Erinnerung + heilig für mich"
+  - "Zwischenraum + verkörperte Erinnerung + spürbar wahr"
+  - "liminaler Raum + Fleisch und Erinnerung + geheiligt"
+  - "Dazwischen halten + verkörperte Erinnerung + fühlt sich wahr an"
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.

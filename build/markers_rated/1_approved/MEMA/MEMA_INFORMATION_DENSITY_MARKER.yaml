@@ -1,0 +1,27 @@
+id: MEMA_INFORMATION_DENSITY_MARKER
+frame:
+  signal: ["Informationsdichte", "Kommunikationsvolumen", "Nachrichtenhäufigkeit"]
+  concept: "Informationsdichte-Analyse"
+  pragmatics: "Meta-Analyse der Kommunikationsintensität"
+  narrative: "Bewertung von Informationsfluss und -dichte"
+composed_of:
+- SEM_AGGRESSIVE_BEHAVIOR
+- SEM_FOGGING
+- CLU_DIGITAL_MANIPULATION
+activation:
+  rule: "VOLUME_THRESHOLD 50 messages IN 1 hour"
+examples:
+  positive:
+  - "50+ Nachrichten in einer Stunde → Meta detektiert Informationsüberflutung."
+  - "Kommunikationsdichte überschreitet normale Parameter → System aktiviert Filterung."
+  - "Meta-Analyse zeigt: 200% über durchschnittlicher Nachrichtenfrequenz."
+  - "Algorithmus erkennt: Informations-Bombardement statt normaler Konversation."
+  - "Density-Marker aktiviert Schutzfunktion: 'Kommunikationspause empfohlen'."
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

@@ -1,0 +1,28 @@
+id: ATO_FINANCIAL_TERM
+version: "3.4"
+frame:
+  signal: ["lexical", "finance"]
+  concept: "financial_concept"
+  pragmatics: "domain-specific"
+  narrative: "evidence"
+pattern: "\\b(umsatz|ebruttomarge|cashflow|burn|pre-money|post-money|tbl|roi|npv)\\b"
+examples:
+  positive:
+  - "Unser Burn beträgt..."
+  - "Die Rohertragsmarge liegt bei..."
+  - "Der Cashflow ist positiv."
+  - "Unsere Pre-Money Bewertung steigt."
+  - "ROI sollte >20% sein."
+  - "NPV der Investition ist attraktiv."
+  - "Post-Money wären wir bei 12M."
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+scoring:
+  base: 0.6
+  weight: 1.6

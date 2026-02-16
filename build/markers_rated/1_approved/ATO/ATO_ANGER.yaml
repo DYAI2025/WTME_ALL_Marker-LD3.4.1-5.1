@@ -1,0 +1,58 @@
+name: ATO_ANGER
+label: "Wut"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Ausdrücke von Wut oder Frustration"
+patterns:
+  - type: regex
+    value: "(ich bin sauer|das nervt mich|wütend|frustriert|das reicht mir)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: semantic
+  object: "anger_expression"
+  interpretant: "effect_on_state: {conflict: +0.2, deesc: -0.2}"
+examples:
+  positive_de:
+    - "Ich bin sauer."
+    - "Das nervt mich."
+    - "Wütend auf dich."
+    - "Frustriert total."
+    - "Das reicht mir."
+    - "Ich explodiere gleich."
+    - "Das macht mich aggressiv."
+    - "Wut kocht hoch."
+    - "Frustration pur."
+    - "Genug jetzt!"
+    - "Sauer sein."
+    - "Nervt extrem."
+    - "Wütend werden."
+    - "Frustriert fühlen."
+    - "Reicht aus."
+    - "Explodieren vor Wut."
+    - "Aggressiv machen."
+    - "Kochen vor Wut."
+    - "Pur Frustration."
+    - "Genug gehabt."
+  negative_de:
+    - "Ich bin ruhig."
+    - "Das stört mich nicht."
+    - "Kein Wut."
+    - "Entspannt."
+    - "Das ist ok."
+    - "Nicht explodieren."
+    - "Kein aggressiv."
+    - "Wut runter."
+    - "Keine Frustration."
+    - "Weiter so."
+    - "Nicht sauer."
+    - "Nervt nicht."
+    - "Nicht wütend."
+    - "Nicht frustriert."
+    - "Reicht nicht."
+    - "Nicht explodieren."
+    - "Nicht aggressiv."
+    - "Nicht kochen."
+    - "Keine pur."
+    - "Nicht genug."

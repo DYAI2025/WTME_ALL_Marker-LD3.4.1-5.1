@@ -1,0 +1,41 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_MICRO_AGGRESSION_LIGHT
+frame:
+  signal: ["micro_aggression_light"]
+  concept: "Subtile Abwertung/Spitzen"
+  pragmatics: "soziale Hierarchie, Gesichtsverlust light"
+  narrative: "tension"
+tags: [irony, sarcasm, mocking]
+composed_of:
+  any_of:
+  - ATO_IRONY
+  - ATO_MOCKING_LEXICON
+  - ATO_SARCASM_SUBTILE
+  - ATO_SARCASM_MARKER
+activation:
+  rule: "AT_LEAST 2 IN 3 messages"
+  window: 3
+constraints:
+  exclude_tags: [hate, slur]
+scoring: {base: 0.55, weight: 1.06}
+examples:
+  positive:
+  - "Wow, pünktlich wie immer…"
+  - "Starke Idee – hätt ich in der Grundschule auch so gemacht."
+  - "Na klar, das wird bestimmt total nachhaltig…"
+  - "Sehr professionell, wirklich."
+  - "Guter Plan – für’s Wochenende."
+  - "Genau, wir lösen’s mit Magie."
+  - "Sensationell – wieder ohne Vorbereitung."
+  - "Großartig, wieder eine Überraschung."
+  - "Klar, Qualität ist optional."
+  - "Mutig, so ins Meeting zu gehen."
+  negative:
+  - Wow, pünktlich wie manchmal…
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.

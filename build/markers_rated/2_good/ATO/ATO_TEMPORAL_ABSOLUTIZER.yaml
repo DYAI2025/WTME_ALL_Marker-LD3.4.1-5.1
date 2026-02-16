@@ -1,0 +1,37 @@
+schema: "LeanDeep"
+version: "3.4"
+namespace: "consistency_external"
+
+defaults:
+  scoring:
+    window_messages: 5
+    norm: zscore
+    thresholds: {warn: 0.60, alert: 0.75, critical: 0.85}
+
+markers:
+- id: ATO_TEMPORAL_ABSOLUTIZER
+  frame:
+    signal: ["immer", "nie", "ständig", "jedes Mal"]
+    concept: "Temporale Absolutmarker"
+    pragmatics: "Überdehnung → bruchanfällig"
+  pattern:
+  - detect_class: phrase
+    list: ["immer", "nie", "ständig", "jedes Mal"]
+  score: 0.25
+  metadata: {type: ATO}
+  examples:
+  - "Ich bin immer pünktlich."
+  - "Ich war nie dort."
+  - "Er macht das ständig."
+  - "Jedes Mal passiert das."
+  - "Nie habe ich dem zugestimmt."
+examples:
+  positive: []
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

@@ -1,0 +1,24 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_GLYPH_SIGIL
+frame:
+  signal: ["atomic"]
+  concept: "Glyph/Sigil-Token"
+  pragmatics: "Symbolische Kodierung"
+  narrative: "micro"
+pattern: "\\b(Flamme|Dreieck|Spiral-Sigil|Glyph)\\b"
+examples:
+  positive:
+  - "Flamme"
+  - "Dreieck"
+  - "Spiral-Sigil"
+  - "nutze Glyphen…"
+  - "Sigil-Token"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

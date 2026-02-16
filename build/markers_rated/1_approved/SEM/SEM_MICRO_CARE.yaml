@@ -1,0 +1,40 @@
+id: SEM_MICRO_CARE
+frame:
+  signal:
+  - Kleiner Reminder
+  - Alles gut bei dir?
+  - Nur falls du Hilfe brauchst
+  concept: Fürsorge
+  pragmatics: Unterstützungsangebot
+  narrative: Care gesture
+composed_of:
+- ATO_INVITING_RESONANCE
+- ATO_POSITIVE_RESONANCE
+activation:
+  rule: ANY 2 IN 3 messages
+scoring:
+  base: 1.3
+  weight: 1.0
+examples:
+  positive:
+  - Nur falls du Hilfe brauchst, melde dich jederzeit.
+  - Ich wollte nur kurz fragen, wie es dir geht.
+  - Sag Bescheid, wenn ich etwas für dich tun kann.
+  - 'Kleiner Reminder: Ich bin für dich da.'
+  - Alles gut bei dir? Ich denke an dich.
+  - Ich wollte nur schauen, ob du Unterstützung brauchst.
+  - Falls du was brauchst, ich helfe gern.
+  - Bin da, wenn du reden möchtest.
+  - Melde dich, wenn du einen Rat brauchst.
+  - Ich passe auf dich auf, okay?
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.
+tags:
+- care
+- support

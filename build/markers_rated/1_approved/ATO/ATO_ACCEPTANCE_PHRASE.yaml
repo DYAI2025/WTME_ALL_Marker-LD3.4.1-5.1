@@ -1,0 +1,56 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_ACCEPTANCE_PHRASE
+frame:
+  signal: ["annehmen", "akzeptieren", "zu Gefühlen stehen"]
+  concept: "Akzeptanz"
+  pragmatics: "Emotionsakzeptanz"
+  narrative: "acceptance"
+tags: [acceptance]
+pattern:
+  regex: '(?i)\b(annehm\w+|akzeptier\w+|zu\s+meinen\s+gefühlen\s+steh\w+|es\s+ist\s+okay,\s+dass\s+ich\s+\w+)\b'
+examples:
+  positive:
+  - "Ich akzeptiere meine Angst."
+  - "Ich nehme die Traurigkeit an."
+  - "Ich stehe zu meinen Gefühlen."
+  - "Es ist okay, dass ich nervös bin."
+  - "Ich akzeptierte es, so zu fühlen."
+  - "Ich nehme an, dass diese Sorge da ist."
+  - "Ich akzeptiere, dass Wut in mir auftaucht."
+  - "Ich stehe dazu, verletzt zu sein."
+  - "Es ist okay, dass ich mich überfordert fühle."
+  - "Ich nehme an, dass das gerade schwierig ist."
+  - "Ich akzeptiere meine Grenzen."
+  - "Ich erkenne an, dass die Angst da ist."
+  - "Ich lasse das Gefühl da sein."
+  - "Ich stehe dazu, traurig zu sein."
+  - "Es ist okay, so zu empfinden."
+  - "Ich akzeptiere meine Unsicherheit."
+  - "Es ist in Ordnung, dass ich traurig bin."
+  - "Ich nehme meine Gefühle ernst."
+  - "Ich stehe dazu, dass ich Hilfe brauche."
+  - "Es ist okay, nicht perfekt zu sein."
+  - "Ich akzeptiere, dass ich manchmal wütend werde."
+  - "Ich nehme an, dass diese Emotionen berechtigt sind."
+  - "Es ist völlig normal, so zu fühlen."
+  - "Ich akzeptiere meine Vergangenheit."
+  - "Ich stehe dazu, dass ich verletzlich bin."
+  - "Es ist okay, sich schwach zu fühlen."
+  - "Ich akzeptiere meine Fehler."
+  - "Ich nehme an, dass ich Zeit brauche."
+  - "Es ist in Ordnung, nicht alles zu schaffen."
+  - "Ich akzeptiere meine aktuellen Grenzen."
+  - "Ich stehe dazu, dass ich Unterstützung brauche."
+  - "Es ist okay, wenn ich heute nicht so gut drauf bin."
+  - "Ich akzeptiere meine Gedanken, wie sie sind."
+  - "Ich nehme an, dass das ein wichtiges Gefühl ist."
+  - "Es ist völlig legitim, so zu reagieren."
+  negative:
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+  - Die Besprechung ist im Konferenzraum.

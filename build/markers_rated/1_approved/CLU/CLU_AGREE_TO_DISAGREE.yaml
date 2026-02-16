@@ -1,0 +1,129 @@
+name: CLU_AGREE_TO_DISAGREE
+label: "Agree to disagree"
+class: cluster
+version: 1.0
+languages: [de]
+intent: >
+  Kooperativer, affektarm-kühler Betriebsmodus nach/bei ungelöstem Dissens:
+  sachliche Koordination, formale Höflichkeit, keine sichtbaren Reparaturen,
+  beidseitig nüchterne Turns.
+temperature_semantics:
+  external: RUHE
+  latent: SPANNUNG
+window:
+  size_messages: 30
+  size_minutes: 4320
+gates:
+  min_msgs: 10
+  require_bilateral: true
+  exclude_if_any: [CLU_ACTIVE_REPAIR, CLU_INTIMACY_PLAY, CLU_HEATED_CONFLICT]
+score:
+  method: weighted_k_of_n
+  threshold: 0.62
+  weights:
+    SEM_TASK_DOMINANCE: 0.25
+    ATO_AFFECT_FLAT: 0.2
+    k_bucket: 0.55
+  decay_minutes: 720
+ingredients:
+  require:
+    - SEM_TASK_DOMINANCE
+    - ATO_AFFECT_FLAT
+  k_of_n:
+    k: 4
+    of:
+      - ATO_ACK_MICRO
+      - ATO_BOUNDARY_STRICT
+      - ATO_TOPIC_SHIFT_TO_TASK
+      - ATO_COURTESY_FORMAL
+      - ATO_PROTOCOL_LANG
+      - ATO_HUMOR_SUPPRESS
+      - ATO_REPAIR_ABSENT
+      - ATO_SYMMETRY_COOL
+      - ATO_DELAY_BALANCED
+  negative_evidence:
+    any_of: [ATO_AFFECTION_SHOW, CLU_ACTIVE_REPAIR, ATO_HUMOR_LIGHT]
+emits:
+  meta:
+    - MEMA_COEXISTENCE_PROTOCOL
+  indices:
+    trust: +0.05
+    deesc: -0.10
+    conflict: -0.15
+    sync: +0.12
+examples:
+  positive_de:
+    - "Ok. Termin 14:00 passt. Ich sende die Datei später."
+    - "Wie besprochen: nur die Zahlen. Bitte Bestätigung."
+    - "Ich übernehme Versand, du finalisierst die Rechnung."
+    - "Bleiben wir beim Scope. Nächster Schritt: Freigabe."
+    - "Erhalten. Ich setze das Ticket heute noch auf."
+    - "Danke. Erledigt. Nächster Punkt: Protokoll."
+    - "Zurück zum Thema: Liefertermin 30.09. ist realistisch."
+    - "Bitte halte dich an die Vorlage. Danach Review."
+    - "Notiert. Ich buche die Slots, du schickst die Liste."
+    - "Wir lassen es so. Rückfrage nur bei Abweichungen."
+    - "Agenda einhalten, bitte."
+    - "Statusupdate 17:00, ok?"
+    - "Freigabe geben, dann weiter."
+    - "Prozess folgen, keine Extras."
+    - "Milestone checken."
+    - "Review ansetzen."
+    - "Budget prüfen."
+    - "Update teilen."
+    - "Abnahme machen."
+    - "Notiz nehmen."
+    - "Checkliste abarbeiten, bitte."
+    - "Sprint planen."
+    - "Epic abschließen."
+    - "User Story definieren."
+    - "Bugfix Ticket."
+    - "Deployment Freigabe."
+    - "Audit Protokoll."
+    - "KPI Check."
+    - "Kanban updaten."
+    - "Change Request bearbeiten."
+  negative_de:
+    - "Tut mir leid, ich war unfair. Lass uns das klären."
+    - "Haha, du und deine Tabs 😄"
+    - "Ich hab dich lieb, wir schaffen das."
+    - "Das nervt mich gerade extrem."
+    - "Wie fühlst du dich damit?"
+    - "Können wir kurz in Ruhe reden?"
+    - "Ich war echt verletzt gestern."
+    - "Großartig, das freut mich total!"
+    - "Lass uns das feiern 🎉"
+    - "Bitte verzeih mir den Ton vorhin."
+    - "Ich vermisse dich."
+    - "Lass uns kuscheln."
+    - "Das tat weh."
+    - "Feiern wir das?"
+    - "❤️"
+    - "Witzig 😅"
+    - "Ich bin traurig."
+    - "Bitte verzeih."
+    - "Das macht mich wütend."
+    - "Ich entschuldige mich."
+    - "Lass uns tiefer gehen."
+    - "Das fühlt sich falsch an."
+    - "Erzähl mehr von dir."
+    - "Ich teile meine Gefühle."
+    - "Bleiben wir beim Emotionalen."
+    - "Das triggert mich."
+    - "Lass uns pausieren und fühlen."
+    - "Ich brauche Unterstützung."
+    - "Das verletzt mich."
+    - "Mehr Empathie bitte."
+conflicts_with:
+  - CLU_ACTIVE_REPAIR
+  - CLU_INTIMACY_PLAY
+  - CLU_HEATED_CONFLICT
+telemetry:
+  spans: true
+  return: [{span, start, end, marker, score, evidence}]
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "disagreement_coexistence"
+  interpretant: "effect_on_state: {trust: +0.05, conflict: -0.15, sync: +0.12}"
+  connotation: ["distanz", "formell"]

@@ -1,0 +1,29 @@
+id: SEM_METACOGNITIVE_INSIGHT
+version: "3.3"
+frame:
+  signal: ["Bewusste Selbstbeobachtung mit Mustererkennung"]
+  concept: "Metakognitive Einsicht"
+  pragmatics: "Therapeutische Selbsterkenntnis"
+  narrative: "breakthrough"
+composed_of:
+- ATO_SELF_OBSERVATION
+- ATO_PATTERN_RECOGNITION
+activation:
+  rule: "ALL 2 IN 3 messages"
+examples:
+  positive:
+  - "Mir fällt auf, dass ich immer wieder in dieses Muster verfalle"
+  - "Ich beobachte an mir, wie ich schon wieder das Gleiche mache"
+  - "Mir wird klar, das kenne ich von mir aus alten Situationen"
+  - "Ich merke, typisch für mich, diese Reaktion"
+  - "Ich erkenne mein altes Muster in dieser Situation"
+  negative:
+  - Mir fällt auf, dass ich manchmal wieder in dieses Muster verfalle
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags: [semantic, metakognition, insight, selbsterkenntnis]
+schema_version: "3.3"

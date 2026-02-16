@@ -1,0 +1,61 @@
+id: ATO_SUBSTANCE_CRAVING
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for craving expressions in substance use disorders
+frame:
+  signal:
+  - craving
+  concept: Addiction urge language patterns
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(need it|craving|just a little|can't resist|one hit)\b
+examples:
+  positive:
+  - "I need it so badly right now."
+  - "This craving is killing me."
+  - "Just a little won't hurt."
+  - "I can't resist the urge."
+  - "One hit and I'll be fine."
+  - "I crave it intensely."
+  - "Must have it now."
+  - "A small dose is enough."
+  - "Urge is overwhelming."
+  - "One puff will satisfy."
+  - "Desperate for it."
+  - "Craving hits hard."
+  - "Tiny bit only."
+  - "Can't fight it."
+  - "One sip to calm down."
+  - "Need it urgently."
+  - "Craving consumes me."
+  - "Just a taste."
+  - "Resist? Impossible."
+  - "One more time."
+  negative:
+  - "I don't need it today."
+  - "No craving at all."
+  - "A little is too much."
+  - "I can resist easily."
+  - "No hits for me."
+  - "No urge today."
+  - "Don't want it."
+  - "Even small is bad."
+  - "Resistance is easy."
+  - "No doses."
+  - "Not desperate."
+  - "No craving."
+  - "Big bit is worse."
+  - "Fight it successfully."
+  - "No sip needed."
+  - "No urgency."
+  - "Craving absent."
+  - "No taste."
+  - "Resist completely."
+  - "Never again."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- psychiatric

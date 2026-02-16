@@ -1,0 +1,61 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_NONVERBAL_JOY_VERB
+type: ATO
+frame:
+  concept: "Nonverbale Freude (berichtete Beobachtung)"
+  narrative: "positive_affect"
+  signal: ["lacht", "lächelt", "grinst"]
+pattern:
+  regex: '(?i)\b(lacht|l(ä|ae)chelt|grinst)\b'
+examples:
+  positive:
+  - "Das Kind **lacht** oft."
+  - "Sie **lächelt** spontan."
+  - "Er **grinst** zufrieden."
+  - "Wir **lachen** miteinander."
+  - "Sie **lächeln** einander an."
+  - "Das Publikum **lacht** herzlich."
+  - "Sie **lächelt** vor Freude."
+  - "Er **grinst** breit."
+  - "Alle **lachen** laut."
+  - "Ein **Lächeln** huscht über ihr Gesicht."
+  - "Wir **lachen** herzlich."
+  - "Sie **lächelt** mich so liebevoll an."
+  - "Mein Baby **lacht** den ganzen Tag."
+  - "Sie **lächelt** mich jeden Morgen an."
+  - "Er **grinst** verschmitzt bei dem Gedanken."
+  - "Wir **lachen** zusammen über die Situation."
+  - "Die Kinder **lächeln** strahlend in die Kamera."
+  - "Alle **lachen** über den lustigen Witz."
+  - "Sie **lächelt** glücklich vor sich hin."
+  - "Er **grinst** von einem Ohr zum anderen."
+  - "Wir **lachen** bis uns die Tränen kommen."
+  - "Ein warmes **Lächeln** erhellt ihr Gesicht."
+  - "Die Freunde **lachen** herzlich zusammen."
+  - "Sie **lächelt** verlegen bei dem Kompliment."
+  - "Er **grinst** amüsiert über ihren Kommentar."
+  - "Alle **lachen** befreit nach der Anspannung."
+  - "Sie **lächelt** dankbar für die Hilfe."
+  - "Das Baby **lacht** glucksend vor Vergnügen."
+  - "Er **grinst** stolz über seinen Erfolg."
+  - "Wir **lachen** gemeinsam über alte Erinnerungen."
+  - "Sie **lächelt** sanft beim Betrachten der Fotos."
+  - "Alle **lachen** ausgelassen bei der Party."
+  negative:
+  - Ich denke, wir sollten das sachlich betrachten.
+  - Mir geht es gut, danke der Nachfrage.
+  - Das ist ein interessanter Gedanke.
+  - Ich bin gerade entspannt.
+  - Alles in Ordnung bei mir.
+  - Ich fuehle mich heute ruhig und gelassen.
+  - Das ueberrascht mich, aber es ist okay.
+negatives:
+- "Er **grinst** vor Schmerz."                    # nicht Freude
+tags: [nonverbal]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

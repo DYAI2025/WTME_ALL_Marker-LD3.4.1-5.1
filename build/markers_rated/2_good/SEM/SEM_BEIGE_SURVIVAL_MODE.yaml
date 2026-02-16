@@ -1,0 +1,25 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_BEIGE_SURVIVAL_MODE
+frame:
+  signal: "Aktivierter Überlebensmodus"
+  concept: "Beige-Persona in Aktion"
+  pragmatics: "Rückfall auf primitive Instinkte"
+  narrative: "Überleben steht über allem"
+composed_of: [ATO_SURVIVAL_INSTINCT, ATO_POWER_ASSERTION]
+activation: "BOTH IN 2 messages"
+examples:
+  positive:
+  - "Ich muss das überleben, koste es was es wolle"
+  - "instinktive Machtdemonstration"
+  - "primitiver Überlebenskampf"
+  - "Angst und Aggression"
+  - "Flucht oder Angriff"
+  negative:
+  - ich entscheide mich zu das überleben, koste es was es wolle
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.

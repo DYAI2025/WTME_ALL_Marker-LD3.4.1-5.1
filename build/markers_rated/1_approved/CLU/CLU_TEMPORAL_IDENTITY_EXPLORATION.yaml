@@ -1,0 +1,33 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_TEMPORAL_IDENTITY_EXPLORATION
+frame:
+  signal: ["Identität über die Zeit befragen"]
+  concept: "Wer war/bin/werde ich? Zeitliche Identitätsfragen"
+  pragmatics: "Selbstreflexion"
+  narrative: "identity_timeline"
+composed_of:
+- SEM_TEMPORAL_CONFLICT_EXTERNAL
+- SEM_SELF_CONSIST_PROBE_EXT
+activation:
+  rule: "ANY 2 IN 6 messages"
+  window:
+    messages: 6
+scoring:
+  base: 0.6
+  weight: 1.0
+examples:
+  positive:
+  - "Früher war ich anders – bin ich es noch?"
+  - "Wer bin ich geworden in den letzten Jahren?"
+  - "Gestern sagte ich A, heute klingt B richtiger."
+  - "Bin ich noch dieselbe Person?"
+  - "Wie passe ich jetzt zu dem, was ich früher sagte?"
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.

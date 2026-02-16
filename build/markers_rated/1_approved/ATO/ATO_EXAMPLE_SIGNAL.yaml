@@ -1,0 +1,29 @@
+id: ATO_EXAMPLE_SIGNAL
+lang: de
+category: ATOMIC
+description: "Kleinste Ausdruckseinheit: Relativierung / Abschwächung (z. B. 'ja, aber')."
+frame:
+  signal: ["ja, aber", "relativierung", "softening"]
+  concept: "Einwand / Abschwächung"
+  pragmatics: "Abwehr oder Abschwächung"
+  narrative: "token"
+pattern:
+- "(?i)\\bja,\\s*aber\\b"
+- "(?i)\\bab(er)?\\s+ich\\b"
+examples:
+  positive:
+  - "Ja, aber das haben wir doch schon versucht."
+  - "Ja, aber ich finde, das bringt nichts."
+  - "Ja, aber so einfach ist das nicht."
+  - "Ja, aber wir haben keine Zeit."
+  - "Ja, aber das klappt eh nie."
+  negative:
+  - Ja, aber wir haben wenige Zeit.
+  - Ja, aber das klappt eh selten.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+tags: [atomic, relativization]
+schema_version: "3.4"

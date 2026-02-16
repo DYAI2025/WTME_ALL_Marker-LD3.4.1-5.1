@@ -1,0 +1,58 @@
+name: ATO_EMPATHY_MARKERS
+label: "Empathie-Marker"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Ausdrücke, die Verständnis für die Gefühle des anderen zeigen"
+patterns:
+  - type: regex
+    value: "(ich verstehe|das kann ich nachvollziehen|wie du dich fühlst|ich sehe das|das tut mir leid für dich)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "empathy_expression"
+  interpretant: "effect_on_state: {trust: +0.2, deesc: +0.15}"
+examples:
+  positive_de:
+    - "Ich verstehe, wie dich das trifft."
+    - "Das kann ich nachvollziehen."
+    - "Wie fühlst du dich dabei?"
+    - "Ich sehe deinen Punkt."
+    - "Das tut mir leid für dich."
+    - "Ich fühle mit dir."
+    - "Verstehe deine Sicht."
+    - "Das muss schwer sein."
+    - "Ich bin bei dir."
+    - "Deine Gefühle sind valide."
+    - "Ich erkenne deine Frustration."
+    - "Das klingt enttäuschend."
+    - "Ich höre dich."
+    - "Verstehe die Emotion."
+    - "Das respektiere ich."
+    - "Ich empathisiere."
+    - "Deine Perspektive sehe ich."
+    - "Das berührt mich."
+    - "Ich fühle das mit."
+    - "Verstehe voll und ganz."
+  negative_de:
+    - "Das interessiert mich nicht."
+    - "Deine Gefühle sind egal."
+    - "Hör auf zu jammern."
+    - "Das ist unwichtig."
+    - "Ignorier ich."
+    - "Mach nicht so ein Drama."
+    - "Dein Problem."
+    - "Ich seh das nicht."
+    - "Kein Verständnis."
+    - "Das ist lächerlich."
+    - "Vergiss es."
+    - "Kein Mitleid."
+    - "Du übertreibst."
+    - "Ignoriere deine Sicht."
+    - "Das ist dumm."
+    - "Hör nicht zu."
+    - "Egal wie du fühlst."
+    - "Kein Respekt dafür."
+    - "Das berührt mich nicht."
+    - "Keine Empathie."

@@ -1,0 +1,35 @@
+id: ATO_FEIGNED_FORGETFULNESS
+contentReference_description: oaicite:11{index=11}
+frame:
+  signal:
+  - ganz vergessen
+  - Ist mir entfallen
+  - Ist mir entgangen
+  - ehrlich vergessen
+  - nicht auf dem Schirm
+  concept: feigned forgetfulness
+  pragmatics: evasion
+  narrative: excuse
+pattern:
+- (?i)\bvergessen\b
+- (?i)\bentfallen\b
+- (?i)\bentgangen\b
+activation:
+  rule: '{''type'': ''ANY'', ''count'': 1}'
+contentReference: oaicite:12{index=12}
+examples:
+  positive:
+  - '[Example placeholder 1]'
+  - '[Example placeholder 2]'
+  - '[Example placeholder 3]'
+  - '[Example placeholder 4]'
+  - '[Example placeholder 5]'
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: []

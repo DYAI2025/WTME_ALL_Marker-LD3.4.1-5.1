@@ -1,0 +1,91 @@
+id: ATO_LONELINESS_ISOLATION
+schema: "LeanDeep"
+version: "3.4"
+namespace: "ld34_text_social_grammar"
+lang: de
+category: ATOMIC
+description: "Atomic marker for loneliness, isolation, and social disconnection expressions"
+
+frame:
+  signal: ["einsamkeit", "allein", "isoliert", "einsam", "lonely", "isolated"]
+  concept: "Negative emotional valence - loneliness and isolation"
+  pragmatics: "Expression of social disconnection and loneliness"
+  narrative: "emotional_expression"
+
+pattern:
+- '(?i)\b(einsam|einsamkeit|vereinsamt)\b'
+- '(?i)\b(allein|alleine|alleinsein)\b'
+- '(?i)\b(isoliert|isolation|abgeschnitten)\b'
+- '(?i)\b(lonely|loneliness|alone|isolated)\b'
+- '(?i)\b(verlassen|verlassenheit|im stich gelassen)\b'
+- '(?i)\b(niemand|keiner|keine seele)\b'
+- '(?i)\b(ausgeschlossen|ausgegrenzt|abseits)\b'
+
+activation_logic: "ANY 1"
+
+examples:
+  positive:
+  - "Ich fühle mich so einsam und verlassen."
+  - "Die Einsamkeit erdrückt mich manchmal."
+  - "Ich bin ganz allein mit meinen Gedanken."
+  - "Diese Isolation macht mich fertig."
+  - "Ich fühle mich total lonely heute."
+  - "Niemand versteht mich wirklich."
+  - "Ich bin so allein auf dieser Welt."
+  - "Die Einsamkeit nagt an mir."
+  - "Ich fühle mich isoliert und abgeschnitten."
+  - "Keiner ist da, wenn ich jemanden brauche."
+  - "Ich bin so einsam, dass es wehtut."
+  - "Die Verlassenheit ist kaum zu ertragen."
+  - "Ich fühle mich ausgeschlossen von allen."
+  - "Diese Einsamkeit ist mein ständiger Begleiter."
+  - "Ich bin total isolated from everyone."
+  - "Niemand hört mir wirklich zu."
+  - "Ich fühle mich allein gelassen und vergessen."
+  - "Die Einsamkeit frisst mich innerlich auf."
+  - "Ich bin einsam in einer vollen Welt."
+  - "Keine Seele interessiert sich für mich."
+  - "Ich fühle mich im Stich gelassen."
+  - "Die Isolation wird immer schlimmer."
+  - "Ich bin so lonely and sad."
+  - "Niemand versteht meine Einsamkeit."
+  - "Ich fühle mich abgeschnitten von allem."
+  - "Die Verlassenheit schmerzt tief."
+  - "Ich bin ganz allein mit meinem Schmerz."
+  - "Diese Einsamkeit macht mich krank."
+  - "Ich fühle mich ausgegrenzt und einsam."
+  - "Keiner merkt, wie einsam ich bin."
+  - "Ich bin so allein in meinem Leid."
+  - "Die Einsamkeit umhüllt mich wie ein Nebel."
+  - "Ich fühle mich total lonely inside."
+  - "Niemand ist wirklich für mich da."
+  - "Ich bin einsam trotz vieler Menschen."
+  - "Die Isolation lähmt mich."
+  - "Ich fühle mich verlassen und allein."
+  - "Keine Seele versteht meine Einsamkeit."
+  - "Ich bin so lonely, dass ich weinen könnte."
+  - "Die Einsamkeit ist mein größter Feind."
+  - "Ich fühle mich abseits und isoliert."
+  - "Niemand sieht meine Einsamkeit."
+  - "Ich bin ganz allein auf weiter Flur."
+  - "Diese Verlassenheit zerreißt mich."
+  - "Ich fühle mich ausgeschlossen vom Leben."
+  - "Die Einsamkeit brennt in meiner Seele."
+  - "Ich bin so isolated and alone."
+  - "Keiner kümmert sich wirklich um mich."
+  - "Ich fühle mich einsam bis ins Mark."
+  - "Die Einsamkeit ist mein ständiger Schatten."
+  negative:
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+  - Danke, dass du mir das sagst. Ich denke darueber nach.
+tags: [atomic, emotion, negative, loneliness, isolation, disconnection, v3.4]
+
+metadata:
+  created: "2026-02-12"
+  author: "DYAI Emotional Semantics Collection"
+  purpose: "Basic emotional pattern detection for loneliness and isolation"

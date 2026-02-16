@@ -1,0 +1,40 @@
+id: CLU_INTUITION_CONFLICT
+category: CLUSTER
+schema_version: "LD-3.4"
+lang: en
+frame:
+  signal: ["intuition", "weak-aggregation"]
+  concept: "Vorahnung: Konflikt/Eskalation"
+  pragmatics: "Frühwarnung, Deeskalations‑Fokus"
+  narrative: "hypothesis"
+tags: [intuition, conflict, escalation, learning]
+criteria: ""
+composed_of:
+- SEM_NEGATIVE_FEEDBACK
+- SEM_SARCASM_IRRITATION
+- SEM_ESCALATION_MOVE
+activation: {rule: "AT_LEAST 2 DISTINCT SEMs IN 4 messages"}
+scoring: {base: 0.5, weight: 1.0}
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 4
+    confirm_rule: "AT_LEAST 1 of [SEM_ESCALATION_MOVE, SEM_NEGATIVE_FEEDBACK] IN confirm_window"
+    multiplier_on_confirm: 2.0
+    decay_window: 6 # messages
+    penalize_false: 1.0
+  telemetry_keys:
+    counter_confirmed: "INT_CONFLICT.confirmed"
+    counter_retracted: "INT_CONFLICT.retracted"
+    ewma_precision: "INT_CONFLICT.ewma_precision"
+examples:
+  positive:
+  - "kritische, gereizte, sarkastische Hinweise häufen sich leicht"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

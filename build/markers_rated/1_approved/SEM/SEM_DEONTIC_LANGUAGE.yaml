@@ -1,0 +1,30 @@
+id: SEM_DEONTIC_LANGUAGE
+version: "3.4"
+schema: "LeanDeep"
+frame:
+  signal: ["deontic"]
+  concept: "Soll/Muss/Erlaubt-Sprache"
+  pragmatics: "Normatives Framing"
+  narrative: "moral_frame"
+tags: [deontic, norm]
+composed_of:
+- ATO_MORAL_LANGUAGE
+- ATO_SET_BOUNDARY
+activation:
+  rule: "BOTH IN 1 message"
+scoring: {base: 0.6, weight: 1.0}
+examples:
+  positive:
+  - "Das muss so sein – Grenze."
+  - "Man darf das nicht – Stopp."
+  - "Pflicht – nicht okay."
+  - "Sollte man – bis hierhin."
+  - "Erlaubt – unter Auflagen."
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.

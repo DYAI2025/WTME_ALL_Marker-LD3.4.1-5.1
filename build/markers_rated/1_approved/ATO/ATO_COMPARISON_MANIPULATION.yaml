@@ -1,0 +1,48 @@
+id: ATO_COMPARISON_MANIPULATION
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for manipulative comparisons
+frame:
+  signal: ["comparison manipulation"]
+  concept: "Comparison manipulation signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(look at|compared to|unlike you|better than you)\\b"]
+examples:
+  positive:
+  - "Look at how well they handle things."
+  - "Compared to others, you're failing."
+  - "Unlike you, they understand me."
+  - "They're better than you at this."
+  - "See how they treat me properly?"
+  - "Why can't you be more like Alex, who always listens?"
+  - "Everyone else manages das ohne Drama, nur du nicht."
+  - "Compared to your sister, you're really disappointing me."
+  - "They treat me with respect, unlike you."
+  - "Look at their results; yours look pathetic daneben."
+  - "Unlike you, Daniel weiß genau, was ich brauche."
+  - "People in anderen Teams schaffen das locker, du musst dich mehr anstrengen."
+  - "See how my friends unterstützen mich? Du tust das nie."
+  - "Your colleague would never machen so einen Fehler."
+  negative:
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+  - Thank you for telling me that. I'll think about it.
+metadata:
+  neg_examples:
+  - "Ich schätze, wie du das auf deine Art machst."
+  - "Wir vergleichen uns nicht mit anderen, sondern lernen gemeinsam."
+  - "Du musst nicht sein wie Alex, sei du selbst."
+  - "Ich brauche keinen Vergleich, ich sage dir direkt, was ich möchte."
+  - "Andere Teams sind egal, wir arbeiten in unserem Tempo."
+  - "Ich kritisiere dich nicht, ich unterstütze dich."
+  - "Niemand macht alles perfekt, und das ist okay."
+  - "Ich halte mich mit Vergleichen zurück, weil sie verletzen."
+  - "Ich sehe deinen Fortschritt, nicht den der anderen."
+  - "Lass uns über uns sprechen, nicht über die Leute nebenan."
+tags: [atomic, v3.3, auto-generated]

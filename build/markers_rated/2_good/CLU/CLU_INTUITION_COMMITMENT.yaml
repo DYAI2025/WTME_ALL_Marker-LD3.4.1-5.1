@@ -1,0 +1,40 @@
+id: CLU_INTUITION_COMMITMENT
+category: CLUSTER
+schema_version: "LD-3.4"
+lang: en
+frame:
+  signal: ["intuition", "weak-aggregation"]
+  concept: "Vorahnung: Zusage vs. Aufschub"
+  pragmatics: "Arbeitsfluss steuern, Blockaden erkennen"
+  narrative: "hypothesis"
+tags: [intuition, commitment, procrastination, learning]
+criteria: ""
+composed_of:
+- SEM_CLEAR_COMMITMENT
+- SEM_DELAYING_MOVE
+- SEM_PROCRASTINATION_BEHAVIOR
+activation: {rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"}
+scoring: {base: 0.5, weight: 1.0}
+metadata:
+  intuition:
+    state: "provisional"
+    confirm_window: 5
+    confirm_rule: "AT_LEAST 1 of [SEM_CLEAR_COMMITMENT, SEM_DELAYING_MOVE] IN confirm_window"
+    multiplier_on_confirm: 1.5
+    decay_window: 7 # messages
+    penalize_false: 1.0
+  telemetry_keys:
+    counter_confirmed: "INT_COMMIT.confirmed"
+    counter_retracted: "INT_COMMIT.retracted"
+    ewma_precision: "INT_COMMIT.ewma_precision"
+examples:
+  positive:
+  - "wechselnde Zusage-/Aufschub‑Signale deuten auf Richtung hin"
+  negative:
+  - Can you pass the salt?
+  - The meeting is at 2 PM.
+  - I went shopping yesterday.
+  - The weather should be better tomorrow.
+  - Did you read the email?
+  - I need to get gas.
+  - The meeting is in the conference room.

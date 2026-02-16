@@ -1,0 +1,35 @@
+id: CLU_NEGATIVE_COGNITIVE_TRIAD
+schema_version: LD-3.4
+lang: en
+category: CLUSTER
+description: Cluster pattern for the depressive triad in major depressive disorder
+frame:
+  signal:
+  - depressive triad
+  concept: Cognitive triad language patterns
+  pragmatics: combined indicators
+  narrative: integrated
+components:
+- ATO_DEPRESSION_NEGATIVE_EMOTIONS
+- ATO_DEPRESSION_SELF_FOCUS
+- ATO_DEPRESSION_PAST_FOCUS
+pattern:
+- (?i)\b(traurig|schmerz|angst|leid|hass|wut|verzweiflung|hoffnungslos|depressiv|ich|mich|mein|mir|mich selbst|war|hatte|war|ging|tat|machte|fühlte|sagte|dachte|lebte)\b
+examples:
+  positive:
+  - "I was happy once, but now I feel so sad and hopeless every day. My life is meaningless."
+  - "I had dreams that faded away, and now the pain in my chest won't go away. I blame myself."
+  - "Life was better before, but now I'm filled with anger and despair. My thoughts are dark."
+  - "I went through so much pain, and now I feel worthless. I can't stop thinking about myself."
+  - "I did everything wrong, and now I hate everything about my life. My pain is unbearable."
+  negative:
+  - "I am happy now and have plans for tomorrow. Life will improve."
+  - "I feel good currently and think about others. We can help each other."
+  - "Things are going well, and I have some positive thoughts. Not everything is bad."
+  - "I go forward with hope and focus on community. Some aspects are good."
+  - "I do things right today and say encouraging words. Life is manageable."
+tags:
+- behavioral_pattern
+- cluster
+- v3.4
+- depression

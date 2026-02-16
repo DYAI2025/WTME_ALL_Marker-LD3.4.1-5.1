@@ -1,0 +1,36 @@
+id: MEMA_FOUNDER_PATTERN
+version: "3.4"
+frame:
+  signal: ["founder", "pattern"]
+  concept: "founder_behavior_pattern"
+  pragmatics: "meta_inference"
+  narrative: "meta"
+examples:
+  positive:
+  - "Über mehrere Sessions hinweg wiederholt Unsicherheit über Marktgröße."
+  - "Konstant hohe Klarheit bei Unit Economics über Wochen."
+  - "Wiederkehrende Betonung von Team-Commitment."
+  - "Wechselnde Annahmen zu Pricing – instabile Hypothesen."
+  - "Stetig verbesserte Traktionsaussagen im Verlauf der Interviews."
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+meta_logic:
+  scope: "multi_session"
+  window_sessions: 5
+  rule: "TRACK frequency(ATO_UNCERTAINTY, ATO_ASSUMPTION, SEM_TRACTION_SIGNALS, SEM_TEAM_SENIORITY) RETURN dominant_positive, dominant_negative"
+scoring:
+  base: 0.0
+  weight: 1.0
+  aggregation: "trend_delta"
+metadata:
+  insight:
+    note: "Detects stability vs volatility in founder narrative"
+    version: 1
+patterns: []
+tags: [founder, meta, pattern]

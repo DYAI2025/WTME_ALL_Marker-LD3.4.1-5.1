@@ -1,0 +1,31 @@
+id: ATO_EXPRESSIVE_APHASIA
+schema_version: LD-3.4
+lang: en
+category: ATOMIC
+description: Atomic pattern for expressive aphasia language difficulties
+frame:
+  signal:
+  - expressive aphasia
+  concept: Language production impairment
+  pragmatics: lexical indicator
+  narrative: surface
+pattern:
+- (?i)\b(um|uh|er|ah|you know)\b
+examples:
+  positive:
+  - "I want to go to the... um... store, you know?"
+  - "The thing is... uh... broken, er, I think."
+  - "He said... ah... something about the meeting."
+  - "I can't find the... you know... word for it."
+  - "It's like... um... really important, ah."
+  negative:
+  - "I want to go to the store."
+  - "The thing is broken."
+  - "He said something about the meeting."
+  - "I can't find the word for it."
+  - "It's really important."
+tags:
+- atomic
+- v3.4
+- diagnostic
+- neuropsychological

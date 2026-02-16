@@ -1,0 +1,59 @@
+name: ATO_AFFECTION_SHOW
+label: "Zuneigung offen"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "offene Zuneigungs- und Nähe-Marker"
+patterns:
+  - type: regex
+    value: "(lieb|hab dich gern|Kuss|Küsse|❤️|😘|Umarmung|vermisse dich|Schatz|Liebling)"
+threshold: 1
+semiotic:
+  mode: iconic
+  level: pragmatic
+  object: "affection"
+  connotation: ["zuneigung", "offen"]
+  interpretant: "effect_on_state: {trust: +0.2, intimacy: +0.3}"
+examples:
+  positive_de:
+    - "Hab dich lieb."
+    - "Kuss."
+    - "❤️"
+    - "Vermisse dich."
+    - "Fühl dich umarmt."
+    - "Du fehlst mir."
+    - "Schatz, komm gut heim."
+    - "Liebling, schlaf gut."
+    - "Ich bin stolz auf dich ❤️"
+    - "Mehr Nähe heute?"
+    - "Knuddler für dich."
+    - "Bussi."
+    - "Herzchen."
+    - "Du bist toll."
+    - "Umarmung."
+    - "Küss dich."
+    - "Liebe dich."
+    - "Schatzi."
+    - "Vermisst."
+    - "Stolz ❤️"
+  negative_de:
+    - "Ok."
+    - "Bitte bestätige."
+    - "Scope bleibt."
+    - "Protokoll folgt."
+    - "Frist 30.09."
+    - "Ticket erstellt."
+    - "Zur Kenntnis."
+    - "Notiert."
+    - "Erledigt."
+    - "Termin passt."
+    - "Agenda einhalten."
+    - "Review planen."
+    - "Budget checken."
+    - "Milestone setzen."
+    - "Update teilen."
+    - "Freigabe geben."
+    - "Prozess folgen."
+    - "Abnahme machen."
+    - "Notiz nehmen."
+    - "Status updaten."

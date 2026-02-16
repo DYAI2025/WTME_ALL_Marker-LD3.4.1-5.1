@@ -1,0 +1,57 @@
+id: ATO_CARE_PING
+display_title: "Care Ping"
+version: "3.3"
+lang: de
+frame:
+  signal:
+    - "Kurzer Care-Ping ohne Erwartungsdruck"
+  concept: "Care Ping"
+  pragmatics: "Kontakt halten"
+  narrative: "maintenance"
+pattern:
+  - '(?i)\bkurz(?:er)? ping\b'
+  - '(?i)\bhab(?:e)? an dich gedacht\b'
+  - '(?i)\bkurzes? hallo\b'
+  - '(?i)\bkurz(?:er)? check-?in\b'
+  - '(?i)\bpflege-?hallo\b'
+composed_of: []
+activation:
+  rule: "ANY 1 IN 30 messages"
+window:
+  messages: 30
+scoring:
+  base: 1.6
+  weight: 0.4
+  decay: 0.01
+  formula: "logistic"
+tags: [ato, positiv, ritual]
+examples:
+  - "Kurzer Ping 🙂"
+  - "Nur ein kurzes Hallo!"
+  - "Hab an dich gedacht."
+  - "Mini Check-in – alles gut?"
+  - "Nur ein Pflege-Hallo."
+  - "Kurzer Check-in, wollte dir nur einen lieben Gruß dalassen."
+  - "Hallo du, ich schick dir ein kleines Care-Ping."
+  - "Nur ein kurzer Gedanke: Hoffe, dein Tag ist okay."
+  - "Ich wollte einfach kurz winken – fühl dich gesehen."
+  - "Hier ein kleiner Ping: Wenn du was brauchst, ich bin da."
+  - "Mini-Nachricht, um Hallo zu sagen und dich zu erinnern, dass du wichtig bist."
+  - "Kurzes "Hab dich im Blick" – kein To-do, nur Wärme."
+  - "Ich lasse dir ein Herz da und frage, wie du dich heute fühlst."
+  - "Nur ein ganz kurzes "alles gut bei dir?" ohne Druck."
+metadata:
+  neg_examples:
+    - "Kannst du mir sofort helfen, es ist dringend?"
+    - "Ich brauche deine Arbeitsergebnisse, bitte schnell."
+    - "Warum meldest du dich nicht, das enttäuscht mich."
+    - "Schick mir die Dateien, das ist wichtig." 
+    - "Ich rufe dich an, wir müssen was klären."
+    - "Brauche Feedback zu meiner Präsentation, bitte heute noch."
+    - "Du hast mich vergessen, das fühlt sich mies an."
+    - "Ich will ausführlich sprechen, Reservier dir eine Stunde."
+    - "Das ist keine Begrüßung, sondern eine Mahnung."
+    - "Wir haben ein Problem, melde dich sofort."
+detect_class: null
+criteria: null
+updated_at: "2025-08-19T10:30:00Z"

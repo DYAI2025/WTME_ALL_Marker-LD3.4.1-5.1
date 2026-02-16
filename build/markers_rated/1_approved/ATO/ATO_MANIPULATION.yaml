@@ -1,0 +1,27 @@
+id: ATO_MANIPULATION
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for manipulative language and tactics
+frame:
+  signal: ["manipulation"]
+  concept: "Manipulation signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\b(if you really|you owe me|after everything|for me|prove your)\\b"]
+examples:
+  positive:
+  - "If you really cared about me..."
+  - "You owe me this much."
+  - "After everything I've done for you."
+  - "Do this for me to show you care."
+  - "Prove your love by doing this."
+  negative:
+  - After some things I've done for you.
+  - I see it differently, but I respect your view.
+  - I want to be honest with you, even though it's hard.
+  - You're right, that was my mistake. I'm sorry.
+  - Let's both explain our side.
+  - I feel uncomfortable about this and want to talk about it.
+  - I understand why you see it that way.
+tags: [atomic, v3.3, manipulation, coercion]

@@ -1,0 +1,64 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_REWARD_RESPONSE
+type: ATO
+frame:
+  concept: "Belohnungsreaktion/Anerkennung/Zuneigung"
+  narrative: "positive_affect"
+  signal: ["Lob", "Anerkennung", "Zärtlichkeit", "Streicheln", "Umarmen", "Küssen"]
+pattern:
+  regex: '(?i)\b(lob|anerkennung|z(ä|ae)rtlichkeit|streichel\w*|umarm\w*|k(ü|ue)ss\w*)\b'
+examples:
+  positive:
+  - "**Lob** motiviert mich."
+  - "Ich reagiere auf **Anerkennung**."
+  - "**Zärtlichkeit** tut mir gut."
+  - "Ein **Umarmen** beruhigt mich."
+  - "Ein ehrliches **Lob** baut mich auf."
+  - "**Anerkennung** gibt mir Energie."
+  - "**Zärtliche** Berührung beruhigt mich."
+  - "Eine **Umarmung** tröstet mich."
+  - "Ein **Kuss** macht mich glücklich."
+  - "Ein **Schulterklopfen** tut gut."
+  - "**Zuneigung** lässt mich aufblühen."
+  - "**Wertschätzung** fühlt sich gut an."
+  - "Ein **liebes Wort** wirkt wie Belohnung."
+  - "Kleine Gesten der **Zärtlichkeit** bedeuten mir viel."
+  - "Aufrichtiges **Lob** motiviert mich ungemein."
+  - "Ich reagiere sehr positiv auf echte **Anerkennung**."
+  - "Körperliche **Zärtlichkeit** tut mir richtig gut."
+  - "Ein herzliches **Umarmen** beruhigt mich sofort."
+  - "Ein ehrlich gemeintes **Lob** baut mich wieder auf."
+  - "Berufliche **Anerkennung** gibt mir neue Energie."
+  - "**Zärtliche** Berührungen beruhigen mich sehr."
+  - "Eine warme **Umarmung** tröstet mich immer."
+  - "Ein liebevoller **Kuss** macht mich richtig glücklich."
+  - "Ein freundliches **Schulterklopfen** tut richtig gut."
+  - "Echte **Zuneigung** lässt mich emotional aufblühen."
+  - "Aufrichtige **Wertschätzung** fühlt sich wunderbar an."
+  - "Ein wirklich **liebes Wort** wirkt auf mich wie eine Belohnung."
+  - "Kleine Gesten der **Zärtlichkeit** bedeuten mir sehr viel."
+  - "**Lob** vom Chef motiviert mich für Wochen."
+  - "**Anerkennung** für meine Arbeit macht mich stolz."
+  - "**Zärtlichkeit** in der Beziehung ist mir wichtig."
+  - "**Umarmungen** helfen mir bei Stress."
+  - "Ein **Kuss** zur Begrüßung macht meinen Tag."
+  - "**Wertschätzung** zeigen ist mir wichtig."
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+negatives:
+- "Er **küsst** die Tasse."                       # Metapher/Objekt
+- "Keine **Anerkennung** erhalten."               # Negation
+tags: [reward, social]
+
+negation_guard:
+  regex: '(?i)\b(nicht|kein|ohne)\b'
+  window: 3
+
+

@@ -1,0 +1,26 @@
+id: ATO_COMMITMENT_PHRASE
+version: "3.4"
+frame:
+  signal: ["commitment", "dedication"]
+  concept: "founder_commitment"
+  pragmatics: "credibility"
+  narrative: "team"
+examples:
+  positive:
+  - "Wir arbeiten Vollzeit daran seit Januar."
+  - "Das ist unser einziges Fokus-Projekt."
+  - "Wir sind 100% committed."
+  - "Ich habe meinen alten Job gekündigt für dieses Produkt."
+  - "Das Team ist voll all-in."
+  negative:
+  - Das Team ist voll some-in.
+  - Kannst du mir das Salz reichen?
+  - Der Termin ist um 14 Uhr.
+  - Ich war gestern einkaufen.
+  - Das Wetter soll morgen besser werden.
+  - Hast du die E-Mail gelesen?
+  - Ich muss noch tanken.
+pattern:
+- "\\b(vollzeit|full[- ]time|all[- ]in|100%\\s+committed|einziges fokus|hauptfokus|gekündigt)\\b"
+- "\\b(fokus\\s+projekt|voll dabei|komplett fokussiert)\\b"
+tags: [team, commitment, credibility]

@@ -1,0 +1,157 @@
+# Archetyp-Mapping: Der Trickster
+# Format: LEAN.DEEP 3.4 – kompatibel zu ATO → SEM → CLU → MEMA
+
+# 1. ATOMIC MARKER (ATO_)
+- id: ATO_SELF_SABOTAGE
+  frame:
+    signal: ["token"]
+    concept: "Selbstsabotage / destruktives Verhalten"
+    pragmatics: "bewusste Selbstschädigung als Kick"
+    narrative: "Zerstörung als Befreiung"
+  pattern: "(nicht schlafen|trinke zu viel|sabotiere mich|zerstöre es)"
+  examples:
+    - "ich schlafe einfach nicht"
+    - "ich trinke zu viel, obwohl ich weiß..."
+    - "ich sabotiere mich selbst"
+    - "ich zerstöre es immer wieder"
+    - "ich mache das, was mir schadet"
+
+- id: ATO_CHAOS_KICK
+  frame:
+    signal: ["token"]
+    concept: "Chaos als Energiequelle"
+    pragmatics: "Unordnung für Kreativität"
+    narrative: "Zerstörung als Katalysator"
+  pattern: "(alles egal|dann bin ich kreativ|Höchstleistung|wenn mir egal)"
+  examples:
+    - "wenn mir alles egal ist, bin ich kreativ"
+    - "dann zur Höchstleistung fähig"
+    - "genau dann überschreite ich Grenzen"
+    - "wenn alles egal ist, geht alles"
+    - "im Chaos entstehen die besten Ideen"
+
+- id: ATO_BETAEUBUNG
+  frame:
+    signal: ["token"]
+    concept: "Betäubung / Flucht vor Klarheit"
+    pragmatics: "Vermeidung von nüchterner Realität"
+    narrative: "Schutz vor zu viel Wahrheit"
+  pattern: "(Betäubung|benebelt|nicht klar|verschwommen)"
+  examples:
+    - "ich suche die Betäubung"
+    - "lieber benebelt als klar"
+    - "wenn ich nicht klar bin"
+    - "alles verschwommen halten"
+    - "Klarheit tut zu weh"
+
+---
+
+# 2. SEMANTIC MARKER (SEM_)
+- id: SEM_SABOTAGE_KREATIVITAET
+  frame:
+    concept: "Sabotage als Kreativitätstrigger"
+    pragmatics: "destruktives Verhalten für Produktivität"
+    narrative: "Zerstörung = Erschaffung"
+  composed_of:
+    - ATO_SELF_SABOTAGE
+    - ATO_CHAOS_KICK
+  examples:
+    - "ich schlafe nicht, aber dann bin ich kreativ"
+    - "ich trinke zu viel, aber dann zur Höchstleistung"
+    - "wenn ich mich sabotiere, überschreite ich Grenzen"
+    - "selbstzerstörung macht mich produktiv"
+    - "meine Sabotage ist mein Kick"
+
+- id: SEM_FLUCHT_VOR_KLARHEIT
+  frame:
+    concept: "Vermeidung von Nüchternheit"
+    pragmatics: "Betäubung als Schutz vor Schmerz"
+    narrative: "lieber Chaos als klare Konfrontation"
+  composed_of:
+    - ATO_BETAEUBUNG
+    - ATO_CHAOS_KICK
+  examples:
+    - "wenn mir alles egal ist, muss ich nicht klar sein"
+    - "Betäubung ist besser als Wahrheit"
+    - "lieber benebelt als konfrontiert"
+    - "Klarheit bedeutet Schmerz"
+    - "im Chaos verstecke ich mich vor mir selbst"
+
+---
+
+# 3. CLUSTER MARKER (CLU_)
+- id: CLU_TRICKSTER
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Trickster"
+    pragmatics: "Saboteur, Spieler, Chaosbringer"
+    narrative: "Zerstörung als Kreativität und Schutz"
+  composed_of:
+    - SEM_SABOTAGE_KREATIVITAET
+    - SEM_FLUCHT_VOR_KLARHEIT
+  activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+  scoring: { base: 0.7, weight: 1.0 }
+  examples:
+    - "ich schlafe nicht und trinke, aber dann bin ich kreativ"
+    - "wenn mir alles egal ist, bin ich zur Höchstleistung fähig"
+    - "Sabotage ist mein Schutz vor zu viel Klarheit"
+    - "lieber benebelt produktiv als nüchtern gelähmt"
+    - "mein Chaos schützt mich vor der Wahrheit"
+
+---
+
+# 4. META-ANALYSIS (MEMA_)
+- id: MEMA_CREATIVE_DESTRUCTION_CYCLE
+  frame:
+    concept: "Kreativ-Destruktions-Zyklus"
+    pragmatics: "Trickster als Vermittler zwischen Kind und Souverän"
+    narrative: "Sabotage verhindert sowohl Verletzlichkeit als auch Starre"
+  composed_of:
+    - CLU_VERLASSENES_KIND   # Ausgangspunkt: Schmerz
+    - CLU_TRICKSTER          # Zwischenschritt: Sabotage
+    - CLU_SOUVERAEN          # Endpunkt: Trotz-Herrschaft
+  examples:
+    - "Schmerz → Selbstsabotage → radikale Autonomie"
+    - "Verlassenheit → Betäubung → Kontrolle im Chaos"
+    - "zu viel Gefühl → Alkohol/Schlafentzug → Souveränität"
+    - "Bedürftigkeit → destruktiver Kick → Selbstherrschaft"
+    - "Kind schreit → Trickster betäubt → Souverän regiert"
+
+- id: MEMA_TRICKSTER_PARADOX
+  frame:
+    concept: "Trickster-Paradox: Zerstörung als Schutz"
+    pragmatics: "Sabotage verhindert echte Konfrontation"
+    narrative: "Flucht nach vorn durch Selbstschädigung"
+  composed_of:
+    - CLU_TRICKSTER
+  examples:
+    - "ich zerstöre mich, um nicht zerstört zu werden"
+    - "lieber selbst sabotieren, als von anderen enttäuscht werden"
+    - "Chaos ist sicherer als Ordnung"
+    - "wenn ich mich betäube, kann mich nichts mehr verletzen"
+    - "meine Selbstzerstörung ist meine Kontrolle"
+
+---
+
+# INTUITION MARKER (CLU_INTUITION für 3.4)
+- id: CLU_INTUITION_TRICKSTER
+  frame:
+    signal: ["intuition"]
+    concept: "Vorgefühl: Trickster erwacht"
+    pragmatics: "schwache Signale vor Sabotage-Verhalten"
+    narrative: "das System spürt Fluchttendenzen"
+  metadata:
+    family: "CHAOS"
+    activation: "provisional"
+    runtime: "3-5 messages"
+    telemetry: true
+  weak_signals:
+    - ATO_SELF_SABOTAGE (threshold: 0.3)
+    - ATO_BETAEUBUNG (threshold: 0.4)
+    - temporal_pattern: "late_night_messages"
+  examples:
+    - "ich bin so müde heute..."
+    - "vielleicht sollte ich mal..."
+    - "ach, egal..."
+    - "wird schon irgendwie..."
+    - "ist mir auch egal..."

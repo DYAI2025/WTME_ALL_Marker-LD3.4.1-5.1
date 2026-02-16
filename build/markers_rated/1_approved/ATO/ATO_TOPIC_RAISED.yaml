@@ -1,0 +1,28 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_TOPIC_RAISED
+frame:
+  signal: ["topic_raised"]
+  concept: "Neues Thema einbringen"
+  pragmatics: "Rahmenwechsel / Agenda setzen"
+  narrative: "interaction"
+tags: [topic, agenda]
+pattern:
+  regex: "\\b(neues Thema|anderes Thema|lass uns über|was anderes|kurzer Themenwechsel)\\b"
+  flags: ["IGNORECASE"]
+examples:
+  positive:
+  - "Neues Thema: Urlaub."
+  - "Anderes Thema – Budget."
+  - "Lass uns über nächste Woche sprechen."
+  - "Was anderes: die Präsentation."
+  - "Kurzer Themenwechsel: Meeting-Termine."
+  - "Ich würde gern ein anderes Thema reinbringen."
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

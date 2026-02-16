@@ -1,0 +1,60 @@
+id: MEMA_ABSENCE_OF_THREAT_IN_CONFLICT
+version: "3.3"
+lang: de
+frame:
+  signal:
+  - "Konflikt ohne Drohungen"
+  concept: "Omission: Threats fehlen"
+  pragmatics: "Deeskalationsdisziplin"
+  narrative: "controlled_deescalation"
+detect_class: "absence_meta"
+criteria:
+  target_set: "threat"
+  window_messages: 30
+  min_E_hits: 3
+  strict_zero: true
+activation:
+  rule: "CONFLICT_WINDOW_END"
+window:
+  messages: 30
+scoring:
+  base: 2.2
+  weight: 0.6
+  decay: 0.0
+  formula: "linear"
+examples:
+  positive:
+  - |
+    A: Ich bin richtig sauer.
+    B: Verstehe, das war schlecht von mir.
+    A: Ich will, dass wir das klären.
+    B: Lass uns heute Abend ruhig reden.
+  - |
+    A: Das nervt mich extrem.
+    B: Okay, ich höre zu.
+    A: Ich brauche eine Änderung.
+    B: Vorschlag: wir teilen die Aufgaben neu.
+  - |
+    A: So kann es nicht weitergehen.
+    B: Stimmt, das war mein Fehler.
+    A: Wie lösen wir das?
+    B: Schritt eins: ich übernehme morgen den Part.
+  - |
+    A: Ich bin verletzt.
+    B: Danke, dass du es sagst.
+    A: Bitte nimm das ernst.
+    B: Ich nehme Verantwortung.
+  - |
+    A: Ich fühle mich übergangen.
+    B: Das wollte ich nicht.
+    A: Was können wir konkret tun?
+    B: Ich blocke mir dafür Zeit am Freitag.
+  negative:
+  - "A: Das nervt mich extrem.\nB: Okay, ich höre zu.\nA: ich wuensche mir eine Änderung.\nB: Vorschlag: wir teilen die Aufgaben neu.\n"
+  - Ich sehe das anders, aber ich respektiere deine Sicht.
+  - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
+  - Du hast recht, das war mein Fehler. Es tut mir leid.
+  - Lass uns beide unsere Seite erklaeren.
+  - Ich fuehle mich unwohl dabei und moechte darueber reden.
+  - Ich verstehe, warum du das so siehst.
+tags: [mema, omission, deeskalation, positiv]

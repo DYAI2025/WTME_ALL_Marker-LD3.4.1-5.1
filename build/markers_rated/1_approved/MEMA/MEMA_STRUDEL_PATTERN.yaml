@@ -1,0 +1,26 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_STRUDEL_PATTERN
+frame:
+  signal: ["meta"]
+  concept: "Strudel (zirkuläre Gedanken)"
+  pragmatics: "Loop-Bremse"
+  narrative: "meta"
+composed_of: [CLU_CIRCULAR_REASONING, CLU_PROCRASTINATION_LOOP]
+activation: {rule: "AT_LEAST 2 IN 8 messages"}
+metadata: {cooldown_after_detect: 5}
+examples:
+  positive:
+  - "wir drehen uns im Kreis … wie vorhin"
+  - "das hatten wir schon … nochmal von vorne"
+  - "immer wieder die gleiche Frage"
+  - "ich wiederhole mich … schon wieder"
+  - "zurück am Anfang … ohne Fortschritt"
+  negative:
+  - manchmal wieder die gleiche Frage
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.

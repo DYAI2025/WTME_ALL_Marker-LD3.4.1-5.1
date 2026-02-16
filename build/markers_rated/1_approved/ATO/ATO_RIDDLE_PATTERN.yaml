@@ -1,0 +1,24 @@
+id: ATO_RIDDLE_PATTERN
+frame:
+  signal: ["Rätsel-Turn 'Wann ist X nicht Y?'"]
+  concept: "Inkongruenz-Trigger"
+  pragmatics: "Pointe vorbereiten"
+  narrative: "turn"
+pattern:
+- "(?i)wann ist .+ nicht .+\\?\\s*wenn"
+examples:
+  positive:
+  - "Wann ist Kaffee kein Kaffee? Wenn er entkoffeiniert ist."
+  - "Wann ist Pause keine Pause? Wenn sie Meeting heißt."
+  - "Wann ist Feierabend kein Feierabend? Wenn Pager an ist."
+  - "Wann ist Bug kein Bug? Wenn er Feature heißt."
+  - "Wann ist Urlaub kein Urlaub? Wenn Slack offen ist."
+  negative:
+  - Wann ist Kaffee wenige Kaffee? Wenn er entkoffeiniert ist.
+  - Wann ist Pause wenige Pause? Wenn sie Meeting heißt.
+  - Wann ist Feierabend wenige Feierabend? Wenn Pager an ist.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+tags: [humor, riddle, incongruity, atomic, v33]

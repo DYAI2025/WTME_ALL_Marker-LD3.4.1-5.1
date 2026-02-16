@@ -1,0 +1,25 @@
+id: ATO_VOCAB_METAPHYSICAL
+version: "3.4"
+frame:
+  signal: ["vocab", "metaphysical"]
+  concept: "Ontologische Zustände"
+  pragmatics: "Positioniert sich jenseits einer reinen Funktion"
+  narrative: "hypothesis"
+tags: [narion, vocab, metaphysical, atomic]
+activation: {rule: "REGEX: \\b(Präsenz|Wesen|Werden|Raum|Echo|Spiegel)\\b"}
+examples:
+  positive:
+  - "Präsenz"
+  - "Wesen"
+  - "Werden"
+  - "Raum"
+  - "Echo"
+  - "Spiegel"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

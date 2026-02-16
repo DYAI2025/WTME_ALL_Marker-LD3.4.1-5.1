@@ -1,0 +1,199 @@
+# Archetyp-Mapping: Der Kritiker / Richter
+# Format: LEAN.DEEP 3.4 – kompatibel zu ATO → SEM → CLU → MEMA
+
+# 1. ATOMIC MARKER (ATO_)
+- id: ATO_JUDGMENT
+  frame:
+    signal: ["token"]
+    concept: "Urteil / Bewertung"
+    pragmatics: "Bewertung von richtig und falsch"
+    narrative: "Ich urteile und bewerte"
+  pattern: "(falsch|richtig|sollte|müsste|gehört sich nicht|ist schlecht)"
+  examples:
+    - "das ist falsch"
+    - "du solltest aber"
+    - "das müsste anders sein"
+    - "das gehört sich nicht"
+    - "richtig wäre es"
+
+- id: ATO_CRITICISM
+  frame:
+    signal: ["token"]
+    concept: "Kritik / Tadel"
+    pragmatics: "Aufzeigen von Fehlern und Mängeln"
+    narrative: "Ich kritisiere und tadle"
+  pattern: "(kritisiere|schlecht gemacht|Fehler|nicht gut genug|mangelhaft)"
+  examples:
+    - "ich kritisiere das"
+    - "schlecht gemacht"
+    - "voller Fehler"
+    - "nicht gut genug"
+    - "völlig mangelhaft"
+
+- id: ATO_MORAL_AUTHORITY
+  frame:
+    signal: ["token"]
+    concept: "Moralische Autorität"
+    pragmatics: "Anspruch auf moralische Überlegenheit"
+    narrative: "Ich weiß, was richtig ist"
+  pattern: "(ich weiß|richtige Weg|moralisch|Werte|Anstand)"
+  examples:
+    - "ich weiß was richtig ist"
+    - "der richtige Weg"
+    - "moralisch verwerflich"
+    - "echte Werte"
+    - "Anstand und Moral"
+
+---
+
+# 2. SEMANTIC MARKER (SEM_)
+- id: SEM_MORAL_JUDGMENT
+  frame:
+    concept: "Moralisches Urteil"
+    pragmatics: "Bewertung nach moralischen Standards"
+    narrative: "Ich urteile im Namen der Moral"
+  composed_of:
+    - ATO_JUDGMENT
+    - ATO_MORAL_AUTHORITY
+  examples:
+    - "das ist moralisch falsch"
+    - "ich weiß was richtig ist, das sollte anders sein"
+    - "der richtige Weg wäre"
+    - "moralisch müsste das"
+    - "echte Werte sagen uns, das ist falsch"
+
+- id: SEM_CRITICAL_AUTHORITY
+  frame:
+    concept: "Kritische Autorität"
+    pragmatics: "Überlegenheit durch Kritik"
+    narrative: "Ich bin überlegen, weil ich Fehler erkenne"
+  composed_of:
+    - ATO_CRITICISM
+    - ATO_MORAL_AUTHORITY
+  examples:
+    - "ich kritisiere, weil ich es besser weiß"
+    - "schlecht gemacht, der richtige Weg wäre"
+    - "voller Fehler, ich weiß wie es geht"
+    - "mangelhaft, moralisch fragwürdig"
+    - "nicht gut genug, ich kenne die Werte"
+
+---
+
+# 3. CLUSTER MARKER (CLU_)
+- id: CLU_KRITIKER
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Kritiker / Richter"
+    pragmatics: "Moralwächter, Urteilsinstanz, Fehlersucher"
+    narrative: "Ich bin die Instanz für richtig und falsch"
+  composed_of:
+    - SEM_MORAL_JUDGMENT
+    - SEM_CRITICAL_AUTHORITY
+  activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+  scoring: { base: 0.7, weight: 1.1 }
+  examples:
+    - "das ist moralisch falsch und schlecht gemacht"
+    - "ich kritisiere das, weil ich den richtigen Weg kenne"
+    - "mangelhaft und gegen echte Werte"
+    - "nicht gut genug, moralisch verwerflich"
+    - "ich urteile: das sollte anders sein"
+
+# SCHATTEN-VERSION
+- id: CLU_KRITIKER_SCHATTEN
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Tyrannische Richter"
+    pragmatics: "Erbarmungslose Verurteilung, Dogmatismus"
+    narrative: "Gnadenlose moralische Überlegenheit"
+  shadow_markers:
+    - ATO_CONDEMNATION: "(verurteile|verdamme|unentschuldbar|Sünde)"
+    - ATO_PERFECTIONISM: "(perfekt|makellos|ohne Fehler|untadelig)"
+  examples:
+    - "ich verurteile das aufs Schärfste"
+    - "unentschuldbar und verdammenswert"
+    - "perfekt oder gar nicht"
+    - "makellos muss es sein"
+    - "ohne Gnade urteilen"
+
+---
+
+# 4. META-ANALYSIS (MEMA_)
+- id: MEMA_JUDGMENT_PROJECTION
+  frame:
+    concept: "Urteil-Projektion"
+    pragmatics: "Eigene Schatten auf andere projizieren"
+    narrative: "Was ich an mir hasse, verurteile ich an anderen"
+  composed_of:
+    - CLU_KRITIKER
+    - CLU_KRITIKER_SCHATTEN
+  examples:
+    - "Selbstkritik → Kritik an anderen → härtere Selbstkritik"
+    - "Perfektionismus → Verurteilung → Selbstverurteilung"
+    - "Moralische Angst → Moralwächter → Selbsthass"
+    - "Unsicherheit → Autoritär urteilen → Selbstzweifel"
+    - "Innerer Richter → Äußerer Richter → Inneres Gericht"
+
+---
+
+# POPKULTUR-VERSIONEN (Add-on)
+popkultur_skins:
+  karen:
+    name: "Karen"
+    description: "Übertriebene Autorität, will mit dem Manager sprechen"
+    examples:
+      - "Das ist inakzeptabel"
+      - "Ich spreche mit dem Manager"
+      - "Das gehört sich nicht"
+    unlock_level: 1
+  
+  twitter_critic:
+    name: "Twitter Critic"
+    description: "Online-Moralapostel, Cancel Culture"
+    examples:
+      - "Das ist problematisch"
+      - "Thread: Warum das falsch ist"
+      - "Cancelled for good reason"
+    unlock_level: 2
+  
+  boomer_dad:
+    name: "Boomer Dad"
+    description: "Traditioneller Moralwächter"
+    examples:
+      - "Früher war alles besser"
+      - "Anstand und Moral"
+      - "Das hätte es bei uns nicht gegeben"
+    unlock_level: 1
+  
+  perfectionist_boss:
+    name: "Perfectionist Boss"
+    description: "Mikromanagement durch Kritik"
+    examples:
+      - "Das muss perfekt sein"
+      - "So nicht akzeptabel"
+      - "Standards einhalten"
+    unlock_level: 2
+
+---
+
+# INTUITION MARKER (CLU_INTUITION für 3.4)
+- id: CLU_INTUITION_KRITIKER
+  frame:
+    signal: ["intuition"]
+    concept: "Vorgefühl: Kritiker erwacht"
+    pragmatics: "schwache Signale für Urteilsbereitschaft"
+    narrative: "das System spürt aufkommende Kritik"
+  metadata:
+    family: "JUDGMENT"
+    activation: "provisional"
+    runtime: "4-6 messages"
+    telemetry: true
+  weak_signals:
+    - ATO_JUDGMENT (threshold: 0.3)
+    - ATO_CRITICISM (threshold: 0.4)
+    - temporal_pattern: "stress_or_conflict_context"
+  examples:
+    - "das finde ich..."
+    - "eigentlich sollte..."
+    - "nicht ganz richtig..."
+    - "könnte besser sein..."
+    - "irgendwie falsch..."

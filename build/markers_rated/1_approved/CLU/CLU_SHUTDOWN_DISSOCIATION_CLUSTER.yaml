@@ -1,0 +1,41 @@
+schema: "LeanDeep"
+version: "3.4"
+id: CLU_SHUTDOWN_DISSOCIATION_CLUSTER
+name: CLU_INTUITION_SHUTDOWN_DISSOCIATION
+type: CLU
+frame:
+  signal: ["Shutdown/Dissociation"]
+  concept: "Wiederkehrende dissoziative Zustände"
+  pragmatics: "Somatik-Risiko"
+  narrative: "shutdown"
+composed_of: [SEM_SHUTDOWN_EPISODE]
+activation:
+  rule: "AT_LEAST 2 DISTINCT SEM_SHUTDOWN_EPISODE IN 5 messages"
+  window: 5
+  confirm_window: 4
+  cooldown_messages: 4
+telemetry:
+  counter_confirmed: "SHUTDOWN.counter_confirmed"
+  counter_retracted: "SHUTDOWN.counter_retracted"
+  ewma_precision: "SHUTDOWN.ewma_precision"
+scoring: {base: 0.65, weight: 1.2}
+examples:
+  positive:
+  - "… schwarz vor Augen … später nichts mehr hören …"
+  - "… taub … danach gelähmt …"
+  - "… nicht mehr sprechen … nicht mehr bewegen …"
+  - "… schwindelig … später taub …"
+  - "… gelähmt … schwarz vor Augen …"
+  - "… taub … erneut schwarz vor Augen …"
+  - "… nicht mehr bewegen … wieder Episode …"
+  - "… Rauschen im Ohr … danach gelähmt …"
+  - "… Sprachlosigkeit … später Taubheit …"
+  - "… Aussetzer … erneut nichts mehr hören …"
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.

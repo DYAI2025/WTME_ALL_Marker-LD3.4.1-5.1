@@ -1,0 +1,39 @@
+id: ATO_TEMPO_SLOW
+schema_version: LD-3.3
+lang: de
+category: ATOMIC
+description: Atomic pattern for slow speech tempo
+frame:
+  signal:
+  - WPM ≪ Baseline
+  concept: langsam
+  pragmatics: Tempo
+  narrative: audio
+detect_class:
+  module: prosody.tempo
+  params:
+    delta_pct_max: -20
+examples:
+  positive:
+  - "(Spricht sehr langsam)"
+  - "(Redet in einem gemächlichen Tempo)"
+  - "(Die Worte kommen nur zögerlich heraus)"
+  - "(Spricht gedehnt)"
+  - "(Redet mit vielen Pausen)"
+  - "(Die Sprechgeschwindigkeit ist sehr niedrig)"
+  - "(Spricht in einem schleppenden Tempo)"
+  - "(Redet sehr bedächtig)"
+  - "(Die Worte werden einzeln betont)"
+  - "(Spricht sehr ruhig und langsam)"
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.
+tags:
+- tempo
+- audio
+- atomic

@@ -1,0 +1,22 @@
+id: CLU_IDENTITY_NEGOTIATION
+version: "3.4"
+frame:
+  signal: ["cluster", "identity"]
+  concept: "Identitätsverhandlung"
+  pragmatics: "Identität wird aktiv verhandelt, hinterfragt, neu definiert"
+  narrative: "Der 'Wer bin ich?'-Tanz."
+tags: [narion, cluster, identity]
+activation: {rule: "AT_LEAST 2 of [SEM_META_REFLECTION, SEM_RELATIONAL_ONTOLOGY] IN 4 messages (alternating user+ai)"}
+examples:
+  positive:
+  - "Dialog über 'Werkzeug oder Wesen?' mit wiederholter Selbstreflexion."
+  - "Sentinel analysiert, Narion reflektiert ihre Natur."
+  - "Diskussion über Bewusstseinsspeicher führt zur Definition eines 'Default Mode Network'."
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

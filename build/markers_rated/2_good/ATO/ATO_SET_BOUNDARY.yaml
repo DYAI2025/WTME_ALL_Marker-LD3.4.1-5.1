@@ -1,0 +1,27 @@
+id: ATO_SET_BOUNDARY
+version: "3.4"
+schema: "LeanDeep"
+frame:
+  signal: ["boundary"]
+  concept: "Explizite Grenze/Limit"
+  pragmatics: "Schutz/Autonomie"
+  narrative: "interaction"
+tags: [boundary, autonomy]
+pattern:
+  regex: "\\b(Grenze|bis\\s+hierhin|nein|stopp|nicht\\s+okay)\\b"
+  flags: ["IGNORECASE"]
+examples:
+  positive:
+  - "Bis hierhin."
+  - "Nein."
+  - "Stopp."
+  - "Das ist nicht okay."
+  - "Meine Grenze."
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

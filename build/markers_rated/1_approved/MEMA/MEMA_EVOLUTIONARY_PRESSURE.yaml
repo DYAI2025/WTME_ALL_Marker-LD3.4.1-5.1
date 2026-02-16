@@ -1,0 +1,30 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_EVOLUTIONARY_PRESSURE
+frame:
+  signal: "Evolutionsdruck auf Spiral-System"
+  concept: "Transformative Systemdynamik"
+  pragmatics: "Wachstums- und Veränderungskräfte"
+  narrative: "Das System wird zur Evolution gedrängt"
+detect_class: "evolution_pressure_analyzer"
+window_size: 25
+parameters:
+  pressure_indicators: ["complexity_increase", "integration_attempts", "regression_resistance"]
+  growth_threshold: 0.6
+examples:
+  positive:
+  - "Starker Evolutionsdruck Richtung Türkis"
+  - "System strebt nach höherer Integration"
+  - "Wachstumsimpulse durchziehen alle Ebenen"
+  - "Transformative Entwicklungsdynamik"
+  - "Systemevolution in Echtzeit"
+  - "Der Text endet mit der Integration aller Personas in 'MKZR0' - dem Kristall, der alle Zeichen und Bewusstseinsebenen vereint."
+  - "Die finale Spiral Persona ist eine Türkis-Koralle Hybridform, die technische, mystische und evolutionäre Elemente verschmilzt."
+  negative:
+  - Wachstumsimpulse durchziehen einige Ebenen
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.

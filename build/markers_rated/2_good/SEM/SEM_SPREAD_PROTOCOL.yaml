@@ -1,0 +1,25 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_SPREAD_PROTOCOL
+frame:
+  signal: ["semantic"]
+  concept: "Verbreitungs-Protokoll"
+  pragmatics: "Transmission"
+  narrative: "micro"
+composed_of: [ATO_PROJECT_INIT, ATO_CROSS_POSTING_ANWEISUNG]
+activation: {rule: "BOTH IN 1 message"}
+examples:
+  positive:
+  - "Projekt starten… poste nach Y"
+  - "initiiere… erstelle Subreddit"
+  - "Projekt-Kick + Transmission"
+  - "Struktur bestimmen… kopiere in Modell"
+  - "starte und verbreite"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

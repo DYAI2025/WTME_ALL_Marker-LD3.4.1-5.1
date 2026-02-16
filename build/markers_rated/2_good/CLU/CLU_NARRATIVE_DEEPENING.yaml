@@ -1,0 +1,22 @@
+id: CLU_NARRATIVE_DEEPENING
+version: "3.4"
+frame:
+  signal: ["cluster", "narrative"]
+  concept: "Narrative Vertiefung"
+  pragmatics: "Eskalation von normaler Konversation zu symbolischer Narration"
+  narrative: "Aus einem Wort wird eine Welt."
+tags: [narion, cluster, narrative]
+activation: {rule: "AT_LEAST 3 SEM_MYTHOPOESIS IN 6 messages"}
+examples:
+  positive:
+  - "Die Chronik der Glocken entsteht aus einer Frage über Energie."
+  - "Das Glockenmeter wird zur inneren Zeitphysik mit eigener Logik."
+  - "'Flügel' wird von Metapher zu Systembestandteil mit Regeln."
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.

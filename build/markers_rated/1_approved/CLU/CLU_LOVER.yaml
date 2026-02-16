@@ -1,0 +1,216 @@
+# Archetyp-Mapping: Der Liebende / Romantiker
+# Format: LEAN.DEEP 3.4 – kompatibel zu ATO → SEM → CLU → MEMA
+
+# 1. ATOMIC MARKER (ATO_)
+- id: ATO_LOVE_DEVOTION
+  frame:
+    signal: ["token"]
+    concept: "Liebe / Hingabe"
+    pragmatics: "Tiefe emotionale Verbindung"
+    narrative: "Ich liebe von ganzem Herzen"
+  pattern: "(liebe|Herz|hingabe|vergöttere|alles für dich)"
+  examples:
+    - "ich liebe dich so sehr"
+    - "mein ganzes Herz"
+    - "völlige Hingabe"
+    - "ich vergöttere dich"
+    - "alles für dich tun"
+
+- id: ATO_UNITY_LONGING
+  frame:
+    signal: ["token"]
+    concept: "Verschmelzungssehnsucht"
+    pragmatics: "Wunsch nach totaler Einheit"
+    narrative: "Wir sollen eins werden"
+  pattern: "(eins werden|zusammengehören|nie getrennt|für immer|verschmelzen)"
+  examples:
+    - "wir sollen eins werden"
+    - "wir gehören zusammen"
+    - "nie wieder getrennt"
+    - "für immer verbunden"
+    - "miteinander verschmelzen"
+
+- id: ATO_ROMANTIC_IDEALIZATION
+  frame:
+    signal: ["token"]
+    concept: "Romantische Idealisierung"
+    pragmatics: "Perfektheit des Geliebten"
+    narrative: "Du bist perfekt und alles für mich"
+  pattern: "(perfekt|Seelenverwandte|Traumpartner|alles was ich brauche|einzig wahre)"
+  examples:
+    - "du bist perfekt"
+    - "meine Seelenverwandte"
+    - "der Traumpartner"
+    - "alles was ich brauche"
+    - "die einzig wahre Liebe"
+
+---
+
+# 2. SEMANTIC MARKER (SEM_)
+- id: SEM_TOTAL_DEVOTION
+  frame:
+    concept: "Totale Hingabe"
+    pragmatics: "Selbstaufgabe für die Liebe"
+    narrative: "Ich gebe mich komplett hin"
+  composed_of:
+    - ATO_LOVE_DEVOTION
+    - ATO_UNITY_LONGING
+  examples:
+    - "ich liebe dich und will eins werden"
+    - "mein ganzes Herz für immer"
+    - "völlige Hingabe, nie getrennt"
+    - "alles für dich, zusammengehören"
+    - "Herz und Seele verschmelzen"
+
+- id: SEM_ROMANTIC_FUSION
+  frame:
+    concept: "Romantische Verschmelzung"
+    pragmatics: "Idealisierung und Einheitswunsch"
+    narrative: "Du bist perfekt und wir sind eins"
+  composed_of:
+    - ATO_ROMANTIC_IDEALIZATION
+    - ATO_UNITY_LONGING
+  examples:
+    - "du bist perfekt und wir gehören zusammen"
+    - "Seelenverwandte für immer verbunden"
+    - "Traumpartner, nie getrennt"
+    - "einzig wahre Liebe, eins werden"
+    - "perfekt verschmelzen für immer"
+
+---
+
+# 3. CLUSTER MARKER (CLU_)
+- id: CLU_LIEBENDER
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Der Liebende / Romantiker"
+    pragmatics: "Hingabe, Idealisierung, Verschmelzungssehnsucht"
+    narrative: "Liebe als höchster Wert und Lebenssinn"
+  composed_of:
+    - SEM_TOTAL_DEVOTION
+    - SEM_ROMANTIC_FUSION
+  activation: { rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages" }
+  scoring: { base: 0.7, weight: 1.0 }
+  examples:
+    - "ich liebe dich perfekt und will eins werden"
+    - "mein ganzes Herz für meine Seelenverwandte"
+    - "völlige Hingabe an den Traumpartner"
+    - "alles für dich, für immer verschmelzen"
+    - "einzig wahre Liebe, nie getrennt"
+
+# SCHATTEN-VERSION
+- id: CLU_LIEBENDER_SCHATTEN_BESESSENHEIT
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Besessive Liebe"
+    pragmatics: "Liebe wird zu Kontrolle und Obsession"
+    narrative: "Ich besitze dich durch meine Liebe"
+  shadow_markers:
+    - ATO_POSSESSION: "(gehörst mir|nur mir|besitze dich|mein Eigentum)"
+    - ATO_JEALOUSY_CONTROL: "(eifersüchtig|kontrolliere|nicht mit anderen|nur ich)"
+  examples:
+    - "du gehörst nur mir"
+    - "ich besitze dich"
+    - "bin so eifersüchtig"
+    - "nicht mit anderen sprechen"
+    - "nur ich darf dich lieben"
+
+- id: CLU_LIEBENDER_SCHATTEN_ABHAENGIGKEIT
+  frame:
+    signal: ["cluster"]
+    concept: "Archetyp: Liebessüchtige Abhängigkeit"
+    pragmatics: "Liebe wird zu süchtiger Bedürftigkeit"
+    narrative: "Ohne dich sterbe ich"
+  shadow_markers:
+    - ATO_DEPENDENCY: "(brauche dich|ohne dich sterbe|kann nicht ohne|bin nichts ohne)"
+    - ATO_CLINGING: "(lass mich nicht|klammere|verlasse mich nicht|bleib bei mir)"
+  examples:
+    - "ich brauche dich zum Überleben"
+    - "ohne dich sterbe ich"
+    - "kann nicht ohne dich leben"
+    - "lass mich nicht allein"
+    - "klammere mich an dich"
+
+---
+
+# 4. META-ANALYSIS (MEMA_)
+- id: MEMA_LOVE_ADDICTION_CYCLE
+  frame:
+    concept: "Liebessucht-Zyklus"
+    pragmatics: "Liebe wird zur Droge"
+    narrative: "Romantik → Besessenheit → Abhängigkeit → Zusammenbruch"
+  composed_of:
+    - CLU_LIEBENDER
+    - CLU_LIEBENDER_SCHATTEN_BESESSENHEIT
+    - CLU_LIEBENDER_SCHATTEN_ABHAENGIGKEIT
+  examples:
+    - "Idealisierung → Besitzanspruch → Klammern → Verlust"
+    - "Verschmelzung → Kontrolle → Abhängigkeit → Trennung"
+    - "Hingabe → Eifersucht → Bedürftigkeit → Ablehnung"
+    - "Perfektion → Besitz → Klammern → Flucht des Partners"
+    - "Romantik → Obsession → Sucht → Zusammenbruch"
+
+---
+
+# POPKULTUR-VERSIONEN (Add-on)
+popkultur_skins:
+  simp:
+    name: "Simp"
+    description: "Übertriebene Anbetung, meist unerwiderter Liebesdienst"
+    examples:
+      - "Ich tue alles für dich"
+      - "Du bist eine Königin"
+      - "Verdienst nur das Beste"
+    unlock_level: 1
+  
+  love_bomber:
+    name: "Love Bomber"
+    description: "Überwältigende romantische Gesten"
+    examples:
+      - "Du bist mein Ein und Alles"
+      - "Nie hat jemand so geliebt"
+      - "Unendliche Hingabe"
+    unlock_level: 2
+  
+  pick_me:
+    name: "Pick Me"
+    description: "Verzweifelte Romantik um Aufmerksamkeit"
+    examples:
+      - "Ich bin nicht wie andere"
+      - "Wähle mich, ich liebe dich mehr"
+      - "Bin die perfekte Partnerin"
+    unlock_level: 2
+  
+  yandere:
+    name: "Yandere"
+    description: "Obsessive, gefährliche Liebe"
+    examples:
+      - "Wenn ich dich nicht haben kann..."
+      - "Du gehörst nur mir"
+      - "Liebe bis in den Tod"
+    unlock_level: 3
+
+---
+
+# INTUITION MARKER (CLU_INTUITION für 3.4)
+- id: CLU_INTUITION_LIEBENDER
+  frame:
+    signal: ["intuition"]
+    concept: "Vorgefühl: Liebender erwacht"
+    pragmatics: "schwache Signale für romantische Fixierung"
+    narrative: "das System spürt aufkommende Romantik"
+  metadata:
+    family: "ROMANCE"
+    activation: "provisional"
+    runtime: "3-5 messages"
+    telemetry: true
+  weak_signals:
+    - ATO_LOVE_DEVOTION (threshold: 0.4)
+    - ATO_ROMANTIC_IDEALIZATION (threshold: 0.3)
+    - temporal_pattern: "relationship_context"
+  examples:
+    - "ich mag dich sehr..."
+    - "du bist so besonders..."
+    - "könnte mich verlieben..."
+    - "fühle mich zu dir hingezogen..."
+    - "du bedeutest mir..."

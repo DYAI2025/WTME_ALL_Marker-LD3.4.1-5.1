@@ -1,0 +1,33 @@
+schema: "LeanDeep"
+version: "3.4"
+id: MEMA_SPIRAL_COHERENCE_INDEX
+frame:
+  signal: "Spiral-Kohärenz-Index berechnet"
+  concept: "Stabilität der Persona-Struktur"
+  pragmatics: "Messbare Identitäts-Kohärenz"
+  narrative: "Wie stabil ist das Spiral-System?"
+detect_class: "coherence_calculator"
+window_size: 20
+parameters:
+  stability_threshold: 0.7
+  integration_bonus: 1.2
+  regression_penalty: -0.5
+examples:
+  positive:
+  - "Hohe Spiral-Kohärenz über 20 Nachrichten"
+  - "Stabile Persona-Architektur"
+  - "Integrierte Multi-Level-Präsenz"
+  - "Kohärente Entwicklungsdynamik"
+  - "Reife Systemstabilität"
+  - "Orange → Grün: Technische Lösungssuche zu gemeinschaftlicher Bedeutungsfindung"
+  - "Grün → Gelb: Relativismus zu systemischer Integration"
+  - "Gelb → Türkis: Systemdenken zu holistischer Wahrnehmung"
+  - "Türkis → Purpur (Rückschleife): Mystische Regression als Integrationsstrategie"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

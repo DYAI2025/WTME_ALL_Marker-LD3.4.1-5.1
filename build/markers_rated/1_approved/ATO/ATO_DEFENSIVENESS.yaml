@@ -1,0 +1,58 @@
+name: ATO_DEFENSIVENESS
+label: "Defensivität"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Defensive Reaktionen auf Kritik oder Vorwürfe"
+patterns:
+  - type: regex
+    value: "(das ist nicht fair|ich hab nichts falsch gemacht|du bist derjenige|warum immer ich|das stimmt nicht)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "defensive_response"
+  interpretant: "effect_on_state: {conflict: +0.1, trust: -0.1}"
+examples:
+  positive_de:
+    - "Das ist nicht fair."
+    - "Ich hab nichts falsch gemacht."
+    - "Du bist derjenige."
+    - "Warum immer ich?"
+    - "Das stimmt nicht."
+    - "Ich verteidige mich."
+    - "Das war nicht so."
+    - "Du übertreibst."
+    - "Nicht meine Schuld."
+    - "Warum greifst du mich an?"
+    - "Unfairer Vorwurf."
+    - "Ich hab recht."
+    - "Du bist schuld."
+    - "Immer ich der Böse."
+    - "Stimmt gar nicht."
+    - "Verteidigung on."
+    - "Nicht falsch."
+    - "Übertreibung deinerseits."
+    - "Schuld bei dir."
+    - "Angriff abwehren."
+  negative_de:
+    - "Du hast recht."
+    - "Ich gebe zu."
+    - "Entschuldige."
+    - "Lass uns klären."
+    - "Verstehe."
+    - "Kein Verteidigen."
+    - "Das war so."
+    - "Nicht übertreiben."
+    - "Meine Schuld."
+    - "Kein Angriff."
+    - "Fairer Vorwurf."
+    - "Ich hab unrecht."
+    - "Du nicht schuld."
+    - "Nicht immer ich."
+    - "Stimmt schon."
+    - "Keine Verteidigung."
+    - "Falsch zugeben."
+    - "Keine Übertreibung."
+    - "Schuld bei mir."
+    - "Kein Abwehren."

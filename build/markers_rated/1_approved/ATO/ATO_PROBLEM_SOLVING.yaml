@@ -1,0 +1,55 @@
+schema: "LeanDeep"
+version: "3.4"
+id: ATO_PROBLEM_SOLVING
+frame:
+  signal: ["Problem lösen", "nächster Schritt", "Plan machen", "konkret angehen"]
+  concept: "Problemlösehandlung"
+  pragmatics: "Planung und Umsetzung"
+  narrative: "change"
+tags: [problem_solving, plan]
+pattern:
+  regex: '(?i)\b(problem\s+l(?:ö|oe)sen|n(?:ä|ae)chster\s+schritt|plan\s+machen|konkret\s+angehen|vorgehen\s+festlegen|schritte\s+definieren|umsetzungsplan)\b'
+examples:
+  positive:
+  - "Ich will das Problem lösen."
+  - "Der nächste Schritt ist klar."
+  - "Lass uns einen Plan machen."
+  - "Ich gehe das konkret an."
+  - "Wir legen das Vorgehen fest."
+  - "Ich definiere die Schritte."
+  - "Ich erstelle einen Umsetzungsplan."
+  - "Wir strukturieren das Problem."
+  - "Ich zerlege es in Teilaufgaben."
+  - "Ich setze Prioritäten."
+  - "Ich kläre Blocker und Abhängigkeiten."
+  - "Ich plane die nächsten zwei Schritte."
+  - "Wir bestimmen Verantwortlichkeiten."
+  - "Ich bringe Ordnung in die Aufgaben."
+  - "Ich mache das lösungsorientiert."
+  - "Ich will dieses Problem systematisch lösen."
+  - "Der nächste logische Schritt ist völlig klar."
+  - "Lass uns zusammen einen detaillierten Plan machen."
+  - "Ich gehe das jetzt ganz konkret an."
+  - "Wir legen gemeinsam das weitere Vorgehen fest."
+  - "Ich definiere alle notwendigen Schritte genau."
+  - "Ich erstelle einen strukturierten Umsetzungsplan."
+  - "Wir strukturieren das komplexe Problem systematisch."
+  - "Ich zerlege es in kleinere, machbare Teilaufgaben."
+  - "Ich setze klare Prioritäten für die Bearbeitung."
+  - "Ich kläre alle Blocker und Abhängigkeiten im Voraus."
+  - "Ich plane konkret die nächsten beiden Schritte."
+  - "Wir bestimmen eindeutige Verantwortlichkeiten für alles."
+  - "Ich bringe systematisch Ordnung in alle Aufgaben."
+  - "Ich mache das durchgehend lösungsorientiert."
+  - "Ich entwickle eine Strategie zur Problemlösung."
+  - "Ich analysiere die Ursachen und finde Lösungen."
+  - "Ich gehe methodisch an die Herausforderung heran."
+  - "Ich plane die Umsetzung Schritt für Schritt."
+  negative:
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+  - Das klingt nach einem wichtigen Thema fuer dich.

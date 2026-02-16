@@ -1,0 +1,25 @@
+schema: "LeanDeep"
+version: "3.4"
+id: SEM_BLAU_ORDER_ACTIVATION
+frame:
+  signal: "Ordnungssystem wird aktiviert"
+  concept: "Blau-Persona strukturiert"
+  pragmatics: "Regeln und Hierarchie durchsetzen"
+  narrative: "Ordnung muss wiederhergestellt werden"
+composed_of: [ATO_ORDER_STRUCTURE, ATO_POWER_ASSERTION]
+activation: "BOTH IN 2 messages"
+examples:
+  positive:
+  - "Regeln müssen befolgt werden"
+  - "hierarchische Ordnung wiederherstellen"
+  - "Disziplin durchsetzen"
+  - "systematische Strukturierung"
+  - "Pflicht vor Neigung"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.

@@ -1,0 +1,27 @@
+id: ATO_WHATSAPP
+schema_version: LD-3.3
+lang: en
+category: ATOMIC
+description: Atomic pattern for WhatsApp platform mentions
+frame:
+  signal: ["whatsapp"]
+  concept: "WhatsApp platform signal"
+  pragmatics: "lexical indicator"
+  narrative: "surface"
+pattern: ["(?i)\\bwhatsapp\\b"]
+examples:
+  positive:
+  - "Let's continue on WhatsApp"
+  - "Do you have WhatsApp?"
+  - "WhatsApp is more convenient"
+  - "Send me your WhatsApp number"
+  - "We could use WhatsApp instead"
+  negative:
+  - I think we should discuss this calmly.
+  - That's a good point you're making.
+  - I understand your perspective.
+  - Let's find a solution together.
+  - I've noticed we think differently about this.
+  - I want to understand what you mean.
+  - That sounds like an important topic for you.
+tags: [atomic, v3.3, auto-generated]

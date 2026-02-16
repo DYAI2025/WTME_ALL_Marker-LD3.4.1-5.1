@@ -1,0 +1,58 @@
+name: ATO_COMPROMISE_OFFER
+label: "Kompromiss-Angebot"
+class: atomic
+version: 1.0
+languages: [de]
+meaning: "Vorschläge für Kompromisse oder Zugeständnisse"
+patterns:
+  - type: regex
+    value: "(lass uns einen Kompromiss finden|ich gebe nach|wir teilen es|wie wär's mit|ein Mittelweg)"
+threshold: 1
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "compromise_proposal"
+  interpretant: "effect_on_state: {conflict: -0.15, sync: +0.2}"
+examples:
+  positive_de:
+    - "Lass uns einen Kompromiss finden."
+    - "Ich gebe nach, ok?"
+    - "Wir teilen die Aufgabe."
+    - "Wie wär's mit halb halb?"
+    - "Ein Mittelweg: Du machst das, ich das."
+    - "Ich schlage vor, wir treffen uns in der Mitte."
+    - "Kompromiss: Nächstes Mal anders."
+    - "Lass uns abstimmen."
+    - "Ich übernehme einen Teil."
+    - "Wir finden eine Lösung zusammen."
+    - "Ein Vorschlag: Teilen wir es."
+    - "Ich gebe zu, lass uns anpassen."
+    - "Mittelweg suchen."
+    - "Kompromiss anbieten."
+    - "Wir halbieren es."
+    - "Ich passe mich an."
+    - "Lass uns verhandeln."
+    - "Ein Deal: Du ich."
+    - "Zugeständnis von mir."
+    - "Wir einigen uns."
+  negative_de:
+    - "Nein, mein Weg."
+    - "Kein Kompromiss."
+    - "Ich gebe nicht nach."
+    - "Nur meine Idee."
+    - "Teilen? Nein."
+    - "Kein Mittelweg."
+    - "Ich bestehe darauf."
+    - "Abstimmen? Unnötig."
+    - "Übernehme nichts."
+    - "Keine Lösung zusammen."
+    - "Vorschlag ablehnen."
+    - "Kein Zu, kein Anpassen."
+    - "Kein Suchen."
+    - "Kein Anbieten."
+    - "Nicht halbieren."
+    - "Passe nicht an."
+    - "Nicht verhandeln."
+    - "Kein Deal."
+    - "Kein Zugeständnis."
+    - "Nicht einigen."

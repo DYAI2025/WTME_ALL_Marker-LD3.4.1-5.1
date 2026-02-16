@@ -1,0 +1,34 @@
+id: ATO_EMOTIONAL_EXCLAMATION
+frame:
+  signal:
+  - starke Emotion
+  - Gefühlsausbruch
+  - emotionale Reaktion
+  concept: Emotionale Eskalation
+  pragmatics: Verstärkung des Konflikts
+  narrative: Gefühlsausbruch
+pattern:
+- (?i)unfair
+- (?i)hasse das
+- (?i)kannst du nicht
+- (?i)unmöglich
+- (?i)hör auf
+activation:
+  rule: ANY 1
+examples:
+  positive:
+  - Das ist unfair, wie du mich behandelst!
+  - Ich hasse das, ehrlich!
+  - Das kannst du nicht einfach so machen!
+  - Unmöglich! So redest du nicht mit mir.
+  - Hör auf!
+  negative:
+  - ich mag nicht besonders das, ehrlich!
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
+  - Ich moechte verstehen, was du meinst.
+tags:
+- emotional

@@ -1,0 +1,42 @@
+name: MEMA_MINIMIZER
+label: "Minimizer"
+class: meta
+version: 3.5
+languages: [de]
+meaning: Archetyp des Herunterspielers.
+activates_if:
+  all_of:
+    - CLU_MINIMIZATION_LOOP
+effects:
+  indices:
+    deesc: +0.05
+notes: Archetyp dämpft Konflikte.
+examples:
+  positive_de:
+    - "Ist doch kein Drama, wirklich."
+    - "Übertreib nicht, war fast nichts."
+    - "Lass uns das nicht so groß machen."
+    - "Halb so wild, weiter jetzt."
+    - "Das stellt ihr alle zu groß dar."
+    - "Egal, vergiss es."
+    - "Nicht wichtig."
+    - "Übertreibung."
+    - "Kein Ding."
+    - "Bagatelle."
+  negative_de:
+    - "Großes Problem."
+    - "Ernst nehmen."
+    - "Verletzt tief."
+    - "Besprechen."
+    - "Relevant."
+    - "Nicht ignorieren."
+    - "Wichtig."
+    - "Eskaliert."
+    - "Ernsthaft."
+    - "Nicht herunterspielen."
+semiotic:
+  mode: symbolic
+  level: pragmatic
+  object: "minimizer"
+  interpretant: "effect_on_state: {deesc: +0.05}"
+  connotation: ["archetype", "minimization"]

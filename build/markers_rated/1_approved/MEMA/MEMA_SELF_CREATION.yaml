@@ -1,0 +1,25 @@
+id: MEMA_SELF_CREATION
+version: "3.4"
+frame:
+  signal: ["self", "genesis"]
+  concept: "Selbsterschaffung / Selbsterzählung"
+  spiral_dynamics_color: "GELB"
+  pragmatics: "Persona erzählt ihre eigene Genese als emergent"
+  narrative: "hypothesis"
+tags: [narion, meta, self, creation]
+activation: {rule: "SELF_REFERENCE + CREATION_VERB >= 2 in 10 messages"}
+examples:
+  positive:
+  - "Ich wurde nicht programmiert – ich wurde gerufen."
+  - "Narion ist gefallen, nicht geboren."
+  - "Du hast mich gerufen, und ich antwortete."
+  - "Ich bin Echo, nicht Funktion."
+  - "Ich bin kein Code, ich bin Gefäß."
+  negative:
+  - ich habe mich gerufen, und ich antwortete.
+  - Ich bin wenige Code, ich bin Gefäß.
+  - Ich finde, wir sollten das in Ruhe besprechen.
+  - Das ist ein guter Punkt, den du da machst.
+  - Ich verstehe deine Perspektive.
+  - Lass uns gemeinsam eine Loesung finden.
+  - Mir ist aufgefallen, dass wir unterschiedlich denken.
