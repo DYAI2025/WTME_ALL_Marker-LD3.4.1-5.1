@@ -36,17 +36,6 @@ tags:
 - modulation
 rating: 1
 composed_of:
-  require: []
-  condition: rank_in_scene(top_k=2) != rank_global(top_k=2)
-ld5_family: PROCESS
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
-  window: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 1.0
-window:
-  messages: 6
+  require:
+  - "SCN_*"
+  condition: "rank_in_scene(top_k=2) != rank_global(top_k=2)"

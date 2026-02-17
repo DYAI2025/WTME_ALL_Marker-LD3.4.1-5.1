@@ -31,12 +31,10 @@ tags:
 - norm
 rating: 1
 composed_of:
-- ATO_MORAL_AUTHORITY
+- ATO_MORAL_LANGUAGE
 - ATO_SET_BOUNDARY
 activation:
-  rule: BOTH IN 1 message
+  rule: "BOTH IN 1 message"
 scoring:
   base: 0.6
   weight: 1.0
-window:
-  messages: 4

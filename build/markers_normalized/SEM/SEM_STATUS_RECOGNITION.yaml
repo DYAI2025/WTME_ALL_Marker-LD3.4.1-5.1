@@ -41,10 +41,8 @@ composed_of:
   - ATO_STATUS_SIGNALING
   - ATO_SUPERLATIVE_SELF_REFERENCE
 activation:
-  rule: AT_LEAST 2 IN 3 messages
+  rule: "AT_LEAST 2 IN 3 messages"
   window: 3
 scoring:
   base: 0.60
   weight: 1.06
-window:
-  messages: 4

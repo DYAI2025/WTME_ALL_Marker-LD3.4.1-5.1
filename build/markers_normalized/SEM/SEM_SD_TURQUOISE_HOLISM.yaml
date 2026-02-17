@@ -32,10 +32,4 @@ composed_of:
 - ATO_SD_TURQUOISE_LEX
 - ATO_HOLISM_LEX
 activation:
-  rule: BOTH IN 2 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "BOTH IN 2 messages"

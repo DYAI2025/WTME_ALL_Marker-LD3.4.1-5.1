@@ -40,15 +40,9 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - ATO_SUBJECT_CLOSED
+  - ATO_PREMATURE_CLOSURE
   - ATO_CLOSE
   - ATO_PACING
 activation:
-  rule: AT_LEAST 2 IN 4 messages
+  rule: "AT_LEAST 2 IN 4 messages"
   window: 4
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4

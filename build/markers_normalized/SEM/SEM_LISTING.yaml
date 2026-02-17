@@ -41,14 +41,8 @@ rating: 1
 composed_of:
   any_of:
   - ATO_PLATFORM
-  - ATO_STATUS_SIGNALING
+  - ATO_STATUS_TERMS
   - ATO_NUMBER_MENTION
 activation:
-  rule: AT_LEAST 2 IN 4 messages
+  rule: "AT_LEAST 2 IN 4 messages"
   window: 4
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4

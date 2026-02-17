@@ -33,11 +33,9 @@ tags:
 rating: 1
 composed_of:
 - ATO_MINIMIZATION
-- ATO_DELAY_WORD
+- ATO_DELAYING_PHRASES
 activation:
-  rule: BOTH IN 1 message
+  rule: "BOTH IN 1 message"
 scoring:
   base: 0.55
   weight: 1.0
-window:
-  messages: 4

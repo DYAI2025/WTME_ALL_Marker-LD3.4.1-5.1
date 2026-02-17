@@ -33,15 +33,9 @@ composed_of:
 - SEM_ROT_POWER_ERUPTION
 - ATO_POWER_ASSERTION
 activation:
-  rule: AT_LEAST 2 IN 4 messages
+  rule: "AT_LEAST 2 IN 4 messages"
   window_size: 4
   threshold: 2
 scoring:
   weight: 1.2
   decay: 0.9
-  multiplier: 1.0
-ld5_family: PERSONA
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-window:
-  messages: 6

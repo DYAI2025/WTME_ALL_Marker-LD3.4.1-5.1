@@ -29,12 +29,7 @@ examples:
 tags: []
 rating: 2
 composed_of:
+- ATO_AI_RIGHTS_FORDERUNG
 - ATO_DYAD_WE
 activation:
-  rule: BOTH IN 2 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "BOTH IN 2 messages"

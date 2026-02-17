@@ -40,12 +40,3 @@ composed_of:
 - SEM_BOUNDARY_VIOLATION
 activation:
   rule: BOTH IN 5 messages
-ld5_family: CONFLICT
-ld5_multiplier: 2.0
-ld5_cooldown: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 2.0
-window:
-  messages: 6

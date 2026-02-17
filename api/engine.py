@@ -247,8 +247,16 @@ class MarkerEngine:
     # ATO Detection (Level 1): Pure regex matching
     # -----------------------------------------------------------------------
 
-    def detect_ato(self, text: str, threshold: float = 0.5) -> list[Detection]:
-        """Detect atomic markers via regex pattern matching."""
+    def detect_ato(
+        self, text: str, threshold: float = 0.5, *, include_context_only: bool = True
+    ) -> list[Detection]:
+        """Detect atomic markers via regex pattern matching.
+
+        Args:
+            include_context_only: If False, markers tagged 'context_only' are
+                suppressed from the returned list (but should still be passed
+                to SEM via a separate call with include_context_only=True).
+        """
         detections = []
 
         for mdef in self.ato_markers:
@@ -278,6 +286,10 @@ class MarkerEngine:
                 confidence = min(1.0, 0.6 + pattern_coverage * 0.4)
 
                 if confidence >= threshold:
+                    # Skip context_only markers from standalone output —
+                    # they are noise on their own but valuable as SEM inputs
+                    if not include_context_only and "context_only" in mdef.tags:
+                        continue
                     detections.append(Detection(
                         marker_id=mdef.id,
                         layer="ATO",
@@ -324,6 +336,7 @@ class MarkerEngine:
         for mdef in self.sem_markers:
             confidence = 0.0
             contributing_matches = []
+            rule_blocked = False  # True when activation rule explicitly rejects
 
             # Check composition: both string refs and dict-format refs
             composed = mdef.composed_of
@@ -339,22 +352,31 @@ class MarkerEngine:
                                 hits.append(str(mid))
                 hit_ratio = len(hits) / max(len(composed), 1)
 
-                # LD 5.0: 1 ATO + context suffices (relaxed from >=2)
+                # LD 5.0: activation rule determines required hit count
                 activation = mdef.activation or {}
                 if isinstance(activation, str):
                     rule = activation
                 else:
                     rule = activation.get("rule", "ANY 1")
-                rule = str(rule)
+                rule = str(rule).upper()
 
-                if "ANY 1" in rule and len(hits) >= 1:
-                    confidence = 0.6 + (hit_ratio * 0.4)
+                if ("ALL" in rule or "BOTH" in rule) and len(hits) == len(composed):
+                    confidence = 0.7 + (hit_ratio * 0.3)
+                elif ("ALL" in rule or "BOTH" in rule):
+                    confidence = 0.0
+                    rule_blocked = True
                 elif "ANY 2" in rule and len(hits) >= 2:
                     confidence = 0.7 + (hit_ratio * 0.3)
-                elif "ALL" in rule.upper() and len(hits) == len(composed):
-                    confidence = 1.0
-                elif len(hits) >= 1:
+                elif "ANY 2" in rule:
+                    confidence = 0.0
+                    rule_blocked = True
+                elif "ANY 1" in rule and len(hits) >= 1:
+                    confidence = 0.6 + (hit_ratio * 0.4)
+                elif len(hits) >= 2:
                     confidence = 0.5 + (hit_ratio * 0.3)
+                else:
+                    # Has composed_of refs but insufficient hits → block
+                    rule_blocked = True
 
                 # Collect matches from contributing ATOs
                 for ato_det in ato_detections:
@@ -377,8 +399,8 @@ class MarkerEngine:
                         matched_text=matched,
                     ))
 
-            if contributing_matches and confidence == 0.0:
-                # Direct pattern match without composition
+            if contributing_matches and confidence == 0.0 and not rule_blocked:
+                # Direct pattern match without composition (only if not explicitly blocked)
                 base = (mdef.scoring or {}).get("base", 1.0)
                 confidence = min(1.0, 0.5 + len(contributing_matches) * 0.1 * base)
 
@@ -695,12 +717,20 @@ class MarkerEngine:
         layers = layers or ["ATO", "SEM", "CLU", "MEMA"]
         all_detections: list[Detection] = []
 
-        # Level 1: ATO
+        # Level 1: ATO — detect all (including context_only for SEM input)
         ato_dets = []
         if "ATO" in layers or "SEM" in layers or "CLU" in layers or "MEMA" in layers:
             ato_dets = self.detect_ato(text, threshold)
             if "ATO" in layers:
-                all_detections.extend(ato_dets)
+                # Filter context_only markers from user-facing output
+                ato_for_output = [
+                    d for d in ato_dets
+                    if "context_only" not in (self.markers.get(d.marker_id) or MarkerDef(
+                        id="", layer="", lang="", description="", frame={},
+                        patterns=[], examples={}, tags=[], rating=0
+                    )).tags
+                ]
+                all_detections.extend(ato_for_output)
 
         # Level 2: SEM
         sem_dets = []
@@ -753,7 +783,15 @@ class MarkerEngine:
             flat_sem.extend(sem_dets)
 
         if "ATO" in layers:
-            all_detections.extend(flat_ato)
+            # Filter context_only markers from user-facing output
+            ato_for_output = [
+                d for d in flat_ato
+                if "context_only" not in (self.markers.get(d.marker_id) or MarkerDef(
+                    id="", layer="", lang="", description="", frame={},
+                    patterns=[], examples={}, tags=[], rating=0
+                )).tags
+            ]
+            all_detections.extend(ato_for_output)
         if "SEM" in layers:
             all_detections.extend(flat_sem)
 

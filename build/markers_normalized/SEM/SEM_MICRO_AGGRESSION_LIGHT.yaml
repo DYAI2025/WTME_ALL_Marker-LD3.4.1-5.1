@@ -39,14 +39,12 @@ rating: 1
 composed_of:
   any_of:
   - ATO_IRONY
-  - ATO_PUTDOWN_TEMPLATE
-  - ATO_SARCASM_CUES
-  - ATO_SARCASM
+  - ATO_MOCKING_LEXICON
+  - ATO_SARCASM_SUBTILE
+  - ATO_SARCASM_MARKER
 activation:
-  rule: AT_LEAST 2 IN 3 messages
+  rule: "AT_LEAST 2 IN 3 messages"
   window: 3
 scoring:
   base: 0.55
   weight: 1.06
-window:
-  messages: 4

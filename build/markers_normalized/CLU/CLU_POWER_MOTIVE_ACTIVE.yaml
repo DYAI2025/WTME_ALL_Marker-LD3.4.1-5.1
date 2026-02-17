@@ -39,19 +39,13 @@ activation:
   window: 6
   rule:
     all_of:
-    - SEM_INFLUENCE_ORIENTATION >= 1
-    - SEM_RESPONSIBILITY_AND_DECISION >= 1
+    - "SEM_INFLUENCE_ORIENTATION >= 1"
+    - "SEM_RESPONSIBILITY_AND_DECISION >= 1"
 scoring:
   base: 0.71
   weights:
     SEM_INFLUENCE_ORIENTATION: 0.5
     SEM_RESPONSIBILITY_AND_DECISION: 0.5
-  multiplier: 1.5
 evidence_capture:
   keep_snippets: 5
-fire_when: conditions_met_first_time
-ld5_family: COMMITMENT
-ld5_multiplier: 1.5
-ld5_cooldown: 5
-window:
-  messages: 6
+fire_when: "conditions_met_first_time"

@@ -38,17 +38,15 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - ATO_POWER_ASSERTION
+  - ATO_POWER_LANGUAGE
   - ATO_MINI_DEADLINE
   - ATO_REQUEST_FOR_FEEDBACK
   - ATO_CLARIFY_REQ
   optional:
   - ATO_CONFIRM
 activation:
-  rule: AT_LEAST 2 IN 3 messages
+  rule: "AT_LEAST 2 IN 3 messages"
   window: 3
 scoring:
   base: 0.62
   weight: 1.08
-window:
-  messages: 4

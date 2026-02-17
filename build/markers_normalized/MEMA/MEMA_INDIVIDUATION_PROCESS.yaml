@@ -32,19 +32,15 @@ tags:
 - entwicklung
 - prozess
 rating: 1
+composed_of:
+- CLU_THERAPEUTIC_AWARENESS
+- CLU_DEFENSIVE_RETREAT
 activation:
-  rule: ANY 2 IN 30 messages
+  rule: "ANY 2 IN 30 messages"
 scoring:
   base: 3.0
   weight: 2.0
   decay: 0.01
-  formula: logistic
+  formula: "logistic"
 window:
   messages: 30
-detect_class: composite_meta
-ld5_ars:
-  scale:
-  - 0.0
-  - 5.0
-  decay_lambda: 0.85
-  decay_unit: 24h

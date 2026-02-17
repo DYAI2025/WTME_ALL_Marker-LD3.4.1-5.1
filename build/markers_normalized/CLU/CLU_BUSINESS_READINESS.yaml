@@ -37,18 +37,12 @@ composed_of:
 - SEM_BUSINESS_FOCUS
 - SEM_FINANCIAL_METRICS
 activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
+  rule: "AT_LEAST 2 DISTINCT SEMs IN 5 messages"
 scoring:
   base: 0.5
   weight: 2.5
-  multiplier: 1.5
 metadata:
   telemetry_keys:
-    counter_confirmed: INT_READINESS.confirmed
-    counter_retracted: INT_READINESS.retracted
-    ewma_precision: INT_READINESS.ewma_precision
-ld5_family: COMMITMENT
-ld5_multiplier: 1.5
-ld5_cooldown: 5
-window:
-  messages: 6
+    counter_confirmed: "INT_READINESS.confirmed"
+    counter_retracted: "INT_READINESS.retracted"
+    ewma_precision: "INT_READINESS.ewma_precision"

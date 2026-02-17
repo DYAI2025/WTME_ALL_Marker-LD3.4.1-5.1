@@ -43,37 +43,31 @@ tags:
 - relationship
 rating: 1
 composed_of:
-- SEM_OFFENSIVE_FLIRTING
+- SEM_FRIENDLY_FLIRTING
 - SEM_OFFENSIVE_FLIRTING
 - SEM_SOFT_COMMITMENT
-- SEM_BOUNDARY_SETTING
+- SEM_LATENT_EXPECTATION
+- SEM_BOUNDARY_SHIFT
 - SEM_RESPONSE_TIMING
-- SEM_STYLE_COMPARISON
+- SEM_MIRRORED_STYLE
 - SEM_SECRET_BONDING
 scoring:
   base: 1.9
   weight: 1.25
   decay: 0.02
-  multiplier: 1.75
 window:
   messages: 20
 metadata:
   repair_log:
-  - date: '2025-08-14'
+  - date: "2025-08-14"
     changes:
-    - C_→CLU_ prefix fix
-    - converted beschreibung/examples to en
-    - restricted CLU composed_of to SEM_* only
-    - added activation logic & window
-    - standardized frame and examples (10)
-    - removed inline sublabels (❶…❿)
+    - "C_→CLU_ prefix fix"
+    - "converted beschreibung/examples to en"
+    - "restricted CLU composed_of to SEM_* only"
+    - "added activation logic & window"
+    - "standardized frame and examples (10)"
+    - "removed inline sublabels (❶…❿)"
   legacy:
-    source_id: C_FLIRTING_DYNAMICS_MARKER
-    created_by: FRAUSAR_GUI_v2
-    created_at: '2025-07-20T16:53:16.769634'
-ld5_family: SUPPORT
-ld5_multiplier: 1.75
-ld5_cooldown: 5
-activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
-  window: 5
+    source_id: "C_FLIRTING_DYNAMICS_MARKER"
+    created_by: "FRAUSAR_GUI_v2"
+    created_at: "2025-07-20T16:53:16.769634"

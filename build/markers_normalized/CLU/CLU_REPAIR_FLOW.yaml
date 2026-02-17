@@ -38,7 +38,7 @@ rating: 1
 composed_of:
   require:
   - ATO_REPAIR_REQUEST
-  - CLU_SUPPORT_EXCHANGE
+  - CLU_EMOTIONAL_SUPPORT
   - SEM_CLOSURE_PROTOCOL
   k_of_n:
     k: 2
@@ -61,23 +61,13 @@ emits:
 semiotic:
   mode: symbolic
   level: pragmatic
-  object: repair
-  interpretant: 'effect_on_state: {deesc: +0.3}'
+  object: "repair"
+  interpretant: "effect_on_state: {deesc: +0.3}"
   connotation:
-  - flow
-  - deeskalation
+  - "flow"
+  - "deeskalation"
 temperature_semantics:
   external: DEESCALATION
   latent: EMPATHIE
 metadata:
   label: Repair Flow
-ld5_family: SUPPORT
-ld5_multiplier: 1.75
-ld5_cooldown: 5
-activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
-  window: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 1.75

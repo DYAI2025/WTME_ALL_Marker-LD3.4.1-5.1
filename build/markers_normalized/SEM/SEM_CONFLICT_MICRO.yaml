@@ -31,12 +31,10 @@ tags:
 - micro
 rating: 1
 composed_of:
-- ATO_SILENT_TREATMENT_INDICATORS
+- ATO_OFFENDED_SILENCE
 - ATO_MINIMIZATION
 activation:
-  rule: BOTH IN 1 message OR ANY 2 IN 2 messages
+  rule: "BOTH IN 1 message OR ANY 2 IN 2 messages"
 scoring:
   base: 0.55
   weight: 1.0
-window:
-  messages: 4

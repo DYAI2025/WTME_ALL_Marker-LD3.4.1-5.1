@@ -12,13 +12,13 @@ frame:
   narrative: Kontroll-/Sicherheitslogik
 patterns:
 - type: regex
-  value: (?i)\bnur\s+wenn\b
+  value: '(?i)\bnur\s+wenn\b'
 - type: regex
-  value: (?i)\b(dann|ansonsten)\s+(kann|werde|mache)\b
+  value: '(?i)\b(dann|ansonsten)\s+(kann|werde|mache)\b'
 - type: regex
-  value: (?i)\b(unter\s+diesen\s+bedingungen)\b
+  value: '(?i)\b(unter\s+diesen\s+bedingungen)\b'
 - type: regex
-  value: (?i)\b(erst\s+wenn)\b
+  value: '(?i)\b(erst\s+wenn)\b'
 examples:
   positive:
   - Nur wenn ich X weiß, kann ich weitermachen.
@@ -47,11 +47,3 @@ tags:
 - boundary
 - semantics
 rating: 1
-activation:
-  rule: ANY 1
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4

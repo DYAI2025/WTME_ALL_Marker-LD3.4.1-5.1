@@ -22,11 +22,3 @@ examples:
   - That sounds like an important topic for you.
 tags: []
 rating: 2
-activation:
-  rule: ANY 1
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4

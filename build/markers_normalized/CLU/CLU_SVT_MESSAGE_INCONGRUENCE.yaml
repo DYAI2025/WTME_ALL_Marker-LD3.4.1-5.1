@@ -47,22 +47,18 @@ tags:
 - inkongruenz
 - konflikt
 rating: 1
+composed_of:
+- ATO_FACTUAL_STATEMENT
+- ATO_YOU_DEVALUATION
 scoring:
   base: 1.8
   weight: 1.3
-  multiplier: 1.5
 window:
   messages: 1
 metadata:
   source:
-    semantische_grabber_id: AUTO_SEM_20250720_39DC
-    created_at: '2025-07-20T11:46:39.613061'
-    created_by: FRAUSAR_GUI_v2
-    source_version: '1.0'
-    schema_version: '3.3'
-ld5_family: UNCERTAINTY
-ld5_multiplier: 1.5
-ld5_cooldown: 4
-activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
-  window: 5
+    semantische_grabber_id: "AUTO_SEM_20250720_39DC"
+    created_at: "2025-07-20T11:46:39.613061"
+    created_by: "FRAUSAR_GUI_v2"
+    source_version: "1.0"
+    schema_version: "3.3"

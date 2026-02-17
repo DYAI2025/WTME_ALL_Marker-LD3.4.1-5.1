@@ -46,5 +46,3 @@ scoring:
   weight: 0.95
 window:
   messages: 8
-activation:
-  rule: ANY 2 IN 4 messages

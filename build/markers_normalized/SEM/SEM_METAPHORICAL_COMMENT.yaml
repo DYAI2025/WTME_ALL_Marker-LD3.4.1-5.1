@@ -34,12 +34,8 @@ tags:
 - description
 rating: 1
 composed_of:
-- ATO_METAPHOR
-- ATO_COMPARISON_MANIPULATION
+- ATO_METAPHOR_CUE
+- ATO_COMPARISON_OBJECT
 scoring:
   base: 1.4
   weight: 1.1
-activation:
-  rule: ANY 2 IN 4 messages
-window:
-  messages: 4

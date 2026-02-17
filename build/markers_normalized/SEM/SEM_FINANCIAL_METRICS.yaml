@@ -35,9 +35,7 @@ composed_of:
 - ATO_NUMERIC_ESTIMATE
 - ATO_FINANCIAL_TERM
 activation:
-  rule: BOTH IN 1 message
+  rule: "BOTH IN 1 message"
 scoring:
   base: 0.7
   weight: 2.0
-window:
-  messages: 4

@@ -39,12 +39,10 @@ tags:
 - bonding
 rating: 1
 composed_of:
-- ATO_JOINT_PLANNING
-- ATO_PROACTIVE_INTENTION
+- ATO_WE_PLAN
+- ATO_FUTURE_IDEA
 scoring:
   base: 1.3
   weight: 1.0
 window:
   messages: 4
-activation:
-  rule: ANY 2 IN 4 messages

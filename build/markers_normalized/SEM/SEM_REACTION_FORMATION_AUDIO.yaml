@@ -12,7 +12,7 @@ frame:
   narrative: Inkongruenz
 patterns:
 - detect_class: incongruence
-  rule: laughter near negative_content_token
+  rule: "laughter near negative_content_token"
 examples:
   positive:
   - '[lachen] Das war echt schlimm.'
@@ -42,7 +42,3 @@ scoring:
   base: 0.64
 metadata:
   type: SEM
-activation:
-  rule: ANY 1
-window:
-  messages: 4

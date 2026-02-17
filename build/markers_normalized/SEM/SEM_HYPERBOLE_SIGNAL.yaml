@@ -35,11 +35,6 @@ tags:
 rating: 1
 composed_of:
 - ATO_HYPERBOLE_EXTREME
+- ATO_TWIST
 activation:
-  rule: ANY 2 IN 3 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "ANY 2 IN 3 messages"

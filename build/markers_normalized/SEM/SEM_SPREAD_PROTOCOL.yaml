@@ -32,10 +32,4 @@ composed_of:
 - ATO_PROJECT_INIT
 - ATO_CROSS_POSTING_ANWEISUNG
 activation:
-  rule: BOTH IN 1 message
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "BOTH IN 1 message"

@@ -33,20 +33,14 @@ tags:
 - screening
 rating: 1
 composed_of:
-- SEM_TASK_DRIVE
-- SEM_BUSINESS_FOCUS
-- SEM_CERTAINTY_CLAIMS
+- SEM_COMPETITIVE_DRIVE
+- SEM_KPI_FOCUS
+- SEM_COMPARATIVE_CLAIM
 activation:
-  rule: AT_LEAST 2 IN 6 messages
+  rule: "AT_LEAST 2 IN 6 messages"
 scoring:
   base: 1.0
   weight: 1.0
-  multiplier: 1.0
 metadata:
   persona:
-    evidence_policy: family-scoped
-ld5_family: PERSONA
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-window:
-  messages: 6
+    evidence_policy: "family-scoped"

@@ -29,15 +29,10 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- SEM_EMOTIONAL_ACCEPTANCE
+- SEM_SUPPORT_VALIDATION
+- SEM_TRUST_SIGNALING
 activation:
-  rule: AT_LEAST 3 IN 7 messages
+  rule: "AT_LEAST 3 IN 7 messages"
 scoring:
   base: 1.0
   weight: 1.0
-  multiplier: 1.75
-ld5_family: SUPPORT
-ld5_multiplier: 1.75
-ld5_cooldown: 5
-window:
-  messages: 6

@@ -39,14 +39,8 @@ tags:
 - emergence
 rating: 1
 composed_of:
-- ATO_ESCALATION_LEXICON
-- ATO_POWER_ASSERTION
-- ATO_CONTROL_PHRASES
+- ATO_TOXIC_TOKENS
+- ATO_POWER_LANGUAGE
+- ATO_CONTROL_MARKERS
 activation:
-  rule: AT_LEAST 2 IN 1 message
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "AT_LEAST 2 IN 1 message"

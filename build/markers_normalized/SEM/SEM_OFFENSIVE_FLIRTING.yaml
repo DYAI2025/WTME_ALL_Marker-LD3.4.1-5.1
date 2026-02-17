@@ -38,13 +38,7 @@ tags:
 - boundary
 rating: 1
 composed_of:
-- ATO_ROMANTIC_SIGNAL_DIRECT
-- ATO_BOUNDARY_NEGOTIATION
+- ATO_FLIRTING_PHRASE
+- ATO_BOUNDARY_CROSS
 activation:
   rule: ANY 2 IN 3 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4

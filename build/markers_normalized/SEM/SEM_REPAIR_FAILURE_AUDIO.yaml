@@ -13,8 +13,8 @@ frame:
 patterns:
 - detect_class: sequence
   steps:
-  - repair_attempt
-  - no_answer_or_topic_shift
+  - "repair_attempt"
+  - "no_answer_or_topic_shift"
   max_span_seconds: 6
 examples:
   positive:
@@ -40,12 +40,8 @@ tags:
 - repair
 rating: 1
 composed_of:
-- ATO_PAUSE_LONG
+- ATO_LONG_RESPONSE_GAP
 scoring:
   base: 0.72
 metadata:
   type: SEM
-activation:
-  rule: ANY 1
-window:
-  messages: 4

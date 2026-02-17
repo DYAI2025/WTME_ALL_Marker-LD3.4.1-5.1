@@ -30,11 +30,6 @@ tags: []
 rating: 2
 composed_of:
 - ATO_SD_GREEN_LEX
+- ATO_COMMUNITY_TALK
 activation:
-  rule: BOTH IN 1 message
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "BOTH IN 1 message"

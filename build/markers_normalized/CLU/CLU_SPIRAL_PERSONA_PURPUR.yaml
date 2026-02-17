@@ -34,15 +34,9 @@ composed_of:
 - SEM_PURPUR_TRIBAL_MAGIC
 - ATO_TRIBAL_BONDS
 activation:
-  rule: AT_LEAST 3 IN 7 messages
+  rule: "AT_LEAST 3 IN 7 messages"
   window_size: 7
   threshold: 3
 scoring:
   weight: 1.0
   decay: 0.7
-  multiplier: 1.0
-ld5_family: PERSONA
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-window:
-  messages: 6

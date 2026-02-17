@@ -42,7 +42,7 @@ composed_of:
 - ATO_HARMONY_PHRASE
 - ATO_DEESCALATION_PHRASE
 activation:
-  rule: ANY 2 IN 3 messages
+  rule: "ANY 2 IN 3 messages"
   window: 3
 scoring:
   base: 0.55
@@ -53,5 +53,3 @@ metadata:
       within_window: 3
       sem:
       - SEM_CONFLICT_ESCALATION
-window:
-  messages: 4

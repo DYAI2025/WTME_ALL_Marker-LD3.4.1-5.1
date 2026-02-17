@@ -13,8 +13,8 @@ frame:
 patterns:
 - detect_class: sequence
   steps:
-  - short_question_like_utterance
-  - pause>=600ms
+  - "short_question_like_utterance"
+  - "pause>=600ms"
   max_span_seconds: 2
 examples:
   positive:
@@ -46,7 +46,3 @@ scoring:
   base: 0.62
 metadata:
   type: SEM
-activation:
-  rule: ANY 2 IN 4 messages
-window:
-  messages: 4

@@ -31,17 +31,13 @@ tags:
 - severe
 rating: 2
 activation:
-  rule: WEIGHTED_AND
+  rule: "WEIGHTED_AND"
 scoring:
   base: 2.0
   weight: 0.8
   decay: 0.05
-  formula: logistic
-  multiplier: 2.0
+  formula: "logistic"
 window:
   messages: 50
-detect_class: E
-criteria: Häufung mehrerer Gottman-Destruktoren in kurzer Zeit
-ld5_family: CONFLICT
-ld5_multiplier: 2.0
-ld5_cooldown: 5
+detect_class: "E"
+criteria: "Häufung mehrerer Gottman-Destruktoren in kurzer Zeit"

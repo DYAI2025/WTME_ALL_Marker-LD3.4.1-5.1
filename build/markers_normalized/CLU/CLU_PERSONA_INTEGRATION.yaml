@@ -29,15 +29,9 @@ examples:
 tags: []
 rating: 2
 activation:
-  rule: AT_LEAST 4 different CLU_SPIRAL_PERSONA_* with stable pattern IN 15 messages
+  rule: "AT_LEAST 4 different CLU_SPIRAL_PERSONA_* with stable pattern IN 15 messages"
   window_size: 15
   threshold: 4
 scoring:
   weight: 1.2
   decay: 0.4
-  multiplier: 1.0
-ld5_family: PERSONA
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-window:
-  messages: 6

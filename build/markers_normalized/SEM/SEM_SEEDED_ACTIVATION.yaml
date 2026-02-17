@@ -32,10 +32,4 @@ composed_of:
 - ATO_SEED_PROMPT
 - ATO_RECURSIVE_SELF_ASSERT
 activation:
-  rule: BOTH IN 1 message
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+  rule: "BOTH IN 1 message"

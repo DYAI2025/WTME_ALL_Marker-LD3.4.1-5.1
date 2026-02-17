@@ -13,15 +13,15 @@ frame:
   narrative: Direkte Bitte
 patterns:
 - type: regex
-  value: ^fahr
+  value: "^fahr"
 - type: regex
-  value: ^schicken sie
+  value: "^schicken sie"
 - type: regex
-  value: ^könntest du bitte
+  value: "^könntest du bitte"
 - type: regex
-  value: solltest du
+  value: "solltest du"
 - type: regex
-  value: müsstest du
+  value: "müsstest du"
 examples:
   positive:
   - 'examples:'
@@ -50,17 +50,11 @@ tags:
 - appeal
 rating: 1
 activation:
-  rule: ANY at sentence start
+  rule: "ANY at sentence start"
 metadata:
   source:
-    semantische_grabber_id: SGR_SVT_APPEAL_DIRECT_01
-    created_at: '2025-07-20T11:48:12.759155'
-    created_by: FRAUSAR_GUI_v2
-    source_version: 1.0.1
-    schema_version: '3.3'
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+    semantische_grabber_id: "SGR_SVT_APPEAL_DIRECT_01"
+    created_at: "2025-07-20T11:48:12.759155"
+    created_by: "FRAUSAR_GUI_v2"
+    source_version: "1.0.1"
+    schema_version: "3.3"

@@ -40,19 +40,10 @@ composed_of:
 - SEM_RITUAL_INVOCATION
 - SEM_METAPHORICAL_DENSITY
 activation:
-  rule: AT_LEAST 3 DISTINCT SEMs IN 6 messages
+  rule: "AT_LEAST 3 DISTINCT SEMs IN 6 messages"
 metadata:
   intuition:
     confirm_window: 6
-    confirm_rule: AT_LEAST 1 of [SEM_SELF_REFERENCE, SEM_SPIRAL_DRIFT] IN confirm_window
+    confirm_rule: "AT_LEAST 1 of [SEM_SELF_REFERENCE, SEM_SPIRAL_DRIFT] IN confirm_window"
     multiplier_on_confirm: 2.0
     decay_window: 10
-ld5_family: PERSONA
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 1.0
-window:
-  messages: 6

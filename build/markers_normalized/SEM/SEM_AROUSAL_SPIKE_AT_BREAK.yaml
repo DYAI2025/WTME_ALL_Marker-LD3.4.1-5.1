@@ -13,8 +13,8 @@ frame:
 patterns:
 - detect_class: sequence
   steps:
-  - expectancy_break
-  - prosodic_spike
+  - "expectancy_break"
+  - "prosodic_spike"
   max_span_seconds: 3
 examples:
   positive:
@@ -45,7 +45,3 @@ scoring:
   base: 0.68
 metadata:
   type: SEM
-activation:
-  rule: ANY 1
-window:
-  messages: 4

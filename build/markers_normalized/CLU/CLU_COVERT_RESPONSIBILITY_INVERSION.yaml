@@ -12,7 +12,7 @@ frame:
   narrative: responsibility_shift
 patterns:
 - type: regex
-  value: ich (hätte|müsste|würde) nicht .+ wenn du
+  value: "ich (hätte|müsste|würde) nicht .+ wenn du"
 examples:
   positive:
   - Ich müsste nicht laut werden, wenn du beim ersten Mal zuhören würdest
@@ -35,15 +35,11 @@ tags:
 - manipulation
 rating: 1
 activation:
-  rule: ANY 1 IN 15 messages
+  rule: "ANY 1 IN 15 messages"
 scoring:
   base: 2.9
   weight: 0.88
   decay: 0.015
-  formula: logistic
-  multiplier: 2.0
+  formula: "logistic"
 window:
   messages: 15
-ld5_family: CONFLICT
-ld5_multiplier: 2.0
-ld5_cooldown: 5

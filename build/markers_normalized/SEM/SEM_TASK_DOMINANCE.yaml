@@ -70,16 +70,10 @@ window:
 semiotic:
   mode: symbolic
   level: semantic
-  object: task_focus
+  object: "task_focus"
   connotation:
-  - aufgabe
-  - dominanz
-  interpretant: 'effect_on_state: {task_dominance: +0.25, intimacy: -0.1}'
+  - "aufgabe"
+  - "dominanz"
+  interpretant: "effect_on_state: {task_dominance: +0.25, intimacy: -0.1}"
 metadata:
   label: Aufgaben-Dominanz
-activation:
-  rule: ANY 1
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic

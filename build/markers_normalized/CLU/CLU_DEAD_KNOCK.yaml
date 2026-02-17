@@ -32,7 +32,7 @@ tags:
 - pacing
 rating: 1
 activation:
-  rule: AT_LEAST 3 CORE IN 10 messages WITH START SEM_SETTING_CONTROL AND END ANY OF [ATO_CLOSE, ATO_HANDOFF]
+  rule: "AT_LEAST 3 CORE IN 10 messages WITH START SEM_SETTING_CONTROL AND END ANY OF [ATO_CLOSE, ATO_HANDOFF]"
   window: 10
 scoring:
   weights:
@@ -44,9 +44,3 @@ scoring:
     SEM_EVAL_PRIOR: 1
     AMPLIFIER_EACH: 1
   threshold: 7
-  multiplier: 2.0
-ld5_family: CONFLICT
-ld5_multiplier: 2.0
-ld5_cooldown: 5
-window:
-  messages: 6

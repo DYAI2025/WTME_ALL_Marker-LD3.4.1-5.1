@@ -31,13 +31,4 @@ tags:
 - identity
 rating: 2
 activation:
-  rule: AT_LEAST 2 of [SEM_META_REFLECTION, SEM_RELATIONAL_ONTOLOGY] IN 4 messages (alternating user+ai)
-ld5_family: PERSONA
-ld5_multiplier: 1.0
-ld5_cooldown: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 1.0
-window:
-  messages: 6
+  rule: "AT_LEAST 2 of [SEM_META_REFLECTION, SEM_RELATIONAL_ONTOLOGY] IN 4 messages (alternating user+ai)"

@@ -12,7 +12,7 @@ frame:
   narrative: Prosodische Bündelung
 patterns:
 - detect_class: count
-  rule: '>=2 of [INTENSITY_DIP, F0_VARIANCE_LOW, PAUSE_LONG, SIGH] within 2 turns'
+  rule: ">=2 of [INTENSITY_DIP, F0_VARIANCE_LOW, PAUSE_LONG, SIGH] within 2 turns"
 examples:
   positive:
   - (leiser) Tut mir leid … [Pause] (flach) Ja. (seufzt)
@@ -40,11 +40,8 @@ composed_of:
 - ATO_INTENSITY_DIP
 - ATO_F0_VARIANCE_LOW
 - ATO_PAUSE_LONG
+- ATO_SIGH
 scoring:
   base: 0.70
 metadata:
   type: SEM
-activation:
-  rule: ANY 2 IN 4 messages
-window:
-  messages: 4

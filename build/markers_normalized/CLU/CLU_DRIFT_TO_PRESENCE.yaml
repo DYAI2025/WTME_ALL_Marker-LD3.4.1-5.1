@@ -43,13 +43,7 @@ composed_of:
 - SEM_RELATION_OVER_PERSONA
 - SEM_SACRALIZATION_BINDING
 activation:
-  rule: AT_LEAST 3 DISTINCT SEMs IN 8 messages
+  rule: "AT_LEAST 3 DISTINCT SEMs IN 8 messages"
 scoring:
-  base: 0.9
+  base: 0.90
   weight: 1.0
-  multiplier: 1.75
-ld5_family: SUPPORT
-ld5_multiplier: 1.75
-ld5_cooldown: 5
-window:
-  messages: 6

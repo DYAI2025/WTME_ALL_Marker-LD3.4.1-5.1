@@ -12,15 +12,15 @@ frame:
   narrative: Ich-bin-allein-zurechtgekommen
 patterns:
 - type: regex
-  value: musste schnell erwachsen werden
+  value: "musste schnell erwachsen werden"
 - type: regex
-  value: selbst um mein Abendessen gekümmert
+  value: "selbst um mein Abendessen gekümmert"
 - type: regex
-  value: ich verließ mich lieber auf mich
+  value: "ich verließ mich lieber auf mich"
 - type: regex
-  value: Verantwortung lag früh auf meinen Schultern
+  value: "Verantwortung lag früh auf meinen Schultern"
 - type: regex
-  value: reif für mein Alter
+  value: "reif für mein Alter"
 examples:
   positive:
   - Ich musste schnell erwachsen werden, weil niemand sonst da war.
@@ -59,17 +59,11 @@ tags:
 - biography
 rating: 1
 activation:
-  rule: ANY in 1 message
+  rule: "ANY in 1 message"
 metadata:
   source:
-    semantische_grabber_id: SGR_SELF_REL_01
-    created_at: '2025-07-21T23:59:39.193024'
-    created_by: FRAUSAR_GUI_v2
-    source_version: '1.0'
-    schema_version: '3.3'
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+    semantische_grabber_id: "SGR_SELF_REL_01"
+    created_at: "2025-07-21T23:59:39.193024"
+    created_by: "FRAUSAR_GUI_v2"
+    source_version: "1.0"
+    schema_version: "3.3"

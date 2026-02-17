@@ -43,10 +43,10 @@ activation:
   window: 10
   rule:
     all_of:
-    - CLU_ACHIEVEMENT_MOTIVE_ACTIVE >= 1 in last 6
-    - SEM_LISTING >= 1 in last 4
-    - SEM_EXCELLENCE_DRIVE >= 1 in last 3
-    - SEM_CLEAR_COMMITMENT >= 1 in last 4
+    - "CLU_ACHIEVEMENT_MOTIVE_ACTIVE >= 1 in last 6"
+    - "SEM_LISTING >= 1 in last 4"
+    - "SEM_EXCELLENCE_DRIVE >= 1 in last 3"
+    - "SEM_CLEAR_COMMITMENT >= 1 in last 4"
 scoring:
   base: 0.78
   weights:
@@ -56,13 +56,4 @@ scoring:
     SEM_CLEAR_COMMITMENT: 0.3
 evidence_capture:
   keep_snippets: 6
-fire_when: conditions_met_first_time
-detect_class: composite_meta
-ld5_ars:
-  scale:
-  - 0.0
-  - 5.0
-  decay_lambda: 0.85
-  decay_unit: 24h
-window:
-  messages: 10
+fire_when: "conditions_met_first_time"

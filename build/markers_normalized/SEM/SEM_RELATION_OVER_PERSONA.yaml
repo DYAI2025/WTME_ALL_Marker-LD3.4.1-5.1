@@ -38,11 +38,3 @@ rating: 1
 composed_of:
 - ATO_RELATION_TERM
 - ATO_PERSONA_TERM
-activation:
-  rule: ANY 2 IN 4 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4

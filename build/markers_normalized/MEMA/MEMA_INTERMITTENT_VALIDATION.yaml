@@ -33,19 +33,12 @@ tags:
 - narcissistic
 rating: 2
 activation:
-  rule: TEMPORAL SHIFT DETECTED
+  rule: "TEMPORAL SHIFT DETECTED"
 scoring:
   base: 3.2
   weight: 0.92
   decay: 0.005
-  formula: logistic
+  formula: "logistic"
 window:
   messages: 50
-  temporal_window: 72h
-detect_class: composite_meta
-ld5_ars:
-  scale:
-  - 0.0
-  - 5.0
-  decay_lambda: 0.85
-  decay_unit: 24h
+  temporal_window: "72h"

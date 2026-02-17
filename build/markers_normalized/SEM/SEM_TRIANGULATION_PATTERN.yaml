@@ -42,9 +42,3 @@ composed_of:
 - ATO_PASSIVE_AGGRESSION
 window:
   messages: 4
-activation:
-  rule: ANY 2 IN 4 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic

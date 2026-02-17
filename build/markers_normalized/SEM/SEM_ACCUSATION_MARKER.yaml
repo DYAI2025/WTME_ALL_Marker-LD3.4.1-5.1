@@ -50,12 +50,10 @@ tags:
 - generalization
 rating: 1
 composed_of:
-- ATO_DIRECT_ACCUSATION
+- ATO_ACCUSATION_PHRASE
 - ATO_SUPERLATIVE_PHRASE
 activation:
-  rule: ANY 1
+  rule: "ANY 1"
 scoring:
   base: 1.5
   weight: 1.2
-window:
-  messages: 4

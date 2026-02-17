@@ -35,11 +35,7 @@ tags:
 rating: 1
 composed_of:
 - ATO_STYLE_REFERENCE
-- ATO_CULTURE_TOKEN
+- ATO_CULTURAL_ELEMENT
 scoring:
   base: 1.4
   weight: 1.1
-activation:
-  rule: ANY 2 IN 4 messages
-window:
-  messages: 4

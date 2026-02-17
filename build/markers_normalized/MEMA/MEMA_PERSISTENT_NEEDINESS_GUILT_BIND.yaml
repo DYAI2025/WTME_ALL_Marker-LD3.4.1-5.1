@@ -36,22 +36,15 @@ rating: 1
 composed_of:
 - CLU_NEEDINESS_GUILT_BIND
 activation:
-  rule: SERIES_AT_WINDOW_END
+  rule: "SERIES_AT_WINDOW_END"
 scoring:
   base: 3.4
   weight: 1.0
   decay: 0.0
-  formula: linear
+  formula: "linear"
 window:
   messages: 50
 criteria:
-  source_cluster: CLU_NEEDINESS_GUILT_BIND
+  source_cluster: "CLU_NEEDINESS_GUILT_BIND"
   horizon_windows: 5
   min_windows: 2
-detect_class: composite_meta
-ld5_ars:
-  scale:
-  - 0.0
-  - 5.0
-  decay_lambda: 0.85
-  decay_unit: 24h

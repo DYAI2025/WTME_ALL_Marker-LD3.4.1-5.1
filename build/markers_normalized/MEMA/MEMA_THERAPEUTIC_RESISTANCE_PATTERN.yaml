@@ -37,23 +37,7 @@ tags:
 - change-avoidance
 rating: 1
 composed_of:
-- CLU_CONFLICT_ESCALATION
+- CLU_INDIRECT_CONFLICT_AVOIDANCE
 - SEM_SELF_REFLECTION
 - SEM_VALIDATION_SEEKING
-criteria: Persistent pattern of resistance to therapeutic change across multiple interventions and contexts
-detect_class: pattern_detection
-ld5_ars:
-  scale:
-  - 0.0
-  - 5.0
-  decay_lambda: 0.85
-  decay_unit: 24h
-activation:
-  rule: composite_trigger
-  window: 10
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 10
+criteria: "Persistent pattern of resistance to therapeutic change across multiple interventions and contexts"

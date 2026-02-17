@@ -36,17 +36,8 @@ composed_of:
   - - SEM_REPAIR_SEQUENCE
     - SEM_CLEAR_COMMITMENT
 activation:
-  rule: SEQUENCE IN 12 messages
+  rule: "SEQUENCE IN 12 messages"
   window: 12
 scoring:
   base: 0.65
   weight: 1.15
-detect_class: pattern_detection
-ld5_ars:
-  scale:
-  - 0.0
-  - 5.0
-  decay_lambda: 0.85
-  decay_unit: 24h
-window:
-  messages: 10

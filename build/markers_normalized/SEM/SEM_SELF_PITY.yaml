@@ -51,22 +51,20 @@ window:
   messages: 6
 metadata:
   repair_log:
-  - date: '2025-08-14'
+  - date: "2025-08-14"
     changes:
-    - Prefix fix S_→SEM_
-    - Converted to lang=en
-    - Removed invalid pattern block for SEM
-    - Added frame (signal/concept/pragmatics/narrative)
-    - Expanded composed_of to ≥2 ATOs
-    - Standardized activation_logic/window/scoring
-    - Increased examples to 10
-    - Moved legacy fields to metadata
+    - "Prefix fix S_→SEM_"
+    - "Converted to lang=en"
+    - "Removed invalid pattern block for SEM"
+    - "Added frame (signal/concept/pragmatics/narrative)"
+    - "Expanded composed_of to ≥2 ATOs"
+    - "Standardized activation_logic/window/scoring"
+    - "Increased examples to 10"
+    - "Moved legacy fields to metadata"
   legacy:
-    source_id: S_SELF_PITY
-    version: 1.0.0
-    status: draft
-    author: auto_gpt
-    created: '2025-07-25T21:17:00Z'
-    original_activation_logic: A_VICTIM_LANGUAGE OR A_LONELINESS
-activation:
-  rule: ANY 2 IN 4 messages
+    source_id: "S_SELF_PITY"
+    version: "1.0.0"
+    status: "draft"
+    author: "auto_gpt"
+    created: "2025-07-25T21:17:00Z"
+    original_activation_logic: "A_VICTIM_LANGUAGE OR A_LONELINESS"

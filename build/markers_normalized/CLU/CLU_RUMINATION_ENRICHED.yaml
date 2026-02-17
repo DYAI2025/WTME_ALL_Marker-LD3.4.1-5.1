@@ -59,23 +59,13 @@ emits:
 semiotic:
   mode: symbolic
   level: pragmatic
-  object: rumination
-  interpretant: 'effect_on_state: {stagnation: +0.2}'
+  object: "rumination"
+  interpretant: "effect_on_state: {stagnation: +0.2}"
   connotation:
-  - enriched
-  - helplessness
+  - "enriched"
+  - "helplessness"
 temperature_semantics:
   external: STAGNATION
   latent: RESIGNATION
 metadata:
   label: Rumination Enriched
-ld5_family: GRIEF
-ld5_multiplier: 2.0
-ld5_cooldown: 5
-activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
-  window: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 2.0

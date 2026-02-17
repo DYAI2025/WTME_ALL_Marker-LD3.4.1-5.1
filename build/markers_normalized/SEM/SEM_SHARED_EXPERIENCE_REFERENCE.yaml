@@ -35,11 +35,8 @@ tags:
 - bonding
 rating: 1
 composed_of:
+- ATO_MEMORY_TRIGGER
 - ATO_SHARED_CONTEXT
 scoring:
   base: 1.4
   weight: 1.1
-activation:
-  rule: ANY 2 IN 4 messages
-window:
-  messages: 4

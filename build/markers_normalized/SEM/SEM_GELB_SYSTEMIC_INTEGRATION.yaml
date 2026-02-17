@@ -34,10 +34,4 @@ rating: 1
 composed_of:
 - ATO_INTEGRAL_THINKING
 - ATO_HOLISTIC_FLOW
-activation: ANY 2 IN 2 messages
-scoring:
-  base: 1.0
-  weight: 1.0
-  formula: logistic
-window:
-  messages: 4
+activation: "ANY 2 IN 2 messages"

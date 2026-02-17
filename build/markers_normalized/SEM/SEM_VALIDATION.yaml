@@ -37,14 +37,12 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - ATO_SUPPORT_PHRASE
+  - ATO_SUPPORTIVE_LANGUAGE
   - ATO_SUPPORT_MESSAGE
   - ATO_ACKNOWLEDGE
 activation:
-  rule: AT_LEAST 2 IN 2 messages
+  rule: "AT_LEAST 2 IN 2 messages"
   window: 2
 scoring:
   base: 0.6
   weight: 1.05
-window:
-  messages: 4

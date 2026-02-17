@@ -142,23 +142,13 @@ conflicts_with:
 semiotic:
   mode: symbolic
   level: pragmatic
-  object: disagreement_coexistence
-  interpretant: 'effect_on_state: {trust: +0.05, conflict: -0.15, sync: +0.12}'
+  object: "disagreement_coexistence"
+  interpretant: "effect_on_state: {trust: +0.05, conflict: -0.15, sync: +0.12}"
   connotation:
-  - distanz
-  - formell
+  - "distanz"
+  - "formell"
 temperature_semantics:
   external: RUHE
   latent: SPANNUNG
 metadata:
   label: Agree to disagree
-ld5_family: SUPPORT
-ld5_multiplier: 1.75
-ld5_cooldown: 5
-activation:
-  rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
-  window: 5
-scoring:
-  base: 1.0
-  weight: 1.0
-  multiplier: 1.75

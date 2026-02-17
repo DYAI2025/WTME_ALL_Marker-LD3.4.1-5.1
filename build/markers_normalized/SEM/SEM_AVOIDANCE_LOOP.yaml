@@ -43,12 +43,10 @@ composed_of:
   any_of:
   - ATO_AVOIDANCE_PHRASE
   - ATO_TOPIC_SWITCH_ADVERSATIVE
-  - ATO_SUBJECT_CLOSED
+  - ATO_PREMATURE_CLOSURE
 activation:
-  rule: AT_LEAST 2 IN 4 messages
+  rule: "AT_LEAST 2 IN 4 messages"
   window: 4
 scoring:
   base: 0.6
   weight: 1.12
-window:
-  messages: 4

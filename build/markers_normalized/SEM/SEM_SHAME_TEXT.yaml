@@ -42,10 +42,6 @@ scoring:
   weight: 1.1
 metadata:
   repair_log:
-  - rule: R06
-    note: Nur composed_of beibehalten
-    date: '2025-08-29'
-activation:
-  rule: ANY 2 IN 4 messages
-window:
-  messages: 4
+  - rule: "R06"
+    note: "Nur composed_of beibehalten"
+    date: "2025-08-29"

@@ -42,9 +42,7 @@ composed_of:
 - ATO_FEELING_WORD
 - ATO_ACCEPTANCE_PHRASE
 activation:
-  rule: BOTH IN 1 message
+  rule: "BOTH IN 1 message"
 scoring:
   base: 0.55
   weight: 1.0
-window:
-  messages: 4
