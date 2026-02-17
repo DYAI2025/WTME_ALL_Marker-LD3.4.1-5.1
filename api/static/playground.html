@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeanDeep Marker Playground</title>
+<style>
+  :root {
+    --ato-bg: #FFF9C4; --ato-border: #F9A825;
+    --sem-bg: #FFE0B2; --sem-border: #FB8C00;
+    --clu-bg: #B2EBF2; --clu-border: #00ACC1;
+    --mema-bg: #E1BEE7; --mema-border: #8E24AA;
+    --bg: #1a1a2e; --surface: #16213e; --surface2: #0f3460;
+    --text: #e0e0e0; --text-dim: #8899aa; --accent: #e94560;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; }
+  .header { background: var(--surface); border-bottom: 2px solid var(--accent); padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+  .header h1 { font-size: 1.25rem; font-weight: 600; }
+  .header h1 span { color: var(--accent); }
+  .header .version { font-size: 0.8rem; color: var(--text-dim); background: var(--surface2); padding: 3px 10px; border-radius: 12px; }
+  .tabs { display: flex; gap: 4px; background: var(--surface); padding: 8px 24px 0; }
+  .tab { padding: 8px 18px; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; cursor: pointer; font-size: 0.85rem; color: var(--text-dim); background: transparent; transition: all 0.15s; }
+  .tab:hover { color: var(--text); background: var(--surface2); }
+  .tab.active { color: var(--text); background: var(--surface2); border-color: #334; }
+  .main { display: grid; grid-template-columns: 1fr 1fr; gap: 0; height: calc(100vh - 140px); }
+  .panel { padding: 16px; overflow-y: auto; }
+  .panel-left { background: var(--surface); border-right: 1px solid #334; }
+  .panel-right { background: var(--bg); }
+  .panel h2 { font-size: 0.85rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 10px; }
+  textarea { width: 100%; height: 220px; background: var(--surface2); color: var(--text); border: 1px solid #334; border-radius: 6px; padding: 12px; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.9rem; resize: vertical; line-height: 1.5; }
+  textarea:focus { outline: none; border-color: var(--accent); }
+  .controls { margin-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+  .control-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .control-row label { font-size: 0.8rem; color: var(--text-dim); min-width: 70px; }
+  .control-row input[type="range"] { flex: 1; max-width: 200px; accent-color: var(--accent); }
+  .threshold-val { font-size: 0.8rem; color: var(--accent); min-width: 35px; }
+  .layer-toggles { display: flex; gap: 6px; }
+  .layer-toggle { display: flex; align-items: center; gap: 3px; font-size: 0.8rem; cursor: pointer; padding: 3px 8px; border-radius: 4px; border: 1px solid #445; }
+  .layer-toggle input { accent-color: var(--accent); }
+  .layer-toggle.ato { border-color: var(--ato-border); }
+  .layer-toggle.sem { border-color: var(--sem-border); }
+  .layer-toggle.clu { border-color: var(--clu-border); }
+  .layer-toggle.mema { border-color: var(--mema-border); }
+  .btn { padding: 10px 24px; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: 600; transition: all 0.15s; }
+  .btn-primary { background: var(--accent); color: white; }
+  .btn-primary:hover { background: #d63851; }
+  .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
+  .btn-secondary { background: var(--surface2); color: var(--text); border: 1px solid #445; }
+  .btn-secondary:hover { background: #1a4a8a; }
+  .upload-row { display: flex; gap: 8px; align-items: center; }
+  .upload-row input[type="file"] { display: none; }
+
+  /* Annotated text */
+  .annotated-text { background: var(--surface); border-radius: 6px; padding: 16px; line-height: 1.8; font-size: 0.95rem; min-height: 100px; white-space: pre-wrap; word-wrap: break-word; }
+  .annotated-text .marker-span { padding: 1px 0; border-bottom: 2px solid; border-radius: 2px; cursor: pointer; position: relative; transition: filter 0.1s; }
+  .annotated-text .marker-span:hover { filter: brightness(1.2); }
+  .marker-span.layer-ATO { background: var(--ato-bg); color: #333; border-color: var(--ato-border); }
+  .marker-span.layer-SEM { background: var(--sem-bg); color: #333; border-color: var(--sem-border); }
+  .marker-span.layer-CLU { background: var(--clu-bg); color: #333; border-color: var(--clu-border); }
+  .marker-span.layer-MEMA { background: var(--mema-bg); color: #333; border-color: var(--mema-border); }
+
+  /* Tooltip */
+  .tooltip { position: fixed; z-index: 1000; background: #1a1a2e; border: 1px solid #445; border-radius: 8px; padding: 12px; max-width: 380px; font-size: 0.82rem; pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+  .tooltip .tt-id { font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+  .tooltip .tt-row { display: flex; gap: 8px; margin: 2px 0; }
+  .tooltip .tt-label { color: var(--text-dim); min-width: 70px; }
+  .tooltip .tt-badge { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.75rem; font-weight: 600; }
+  .tooltip .tt-badge.ATO { background: var(--ato-bg); color: #7c6800; }
+  .tooltip .tt-badge.SEM { background: var(--sem-bg); color: #8a5100; }
+  .tooltip .tt-badge.CLU { background: var(--clu-bg); color: #006064; }
+  .tooltip .tt-badge.MEMA { background: var(--mema-bg); color: #4a148c; }
+  .tooltip .tt-match { background: var(--surface2); padding: 4px 8px; border-radius: 4px; margin-top: 4px; font-family: monospace; word-break: break-all; }
+
+  /* Meta cards (CLU/MEMA) */
+  .meta-section { margin-top: 20px; }
+  .meta-section h3 { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #334; }
+  .meta-card { background: var(--surface); border-radius: 6px; padding: 10px 14px; margin-bottom: 8px; border-left: 3px solid; }
+  .meta-card.layer-CLU { border-color: var(--clu-border); }
+  .meta-card.layer-MEMA { border-color: var(--mema-border); }
+  .meta-card .mc-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+  .meta-card .mc-id { font-weight: 600; font-size: 0.85rem; }
+  .meta-card .mc-conf { font-size: 0.8rem; color: var(--accent); }
+  .meta-card .mc-desc { font-size: 0.82rem; color: var(--text-dim); }
+  .meta-card .mc-family { font-size: 0.75rem; color: var(--text-dim); margin-top: 4px; }
+
+  /* Marker list */
+  .marker-list { margin-top: 20px; }
+  .marker-list h3 { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #334; }
+  .marker-item { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 4px; font-size: 0.82rem; cursor: pointer; transition: background 0.1s; }
+  .marker-item:hover { background: var(--surface); }
+  .marker-item .mi-conf { font-weight: 700; min-width: 40px; text-align: right; }
+  .marker-item .mi-id { font-family: monospace; }
+
+  /* Conversation mode */
+  .conv-message { border-radius: 6px; padding: 12px; margin-bottom: 10px; border-left: 3px solid; }
+  .conv-message.role-a { border-color: #42a5f5; background: rgba(66,165,245,0.08); }
+  .conv-message.role-b { border-color: #ef5350; background: rgba(239,83,80,0.08); }
+  .conv-message .cm-role { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; color: var(--text-dim); }
+  .conv-message .cm-text { line-height: 1.7; white-space: pre-wrap; }
+
+  /* Stats bar */
+  .stats-bar { background: var(--surface); border-top: 1px solid #334; padding: 8px 24px; font-size: 0.8rem; color: var(--text-dim); display: flex; gap: 20px; align-items: center; }
+  .stats-bar .stat { display: flex; gap: 4px; }
+  .stats-bar .stat-val { color: var(--text); font-weight: 600; }
+
+  /* Placeholder */
+  .placeholder { color: var(--text-dim); font-style: italic; padding: 40px; text-align: center; }
+
+  /* Loading */
+  .loading { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--text-dim); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 6px; vertical-align: middle; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .main { grid-template-columns: 1fr; }
+    .panel-left { border-right: none; border-bottom: 1px solid #334; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><span>LeanDeep</span> Marker Playground</h1>
+  <span class="version">v5.1-LD5</span>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-mode="text">Text</div>
+  <div class="tab" data-mode="conversation">Conversation</div>
+  <div class="tab" data-mode="upload">Upload .docx / .md / .txt</div>
+</div>
+
+<div class="main">
+  <div class="panel panel-left">
+    <h2>Input</h2>
+
+    <!-- Text mode -->
+    <div id="mode-text">
+      <textarea id="input-text" placeholder="Paste text here to analyze...&#10;&#10;Example: &quot;Du bist doch immer so empfindlich. Ich habe doch gar nichts Schlimmes gesagt.&quot;"></textarea>
+    </div>
+
+    <!-- Conversation mode -->
+    <div id="mode-conversation" style="display:none;">
+      <textarea id="input-conversation" placeholder="Enter conversation (Name: text format):&#10;&#10;A: Du bist doch immer so empfindlich.&#10;B: Das stimmt nicht, ich sage nur was mich st&ouml;rt.&#10;A: Siehst du, genau das meine ich. Du verdrehst alles.&#10;B: Ich verdrehe gar nichts..."></textarea>
+    </div>
+
+    <!-- Upload mode -->
+    <div id="mode-upload" style="display:none;">
+      <div class="upload-row">
+        <button class="btn btn-secondary" onclick="document.getElementById('file-input').click()">Choose File</button>
+        <input type="file" id="file-input" accept=".txt,.md,.docx">
+        <span id="file-name" style="font-size:0.85rem; color:var(--text-dim);">No file selected</span>
+      </div>
+      <textarea id="input-upload" placeholder="File contents will appear here..." style="margin-top:10px;"></textarea>
+    </div>
+
+    <div class="controls">
+      <div class="control-row">
+        <label>Threshold:</label>
+        <input type="range" id="threshold" min="0" max="1" step="0.05" value="0.5">
+        <span class="threshold-val" id="threshold-val">0.50</span>
+      </div>
+      <div class="control-row">
+        <label>Layers:</label>
+        <div class="layer-toggles">
+          <label class="layer-toggle ato"><input type="checkbox" value="ATO" checked> ATO</label>
+          <label class="layer-toggle sem"><input type="checkbox" value="SEM" checked> SEM</label>
+          <label class="layer-toggle clu"><input type="checkbox" value="CLU" checked> CLU</label>
+          <label class="layer-toggle mema"><input type="checkbox" value="MEMA" checked> MEMA</label>
+        </div>
+      </div>
+      <div class="control-row">
+        <button class="btn btn-primary" id="btn-analyze">Analyze</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-right" id="results-panel">
+    <div class="placeholder" id="results-placeholder">Enter text and click Analyze to see results.</div>
+    <div id="results-content" style="display:none;">
+      <h2>Annotated Text</h2>
+      <div class="annotated-text" id="annotated-output"></div>
+      <div class="meta-section" id="meta-section" style="display:none;">
+        <h3>Meta Markers (CLU / MEMA)</h3>
+        <div id="meta-cards"></div>
+      </div>
+      <div class="marker-list">
+        <h3>All Detected Markers</h3>
+        <div id="marker-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="stats-bar" id="stats-bar">
+  <div class="stat">Markers: <span class="stat-val" id="stat-markers">-</span></div>
+  <div class="stat">Time: <span class="stat-val" id="stat-time">-</span></div>
+  <div class="stat">Characters: <span class="stat-val" id="stat-chars">-</span></div>
+  <div class="stat">Layers: <span class="stat-val" id="stat-layers">-</span></div>
+</div>
+
+<div class="tooltip" id="tooltip" style="display:none;"></div>
+
+<script>
+(function() {
+  'use strict';
+
+  // --- State ---
+  let currentMode = 'text';
+  let debounceTimer = null;
+  let lastResponse = null;
+
+  // --- DOM refs ---
+  const $inputText = document.getElementById('input-text');
+  const $inputConv = document.getElementById('input-conversation');
+  const $inputUpload = document.getElementById('input-upload');
+  const $threshold = document.getElementById('threshold');
+  const $thresholdVal = document.getElementById('threshold-val');
+  const $btnAnalyze = document.getElementById('btn-analyze');
+  const $annotatedOutput = document.getElementById('annotated-output');
+  const $metaSection = document.getElementById('meta-section');
+  const $metaCards = document.getElementById('meta-cards');
+  const $markerList = document.getElementById('marker-list');
+  const $tooltip = document.getElementById('tooltip');
+  const $resultsPlaceholder = document.getElementById('results-placeholder');
+  const $resultsContent = document.getElementById('results-content');
+  const $fileInput = document.getElementById('file-input');
+  const $fileName = document.getElementById('file-name');
+
+  // --- Layer colors ---
+  const LAYER_PRIORITY = { MEMA: 4, CLU: 3, SEM: 2, ATO: 1 };
+
+  // --- Tab switching ---
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentMode = tab.dataset.mode;
+      document.getElementById('mode-text').style.display = currentMode === 'text' ? '' : 'none';
+      document.getElementById('mode-conversation').style.display = currentMode === 'conversation' ? '' : 'none';
+      document.getElementById('mode-upload').style.display = currentMode === 'upload' ? '' : 'none';
+    });
+  });
+
+  // --- Threshold slider ---
+  $threshold.addEventListener('input', () => {
+    $thresholdVal.textContent = parseFloat($threshold.value).toFixed(2);
+  });
+
+  // --- File upload ---
+  $fileInput.addEventListener('change', async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    $fileName.textContent = file.name;
+
+    if (file.name.endsWith('.txt') || file.name.endsWith('.md')) {
+      const reader = new FileReader();
+      reader.onload = () => { $inputUpload.value = reader.result; };
+      reader.readAsText(file);
+    } else if (file.name.endsWith('.docx')) {
+      const formData = new FormData();
+      formData.append('file', file);
+      try {
+        const resp = await fetch('/v1/upload', { method: 'POST', body: formData });
+        if (!resp.ok) throw new Error(await resp.text());
+        const data = await resp.json();
+        $inputUpload.value = data.text;
+      } catch (err) {
+        $inputUpload.value = 'Error extracting .docx: ' + err.message;
+      }
+    }
+  });
+
+  // --- Get active input text ---
+  function getInputText() {
+    if (currentMode === 'text') return $inputText.value;
+    if (currentMode === 'conversation') return $inputConv.value;
+    if (currentMode === 'upload') return $inputUpload.value;
+    return '';
+  }
+
+  function getSelectedLayers() {
+    return Array.from(document.querySelectorAll('.layer-toggle input:checked')).map(cb => cb.value);
+  }
+
+  // --- Parse conversation text ---
+  function parseConversation(text) {
+    const lines = text.split('\n').filter(l => l.trim());
+    const messages = [];
+    const rolePattern = /^([A-Za-z0-9_]+)\s*:\s*(.+)/;
+
+    // Try Name: text pattern first
+    let matched = 0;
+    for (const line of lines) {
+      const m = line.match(rolePattern);
+      if (m) { matched++; messages.push({ role: m[1], text: m[2] }); }
+    }
+
+    if (matched > 0) return messages;
+
+    // Fallback: double-newline split, alternating A/B
+    const blocks = text.split(/\n\s*\n/).filter(b => b.trim());
+    return blocks.map((b, i) => ({ role: i % 2 === 0 ? 'A' : 'B', text: b.trim() }));
+  }
+
+  // --- API calls ---
+  async function analyzeText(text, layers, threshold) {
+    const resp = await fetch('/v1/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, layers, threshold: parseFloat(threshold) }),
+    });
+    if (!resp.ok) throw new Error(await resp.text());
+    return resp.json();
+  }
+
+  async function analyzeConversation(messages, layers, threshold) {
+    const resp = await fetch('/v1/analyze/conversation', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages, layers, threshold: parseFloat(threshold) }),
+    });
+    if (!resp.ok) throw new Error(await resp.text());
+    return resp.json();
+  }
+
+  // --- Span expansion to clause boundaries ---
+  function expandSpan(text, start, end) {
+    const clauseBoundary = /[,.\;\!\?\n]/;
+    const maxExpand = 120;
+
+    let eStart = start;
+    let i = start - 1;
+    while (i >= 0 && (start - i) <= maxExpand) {
+      if (clauseBoundary.test(text[i])) { eStart = i + 1; break; }
+      eStart = i;
+      i--;
+    }
+
+    let eEnd = end;
+    i = end;
+    while (i < text.length && (i - end) <= maxExpand) {
+      if (clauseBoundary.test(text[i])) { eEnd = i; break; }
+      eEnd = i + 1;
+      i++;
+    }
+
+    // Trim whitespace from expanded boundaries
+    while (eStart < start && text[eStart] === ' ') eStart++;
+    while (eEnd > end && text[eEnd - 1] === ' ') eEnd--;
+
+    return [eStart, eEnd];
+  }
+
+  // --- Build annotated HTML ---
+  function buildAnnotatedHTML(text, markers) {
+    // Collect all spans from ATO/SEM markers (CLU/MEMA have no text spans)
+    const spans = [];
+    for (const marker of markers) {
+      if (marker.layer === 'CLU' || marker.layer === 'MEMA') continue;
+      if (!marker.matches) continue;
+      for (const match of marker.matches) {
+        const [s, e] = match.span;
+        const [es, ee] = expandSpan(text, s, e);
+        spans.push({
+          start: es, end: ee,
+          origStart: s, origEnd: e,
+          marker,
+          matchedText: match.matched_text,
+        });
+      }
+    }
+
+    if (spans.length === 0) return escapeHTML(text);
+
+    // Build character-level marker coverage map
+    const charMarkers = new Array(text.length).fill(null).map(() => []);
+    for (const sp of spans) {
+      for (let i = sp.start; i < Math.min(sp.end, text.length); i++) {
+        charMarkers[i].push(sp);
+      }
+    }
+
+    // Build runs of characters with the same marker set
+    let html = '';
+    let i = 0;
+    while (i < text.length) {
+      const markersHere = charMarkers[i];
+      if (markersHere.length === 0) {
+        // Unmarked character — collect run
+        let j = i;
+        while (j < text.length && charMarkers[j].length === 0) j++;
+        html += escapeHTML(text.slice(i, j));
+        i = j;
+      } else {
+        // Find highest-priority layer span
+        const best = markersHere.reduce((a, b) =>
+          (LAYER_PRIORITY[b.marker.layer] || 0) > (LAYER_PRIORITY[a.marker.layer] || 0) ? b : a
+        );
+        const layer = best.marker.layer;
+        // Collect run with same primary marker
+        let j = i;
+        while (j < text.length && charMarkers[j].length > 0) {
+          const bestJ = charMarkers[j].reduce((a, b) =>
+            (LAYER_PRIORITY[b.marker.layer] || 0) > (LAYER_PRIORITY[a.marker.layer] || 0) ? b : a
+          );
+          if (bestJ.marker.id !== best.marker.id) break;
+          j++;
+        }
+
+        // Gather all marker data for this span (for tooltip)
+        const allMarkersInSpan = new Map();
+        for (let k = i; k < j; k++) {
+          for (const sp of charMarkers[k]) {
+            allMarkersInSpan.set(sp.marker.id, sp);
+          }
+        }
+        const dataMarkers = JSON.stringify(
+          Array.from(allMarkersInSpan.values()).map(sp => ({
+            id: sp.marker.id,
+            layer: sp.marker.layer,
+            confidence: sp.marker.confidence,
+            description: sp.marker.description,
+            family: sp.marker.family,
+            matchedText: sp.matchedText,
+          }))
+        );
+
+        html += `<span class="marker-span layer-${layer}" data-markers='${dataMarkers.replace(/'/g, "&#39;")}'>${escapeHTML(text.slice(i, j))}</span>`;
+        i = j;
+      }
+    }
+    return html;
+  }
+
+  function escapeHTML(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  // --- Build conversation HTML ---
+  function buildConversationHTML(messages, response) {
+    let html = '';
+    const markersByMsg = {};
+
+    for (const m of response.markers) {
+      if (m.message_indices) {
+        for (const idx of m.message_indices) {
+          (markersByMsg[idx] = markersByMsg[idx] || []).push(m);
+        }
+      }
+    }
+
+    for (let i = 0; i < messages.length; i++) {
+      const msg = messages[i];
+      const roleClass = i % 2 === 0 ? 'role-a' : 'role-b';
+      const msgMarkers = markersByMsg[i] || [];
+
+      // For conversation, we don't have text spans (the API returns message_indices not char spans)
+      // Render the text with any ATO/SEM markers that have matches
+      const atoSemMarkers = msgMarkers.filter(m => m.layer === 'ATO' || m.layer === 'SEM');
+      let textHTML = escapeHTML(msg.text);
+
+      // We can try to show markers inline if there are span matches
+      // But conversation API returns ConversationMarker without matches
+      // So just show plain text with marker badges
+
+      const badges = msgMarkers
+        .filter(m => m.layer === 'ATO' || m.layer === 'SEM')
+        .slice(0, 5)
+        .map(m => `<span class="tt-badge ${m.layer}" title="${escapeHTML(m.description)}">${m.id.replace(/^(ATO|SEM)_/, '')}</span>`)
+        .join(' ');
+
+      html += `<div class="conv-message ${roleClass}">
+        <div class="cm-role">${escapeHTML(msg.role)} ${badges}</div>
+        <div class="cm-text">${textHTML}</div>
+      </div>`;
+    }
+    return html;
+  }
+
+  // --- Render meta cards (CLU/MEMA) ---
+  function renderMetaCards(markers) {
+    const metas = markers.filter(m => m.layer === 'CLU' || m.layer === 'MEMA');
+    if (metas.length === 0) {
+      $metaSection.style.display = 'none';
+      return;
+    }
+    $metaSection.style.display = '';
+    $metaCards.innerHTML = metas.map(m => `
+      <div class="meta-card layer-${m.layer}">
+        <div class="mc-header">
+          <span class="mc-id">${escapeHTML(m.id)}</span>
+          <span class="mc-conf">${(m.confidence * 100).toFixed(0)}%</span>
+        </div>
+        <div class="mc-desc">${escapeHTML(m.description || '')}</div>
+        ${m.family ? `<div class="mc-family">Family: ${escapeHTML(m.family)}${m.multiplier ? ` (${m.multiplier}x)` : ''}</div>` : ''}
+        ${m.message_indices && m.message_indices.length ? `<div class="mc-family">Messages: ${m.message_indices.join(', ')}</div>` : ''}
+      </div>
+    `).join('');
+  }
+
+  // --- Render marker list ---
+  function renderMarkerList(markers) {
+    $markerList.innerHTML = markers.map(m => {
+      const pct = (m.confidence * 100).toFixed(0);
+      const layerClass = `layer-${m.layer}`;
+      return `<div class="marker-item" data-marker-id="${escapeHTML(m.id)}">
+        <span class="mi-conf" style="color: ${confColor(m.confidence)}">${pct}%</span>
+        <span class="tt-badge ${m.layer}">${m.layer}</span>
+        <span class="mi-id">${escapeHTML(m.id)}</span>
+      </div>`;
+    }).join('');
+  }
+
+  function confColor(c) {
+    if (c >= 0.8) return '#4caf50';
+    if (c >= 0.6) return '#ff9800';
+    return '#f44336';
+  }
+
+  // --- Update stats ---
+  function updateStats(meta) {
+    document.getElementById('stat-markers').textContent = meta.markers_detected;
+    document.getElementById('stat-time').textContent = meta.processing_ms.toFixed(1) + 'ms';
+    document.getElementById('stat-chars').textContent = meta.text_length;
+    document.getElementById('stat-layers').textContent = meta.layers_scanned.join(', ');
+  }
+
+  // --- Tooltip ---
+  document.addEventListener('mouseover', (e) => {
+    const span = e.target.closest('.marker-span');
+    if (!span) { $tooltip.style.display = 'none'; return; }
+
+    try {
+      const markers = JSON.parse(span.dataset.markers);
+      if (!markers.length) return;
+
+      let html = markers.map(m => `
+        <div class="tt-id">${escapeHTML(m.id)}</div>
+        <div class="tt-row"><span class="tt-label">Layer:</span> <span class="tt-badge ${m.layer}">${m.layer}</span></div>
+        <div class="tt-row"><span class="tt-label">Confidence:</span> ${(m.confidence * 100).toFixed(0)}%</div>
+        ${m.description ? `<div class="tt-row"><span class="tt-label">Description:</span> ${escapeHTML(m.description)}</div>` : ''}
+        ${m.family ? `<div class="tt-row"><span class="tt-label">Family:</span> ${escapeHTML(m.family)}</div>` : ''}
+        ${m.matchedText ? `<div class="tt-match">"${escapeHTML(m.matchedText)}"</div>` : ''}
+      `).join('<hr style="border:none;border-top:1px solid #334;margin:6px 0;">');
+
+      $tooltip.innerHTML = html;
+      $tooltip.style.display = 'block';
+    } catch (err) { /* ignore parse errors */ }
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if ($tooltip.style.display === 'block') {
+      const x = Math.min(e.clientX + 12, window.innerWidth - 400);
+      const y = Math.min(e.clientY + 12, window.innerHeight - 200);
+      $tooltip.style.left = x + 'px';
+      $tooltip.style.top = y + 'px';
+    }
+  });
+
+  document.addEventListener('mouseout', (e) => {
+    if (!e.target.closest('.marker-span')) $tooltip.style.display = 'none';
+  });
+
+  // --- Main analyze function ---
+  async function runAnalysis() {
+    const text = getInputText().trim();
+    if (!text) return;
+
+    const layers = getSelectedLayers();
+    const threshold = $threshold.value;
+
+    $btnAnalyze.disabled = true;
+    $btnAnalyze.innerHTML = '<span class="loading"></span>Analyzing...';
+
+    try {
+      let response;
+      if (currentMode === 'conversation') {
+        const messages = parseConversation(text);
+        if (messages.length === 0) {
+          $annotatedOutput.innerHTML = '<div class="placeholder">Could not parse conversation. Use "Name: text" format.</div>';
+          return;
+        }
+        response = await analyzeConversation(messages, layers, threshold);
+        lastResponse = response;
+
+        $resultsPlaceholder.style.display = 'none';
+        $resultsContent.style.display = '';
+
+        $annotatedOutput.innerHTML = buildConversationHTML(messages, response);
+        renderMetaCards(response.markers);
+        renderMarkerList(response.markers);
+        updateStats(response.meta);
+      } else {
+        response = await analyzeText(text, layers, threshold);
+        lastResponse = response;
+
+        $resultsPlaceholder.style.display = 'none';
+        $resultsContent.style.display = '';
+
+        $annotatedOutput.innerHTML = buildAnnotatedHTML(text, response.markers);
+        renderMetaCards(response.markers);
+        renderMarkerList(response.markers);
+        updateStats(response.meta);
+      }
+    } catch (err) {
+      $annotatedOutput.innerHTML = `<div class="placeholder" style="color:var(--accent);">Error: ${escapeHTML(err.message)}</div>`;
+    } finally {
+      $btnAnalyze.disabled = false;
+      $btnAnalyze.textContent = 'Analyze';
+    }
+  }
+
+  // --- Event listeners ---
+  $btnAnalyze.addEventListener('click', runAnalysis);
+
+  // Real-time analysis with 300ms debounce
+  function debounceAnalyze() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      if (getInputText().trim().length > 3) runAnalysis();
+    }, 300);
+  }
+
+  $inputText.addEventListener('input', debounceAnalyze);
+  $inputConv.addEventListener('input', debounceAnalyze);
+  $inputUpload.addEventListener('input', debounceAnalyze);
+
+  // Keyboard shortcut: Ctrl/Cmd+Enter to analyze
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      runAnalysis();
+    }
+  });
+
+})();
+</script>
+</body>
+</html>

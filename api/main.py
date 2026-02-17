@@ -14,11 +14,14 @@ Endpoints:
 
 from __future__ import annotations
 
+import io
 import time
 from contextlib import asynccontextmanager
+from pathlib import Path
 
-from fastapi import Depends, FastAPI, HTTPException, Query
+from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
 
 from .auth import load_api_keys, verify_api_key
 from .config import settings
@@ -96,6 +99,8 @@ async def analyze_text(
             layer=Layer(d.layer),
             confidence=d.confidence,
             description=d.description,
+            family=d.family,
+            multiplier=d.multiplier,
             matches=[
                 PatternMatch(
                     pattern=m.pattern,
@@ -287,3 +292,45 @@ async def health():
         markers_loaded=len(engine.markers),
         uptime_seconds=round(time.time() - _start_time, 1),
     )
+
+
+# ---------------------------------------------------------------------------
+# GET /playground — Visual Playground UI
+# ---------------------------------------------------------------------------
+
+@app.get("/playground", response_class=HTMLResponse)
+async def playground():
+    """Serve the interactive marker playground."""
+    html_path = Path(__file__).parent / "static" / "playground.html"
+    return HTMLResponse(content=html_path.read_text(encoding="utf-8"))
+
+
+# ---------------------------------------------------------------------------
+# POST /v1/upload — Document upload (extracts text from .docx/.txt/.md)
+# ---------------------------------------------------------------------------
+
+@app.post("/v1/upload")
+async def upload_document(file: UploadFile = File(...)):
+    """Extract text from uploaded document (.txt, .md, .docx)."""
+    name = file.filename or ""
+    content = await file.read()
+
+    if name.endswith(".txt") or name.endswith(".md"):
+        text = content.decode("utf-8", errors="replace")
+    elif name.endswith(".docx"):
+        try:
+            from docx import Document
+        except ImportError:
+            raise HTTPException(
+                status_code=500,
+                detail="python-docx not installed. Run: pip install python-docx",
+            )
+        doc = Document(io.BytesIO(content))
+        text = "\n".join(p.text for p in doc.paragraphs)
+    else:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unsupported file type: {name}. Use .txt, .md, or .docx",
+        )
+
+    return {"filename": name, "text": text, "length": len(text)}
