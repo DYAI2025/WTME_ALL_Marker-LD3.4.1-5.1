@@ -1,0 +1,30 @@
+id: ATO_EMO_PUNCT_INTENSITY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Interpunktions-Intensität (!!!, ???, ...).
+frame:
+  signal:
+  - '!!'
+  - ??
+  - '...'
+  concept: punctuation_intensity
+  pragmatics: prosody_text
+  narrative: modifier
+patterns:
+- type: regex
+  value: (!{2,}|\?{2,}|\?!|!\?|\.{3,})
+examples:
+  positive:
+  - Was soll das???
+  - Nein!!!
+  - Oh man...
+  negative:
+  - Ok.
+  - Ja.
+tags:
+- emotion
+- intensity
+- modifier
+rating: 1

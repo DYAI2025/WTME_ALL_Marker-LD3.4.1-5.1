@@ -41,7 +41,7 @@ class ConversationRequest(BaseModel):
     messages: list[Message] = Field(..., min_length=1, max_length=200)
     language: Language = Language.DE
     layers: list[Layer] = Field(
-        default=[Layer.ATO, Layer.SEM, Layer.CLU],
+        default=[Layer.ATO, Layer.SEM, Layer.CLU, Layer.MEMA],
         description="Layers to detect",
     )
     threshold: float = Field(default=0.5, ge=0.0, le=1.0)

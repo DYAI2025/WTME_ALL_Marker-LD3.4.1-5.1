@@ -1,0 +1,33 @@
+id: ATO_EMO_LEX_LOVE_AFFECTION
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Liebe/Zuneigung/Nähe.'
+frame:
+  signal:
+  - love
+  - affection
+  concept: 'positive valence: love/attachment'
+  pragmatics: bindung/naehe
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(liebe\w*|verliebt\w*|zuneigung\w*|ich\s+mag\s+dich|hab\s+dich\s+gern)\b
+- type: regex
+  value: (?i)\b(umarm\w*|kusch\w*|wärme|naehe|geborgen\w*)\b
+- type: regex
+  value: (?i)\b(ich\s+vermiss\w*\s+dich|du\s+fehlst\s+mir)\b
+examples:
+  positive:
+  - Ich hab dich gern.
+  - Du fehlst mir.
+  - Ich liebe dich.
+  negative:
+  - Ich hasse dich.
+  - Mir ist das egal.
+tags:
+- emotion
+- lexicon
+- love
+rating: 1

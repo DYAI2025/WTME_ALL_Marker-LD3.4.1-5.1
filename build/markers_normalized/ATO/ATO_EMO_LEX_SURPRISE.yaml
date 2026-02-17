@@ -1,0 +1,30 @@
+id: ATO_EMO_LEX_SURPRISE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Überraschung/Erstaunen.'
+frame:
+  signal:
+  - surprise
+  - wow
+  concept: 'neutral/positive: surprise'
+  pragmatics: unerwartet
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(überrascht\w*|ueberrascht\w*|erstaunt\w*|verblüfft\w*|verbluefft\w*)\b
+- type: regex
+  value: (?i)\b(wow|echt\?|krass|nicht\s+zu\s+fassen|hätte\s+ich\s+nicht\s+gedacht)\b
+examples:
+  positive:
+  - Wow, das überrascht mich.
+  - Damit hätte ich nicht gerechnet.
+  negative:
+  - Das war erwartbar.
+  - War klar.
+tags:
+- emotion
+- lexicon
+- surprise
+rating: 1

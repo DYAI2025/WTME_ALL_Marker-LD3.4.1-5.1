@@ -1,0 +1,33 @@
+id: ATO_NEGATION_TOKEN
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Negationsmarker (Token/Phrasen).
+frame:
+  signal:
+  - nicht
+  - kein
+  - nie
+  concept: negation
+  pragmatics: scope negation
+  narrative: modifier
+patterns:
+- type: regex
+  value: (?i)\b(nicht|nie|niemals|nix|nichts|ohne|weder)\b
+- type: regex
+  value: (?i)\b(kein(?:e|en|em|er)?|keineswegs)\b
+- type: regex
+  value: (?i)\b(überhaupt\s+nicht|gar\s+nicht|auf\s+keinen\s+fall|in\s+keinster\s+weise)\b
+examples:
+  positive:
+  - Ich bin nicht traurig.
+  - Gar nicht.
+  - Nie wieder.
+  negative:
+  - Ich bin traurig.
+  - Ich bin froh.
+tags:
+- negation
+- modifier
+rating: 1

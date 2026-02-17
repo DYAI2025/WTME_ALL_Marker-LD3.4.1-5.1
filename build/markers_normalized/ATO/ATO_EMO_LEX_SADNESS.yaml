@@ -1,0 +1,35 @@
+id: ATO_EMO_LEX_SADNESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Trauer/Niedergeschlagenheit/Weinen.'
+frame:
+  signal:
+  - sadness
+  - grief
+  - trauer
+  - traurig
+  concept: 'negative valence: sadness'
+  pragmatics: verlust/bedauern
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(traurig\w*|trauer\w*|kummer\w*|niedergeschlagen\w*|melanchol\w*)\b
+- type: regex
+  value: (?i)\b(weinen|geweint|tränen|traenen|schluchz\w*)\b
+- type: regex
+  value: (?i)\b(vermiss\w*|sehnsucht\w*|verlust\w*|tut\s+mir\s+leid)\b
+examples:
+  positive:
+  - Ich bin traurig.
+  - Ich vermisse dich.
+  - Ich habe geweint.
+  negative:
+  - Mir geht es gut.
+  - Ich bin entspannt.
+tags:
+- emotion
+- lexicon
+- sadness
+rating: 1

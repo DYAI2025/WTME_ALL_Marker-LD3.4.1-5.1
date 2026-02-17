@@ -1,0 +1,35 @@
+id: ATO_EMO_LEX_FEAR_ANXIETY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Angst/Panik/Sorge.'
+frame:
+  signal:
+  - fear
+  - anxiety
+  - angst
+  - panik
+  concept: 'negative valence: fear/anxiety'
+  pragmatics: bedrohung/unsicherheit
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(angst\w*|panik\w*|furcht\w*|schiss|bammel)\b
+- type: regex
+  value: (?i)\b(ängstlich\w*|aengstlich\w*|nervös\w*|nervoes\w*|besorgt\w*|beunruhigt\w*)\b
+- type: regex
+  value: (?i)\b(sorge\w*|ich\s+fürchte\w*|ich\s+habe\s+angst)\b
+examples:
+  positive:
+  - Ich habe Angst.
+  - Ich bin nervös.
+  - Ich kriege Panik.
+  negative:
+  - Ich fühle mich sicher.
+  - Alles ist entspannt.
+tags:
+- emotion
+- lexicon
+- fear
+rating: 1

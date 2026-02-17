@@ -1,0 +1,34 @@
+id: ATO_EMO_LEX_JOY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Freude/Glück/Begeisterung.'
+frame:
+  signal:
+  - joy
+  - happiness
+  - freude
+  concept: 'positive valence: joy'
+  pragmatics: bindung/belohnung
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(freude\w*|froh\w*|glücklich\w*|gluecklich\w*|happy|yay|super)\b
+- type: regex
+  value: (?i)\b(begeistert\w*|toll|mega|hammer|geil)\b
+- type: regex
+  value: (?i)\b(ich\s+freue\s+mich|das\s+macht\s+mich\s+glücklich|das\s+macht\s+mich\s+gluecklich)\b
+examples:
+  positive:
+  - Ich freue mich.
+  - Ich bin glücklich.
+  - Yay!
+  negative:
+  - Das ist schlimm.
+  - Ich bin traurig.
+tags:
+- emotion
+- lexicon
+- joy
+rating: 1

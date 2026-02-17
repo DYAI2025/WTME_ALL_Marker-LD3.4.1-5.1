@@ -1,0 +1,27 @@
+id: ATO_HEARSAY_CUE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Hörensagen/Attributions-Cues (angeblich, laut X, wie X sagt).
+frame:
+  signal:
+  - angeblich
+  - laut
+  concept: hearsay
+  pragmatics: uncertain attribution
+  narrative: context_guard
+patterns:
+- type: regex
+  value: (?i)\b(angeblich|heißt\s+es|heisst\s+es|gerücht\w*|geruecht\w*|laut\s+ihm|laut\s+ihr|wie\s+er\s+sagt|wie\s+sie\s+sagt)\b
+examples:
+  positive:
+  - Angeblich war er wütend.
+  - Laut ihr ist er traurig.
+  negative:
+  - Ich bin wütend.
+  - Ich bin traurig.
+tags:
+- reported_speech
+- guard
+rating: 1

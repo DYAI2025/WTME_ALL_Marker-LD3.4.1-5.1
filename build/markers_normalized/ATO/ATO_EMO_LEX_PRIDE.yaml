@@ -1,0 +1,28 @@
+id: ATO_EMO_LEX_PRIDE
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Stolz/Leistung/Zufriedenheit.'
+frame:
+  signal:
+  - pride
+  - stolz
+  concept: 'positive valence: pride'
+  pragmatics: selbstwirksamkeit
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(stolz\w*|geschafft|erreicht|ich\s+bin\s+so\s+stolz|ich\s+bin\s+zufrieden\s+mit\s+mir)\b
+examples:
+  positive:
+  - Ich bin stolz auf mich.
+  - Ich hab das geschafft.
+  negative:
+  - Ich fühle mich schlecht.
+  - Das war ein Fehler.
+tags:
+- emotion
+- lexicon
+- pride
+rating: 1

@@ -1,0 +1,28 @@
+id: ATO_EMO_LEX_ENVY_JEALOUSY
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Neid/Eifersucht.'
+frame:
+  signal:
+  - envy
+  - jealousy
+  concept: 'negative valence: social comparison'
+  pragmatics: besitz/konkurrenz
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(neid\w*|neidisch\w*|eifersucht\w*|eifersüchtig\w*|eifersuechtig\w*)\b
+examples:
+  positive:
+  - Ich bin eifersüchtig.
+  - Da bin ich neidisch.
+  negative:
+  - Ich gönne es dir.
+  - Freut mich für dich.
+tags:
+- emotion
+- lexicon
+- envy_jealousy
+rating: 1

@@ -1,0 +1,32 @@
+id: ATO_EMO_LEX_SHAME_GUILT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Scham/Schuld/Reue/Peinlichkeit.'
+frame:
+  signal:
+  - shame
+  - guilt
+  - schuld
+  concept: 'negative valence: shame/guilt'
+  pragmatics: selbstbewertung
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(scham\w*|ich\s+schäme\s+mich|ich\s+schaeme\s+mich|peinlich\w*|beschämt\w*|beschaemt\w*)\b
+- type: regex
+  value: (?i)\b(schuld\w*|schuldig\w*|schlechtes\s+gewissen|bereu\w*|reue\w*)\b
+examples:
+  positive:
+  - Das ist mir peinlich.
+  - Ich habe ein schlechtes Gewissen.
+  - Ich bereue das.
+  negative:
+  - Ich stehe dazu neutral.
+  - Das ist mir egal.
+tags:
+- emotion
+- lexicon
+- shame_guilt
+rating: 1

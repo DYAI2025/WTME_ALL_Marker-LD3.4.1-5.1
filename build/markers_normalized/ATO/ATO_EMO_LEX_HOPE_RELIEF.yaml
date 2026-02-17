@@ -1,0 +1,32 @@
+id: ATO_EMO_LEX_HOPE_RELIEF
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Hoffnung/Erleichterung/Zuversicht.'
+frame:
+  signal:
+  - hope
+  - relief
+  concept: 'positive valence: hope/relief'
+  pragmatics: spannung->loesung
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(hoffnung\w*|ich\s+hoffe\w*|zuversicht\w*|wird\s+schon)\b
+- type: regex
+  value: (?i)\b(erleichtert\w*|endlich|zum\s+glück|zum\s+glueck|gott\s+sei\s+dank)\b
+examples:
+  positive:
+  - Ich bin erleichtert.
+  - Zum Glück ist es vorbei.
+  - Ich hoffe, das klappt.
+  negative:
+  - Es ist aussichtslos.
+  - Ich gebe auf.
+tags:
+- emotion
+- lexicon
+- hope
+- relief
+rating: 1

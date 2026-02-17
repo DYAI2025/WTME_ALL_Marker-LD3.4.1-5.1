@@ -1,0 +1,28 @@
+id: ATO_EMO_INTENSIFIER_HIGH
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Intensivierer hoch (boost).
+frame:
+  signal:
+  - sehr
+  - extrem
+  - total
+  concept: intensity_high
+  pragmatics: verstaerkung
+  narrative: modifier
+patterns:
+- type: regex
+  value: (?i)\b(sehr|extrem|total|komplett|absolut|unfassbar|wahnsinnig|mega|ultra|krass|heftig|richtig|voll)\b
+examples:
+  positive:
+  - Das nervt extrem.
+  - Ich bin total traurig.
+  negative:
+  - Das ist etwas schade.
+tags:
+- emotion
+- intensity
+- modifier
+rating: 1

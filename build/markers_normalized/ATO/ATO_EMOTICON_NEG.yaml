@@ -1,0 +1,29 @@
+id: ATO_EMOTICON_NEG
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ASCII-Emoticons negativ.
+frame:
+  signal:
+  - :(
+  - T_T
+  - :'(
+  concept: emoticon_negative
+  pragmatics: affect
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (:-\(|:\(|:'\(|T_T|D:|>:\(|:-/|:/)
+examples:
+  positive:
+  - Oh man :(
+  - T_T
+  - Warum nur :'(
+  negative:
+  - Alles gut :)
+  - Yay :D
+tags:
+- emotion
+- emoticon
+rating: 1

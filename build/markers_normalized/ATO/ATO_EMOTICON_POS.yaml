@@ -1,0 +1,29 @@
+id: ATO_EMOTICON_POS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: ASCII-Emoticons positiv.
+frame:
+  signal:
+  - :)
+  - :D
+  - <3
+  concept: emoticon_positive
+  pragmatics: affect
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (:-\)|:\)|:D|xD|<3)
+examples:
+  positive:
+  - Haha :D
+  - Danke <3
+  - Ok :)
+  negative:
+  - Oh nein :(
+  - Mist...
+tags:
+- emotion
+- emoticon
+rating: 1

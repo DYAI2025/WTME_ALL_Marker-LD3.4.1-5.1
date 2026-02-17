@@ -1,0 +1,30 @@
+id: ATO_REPORTED_SPEECH_VERB
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Verben des Sagens/Schreibens (reported speech cue).
+frame:
+  signal:
+  - sagte
+  - meinte
+  - schrieb
+  concept: reported_speech
+  pragmatics: attribution
+  narrative: context_guard
+patterns:
+- type: regex
+  value: (?i)\b(sagte|meinte|schrieb|textete|postete|antwortete|fragte|rief|flüsterte|fluesterte|erklärte|behauptete|gestand|gab\s+zu)\b
+- type: regex
+  value: (?i)\b(er\s+so\s*:|sie\s+so\s*:|ich\s+so\s*:)\b
+examples:
+  positive:
+  - 'Er sagte: "Ich bin traurig."'
+  - Sie meinte, ich sei wütend.
+  negative:
+  - Ich bin traurig.
+  - Ich fühle mich wütend.
+tags:
+- reported_speech
+- guard
+rating: 1

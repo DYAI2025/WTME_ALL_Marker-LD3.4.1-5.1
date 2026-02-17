@@ -4,12 +4,15 @@ LeanDeep 5.0 Marker Detection Engine.
 Implements the four-layer hierarchy (ATO → SEM → CLU → MEMA) with:
 - ATO: Regex pattern matching against input text
 - SEM: Compositional activation (1 ATO + context OR ≥2 ATOs)
+      + DRA guards: negation, reported speech, intensity modifiers
 - CLU: Windowed aggregation over SEMs with family multipliers
 - MEMA: Meta-level diagnosis via composed_of / detect_class
 
-The engine follows the referential context-semantics paradigm:
-a single ATO can activate a SEM when the system context (active CLUs/MEMAs)
-provides the "virtual second ATO" through contextual reference.
+DRA Mode (Emotions-ATO-Regex-Lexikon):
+  ATO_EMO_LEX_* = Evidence (broad, recall-strong)
+  ATO_NEGATION_TOKEN = Context filter (SEM/CLU can downweight/block)
+  ATO_REPORTED_SPEECH_VERB / ATO_QUOTE_MARK / ATO_HEARSAY_CUE = Attribution guard
+  ATO_EMO_INTENSIFIER_HIGH/LOW = Modifiers (boost/dampen, never trigger alone)
 """
 
 from __future__ import annotations
@@ -142,6 +145,59 @@ class MarkerEngine:
 
         return False
 
+    # -----------------------------------------------------------------------
+    # DRA Guard IDs and emotion marker prefixes
+    # -----------------------------------------------------------------------
+    _NEGATION_ID = "ATO_NEGATION_TOKEN"
+    _REPORTED_SPEECH_IDS = {"ATO_REPORTED_SPEECH_VERB", "ATO_QUOTE_MARK", "ATO_HEARSAY_CUE"}
+    _INTENSITY_HIGH_ID = "ATO_EMO_INTENSIFIER_HIGH"
+    _INTENSITY_LOW_ID = "ATO_EMO_INTENSIFIER_LOW"
+    _PUNCT_INTENSITY_ID = "ATO_EMO_PUNCT_INTENSITY"
+    _EMO_LEX_PREFIX = "ATO_EMO_LEX_"
+
+    def _is_emotion_ato(self, marker_id: str) -> bool:
+        """Check if an ATO is an emotion lexicon marker."""
+        return marker_id.startswith(self._EMO_LEX_PREFIX)
+
+    def _apply_dra_guards(
+        self, text: str, ato_detections: list[Detection]
+    ) -> dict[str, float]:
+        """
+        Compute DRA guard modifiers for SEM emotion confidence.
+
+        Returns a dict of modifier signals:
+          'negation': -0.3 if negation token present near emotion
+          'reported_speech': -0.2 if reported speech cue without self-report
+          'intensity_high': +0.15 if high intensifier present
+          'intensity_low': -0.1 if low intensifier present
+          'punct_intensity': +0.1 if punctuation intensity present
+        """
+        active_ids = {d.marker_id for d in ato_detections}
+        modifiers: dict[str, float] = {}
+
+        # Negation guard: if ATO_NEGATION_TOKEN active → downweight emotion SEMs
+        if self._NEGATION_ID in active_ids:
+            modifiers["negation"] = -0.3
+
+        # Reported speech guard: if speech verbs / quotes active without "ich" self-report
+        if active_ids & self._REPORTED_SPEECH_IDS:
+            # Check if first-person self-report is present (ich fühle, ich bin, mir)
+            has_self_report = bool(re.search(
+                r"(?i)\b(ich\s+(bin|fühle|fuehle|habe|hab|war|werde|merke|spüre|spuere))\b", text
+            ))
+            if not has_self_report:
+                modifiers["reported_speech"] = -0.2
+
+        # Intensity modifiers
+        if self._INTENSITY_HIGH_ID in active_ids:
+            modifiers["intensity_high"] = 0.15
+        if self._INTENSITY_LOW_ID in active_ids:
+            modifiers["intensity_low"] = -0.1
+        if self._PUNCT_INTENSITY_ID in active_ids:
+            modifiers["punct_intensity"] = 0.1
+
+        return modifiers
+
     def _parse_marker(self, marker_id: str, data: dict) -> MarkerDef:
         """Parse a marker from registry data, compiling regex patterns."""
         patterns = []
@@ -240,7 +296,7 @@ class MarkerEngine:
         self, text: str, ato_detections: list[Detection], threshold: float = 0.5
     ) -> list[Detection]:
         """
-        Detect semantic markers via composition rules.
+        Detect semantic markers via composition rules + DRA guards.
 
         LD 5.0 paradigm: SEM = ATO + context.
         A SEM activates when:
@@ -248,22 +304,42 @@ class MarkerEngine:
           Path B: Single ATO references active system context
           Path C: Accumulation of same ATO type
           Path D: Spontaneous emergence via detect_class (omission)
+
+        DRA Guards applied to emotion SEMs:
+          - Negation token nearby → confidence -0.3
+          - Reported speech without self-report → confidence -0.2
+          - High intensifier → confidence +0.15
+          - Low intensifier → confidence -0.1
         """
         active_atos = {d.marker_id for d in ato_detections}
+
+        # Pre-compute DRA guard modifiers for this text
+        dra_modifiers = self._apply_dra_guards(text, ato_detections)
+
+        # Check if any emotion ATOs fired (for guard application)
+        has_emotion_atos = any(self._is_emotion_ato(a) for a in active_atos)
+
         detections = []
 
         for mdef in self.sem_markers:
             confidence = 0.0
             contributing_matches = []
 
-            # Check composition
+            # Check composition: both string refs and dict-format refs
             composed = mdef.composed_of
             if isinstance(composed, list) and composed:
-                # Count how many required ATOs are active
-                hits = [c for c in composed if c in active_atos]
-                hit_ratio = len(hits) / len(composed) if composed else 0
+                hits = []
+                for c in composed:
+                    if isinstance(c, str):
+                        if c in active_atos:
+                            hits.append(c)
+                    elif isinstance(c, dict):
+                        for mid in c.get("marker_ids", []):
+                            if str(mid) in active_atos:
+                                hits.append(str(mid))
+                hit_ratio = len(hits) / max(len(composed), 1)
 
-                # LD 5.0: 1 ATO + context suffices (relaxed from ≥2)
+                # LD 5.0: 1 ATO + context suffices (relaxed from >=2)
                 activation = mdef.activation or {}
                 if isinstance(activation, str):
                     rule = activation
@@ -271,14 +347,13 @@ class MarkerEngine:
                     rule = activation.get("rule", "ANY 1")
                 rule = str(rule)
 
-                if "ANY 1" in str(rule) and len(hits) >= 1:
+                if "ANY 1" in rule and len(hits) >= 1:
                     confidence = 0.6 + (hit_ratio * 0.4)
-                elif "ANY 2" in str(rule) and len(hits) >= 2:
+                elif "ANY 2" in rule and len(hits) >= 2:
                     confidence = 0.7 + (hit_ratio * 0.3)
-                elif "ALL" in str(rule).upper() and len(hits) == len(composed):
+                elif "ALL" in rule.upper() and len(hits) == len(composed):
                     confidence = 1.0
                 elif len(hits) >= 1:
-                    # Fallback: at least one constituent present
                     confidence = 0.5 + (hit_ratio * 0.3)
 
                 # Collect matches from contributing ATOs
@@ -291,18 +366,41 @@ class MarkerEngine:
                 if pat.compiled is None:
                     continue
                 for m in pat.compiled.finditer(text):
+                    matched = m.group()
+                    if len(matched.strip()) < 3:
+                        continue
                     contributing_matches.append(Match(
                         marker_id=mdef.id,
                         pattern=pat.raw,
                         start=m.start(),
                         end=m.end(),
-                        matched_text=m.group(),
+                        matched_text=matched,
                     ))
 
             if contributing_matches and confidence == 0.0:
                 # Direct pattern match without composition
                 base = (mdef.scoring or {}).get("base", 1.0)
                 confidence = min(1.0, 0.5 + len(contributing_matches) * 0.1 * base)
+
+            # ─── DRA Guard Application ───
+            # Apply guards to SEMs that involve emotion ATOs
+            if confidence > 0 and has_emotion_atos:
+                is_emotion_sem = any(
+                    tag in mdef.tags
+                    for tag in ("emotion", "shame", "anger", "sadness", "fear",
+                                "joy", "disgust", "love", "envy", "pride", "hope",
+                                "loneliness", "grief", "intuition")
+                )
+                # Also treat SEMs composed of emotion ATOs as emotion SEMs
+                if not is_emotion_sem and isinstance(composed, list):
+                    is_emotion_sem = any(
+                        isinstance(c, str) and self._is_emotion_ato(c)
+                        for c in composed
+                    )
+
+                if is_emotion_sem and dra_modifiers:
+                    mod_sum = sum(dra_modifiers.values())
+                    confidence = max(0.0, min(1.0, confidence + mod_sum))
 
             if confidence >= threshold and contributing_matches:
                 detections.append(Detection(
@@ -433,17 +531,29 @@ class MarkerEngine:
         self,
         clu_detections: list[Detection],
         sem_detections: list[Detection],
+        ato_detections: list[Detection] | None = None,
         threshold: float = 0.5,
     ) -> list[Detection]:
         """
-        Detect meta markers from active CLUs.
+        Detect meta markers from active CLUs/SEMs/ATOs.
 
         MEMA uses two paths:
-          Option A (composed_of): Rule-based aggregation of CLUs
-          Option B (detect_class): Algorithmic trend analysis
+          Option A (composed_of): Rule-based aggregation — fuzzy resolution
+                   against all active CLUs + SEMs
+          Option B (detect_class): Algorithmic inference from active marker
+                   patterns (trend, absence, composite, cycle, etc.)
         """
         active_clus = {d.marker_id for d in clu_detections}
         active_sems = {d.marker_id for d in sem_detections}
+        active_atos = {d.marker_id for d in (ato_detections or [])}
+        all_active = active_clus | active_sems | active_atos
+
+        # Collect CLU families for detect_class inference
+        clu_families = set()
+        for d in clu_detections:
+            if d.family:
+                clu_families.add(d.family.upper())
+
         detections = []
 
         for mdef in self.mema_markers:
@@ -451,42 +561,104 @@ class MarkerEngine:
 
             # Option A: composed_of check (with fuzzy resolution)
             composed = mdef.composed_of
-            all_active = active_clus | active_sems
             if isinstance(composed, list) and composed:
-                hits = [c for c in composed if isinstance(c, str) and self._resolve_ref(c, all_active)]
+                hits = []
+                for c in composed:
+                    if isinstance(c, str):
+                        if self._resolve_ref(c, all_active):
+                            hits.append(c)
+                    elif isinstance(c, dict):
+                        # Dict format: {'marker_ids': ['CLU_X'], 'weight': 0.5}
+                        for mid in c.get("marker_ids", []):
+                            if self._resolve_ref(str(mid), all_active):
+                                hits.append(str(mid))
                 if hits:
-                    hit_ratio = len(hits) / len(composed)
+                    hit_ratio = len(hits) / max(len(composed), 1)
                     confidence = 0.5 + (hit_ratio * 0.5)
 
             # Option B: detect_class inference
-            if confidence == 0.0 and mdef.detect_class:
+            if confidence < threshold and mdef.detect_class:
                 dc = mdef.detect_class
 
+                # Extract MEMA keywords for matching (exclude structural noise)
+                _STRUCTURAL_KW = {"MARKER", "TEXT", "AUDIO", "PROSODY", "PATTERN",
+                                  "ALERT", "TREND", "PROFILE", "META", "CLUSTER"}
+                mema_keywords = set(
+                    kw.upper() for kw in mdef.id.replace("MEMA_", "").split("_")
+                    if len(kw) > 3 and kw.upper() not in _STRUCTURAL_KW
+                )
+
+                if not mema_keywords:
+                    # Skip detect_class if no meaningful keywords
+                    continue
+
                 if dc == "absence_meta":
-                    # Absence markers fire when expected signals are NOT present
-                    # For MVP: check if related conflict CLUs are active but
-                    # expected positive signals are absent
-                    if any("CONFLICT" in c for c in active_clus):
-                        confidence = 0.6
+                    # Fire when conflict/negative signals active but expected
+                    # positive/repair signals are absent
+                    negative_families = {"CONFLICT", "GRIEF", "UNCERTAINTY"}
+                    if clu_families & negative_families:
+                        positive_families = {"SUPPORT", "COMMITMENT"}
+                        if not (clu_families & positive_families):
+                            confidence = max(confidence, 0.6)
+                        else:
+                            confidence = max(confidence, 0.5)
 
                 elif dc == "trend_analysis":
-                    # Trend requires sustained pattern — needs stateful tracking
-                    # For MVP: check if multiple related CLUs are active
-                    related = [c for c in active_clus if any(
-                        kw in c for kw in mdef.id.replace("MEMA_", "").split("_")[:2]
-                    )]
-                    if len(related) >= 1:
-                        confidence = 0.55
+                    # Check if active CLUs or SEMs match MEMA keywords
+                    related = [
+                        c for c in (active_clus | active_sems)
+                        if any(kw in c.upper() for kw in mema_keywords)
+                    ]
+                    if related:
+                        confidence = max(confidence, 0.5 + min(0.3, len(related) * 0.1))
+
+                elif dc == "cycle_detection":
+                    # Cycle needs escalation + recurring pattern
+                    related = [
+                        c for c in all_active
+                        if any(kw in c.upper() for kw in mema_keywords)
+                    ]
+                    if len(related) >= 2:
+                        confidence = max(confidence, 0.55)
+                    elif related:
+                        confidence = max(confidence, 0.45)
+
+                elif dc == "pattern_detection":
+                    # Pattern detection from active markers matching keywords
+                    related = [
+                        c for c in all_active
+                        if any(kw in c.upper() for kw in mema_keywords)
+                    ]
+                    if related:
+                        confidence = max(confidence, 0.5 + min(0.2, len(related) * 0.1))
 
                 elif dc in ("composite_meta", "profile_composite", "archetype_composite"):
-                    # Complex composite — needs keyword overlap between MEMA and active CLUs
-                    mema_keywords = set(mdef.id.replace("MEMA_", "").split("_"))
+                    # Composite: keyword overlap with any active CLU/SEM
+                    # CLU matches count more than SEM matches
                     related_clus = [
                         c for c in active_clus
-                        if any(kw in c for kw in mema_keywords if len(kw) > 3)
+                        if any(kw in c.upper() for kw in mema_keywords)
                     ]
-                    if len(related_clus) >= 1:
-                        confidence = 0.45 + min(0.3, len(related_clus) * 0.1)
+                    related_sems = [
+                        s for s in active_sems
+                        if any(kw in s.upper() for kw in mema_keywords)
+                    ]
+                    # Weighted: CLU match = 1.0, SEM match = 0.5
+                    weighted = len(related_clus) * 1.0 + len(related_sems) * 0.5
+                    if weighted >= 1.5:
+                        confidence = max(confidence, 0.5 + min(0.3, weighted * 0.1))
+                    elif weighted >= 0.5:
+                        confidence = max(confidence, 0.5)
+
+                elif dc in ("E", "coherence_calculator", "echo_detector",
+                            "evolution_pressure_analyzer", "node_crystallizer"):
+                    # Specialized classes: use keyword matching as fallback
+                    related = [
+                        c for c in all_active
+                        if any(kw in c.upper() for kw in mema_keywords)
+                    ]
+                    if related:
+                        confidence = max(confidence, 0.5)
 
             if confidence >= threshold:
                 detections.append(Detection(
@@ -520,7 +692,7 @@ class MarkerEngine:
             self.load()
 
         start = time.perf_counter()
-        layers = layers or ["ATO", "SEM"]
+        layers = layers or ["ATO", "SEM", "CLU", "MEMA"]
         all_detections: list[Detection] = []
 
         # Level 1: ATO
@@ -556,7 +728,7 @@ class MarkerEngine:
             self.load()
 
         start = time.perf_counter()
-        layers = layers or ["ATO", "SEM", "CLU"]
+        layers = layers or ["ATO", "SEM", "CLU", "MEMA"]
 
         all_ato_dets: list[list[Detection]] = []
         all_sem_dets: list[list[Detection]] = []
@@ -564,7 +736,7 @@ class MarkerEngine:
         flat_sem: list[Detection] = []
         all_detections: list[Detection] = []
 
-        # Per-message ATO + SEM detection
+        # Per-message ATO + SEM detection (with DRA guards)
         for msg_idx, msg in enumerate(messages):
             text = msg.get("text", "")
 
@@ -592,9 +764,9 @@ class MarkerEngine:
             if "CLU" in layers:
                 all_detections.extend(clu_dets)
 
-        # Level 4: MEMA
+        # Level 4: MEMA (now receives ATOs too for richer inference)
         if "MEMA" in layers:
-            mema_dets = self.detect_mema(clu_dets, flat_sem, threshold)
+            mema_dets = self.detect_mema(clu_dets, flat_sem, flat_ato, threshold)
             all_detections.extend(mema_dets)
 
         # Temporal patterns

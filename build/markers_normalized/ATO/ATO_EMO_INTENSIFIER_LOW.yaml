@@ -1,0 +1,28 @@
+id: ATO_EMO_INTENSIFIER_LOW
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Intensivierer niedrig (downscale).
+frame:
+  signal:
+  - bisschen
+  - etwas
+  - kaum
+  concept: intensity_low
+  pragmatics: abwaertung
+  narrative: modifier
+patterns:
+- type: regex
+  value: (?i)\b(ein\s+bisschen|bisschen|etwas|leicht|minimal|kaum|so\s+halb)\b
+examples:
+  positive:
+  - Ich bin etwas genervt.
+  - Das macht mich ein bisschen traurig.
+  negative:
+  - Ich bin extrem wütend.
+tags:
+- emotion
+- intensity
+- modifier
+rating: 1

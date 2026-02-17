@@ -1,0 +1,39 @@
+id: ATO_EMO_LEX_ANGER
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Wut/Ärger/Aggression.'
+frame:
+  signal:
+  - anger
+  - rage
+  - wut
+  - aerger
+  - zorn
+  concept: 'negative valence: anger'
+  pragmatics: konflikt-affekt
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(wut|zorn|hass|rage|anger)\b
+- type: regex
+  value: (?i)\b(wütend|wuetend|wutend|zornig|erzürnt|aggressiv)\b
+- type: regex
+  value: (?i)\b(ärger\w*|aerger\w*|genervt\w*|gereizt\w*|frustriert\w*)\b
+- type: regex
+  value: (?i)\b(stinksauer|sauer\s+auf|ich\s+raste\s+aus|ich\s+ticke\s+aus|ich\s+flippe\s+aus)\b
+examples:
+  positive:
+  - Ich bin wütend.
+  - Das nervt mich total.
+  - Ich raste gleich aus.
+  negative:
+  - Ich bin ruhig.
+  - Das stört mich nicht.
+  - Alles gut.
+tags:
+- emotion
+- lexicon
+- anger
+rating: 1

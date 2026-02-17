@@ -1,0 +1,27 @@
+id: ATO_QUOTE_MARK
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: Quote delimiters (Anführungszeichen).
+frame:
+  signal:
+  - '"'
+  - "'"
+  - quotes
+  concept: quote_delimiter
+  pragmatics: quotation
+  narrative: context_guard
+patterns:
+- type: regex
+  value: '["’„“«»]'
+examples:
+  positive:
+  - '"Ich bin traurig"'
+  - Er nannte mich 'wütend'.
+  negative:
+  - Ich bin traurig.
+tags:
+- reported_speech
+- guard
+rating: 1

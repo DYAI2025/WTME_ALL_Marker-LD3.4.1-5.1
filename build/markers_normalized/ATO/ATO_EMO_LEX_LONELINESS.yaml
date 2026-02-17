@@ -1,0 +1,31 @@
+id: ATO_EMO_LEX_LONELINESS
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Einsamkeit/Verlassenheit.'
+frame:
+  signal:
+  - lonely
+  - einsam
+  - allein
+  concept: 'negative valence: loneliness'
+  pragmatics: bindungsmangel
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(einsam\w*|allein\w*|isoliert\w*|verlassen\w*)\b
+- type: regex
+  value: (?i)\b(niemand\s+da|ich\s+bin\s+allein\s+damit|alleine\s+gelassen)\b
+examples:
+  positive:
+  - Ich fühle mich einsam.
+  - Ich bin allein damit.
+  negative:
+  - Ich fühle mich verbunden.
+  - Ich habe Unterstützung.
+tags:
+- emotion
+- lexicon
+- loneliness
+rating: 1

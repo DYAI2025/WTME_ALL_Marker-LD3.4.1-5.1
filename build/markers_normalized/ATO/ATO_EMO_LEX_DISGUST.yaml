@@ -1,0 +1,31 @@
+id: ATO_EMO_LEX_DISGUST
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: de
+description: 'Lexikon: Ekel/Abscheu.'
+frame:
+  signal:
+  - disgust
+  - ekel
+  concept: 'negative valence: disgust'
+  pragmatics: ablehnung/aversiv
+  narrative: emotion_lex
+patterns:
+- type: regex
+  value: (?i)\b(ekel\w*|eklig\w*|widerlich\w*|abstoßend\w*|abstossend\w*)\b
+- type: regex
+  value: (?i)\b(bah+|ihh+|zum\s+kotzen)\b
+examples:
+  positive:
+  - Das ist widerlich.
+  - Ich finde das eklig.
+  - Bah.
+  negative:
+  - Das ist okay.
+  - Das ist neutral.
+tags:
+- emotion
+- lexicon
+- disgust
+rating: 1
