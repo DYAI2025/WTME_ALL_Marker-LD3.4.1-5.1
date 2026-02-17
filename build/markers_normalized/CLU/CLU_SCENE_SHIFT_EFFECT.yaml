@@ -36,8 +36,7 @@ tags:
 - modulation
 rating: 1
 composed_of:
-  require:
-  - SCN_*
+  require: []
   condition: rank_in_scene(top_k=2) != rank_global(top_k=2)
 ld5_family: PROCESS
 ld5_multiplier: 1.0

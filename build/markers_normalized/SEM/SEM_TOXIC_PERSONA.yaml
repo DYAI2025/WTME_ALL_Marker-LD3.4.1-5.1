@@ -39,9 +39,9 @@ tags:
 - emergence
 rating: 1
 composed_of:
-- ATO_TOXIC_TOKENS
-- ATO_POWER_LANGUAGE
-- ATO_CONTROL_MARKERS
+- ATO_ESCALATION_LEXICON
+- ATO_POWER_ASSERTION
+- ATO_CONTROL_PHRASES
 activation:
   rule: AT_LEAST 2 IN 1 message
 scoring:

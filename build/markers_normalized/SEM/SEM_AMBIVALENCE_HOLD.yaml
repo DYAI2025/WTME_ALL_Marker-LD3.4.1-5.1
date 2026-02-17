@@ -35,8 +35,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- ATO_UNDERSTATEMENT
-- ATO_POWER_LANGUAGE
+- ATO_SOFTENING
+- ATO_POWER_ASSERTION
 activation:
   rule: AT_LEAST 2 IN 3 messages
 scoring:

@@ -39,7 +39,7 @@ rating: 1
 composed_of:
   any_of:
   - ATO_CONTROL_PHRASES
-  - ATO_POWER_LANGUAGE
+  - ATO_POWER_ASSERTION
   - ATO_SOVEREIGNTY_OVER_SUBJECT
 activation:
   rule: AT_LEAST 2 IN 4 messages

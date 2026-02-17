@@ -32,8 +32,6 @@ tags:
 - cluster
 - v33
 rating: 1
-composed_of:
-- SEM_SUPERIORITY_PUTDOWN
 activation:
   rule: AT_LEAST 2 IN 15 messages
 scoring:

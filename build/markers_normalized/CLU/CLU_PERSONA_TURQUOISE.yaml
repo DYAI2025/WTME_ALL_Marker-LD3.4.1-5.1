@@ -33,9 +33,7 @@ tags:
 - screening
 rating: 1
 composed_of:
-- SEM_HOLISTIC_SCOPE
-- SEM_LONG_HORIZON
-- SEM_ECOLOGICAL_METAPHOR
+- SEM_METAPHORICAL_COMMENT
 activation:
   rule: AT_LEAST 2 IN 6 messages
 scoring:

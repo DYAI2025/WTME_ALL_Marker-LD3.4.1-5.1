@@ -38,10 +38,6 @@ tags:
 - hypothesis
 - learning
 rating: 1
-composed_of:
-- SEM_CONFIRMATION_BIAS
-- SEM_PERSPECTIVE_RIGIDITY
-- SEM_INGROUP_OUTGROUP_BIAS
 activation:
   rule: AT_LEAST 2 DISTINCT bias ATOs IN 5 messages
 scoring:

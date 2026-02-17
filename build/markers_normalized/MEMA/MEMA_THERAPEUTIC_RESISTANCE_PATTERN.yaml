@@ -37,7 +37,7 @@ tags:
 - change-avoidance
 rating: 1
 composed_of:
-- CLU_INDIRECT_CONFLICT_AVOIDANCE
+- CLU_CONFLICT_ESCALATION
 - SEM_SELF_REFLECTION
 - SEM_VALIDATION_SEEKING
 criteria: Persistent pattern of resistance to therapeutic change across multiple interventions and contexts

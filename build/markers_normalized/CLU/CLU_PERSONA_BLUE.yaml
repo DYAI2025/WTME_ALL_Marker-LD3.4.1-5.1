@@ -33,7 +33,6 @@ tags:
 - screening
 rating: 1
 composed_of:
-- SEM_NORM_COMPLIANCE
 - SEM_AUTHORITY_REFERENCE
 - SEM_DEONTIC_LANGUAGE
 activation:

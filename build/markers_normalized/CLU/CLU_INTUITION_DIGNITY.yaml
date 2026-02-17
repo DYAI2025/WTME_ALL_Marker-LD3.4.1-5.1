@@ -39,9 +39,8 @@ tags:
 - learning
 rating: 1
 composed_of:
-- SEM_DEMEANING_LANGUAGE
-- SEM_RESPECT_APPEAL
-- SEM_STATUS_THREAT
+- SEM_DEFENSIVENESS_SHIFT
+- SEM_STATUS_RECOGNITION
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
 scoring:

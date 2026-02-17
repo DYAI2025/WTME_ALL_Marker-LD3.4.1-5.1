@@ -34,7 +34,7 @@ tags:
 - escalation
 rating: 1
 composed_of:
-- SEM_DOUBLE_BIND_DISCLAIMER_BUT
+- SEM_DOUBLE_BIND
 - SEM_PERFORMATIVE_HELPLESSNESS
 activation:
   rule: WINDOW_CLUSTER_AT_END

@@ -31,8 +31,8 @@ tags:
 - evidence
 rating: 1
 composed_of:
-- ATO_APPEAL_TO_AUTHORITY_EXPERT
-- ATO_APPEAL_TO_AUTHORITY_STUDY
+- ATO_MORAL_AUTHORITY
+- ATO_MORAL_AUTHORITY
 activation:
   rule: BOTH IN 1 message
 scoring:

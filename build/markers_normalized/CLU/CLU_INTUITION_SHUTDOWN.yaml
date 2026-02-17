@@ -47,8 +47,6 @@ tags:
 - intuition
 - shutdown
 rating: 1
-composed_of:
-- SEM_SHUTDOWN_EPISODE
 activation:
   confirm_window: 4
   cooldown_messages: 5

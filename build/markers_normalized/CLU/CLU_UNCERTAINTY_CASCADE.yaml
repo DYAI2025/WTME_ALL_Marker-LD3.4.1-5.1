@@ -29,8 +29,7 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- SEM_UNCERTAINTY_TONING
-- SEM_TENTATIVE_INFERENCE
+- SEM_UNCERTAINTY_PROSODY
 - ATO_PROBABILISTIC
 activation:
   rule: AT_LEAST 3 IN 6 messages

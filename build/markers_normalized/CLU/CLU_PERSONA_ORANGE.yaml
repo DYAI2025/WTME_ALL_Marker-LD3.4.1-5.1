@@ -33,9 +33,9 @@ tags:
 - screening
 rating: 1
 composed_of:
-- SEM_COMPETITIVE_DRIVE
-- SEM_KPI_FOCUS
-- SEM_COMPARATIVE_CLAIM
+- SEM_TASK_DRIVE
+- SEM_BUSINESS_FOCUS
+- SEM_CERTAINTY_CLAIMS
 activation:
   rule: AT_LEAST 2 IN 6 messages
 scoring:

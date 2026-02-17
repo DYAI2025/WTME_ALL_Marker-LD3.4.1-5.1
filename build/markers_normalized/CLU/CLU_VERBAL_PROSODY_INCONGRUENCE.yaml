@@ -35,11 +35,11 @@ tags:
 - incongruence
 rating: 1
 composed_of:
-- ld34_text_social_grammar.SEM_REACTION_FORMATION_TEXT
-- ld34_text_social_grammar.SEM_AFFECT_ISOLATION_TEXT
-- ld34_voice_social_grammar.SEM_UNCERTAINTY_PROSODY
-- ld34_voice_social_grammar.SEM_SHAME_PROSODY
-- ld34_voice_social_grammar.SEM_REACTION_FORMATION_AUDIO
+- SEM_REACTION_FORMATION_TEXT
+- SEM_AFFECT_ISOLATION_TEXT
+- SEM_UNCERTAINTY_PROSODY
+- SEM_SHAME_PROSODY
+- SEM_REACTION_FORMATION_AUDIO
 scoring:
   base: 0.62
   cap: 0.98

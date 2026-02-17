@@ -37,9 +37,9 @@ tags:
 - negative
 rating: 1
 composed_of:
-- ATO_ANGER_EXPRESSION
-- ATO_SWEAR_WORD
-- ATO_THREAT_ESCALATION
+- ATO_ANGER
+- ATO_ESCALATION_LEXICON
+- ATO_THREAT_LANGUAGE
 activation:
   rule: ANY 2 IN 3 messages
 scoring:

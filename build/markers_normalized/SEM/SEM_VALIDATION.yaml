@@ -37,7 +37,7 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - ATO_SUPPORTIVE_LANGUAGE
+  - ATO_SUPPORT_PHRASE
   - ATO_SUPPORT_MESSAGE
   - ATO_ACKNOWLEDGE
 activation:

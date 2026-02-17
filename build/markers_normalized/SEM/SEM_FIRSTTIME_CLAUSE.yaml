@@ -64,7 +64,7 @@ tags:
 - needs_review
 rating: 1
 composed_of:
-- ATO_FIRSTTIME_CLAUSE
+- ATO_FIRSTTIME_CLAUSE_MARKER
 scoring:
   base: 1.2
   weight: 1.0

@@ -37,14 +37,14 @@ tags:
 - guilt_pressure
 rating: 1
 composed_of:
-- ATO_HELPLESSNESS_DEPENDENCY
+- ATO_LEARNED_HELPLESSNESS
 - ATO_GUILT_APPEAL_SUPPORT
 activation:
-  rule: "ANY 2 IN 30 messages"
+  rule: ANY 2 IN 30 messages
 scoring:
   base: 3.1
   weight: 0.9
   decay: 0.01
-  formula: "logistic"
+  formula: logistic
 window:
   messages: 30

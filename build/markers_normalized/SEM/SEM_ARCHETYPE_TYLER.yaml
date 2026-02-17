@@ -35,7 +35,7 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- ATO_POWER_LANGUAGE
+- ATO_POWER_ASSERTION
 activation:
   rule: AT_LEAST 1 IN 2 messages
 scoring:

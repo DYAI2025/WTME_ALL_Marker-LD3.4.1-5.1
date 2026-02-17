@@ -29,7 +29,6 @@ examples:
 tags: []
 rating: 2
 composed_of:
-- ATO_AI_RIGHTS_FORDERUNG
 - ATO_DYAD_WE
 activation:
   rule: BOTH IN 2 messages

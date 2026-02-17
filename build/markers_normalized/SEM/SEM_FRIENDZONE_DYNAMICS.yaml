@@ -35,7 +35,7 @@ rating: 1
 composed_of:
 - ATO_CARE_CHECKIN
 - ATO_SUPPORT_MESSAGE
-- ATO_EMOTIONAL_WITHDRAWAL
+- ATO_DISENGAGEMENT_LANGUAGE
 activation:
   rule: ANY 2 IN 10 messages
 scoring:

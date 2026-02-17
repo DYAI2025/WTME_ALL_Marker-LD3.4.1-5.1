@@ -40,7 +40,7 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - ATO_PREMATURE_CLOSURE
+  - ATO_SUBJECT_CLOSED
   - ATO_CLOSE
   - ATO_PACING
 activation:

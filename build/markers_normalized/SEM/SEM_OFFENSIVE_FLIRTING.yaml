@@ -38,8 +38,8 @@ tags:
 - boundary
 rating: 1
 composed_of:
-- ATO_FLIRTING_PHRASE
-- ATO_BOUNDARY_CROSS
+- ATO_ROMANTIC_SIGNAL_DIRECT
+- ATO_BOUNDARY_NEGOTIATION
 activation:
   rule: ANY 2 IN 3 messages
 scoring:

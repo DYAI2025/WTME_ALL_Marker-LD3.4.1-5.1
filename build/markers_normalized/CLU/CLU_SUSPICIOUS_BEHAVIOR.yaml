@@ -37,10 +37,8 @@ tags:
 - deception
 rating: 1
 composed_of:
-- SEM_LIE_CONCEALMENT
 - SEM_GASLIGHTING
-- SEM_GUILT_TRIPPING
-- SEM_AI_BOT_SCAM
+- ATO_GUILT_TRIP
 - SEM_M_LOVE_BOMBING
 activation:
   rule: SUM(weight)>=2 WITHIN 10 messages

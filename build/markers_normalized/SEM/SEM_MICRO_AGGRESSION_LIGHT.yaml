@@ -39,9 +39,9 @@ rating: 1
 composed_of:
   any_of:
   - ATO_IRONY
-  - ATO_MOCKING_LEXICON
-  - ATO_SARCASM_SUBTILE
-  - ATO_SARCASM_MARKER
+  - ATO_PUTDOWN_TEMPLATE
+  - ATO_SARCASM_CUES
+  - ATO_SARCASM
 activation:
   rule: AT_LEAST 2 IN 3 messages
   window: 3

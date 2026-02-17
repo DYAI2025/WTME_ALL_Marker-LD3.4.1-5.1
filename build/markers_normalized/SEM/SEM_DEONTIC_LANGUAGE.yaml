@@ -31,7 +31,7 @@ tags:
 - norm
 rating: 1
 composed_of:
-- ATO_MORAL_LANGUAGE
+- ATO_MORAL_AUTHORITY
 - ATO_SET_BOUNDARY
 activation:
   rule: BOTH IN 1 message

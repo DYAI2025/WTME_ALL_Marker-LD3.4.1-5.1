@@ -38,7 +38,7 @@ tags:
 rating: 1
 composed_of:
 - SEM_WEBCAM_EXCUSE
-- CLU_INDIRECT_CONFLICT_AVOIDANCE
+- CLU_CONFLICT_ESCALATION
 - SEM_EMOTIONAL_OVERWHELM
 criteria: Progressive pattern of avoidance behaviors escalating from technical excuses to systematic disengagement
 detect_class: pattern_detection

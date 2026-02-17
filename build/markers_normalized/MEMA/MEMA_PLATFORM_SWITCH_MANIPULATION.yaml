@@ -38,7 +38,6 @@ tags:
 rating: 1
 composed_of:
 - SEM_PLATFORM_SWITCH
-- CLU_BOUNDARY_VIOLATION_PATTERNS
 - SEM_VALIDATION_SEEKING
 criteria: Persistent pattern of platform switching attempts to isolate targets and increase control across contexts
 detect_class: composite_meta

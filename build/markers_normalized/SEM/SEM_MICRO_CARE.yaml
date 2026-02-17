@@ -38,7 +38,7 @@ tags:
 - support
 rating: 1
 composed_of:
-- ATO_INVITING_RESONANCE
+- ATO_POSITIVE_RESONANCE
 - ATO_POSITIVE_RESONANCE
 activation:
   rule: ANY 2 IN 3 messages

@@ -31,7 +31,7 @@ tags:
 - coordination
 rating: 1
 composed_of:
-- ATO_SILENCE
+- ATO_PAUSE_LONG
 - ATO_REQUEST_FOR_FEEDBACK
 activation:
   rule: ANY 2 IN 2 messages

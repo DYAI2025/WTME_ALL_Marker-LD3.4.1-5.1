@@ -29,8 +29,7 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- SEM_SUPPORT_VALIDATION
-- SEM_TRUST_SIGNALING
+- SEM_EMOTIONAL_ACCEPTANCE
 activation:
   rule: AT_LEAST 3 IN 7 messages
 scoring:

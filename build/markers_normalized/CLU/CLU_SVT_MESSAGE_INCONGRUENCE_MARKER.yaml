@@ -31,8 +31,6 @@ examples:
 tags:
 - communication
 rating: 1
-composed_of:
-- SEM_GENERIC_PATTERN
 activation:
   rule: AT_LEAST 2 IN 5 messages
 scoring:

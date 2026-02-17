@@ -40,7 +40,7 @@ tags:
 - repair
 rating: 1
 composed_of:
-- ATO_LONG_RESPONSE_GAP
+- ATO_PAUSE_LONG
 scoring:
   base: 0.72
 metadata:

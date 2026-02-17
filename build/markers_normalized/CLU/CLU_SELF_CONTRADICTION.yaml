@@ -29,8 +29,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- SEM_UNCERTAINTY_TONING
-- SEM_ANGER_ESCALATION
+- SEM_UNCERTAINTY_PROSODY
+- SEM_CONFLICT_ESCALATION
 activation:
   rule: AT_LEAST 3 IN 6 messages
 scoring:

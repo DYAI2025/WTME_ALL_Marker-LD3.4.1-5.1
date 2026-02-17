@@ -30,9 +30,8 @@ tags:
 - learning
 rating: 2
 composed_of:
-- SEM_SUPPORT_VALIDATION
-- SEM_TRUST_SIGNALING
-- SEM_EMOTIONAL_SUPPORT
+- SEM_EMOTIONAL_ACCEPTANCE
+- SEM_EMOTIONAL_AWARENESS
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 6 messages
 scoring:

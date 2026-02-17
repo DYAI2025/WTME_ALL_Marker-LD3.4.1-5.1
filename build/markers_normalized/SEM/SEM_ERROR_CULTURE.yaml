@@ -35,7 +35,7 @@ tags:
 rating: 1
 composed_of:
 - ATO_UNCERTAINTY_PHRASE
-- ATO_MICRO_DISMISSAL
+- ATO_MINIMIZATION
 activation:
   rule: ANY 2 IN 3 messages
 scoring:

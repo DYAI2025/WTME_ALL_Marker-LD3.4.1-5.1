@@ -35,7 +35,7 @@ tags:
 rating: 1
 composed_of:
 - ATO_STYLE_REFERENCE
-- ATO_CULTURAL_ELEMENT
+- ATO_CULTURE_TOKEN
 scoring:
   base: 1.4
   weight: 1.1

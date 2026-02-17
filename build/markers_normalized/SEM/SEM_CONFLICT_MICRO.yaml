@@ -31,7 +31,7 @@ tags:
 - micro
 rating: 1
 composed_of:
-- ATO_OFFENDED_SILENCE
+- ATO_SILENT_TREATMENT_INDICATORS
 - ATO_MINIMIZATION
 activation:
   rule: BOTH IN 1 message OR ANY 2 IN 2 messages

@@ -43,7 +43,7 @@ composed_of:
   any_of:
   - ATO_AVOIDANCE_PHRASE
   - ATO_TOPIC_SWITCH_ADVERSATIVE
-  - ATO_PREMATURE_CLOSURE
+  - ATO_SUBJECT_CLOSED
 activation:
   rule: AT_LEAST 2 IN 4 messages
   window: 4

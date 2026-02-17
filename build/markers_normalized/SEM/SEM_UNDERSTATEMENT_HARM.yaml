@@ -35,8 +35,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- ATO_UNDERSTATEMENT
-- ATO_CONTROL_MARKERS
+- ATO_SOFTENING
+- ATO_CONTROL_PHRASES
 activation:
   rule: BOTH IN 2 messages
 scoring:

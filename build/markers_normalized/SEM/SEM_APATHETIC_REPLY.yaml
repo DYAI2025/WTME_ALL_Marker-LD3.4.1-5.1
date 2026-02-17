@@ -38,8 +38,8 @@ tags:
 - apathy
 rating: 1
 composed_of:
-- ATO_INDIFFERENT
-- ATO_NO_MOTIVATION
+- ATO_AFFECT_FLAT
+- ATO_ENERGY_LOW
 scoring:
   base: 1.2
   weight: 0.9

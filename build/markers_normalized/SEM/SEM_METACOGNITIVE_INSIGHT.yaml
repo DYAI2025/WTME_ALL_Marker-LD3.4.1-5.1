@@ -33,7 +33,7 @@ tags:
 - selbsterkenntnis
 rating: 1
 composed_of:
-- ATO_SELF_OBSERVATION
+- ATO_SELF_REFLECTION
 - ATO_PATTERN_RECOGNITION
 activation:
   rule: ALL 2 IN 3 messages

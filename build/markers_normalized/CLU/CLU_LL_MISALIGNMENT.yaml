@@ -37,8 +37,8 @@ tags:
 rating: 1
 composed_of:
   require:
-  - CLU_LL_PROFILE@self
-  - CLU_LL_PROFILE@partner
+  - CLU_LL_PROFILE
+  - CLU_LL_PROFILE
   condition: top(self) != top(partner)
 ld5_family: UNCERTAINTY
 ld5_multiplier: 1.5

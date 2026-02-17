@@ -29,8 +29,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- SEM_SUPPORT_VALIDATION
-- SEM_UNCERTAINTY_TONING
+- SEM_EMOTIONAL_ACCEPTANCE
+- SEM_UNCERTAINTY_PROSODY
 activation:
   rule: ANY 3 IN 7 messages
 scoring:

@@ -38,8 +38,7 @@ tags:
 - commitment
 rating: 1
 composed_of:
-- ATO_INVITING_RESONANCE
-- ATO_SVT_BEZIEHUNG_DU_BOTSCHAFT
+- ATO_POSITIVE_RESONANCE
 activation:
   rule: ANY 2 IN 3 messages
 scoring:

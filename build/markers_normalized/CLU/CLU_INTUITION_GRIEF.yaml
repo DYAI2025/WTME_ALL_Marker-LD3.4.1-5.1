@@ -33,10 +33,6 @@ tags:
 - hypothesis
 - learning
 rating: 1
-composed_of:
-- SEM_SADNESS_EXPRESSIONS
-- SEM_NOSTALGIA_REGRET
-- SEM_GUILT_ADMISSION
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
 scoring:

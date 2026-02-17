@@ -34,8 +34,6 @@ examples:
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: []
 rating: 1
-composed_of:
-- ATO_FICTION_TOKENS
 activation:
   rule: AT_LEAST 1 IN 2 messages
 scoring:

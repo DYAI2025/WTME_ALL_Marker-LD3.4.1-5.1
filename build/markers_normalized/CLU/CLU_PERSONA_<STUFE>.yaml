@@ -32,10 +32,6 @@ tags:
 - <STUFE>
 - screening
 rating: 1
-composed_of:
-- SEM_<FAMILIE/ASPEKT>_A
-- SEM_<FAMILIE/ASPEKT>_B
-- SEM_<FAMILIE/ASPEKT>_C
 activation:
   rule: AT_LEAST 2 IN 6 messages
 scoring:

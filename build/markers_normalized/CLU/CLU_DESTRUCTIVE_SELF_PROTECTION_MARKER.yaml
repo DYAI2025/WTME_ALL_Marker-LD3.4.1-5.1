@@ -32,8 +32,6 @@ tags:
 - affect
 - emotion
 rating: 1
-composed_of:
-- SEM_GENERIC_PATTERN
 activation:
   rule: AT_LEAST 2 IN 5 messages
 scoring:

@@ -33,8 +33,6 @@ examples:
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: []
 rating: 1
-composed_of:
-- SEM_SHUTDOWN_EPISODE
 activation:
   rule: AT_LEAST 2 DISTINCT SEM_SHUTDOWN_EPISODE IN 5 messages
   window: 5

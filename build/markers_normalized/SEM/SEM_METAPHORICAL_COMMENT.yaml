@@ -34,8 +34,8 @@ tags:
 - description
 rating: 1
 composed_of:
-- ATO_METAPHOR_CUE
-- ATO_COMPARISON_OBJECT
+- ATO_METAPHOR
+- ATO_COMPARISON_MANIPULATION
 scoring:
   base: 1.4
   weight: 1.1

@@ -35,8 +35,7 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- ATO_FICTION_TOKENS
-- ATO_CONTROL_MARKERS
+- ATO_CONTROL_PHRASES
 activation:
   rule: AT_LEAST 2 IN 3 messages
 scoring:

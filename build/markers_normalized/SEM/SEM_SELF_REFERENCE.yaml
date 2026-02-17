@@ -34,7 +34,7 @@ tags:
 - semantic
 rating: 1
 composed_of:
-- ATO_SELF_REF
+- ATO_SELF_REFLECTION
 activation:
   rule: AT_LEAST 3 SELF_REF IN 5 messages
 scoring:

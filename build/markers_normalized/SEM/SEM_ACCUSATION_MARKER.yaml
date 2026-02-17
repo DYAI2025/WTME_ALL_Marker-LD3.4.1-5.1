@@ -50,7 +50,7 @@ tags:
 - generalization
 rating: 1
 composed_of:
-- ATO_ACCUSATION_PHRASE
+- ATO_DIRECT_ACCUSATION
 - ATO_SUPERLATIVE_PHRASE
 activation:
   rule: ANY 1

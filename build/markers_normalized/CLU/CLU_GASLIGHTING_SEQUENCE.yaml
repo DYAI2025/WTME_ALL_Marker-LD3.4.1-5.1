@@ -37,7 +37,6 @@ tags: []
 rating: 1
 composed_of:
   require:
-  - SEM_REALITY_DISTORTION_FIELD
   - CLU_COVERT_RESPONSIBILITY_INVERSION
   k_of_n:
     k: 2

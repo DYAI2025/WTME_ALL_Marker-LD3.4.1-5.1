@@ -39,9 +39,8 @@ tags:
 - learning
 rating: 1
 composed_of:
-- SEM_MORAL_JUDGMENT
-- SEM_MORAL_OUTRAGE
-- SEM_VIRTUE_SIGNALING
+- SEM_MORAL_REFRAMING_GOOD_INTENT
+- SEM_MORAL_REFRAMING_GOOD_INTENT
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
 scoring:

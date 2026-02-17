@@ -33,8 +33,6 @@ tags:
 - cluster
 rating: 1
 composed_of:
-- SEM_CONFIRMATION_BIAS
-- SEM_ANCHORING_BIAS
 - SEM_SOFT_COMMITMENT
 - SEM_CONFLICT_MICRO
 activation:

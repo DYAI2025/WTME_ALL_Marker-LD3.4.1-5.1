@@ -31,7 +31,7 @@ tags:
 - stress_excuse
 rating: 1
 composed_of:
-- ATO_FULL_STRESS
+- ATO_STRESS
 - ATO_MUST_CHECK
 activation:
   rule: ANY 2 IN 3 messages

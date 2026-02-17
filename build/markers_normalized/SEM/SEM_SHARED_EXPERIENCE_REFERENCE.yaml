@@ -35,7 +35,6 @@ tags:
 - bonding
 rating: 1
 composed_of:
-- ATO_MEMORY_TRIGGER
 - ATO_SHARED_CONTEXT
 scoring:
   base: 1.4

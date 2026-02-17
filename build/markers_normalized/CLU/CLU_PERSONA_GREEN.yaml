@@ -35,7 +35,6 @@ rating: 1
 composed_of:
 - SEM_CONSENSUS_SIGNAL
 - SEM_INCLUSION_LANGUAGE
-- SEM_SOFTENING_MOVE
 activation:
   rule: AT_LEAST 2 IN 6 messages
 scoring:

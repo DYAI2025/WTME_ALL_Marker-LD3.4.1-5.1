@@ -30,7 +30,7 @@ tags: []
 rating: 2
 composed_of:
 - ATO_SD_BLUE_LEX
-- ATO_AUTHORITY_PHRASE
+- ATO_POWER_ASSERTION
 activation:
   rule: BOTH IN 1 message
 scoring:

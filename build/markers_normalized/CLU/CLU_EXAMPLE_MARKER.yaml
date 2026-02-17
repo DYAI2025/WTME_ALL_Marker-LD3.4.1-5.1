@@ -30,9 +30,6 @@ tags:
 - cluster
 - relationship-dynamics
 rating: 1
-composed_of:
-- "{'marker_ids': ['SEM_EXAMPLE_MARKER'], 'weight': 0.6}"
-- "{'marker_ids': ['SEM_ADJACENT_COMPLAIN'], 'weight': 0.5}"
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 24 messages
 scoring:
@@ -46,3 +43,7 @@ window:
 ld5_family: PROCESS
 ld5_multiplier: 1.0
 ld5_cooldown: 5
+composed_of:
+- marker_ids:
+  - SEM_EXAMPLE_MARKER
+  weight: 0.6

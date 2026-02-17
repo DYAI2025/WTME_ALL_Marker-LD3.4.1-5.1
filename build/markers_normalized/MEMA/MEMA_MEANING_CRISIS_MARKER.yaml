@@ -42,7 +42,6 @@ tags:
 rating: 1
 composed_of:
 - CLU_INNER_EMPTINESS_MARKER
-- CLU_PURPOSE_LOSS_PATTERN
 activation:
   rule: ANY 2 IN 30 messages
 scoring:

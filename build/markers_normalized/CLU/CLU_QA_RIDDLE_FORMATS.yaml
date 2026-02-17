@@ -32,8 +32,6 @@ tags:
 - cluster
 - v33
 rating: 1
-composed_of:
-- SEM_PUN_RIDDLE_QA
 activation:
   rule: AT_LEAST 2 IN 20 messages
 scoring:

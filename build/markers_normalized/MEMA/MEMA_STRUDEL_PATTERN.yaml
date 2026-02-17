@@ -30,7 +30,7 @@ tags: []
 rating: 1
 composed_of:
 - CLU_CIRCULAR_REASONING
-- CLU_PROCRASTINATION_LOOP
+- CLU_RUMINATION_LOOP
 activation:
   rule: AT_LEAST 2 IN 8 messages
 metadata:

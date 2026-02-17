@@ -39,13 +39,13 @@ tags:
 rating: 1
 composed_of:
 - ATO_COLD_LABEL
-- ATO_YOUR_FAULT_PHRASE
+- ATO_BLAME_SHIFT_MARKER
 activation:
-  rule: "ANY 1 IN 25 messages"
+  rule: ANY 1 IN 25 messages
 scoring:
   base: 3.2
   weight: 1.0
   decay: 0.01
-  formula: "logistic"
+  formula: logistic
 window:
   messages: 25

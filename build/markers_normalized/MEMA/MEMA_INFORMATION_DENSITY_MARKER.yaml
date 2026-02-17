@@ -32,7 +32,6 @@ tags: []
 rating: 1
 composed_of:
 - SEM_AGGRESSIVE_BEHAVIOR
-- SEM_FOGGING
 - CLU_DIGITAL_MANIPULATION
 activation:
   rule: VOLUME_THRESHOLD 50 messages IN 1 hour

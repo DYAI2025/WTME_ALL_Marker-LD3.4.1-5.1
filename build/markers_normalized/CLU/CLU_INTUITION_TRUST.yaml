@@ -39,9 +39,8 @@ tags:
 - learning
 rating: 1
 composed_of:
-- SEM_TRUST_SIGNALING
-- SEM_DISTRUST_ACCUSATION
-- SEM_RELIABILITY_CONCERN
+- SEM_ACCUSATION_MARKER
+- SEM_RESPECT_RELIABILITY_FRAME
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 5 messages
 scoring:

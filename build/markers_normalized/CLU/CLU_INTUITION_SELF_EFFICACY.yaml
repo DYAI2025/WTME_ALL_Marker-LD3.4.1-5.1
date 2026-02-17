@@ -47,8 +47,6 @@ tags:
 - intuition
 - agency
 rating: 1
-composed_of:
-- SEM_POSITIVE_SELF_EFFICACY
 activation:
   confirm_window: 3
   cooldown_messages: 4

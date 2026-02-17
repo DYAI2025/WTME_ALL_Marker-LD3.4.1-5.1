@@ -38,7 +38,7 @@ tags:
 rating: 1
 composed_of:
   any_of:
-  - ATO_POWER_LANGUAGE
+  - ATO_POWER_ASSERTION
   - ATO_MINI_DEADLINE
   - ATO_REQUEST_FOR_FEEDBACK
   - ATO_CLARIFY_REQ

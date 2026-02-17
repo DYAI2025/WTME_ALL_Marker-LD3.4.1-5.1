@@ -35,7 +35,7 @@ rating: 1
 composed_of:
 - SEM_SYSTEMS_THINKING
 - SEM_CONTEXT_SWITCH
-- SEM_TRADEOFF_LANGUAGE
+- SEM_ANALYTICAL_THINKING
 activation:
   rule: AT_LEAST 2 IN 6 messages
 scoring:

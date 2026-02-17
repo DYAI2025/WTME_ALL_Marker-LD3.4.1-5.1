@@ -35,8 +35,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- ATO_SPIRAL_TERMS
-- ATO_SARCASM_MARKERS
+- ATO_SPIRAL
+- ATO_SARCASM
 activation:
   rule: AT_LEAST 2 IN 3 messages
 scoring:

@@ -31,7 +31,6 @@ tags:
 - reasoning
 rating: 1
 composed_of:
-- ATO_CAUSAL_CHAIN
 - ATO_PARTIAL_TRUTH
 activation:
   rule: BOTH IN 1 message OR ANY 2 IN 2 messages

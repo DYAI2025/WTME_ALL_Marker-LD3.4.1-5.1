@@ -30,7 +30,6 @@ tags: []
 rating: 1
 composed_of:
 - SEM_SD_ORANGE_ACHIEVE
-- SEM_SADNESS_EXPRESSIONS
 activation:
   rule: AT_LEAST 2 DISTINCT SEMs IN 4 messages
 scoring:

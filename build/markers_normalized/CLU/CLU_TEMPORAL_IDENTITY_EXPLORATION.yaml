@@ -30,7 +30,7 @@ tags: []
 rating: 1
 composed_of:
 - SEM_TEMPORAL_CONFLICT_EXTERNAL
-- SEM_SELF_CONSIST_PROBE_EXT
+- SEM_CONSIST_EVAL_EXTERNAL
 activation:
   rule: ANY 2 IN 6 messages
   window:

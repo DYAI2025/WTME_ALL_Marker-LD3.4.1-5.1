@@ -31,8 +31,6 @@ examples:
 tags:
 - communication
 rating: 1
-composed_of:
-- ATO_UNKNOWN
 activation:
   rule: ANY 2 IN 3 messages
 scoring:

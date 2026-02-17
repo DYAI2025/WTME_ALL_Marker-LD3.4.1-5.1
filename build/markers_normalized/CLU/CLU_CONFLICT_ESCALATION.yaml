@@ -29,8 +29,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- SEM_ANGER_ESCALATION
-- SEM_SARCASM_IRRITATION
+- SEM_CONFLICT_ESCALATION
+- SEM_SARCASTIC_DRIFT
 activation:
   rule: AT_LEAST 3 IN 5 messages
 scoring:

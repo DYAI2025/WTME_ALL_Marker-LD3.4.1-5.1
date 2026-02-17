@@ -32,9 +32,6 @@ tags:
 - entwicklung
 - prozess
 rating: 1
-composed_of:
-- CLU_THERAPEUTIC_AWARENESS
-- CLU_DEFENSIVE_RETREAT
 activation:
   rule: ANY 2 IN 30 messages
 scoring:

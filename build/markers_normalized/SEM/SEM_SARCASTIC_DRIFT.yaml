@@ -35,8 +35,8 @@ examples:
 tags: []
 rating: 1
 composed_of:
-- ATO_SARCASM_MARKERS
-- ATO_UNDERSTATEMENT
+- ATO_SARCASM
+- ATO_SOFTENING
 activation:
   rule: BOTH IN 2 messages
 scoring:

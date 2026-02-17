@@ -33,7 +33,7 @@ tags:
 rating: 1
 composed_of:
 - ATO_MINIMIZATION
-- ATO_DELAYING_PHRASES
+- ATO_DELAY_WORD
 activation:
   rule: BOTH IN 1 message
 scoring:

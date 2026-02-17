@@ -40,7 +40,7 @@ tags:
 - paradox
 rating: 1
 composed_of:
-- ATO_DOUBLE_BIND_EXPRESSIONS
+- ATO_DOUBLE_ENTENDRE
 activation:
   rule: ANY 2 IN 3 messages
 scoring:
