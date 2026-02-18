@@ -26,6 +26,49 @@ from pathlib import Path
 from .config import settings
 
 
+def _parse_activation_rule(rule_str: str) -> tuple[str, int]:
+    """Parse activation rule string into (mode, min_hits).
+
+    Returns:
+        mode: 'ALL' | 'AT_LEAST' | 'ANY'
+        min_hits: minimum number of composed_of refs that must be active
+
+    Examples:
+        'BOTH IN 1 message'      → ('ALL', -1)  # -1 means ALL required
+        'ANY 2 IN 3 messages'    → ('ANY', 2)
+        'AT_LEAST 2 IN 3 messages' → ('AT_LEAST', 2)
+        'ANY 1'                  → ('ANY', 1)
+        'WEIGHTED_AND'           → ('ALL', -1)
+        'SEQUENCE IN 4 messages' → ('ALL', -1)
+    """
+    rule = rule_str.strip().upper().replace("_", " ")
+
+    # ALL / BOTH / WEIGHTED_AND / SEQUENCE → require all refs
+    if any(k in rule for k in ("ALL", "BOTH", "WEIGHTED AND", "SEQUENCE")):
+        return ("ALL", -1)
+
+    # AT LEAST X ... → extract X
+    m = re.search(r"AT\s*LEAST\s+(\d+)", rule)
+    if m:
+        return ("AT_LEAST", int(m.group(1)))
+
+    # ANY X ... → extract X
+    m = re.search(r"ANY\s+(\d+)", rule)
+    if m:
+        return ("ANY", int(m.group(1)))
+
+    # ANY (without number) → 1
+    if "ANY" in rule:
+        return ("ANY", 1)
+
+    # WEIGHTED_OR → at least 1
+    if "WEIGHTED" in rule:
+        return ("ANY", 1)
+
+    # Fallback: require 1
+    return ("ANY", 1)
+
+
 @dataclass
 class CompiledPattern:
     """Pre-compiled regex pattern for fast matching."""
@@ -352,30 +395,29 @@ class MarkerEngine:
                                 hits.append(str(mid))
                 hit_ratio = len(hits) / max(len(composed), 1)
 
-                # LD 5.0: activation rule determines required hit count
+                # LD 5.0: generic activation rule parser
                 activation = mdef.activation or {}
                 if isinstance(activation, str):
-                    rule = activation
+                    rule_raw = activation
+                elif isinstance(activation, dict) and "rule" in activation:
+                    rule_raw = activation["rule"]
                 else:
-                    rule = activation.get("rule", "ANY 1")
-                rule = str(rule).upper()
+                    # No activation rule → require ALL composed_of refs (safe default)
+                    rule_raw = "ALL"
+                mode, min_hits = _parse_activation_rule(str(rule_raw))
 
-                if ("ALL" in rule or "BOTH" in rule) and len(hits) == len(composed):
-                    confidence = 0.7 + (hit_ratio * 0.3)
-                elif ("ALL" in rule or "BOTH" in rule):
-                    confidence = 0.0
-                    rule_blocked = True
-                elif "ANY 2" in rule and len(hits) >= 2:
-                    confidence = 0.7 + (hit_ratio * 0.3)
-                elif "ANY 2" in rule:
-                    confidence = 0.0
-                    rule_blocked = True
-                elif "ANY 1" in rule and len(hits) >= 1:
-                    confidence = 0.6 + (hit_ratio * 0.4)
-                elif len(hits) >= 2:
-                    confidence = 0.5 + (hit_ratio * 0.3)
+                # ALL mode: every composed_of ref must be active
+                if mode == "ALL":
+                    min_hits = len(composed)
+
+                if len(hits) >= min_hits:
+                    # Scale confidence: 1 hit = 0.6 base, full coverage = 1.0
+                    if min_hits >= 2 or mode == "ALL":
+                        confidence = 0.7 + (hit_ratio * 0.3)
+                    else:
+                        confidence = 0.6 + (hit_ratio * 0.4)
                 else:
-                    # Has composed_of refs but insufficient hits → block
+                    confidence = 0.0
                     rule_blocked = True
 
                 # Collect matches from contributing ATOs
@@ -383,7 +425,8 @@ class MarkerEngine:
                     if ato_det.marker_id in hits:
                         contributing_matches.extend(ato_det.matches)
 
-            # Also check SEM's own patterns (some SEMs have direct regex)
+            # Also check SEM's own patterns (direct regex — independent of composition)
+            own_pattern_matches: list[Match] = []
             for pat in mdef.patterns:
                 if pat.compiled is None:
                     continue
@@ -391,16 +434,20 @@ class MarkerEngine:
                     matched = m.group()
                     if len(matched.strip()) < 3:
                         continue
-                    contributing_matches.append(Match(
+                    own_pattern_matches.append(Match(
                         marker_id=mdef.id,
                         pattern=pat.raw,
                         start=m.start(),
                         end=m.end(),
                         matched_text=matched,
                     ))
+            contributing_matches.extend(own_pattern_matches)
 
-            if contributing_matches and confidence == 0.0 and not rule_blocked:
-                # Direct pattern match without composition (only if not explicitly blocked)
+            # Direct pattern match can activate SEM even if composition rule_blocked
+            if own_pattern_matches and confidence == 0.0:
+                base = (mdef.scoring or {}).get("base", 1.0)
+                confidence = min(1.0, 0.5 + len(own_pattern_matches) * 0.1 * base)
+            elif contributing_matches and confidence == 0.0 and not rule_blocked:
                 base = (mdef.scoring or {}).get("base", 1.0)
                 confidence = min(1.0, 0.5 + len(contributing_matches) * 0.1 * base)
 
