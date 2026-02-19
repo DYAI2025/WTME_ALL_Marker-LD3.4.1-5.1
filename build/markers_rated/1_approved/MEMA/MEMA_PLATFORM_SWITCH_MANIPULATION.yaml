@@ -8,6 +8,8 @@ composed_of:
 - SEM_PLATFORM_SWITCH
 - CLU_BOUNDARY_VIOLATION_PATTERNS
 - SEM_VALIDATION_SEEKING
+activation:
+  rule: "AT_LEAST 2"
 examples:
   positive:
   - "Repeated attempts to move conversations to private platforms despite resistance."

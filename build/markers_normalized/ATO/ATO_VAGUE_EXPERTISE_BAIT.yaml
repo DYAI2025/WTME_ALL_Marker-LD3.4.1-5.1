@@ -1,0 +1,38 @@
+id: ATO_VAGUE_EXPERTISE_BAIT
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Offering vague expertise or warning about challenges without any concrete technical detail
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: regex
+  value: "(?i)\\b(happy to (bounce ideas|chat|help out|discuss)|challenges around (scaling|complexity|architecture))\\b"
+- type: regex
+  value: "(?i)\\b(you might hit some.{0,20}challenges)\\b"
+- type: regex
+  value: "(?i)(with the complexity you.{0,10}adding)"
+examples:
+  positive:
+  - you might hit some interesting challenges around scaling
+  - Happy to bounce ideas sometime
+  - With the complexity you're adding, you might hit some challenges
+  - challenges around scaling and architecture
+  - happy to chat about your approach
+  negative:
+  - You'll hit a race condition when alarms fire concurrently with message handlers
+  - The storage sync limit is 8KB per item — this will break at scale
+  - Happy to help debug the webpack config — I had the same issue with MV3 HMR
+  - Consider using a connection pool to handle the scaling concern in your DB layer
+tags:
+- atomic
+- bot-detection
+- spam
+- github
+rating: 1
+metadata:
+  label: Vague Expertise Bait (Bot Signal)

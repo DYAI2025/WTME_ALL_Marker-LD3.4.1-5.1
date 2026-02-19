@@ -1,0 +1,40 @@
+id: ATO_TEMPLATE_OUTREACH
+schema: LeanDeep
+version: '5.1'
+layer: ATO
+lang: en
+description: Generic template phrases used in automated outreach — fits any repo/commit/project
+frame:
+  signal: []
+  concept: ''
+  pragmatics: ''
+  narrative: ''
+patterns:
+- type: regex
+  value: "(?i)(how'?s the project coming along)"
+- type: regex
+  value: "(?i)(your recent commit:\\s)"
+- type: regex
+  value: "(?i)(Hi\\s+\\w+!\\s+I'?ve been (looking|checking))"
+- type: regex
+  value: "(?i)(if you (want|need) to chat)"
+examples:
+  positive:
+  - How's the project coming along?
+  - Hi DYAI2025! I've been looking at your recent commits
+  - 'Your recent commit: fix heartbeat...'
+  - if you want to chat about it
+  - Hi devuser! I've been checking out your work
+  negative:
+  - How's the migration to TypeScript going? Any blockers on the type definitions?
+  - I saw your commit fixing the heartbeat — did you consider chrome.offscreen as an alternative?
+  - Your recent PR has a failing CI check on the linting step
+  - 'Want to chat about the API design in issue #42?'
+tags:
+- atomic
+- bot-detection
+- spam
+- github
+rating: 1
+metadata:
+  label: Template Outreach Phrase (Bot Signal)

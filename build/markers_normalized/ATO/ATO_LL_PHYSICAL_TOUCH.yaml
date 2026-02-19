@@ -11,7 +11,7 @@ frame:
   narrative: ''
 patterns:
 - type: regex
-  value: "(umarmen|küssen|halten|Händchen halten|kuscheln|berühren)"
+  value: "\\b(umarmen|küssen|halten|Händchen halten|kuscheln|berühren)\\b"
 examples:
   positive:
   - Lass uns umarmen.

@@ -11,7 +11,7 @@ frame:
   narrative: ''
 patterns:
 - type: regex
-  value: "(lieb|hab dich gern|Kuss|Küsse|❤️|😘|Umarmung|vermisse dich|Schatz|Liebling)"
+  value: "\\b(liebe?|hab dich gern|Kuss|Küsse|❤️|😘|Umarmung|vermisse dich|Schatz|Liebling)\\b"
 examples:
   positive:
   - Hab dich lieb.

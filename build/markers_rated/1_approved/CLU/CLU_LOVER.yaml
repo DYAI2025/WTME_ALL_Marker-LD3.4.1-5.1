@@ -8,7 +8,7 @@
     concept: "Liebe / Hingabe"
     pragmatics: "Tiefe emotionale Verbindung"
     narrative: "Ich liebe von ganzem Herzen"
-  pattern: "(liebe|Herz|hingabe|vergöttere|alles für dich)"
+  pattern: "\\b(liebe|Herz|hingabe|vergöttere|alles für dich)\\b"
   examples:
     - "ich liebe dich so sehr"
     - "mein ganzes Herz"

@@ -12,7 +12,7 @@ frame:
   narrative: Ich liebe von ganzem Herzen
 patterns:
 - type: regex
-  value: "(liebe|Herz|hingabe|vergöttere|alles für dich)"
+  value: "\\b(liebe|Herz|hingabe|vergöttere|alles für dich)\\b"
 examples:
   positive:
   - ich liebe dich so sehr

@@ -42,5 +42,7 @@ composed_of:
 - ATO_WHATSAPP
 - ATO_EMAIL
 - ATO_PERSONAL
+activation:
+  rule: "AT_LEAST 2"
 window:
   messages: 3

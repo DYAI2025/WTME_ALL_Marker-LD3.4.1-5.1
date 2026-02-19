@@ -1,0 +1,28 @@
+name: ATO_OFFPLATFORM_FUNNEL
+label: "Off-Platform Funnel (Bot Signal)"
+class: atomic
+version: 1.0
+languages: [en]
+meaning: "Redirecting conversation to DM/X/Telegram/Discord — bot outreach funnel away from GitHub"
+patterns:
+  - type: regex
+    value: "(?i)\\b(DM me on|reach me on|connect (with me )?on|find me on|hit me up on|message me on)\\b"
+  - type: regex
+    value: "(?i)(reply here or DM)"
+  - type: regex
+    value: "(?i)(DM me on (X|Twitter|Telegram|Discord|LinkedIn))"
+examples:
+  positive:
+  - "DM me on X if you want to chat"
+  - "Reply here or DM me on X (@username)"
+  - "reach me on Telegram for a quick call"
+  - "connect with me on LinkedIn"
+  - "find me on Discord — happy to chat"
+  - "hit me up on X"
+  - "message me on Telegram"
+  negative:
+  - "You can report this issue on our Discord server"
+  - "Join our community on Discord for support"
+  - "File a bug on our issue tracker"
+  - "Check the docs on our wiki"
+tags: [atomic, bot-detection, spam, platform-switch, github]

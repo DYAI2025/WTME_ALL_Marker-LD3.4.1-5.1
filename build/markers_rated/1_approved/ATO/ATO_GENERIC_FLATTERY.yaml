@@ -1,0 +1,26 @@
+name: ATO_GENERIC_FLATTERY
+label: "Generic Flattery (Bot Signal)"
+class: atomic
+version: 1.0
+languages: [en]
+meaning: "Vague non-specific praise that fits any project — classic bot outreach signal"
+patterns:
+  - type: regex
+    value: "(?i)\\b(some interesting patterns|interesting patterns|nice work|great project|impressive code)\\b"
+  - type: regex
+    value: "(?i)(I've been looking at your.{0,30}(commits?|code|repo|project))"
+  - type: regex
+    value: "(?i)(I (noticed|came across|found) your.{0,20}(repo|project|work))"
+examples:
+  positive:
+  - "some interesting patterns there"
+  - "I've been looking at your recent commits"
+  - "I've been looking at your code — nice work"
+  - "I noticed your project and the interesting patterns"
+  - "I came across your repo — impressive code"
+  negative:
+  - "Your use of chrome.alarms instead of setInterval is a good pattern for MV3"
+  - "The recursive descent parser handles edge cases well, especially the backtracking in line 142"
+  - "Interesting approach to the connection pooling — have you considered using pg-pool?"
+  - "Nice work on fixing the race condition in the heartbeat handler"
+tags: [atomic, bot-detection, spam, github]

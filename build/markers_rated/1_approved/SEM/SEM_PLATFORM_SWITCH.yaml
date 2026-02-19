@@ -15,6 +15,8 @@ composed_of:
 - ATO_EMAIL
 - ATO_PERSONAL
 activation_logic: "ANY 2"
+activation:
+  rule: "AT_LEAST 2"
 window:
   messages: 3
 examples:

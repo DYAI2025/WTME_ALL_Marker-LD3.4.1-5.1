@@ -1,0 +1,38 @@
+id: SEM_BOT_OUTREACH
+schema: LeanDeep
+version: '5.1'
+layer: SEM
+lang: en
+description: Automated bot outreach combining generic flattery, off-platform redirect, vague expertise bait, and template phrases
+frame:
+  signal:
+  - combined signals
+  concept: Bot Outreach Spam
+  pragmatics: Automated outreach detection on developer platforms
+  narrative: Fake engagement to funnel target off-platform for sales/scam
+patterns: []
+examples:
+  positive:
+  - Hi DYAI2025! I've been looking at your recent commits around bug fixes - some interesting patterns. How's the project coming along? With the complexity you're adding, you might hit some 
+    interesting challenges around scaling. Happy to bounce ideas sometime. Reply here or DM me on X.
+  - Nice work on the refactoring! I noticed your repo and some interesting patterns. You might hit some challenges around architecture. DM me on Telegram if you want to chat.
+  - I've been looking at your code — impressive project. How's it coming along? Happy to help with scaling challenges. Find me on Discord.
+  negative:
+  - 'Hey, I noticed your PR #42 has a potential race condition in the alarm handler. Want me to open an issue with a reproduction case?'
+  - 'Great refactoring! The separation of concerns in the worker module is much cleaner now. One suggestion: consider using chrome.offscreen for the heartbeat instead.'
+  - I forked your repo and fixed the TypeScript errors in the build pipeline. PR incoming.
+tags:
+- semantic
+- bot-detection
+- spam
+- github
+rating: 1
+composed_of:
+- ATO_GENERIC_FLATTERY
+- ATO_OFFPLATFORM_FUNNEL
+- ATO_VAGUE_EXPERTISE_BAIT
+- ATO_TEMPLATE_OUTREACH
+activation:
+  rule: "AT_LEAST 3"
+window:
+  messages: 1

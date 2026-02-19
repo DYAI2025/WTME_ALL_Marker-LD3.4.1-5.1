@@ -6,7 +6,7 @@ languages: [de]
 meaning: "offene Zuneigungs- und Nähe-Marker"
 patterns:
   - type: regex
-    value: "(lieb|hab dich gern|Kuss|Küsse|❤️|😘|Umarmung|vermisse dich|Schatz|Liebling)"
+    value: "\\b(liebe?|hab dich gern|Kuss|Küsse|❤️|😘|Umarmung|vermisse dich|Schatz|Liebling)\\b"
 threshold: 1
 semiotic:
   mode: iconic
