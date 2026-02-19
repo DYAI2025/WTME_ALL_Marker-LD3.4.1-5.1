@@ -8,8 +8,7 @@ frame:
   pragmatics: Zögern oder Andeutung
   narrative: Spannungsaufbau
 pattern:
-- '...'
-- …
+- '(\w*\.\.\.+|\w*…+)'
 activation:
   rule: ANY 1
 examples:

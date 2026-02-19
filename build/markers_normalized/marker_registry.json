@@ -9987,10 +9987,6 @@
         {
           "type": "regex",
           "value": "(haha|lol|😄|😅|witzig|lustig|😂|😉)"
-        },
-        {
-          "type": "emoji",
-          "value": "[😄, 😅, 😂, 😉]"
         }
       ],
       "examples": {
@@ -46003,11 +45999,7 @@
       "patterns": [
         {
           "type": "regex",
-          "value": "..."
-        },
-        {
-          "type": "regex",
-          "value": "…"
+          "value": "(\\w*\\.\\.\\.+|\\w*…+)"
         }
       ],
       "examples": {

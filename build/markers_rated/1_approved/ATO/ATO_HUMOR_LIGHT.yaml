@@ -7,8 +7,6 @@ meaning: "Leichte humorvolle Elemente, Emojis oder Lexeme, die Spannung abbauen"
 patterns:
   - type: regex
     value: "(haha|lol|😄|😅|witzig|lustig|😂|😉)"
-  - type: emoji
-    value: "[😄, 😅, 😂, 😉]"
 threshold: 1
 semiotic:
   mode: iconic

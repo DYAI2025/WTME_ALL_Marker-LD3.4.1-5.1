@@ -12,8 +12,6 @@ frame:
 patterns:
 - type: regex
   value: "(haha|lol|😄|😅|witzig|lustig|😂|😉)"
-- type: emoji
-  value: "[😄, 😅, 😂, 😉]"
 examples:
   positive:
   - Haha typisch!

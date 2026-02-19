@@ -14,9 +14,7 @@ frame:
   narrative: Spannungsaufbau
 patterns:
 - type: regex
-  value: '...'
-- type: regex
-  value: …
+  value: '(\w*\.\.\.+|\w*…+)'
 examples:
   positive:
   - Hm…
