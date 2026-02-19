@@ -31,3 +31,4 @@ examples:
 tags:
 - connection_signal
 - positive_reinforcement
+compositionality: deterministic

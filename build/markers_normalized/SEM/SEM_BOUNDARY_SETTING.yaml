@@ -42,3 +42,4 @@ composed_of:
 - ATO_SELF_REFLECTION
 window:
   messages: 2
+compositionality: deterministic

@@ -55,3 +55,4 @@ activation:
 scoring:
   base: 1.2
   weight: 1.1
+compositionality: deterministic

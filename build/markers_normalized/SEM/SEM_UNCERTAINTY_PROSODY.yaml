@@ -43,5 +43,6 @@ composed_of:
 - ATO_F0_RISE_FINAL
 scoring:
   base: 0.66
+compositionality: deterministic
 metadata:
   type: SEM

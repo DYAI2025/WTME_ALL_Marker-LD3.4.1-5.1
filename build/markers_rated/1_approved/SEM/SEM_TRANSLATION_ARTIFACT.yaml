@@ -47,3 +47,4 @@ tags:
 - forensik
 composed_of:
 - ATO_PLACEHOLDER
+compositionality: deterministic

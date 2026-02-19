@@ -51,6 +51,7 @@ tags:
 rating: 1
 activation:
   rule: "ANY at sentence start"
+compositionality: deterministic
 metadata:
   source:
     semantische_grabber_id: "SGR_SVT_APPEAL_DIRECT_01"

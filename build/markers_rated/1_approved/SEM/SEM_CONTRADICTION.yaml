@@ -34,7 +34,8 @@ examples:
   - Ich bin dafür, ich bin dagegen, was ist richtig?
   - Ich will mitmachen, aber ich habe Zweifel.
   - Ich möchte helfen, aber ich muss zuerst meine eigenen Probleme lösen.
-  - Auf der einen Seite freue ich mich, andererseits habe ich Angst vor Veränderungen.
+  - Auf der einen Seite freue ich mich, andererseits habe ich Angst vor 
+    Veränderungen.
   - Ich bin bereit zu unterstützen, aber nur unter bestimmten Bedingungen.
   - Einerseits fühle ich mich zu dir hingezogen, andererseits halte ich Abstand.
   - Ich finde die Idee gut, aber die Umsetzung bereitet mir Sorgen.
@@ -49,3 +50,4 @@ examples:
 tags:
 - contradiction
 - ambivalence
+compositionality: deterministic

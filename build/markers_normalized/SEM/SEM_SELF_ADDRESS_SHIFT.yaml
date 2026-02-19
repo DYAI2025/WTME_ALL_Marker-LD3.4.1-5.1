@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_SELF_ADDRESS_VERB
 - ATO_LOVE_MOTIVE
+compositionality: deterministic

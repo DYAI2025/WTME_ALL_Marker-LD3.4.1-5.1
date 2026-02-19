@@ -49,3 +49,4 @@ composed_of:
 activation:
   rule: "BOTH IN 2 messages"
   window: 2
+compositionality: deterministic

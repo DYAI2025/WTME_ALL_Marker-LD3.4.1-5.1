@@ -33,3 +33,4 @@ composed_of:
 - ATO_AUTHORITY_PHRASE
 activation:
   rule: "BOTH IN 1 message"
+compositionality: deterministic

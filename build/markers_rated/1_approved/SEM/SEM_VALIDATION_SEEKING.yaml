@@ -21,12 +21,14 @@ examples:
   - "Don't you think I have a point? Maybe I'm wrong but this feels important to validate."
   - "Do you agree with me here? I don't know if my emotions are making me overreact."
   - "Can you validate my feelings? I'm not sure if I'm being too sensitive about this."
-  - "Tell me I'm not imagining this. Perhaps I need reassurance that my perspective matters."
+  - "Tell me I'm not imagining this. Perhaps I need reassurance that my perspective
+    matters."
   - "Am I being unreasonable here? I feel like I need someone to confirm my reality."
   - "Don't you see how this affects me? I'm not sure if you understand my position."
   - "Do you think my concerns are valid? Maybe I'm overthinking but it feels real."
   - "Can you see why this upsets me? I don't know if I'm explaining it clearly."
-  - "Tell me you understand where I'm coming from. I feel like I'm speaking into a void."
+  - "Tell me you understand where I'm coming from. I feel like I'm speaking into a
+    void."
   negative:
   - Can you pass the salt?
   - The meeting is at 2 PM.
@@ -36,3 +38,4 @@ examples:
   - I need to get gas.
   - The meeting is in the conference room.
 tags: [semantic, v3.3, validation]
+compositionality: deterministic

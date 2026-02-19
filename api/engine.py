@@ -96,6 +96,7 @@ class MarkerDef:
     family: str | None = None
     multiplier: float = 1.0
     detect_class: str | None = None
+    compositionality: str | None = None  # deterministic | contextual | emergent
 
 
 @dataclass
@@ -270,6 +271,7 @@ class MarkerEngine:
             family=data.get("ld5_family"),
             multiplier=data.get("ld5_multiplier", 1.0),
             detect_class=data.get("detect_class"),
+            compositionality=data.get("compositionality"),
         )
 
     def _compile_pattern(self, raw: str, flags: list[str]) -> re.Pattern | None:
@@ -416,6 +418,17 @@ class MarkerEngine:
                         confidence = 0.7 + (hit_ratio * 0.3)
                     else:
                         confidence = 0.6 + (hit_ratio * 0.4)
+
+                    # Compositionality modulation:
+                    # deterministic = ATOs carry their own vector (full confidence)
+                    # contextual    = ATOs need relational context (discounted)
+                    # emergent      = meaning only through full constellation (strong discount)
+                    comp = mdef.compositionality
+                    if comp == "contextual":
+                        confidence *= 0.70
+                    elif comp == "emergent":
+                        confidence *= 0.50
+                    # deterministic / None = no discount
                 else:
                     confidence = 0.0
                     rule_blocked = True

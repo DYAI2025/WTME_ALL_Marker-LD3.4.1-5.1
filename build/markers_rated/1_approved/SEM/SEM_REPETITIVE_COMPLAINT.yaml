@@ -42,3 +42,4 @@ meta:
   created_by: "FRAUSAR_GUI_v2"
   source_version: "1.0"
   schema_version: "3.3"
+compositionality: deterministic

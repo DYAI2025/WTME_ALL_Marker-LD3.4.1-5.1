@@ -45,3 +45,4 @@ composed_of:
 activation:
   rule: "AT_LEAST 1 IN 2 messages"
   window: 2
+compositionality: deterministic

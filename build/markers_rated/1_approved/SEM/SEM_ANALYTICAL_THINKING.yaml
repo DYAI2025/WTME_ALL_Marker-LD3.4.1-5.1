@@ -20,15 +20,21 @@ scoring:
   weight: 1.2
 examples:
   positive:
-  - Basierend auf den Verkaufszahlen konnten wir einen Rückgang im Mai feststellen.
+  - Basierend auf den Verkaufszahlen konnten wir einen Rückgang im Mai 
+    feststellen.
   - Wenn wir die Variablen X und Y isolieren, zeigt sich ein klarer Trend.
   - Die Daten legen nahe, dass unser Ansatz optimiert werden muss.
-  - Folglich sollten wir die Strategie anpassen, um bessere Ergebnisse zu erzielen.
+  - Folglich sollten wir die Strategie anpassen, um bessere Ergebnisse zu 
+    erzielen.
   - Diese Analyse verdeutlicht, dass die Hypothese bestätigt werden kann.
-  - Ich habe die Ergebnisse tabellarisch zusammengefasst, um die Korrelation zu verdeutlichen.
-  - Es erscheint logisch, dass ein höheres Budget zu einer besseren Performance führt.
-  - Durch schrittweises Vorgehen konnten wir den Fehlerquellen auf den Grund gehen.
-  - Statistisch ist die Abweichung signifikant und erfordert eine Ursachenforschung.
+  - Ich habe die Ergebnisse tabellarisch zusammengefasst, um die Korrelation zu 
+    verdeutlichen.
+  - Es erscheint logisch, dass ein höheres Budget zu einer besseren Performance 
+    führt.
+  - Durch schrittweises Vorgehen konnten wir den Fehlerquellen auf den Grund 
+    gehen.
+  - Statistisch ist die Abweichung signifikant und erfordert eine 
+    Ursachenforschung.
   - Wir können daraus schließen, dass unsere Annahme valide ist.
   negative:
   - Ich finde, wir sollten das in Ruhe besprechen.
@@ -40,3 +46,4 @@ examples:
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags:
 - analytical_thinking
+compositionality: deterministic

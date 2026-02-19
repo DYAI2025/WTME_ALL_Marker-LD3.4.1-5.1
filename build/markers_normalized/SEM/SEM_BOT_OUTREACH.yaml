@@ -36,3 +36,4 @@ activation:
   rule: "AT_LEAST 3"
 window:
   messages: 1
+compositionality: deterministic

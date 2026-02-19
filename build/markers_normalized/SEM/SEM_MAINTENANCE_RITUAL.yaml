@@ -50,3 +50,4 @@ scoring:
   formula: "logistic"
 window:
   messages: 30
+compositionality: contextual

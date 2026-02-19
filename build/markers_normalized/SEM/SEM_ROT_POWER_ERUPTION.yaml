@@ -34,3 +34,4 @@ composed_of:
 - ATO_POWER_ASSERTION
 - ATO_SURVIVAL_INSTINCT
 activation: "BOTH IN 1 message"
+compositionality: deterministic

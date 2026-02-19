@@ -33,3 +33,4 @@ negatives:
 - "Die Stimmung **entsteht** von allein."    # keine aktive Steuerung
 
 
+compositionality: deterministic

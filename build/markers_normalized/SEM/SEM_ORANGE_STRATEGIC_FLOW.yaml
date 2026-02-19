@@ -33,3 +33,4 @@ composed_of:
 - ATO_ACHIEVEMENT_DRIVE
 - ATO_INTEGRAL_THINKING
 activation: "ANY 2 IN 2 messages"
+compositionality: deterministic

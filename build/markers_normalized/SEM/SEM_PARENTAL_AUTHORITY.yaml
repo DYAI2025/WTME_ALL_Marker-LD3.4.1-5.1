@@ -52,3 +52,4 @@ window:
   messages: 30
 detect_class: "E"
 criteria: "Kombination aus Elternrolle und direktiven Sprechakten"
+compositionality: deterministic

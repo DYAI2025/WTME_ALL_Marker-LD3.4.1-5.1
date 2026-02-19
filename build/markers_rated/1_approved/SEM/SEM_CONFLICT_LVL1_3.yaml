@@ -24,7 +24,8 @@ examples:
   - Warum musst du immer alles besser wissen? Das nervt mich total!
   - Ich verstehe nicht, warum du so drauf bist. Sag’s mir endlich!
   - Alter, das ist doch völliger Quatsch, was du da redest!
-  - Ich hab dir doch gesagt, dass ich das nicht will, warum machst du es trotzdem?
+  - Ich hab dir doch gesagt, dass ich das nicht will, warum machst du es 
+    trotzdem?
   - Warum ignorierst du mich? Ich fühl mich komplett verarscht!
   - Ey, reg dich ab! Halt mal deine Klappe!
   - Ich finde es echt arm, wie du dich verhältst.
@@ -47,3 +48,4 @@ tags:
 - conflict
 - aggression
 - argument
+compositionality: deterministic

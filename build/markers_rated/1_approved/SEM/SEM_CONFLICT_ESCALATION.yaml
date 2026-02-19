@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_CONFLICT_ESCALATION
 frame:
-  signal: [ "escalation" ]
+  signal: ["escalation"]
   concept: "Konflikteskalation"
   pragmatics: "Aneinanderhakende Mikro-Muster"
   narrative: "conflict"
-tags: [ conflict, escalation ]
+tags: [conflict, escalation]
 composed_of:
   any_of:
   - ATO_DEFENSIVENESS
@@ -17,7 +17,7 @@ composed_of:
 activation:
   rule: "AT_LEAST 3 IN 4 messages"
   window: 4
-scoring: { base: 0.9, weight: 1.2 }
+scoring: {base: 0.9, weight: 1.2}
 examples:
   positive:
   - "Das stimmt nicht – wegen dir musste ich so reagieren – na klar, immer ich."
@@ -41,3 +41,4 @@ examples:
   - "Ich merke, wir drehen uns im Kreis, lass uns abbrechen."
   - "Du hast recht, dass ich auch Fehler gemacht habe."
   - "Können wir einen Moment innehalten und überlegen?"
+compositionality: deterministic

@@ -37,3 +37,4 @@ composed_of:
 - ATO_SPIRAL
 activation:
   rule: "AT_LEAST 2 ATO_SPIRAL IN 4 messages"
+compositionality: deterministic

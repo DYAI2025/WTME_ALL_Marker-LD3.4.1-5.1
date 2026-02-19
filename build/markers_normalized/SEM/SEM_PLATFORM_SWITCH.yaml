@@ -46,3 +46,4 @@ activation:
   rule: "AT_LEAST 2"
 window:
   messages: 3
+compositionality: contextual

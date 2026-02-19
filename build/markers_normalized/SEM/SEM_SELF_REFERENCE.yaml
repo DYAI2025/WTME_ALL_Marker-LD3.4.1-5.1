@@ -37,3 +37,4 @@ composed_of:
 - ATO_SELF_REF
 activation:
   rule: "AT_LEAST 3 SELF_REF IN 5 messages"
+compositionality: deterministic

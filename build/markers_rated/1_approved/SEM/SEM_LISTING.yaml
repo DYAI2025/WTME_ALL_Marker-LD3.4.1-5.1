@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_LISTING
 frame:
-  signal: [ "listing" ]
+  signal: ["listing"]
   concept: "Kontext-/Lastenbündel statt Punktlösung"
   pragmatics: "Breite statt Tiefe"
   narrative: "argumentation"
-tags: [ listing, evidence ]
+tags: [listing, evidence]
 composed_of:
   any_of:
   - ATO_PLATFORM
@@ -38,3 +38,4 @@ examples:
   - "Fokussieren wir uns auf einen Aspekt."
   - "Das Kernelement ist Trust."
   - "Der entscheidende Faktor ist Zeit."
+compositionality: deterministic

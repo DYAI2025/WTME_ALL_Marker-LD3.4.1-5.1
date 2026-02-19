@@ -30,7 +30,8 @@ examples:
   - Ich kann mir ein Leben ohne dich nicht mehr vorstellen.
   - Seit du in meinem Leben bist, gibt es nur noch Licht.
   - Du bist das Einzige, was für mich zählt – alles andere ist egal.
-  - Ich weiß, wir kennen uns kaum, aber ich spüre, dass du mein Seelenverwandter bist.
+  - Ich weiß, wir kennen uns kaum, aber ich spüre, dass du mein Seelenverwandter
+    bist.
   - Mit dir habe ich endlich das Gefühl, vollständig zu sein.
   - Du bist wie ein Wunder für mich – ich werde dich niemals gehen lassen.
   - Ich habe noch nie jemanden so sehr geliebt wie dich – du bist einzigartig.
@@ -49,3 +50,4 @@ examples:
 tags:
 - love_bombing
 - dependency
+compositionality: deterministic

@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_GET_SUBJECT_CONTROL
 frame:
-  signal: [ "subject_control" ]
+  signal: ["subject_control"]
   concept: "Themensteuerung und -hoheit"
   pragmatics: "Kontrolle & Sicherheit"
   narrative: "coordination"
-tags: [ control, coordination ]
+tags: [control, coordination]
 composed_of:
   any_of:
   - ATO_SOVEREIGNTY_OVER_SUBJECT
@@ -22,7 +22,7 @@ composed_of:
 activation:
   rule: "AT_LEAST 3 IN 4 messages"
   window: 4
-scoring: { base: 0.6, weight: 1.15 }
+scoring: {base: 0.6, weight: 1.15}
 examples:
   positive:
   - "Zur Sache: Zeitplan – warum jetzt? – Der Reihe nach."
@@ -46,3 +46,4 @@ examples:
   - "Lass uns gemeinsam entscheiden, worüber wir sprechen."
   - "Ich folge deinem Gedankengang."
   - "Du führst, ich bin bei dir."
+compositionality: deterministic

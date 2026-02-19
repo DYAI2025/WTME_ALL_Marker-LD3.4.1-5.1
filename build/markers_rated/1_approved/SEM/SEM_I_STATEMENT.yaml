@@ -37,4 +37,5 @@ examples:
   - "Du verletzt mich mit Absicht."
   - "Du bist unehrlich."
   - "Du gibst mir nicht genug Aufmerksamkeit."
-tags: [ self_disclosure, clarity, semantics ]
+tags: [self_disclosure, clarity, semantics]
+compositionality: deterministic

@@ -36,3 +36,4 @@ examples:
 tags:
 - archetype
 - narrative
+compositionality: deterministic

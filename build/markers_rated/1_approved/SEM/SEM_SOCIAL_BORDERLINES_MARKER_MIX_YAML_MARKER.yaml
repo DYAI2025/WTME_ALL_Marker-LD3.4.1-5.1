@@ -34,3 +34,4 @@ examples:
 tags:
 - social_boundary
 - norm_violation
+compositionality: deterministic

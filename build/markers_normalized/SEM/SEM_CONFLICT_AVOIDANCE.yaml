@@ -47,6 +47,7 @@ activation:
 scoring:
   base: 0.55
   weight: 1.0
+compositionality: deterministic
 metadata:
   constraints:
     absent:

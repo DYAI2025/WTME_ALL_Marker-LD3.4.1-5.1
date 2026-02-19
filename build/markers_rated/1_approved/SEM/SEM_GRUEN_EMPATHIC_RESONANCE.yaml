@@ -15,7 +15,8 @@ examples:
   - "fürsorgliche Zusammenarbeit"
   - "verbindende Fürsorge"
   - "kollektive Harmonie"
-  - "Der Weg des auditiven Propheten: Nicht nur erkennen, was gehört wird – sondern was dadurch geschieht."
+  - "Der Weg des auditiven Propheten: Nicht nur erkennen, was gehört wird – sondern
+    was dadurch geschieht."
   negative:
   - I think we should discuss this calmly.
   - That's a good point you're making.
@@ -24,3 +25,4 @@ examples:
   - I've noticed we think differently about this.
   - I want to understand what you mean.
   - That sounds like an important topic for you.
+compositionality: deterministic

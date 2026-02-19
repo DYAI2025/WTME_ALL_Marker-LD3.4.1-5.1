@@ -26,7 +26,8 @@ examples:
   - Ich bin unsicher, ob ich morgen Zeit habe, aber ich gebe dir Bescheid.
   - Es steht mir frei, meine Einstellung später zu überdenken.
   - Ich brauche Raum, um meine Gefühle zu sortieren.
-  - Ich halte mir Optionen offen und teile dir rechtzeitig mit, was ich entscheide.
+  - Ich halte mir Optionen offen und teile dir rechtzeitig mit, was ich 
+    entscheide.
   - Ich stehe zu meiner Unsicherheit und erwarte Verständnis.
   negative:
   - Ich finde, wir sollten das in Ruhe besprechen.
@@ -40,3 +41,4 @@ tags:
 - ambivalence
 - tolerance
 - boundary
+compositionality: deterministic

@@ -36,4 +36,5 @@ examples:
   - "Lass uns schauen, was für beide passt."
   - "Ich würde das gerne verstehen."
   - "Mir ist wichtig, dass wir beide zufrieden sind."
-tags: [ conditional, boundary, semantics ]
+tags: [conditional, boundary, semantics]
+compositionality: deterministic

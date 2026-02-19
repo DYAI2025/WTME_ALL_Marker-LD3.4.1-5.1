@@ -37,3 +37,4 @@ examples:
 tags: [semantic, audio, reaction_formation]
 metadata:
   type: SEM
+compositionality: deterministic

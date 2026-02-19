@@ -33,3 +33,4 @@ composed_of:
 - ATO_SYSTEMS_TALK
 activation:
   rule: "BOTH IN 1 message"
+compositionality: deterministic

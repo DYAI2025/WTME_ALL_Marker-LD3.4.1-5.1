@@ -38,5 +38,6 @@ composed_of:
 - ATO_NONVERBAL_JOY_VERB
 activation:
   rule: "ANY 1 IN 1 message"
+compositionality: deterministic
 metadata:
   notes: "Textuell berichtete Beobachtung; keine echte Sensorik."

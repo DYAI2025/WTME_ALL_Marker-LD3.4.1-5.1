@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_FRAME_SHIFT
 frame:
-  signal: [ "frame_shift" ]
+  signal: ["frame_shift"]
   concept: "Vom konkreten Fall auf Meta/Prinzipien verlagern"
   pragmatics: "Abstraktion / Agenda-Schutz"
   narrative: "framing"
-tags: [ frame, abstraction ]
+tags: [frame, abstraction]
 composed_of:
   any_of:
   - ATO_TOPIC_SPLIT
@@ -37,3 +37,4 @@ examples:
   - "Was ist konkret das Problem?"
   - "Bleiben wir beim Thema, nicht bei Prinzipien."
   - "Das Einzelne ist mir wichtig, nicht die Theorie."
+compositionality: deterministic

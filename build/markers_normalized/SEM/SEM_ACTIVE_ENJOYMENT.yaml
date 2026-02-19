@@ -41,3 +41,4 @@ composed_of:
 - ATO_ACTIVITY_VERB
 activation:
   rule: "BOTH IN 1 message"
+compositionality: contextual

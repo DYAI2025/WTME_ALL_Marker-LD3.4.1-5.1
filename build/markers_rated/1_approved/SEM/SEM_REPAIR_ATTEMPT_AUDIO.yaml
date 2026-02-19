@@ -39,3 +39,4 @@ examples:
 tags: [semantic, audio, repair]
 metadata:
   type: SEM
+compositionality: deterministic

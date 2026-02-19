@@ -39,3 +39,4 @@ examples:
 tags:
 - double_bind
 - paradox
+compositionality: deterministic

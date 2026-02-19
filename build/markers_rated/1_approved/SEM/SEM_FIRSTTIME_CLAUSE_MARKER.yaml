@@ -67,3 +67,4 @@ metadata:
   repair_log:
   - rule: "R00-R06 applied"
     date: "2025-08-07"
+compositionality: deterministic

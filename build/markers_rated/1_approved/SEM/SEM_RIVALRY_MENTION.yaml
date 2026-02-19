@@ -13,7 +13,8 @@ pattern:
 - "er schreibt dir"
 activation:
   rule: "ANY in 1 message"
-justification: "Pattern-basierte SEM-Definition bis ATO-Referenzen geliefert sind (v3.3-Ausnahme)."
+justification: "Pattern-basierte SEM-Definition bis ATO-Referenzen geliefert sind
+  (v3.3-Ausnahme)."
 examples:
   # vorhandener Rohblock (bewusst beibehalten)
   positive:
@@ -30,9 +31,11 @@ examples:
   - "- \"Mir ist aufgefallen, dass du jedes Bild von ihm likest.\""
   - "- \"Was wollen all diese anderen Frauen auf deinem Profil?\""
   - "- \"Mit wem hast du gerade telefoniert? War es wieder dieser Typ von der Arbeit?\""
-  - "- \"Du hast sicher viele andere Männer, die dir schreiben. Ich verstehe, wenn ich nur einer von vielen bin.\""
+  - "- \"Du hast sicher viele andere Männer, die dir schreiben. Ich verstehe, wenn
+    ich nur einer von vielen bin.\""
   - "- \"Findest du, sie sieht besser aus als ich?\""
-  - "- \"Wer war die Person, mit der du gestern im Café warst? Sah nicht nach einem Kumpel aus.\""
+  - "- \"Wer war die Person, mit der du gestern im Café warst? Sah nicht nach einem
+    Kumpel aus.\""
   - "- \"Ich hab gesehen, dass du wieder mit ihr schreibst. Überrascht mich nicht.\""
   - "- \"Warum musst du immer erwähnen, was andere Typen so machen?\""
   - "- \"Du musst mir jetzt ehrlich sagen, ob da jemand anderes ist.\""
@@ -60,3 +63,4 @@ meta:
   created_by: "FRAUSAR_GUI_v2"
   source_version: "1.0"
   schema_version: "3.3"
+compositionality: deterministic

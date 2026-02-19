@@ -4,7 +4,8 @@ version: "3.3"
 last_updated: "2025-08-19"
 lang: de
 category: SEMANTIC
-description: "Vollständige Eskalationskette nach Gottman: Kritik, Defensivität, Verachtung (ggf. Stonewalling)."
+description: "Vollständige Eskalationskette nach Gottman: Kritik, Defensivität, Verachtung
+  (ggf. Stonewalling)."
 frame:
   signal: ["Kritik + Defensivität + Verachtung (+ ggf. Stonewalling) in kurzer Sequenz"]
   concept: "Makro-Eskalation"
@@ -30,7 +31,8 @@ examples:
   - "Du bist immer zu spät. — Ja und du bist nie vorbereitet. — Wie dumm … — (Stille)"
   - "Nie hörst du zu. — Ja, aber du auch nicht. — 🤦"
   negative:
-  - Du bist manchmal unzuverlässig. — Ja, aber gestern warst du spät. — Lächerlich.
+  - Du bist manchmal unzuverlässig. — Ja, aber gestern warst du spät. — 
+    Lächerlich.
   - Du machst selten, was du sagst. — Das stimmt so nicht. — 🙄
   - ich erlebe es so, dass nie, was du sagst. — Das stimmt so nicht. — 🙄
   - Ich finde, wir sollten das in Ruhe besprechen.
@@ -38,3 +40,4 @@ examples:
   - Ich verstehe deine Perspektive.
   - Lass uns gemeinsam eine Loesung finden.
 tags: [semantic, conflict, gottman, escalation]
+compositionality: deterministic

@@ -38,3 +38,4 @@ tags: [semantic, shame]
 metadata:
   repair_log:
   - {rule: "R06", note: "Nur composed_of beibehalten", date: "2025-08-29"}
+compositionality: deterministic

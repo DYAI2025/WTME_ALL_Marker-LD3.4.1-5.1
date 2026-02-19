@@ -43,5 +43,6 @@ composed_of:
 - ATO_JITTER_SHIMMER_HIGH
 scoring:
   base: 0.68
+compositionality: deterministic
 metadata:
   type: SEM

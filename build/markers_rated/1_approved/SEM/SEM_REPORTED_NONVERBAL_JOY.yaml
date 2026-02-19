@@ -34,3 +34,4 @@ negatives:
 - "Er **lacht** aus **Hohn**."    # nicht Freude
 
 
+compositionality: deterministic

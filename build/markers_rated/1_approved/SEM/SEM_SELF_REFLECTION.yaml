@@ -18,17 +18,20 @@ window:
 examples:
   positive:
   - "I realize I might be overthinking this. I need to calm down and see your perspective."
-  - "I understand I've been defensive. I'm feeling frustrated but that's not your fault."
+  - "I understand I've been defensive. I'm feeling frustrated but that's not your
+    fault."
   - "I see that I'm not handling this well. Maybe I should take a breath first."
   - "I recognize my emotions are running high. I'm not sure how to proceed constructively."
   - "I notice I keep interrupting you. Perhaps I need to listen more carefully."
-  - "I realize this conversation triggered something in me that isn't really about you."
+  - "I realize this conversation triggered something in me that isn't really about
+    you."
   - "I understand my reaction was disproportionate. I'm feeling overwhelmed lately."
   - "I see I've been projecting my own fears onto what you're saying."
   - "I recognize I need to work on my communication style in situations like this."
   - "I notice I'm being defensive when you're just trying to help me understand."
   negative:
-  - I realize I might be overthinking this. I want to calm down and see your perspective.
+  - I realize I might be overthinking this. I want to calm down and see your 
+    perspective.
   - I notice I keep interrupting you. Perhaps I want to listen more carefully.
   - Can you pass the salt?
   - The meeting is at 2 PM.
@@ -36,3 +39,4 @@ examples:
   - The weather should be better tomorrow.
   - Did you read the email?
 tags: [semantic, v3.3, self-reflection]
+compositionality: deterministic

@@ -43,5 +43,6 @@ composed_of:
 - ATO_SIGH
 scoring:
   base: 0.70
+compositionality: deterministic
 metadata:
   type: SEM

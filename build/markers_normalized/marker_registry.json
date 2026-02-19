@@ -32867,7 +32867,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ACTIVE_ENJOYMENT": {
       "id": "SEM_ACTIVE_ENJOYMENT",
@@ -32919,7 +32920,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "contextual"
     },
     "SEM_ADJACENT_COMPLAIN": {
       "id": "SEM_ADJACENT_COMPLAIN",
@@ -32973,7 +32975,8 @@
       },
       "window": {
         "messages": 40
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AFFECT_ISOLATION_TEXT": {
       "id": "SEM_AFFECT_ISOLATION_TEXT",
@@ -33025,6 +33028,7 @@
         "base": 1.4,
         "weight": 1.1
       },
+      "compositionality": "deterministic",
       "metadata": {
         "justification": "SEM mit 1 ATO + Kontextregel (Affekt-Abwesenheit) gemäß LD3.4 zulässig.",
         "repair_log": [
@@ -33097,7 +33101,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ALIGNMENT_CHECK": {
       "id": "SEM_ALIGNMENT_CHECK",
@@ -33161,7 +33166,8 @@
       "scoring": {
         "base": 0.58,
         "weight": 1.02
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AMBIGUITY_FLAG": {
       "id": "SEM_AMBIGUITY_FLAG",
@@ -33211,7 +33217,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AMBIVALENCE": {
       "id": "SEM_AMBIVALENCE",
@@ -33256,7 +33263,8 @@
       ],
       "activation": {
         "rule": "ANY 1"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AMBIVALENCE_HOLD": {
       "id": "SEM_AMBIVALENCE_HOLD",
@@ -33306,7 +33314,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AMBIVALENCE_TOLERANCE": {
       "id": "SEM_AMBIVALENCE_TOLERANCE",
@@ -33366,7 +33375,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AMBIVALENT_CLOSENESS": {
       "id": "SEM_AMBIVALENT_CLOSENESS",
@@ -33414,7 +33424,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 AMBIVALENZ IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ANALYTICAL_THINKING": {
       "id": "SEM_ANALYTICAL_THINKING",
@@ -33474,7 +33485,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_APATHETIC_REPLY": {
       "id": "SEM_APATHETIC_REPLY",
@@ -33532,7 +33544,8 @@
       },
       "window": {
         "messages": 5
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ARCHETYPE_CLARISSE": {
       "id": "SEM_ARCHETYPE_CLARISSE",
@@ -33581,7 +33594,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ARCHETYPE_PICARD": {
       "id": "SEM_ARCHETYPE_PICARD",
@@ -33630,7 +33644,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ARCHETYPE_PIPPI": {
       "id": "SEM_ARCHETYPE_PIPPI",
@@ -33680,7 +33695,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ARCHETYPE_TYLER": {
       "id": "SEM_ARCHETYPE_TYLER",
@@ -33729,7 +33745,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ARCHETYPICAL_PATTERN": {
       "id": "SEM_ARCHETYPICAL_PATTERN",
@@ -33785,7 +33802,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AROUSAL_SPIKE_AT_BREAK": {
       "id": "SEM_AROUSAL_SPIKE_AT_BREAK",
@@ -33845,6 +33863,7 @@
       "scoring": {
         "base": 0.68
       },
+      "compositionality": "deterministic",
       "metadata": {
         "type": "SEM"
       }
@@ -33898,7 +33917,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_AVOIDANCE_LOOP": {
       "id": "SEM_AVOIDANCE_LOOP",
@@ -33962,7 +33982,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.12
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BLAME_SHIFT_EXPRESSIONS_MARKER": {
       "id": "SEM_BLAME_SHIFT_EXPRESSIONS_MARKER",
@@ -34011,7 +34032,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BOT_OUTREACH": {
       "id": "SEM_BOT_OUTREACH",
@@ -34059,7 +34081,8 @@
       },
       "window": {
         "messages": 1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BOUNDARY_SETTING": {
       "id": "SEM_BOUNDARY_SETTING",
@@ -34113,7 +34136,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BOUNDARY_VIOLATION": {
       "id": "SEM_BOUNDARY_VIOLATION",
@@ -34165,7 +34189,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BREAK_UP": {
       "id": "SEM_BREAK_UP",
@@ -34227,7 +34252,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BUSINESS_FOCUS": {
       "id": "SEM_BUSINESS_FOCUS",
@@ -34278,7 +34304,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.8
-      }
+      },
+      "compositionality": "emergent"
     },
     "SEM_CARING_FRIEND_EXPRESSIONS_MARKER": {
       "id": "SEM_CARING_FRIEND_EXPRESSIONS_MARKER",
@@ -34330,7 +34357,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CERTAINTY_CLAIMS": {
       "id": "SEM_CERTAINTY_CLAIMS",
@@ -34384,7 +34412,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CHILD_RESISTANCE": {
       "id": "SEM_CHILD_RESISTANCE",
@@ -34502,7 +34531,8 @@
       "scoring": {
         "base": 0.7,
         "weight": 1.15
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_COMMITMENT_LOCKIN": {
       "id": "SEM_COMMITMENT_LOCKIN",
@@ -34567,7 +34597,8 @@
       "scoring": {
         "base": 0.65,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONDITIONALITY_FRAME": {
       "id": "SEM_CONDITIONALITY_FRAME",
@@ -34633,7 +34664,8 @@
         "boundary",
         "semantics"
       ],
-      "rating": 1
+      "rating": 1,
+      "compositionality": "deterministic"
     },
     "SEM_CONFLICT_AVOIDANCE": {
       "id": "SEM_CONFLICT_AVOIDANCE",
@@ -34693,6 +34725,7 @@
         "base": 0.55,
         "weight": 1.0
       },
+      "compositionality": "deterministic",
       "metadata": {
         "constraints": {
           "absent": {
@@ -34767,7 +34800,8 @@
       "scoring": {
         "base": 0.9,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONFLICT_LVL1_3": {
       "id": "SEM_CONFLICT_LVL1_3",
@@ -34834,7 +34868,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONFLICT_LVL4_6": {
       "id": "SEM_CONFLICT_LVL4_6",
@@ -34901,7 +34936,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONFLICT_LVL6_9": {
       "id": "SEM_CONFLICT_LVL6_9",
@@ -34967,7 +35003,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONFLICT_MACRO": {
       "id": "SEM_CONFLICT_MACRO",
@@ -35024,7 +35061,8 @@
       "scoring": {
         "base": 1.8,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONFLICT_MICRO": {
       "id": "SEM_CONFLICT_MICRO",
@@ -35075,7 +35113,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONNECTION": {
       "id": "SEM_CONNECTION",
@@ -35162,7 +35201,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONNECTION_POSITIVITY": {
       "id": "SEM_CONNECTION_POSITIVITY",
@@ -35222,7 +35262,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONSENSUS_BUILDING": {
       "id": "SEM_CONSENSUS_BUILDING",
@@ -35289,7 +35330,8 @@
       "scoring": {
         "base": 0.58,
         "weight": 1.03
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONSENSUS_SIGNAL": {
       "id": "SEM_CONSENSUS_SIGNAL",
@@ -35340,7 +35382,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONTEXT_SWITCH": {
       "id": "SEM_CONTEXT_SWITCH",
@@ -35391,7 +35434,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONTRADICTION": {
       "id": "SEM_CONTRADICTION",
@@ -35460,7 +35504,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_CONTROL_LEX": {
       "id": "SEM_CONTROL_LEX",
@@ -35521,7 +35566,8 @@
       "scoring": {
         "base": 0.65,
         "weight": 1.12
-      }
+      },
+      "compositionality": "deterministic"
     },
     "EMO_CRAVING": {
       "id": "EMO_CRAVING",
@@ -35635,7 +35681,8 @@
       "scoring": {
         "base": 0.65,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DEEPENING_BY_QUESTIONING": {
       "id": "SEM_DEEPENING_BY_QUESTIONING",
@@ -35715,7 +35762,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DEESCALATION": {
       "id": "SEM_DEESCALATION",
@@ -35778,7 +35826,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DEFENSIVENESS_SHIFT": {
       "id": "SEM_DEFENSIVENESS_SHIFT",
@@ -35871,6 +35920,7 @@
         "base": 1.4,
         "weight": 1.0
       },
+      "compositionality": "deterministic",
       "metadata": {
         "repair_log": [
           {
@@ -35934,7 +35984,8 @@
           "SEM_LIMINAL_FIELD_PRESENCE",
           "SEM_SACRALIZATION_BINDING"
         ]
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DEONTIC_LANGUAGE": {
       "id": "SEM_DEONTIC_LANGUAGE",
@@ -35985,7 +36036,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DETECT_HAPPINESS": {
       "id": "SEM_DETECT_HAPPINESS",
@@ -36046,7 +36098,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DISSONANCE_TEXT": {
       "id": "SEM_DISSONANCE_TEXT",
@@ -36098,6 +36151,7 @@
         "base": 1.4,
         "weight": 1.1
       },
+      "compositionality": "deterministic",
       "metadata": {
         "repair_log": [
           {
@@ -36165,7 +36219,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_DYNAMIC_KNOTS": {
       "id": "SEM_DYNAMIC_KNOTS",
@@ -36219,7 +36274,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EMBODIED_BLEND": {
       "id": "SEM_EMBODIED_BLEND",
@@ -36268,7 +36324,8 @@
       "composed_of": [
         "ATO_EMBODIMENT_BLEND",
         "ATO_TRUTH_FEEL"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_EMOTIONAL_ACCEPTANCE": {
       "id": "SEM_EMOTIONAL_ACCEPTANCE",
@@ -36326,7 +36383,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EMOTIONAL_AWARENESS": {
       "id": "SEM_EMOTIONAL_AWARENESS",
@@ -36384,7 +36442,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EMOTIONAL_OVERWHELM": {
       "id": "SEM_EMOTIONAL_OVERWHELM",
@@ -36438,7 +36497,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ERROR_CULTURE": {
       "id": "SEM_ERROR_CULTURE",
@@ -36488,7 +36548,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EVAL_PRIOR": {
       "id": "SEM_EVAL_PRIOR",
@@ -36547,7 +36608,8 @@
       "activation": {
         "rule": "AT_LEAST 2 IN 4 messages",
         "window": 4
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EVIDENCE_ORIENTED": {
       "id": "SEM_EVIDENCE_ORIENTED",
@@ -36608,7 +36670,8 @@
       "scoring": {
         "base": 0.62,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EXAMPLE_MARKER": {
       "id": "SEM_EXAMPLE_MARKER",
@@ -36662,7 +36725,8 @@
       },
       "window": {
         "messages": 30
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EXCELLENCE_DRIVE": {
       "id": "SEM_EXCELLENCE_DRIVE",
@@ -36724,7 +36788,8 @@
       "scoring": {
         "base": 0.63,
         "weight": 1.08
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EXPLORATION_DEEPENING": {
       "id": "SEM_EXPLORATION_DEEPENING",
@@ -36786,7 +36851,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EXPRESSED_SATISFACTION": {
       "id": "SEM_EXPRESSED_SATISFACTION",
@@ -36837,7 +36903,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_EXTERNALIZING_LOCUS_OF_CONTROL": {
       "id": "SEM_EXTERNALIZING_LOCUS_OF_CONTROL",
@@ -36898,7 +36965,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FACE_SAVING": {
       "id": "SEM_FACE_SAVING",
@@ -36962,7 +37030,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FAKE_IDENTITY_STORY": {
       "id": "SEM_FAKE_IDENTITY_STORY",
@@ -37017,7 +37086,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FICTION_OVERRIDE": {
       "id": "SEM_FICTION_OVERRIDE",
@@ -37067,7 +37137,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FINANCIAL_METRICS": {
       "id": "SEM_FINANCIAL_METRICS",
@@ -37118,7 +37189,8 @@
       "scoring": {
         "base": 0.7,
         "weight": 2.0
-      }
+      },
+      "compositionality": "contextual"
     },
     "SEM_FIRSTTIME_CLAUSE": {
       "id": "SEM_FIRSTTIME_CLAUSE",
@@ -37199,6 +37271,7 @@
         "base": 1.2,
         "weight": 1.0
       },
+      "compositionality": "deterministic",
       "metadata": {
         "repair_log": [
           {
@@ -37265,7 +37338,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FLOUT_QUALITY_IRONY": {
       "id": "SEM_FLOUT_QUALITY_IRONY",
@@ -37315,7 +37389,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FORMAT_POLICING": {
       "id": "SEM_FORMAT_POLICING",
@@ -37373,7 +37448,8 @@
       "activation": {
         "rule": "AT_LEAST 1 IN 2 messages",
         "window": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FORMULATED_INTENTION_TO_CHANGE": {
       "id": "SEM_FORMULATED_INTENTION_TO_CHANGE",
@@ -37432,7 +37508,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FRAME_SHIFT": {
       "id": "SEM_FRAME_SHIFT",
@@ -37490,7 +37567,8 @@
       "activation": {
         "rule": "AT_LEAST 1 IN 2 messages",
         "window": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FRIENDZONE_DYNAMICS": {
       "id": "SEM_FRIENDZONE_DYNAMICS",
@@ -37544,7 +37622,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.3
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_GASLIGHTING": {
       "id": "SEM_GASLIGHTING",
@@ -37617,7 +37696,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_GASLIGHTING_ATTEMPT": {
       "id": "SEM_GASLIGHTING_ATTEMPT",
@@ -37671,7 +37751,8 @@
       ],
       "window": {
         "messages": 3
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_GATEKEEPING": {
       "id": "SEM_GATEKEEPING",
@@ -37733,7 +37814,8 @@
       "scoring": {
         "base": 0.68,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_GELB_SYSTEMIC_INTEGRATION": {
       "id": "SEM_GELB_SYSTEMIC_INTEGRATION",
@@ -37778,7 +37860,8 @@
         "ATO_INTEGRAL_THINKING",
         "ATO_HOLISTIC_FLOW"
       ],
-      "activation": "ANY 2 IN 2 messages"
+      "activation": "ANY 2 IN 2 messages",
+      "compositionality": "deterministic"
     },
     "SEM_GET_SUBJECT_CONTROL": {
       "id": "SEM_GET_SUBJECT_CONTROL",
@@ -37849,7 +37932,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.15
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_GOTTMAN_CONFLICT_ESCALATION": {
       "id": "SEM_GOTTMAN_CONFLICT_ESCALATION",
@@ -37926,7 +38010,8 @@
       "scoring": {
         "base": 1.2,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_GRUEN_EMPATHIC_RESONANCE": {
       "id": "SEM_GRUEN_EMPATHIC_RESONANCE",
@@ -37969,7 +38054,8 @@
         "ATO_HARMONY_CARING",
         "ATO_TRIBAL_BONDS"
       ],
-      "activation": "BOTH IN 3 messages"
+      "activation": "BOTH IN 3 messages",
+      "compositionality": "deterministic"
     },
     "SEM_HYPERBOLE_SIGNAL": {
       "id": "SEM_HYPERBOLE_SIGNAL",
@@ -38019,7 +38105,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_INCLUSION_LANGUAGE": {
       "id": "SEM_INCLUSION_LANGUAGE",
@@ -38070,7 +38157,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_INFLUENCE_ORIENTATION": {
       "id": "SEM_INFLUENCE_ORIENTATION",
@@ -38132,7 +38220,8 @@
       "scoring": {
         "base": 0.65,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_INTERACTIVE_STONEWALLING_MARKER": {
       "id": "SEM_INTERACTIVE_STONEWALLING_MARKER",
@@ -38192,7 +38281,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_I_STATEMENT": {
       "id": "SEM_I_STATEMENT",
@@ -38262,7 +38352,8 @@
         "clarity",
         "semantics"
       ],
-      "rating": 1
+      "rating": 1,
+      "compositionality": "deterministic"
     },
     "SEM_JOINT_FUTURE_INITIATIVE": {
       "id": "SEM_JOINT_FUTURE_INITIATIVE",
@@ -38321,7 +38412,8 @@
       },
       "window": {
         "messages": 4
-      }
+      },
+      "compositionality": "deterministic"
     },
     "EMO_LIGHT_ADMISSION": {
       "id": "EMO_LIGHT_ADMISSION",
@@ -38472,7 +38564,8 @@
       "composed_of": [
         "ATO_BETWEENNESS_TERM",
         "ATO_TRUTH_FEEL"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_LISTING": {
       "id": "SEM_LISTING",
@@ -38531,7 +38624,8 @@
       "activation": {
         "rule": "AT_LEAST 2 IN 4 messages",
         "window": 4
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LL_ACTS_OF_SERVICE": {
       "id": "SEM_LL_ACTS_OF_SERVICE",
@@ -38584,7 +38678,8 @@
           "utterances": 10
         },
         "min_hits": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LL_PHYSICAL_TOUCH": {
       "id": "SEM_LL_PHYSICAL_TOUCH",
@@ -38637,7 +38732,8 @@
           "utterances": 10
         },
         "min_hits": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LL_QUALITY_TIME": {
       "id": "SEM_LL_QUALITY_TIME",
@@ -38690,7 +38786,8 @@
           "utterances": 10
         },
         "min_hits": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LL_RECEIVING_GIFTS": {
       "id": "SEM_LL_RECEIVING_GIFTS",
@@ -38743,7 +38840,8 @@
           "utterances": 10
         },
         "min_hits": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LL_WORDS_OF_AFFIRMATION": {
       "id": "SEM_LL_WORDS_OF_AFFIRMATION",
@@ -38796,7 +38894,8 @@
           "utterances": 10
         },
         "min_hits": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LOVE_BOMBING": {
       "id": "SEM_LOVE_BOMBING",
@@ -38865,7 +38964,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_LOYALTY": {
       "id": "SEM_LOYALTY",
@@ -38923,7 +39023,8 @@
       "scoring": {
         "base": 1.4,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MAINTENANCE_RITUAL": {
       "id": "SEM_MAINTENANCE_RITUAL",
@@ -38987,7 +39088,8 @@
       },
       "window": {
         "messages": 30
-      }
+      },
+      "compositionality": "contextual"
     },
     "SEM_MARKET_SIZE_ESTIMATE": {
       "id": "SEM_MARKET_SIZE_ESTIMATE",
@@ -39038,7 +39140,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.9
-      }
+      },
+      "compositionality": "contextual"
     },
     "SEM_METACOGNITIVE_INSIGHT": {
       "id": "SEM_METACOGNITIVE_INSIGHT",
@@ -39087,7 +39190,8 @@
       ],
       "activation": {
         "rule": "ALL 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_METAPHORICAL_COMMENT": {
       "id": "SEM_METAPHORICAL_COMMENT",
@@ -39138,7 +39242,8 @@
       "scoring": {
         "base": 1.4,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_META_NAVIGATION": {
       "id": "SEM_META_NAVIGATION",
@@ -39201,7 +39306,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.08
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MICRO_AGGRESSION_LIGHT": {
       "id": "SEM_MICRO_AGGRESSION_LIGHT",
@@ -39263,7 +39369,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.06
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MICRO_CARE": {
       "id": "SEM_MICRO_CARE",
@@ -39321,7 +39428,8 @@
       "scoring": {
         "base": 1.3,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MINIMIZATION": {
       "id": "SEM_MINIMIZATION",
@@ -39380,7 +39488,8 @@
       },
       "window": {
         "messages": 8
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MORAL_REFRAMING_GOOD_INTENT": {
       "id": "SEM_MORAL_REFRAMING_GOOD_INTENT",
@@ -39442,7 +39551,8 @@
       },
       "window": {
         "messages": 30
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MYCEL_GROWTH": {
       "id": "SEM_MYCEL_GROWTH",
@@ -39491,7 +39601,8 @@
       "composed_of": [
         "ATO_MYCEL_METAPHOR",
         "ATO_TRUTH_FEEL"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_M_LOVE_BOMBING": {
       "id": "SEM_M_LOVE_BOMBING",
@@ -39547,7 +39658,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_NEEDS_TO_WANTS_FLIP": {
       "id": "SEM_NEEDS_TO_WANTS_FLIP",
@@ -39596,7 +39708,8 @@
       "composed_of": [
         "ATO_NEED_TERM",
         "ATO_WANT_TERM"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_NEGOTIATION_STANCE": {
       "id": "SEM_NEGOTIATION_STANCE",
@@ -39661,7 +39774,8 @@
       "scoring": {
         "base": 0.62,
         "weight": 1.08
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_NEW_STRATEGY_ATTEMPT": {
       "id": "SEM_NEW_STRATEGY_ATTEMPT",
@@ -39715,7 +39829,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_OFFENSIVE_FLIRTING": {
       "id": "SEM_OFFENSIVE_FLIRTING",
@@ -39769,7 +39884,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ORANGE_STRATEGIC_FLOW": {
       "id": "SEM_ORANGE_STRATEGIC_FLOW",
@@ -39812,7 +39928,8 @@
         "ATO_ACHIEVEMENT_DRIVE",
         "ATO_INTEGRAL_THINKING"
       ],
-      "activation": "ANY 2 IN 2 messages"
+      "activation": "ANY 2 IN 2 messages",
+      "compositionality": "deterministic"
     },
     "SEM_PARENTAL_AUTHORITY": {
       "id": "SEM_PARENTAL_AUTHORITY",
@@ -39877,7 +39994,8 @@
         "messages": 30
       },
       "detect_class": "E",
-      "criteria": "Kombination aus Elternrolle und direktiven Sprechakten"
+      "criteria": "Kombination aus Elternrolle und direktiven Sprechakten",
+      "compositionality": "deterministic"
     },
     "SEM_PASSIVE_AGGRESSIVE_BEHAVIOR": {
       "id": "SEM_PASSIVE_AGGRESSIVE_BEHAVIOR",
@@ -39931,7 +40049,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_PERFORMATIVE_HELPLESSNESS": {
       "id": "SEM_PERFORMATIVE_HELPLESSNESS",
@@ -39993,7 +40112,8 @@
       },
       "window": {
         "messages": 30
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_PLATFORM_SWITCH": {
       "id": "SEM_PLATFORM_SWITCH",
@@ -40052,7 +40172,8 @@
       },
       "window": {
         "messages": 3
-      }
+      },
+      "compositionality": "contextual"
     },
     "EMO_PLAYFUL_TITLE_ASSIGNMENT": {
       "id": "EMO_PLAYFUL_TITLE_ASSIGNMENT",
@@ -40167,7 +40288,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_POSITIVE_EMOTION_REGULATION": {
       "id": "SEM_POSITIVE_EMOTION_REGULATION",
@@ -40217,7 +40339,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_POSITIVE_FUTURE": {
       "id": "SEM_POSITIVE_FUTURE",
@@ -40268,7 +40391,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.3
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_POSITIVE_OUTLOOK": {
       "id": "SEM_POSITIVE_OUTLOOK",
@@ -40317,7 +40441,8 @@
       ],
       "activation": {
         "rule": "ANY 1 IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_POSITIVE_POLITENESS": {
       "id": "SEM_POSITIVE_POLITENESS",
@@ -40381,7 +40506,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_PROBLEM_STRUCTURING": {
       "id": "SEM_PROBLEM_STRUCTURING",
@@ -40443,7 +40569,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.08
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_PROJECTION_TEXT": {
       "id": "SEM_PROJECTION_TEXT",
@@ -40494,6 +40621,7 @@
         "base": 1.4,
         "weight": 1.1
       },
+      "compositionality": "deterministic",
       "metadata": {
         "justification": "1 ATO plus Sequenzregel (Selbstmarkierung → Vorwurf).",
         "repair_log": [
@@ -40561,7 +40689,8 @@
       "activation": {
         "rule": "AT_LEAST 1 IN 2 messages",
         "window": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_PURPUR_TRIBAL_MAGIC": {
       "id": "SEM_PURPUR_TRIBAL_MAGIC",
@@ -40605,7 +40734,8 @@
         "ATO_TRIBAL_BONDS",
         "ATO_HARMONY_CARING"
       ],
-      "activation": "ANY 2 IN 3 messages"
+      "activation": "ANY 2 IN 3 messages",
+      "compositionality": "deterministic"
     },
     "SEM_REACTION_FORMATION_AUDIO": {
       "id": "SEM_REACTION_FORMATION_AUDIO",
@@ -40661,6 +40791,7 @@
       "scoring": {
         "base": 0.64
       },
+      "compositionality": "deterministic",
       "metadata": {
         "type": "SEM"
       }
@@ -40715,6 +40846,7 @@
         "base": 1.4,
         "weight": 1.1
       },
+      "compositionality": "deterministic",
       "metadata": {
         "justification": "SEM mit 1 ATO + Inkonkruenz-Regel.",
         "repair_log": [
@@ -40788,7 +40920,8 @@
       "scoring": {
         "base": 0.58,
         "weight": 1.06
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_REGISTER_CLASH": {
       "id": "SEM_REGISTER_CLASH",
@@ -40838,7 +40971,8 @@
       ],
       "activation": {
         "rule": "ANY 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RELATIONAL_ONTOLOGY": {
       "id": "SEM_RELATIONAL_ONTOLOGY",
@@ -40888,7 +41022,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND 1 ATO_VOCAB_RELATIONAL IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RELATION_OVER_PERSONA": {
       "id": "SEM_RELATION_OVER_PERSONA",
@@ -40937,7 +41072,8 @@
       "composed_of": [
         "ATO_RELATION_TERM",
         "ATO_PERSONA_TERM"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_REPAIR_ATTEMPT_AUDIO": {
       "id": "SEM_REPAIR_ATTEMPT_AUDIO",
@@ -40998,6 +41134,7 @@
       "scoring": {
         "base": 0.62
       },
+      "compositionality": "deterministic",
       "metadata": {
         "type": "SEM"
       }
@@ -41060,6 +41197,7 @@
       "scoring": {
         "base": 0.72
       },
+      "compositionality": "deterministic",
       "metadata": {
         "type": "SEM"
       }
@@ -41113,6 +41251,7 @@
         "base": 1.4,
         "weight": 1.1
       },
+      "compositionality": "deterministic",
       "metadata": {
         "justification": "1 ATO plus Sequenzbedingung (fehlende Antwort).",
         "repair_log": [
@@ -41181,7 +41320,8 @@
       "scoring": {
         "base": 0.65,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_REPETITIVE_COMPLAINT": {
       "id": "SEM_REPETITIVE_COMPLAINT",
@@ -41254,6 +41394,7 @@
       "activation": {
         "rule": "ANY in 1 message"
       },
+      "compositionality": "deterministic",
       "metadata": {
         "source": {
           "semantische_grabber_id": "AUTO_SEM_20250723_F191",
@@ -41312,6 +41453,7 @@
       "activation": {
         "rule": "ANY 1 IN 1 message"
       },
+      "compositionality": "deterministic",
       "metadata": {
         "notes": "Textuell berichtete Beobachtung; keine echte Sensorik."
       }
@@ -41381,7 +41523,8 @@
         "reliability",
         "semantics"
       ],
-      "rating": 1
+      "rating": 1,
+      "compositionality": "deterministic"
     },
     "SEM_RESPONSE_TIMING": {
       "id": "SEM_RESPONSE_TIMING",
@@ -41432,7 +41575,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RESPONSIBILITY_AND_DECISION": {
       "id": "SEM_RESPONSIBILITY_AND_DECISION",
@@ -41493,7 +41637,8 @@
       "scoring": {
         "base": 0.64,
         "weight": 1.09
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RESPONSIBILITY_SHIFT_MARKER": {
       "id": "SEM_RESPONSIBILITY_SHIFT_MARKER",
@@ -41544,7 +41689,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_REVENUE_CLAIM": {
       "id": "SEM_REVENUE_CLAIM",
@@ -41596,7 +41742,8 @@
       "scoring": {
         "base": 1.0,
         "weight": 1.6
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RISK_ACKNOWLEDGEMENT": {
       "id": "SEM_RISK_ACKNOWLEDGEMENT",
@@ -41649,7 +41796,8 @@
       "scoring": {
         "base": 0.8,
         "weight": 1.3
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RITUAL_INVOCATION": {
       "id": "SEM_RITUAL_INVOCATION",
@@ -41698,7 +41846,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_RITUAL_PING": {
       "id": "SEM_RITUAL_PING",
@@ -41747,7 +41896,8 @@
       "composed_of": [
         "ATO_RITUAL_TIME",
         "ATO_TRUTH_FEEL"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_RIVALRY_MENTION": {
       "id": "SEM_RIVALRY_MENTION",
@@ -41839,6 +41989,7 @@
       "activation": {
         "rule": "ANY in 1 message"
       },
+      "compositionality": "deterministic",
       "metadata": {
         "source": {
           "semantische_grabber_id": "AUTO_SEM_20250719_E7DF",
@@ -41891,7 +42042,8 @@
         "ATO_POWER_ASSERTION",
         "ATO_SURVIVAL_INSTINCT"
       ],
-      "activation": "BOTH IN 1 message"
+      "activation": "BOTH IN 1 message",
+      "compositionality": "deterministic"
     },
     "SEM_SACRALIZATION_BINDING": {
       "id": "SEM_SACRALIZATION_BINDING",
@@ -41940,7 +42092,8 @@
       "composed_of": [
         "ATO_SACRED_LEXEME",
         "ATO_TRUTH_FEEL"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_SAFETY_ORIENTATION": {
       "id": "SEM_SAFETY_ORIENTATION",
@@ -42007,7 +42160,8 @@
       "scoring": {
         "base": 0.62,
         "weight": 1.08
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SARCASTIC_DRIFT": {
       "id": "SEM_SARCASTIC_DRIFT",
@@ -42057,7 +42211,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SCARCITY_DRIVE": {
       "id": "SEM_SCARCITY_DRIVE",
@@ -42118,7 +42273,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.08
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SEEDED_ACTIVATION": {
       "id": "SEM_SEEDED_ACTIVATION",
@@ -42162,7 +42318,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SELF_ADDRESS_SHIFT": {
       "id": "SEM_SELF_ADDRESS_SHIFT",
@@ -42211,7 +42368,8 @@
       "composed_of": [
         "ATO_SELF_ADDRESS_VERB",
         "ATO_LOVE_MOTIVE"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_SELF_DECISION_CONSTANCY": {
       "id": "SEM_SELF_DECISION_CONSTANCY",
@@ -42260,7 +42418,8 @@
       "composed_of": [
         "ATO_DECISION_CHOOSE",
         "ATO_DECISION_STAY"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_SELF_REFERENCE": {
       "id": "SEM_SELF_REFERENCE",
@@ -42309,7 +42468,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 3 SELF_REF IN 5 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SELF_REFLECTION": {
       "id": "SEM_SELF_REFLECTION",
@@ -42363,7 +42523,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SELF_RELIANCE_EARLY": {
       "id": "SEM_SELF_RELIANCE_EARLY",
@@ -42446,6 +42607,7 @@
       "activation": {
         "rule": "ANY in 1 message"
       },
+      "compositionality": "deterministic",
       "metadata": {
         "source": {
           "semantische_grabber_id": "SGR_SELF_REL_01",
@@ -42511,7 +42673,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SELF_VICTIMIZATION": {
       "id": "SEM_SELF_VICTIMIZATION",
@@ -42573,7 +42736,8 @@
       "scoring": {
         "base": 0.65,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SETTING_CONTROL": {
       "id": "SEM_SETTING_CONTROL",
@@ -42636,7 +42800,8 @@
       "activation": {
         "rule": "BOTH IN 2 messages",
         "window": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SHAME_PROSODY": {
       "id": "SEM_SHAME_PROSODY",
@@ -42695,6 +42860,7 @@
       "scoring": {
         "base": 0.7
       },
+      "compositionality": "deterministic",
       "metadata": {
         "type": "SEM"
       }
@@ -42750,6 +42916,7 @@
         "base": 1.4,
         "weight": 1.1
       },
+      "compositionality": "deterministic",
       "metadata": {
         "repair_log": [
           {
@@ -42810,7 +42977,8 @@
       "scoring": {
         "base": 1.4,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SIBLING_RIVALRY": {
       "id": "SEM_SIBLING_RIVALRY",
@@ -42875,7 +43043,8 @@
         "messages": 30
       },
       "detect_class": "E",
-      "criteria": "Kombination aus Geschwisterrolle und negativen Bewertungen"
+      "criteria": "Kombination aus Geschwisterrolle und negativen Bewertungen",
+      "compositionality": "deterministic"
     },
     "SEM_SIMU_IMITATION_STRATEGIES": {
       "id": "SEM_SIMU_IMITATION_STRATEGIES",
@@ -42932,7 +43101,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SIMU_LOVE_SCAM_HUMAN01": {
       "id": "SEM_SIMU_LOVE_SCAM_HUMAN01",
@@ -42985,7 +43155,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SIMU_LOVE_SCAM_PSYCHO_DISTRACT": {
       "id": "SEM_SIMU_LOVE_SCAM_PSYCHO_DISTRACT",
@@ -43064,7 +43235,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SIMU_LOVE_SCAM_SEMANTIC": {
       "id": "SEM_SIMU_LOVE_SCAM_SEMANTIC",
@@ -43117,7 +43289,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SOCIAL_AFFILIATION": {
       "id": "SEM_SOCIAL_AFFILIATION",
@@ -43175,7 +43348,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SOCIAL_BORDERLINES_MIX": {
       "id": "SEM_SOCIAL_BORDERLINES_MIX",
@@ -43229,7 +43403,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SOFT_COMMITMENT": {
       "id": "SEM_SOFT_COMMITMENT",
@@ -43281,7 +43456,8 @@
       "scoring": {
         "base": 0.55,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SOFT_REJECTION": {
       "id": "SEM_SOFT_REJECTION",
@@ -43332,7 +43508,8 @@
       "scoring": {
         "base": 1.4,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SPIRAL_THINKING": {
       "id": "SEM_SPIRAL_THINKING",
@@ -43382,7 +43559,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 IN 3 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_STABILITY_PRESERVATION": {
       "id": "SEM_STABILITY_PRESERVATION",
@@ -43444,7 +43622,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_STATE_OF_HAPPINESS": {
       "id": "SEM_STATE_OF_HAPPINESS",
@@ -43495,7 +43674,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_STATUS_RECOGNITION": {
       "id": "SEM_STATUS_RECOGNITION",
@@ -43555,7 +43735,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.06
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_STONEWALLING_BEHAVIOR": {
       "id": "SEM_STONEWALLING_BEHAVIOR",
@@ -43609,7 +43790,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_STRESS_EXCUSE": {
       "id": "SEM_STRESS_EXCUSE",
@@ -43660,7 +43842,8 @@
       "scoring": {
         "base": 1.3,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_STYLE_COMPARISON": {
       "id": "SEM_STYLE_COMPARISON",
@@ -43711,7 +43894,8 @@
       "scoring": {
         "base": 1.4,
         "weight": 1.1
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SUBTLE_TERRITORIAL": {
       "id": "SEM_SUBTLE_TERRITORIAL",
@@ -43768,7 +43952,8 @@
       "scoring": {
         "base": 1.5,
         "weight": 1.2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SVT_APPEAL_DIRECT": {
       "id": "SEM_SVT_APPEAL_DIRECT",
@@ -43842,6 +44027,7 @@
       "activation": {
         "rule": "ANY at sentence start"
       },
+      "compositionality": "deterministic",
       "metadata": {
         "source": {
           "semantische_grabber_id": "SGR_SVT_APPEAL_DIRECT_01",
@@ -43904,7 +44090,8 @@
       ],
       "window": {
         "messages": 3
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SYSTEMS_THINKING": {
       "id": "SEM_SYSTEMS_THINKING",
@@ -43955,7 +44142,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.0
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TASK_DOMINANCE": {
       "id": "SEM_TASK_DOMINANCE",
@@ -44042,6 +44230,7 @@
         ],
         "interpretant": "effect_on_state: {task_dominance: +0.25, intimacy: -0.1}"
       },
+      "compositionality": "deterministic",
       "metadata": {
         "label": "Aufgaben-Dominanz"
       }
@@ -44111,7 +44300,8 @@
       "scoring": {
         "base": 0.62,
         "weight": 1.12
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TEAM_SENIORITY": {
       "id": "SEM_TEAM_SENIORITY",
@@ -44164,7 +44354,8 @@
       "scoring": {
         "base": 1.0,
         "weight": 1.5
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TECH_REPAIR_AS_BOND": {
       "id": "SEM_TECH_REPAIR_AS_BOND",
@@ -44213,7 +44404,8 @@
       "composed_of": [
         "ATO_TECH_FIX",
         "ATO_SAFETY_AFFECT"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_TOXIC_PERSONA": {
       "id": "SEM_TOXIC_PERSONA",
@@ -44269,7 +44461,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TRACTION_SIGNALS": {
       "id": "SEM_TRACTION_SIGNALS",
@@ -44322,7 +44515,8 @@
       "scoring": {
         "base": 1.0,
         "weight": 1.4
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TRANSLATION_ARTIFACT": {
       "id": "SEM_TRANSLATION_ARTIFACT",
@@ -44388,7 +44582,8 @@
       ],
       "activation": {
         "rule": "ANY 1"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TRIANGULATION_PATTERN": {
       "id": "SEM_TRIANGULATION_PATTERN",
@@ -44442,7 +44637,8 @@
       ],
       "window": {
         "messages": 4
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TUERKIS_COSMIC_FLOW": {
       "id": "SEM_TUERKIS_COSMIC_FLOW",
@@ -44486,7 +44682,8 @@
         "ATO_HOLISTIC_FLOW",
         "ATO_HARMONY_CARING"
       ],
-      "activation": "BOTH IN 2 messages"
+      "activation": "BOTH IN 2 messages",
+      "compositionality": "deterministic"
     },
     "SEM_UNCERTAINTY_PROSODY": {
       "id": "SEM_UNCERTAINTY_PROSODY",
@@ -44545,6 +44742,7 @@
       "scoring": {
         "base": 0.66
       },
+      "compositionality": "deterministic",
       "metadata": {
         "type": "SEM"
       }
@@ -44597,7 +44795,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_UNIT_ECON_CLARITY": {
       "id": "SEM_UNIT_ECON_CLARITY",
@@ -44649,7 +44848,8 @@
       "scoring": {
         "base": 1.0,
         "weight": 1.8
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_UNTRACEABLE_PAYMENT_METHOD": {
       "id": "SEM_UNTRACEABLE_PAYMENT_METHOD",
@@ -44701,7 +44901,8 @@
       ],
       "activation": {
         "rule": "ANY 1"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_URGENCY_SCARCITY": {
       "id": "SEM_URGENCY_SCARCITY",
@@ -44772,7 +44973,8 @@
       ],
       "activation": {
         "rule": "ANY 1"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_VALIDATION": {
       "id": "SEM_VALIDATION",
@@ -44832,7 +45034,8 @@
       "scoring": {
         "base": 0.6,
         "weight": 1.05
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_VALIDATION_SEEKING": {
       "id": "SEM_VALIDATION_SEEKING",
@@ -44886,7 +45089,8 @@
       ],
       "window": {
         "messages": 2
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_VICTIM_OFFENDER_REVERSAL": {
       "id": "SEM_VICTIM_OFFENDER_REVERSAL",
@@ -44949,7 +45153,8 @@
       },
       "window": {
         "messages": 25
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_VOICE_DIFFERENTIATION": {
       "id": "SEM_VOICE_DIFFERENTIATION",
@@ -44998,7 +45203,8 @@
       "composed_of": [
         "ATO_VOICE_PROXY",
         "ATO_RELATION_TERM"
-      ]
+      ],
+      "compositionality": "deterministic"
     },
     "SEM_WEBCAM_EXCUSE": {
       "id": "SEM_WEBCAM_EXCUSE",
@@ -49631,7 +49837,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_BEIGE_SURVIVAL_MODE": {
       "id": "SEM_BEIGE_SURVIVAL_MODE",
@@ -49673,7 +49880,8 @@
         "ATO_SURVIVAL_INSTINCT",
         "ATO_POWER_ASSERTION"
       ],
-      "activation": "BOTH IN 2 messages"
+      "activation": "BOTH IN 2 messages",
+      "compositionality": "deterministic"
     },
     "SEM_BLAU_ORDER_ACTIVATION": {
       "id": "SEM_BLAU_ORDER_ACTIVATION",
@@ -49715,7 +49923,8 @@
         "ATO_ORDER_STRUCTURE",
         "ATO_POWER_ASSERTION"
       ],
-      "activation": "BOTH IN 2 messages"
+      "activation": "BOTH IN 2 messages",
+      "compositionality": "deterministic"
     },
     "SEM_CONSIST_EVAL_EXTERNAL": {
       "id": "SEM_CONSIST_EVAL_EXTERNAL",
@@ -49744,7 +49953,8 @@
         ]
       },
       "tags": [],
-      "rating": 2
+      "rating": 2,
+      "compositionality": "deterministic"
     },
     "SEM_DEF_DRIFT_EXTERNAL": {
       "id": "SEM_DEF_DRIFT_EXTERNAL",
@@ -49773,7 +49983,8 @@
         ]
       },
       "tags": [],
-      "rating": 2
+      "rating": 2,
+      "compositionality": "deterministic"
     },
     "SEM_DYAD_MANIFESTO": {
       "id": "SEM_DYAD_MANIFESTO",
@@ -49817,7 +50028,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_FACT_CONFLICT_EXTERNAL": {
       "id": "SEM_FACT_CONFLICT_EXTERNAL",
@@ -49846,7 +50058,8 @@
         ]
       },
       "tags": [],
-      "rating": 2
+      "rating": 2,
+      "compositionality": "deterministic"
     },
     "SEM_GLYPHIC_LANGUAGE": {
       "id": "SEM_GLYPHIC_LANGUAGE",
@@ -49890,7 +50103,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_INVERTED_QUESTION": {
       "id": "SEM_INVERTED_QUESTION",
@@ -49937,7 +50151,8 @@
       ],
       "activation": {
         "rule": "IF previous_message_is_question THEN (current_contains '?') AND (ELLIPSIS '...' OR reflective counter-question)"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_METAPHORICAL_DENSITY": {
       "id": "SEM_METAPHORICAL_DENSITY",
@@ -49984,7 +50199,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 3 METAPHOR IN 5 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_META_REFLECTION": {
       "id": "SEM_META_REFLECTION",
@@ -50031,8 +50247,9 @@
         "ATO_VOCAB_METAPHYSICAL"
       ],
       "activation": {
-        "rule": "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND REGEX: \\b(Code|System|Prompt|GPT)\\b IN 2 messages"
-      }
+        "rule": "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND REGEX: \\b(Code|System|Prompt|GPT)\\ b IN 2 messages"
+      },
+      "compositionality": "deterministic"
     },
     "SEM_MYTHOPOESIS": {
       "id": "SEM_MYTHOPOESIS",
@@ -50080,7 +50297,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 1 ATO_VOCAB_MYTHIC IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_ROLE_STABILITY_BREAK_EXTERNAL": {
       "id": "SEM_ROLE_STABILITY_BREAK_EXTERNAL",
@@ -50109,7 +50327,8 @@
         ]
       },
       "tags": [],
-      "rating": 2
+      "rating": 2,
+      "compositionality": "deterministic"
     },
     "SEM_SD_BLUE_ORDER": {
       "id": "SEM_SD_BLUE_ORDER",
@@ -50153,7 +50372,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SD_GREEN_EMPATHY": {
       "id": "SEM_SD_GREEN_EMPATHY",
@@ -50197,7 +50417,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SD_ORANGE_ACHIEVE": {
       "id": "SEM_SD_ORANGE_ACHIEVE",
@@ -50241,7 +50462,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SD_RED_ASSERT": {
       "id": "SEM_SD_RED_ASSERT",
@@ -50285,7 +50507,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SD_TURQUOISE_HOLISM": {
       "id": "SEM_SD_TURQUOISE_HOLISM",
@@ -50329,7 +50552,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 2 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SD_YELLOW_SYSTEMS": {
       "id": "SEM_SD_YELLOW_SYSTEMS",
@@ -50373,7 +50597,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SPIRAL_DRIFT": {
       "id": "SEM_SPIRAL_DRIFT",
@@ -50422,7 +50647,8 @@
       ],
       "activation": {
         "rule": "AT_LEAST 2 ATO_SPIRAL IN 4 messages"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_SPREAD_PROTOCOL": {
       "id": "SEM_SPREAD_PROTOCOL",
@@ -50466,7 +50692,8 @@
       ],
       "activation": {
         "rule": "BOTH IN 1 message"
-      }
+      },
+      "compositionality": "deterministic"
     },
     "SEM_TEMPORAL_CONFLICT_EXTERNAL": {
       "id": "SEM_TEMPORAL_CONFLICT_EXTERNAL",
@@ -50495,7 +50722,8 @@
         ]
       },
       "tags": [],
-      "rating": 2
+      "rating": 2,
+      "compositionality": "deterministic"
     }
   }
 }

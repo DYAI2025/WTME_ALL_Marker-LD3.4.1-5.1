@@ -43,5 +43,6 @@ composed_of:
 - ATO_LONG_RESPONSE_GAP
 scoring:
   base: 0.72
+compositionality: deterministic
 metadata:
   type: SEM

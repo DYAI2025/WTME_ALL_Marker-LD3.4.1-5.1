@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_TECH_FIX
 - ATO_SAFETY_AFFECT
+compositionality: deterministic

@@ -40,3 +40,4 @@ examples:
 tags: [semantic, audio, uncertainty]
 metadata:
   type: SEM
+compositionality: deterministic

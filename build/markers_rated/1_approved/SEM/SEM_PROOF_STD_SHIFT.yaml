@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_PROOF_STD_SHIFT
 frame:
-  signal: [ "proof_std_shift" ]
+  signal: ["proof_std_shift"]
   concept: "Beweisstandard verschieben/erhöhen"
   pragmatics: "Hürde erhöhen"
   narrative: "argumentation"
-tags: [ proof, standard ]
+tags: [proof, standard]
 composed_of:
   any_of:
   - ATO_REQUEST_FOR_FEEDBACK
@@ -37,3 +37,4 @@ examples:
   - "Dein Bauchgefühl ist mir wichtig."
   - "Ich nehme das so an."
   - "Klingt stimmig für mich."
+compositionality: deterministic

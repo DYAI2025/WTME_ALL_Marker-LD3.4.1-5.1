@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_EVAL_PRIOR
 frame:
-  signal: [ "eval_prior" ]
+  signal: ["eval_prior"]
   concept: "Frührahmung / Vorbewertung"
   pragmatics: "Maßstab setzen, bevor alles vorliegt"
   narrative: "evaluation"
-tags: [ evaluation, framing ]
+tags: [evaluation, framing]
 composed_of:
   any_of:
   - ATO_PREMATURE_CLOSURE
@@ -38,3 +38,4 @@ examples:
   - "Danke für die Infos, ich wäge das noch ab."
   - "Lass uns alle Optionen durchspielen."
   - "Ich möchte das nicht überstürzen."
+compositionality: deterministic

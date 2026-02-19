@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_FORMAT_POLICING
 frame:
-  signal: [ "format_policing" ]
+  signal: ["format_policing"]
   concept: "Formregeln als Hebel"
   pragmatics: "Gatekeeping über Form"
   narrative: "process_control"
-tags: [ format, policing ]
+tags: [format, policing]
 composed_of:
   any_of:
   - ATO_STYLE_REFERENCE
@@ -37,3 +37,4 @@ examples:
   - "Die Form ist mir nicht so wichtig."
   - "Schick es mir einfach, wie du magst."
   - "Lass uns pragmatisch sein mit der Form."
+compositionality: deterministic

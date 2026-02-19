@@ -46,3 +46,4 @@ scoring:
   weight: 0.95
 window:
   messages: 8
+compositionality: deterministic

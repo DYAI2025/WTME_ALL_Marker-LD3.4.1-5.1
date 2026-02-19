@@ -34,3 +34,4 @@ examples:
   - Lass uns gemeinsam eine Loesung finden.
 tags: [semantic, complaint]
 schema_version: "3.4"
+compositionality: deterministic

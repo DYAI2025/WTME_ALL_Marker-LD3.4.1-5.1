@@ -33,3 +33,4 @@ negatives:
 - "Ich **wäre** glücklich, **wenn** es nicht regnete."    # hypothetisch, schwach
 
 
+compositionality: deterministic

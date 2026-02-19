@@ -75,5 +75,6 @@ semiotic:
   - "aufgabe"
   - "dominanz"
   interpretant: "effect_on_state: {task_dominance: +0.25, intimacy: -0.1}"
+compositionality: deterministic
 metadata:
   label: Aufgaben-Dominanz

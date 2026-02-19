@@ -39,3 +39,4 @@ activation:
 scoring:
   base: 0.7
   weight: 2.0
+compositionality: contextual

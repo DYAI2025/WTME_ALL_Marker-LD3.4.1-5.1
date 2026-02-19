@@ -42,3 +42,4 @@ composed_of:
 - ATO_PASSIVE_AGGRESSION
 window:
   messages: 4
+compositionality: deterministic

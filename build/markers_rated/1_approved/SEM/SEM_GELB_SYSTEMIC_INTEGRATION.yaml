@@ -17,7 +17,8 @@ examples:
   - "emergente Lösungsfindung"
   - "Stille ist kein Nullwert – sie ist ein semantischer Boden"
   - "Die Bedeutung liegt nicht im Knall – sondern im Kontrast zum Vorher."
-  - "Delta-Encodings: Modelle, die nicht den Klang selbst, sondern seine Veränderung analysieren"
+  - "Delta-Encodings: Modelle, die nicht den Klang selbst, sondern seine Veränderung
+    analysieren"
   negative:
   - I think we should discuss this calmly.
   - That's a good point you're making.
@@ -26,3 +27,4 @@ examples:
   - I've noticed we think differently about this.
   - I want to understand what you mean.
   - That sounds like an important topic for you.
+compositionality: deterministic

@@ -37,3 +37,4 @@ examples:
 tags:
 - territorial
 - boundary
+compositionality: deterministic

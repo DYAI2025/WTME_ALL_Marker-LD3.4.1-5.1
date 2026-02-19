@@ -69,6 +69,7 @@ tags:
 rating: 1
 activation:
   rule: "ANY in 1 message"
+compositionality: deterministic
 metadata:
   source:
     semantische_grabber_id: "AUTO_SEM_20250719_E7DF"

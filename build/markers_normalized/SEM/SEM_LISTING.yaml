@@ -46,3 +46,4 @@ composed_of:
 activation:
   rule: "AT_LEAST 2 IN 4 messages"
   window: 4
+compositionality: deterministic

@@ -40,5 +40,6 @@ composed_of:
 - ATO_LAUGHTER
 scoring:
   base: 0.64
+compositionality: deterministic
 metadata:
   type: SEM

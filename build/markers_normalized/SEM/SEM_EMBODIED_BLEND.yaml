@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_EMBODIMENT_BLEND
 - ATO_TRUTH_FEEL
+compositionality: deterministic

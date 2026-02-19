@@ -13,7 +13,8 @@ pattern:
 - "müsstest du"
 activation:
   rule: "ANY at sentence start"
-justification: "Pattern-basierte SEM-Definition; ATO-Zerlegung (Imperativ-Präfixe) ausstehend."
+justification: "Pattern-basierte SEM-Definition; ATO-Zerlegung (Imperativ-Präfixe)
+  ausstehend."
 examples:
   # vorhandener Rohblock (bewusst beibehalten)
   positive:
@@ -43,3 +44,4 @@ meta:
   created_by: "FRAUSAR_GUI_v2"
   source_version: "1.0.1"
   schema_version: "3.3"
+compositionality: deterministic

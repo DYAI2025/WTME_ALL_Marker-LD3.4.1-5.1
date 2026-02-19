@@ -80,6 +80,7 @@ composed_of:
 scoring:
   base: 1.4
   weight: 1.0
+compositionality: deterministic
 metadata:
   repair_log:
   - rule: "R00-R06 applied"

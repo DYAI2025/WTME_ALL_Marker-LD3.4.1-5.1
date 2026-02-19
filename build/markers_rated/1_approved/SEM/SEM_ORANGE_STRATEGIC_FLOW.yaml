@@ -15,7 +15,8 @@ examples:
   - "intelligente Optimierung"
   - "systematische Leistungssteigerung"
   - "innovativer Wettbewerbsvorteil"
-  - "Wie können wir mit der Methode des Trainings von Sprache auch Geräusche verstehen lernen?"
+  - "Wie können wir mit der Methode des Trainings von Sprache auch Geräusche verstehen
+    lernen?"
   negative:
   - I think we should discuss this calmly.
   - That's a good point you're making.
@@ -24,3 +25,4 @@ examples:
   - I've noticed we think differently about this.
   - I want to understand what you mean.
   - That sounds like an important topic for you.
+compositionality: deterministic

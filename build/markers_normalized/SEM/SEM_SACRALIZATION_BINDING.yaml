@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_SACRED_LEXEME
 - ATO_TRUTH_FEEL
+compositionality: deterministic

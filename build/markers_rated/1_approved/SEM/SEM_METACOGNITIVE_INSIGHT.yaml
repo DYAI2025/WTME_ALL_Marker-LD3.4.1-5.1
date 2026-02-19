@@ -27,3 +27,4 @@ examples:
   - Ich moechte verstehen, was du meinst.
 tags: [semantic, metakognition, insight, selbsterkenntnis]
 schema_version: "3.3"
+compositionality: deterministic

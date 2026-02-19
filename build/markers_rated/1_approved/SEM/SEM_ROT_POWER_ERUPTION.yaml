@@ -15,8 +15,10 @@ examples:
   - "dominante Durchsetzung"
   - "kraftvolle Eroberung"
   - "ungezügelte Stärke"
-  - "Klangkörpergrößen sind lang, lang zu groß, als dass man sie auf den Schoß nehmen kann, Kleiner."
-  - "Glaub mal nicht, du seist ein Mann, nur weil einer deiner Kollegen aus der Regenrinne saufen kann."
+  - "Klangkörpergrößen sind lang, lang zu groß, als dass man sie auf den Schoß nehmen
+    kann, Kleiner."
+  - "Glaub mal nicht, du seist ein Mann, nur weil einer deiner Kollegen aus der Regenrinne
+    saufen kann."
   negative:
   - Ich finde, wir sollten das in Ruhe besprechen.
   - Das ist ein guter Punkt, den du da machst.
@@ -25,3 +27,4 @@ examples:
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
+compositionality: deterministic

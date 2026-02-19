@@ -28,9 +28,12 @@ examples:
   - Ich zerstöre dich, und danach bin ich dran – so sind die Regeln.
   - Niemand wird jemals wieder auf einen von uns hören.
   - Wir sind beide erledigt, aber du hast den größeren Schaden.
-  - Ich werde dich umbringen, es ist mir alles scheißegal, ob ich dafür in den Knast gehe!
-  - Ich werde dir dein Leben ruinieren, so dass du dir wünschten wirst, tot zu sein
-  - Du hast es so gewollt, jetzt wirst du dafür bezahlen - ich nehme alles in kauf
+  - Ich werde dich umbringen, es ist mir alles scheißegal, ob ich dafür in den 
+    Knast gehe!
+  - Ich werde dir dein Leben ruinieren, so dass du dir wünschten wirst, tot zu 
+    sein
+  - Du hast es so gewollt, jetzt wirst du dafür bezahlen - ich nehme alles in 
+    kauf
   - Ich werde dich so fertig machen, dass du nie wieder auf die Beine kommst.
   - Ich schwöre dir totale Rache!
   - Dafür wirst du bezahlen, und ich werde nicht ruhen, bis du es tust.
@@ -46,3 +49,4 @@ tags:
 - conflict
 - escalation
 - lvl6-9
+compositionality: deterministic

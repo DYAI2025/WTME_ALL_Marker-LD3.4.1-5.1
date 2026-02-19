@@ -36,4 +36,5 @@ examples:
   - "Ich schätze es, wenn du meine Wünsche beachtest."
   - "Mir liegt an einem guten Miteinander."
   - "Ich freue mich über deine Zuverlässigkeit."
-tags: [ norms, respect, reliability, semantics ]
+tags: [norms, respect, reliability, semantics]
+compositionality: deterministic

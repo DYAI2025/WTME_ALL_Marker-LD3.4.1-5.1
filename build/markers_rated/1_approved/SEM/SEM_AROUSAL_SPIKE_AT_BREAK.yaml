@@ -38,3 +38,4 @@ examples:
 tags: [semantic, audio, arousal]
 metadata:
   type: SEM
+compositionality: deterministic

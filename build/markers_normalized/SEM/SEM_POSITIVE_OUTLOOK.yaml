@@ -38,3 +38,4 @@ composed_of:
 - ATO_POSITIVE_OUTLOOK_CUE
 activation:
   rule: "ANY 1 IN 1 message"
+compositionality: deterministic

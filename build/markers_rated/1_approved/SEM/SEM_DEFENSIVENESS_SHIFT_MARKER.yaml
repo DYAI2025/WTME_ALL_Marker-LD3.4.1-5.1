@@ -1,7 +1,8 @@
 id: SEM_DEFENSIVENESS_SHIFT
 lang: de
 category: SEMANTIC
-description: "Erkennung von Abwehrmustern, bei denen Kritik durch Schuldumkehr oder Selbst-Opfer abgewehrt wird."
+description: "Erkennung von Abwehrmustern, bei denen Kritik durch Schuldumkehr oder
+  Selbst-Opfer abgewehrt wird."
 frame:
   signal:
   - "Es ist nicht meine Schuld"
@@ -79,3 +80,4 @@ metadata:
   repair_log:
   - rule: "R00-R06 applied"
     date: "2025-08-07"
+compositionality: deterministic

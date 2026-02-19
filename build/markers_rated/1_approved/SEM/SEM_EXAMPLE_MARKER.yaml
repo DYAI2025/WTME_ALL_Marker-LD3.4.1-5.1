@@ -1,7 +1,8 @@
 id: SEM_EXAMPLE_MARKER
 lang: de
 category: SEMANTIC
-description: "Wiederkehrender Bedeutungskern: Selbstabwertung / Schuldgefühle kombiniert mit Relativierung."
+description: "Wiederkehrender Bedeutungskern: Selbstabwertung / Schuldgefühle kombiniert
+  mit Relativierung."
 frame:
   signal: ["Selbstvorwurf + Abschwächung"]
   concept: "self-deprecation / culpa"
@@ -34,3 +35,4 @@ examples:
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: [semantic, self-blame]
 schema_version: "3.4"
+compositionality: deterministic

@@ -35,3 +35,4 @@ composed_of:
 - ATO_STRUCT_PAUSE
 activation:
   rule: "IF previous_message_is_question THEN (current_contains '?') AND (ELLIPSIS '...' OR reflective counter-question)"
+compositionality: deterministic

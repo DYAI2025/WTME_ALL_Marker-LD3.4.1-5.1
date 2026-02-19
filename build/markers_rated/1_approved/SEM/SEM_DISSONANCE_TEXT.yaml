@@ -37,3 +37,4 @@ tags: [semantic, dissonance]
 metadata:
   repair_log:
   - {rule: "R03", note: "Feldreihenfolge normalisiert", date: "2025-08-29"}
+compositionality: deterministic

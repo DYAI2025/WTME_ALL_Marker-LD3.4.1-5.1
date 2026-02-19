@@ -19,7 +19,8 @@ examples:
   - Ohne dich fühle ich mich komplett verloren.
   - Ich kann nicht ohne dich atmen.
   - Jeder Gedanke dreht sich nur um dich.
-  - Also das ist erstaunlich, wie gut du darin bist. Sowas bewundere ich ja sehr.
+  - Also das ist erstaunlich, wie gut du darin bist. Sowas bewundere ich ja 
+    sehr.
   - Du bist ziemlich clever, das mag ich an dir!
   - Selten jemanden mit soviel Verstand und Schönheit in einem gesehen.
   - Ich könnte stundenlang an deinen Lippen hänkungen.
@@ -36,3 +37,4 @@ tags:
 - love_bombing
 composed_of:
 - ATO_PLACEHOLDER
+compositionality: deterministic

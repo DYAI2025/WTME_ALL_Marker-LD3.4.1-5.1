@@ -60,6 +60,7 @@ tags:
 rating: 1
 activation:
   rule: "ANY in 1 message"
+compositionality: deterministic
 metadata:
   source:
     semantische_grabber_id: "SGR_SELF_REL_01"

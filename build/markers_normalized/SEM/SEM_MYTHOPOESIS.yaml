@@ -36,3 +36,4 @@ composed_of:
 - ATO_VOCAB_MYTHIC
 activation:
   rule: "AT_LEAST 1 ATO_VOCAB_MYTHIC IN 2 messages"
+compositionality: deterministic

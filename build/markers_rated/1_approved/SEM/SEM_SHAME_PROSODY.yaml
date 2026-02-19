@@ -40,3 +40,4 @@ examples:
 tags: [semantic, audio, shame]
 metadata:
   type: SEM
+compositionality: deterministic

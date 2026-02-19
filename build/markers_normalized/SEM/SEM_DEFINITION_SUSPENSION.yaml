@@ -43,3 +43,4 @@ policy:
   - SEM_RELATION_OVER_PERSONA
   - SEM_LIMINAL_FIELD_PRESENCE
   - SEM_SACRALIZATION_BINDING
+compositionality: deterministic

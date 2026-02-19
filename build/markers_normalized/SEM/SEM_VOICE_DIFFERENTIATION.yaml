@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_VOICE_PROXY
 - ATO_RELATION_TERM
+compositionality: deterministic

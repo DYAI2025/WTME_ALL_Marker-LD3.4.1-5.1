@@ -38,3 +38,4 @@ examples:
 tags:
 - care
 - support
+compositionality: deterministic

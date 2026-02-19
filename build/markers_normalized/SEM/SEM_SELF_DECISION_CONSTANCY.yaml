@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_DECISION_CHOOSE
 - ATO_DECISION_STAY
+compositionality: deterministic

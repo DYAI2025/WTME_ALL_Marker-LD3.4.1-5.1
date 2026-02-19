@@ -40,3 +40,4 @@ composed_of:
 - ATO_PLACEHOLDER
 activation:
   rule: ANY 1
+compositionality: deterministic

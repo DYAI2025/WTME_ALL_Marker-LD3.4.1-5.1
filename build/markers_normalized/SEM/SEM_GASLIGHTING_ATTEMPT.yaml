@@ -42,3 +42,4 @@ composed_of:
 - ATO_UNCERTAINTY
 window:
   messages: 3
+compositionality: deterministic

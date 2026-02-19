@@ -5,7 +5,7 @@ lang: de
 category: SEMANTIC
 description: "Semantische Kombination von Geschwisterrollen und Konfliktmustern."
 frame:
-  signal: [ "Geschwisterrolle + Konflikt" ]
+  signal: ["Geschwisterrolle + Konflikt"]
   concept: "Geschwisterrivalität"
   pragmatics: "Konkurrenz um elterliche Aufmerksamkeit"
   narrative: "Familiäre Rangordnung"
@@ -51,7 +51,8 @@ examples:
   - "Mein Bruder ist einfach anders als ich."
   - "Geschwister haben halt unterschiedliche Interessen."
   - "Wir verstehen uns nicht immer, aber das ist normal."
-tags: [ semantic, family, siblings, rivalry, conflict ]
+tags: [semantic, family, siblings, rivalry, conflict]
 detect_class: "E"
 criteria: "Kombination aus Geschwisterrolle und negativen Bewertungen"
 updated_at: "2025-08-19T10:30:00Z"
+compositionality: deterministic

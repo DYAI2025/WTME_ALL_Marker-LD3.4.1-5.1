@@ -39,3 +39,4 @@ composed_of:
 - ATO_UNDERSTATEMENT
 activation:
   rule: "BOTH IN 2 messages"
+compositionality: deterministic

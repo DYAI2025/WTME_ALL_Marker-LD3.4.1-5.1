@@ -33,3 +33,4 @@ examples:
 tags:
 - love_scam
 - simulation
+compositionality: deterministic

@@ -38,3 +38,4 @@ examples:
 tags:
 - loyalty
 - commitment
+compositionality: deterministic

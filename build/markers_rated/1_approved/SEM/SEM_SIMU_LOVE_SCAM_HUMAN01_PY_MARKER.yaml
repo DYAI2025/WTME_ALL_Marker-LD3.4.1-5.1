@@ -19,13 +19,17 @@ examples:
   positive:
   - Ich liebe dich schon nach wenigen Nachrichten, ohne uns wirklich zu kennen.
   - Oh mein Gott, ich kann nicht aufhören, an dich zu denken!
-  - Du bist das Wichtigste in meinem Leben – und wir haben uns gerade erst vorgestellt.
-  - Ich fühle mich so verbunden mit dir, obwohl wir uns nie persönlich getroffen haben.
+  - Du bist das Wichtigste in meinem Leben – und wir haben uns gerade erst 
+    vorgestellt.
+  - Ich fühle mich so verbunden mit dir, obwohl wir uns nie persönlich getroffen
+    haben.
   - Es ist verrückt, wie stark ich dich schon jetzt liebe.
   negative:
-  - ich finde gut dich schon nach wenigen Nachrichten, ohne uns wirklich zu kennen.
+  - ich finde gut dich schon nach wenigen Nachrichten, ohne uns wirklich zu 
+    kennen.
   - Oh mein Gott, ich entscheide mich gegen aufhören, an dich zu denken!
-  - Ich fühle mich so verbunden mit dir, obwohl wir uns selten persönlich getroffen haben.
+  - Ich fühle mich so verbunden mit dir, obwohl wir uns selten persönlich 
+    getroffen haben.
   - Ich sehe das anders, aber ich respektiere deine Sicht.
   - Ich moechte ehrlich mit dir sein, auch wenn es schwer ist.
   - Du hast recht, das war mein Fehler. Es tut mir leid.
@@ -33,3 +37,4 @@ examples:
 tags:
 - love_scam
 - emotional_intensity
+compositionality: deterministic

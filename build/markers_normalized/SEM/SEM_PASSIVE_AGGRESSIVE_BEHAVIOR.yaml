@@ -42,3 +42,4 @@ composed_of:
 - ATO_IRONY
 window:
   messages: 2
+compositionality: deterministic

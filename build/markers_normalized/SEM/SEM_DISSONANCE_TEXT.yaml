@@ -39,6 +39,7 @@ composed_of:
 scoring:
   base: 1.4
   weight: 1.1
+compositionality: deterministic
 metadata:
   repair_log:
   - rule: "R03"

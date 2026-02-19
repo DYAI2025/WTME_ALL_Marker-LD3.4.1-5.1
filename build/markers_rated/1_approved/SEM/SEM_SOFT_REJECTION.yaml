@@ -31,3 +31,4 @@ examples:
 tags:
 - soft_rejection
 - face_saving
+compositionality: deterministic

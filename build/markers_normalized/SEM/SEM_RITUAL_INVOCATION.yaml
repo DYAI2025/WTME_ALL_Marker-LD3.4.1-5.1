@@ -38,3 +38,4 @@ composed_of:
 - ATO_CONTROL_MARKERS
 activation:
   rule: "AT_LEAST 1 IN 1 message"
+compositionality: deterministic

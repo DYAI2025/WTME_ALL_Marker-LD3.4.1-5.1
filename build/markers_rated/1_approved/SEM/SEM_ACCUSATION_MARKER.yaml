@@ -37,9 +37,11 @@ examples:
   - Du hast nie ein Wort der Entschuldigung über die Lippen gebracht!
   - Glaubst du tatsächlich, dass ich dir das einfach so verzeihe?
   - Du redest die ganze Zeit, aber deine Taten zeigen mir, dass es dir egal ist!
-  - Du bist immer so schnell mit dem Fingerzeig, aber nie bereit, selbst Verantwortung zu übernehmen.
+  - Du bist immer so schnell mit dem Fingerzeig, aber nie bereit, selbst 
+    Verantwortung zu übernehmen.
   - Du redest viel, aber am Ende bleibst du immer stumm, wenn es darauf ankommt.
-  - Du hast mich wie immer im Stich gelassen, und jetzt soll ich dir noch glauben?
+  - Du hast mich wie immer im Stich gelassen, und jetzt soll ich dir noch 
+    glauben?
   negative:
   - Ey, warum lässt du mich manchmal hängen, Alter?
   - manchmal wenn ich dich brauche, bist du nicht da!
@@ -52,3 +54,4 @@ tags:
 - accusation
 - blame
 - generalization
+compositionality: deterministic

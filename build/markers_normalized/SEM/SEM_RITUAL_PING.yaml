@@ -38,3 +38,4 @@ rating: 1
 composed_of:
 - ATO_RITUAL_TIME
 - ATO_TRUTH_FEEL
+compositionality: deterministic

@@ -31,3 +31,4 @@ examples:
 tags:
 - avoidance_strategy
 - stress_excuse
+compositionality: deterministic

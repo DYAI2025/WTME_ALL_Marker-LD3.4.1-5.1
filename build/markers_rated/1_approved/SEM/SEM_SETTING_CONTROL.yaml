@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_SETTING_CONTROL
 frame:
-  signal: [ "setting_control" ]
+  signal: ["setting_control"]
   concept: "Kanal/Timing/Format festlegen"
   pragmatics: "Rahmensetzung"
   narrative: "coordination"
-tags: [ setting, control ]
+tags: [setting, control]
 composed_of:
   any_of:
   - ATO_STYLE_REFERENCE
@@ -41,3 +41,4 @@ examples:
   - "Ich passe mich deinem Stil an."
   - "Wie auch immer es für dich besser ist."
   - "Du bestimmst, wie wir kommunizieren."
+compositionality: deterministic

@@ -36,3 +36,4 @@ composed_of:
 - ATO_AMBIVALENZ
 activation:
   rule: "AT_LEAST 2 AMBIVALENZ IN 3 messages"
+compositionality: deterministic

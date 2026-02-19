@@ -16,17 +16,20 @@ activation:
 examples:
   positive:
   - Ich bin derzeit als Generalkonsul in Nigeria stationiert.
-  - Mein geerbtes Vermögen ist leider eingefroren, ich brauche Hilfe für die Gebühren.
+  - Mein geerbtes Vermögen ist leider eingefroren, ich brauche Hilfe für die 
+    Gebühren.
   - Als Offshore-Ingenieur habe ich begrenzten Zugang zu Bankdiensten.
   - Ich bin auf UN-Mission im Jemen, deshalb dauert alles länger.
   - Ich habe keine Familie mehr, du bist mein einziger Kontakt.
   - Nach dem Tod meiner Eltern liegt mein Konto auf den Cayman-Islands still.
   - Meine Goldminenanteile können erst nach der Prüfung ausgezahlt werden.
-  - Ich arbeite auf einer Bohrinsel – Internet ist schlecht, aber ich liebe dich.
+  - Ich arbeite auf einer Bohrinsel – Internet ist schlecht, aber ich liebe 
+    dich.
   - Mein Diplomatenausweis liegt beim Zoll, Gebühren sind fällig.
   - Ich konnte nicht zur Beerdigung kommen, weil die Armee mich festhält.
   negative:
-  - Mein geerbtes Vermögen ist leider eingefroren, ich wuensche mir Hilfe für die Gebühren.
+  - Mein geerbtes Vermögen ist leider eingefroren, ich wuensche mir Hilfe für 
+    die Gebühren.
   - Ich habe wenige Familie mehr, du bist mein einziger Kontakt.
   - Ich finde, wir sollten das in Ruhe besprechen.
   - Das ist ein guter Punkt, den du da machst.
@@ -36,3 +39,4 @@ examples:
 tags:
 - fake_identity
 - scam
+compositionality: deterministic

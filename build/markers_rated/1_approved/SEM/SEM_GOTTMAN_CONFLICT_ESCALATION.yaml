@@ -2,11 +2,11 @@ schema: "LeanDeep"
 version: "3.4"
 id: SEM_GOTTMAN_CONFLICT_ESCALATION
 frame:
-  signal: [ "gottman_escalation" ]
+  signal: ["gottman_escalation"]
   concept: "Gottman-Konflikteskalation"
   pragmatics: "Akkumulation destruktiver Muster"
   narrative: "conflict"
-tags: [ gottman, conflict, escalation ]
+tags: [gottman, conflict, escalation]
 composed_of:
   weighted_any_of:
   - id: ATO_GOTTMAN_CRITICISM
@@ -20,7 +20,7 @@ composed_of:
 activation:
   rule: "WEIGHTED_OR >= 0.8"
   window: 6
-scoring: { base: 1.2, weight: 1.1 }
+scoring: {base: 1.2, weight: 1.1}
 examples:
   positive:
   - "Du machst immer alles falsch! – Das stimmt nicht! – (schweigen)"
@@ -44,3 +44,4 @@ examples:
   - "Das verletzt mich. – Das tut mir leid. – Können wir neu anfangen?"
   - "Ich bin traurig. – Ich auch. – Lass uns das zusammen angehen."
   - "Das belastet mich. – Mich auch. – Was hilft uns jetzt?"
+compositionality: deterministic

@@ -35,3 +35,4 @@ composed_of:
 - ATO_METAPHOR
 activation:
   rule: "AT_LEAST 3 METAPHOR IN 5 messages"
+compositionality: deterministic

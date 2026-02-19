@@ -44,5 +44,6 @@ composed_of:
 - ATO_PAUSE_LONG
 scoring:
   base: 0.62
+compositionality: deterministic
 metadata:
   type: SEM

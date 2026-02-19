@@ -4,7 +4,8 @@ namespace: "ld34_voice_social_grammar"
 id: SEM_REPAIR_FAILURE_AUDIO
 lang: de
 category: SEMANTIC
-description: "Reparatur scheitert (Audio): Versuch → keine Antwort/Topic-Shift in ≤6s."
+description: "Reparatur scheitert (Audio): Versuch → keine Antwort/Topic-Shift in
+  ≤6s."
 frame:
   signal: ["Reparaturversuch gefolgt von Schweigen/Shift"]
   concept: "Reparatur scheitert (Audio)"
@@ -38,3 +39,4 @@ examples:
 tags: [semantic, audio, repair]
 metadata:
   type: SEM
+compositionality: deterministic

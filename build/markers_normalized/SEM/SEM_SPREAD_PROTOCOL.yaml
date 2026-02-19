@@ -33,3 +33,4 @@ composed_of:
 - ATO_CROSS_POSTING_ANWEISUNG
 activation:
   rule: "BOTH IN 1 message"
+compositionality: deterministic
