@@ -8323,7 +8323,8 @@
       },
       "tags": [
         "self_reference",
-        "atomic"
+        "atomic",
+        "context_only"
       ],
       "rating": 1
     },

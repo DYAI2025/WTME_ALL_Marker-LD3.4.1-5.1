@@ -37,4 +37,5 @@ examples:
 tags:
 - self_reference
 - atomic
+- context_only
 rating: 1
