@@ -8,11 +8,6 @@ frame:
   concept: "Emotional Overwhelm"
   pragmatics: "micro pattern recognition"
   narrative: "intent"
-composed_of:
-- ATO_EMOTIONAL_REGULATION
-- ATO_UNCERTAINTY
-- ATO_BOUNDARY_SETTING
-activation_logic: "ANY 2"
 window:
   messages: 2
 examples:
@@ -36,6 +31,8 @@ examples:
   - That's an interesting thought.
   - I'm feeling relaxed right now.
 tags: [semantic, v3.3, emotional-overwhelm]
-compositionality: deterministic
+pattern:
+- "(?i)\\b(overwhelm|flooded|too much|can't handle|dysregulated|drowning|too intense|can't cope)\\b"
+compositionality: contextual
 vad_estimate: {valence: -0.6, arousal: 0.3, dominance: 0.2}
 effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

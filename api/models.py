@@ -95,6 +95,7 @@ class ConversationMarker(BaseModel):
     message_indices: list[int] = []
     family: str | None = None
     multiplier: float | None = None
+    matches: list[PatternMatch] = []
 
 
 class TemporalPattern(BaseModel):

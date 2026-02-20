@@ -230,6 +230,11 @@
       <h2>Emotion Dynamics</h2>
 
       <div class="dynamics-section">
+        <h3>Annotated Conversation</h3>
+        <div id="dynamics-conversation"></div>
+      </div>
+
+      <div class="dynamics-section">
         <h3>VAD Trajectory</h3>
         <div class="vad-chart-container">
           <canvas id="vad-chart"></canvas>
@@ -338,6 +343,7 @@
   // --- DOM refs (dynamics) ---
   const $inputDynamics = document.getElementById('input-dynamics');
   const $dynamicsContent = document.getElementById('dynamics-content');
+  const $dynamicsConv = document.getElementById('dynamics-conversation');
   const $stateIndices = document.getElementById('state-indices');
   const $uedGrid = document.getElementById('ued-grid');
   const $dynamicsMarkerList = document.getElementById('dynamics-marker-list');
@@ -669,6 +675,9 @@
       $resultsContent.style.display = 'none';
       $dynamicsContent.style.display = '';
 
+      // Render annotated conversation
+      $dynamicsConv.innerHTML = buildConversationHTML(messages, response);
+
       // Render VAD trajectory
       if (response.message_vad && response.message_vad.length > 0) {
         renderVADChart(response.message_vad);
@@ -699,34 +708,6 @@
     }
   }
 
-  // --- Span expansion to clause boundaries ---
-  function expandSpan(text, start, end) {
-    const clauseBoundary = /[,.\;\!\?\n]/;
-    const maxExpand = 120;
-
-    let eStart = start;
-    let i = start - 1;
-    while (i >= 0 && (start - i) <= maxExpand) {
-      if (clauseBoundary.test(text[i])) { eStart = i + 1; break; }
-      eStart = i;
-      i--;
-    }
-
-    let eEnd = end;
-    i = end;
-    while (i < text.length && (i - end) <= maxExpand) {
-      if (clauseBoundary.test(text[i])) { eEnd = i; break; }
-      eEnd = i + 1;
-      i++;
-    }
-
-    // Trim whitespace from expanded boundaries
-    while (eStart < start && text[eStart] === ' ') eStart++;
-    while (eEnd > end && text[eEnd - 1] === ' ') eEnd--;
-
-    return [eStart, eEnd];
-  }
-
   // --- Build annotated HTML ---
   function buildAnnotatedHTML(text, markers) {
     // Collect all spans from ATO/SEM markers (CLU/MEMA have no text spans)
@@ -736,9 +717,8 @@
       if (!marker.matches) continue;
       for (const match of marker.matches) {
         const [s, e] = match.span;
-        const [es, ee] = expandSpan(text, s, e);
         spans.push({
-          start: es, end: ee,
+          start: s, end: e,
           origStart: s, origEnd: e,
           marker,
           matchedText: match.matched_text,
@@ -812,7 +792,7 @@
     return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
 
-  // --- Build conversation HTML ---
+  // --- Build annotated conversation HTML ---
   function buildConversationHTML(messages, response) {
     let html = '';
     const markersByMsg = {};
@@ -830,24 +810,27 @@
       const roleClass = i % 2 === 0 ? 'role-a' : 'role-b';
       const msgMarkers = markersByMsg[i] || [];
 
-      // For conversation, we don't have text spans (the API returns message_indices not char spans)
-      // Render the text with any ATO/SEM markers that have matches
-      const atoSemMarkers = msgMarkers.filter(m => m.layer === 'ATO' || m.layer === 'SEM');
-      let textHTML = escapeHTML(msg.text);
+      // Build annotated text using exact match spans
+      const atoSemMarkers = msgMarkers.filter(m =>
+        (m.layer === 'ATO' || m.layer === 'SEM') && m.matches && m.matches.length
+      );
 
-      // We can try to show markers inline if there are span matches
-      // But conversation API returns ConversationMarker without matches
-      // So just show plain text with marker badges
+      let textHTML;
+      if (atoSemMarkers.length > 0) {
+        textHTML = buildAnnotatedHTML(msg.text, atoSemMarkers);
+      } else {
+        textHTML = escapeHTML(msg.text);
+      }
 
-      const badges = msgMarkers
-        .filter(m => m.layer === 'ATO' || m.layer === 'SEM')
-        .slice(0, 5)
-        .map(m => `<span class="tt-badge ${m.layer}" title="${escapeHTML(m.description)}">${m.id.replace(/^(ATO|SEM)_/, '')}</span>`)
+      // CLU/MEMA shown as badges on the role line
+      const metaBadges = msgMarkers
+        .filter(m => m.layer === 'CLU' || m.layer === 'MEMA')
+        .map(m => `<span class="tt-badge ${m.layer}" title="${escapeHTML(m.description)}">${escapeHTML(m.id.replace(/^(CLU|MEMA)_/, ''))}</span>`)
         .join(' ');
 
       html += `<div class="conv-message ${roleClass}">
-        <div class="cm-role">${escapeHTML(msg.role)} ${badges}</div>
-        <div class="cm-text">${textHTML}</div>
+        <div class="cm-role">${escapeHTML(msg.role)} ${metaBadges}</div>
+        <div class="cm-text annotated-text">${textHTML}</div>
       </div>`;
     }
     return html;

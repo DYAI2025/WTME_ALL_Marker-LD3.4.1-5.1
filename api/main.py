@@ -157,6 +157,14 @@ async def analyze_conversation(
             message_indices=d.message_indices,
             family=d.family,
             multiplier=d.multiplier,
+            matches=[
+                PatternMatch(
+                    pattern=m.pattern,
+                    span=(m.start, m.end),
+                    matched_text=m.matched_text,
+                )
+                for m in d.matches
+            ],
         )
         for d in result["detections"]
     ]
@@ -206,6 +214,14 @@ async def analyze_dynamics(
             message_indices=d.message_indices,
             family=d.family,
             multiplier=d.multiplier,
+            matches=[
+                PatternMatch(
+                    pattern=m.pattern,
+                    span=(m.start, m.end),
+                    matched_text=m.matched_text,
+                )
+                for m in d.matches
+            ],
         )
         for d in result["detections"]
     ]

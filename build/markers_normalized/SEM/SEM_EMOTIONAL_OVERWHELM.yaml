@@ -10,7 +10,9 @@ frame:
   concept: Emotional Overwhelm
   pragmatics: micro pattern recognition
   narrative: intent
-patterns: []
+patterns:
+- type: regex
+  value: "(?i)\\b(overwhelm|flooded|too much|can't handle|dysregulated|drowning|too intense|can't cope)\\b"
 examples:
   positive:
   - I feel completely overwhelmed. I'm not sure I can handle this conversation right now.
@@ -36,13 +38,9 @@ tags:
 - v3.3
 - emotional-overwhelm
 rating: 1
-composed_of:
-- ATO_EMOTIONAL_REGULATION
-- ATO_UNCERTAINTY
-- ATO_BOUNDARY_SETTING
 window:
   messages: 2
-compositionality: deterministic
+compositionality: contextual
 vad_estimate:
   valence: -0.6
   arousal: 0.3
