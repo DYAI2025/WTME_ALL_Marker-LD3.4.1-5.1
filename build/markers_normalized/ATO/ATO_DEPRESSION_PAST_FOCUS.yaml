@@ -12,7 +12,7 @@ frame:
   narrative: surface
 patterns:
 - type: regex
-  value: (?i)\b(was|had|went|did|made|felt|said|thought|lived)\b
+  value: (?i)\b(had|went|did|made|felt|said|thought|lived)\b
 examples:
   positive:
   - I was happy once, but not anymore.

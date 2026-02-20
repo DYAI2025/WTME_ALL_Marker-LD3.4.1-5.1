@@ -10,7 +10,7 @@ frame:
   pragmatics: grammatical indicator
   narrative: surface
 pattern:
-- (?i)\b(was|had|went|did|made|felt|said|thought|lived)\b
+- (?i)\b(had|went|did|made|felt|said|thought|lived)\b
 examples:
   positive:
   - "I was happy once, but not anymore."

@@ -12,7 +12,7 @@ frame:
   narrative: surface
 patterns:
 - type: regex
-  value: \b(\w+)\b.*\b\1\b
+  value: \b(\w{4,})\b.+\b\1\b
   flags: []
 examples:
   positive:
@@ -29,5 +29,9 @@ examples:
   - Lass uns gemeinsam eine Loesung finden.
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
   - Ich moechte verstehen, was du meinst.
-tags: []
+tags:
+- atomic
+- echo
+- stochastik
+- context_only
 rating: 2

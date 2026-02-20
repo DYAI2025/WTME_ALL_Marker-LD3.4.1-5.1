@@ -11,7 +11,7 @@ composed_of:
 - ATO_MORAL_GOOD_INTENT
 - ATO_CONTRASTIVE_CONNECTOR_ABER
 activation:
-  rule: "ANY 1 IN 30 messages"
+  rule: "AT_LEAST 2"
 window:
   messages: 30
 scoring:

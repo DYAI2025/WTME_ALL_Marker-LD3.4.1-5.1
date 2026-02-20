@@ -5220,7 +5220,7 @@
       "patterns": [
         {
           "type": "regex",
-          "value": "(?i)\\b(was|had|went|did|made|felt|said|thought|lived)\\b"
+          "value": "(?i)\\b(had|went|did|made|felt|said|thought|lived)\\b"
         }
       ],
       "examples": {
@@ -39541,7 +39541,7 @@
         "ATO_CONTRASTIVE_CONNECTOR_ABER"
       ],
       "activation": {
-        "rule": "ANY 1 IN 30 messages"
+        "rule": "AT_LEAST 2"
       },
       "scoring": {
         "base": 2.6,
@@ -45900,7 +45900,7 @@
       "patterns": [
         {
           "type": "regex",
-          "value": "\\b(\\w+)\\b.*\\b\\1\\b",
+          "value": "\\b(\\w{4,})\\b.+\\b\\1\\b",
           "flags": []
         }
       ],
@@ -45922,7 +45922,12 @@
           "Ich moechte verstehen, was du meinst."
         ]
       },
-      "tags": [],
+      "tags": [
+        "atomic",
+        "echo",
+        "stochastik",
+        "context_only"
+      ],
       "rating": 2
     },
     "ATO_EMAIL": {
