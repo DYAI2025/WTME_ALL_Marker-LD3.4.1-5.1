@@ -35,6 +35,7 @@ from .models import (
     ConversationResponse,
     DetectedMarker,
     DynamicsResponse,
+    EmotionScore,
     EngineConfig,
     HealthResponse,
     Layer,
@@ -250,9 +251,18 @@ async def analyze_dynamics(
     si_raw = result.get("state_indices", {"trust": 0, "conflict": 0, "deesc": 0, "contributing_markers": 0})
     state_indices = StateIndices(**si_raw)
 
+    # Prosody-based emotion scores per message
+    raw_emotions = result.get("message_emotions", [])
+    message_emotions = [
+        EmotionScore(scores=e.scores, dominant=e.dominant, dominant_score=e.dominant_score)
+        if e is not None else None
+        for e in raw_emotions
+    ]
+
     return DynamicsResponse(
         markers=sorted(markers, key=lambda m: (-m.confidence, m.id)),
         message_vad=message_vad,
+        message_emotions=message_emotions,
         ued_metrics=ued_metrics,
         state_indices=state_indices,
         temporal_patterns=temporal,

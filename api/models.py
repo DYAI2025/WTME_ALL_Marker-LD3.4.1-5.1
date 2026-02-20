@@ -140,9 +140,16 @@ class StateIndices(BaseModel):
     contributing_markers: int
 
 
+class EmotionScore(BaseModel):
+    scores: dict[str, float]   # {ANGER: 0.12, JOY: 0.45, ...}
+    dominant: str              # "JOY"
+    dominant_score: float      # 0.45
+
+
 class DynamicsResponse(BaseModel):
     markers: list[ConversationMarker]
     message_vad: list[VADPoint]
+    message_emotions: list[EmotionScore | None] = []
     ued_metrics: UEDMetrics | None = None
     state_indices: StateIndices
     temporal_patterns: list[TemporalPattern] = []

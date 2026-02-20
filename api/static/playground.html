@@ -135,6 +135,19 @@
 
   .dynamics-placeholder { color: var(--text-dim); font-style: italic; padding: 30px; text-align: center; font-size: 0.85rem; background: var(--surface); border-radius: 6px; }
 
+  /* Emotion timeline */
+  .emotion-row { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .emotion-row .er-msg { font-size: 0.72rem; color: var(--text-dim); min-width: 42px; text-align: right; font-family: 'SF Mono', 'Fira Code', monospace; }
+  .emotion-row .er-bar-track { flex: 1; height: 22px; background: var(--surface2); border-radius: 4px; display: flex; overflow: hidden; }
+  .emotion-row .er-segment { height: 100%; transition: width 0.3s ease; position: relative; }
+  .emotion-row .er-segment:first-child { border-radius: 4px 0 0 4px; }
+  .emotion-row .er-segment:last-child { border-radius: 0 4px 4px 0; }
+  .emotion-row .er-dominant { font-size: 0.75rem; font-weight: 600; min-width: 60px; }
+  .emotion-row .er-score { font-size: 0.72rem; color: var(--text-dim); min-width: 32px; font-family: 'SF Mono', 'Fira Code', monospace; }
+  .emotion-legend { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
+  .emotion-legend .el-item { display: flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-dim); }
+  .emotion-legend .el-dot { width: 10px; height: 10px; border-radius: 2px; }
+
   .btn-dynamics { background: var(--surface2); color: var(--text); border: 1px solid var(--accent); }
   .btn-dynamics:hover { background: var(--accent); color: white; }
 
@@ -239,6 +252,11 @@
         <div class="vad-chart-container">
           <canvas id="vad-chart"></canvas>
         </div>
+      </div>
+
+      <div class="dynamics-section">
+        <h3>Emotion Timeline</h3>
+        <div id="emotion-timeline"></div>
       </div>
 
       <div class="dynamics-section">
@@ -634,6 +652,72 @@
     return '#f44336';
   }
 
+  // --- Emotion colors ---
+  const EMOTION_COLORS = {
+    ANGER: '#ef5350', SADNESS: '#42a5f5', FEAR: '#ab47bc',
+    JOY: '#66bb6a', LOVE: '#ec407a', SURPRISE: '#ffa726',
+  };
+
+  // --- Render emotion timeline ---
+  function renderEmotionTimeline(emotions, messages) {
+    const $el = document.getElementById('emotion-timeline');
+    if (!emotions || emotions.length === 0) {
+      $el.innerHTML = '<div class="dynamics-placeholder">No emotion data available</div>';
+      return;
+    }
+
+    // Legend
+    let html = '<div class="emotion-legend">';
+    for (const [emo, color] of Object.entries(EMOTION_COLORS)) {
+      html += `<div class="el-item"><div class="el-dot" style="background:${color};"></div>${emo[0] + emo.slice(1).toLowerCase()}</div>`;
+    }
+    html += '</div>';
+
+    // Per-message bars
+    for (let i = 0; i < emotions.length; i++) {
+      const e = emotions[i];
+      if (!e) {
+        html += `<div class="emotion-row">
+          <span class="er-msg">${i + 1}</span>
+          <div class="er-bar-track"><div style="flex:1;display:flex;align-items:center;justify-content:center;font-size:0.72rem;color:var(--text-dim);">—</div></div>
+          <span class="er-dominant" style="color:var(--text-dim);">n/a</span>
+          <span class="er-score">—</span>
+        </div>`;
+        continue;
+      }
+
+      const scores = e.scores || {};
+      const dominant = e.dominant || '';
+      const dominantScore = e.dominant_score || 0;
+      const dominantColor = EMOTION_COLORS[dominant] || '#888';
+
+      // Build stacked bar segments (only show emotions with > 5% score)
+      const sorted = Object.entries(scores)
+        .filter(([, v]) => v > 0.05)
+        .sort((a, b) => b[1] - a[1]);
+
+      let segments = '';
+      for (const [emo, score] of sorted) {
+        const color = EMOTION_COLORS[emo] || '#555';
+        const pct = (score * 100).toFixed(1);
+        segments += `<div class="er-segment" style="width:${pct}%;background:${color};" title="${emo}: ${pct}%"></div>`;
+      }
+
+      // Role indicator
+      const role = messages && messages[i] ? messages[i].role : '';
+      const roleColor = i % 2 === 0 ? '#42a5f5' : '#ef5350';
+
+      html += `<div class="emotion-row">
+        <span class="er-msg" style="color:${roleColor};">${role || (i + 1)}</span>
+        <div class="er-bar-track">${segments}</div>
+        <span class="er-dominant" style="color:${dominantColor};">${dominant[0] + dominant.slice(1).toLowerCase()}</span>
+        <span class="er-score">${(dominantScore * 100).toFixed(0)}%</span>
+      </div>`;
+    }
+
+    $el.innerHTML = html;
+  }
+
   // --- Render dynamics marker list ---
   function renderDynamicsMarkerList(markers) {
     $dynamicsMarkerList.innerHTML = markers.map(m => {
@@ -682,6 +766,9 @@
       if (response.message_vad && response.message_vad.length > 0) {
         renderVADChart(response.message_vad);
       }
+
+      // Render emotion timeline
+      renderEmotionTimeline(response.message_emotions || [], messages);
 
       // Render state indices
       if (response.state_indices) {
@@ -796,6 +883,7 @@
   function buildConversationHTML(messages, response) {
     let html = '';
     const markersByMsg = {};
+    const emotions = response.message_emotions || [];
 
     for (const m of response.markers) {
       if (m.message_indices) {
@@ -828,8 +916,17 @@
         .map(m => `<span class="tt-badge ${m.layer}" title="${escapeHTML(m.description)}">${escapeHTML(m.id.replace(/^(CLU|MEMA)_/, ''))}</span>`)
         .join(' ');
 
+      // Emotion chip for this message
+      let emotionChip = '';
+      const emo = emotions[i];
+      if (emo && emo.dominant) {
+        const eColor = EMOTION_COLORS[emo.dominant] || '#888';
+        const ePct = ((emo.dominant_score || 0) * 100).toFixed(0);
+        emotionChip = ` <span style="font-size:0.68rem;padding:1px 6px;border-radius:3px;background:${eColor}22;color:${eColor};border:1px solid ${eColor}44;font-weight:600;">${emo.dominant[0] + emo.dominant.slice(1).toLowerCase()} ${ePct}%</span>`;
+      }
+
       html += `<div class="conv-message ${roleClass}">
-        <div class="cm-role">${escapeHTML(msg.role)} ${metaBadges}</div>
+        <div class="cm-role">${escapeHTML(msg.role)} ${metaBadges}${emotionChip}</div>
         <div class="cm-text annotated-text">${textHTML}</div>
       </div>`;
     }

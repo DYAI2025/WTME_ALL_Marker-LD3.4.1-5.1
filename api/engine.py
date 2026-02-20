@@ -1013,6 +1013,11 @@ class MarkerEngine:
             mema_dets = self.detect_mema(clu_dets, flat_sem, flat_ato, threshold)
             all_detections.extend(mema_dets)
 
+        # ── Prosody-based emotion detection per message ──
+        from .prosody import get_scorer
+        scorer = get_scorer()
+        message_emotions = scorer.score_conversation(messages)
+
         # ── VAD aggregation per message ──
         from .dynamics import compute_ued_metrics, compute_state_indices
 
@@ -1046,6 +1051,7 @@ class MarkerEngine:
             "detections": all_detections,
             "temporal_patterns": temporal,
             "message_vad": message_vad,
+            "message_emotions": message_emotions,
             "ued_metrics": ued_metrics,
             "state_indices": state_indices,
             "timing_ms": round(elapsed, 2),
