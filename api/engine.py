@@ -18,6 +18,7 @@ DRA Mode (Emotions-ATO-Regex-Lexikon):
 from __future__ import annotations
 
 import json
+import math
 import re
 import time
 from dataclasses import dataclass, field
@@ -245,6 +246,103 @@ class MarkerEngine:
 
         return modifiers
 
+    # -----------------------------------------------------------------------
+    # VAD Congruence Gate (Quantum Collapse)
+    # -----------------------------------------------------------------------
+
+    def _vad_congruence(self, ato_vad: dict | None, msg_vad: dict | None) -> float:
+        """Compute congruence between an ATO's VAD and the message's VAD.
+
+        Returns 0.0 (completely incongruent) to 1.0 (perfectly aligned).
+        Uses weighted euclidean distance with valence weighted 1.5x,
+        dominance weighted 0.5x.
+        """
+        if not ato_vad or not msg_vad:
+            return 0.5  # No VAD -> neutral, don't gate
+
+        # Weighted distance: valence matters most, then arousal, then dominance
+        dv = (ato_vad["valence"] - msg_vad["valence"]) * 1.5  # valence weighted
+        da = ato_vad["arousal"] - msg_vad["arousal"]
+        dd = (ato_vad["dominance"] - msg_vad["dominance"]) * 0.5  # dominance least important
+
+        distance = math.sqrt(dv**2 + da**2 + dd**2)
+        # Max possible distance: sqrt((3)^2 + (1)^2 + (0.5)^2) ~ 3.2
+        max_dist = 3.2
+        congruence = max(0.0, 1.0 - distance / max_dist)
+        return round(congruence, 3)
+
+    def _compute_raw_vad(self, detections: list[Detection]) -> dict:
+        """Compute aggregate VAD from a list of detections."""
+        vads = [d.vad for d in detections if d.vad]
+        if not vads:
+            return {"valence": 0.0, "arousal": 0.0, "dominance": 0.0}
+        return {
+            "valence": sum(v["valence"] for v in vads) / len(vads),
+            "arousal": sum(v["arousal"] for v in vads) / len(vads),
+            "dominance": sum(v["dominance"] for v in vads) / len(vads),
+        }
+
+    def _apply_vad_gate(
+        self,
+        ato_detections: list[Detection],
+        msg_vad: dict,
+        shadow_buffer: list[Detection] | None = None,
+    ) -> tuple[list[Detection], list[Detection], list[Detection]]:
+        """Apply VAD congruence gate to ATO detections.
+
+        Returns:
+            (gated_atos, suppressed_atos, surfaced_from_shadow)
+
+        Gate thresholds:
+            congruence >= 0.55 -> pass with full confidence (resonant)
+            0.35 <= congruence < 0.55 -> pass with confidence *= 0.6 (weak resonance)
+            congruence < 0.35 -> suppressed (noise), goes to shadow buffer
+
+        ATOs without VAD always pass (structural markers like NEGATION).
+        If message VAD is near-zero (neutral message), gate is relaxed.
+        """
+        # If message is emotionally neutral, don't gate aggressively
+        msg_intensity = abs(msg_vad["valence"]) + msg_vad["arousal"]
+        if msg_intensity < 0.15:
+            # Neutral message: everything passes
+            return ato_detections, [], []
+
+        gated: list[Detection] = []
+        suppressed: list[Detection] = []
+
+        for det in ato_detections:
+            if det.vad is None:
+                # No VAD -> structural marker, always passes
+                gated.append(det)
+                continue
+
+            congruence = self._vad_congruence(det.vad, msg_vad)
+
+            if congruence >= 0.55:
+                # Resonant: full pass
+                gated.append(det)
+            elif congruence >= 0.35:
+                # Weak resonance: reduced confidence
+                det.confidence = round(det.confidence * 0.6, 3)
+                gated.append(det)
+            else:
+                # Noise: suppress
+                suppressed.append(det)
+
+        # Check shadow buffer: surface any that are now congruent
+        surfaced: list[Detection] = []
+        if shadow_buffer:
+            for shadow_det in shadow_buffer:
+                if shadow_det.vad is None:
+                    continue
+                congruence = self._vad_congruence(shadow_det.vad, msg_vad)
+                if congruence >= 0.45:
+                    # Surfaced from shadow with reduced confidence
+                    shadow_det.confidence = round(shadow_det.confidence * 0.4, 3)
+                    surfaced.append(shadow_det)
+
+        return gated, suppressed, surfaced
+
     def _parse_marker(self, marker_id: str, data: dict) -> MarkerDef:
         """Parse a marker from registry data, compiling regex patterns."""
         patterns = []
@@ -294,6 +392,19 @@ class MarkerEngine:
             return None
 
     # -----------------------------------------------------------------------
+    # Text Preprocessing
+    # -----------------------------------------------------------------------
+
+    _URL_RE = re.compile(
+        r'https?://[^\s<>\"\')]+|www\.[^\s<>\"\')]+', re.IGNORECASE
+    )
+
+    @classmethod
+    def _strip_urls(cls, text: str) -> str:
+        """Replace URLs with whitespace to prevent false pattern matches."""
+        return cls._URL_RE.sub(lambda m: ' ' * len(m.group()), text)
+
+    # -----------------------------------------------------------------------
     # ATO Detection (Level 1): Pure regex matching
     # -----------------------------------------------------------------------
 
@@ -307,6 +418,8 @@ class MarkerEngine:
                 suppressed from the returned list (but should still be passed
                 to SEM via a separate call with include_context_only=True).
         """
+        # Strip URLs before matching to avoid FPs on link characters
+        text = self._strip_urls(text)
         detections = []
 
         for mdef in self.ato_markers:
@@ -375,6 +488,8 @@ class MarkerEngine:
           - High intensifier → confidence +0.15
           - Low intensifier → confidence -0.1
         """
+        # Strip URLs before SEM's own pattern matching
+        text = self._strip_urls(text)
         active_atos = {d.marker_id for d in ato_detections}
 
         # Pre-compute DRA guard modifiers for this text
@@ -835,17 +950,39 @@ class MarkerEngine:
         flat_sem: list[Detection] = []
         all_detections: list[Detection] = []
 
-        # Per-message ATO + SEM detection (with DRA guards)
+        # Per-message ATO + SEM detection with VAD congruence gate
+        shadow_buffer: list[Detection] = []
+
         for msg_idx, msg in enumerate(messages):
             text = msg.get("text", "")
 
-            ato_dets = self.detect_ato(text, threshold)
-            for d in ato_dets:
+            # Phase 1: Detect all ATOs (superposition)
+            raw_atos = self.detect_ato(text, threshold)
+            for d in raw_atos:
                 d.message_indices = [msg_idx]
-            all_ato_dets.append(ato_dets)
-            flat_ato.extend(ato_dets)
 
-            sem_dets = self.detect_sem(text, ato_dets, threshold)
+            # Phase 2: Compute raw message VAD (emotional field)
+            raw_vad = self._compute_raw_vad(raw_atos)
+
+            # Phase 3: Apply VAD congruence gate (quantum collapse)
+            gated_atos, suppressed, surfaced = self._apply_vad_gate(
+                raw_atos, raw_vad, shadow_buffer
+            )
+
+            # Update message indices for surfaced shadow ATOs
+            for d in surfaced:
+                d.message_indices = [msg_idx]
+
+            # Phase 4: Update shadow buffer for next message
+            shadow_buffer = suppressed
+
+            # Use gated ATOs + surfaced for this message
+            effective_atos = gated_atos + surfaced
+            all_ato_dets.append(effective_atos)
+            flat_ato.extend(effective_atos)
+
+            # SEM detection uses gated+surfaced ATOs (meaningful ones only)
+            sem_dets = self.detect_sem(text, effective_atos, threshold)
             for d in sem_dets:
                 d.message_indices = [msg_idx]
             all_sem_dets.append(sem_dets)
