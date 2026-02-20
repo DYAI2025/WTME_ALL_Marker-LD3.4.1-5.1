@@ -37,3 +37,5 @@ examples:
   - Thank you for telling me that. I'll think about it.
 tags: [semantic, v3.3, passive-aggression]
 compositionality: deterministic
+vad_estimate: {valence: -0.6, arousal: 0.95, dominance: 0.7}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

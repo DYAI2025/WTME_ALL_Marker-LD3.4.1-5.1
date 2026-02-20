@@ -51,6 +51,14 @@ rating: 1
 activation:
   rule: "ANY in 1 message"
 compositionality: deterministic
+vad_estimate:
+  valence: 0.0
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0
 metadata:
   source:
     semantische_grabber_id: "AUTO_SEM_20250723_F191"

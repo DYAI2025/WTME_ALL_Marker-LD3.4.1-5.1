@@ -5,12 +5,12 @@ version: 1.0
 languages: [en]
 meaning: "Vague non-specific praise that fits any project — classic bot outreach signal"
 patterns:
-  - type: regex
-    value: "(?i)\\b(some interesting patterns|interesting patterns|nice work|great project|impressive code)\\b"
-  - type: regex
-    value: "(?i)(I've been looking at your.{0,30}(commits?|code|repo|project))"
-  - type: regex
-    value: "(?i)(I (noticed|came across|found) your.{0,20}(repo|project|work))"
+- type: regex
+  value: "(?i)\\b(some interesting patterns|interesting patterns|nice work|great project|impressive code)\\b"
+- type: regex
+  value: "(?i)(I've been looking at your.{0,30}(commits?|code|repo|project))"
+- type: regex
+  value: "(?i)(I (noticed|came across|found) your.{0,20}(repo|project|work))"
 examples:
   positive:
   - "some interesting patterns there"
@@ -24,3 +24,5 @@ examples:
   - "Interesting approach to the connection pooling — have you considered using pg-pool?"
   - "Nice work on fixing the race condition in the heartbeat handler"
 tags: [atomic, bot-detection, spam, github]
+vad_estimate: {valence: -0.6, arousal: 0.3, dominance: 0.2}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

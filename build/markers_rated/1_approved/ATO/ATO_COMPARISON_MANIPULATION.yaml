@@ -46,3 +46,5 @@ metadata:
   - "Ich sehe deinen Fortschritt, nicht den der anderen."
   - "Lass uns über uns sprechen, nicht über die Leute nebenan."
 tags: [atomic, v3.3, auto-generated]
+vad_estimate: {valence: -0.6, arousal: 0.7, dominance: 0.95}
+effect_on_state: {trust: -0.5, conflict: 0.6, deesc: -0.35}

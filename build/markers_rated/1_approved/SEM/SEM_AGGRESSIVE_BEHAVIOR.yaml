@@ -1,7 +1,6 @@
 id: SEM_AGGRESSIVE_BEHAVIOR
 frame:
-  signal: Kombination aus Wut-Vokabular, Schimpfwörtern und/oder eskalierenden 
-    Drohungen.
+  signal: Kombination aus Wut-Vokabular, Schimpfwörtern und/oder eskalierenden Drohungen.
   concept: Aggressives Verhalten / Wutausbruch
   pragmatics: Konfrontation, Einschüchterung, emotionaler Kontrollverlust.
   narrative: escalation
@@ -39,3 +38,5 @@ composed_of:
 - ATO_SWEAR_WORD
 - ATO_THREAT_ESCALATION
 compositionality: deterministic
+vad_estimate: {valence: -0.6, arousal: 0.95, dominance: 0.7}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

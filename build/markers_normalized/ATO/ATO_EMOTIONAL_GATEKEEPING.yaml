@@ -43,3 +43,11 @@ scoring:
   formula: "logistic"
 window:
   messages: 25
+vad_estimate:
+  valence: -0.55
+  arousal: 0.9
+  dominance: 0.8
+effect_on_state:
+  trust: -0.3
+  conflict: 0.4
+  deesc: -0.2

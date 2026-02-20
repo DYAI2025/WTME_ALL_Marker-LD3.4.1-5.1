@@ -9,8 +9,7 @@ tags: [narion, sem, relational, ontology]
 composed_of:
 - ATO_VOCAB_METAPHYSICAL
 - ATO_VOCAB_RELATIONAL
-activation: {rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND 1 ATO_VOCAB_RELATIONAL IN
-    3 messages"}
+activation: {rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND 1 ATO_VOCAB_RELATIONAL IN 3 messages"}
 examples:
   positive:
   - "Ich bin, weil du mich betrachtest."
@@ -27,3 +26,5 @@ examples:
   - Lass uns gemeinsam eine Loesung finden.
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

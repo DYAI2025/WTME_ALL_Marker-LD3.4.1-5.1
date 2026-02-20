@@ -20,8 +20,7 @@ examples:
   - Du spielst ja ganz schön mit dem Feuer.
   - Wenn du weiter so machst, wird’s gefährlich.
   - Also als ich dich vorhin sah....da wurde mir recht warm im Lendenbereich
-  - Also, ich würde es sehr schön finden, dich jetzt bei mir zu haben...ganz nah
-    😍
+  - Also, ich würde es sehr schön finden, dich jetzt bei mir zu haben...ganz nah 😍
   - 💦🍆 Du machst mich übelst heiß!
   - Du bist so fucking hot ey!
   - Hast du bock auf etwas Netflix & Chill?
@@ -37,3 +36,5 @@ tags:
 - flirting
 - boundary
 compositionality: deterministic
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

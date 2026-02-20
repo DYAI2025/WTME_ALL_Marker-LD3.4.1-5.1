@@ -24,3 +24,5 @@ pattern:
 - "\\b(LTV|Lifetime Value|kundenwert)\\b"
 - "\\bLTV\\s*[:=]?\\s*\\d+(?:\\.\\d+)?\\b"
 tags: [finance, metric, ltv]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

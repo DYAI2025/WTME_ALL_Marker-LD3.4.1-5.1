@@ -10,15 +10,11 @@ activation:
   rule: "ANY 1"
 examples:
   positive:
-  - "Ich will wirklich, dass du bleibst, aber ein Teil von mir glaubt, dass eine Trennung
-    besser für uns wäre."
-  - "Klar hab ich Bock auf den Urlaub! Aber mein Kontostand schreit gerade ganz laut
-    Nein."
-  - "Ich bin hin- und hergerissen zwischen Bleiben und Gehen – ich weiß nicht mehr
-    weiter."
+  - "Ich will wirklich, dass du bleibst, aber ein Teil von mir glaubt, dass eine Trennung besser für uns wäre."
+  - "Klar hab ich Bock auf den Urlaub! Aber mein Kontostand schreit gerade ganz laut Nein."
+  - "Ich bin hin- und hergerissen zwischen Bleiben und Gehen – ich weiß nicht mehr weiter."
   - "Ich liebe den Job, aber gleichzeitig zweifle ich jeden Tag daran."
-  - "Ich schätze Ihr Vertrauen in mich für diese Beförderung sehr, gleichzeitig habe
-    ich Bedenken."
+  - "Ich schätze Ihr Vertrauen in mich für diese Beförderung sehr, gleichzeitig habe ich Bedenken."
   negative:
   - ich finde gut den Job, aber gleichzeitig zweifle ich jeden Tag daran.
   - Ich finde, wir sollten das in Ruhe besprechen.
@@ -28,3 +24,5 @@ examples:
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
   - Ich moechte verstehen, was du meinst.
 compositionality: deterministic
+vad_estimate: {valence: -0.2, arousal: 0.5, dominance: 0.3}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

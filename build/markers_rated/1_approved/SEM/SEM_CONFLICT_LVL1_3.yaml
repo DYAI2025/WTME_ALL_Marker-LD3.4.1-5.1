@@ -24,8 +24,7 @@ examples:
   - Warum musst du immer alles besser wissen? Das nervt mich total!
   - Ich verstehe nicht, warum du so drauf bist. Sag’s mir endlich!
   - Alter, das ist doch völliger Quatsch, was du da redest!
-  - Ich hab dir doch gesagt, dass ich das nicht will, warum machst du es 
-    trotzdem?
+  - Ich hab dir doch gesagt, dass ich das nicht will, warum machst du es trotzdem?
   - Warum ignorierst du mich? Ich fühl mich komplett verarscht!
   - Ey, reg dich ab! Halt mal deine Klappe!
   - Ich finde es echt arm, wie du dich verhältst.
@@ -49,3 +48,5 @@ tags:
 - aggression
 - argument
 compositionality: deterministic
+vad_estimate: {valence: -0.6, arousal: 0.95, dominance: 0.7}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

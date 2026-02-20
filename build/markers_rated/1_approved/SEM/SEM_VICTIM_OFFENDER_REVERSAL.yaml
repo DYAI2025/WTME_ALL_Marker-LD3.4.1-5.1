@@ -41,3 +41,5 @@ examples:
   - Ich moechte verstehen, was du meinst.
 tags: [sem, reversal, attack, guilt_pressure]
 compositionality: deterministic
+vad_estimate: {valence: -0.65, arousal: 0.85, dominance: 0.4}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

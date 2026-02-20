@@ -50,3 +50,11 @@ activation:
   rule: "BOTH IN 2 messages"
   window: 2
 compositionality: deterministic
+vad_estimate:
+  valence: -0.05
+  arousal: 0.4
+  dominance: 0.7
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0

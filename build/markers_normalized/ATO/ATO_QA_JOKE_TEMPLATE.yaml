@@ -37,3 +37,11 @@ tags:
 - atomic
 - v33
 rating: 1
+vad_estimate:
+  valence: 0.5
+  arousal: 0.4
+  dominance: 0.5
+effect_on_state:
+  trust: 0.2
+  conflict: -0.15
+  deesc: 0.2

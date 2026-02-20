@@ -25,3 +25,5 @@ examples:
   - I understand why you see it that way.
   - Thank you for telling me that. I'll think about it.
 tags: [atomic, v3.3, auto-generated]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

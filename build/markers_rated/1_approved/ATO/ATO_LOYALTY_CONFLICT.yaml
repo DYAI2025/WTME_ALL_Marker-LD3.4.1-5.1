@@ -28,3 +28,5 @@ examples:
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: [atomic, konflikt, loyalität, familie]
 schema_version: "3.3"
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

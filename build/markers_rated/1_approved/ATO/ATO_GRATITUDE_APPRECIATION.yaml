@@ -89,3 +89,5 @@ metadata:
   created: "2026-02-12"
   author: "DYAI Emotional Semantics Collection"
   purpose: "Basic emotional pattern detection for gratitude and appreciation"
+vad_estimate: {valence: 0.8, arousal: 0.6, dominance: 0.5}
+effect_on_state: {trust: 0.2, conflict: -0.15, deesc: 0.2}

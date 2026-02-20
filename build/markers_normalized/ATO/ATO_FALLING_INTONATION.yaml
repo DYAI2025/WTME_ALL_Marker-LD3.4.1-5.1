@@ -36,3 +36,11 @@ detect_class:
   params:
     fall_semitones_min: 4
     phrase_end_window_ms: 500
+vad_estimate:
+  valence: 0.0
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0

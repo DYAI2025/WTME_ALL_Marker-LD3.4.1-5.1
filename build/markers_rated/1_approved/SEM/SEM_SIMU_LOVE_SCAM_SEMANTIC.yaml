@@ -34,3 +34,5 @@ tags:
 - love_scam
 - simulation
 compositionality: deterministic
+vad_estimate: {valence: 0.5, arousal: 0.65, dominance: 0.55}
+effect_on_state: {trust: 0.35, conflict: -0.2, deesc: 0.25}

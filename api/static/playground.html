@@ -111,12 +111,40 @@
   .loading { display: inline-block; width: 16px; height: 16px; border: 2px solid var(--text-dim); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.6s linear infinite; margin-right: 6px; vertical-align: middle; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* Dynamics section */
+  .dynamics-section { margin-top: 24px; }
+  .dynamics-section h3 { font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; padding-bottom: 4px; border-bottom: 1px solid #334; }
+
+  .vad-chart-container { background: var(--surface); border-radius: 6px; padding: 16px; margin-bottom: 16px; position: relative; height: 280px; }
+
+  .state-indices { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+  .state-gauge { background: var(--surface); border-radius: 6px; padding: 12px 16px; }
+  .state-gauge .sg-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .state-gauge .sg-label { font-size: 0.82rem; font-weight: 600; }
+  .state-gauge .sg-value { font-size: 0.82rem; font-weight: 700; font-family: 'SF Mono', 'Fira Code', monospace; }
+  .state-gauge .sg-bar-track { height: 8px; background: var(--surface2); border-radius: 4px; position: relative; overflow: hidden; }
+  .state-gauge .sg-bar-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: var(--text-dim); opacity: 0.4; }
+  .state-gauge .sg-bar-fill { position: absolute; top: 0; bottom: 0; border-radius: 4px; transition: all 0.4s ease; }
+
+  .ued-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+  @media (max-width: 600px) { .ued-grid { grid-template-columns: repeat(2, 1fr); } }
+  .ued-card { background: var(--surface); border-radius: 6px; padding: 12px 14px; border-left: 3px solid var(--accent); }
+  .ued-card .uc-label { font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  .ued-card .uc-value { font-size: 1.1rem; font-weight: 700; font-family: 'SF Mono', 'Fira Code', monospace; }
+  .ued-card .uc-sub { font-size: 0.72rem; color: var(--text-dim); margin-top: 2px; }
+
+  .dynamics-placeholder { color: var(--text-dim); font-style: italic; padding: 30px; text-align: center; font-size: 0.85rem; background: var(--surface); border-radius: 6px; }
+
+  .btn-dynamics { background: var(--surface2); color: var(--text); border: 1px solid var(--accent); }
+  .btn-dynamics:hover { background: var(--accent); color: white; }
+
   /* Responsive */
   @media (max-width: 900px) {
     .main { grid-template-columns: 1fr; }
     .panel-left { border-right: none; border-bottom: 1px solid #334; }
   }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -129,6 +157,7 @@
   <div class="tab active" data-mode="text">Text</div>
   <div class="tab" data-mode="conversation">Conversation</div>
   <div class="tab" data-mode="upload">Upload .docx / .md / .txt</div>
+  <div class="tab" data-mode="dynamics">Dynamics</div>
 </div>
 
 <div class="main">
@@ -153,6 +182,11 @@
         <span id="file-name" style="font-size:0.85rem; color:var(--text-dim);">No file selected</span>
       </div>
       <textarea id="input-upload" placeholder="File contents will appear here..." style="margin-top:10px;"></textarea>
+    </div>
+
+    <!-- Dynamics mode -->
+    <div id="mode-dynamics" style="display:none;">
+      <textarea id="input-dynamics" placeholder="Enter conversation for dynamics analysis (Name: text format):&#10;&#10;A: Ich habe dir doch gesagt, dass das so nicht geht.&#10;B: Du h&ouml;rst mir nie zu.&#10;A: Das stimmt doch gar nicht, ich bin immer f&uuml;r dich da.&#10;B: Dann zeig es mal.&#10;A: Jetzt beruhige dich erstmal.&#10;B: Sag mir nicht, ich soll mich beruhigen!"></textarea>
     </div>
 
     <div class="controls">
@@ -188,6 +222,33 @@
       <div class="marker-list">
         <h3>All Detected Markers</h3>
         <div id="marker-list"></div>
+      </div>
+    </div>
+
+    <!-- Dynamics results -->
+    <div id="dynamics-content" style="display:none;">
+      <h2>Emotion Dynamics</h2>
+
+      <div class="dynamics-section">
+        <h3>VAD Trajectory</h3>
+        <div class="vad-chart-container">
+          <canvas id="vad-chart"></canvas>
+        </div>
+      </div>
+
+      <div class="dynamics-section">
+        <h3>State Indices</h3>
+        <div class="state-indices" id="state-indices"></div>
+      </div>
+
+      <div class="dynamics-section">
+        <h3>UED Metrics</h3>
+        <div class="ued-grid" id="ued-grid"></div>
+      </div>
+
+      <div class="dynamics-section">
+        <h3>Detected Markers</h3>
+        <div id="dynamics-marker-list"></div>
       </div>
     </div>
   </div>
@@ -232,14 +293,16 @@
   const LAYER_PRIORITY = { MEMA: 4, CLU: 3, SEM: 2, ATO: 1 };
 
   // --- Tab switching ---
+  const MODE_IDS = ['text', 'conversation', 'upload', 'dynamics'];
   document.querySelectorAll('.tab').forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
       currentMode = tab.dataset.mode;
-      document.getElementById('mode-text').style.display = currentMode === 'text' ? '' : 'none';
-      document.getElementById('mode-conversation').style.display = currentMode === 'conversation' ? '' : 'none';
-      document.getElementById('mode-upload').style.display = currentMode === 'upload' ? '' : 'none';
+      MODE_IDS.forEach(m => {
+        const el = document.getElementById('mode-' + m);
+        if (el) el.style.display = currentMode === m ? '' : 'none';
+      });
     });
   });
 
@@ -272,11 +335,20 @@
     }
   });
 
+  // --- DOM refs (dynamics) ---
+  const $inputDynamics = document.getElementById('input-dynamics');
+  const $dynamicsContent = document.getElementById('dynamics-content');
+  const $stateIndices = document.getElementById('state-indices');
+  const $uedGrid = document.getElementById('ued-grid');
+  const $dynamicsMarkerList = document.getElementById('dynamics-marker-list');
+  let vadChart = null;
+
   // --- Get active input text ---
   function getInputText() {
     if (currentMode === 'text') return $inputText.value;
     if (currentMode === 'conversation') return $inputConv.value;
     if (currentMode === 'upload') return $inputUpload.value;
+    if (currentMode === 'dynamics') return $inputDynamics.value;
     return '';
   }
 
@@ -323,6 +395,308 @@
     });
     if (!resp.ok) throw new Error(await resp.text());
     return resp.json();
+  }
+
+  async function analyzeDynamics(messages, layers, threshold) {
+    const resp = await fetch('/v1/analyze/dynamics', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages, layers, threshold: parseFloat(threshold) }),
+    });
+    if (!resp.ok) throw new Error(await resp.text());
+    return resp.json();
+  }
+
+  // --- VAD Trajectory Chart ---
+  function renderVADChart(messageVAD) {
+    const ctx = document.getElementById('vad-chart').getContext('2d');
+    const labels = messageVAD.map((_, i) => 'Msg ' + (i + 1));
+
+    if (vadChart) {
+      vadChart.destroy();
+      vadChart = null;
+    }
+
+    vadChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [
+          {
+            label: 'Valence',
+            data: messageVAD.map(v => v.valence),
+            borderColor: '#42a5f5',
+            backgroundColor: 'rgba(66, 165, 245, 0.1)',
+            borderWidth: 2,
+            pointRadius: 4,
+            pointBackgroundColor: '#42a5f5',
+            tension: 0.3,
+            fill: true,
+          },
+          {
+            label: 'Arousal',
+            data: messageVAD.map(v => v.arousal),
+            borderColor: '#ef5350',
+            backgroundColor: 'rgba(239, 83, 80, 0.05)',
+            borderWidth: 2,
+            borderDash: [6, 3],
+            pointRadius: 4,
+            pointBackgroundColor: '#ef5350',
+            tension: 0.3,
+            fill: false,
+          },
+          {
+            label: 'Dominance',
+            data: messageVAD.map(v => v.dominance),
+            borderColor: '#9e9e9e',
+            backgroundColor: 'rgba(158, 158, 158, 0.05)',
+            borderWidth: 1.5,
+            borderDash: [2, 4],
+            pointRadius: 3,
+            pointBackgroundColor: '#9e9e9e',
+            tension: 0.3,
+            fill: false,
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          mode: 'index',
+          intersect: false,
+        },
+        plugins: {
+          legend: {
+            labels: {
+              color: '#8899aa',
+              font: { size: 11 },
+              usePointStyle: true,
+              pointStyleWidth: 20,
+            },
+          },
+          tooltip: {
+            backgroundColor: '#1a1a2e',
+            borderColor: '#445',
+            borderWidth: 1,
+            titleColor: '#e0e0e0',
+            bodyColor: '#e0e0e0',
+            callbacks: {
+              label: function(ctx) {
+                return ctx.dataset.label + ': ' + ctx.parsed.y.toFixed(3);
+              },
+            },
+          },
+        },
+        scales: {
+          x: {
+            grid: { color: 'rgba(255,255,255,0.05)' },
+            ticks: { color: '#8899aa', font: { size: 10 } },
+          },
+          y: {
+            min: -1,
+            max: 1,
+            grid: { color: 'rgba(255,255,255,0.08)' },
+            ticks: {
+              color: '#8899aa',
+              font: { size: 10 },
+              stepSize: 0.25,
+            },
+          },
+        },
+      },
+    });
+  }
+
+  // --- State Index Gauges ---
+  function renderStateIndices(si) {
+    const gauges = [
+      { key: 'trust', label: 'Trust', color: '#4caf50', colorNeg: '#f44336' },
+      { key: 'conflict', label: 'Conflict', color: '#f44336', colorNeg: '#4caf50' },
+      { key: 'deesc', label: 'De-escalation', color: '#42a5f5', colorNeg: '#ff9800' },
+    ];
+
+    $stateIndices.innerHTML = gauges.map(g => {
+      const val = si[g.key];
+      const pct = Math.abs(val) * 50; // 0-50% from center
+      const isPositive = val >= 0;
+      const barColor = isPositive ? g.color : g.colorNeg;
+
+      // For the bar: if positive, fill from center to right; if negative, fill from left to center
+      let barStyle;
+      if (isPositive) {
+        barStyle = `left: 50%; width: ${pct}%; background: ${barColor};`;
+      } else {
+        barStyle = `right: 50%; width: ${pct}%; background: ${barColor};`;
+      }
+
+      return `<div class="state-gauge">
+        <div class="sg-header">
+          <span class="sg-label">${g.label}</span>
+          <span class="sg-value" style="color: ${barColor}">${val >= 0 ? '+' : ''}${val.toFixed(2)}</span>
+        </div>
+        <div class="sg-bar-track">
+          <div class="sg-bar-center"></div>
+          <div class="sg-bar-fill" style="${barStyle}"></div>
+        </div>
+      </div>`;
+    }).join('');
+
+    // Add contributing markers count
+    if (si.contributing_markers !== undefined) {
+      $stateIndices.innerHTML += `<div style="font-size: 0.75rem; color: var(--text-dim); text-align: right; margin-top: 2px;">Based on ${si.contributing_markers} contributing markers</div>`;
+    }
+  }
+
+  // --- UED Metric Cards ---
+  function renderUEDMetrics(ued) {
+    if (!ued) {
+      $uedGrid.innerHTML = '<div class="dynamics-placeholder">No UED metrics available (need 3+ messages)</div>';
+      return;
+    }
+
+    const cards = [
+      {
+        label: 'Home Base',
+        value: `V ${ued.home_base.valence.toFixed(2)}`,
+        sub: `A ${ued.home_base.arousal.toFixed(2)} / D ${ued.home_base.dominance.toFixed(2)}`,
+        color: '#42a5f5',
+      },
+      {
+        label: 'Variability',
+        value: `V ${ued.variability.valence.toFixed(2)}`,
+        sub: `A ${ued.variability.arousal.toFixed(2)}`,
+        color: variabilityColor(ued.variability.valence),
+      },
+      {
+        label: 'Instability',
+        value: `V ${ued.instability.valence.toFixed(2)}`,
+        sub: `A ${ued.instability.arousal.toFixed(2)}`,
+        color: variabilityColor(ued.instability.valence),
+      },
+      {
+        label: 'Rise Rate',
+        value: ued.rise_rate.toFixed(3),
+        sub: 'Escalation speed',
+        color: rateColor(ued.rise_rate),
+      },
+      {
+        label: 'Recovery Rate',
+        value: ued.recovery_rate.toFixed(3),
+        sub: 'De-escalation speed',
+        color: rateColor(ued.recovery_rate, true),
+      },
+      {
+        label: 'Density',
+        value: (ued.density * 100).toFixed(0) + '%',
+        sub: 'Marker saturation',
+        color: densityColor(ued.density),
+      },
+    ];
+
+    $uedGrid.innerHTML = cards.map(c => `
+      <div class="ued-card" style="border-left-color: ${c.color};">
+        <div class="uc-label">${c.label}</div>
+        <div class="uc-value" style="color: ${c.color};">${c.value}</div>
+        <div class="uc-sub">${c.sub}</div>
+      </div>
+    `).join('');
+  }
+
+  function variabilityColor(v) {
+    if (v <= 0.15) return '#4caf50';
+    if (v <= 0.35) return '#ff9800';
+    return '#f44336';
+  }
+
+  function rateColor(r, invertGood) {
+    if (invertGood) {
+      // Higher recovery is better
+      if (r >= 0.1) return '#4caf50';
+      if (r >= 0.05) return '#ff9800';
+      return '#f44336';
+    }
+    // Higher rise rate is worse
+    if (r <= 0.05) return '#4caf50';
+    if (r <= 0.12) return '#ff9800';
+    return '#f44336';
+  }
+
+  function densityColor(d) {
+    if (d <= 0.3) return '#4caf50';
+    if (d <= 0.6) return '#ff9800';
+    return '#f44336';
+  }
+
+  // --- Render dynamics marker list ---
+  function renderDynamicsMarkerList(markers) {
+    $dynamicsMarkerList.innerHTML = markers.map(m => {
+      const pct = (m.confidence * 100).toFixed(0);
+      return `<div class="marker-item">
+        <span class="mi-conf" style="color: ${confColor(m.confidence)}">${pct}%</span>
+        <span class="tt-badge ${m.layer}">${m.layer}</span>
+        <span class="mi-id">${escapeHTML(m.id)}</span>
+        ${m.message_indices && m.message_indices.length ? `<span style="font-size:0.72rem;color:var(--text-dim);margin-left:auto;">msg ${m.message_indices.join(', ')}</span>` : ''}
+      </div>`;
+    }).join('');
+  }
+
+  // --- Run dynamics analysis ---
+  async function runDynamicsAnalysis() {
+    const text = getInputText().trim();
+    if (!text) return;
+
+    const messages = parseConversation(text);
+    if (messages.length === 0) {
+      $dynamicsContent.style.display = '';
+      $resultsPlaceholder.style.display = 'none';
+      $resultsContent.style.display = 'none';
+      $dynamicsContent.innerHTML = '<div class="dynamics-placeholder">Could not parse conversation. Use "Name: text" format.</div>';
+      return;
+    }
+
+    const layers = getSelectedLayers();
+    const threshold = $threshold.value;
+
+    $btnAnalyze.disabled = true;
+    $btnAnalyze.innerHTML = '<span class="loading"></span>Analyzing Dynamics...';
+
+    try {
+      const response = await analyzeDynamics(messages, layers, threshold);
+      lastResponse = response;
+
+      $resultsPlaceholder.style.display = 'none';
+      $resultsContent.style.display = 'none';
+      $dynamicsContent.style.display = '';
+
+      // Render VAD trajectory
+      if (response.message_vad && response.message_vad.length > 0) {
+        renderVADChart(response.message_vad);
+      }
+
+      // Render state indices
+      if (response.state_indices) {
+        renderStateIndices(response.state_indices);
+      }
+
+      // Render UED metrics
+      renderUEDMetrics(response.ued_metrics);
+
+      // Render marker list for dynamics
+      renderDynamicsMarkerList(response.markers || []);
+
+      // Update stats
+      updateStats(response.meta);
+    } catch (err) {
+      $dynamicsContent.style.display = '';
+      $resultsPlaceholder.style.display = 'none';
+      $resultsContent.style.display = 'none';
+      $dynamicsContent.querySelector('.dynamics-section').innerHTML =
+        `<div class="dynamics-placeholder" style="color:var(--accent);">Error: ${escapeHTML(err.message)}</div>`;
+    } finally {
+      $btnAnalyze.disabled = false;
+      $btnAnalyze.textContent = 'Analyze';
+    }
   }
 
   // --- Span expansion to clause boundaries ---
@@ -565,6 +939,11 @@
 
   // --- Main analyze function ---
   async function runAnalysis() {
+    // Route dynamics mode to its own handler
+    if (currentMode === 'dynamics') {
+      return runDynamicsAnalysis();
+    }
+
     const text = getInputText().trim();
     if (!text) return;
 
@@ -573,6 +952,9 @@
 
     $btnAnalyze.disabled = true;
     $btnAnalyze.innerHTML = '<span class="loading"></span>Analyzing...';
+
+    // Hide dynamics panel when running non-dynamics analysis
+    $dynamicsContent.style.display = 'none';
 
     try {
       let response;
@@ -626,6 +1008,7 @@
   $inputText.addEventListener('input', debounceAnalyze);
   $inputConv.addEventListener('input', debounceAnalyze);
   $inputUpload.addEventListener('input', debounceAnalyze);
+  $inputDynamics.addEventListener('input', debounceAnalyze);
 
   // Keyboard shortcut: Ctrl/Cmd+Enter to analyze
   document.addEventListener('keydown', (e) => {

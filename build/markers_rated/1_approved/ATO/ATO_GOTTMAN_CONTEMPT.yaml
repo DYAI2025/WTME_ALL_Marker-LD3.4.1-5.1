@@ -45,3 +45,5 @@ examples:
   - Ich verstehe, warum du das so siehst.
   - Danke, dass du mir das sagst. Ich denke darueber nach.
 tags: [atomic, conflict, gottman, contempt]
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

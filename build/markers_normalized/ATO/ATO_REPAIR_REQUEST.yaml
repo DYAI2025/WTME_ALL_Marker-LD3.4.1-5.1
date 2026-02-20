@@ -59,5 +59,13 @@ semiotic:
   level: pragmatic
   object: "repair_request"
   interpretant: "effect_on_state: {deesc: +0.1, trust: +0.1}"
+vad_estimate:
+  valence: 0.3
+  arousal: 0.2
+  dominance: 0.35
+effect_on_state:
+  trust: 0.35
+  conflict: -0.3
+  deesc: 0.4
 metadata:
   label: Reparatur-Anfrage

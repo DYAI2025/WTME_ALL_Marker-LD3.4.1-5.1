@@ -24,3 +24,5 @@ examples:
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: [humor, superiority, target, atomic, v33]
+vad_estimate: {valence: -0.3, arousal: 0.9, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

@@ -86,5 +86,13 @@ semiotic:
   - "shift"
   - "aufgabe"
   interpretant: "effect_on_state: {deesc: +0.1, conflict: -0.15}"
+vad_estimate:
+  valence: 0.0
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0
 metadata:
   label: Shift zu Aufgabe

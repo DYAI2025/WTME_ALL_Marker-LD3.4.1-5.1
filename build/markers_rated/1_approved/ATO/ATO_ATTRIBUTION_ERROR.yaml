@@ -41,3 +41,5 @@ metadata:
   - "Er erzählt durcheinander, weil er gleichzeitig angerufen wurde."
   - "Sie wirkt unfreundlich, weil sie krank wird."
   - "Er bleibt fern, weil die Technik ausfiel."
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.45, conflict: 0.6, deesc: -0.3}

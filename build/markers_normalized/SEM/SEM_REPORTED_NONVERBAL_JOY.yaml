@@ -39,5 +39,13 @@ composed_of:
 activation:
   rule: "ANY 1 IN 1 message"
 compositionality: deterministic
+vad_estimate:
+  valence: 0.8
+  arousal: 0.6
+  dominance: 0.5
+effect_on_state:
+  trust: 0.2
+  conflict: -0.15
+  deesc: 0.2
 metadata:
   notes: "Textuell berichtete Beobachtung; keine echte Sensorik."

@@ -30,3 +30,5 @@ examples:
   - I feel uncomfortable about this and want to talk about it.
   - I understand why you see it that way.
 tags: [atomic, v3.3, auto-generated]
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

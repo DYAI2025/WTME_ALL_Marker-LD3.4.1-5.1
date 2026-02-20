@@ -51,3 +51,5 @@ metadata:
     semantische_grabber_id: "SGR_TOGETHERNESS_TERMS_01"
     created_by: "FRAUSAR_GUI_v2"
     created_at: "2025-07-22T00:26:06.785433"
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

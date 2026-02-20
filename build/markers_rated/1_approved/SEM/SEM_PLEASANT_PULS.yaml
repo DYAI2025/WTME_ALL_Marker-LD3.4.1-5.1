@@ -17,8 +17,7 @@ composed_of:
   - ATO_CONFIRM
   - ATO_ACKNOWLEDGE
 activation:
-  rule: "PLACEHOLDER >= 2 IN 10 AND (CONFIRM >= 4 IN 10 OR ACKNOWLEDGE >= 4 IN 10
-    OR (CONFIRM >= 2 IN 10 AND ACKNOWLEDGE >= 2 IN 10))"
+  rule: "PLACEHOLDER >= 2 IN 10 AND (CONFIRM >= 4 IN 10 OR ACKNOWLEDGE >= 4 IN 10 OR (CONFIRM >= 2 IN 10 AND ACKNOWLEDGE >= 2 IN 10))"
   window: 10
 scoring: {base: 0.55, weight: 1.0}
 examples:
@@ -42,3 +41,5 @@ examples:
   - I want to understand what you mean.
   - That sounds like an important topic for you.
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

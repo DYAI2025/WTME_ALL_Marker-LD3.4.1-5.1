@@ -62,5 +62,13 @@ semiotic:
   level: pragmatic
   object: "apology_expression"
   interpretant: "effect_on_state: {trust: +0.15, conflict: -0.2}"
+vad_estimate:
+  valence: 0.3
+  arousal: 0.2
+  dominance: 0.35
+effect_on_state:
+  trust: 0.35
+  conflict: -0.3
+  deesc: 0.4
 metadata:
   label: Entschuldigung

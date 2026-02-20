@@ -34,13 +34,17 @@ from .models import (
     ConversationRequest,
     ConversationResponse,
     DetectedMarker,
+    DynamicsResponse,
     EngineConfig,
     HealthResponse,
     Layer,
     MarkerDetail,
     MarkerListResponse,
     PatternMatch,
+    StateIndices,
     TemporalPattern,
+    UEDMetrics,
+    VADPoint,
 )
 
 _start_time = time.time()
@@ -164,6 +168,77 @@ async def analyze_conversation(
 
     return ConversationResponse(
         markers=sorted(markers, key=lambda m: (-m.confidence, m.id)),
+        temporal_patterns=temporal,
+        meta=AnalyzeMeta(
+            processing_ms=result["timing_ms"],
+            text_length=sum(len(m.text) for m in req.messages),
+            markers_detected=len(markers),
+            layers_scanned=layers,
+        ),
+    )
+
+
+# ---------------------------------------------------------------------------
+# POST /v1/analyze/dynamics — Emotion dynamics analysis
+# ---------------------------------------------------------------------------
+
+@app.post("/v1/analyze/dynamics", response_model=DynamicsResponse)
+async def analyze_dynamics(
+    req: ConversationRequest,
+    api_key: str = Depends(verify_api_key),
+):
+    """
+    Analyze a conversation with full emotion dynamics tracking.
+
+    Returns VAD trajectories per message, UED metrics (home base, variability,
+    rise/recovery rate), and relationship state indices (trust/conflict/deesc).
+    """
+    messages = [{"role": m.role, "text": m.text} for m in req.messages]
+    layers = [l.value for l in req.layers]
+    result = engine.analyze_conversation(messages, layers=layers, threshold=req.threshold)
+
+    markers = [
+        ConversationMarker(
+            id=d.marker_id,
+            layer=Layer(d.layer),
+            confidence=d.confidence,
+            description=d.description,
+            message_indices=d.message_indices,
+            family=d.family,
+            multiplier=d.multiplier,
+        )
+        for d in result["detections"]
+    ]
+
+    temporal = [
+        TemporalPattern(**tp)
+        for tp in result.get("temporal_patterns", [])
+    ]
+
+    message_vad = [
+        VADPoint(**mv) for mv in result.get("message_vad", [])
+    ]
+
+    ued_raw = result.get("ued_metrics")
+    ued_metrics = None
+    if ued_raw:
+        ued_metrics = UEDMetrics(
+            home_base=VADPoint(**ued_raw["home_base"]),
+            variability=ued_raw["variability"],
+            instability=ued_raw["instability"],
+            rise_rate=ued_raw["rise_rate"],
+            recovery_rate=ued_raw["recovery_rate"],
+            density=ued_raw["density"],
+        )
+
+    si_raw = result.get("state_indices", {"trust": 0, "conflict": 0, "deesc": 0, "contributing_markers": 0})
+    state_indices = StateIndices(**si_raw)
+
+    return DynamicsResponse(
+        markers=sorted(markers, key=lambda m: (-m.confidence, m.id)),
+        message_vad=message_vad,
+        ued_metrics=ued_metrics,
+        state_indices=state_indices,
         temporal_patterns=temporal,
         meta=AnalyzeMeta(
             processing_ms=result["timing_ms"],

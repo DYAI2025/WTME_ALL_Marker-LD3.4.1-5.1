@@ -60,3 +60,5 @@ detect_class: "E"
 criteria: "Kombination aus Elternrolle und direktiven Sprechakten"
 updated_at: "2025-08-19T10:30:00Z"
 compositionality: deterministic
+vad_estimate: {valence: 0.2, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.25, conflict: -0.1, deesc: 0.15}

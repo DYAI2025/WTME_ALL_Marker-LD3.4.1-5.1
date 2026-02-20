@@ -12,15 +12,11 @@ activation:
   rule: ANY 1
 examples:
   positive:
-  - Am einfachsten wäre es, wenn du mir ein paar Amazon-Geschenkkarten kaufst 
-    und die Codes fotografierst.
+  - Am einfachsten wäre es, wenn du mir ein paar Amazon-Geschenkkarten kaufst und die Codes fotografierst.
   - Eine Überweisung dauert zu lange, per Western Union ist das Geld sofort da.
-  - Kryptowährungen wie Bitcoin sind der sicherste und anonymste Weg, mir zu 
-    helfen.
-  - Bitte sende das Geld nicht auf mein Konto, sondern an meinen Agenten über 
-    MoneyGram.
-  - Du kannst das Geld auf eine Prepaid-Kreditkarte laden und mir die Daten 
-    schicken.
+  - Kryptowährungen wie Bitcoin sind der sicherste und anonymste Weg, mir zu helfen.
+  - Bitte sende das Geld nicht auf mein Konto, sondern an meinen Agenten über MoneyGram.
+  - Du kannst das Geld auf eine Prepaid-Kreditkarte laden und mir die Daten schicken.
   negative:
   - Ich finde, wir sollten das in Ruhe besprechen.
   - Das ist ein guter Punkt, den du da machst.
@@ -38,3 +34,5 @@ tags:
 composed_of:
 - ATO_PLACEHOLDER
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

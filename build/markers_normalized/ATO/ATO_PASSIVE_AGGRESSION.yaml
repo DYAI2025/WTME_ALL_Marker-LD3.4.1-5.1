@@ -33,3 +33,11 @@ tags:
 - v3.3
 - auto-generated
 rating: 1
+vad_estimate:
+  valence: -0.6
+  arousal: 0.95
+  dominance: 0.7
+effect_on_state:
+  trust: -0.3
+  conflict: 0.4
+  deesc: -0.2

@@ -39,3 +39,5 @@ examples:
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
 compositionality: deterministic
+vad_estimate: {valence: 0.3, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.2, conflict: -0.15, deesc: 0.2}

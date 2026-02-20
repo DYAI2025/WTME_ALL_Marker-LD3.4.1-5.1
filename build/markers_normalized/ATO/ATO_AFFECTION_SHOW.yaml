@@ -65,5 +65,13 @@ semiotic:
   - "zuneigung"
   - "offen"
   interpretant: "effect_on_state: {trust: +0.2, intimacy: +0.3}"
+vad_estimate:
+  valence: 0.5
+  arousal: 0.45
+  dominance: 0.4
+effect_on_state:
+  trust: 0.35
+  conflict: -0.2
+  deesc: 0.25
 metadata:
   label: Zuneigung offen

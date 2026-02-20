@@ -16,14 +16,11 @@ precondition:
 tags: [love_language]
 examples:
   positive:
-  - "Chat: 'Ich kümmere mich um die Steuer' gefolgt von 'Soll ich dir die Einkäufe
-    abnehmen?'"
+  - "Chat: 'Ich kümmere mich um die Steuer' gefolgt von 'Soll ich dir die Einkäufe abnehmen?'"
   - "Paar-Dialog mit zwei klaren Angeboten, Aufgaben zu übernehmen."
   - "Voice-Note: 'Ich übernehme das Putzen' und kurz danach 'Ich mach das Essen heute'."
-  - "Wochenplan, in dem 'Ich bringe das in Ordnung' und 'Ich helfe dir beim Sortieren'
-    stehen."
-  - "Abend-Check-in mit zwei Sätzen: 'Ich übernehme das Telefonat' und 'Soll ich den
-    Hund ausführen?'"
+  - "Wochenplan, in dem 'Ich bringe das in Ordnung' und 'Ich helfe dir beim Sortieren' stehen."
+  - "Abend-Check-in mit zwei Sätzen: 'Ich übernehme das Telefonat' und 'Soll ich den Hund ausführen?'"
   - "Sprachnachricht: 'Ich kümmere mich darum' plus 'Ich helfe dir mit der Präsentation'."
   - "Gespräch nach Feierabend: 'Ich mach das' und 'Ich kümmere mich morgen drum'."
   - "Paartherapie-Protokoll mit mehrfacher Bereitschaft, Aufgaben abzunehmen."
@@ -38,3 +35,5 @@ examples:
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
 compositionality: deterministic
+vad_estimate: {valence: 0.5, arousal: 0.4, dominance: 0.5}
+effect_on_state: {trust: 0.35, conflict: -0.2, deesc: 0.25}

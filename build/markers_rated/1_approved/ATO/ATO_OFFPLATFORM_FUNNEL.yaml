@@ -5,12 +5,12 @@ version: 1.0
 languages: [en]
 meaning: "Redirecting conversation to DM/X/Telegram/Discord — bot outreach funnel away from GitHub"
 patterns:
-  - type: regex
-    value: "(?i)\\b(DM me on|reach me on|connect (with me )?on|find me on|hit me up on|message me on)\\b"
-  - type: regex
-    value: "(?i)(reply here or DM)"
-  - type: regex
-    value: "(?i)(DM me on (X|Twitter|Telegram|Discord|LinkedIn))"
+- type: regex
+  value: "(?i)\\b(DM me on|reach me on|connect (with me )?on|find me on|hit me up on|message me on)\\b"
+- type: regex
+  value: "(?i)(reply here or DM)"
+- type: regex
+  value: "(?i)(DM me on (X|Twitter|Telegram|Discord|LinkedIn))"
 examples:
   positive:
   - "DM me on X if you want to chat"
@@ -26,3 +26,5 @@ examples:
   - "File a bug on our issue tracker"
   - "Check the docs on our wiki"
 tags: [atomic, bot-detection, spam, platform-switch, github]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

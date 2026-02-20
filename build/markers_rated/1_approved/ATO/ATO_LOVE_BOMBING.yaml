@@ -25,3 +25,5 @@ examples:
   - Let's both explain our side.
   - I feel uncomfortable about this and want to talk about it.
 tags: [atomic, v3.3, love-bombing, idealization]
+vad_estimate: {valence: 0.7, arousal: 0.55, dominance: 0.4}
+effect_on_state: {trust: 0.35, conflict: -0.2, deesc: 0.25}

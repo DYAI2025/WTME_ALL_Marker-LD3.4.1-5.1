@@ -58,3 +58,5 @@ metadata:
   - "Ich schlafe schlecht, also probiere ich ein Einschlafritual und reduziere Bildschirmzeit."
 tags: [attentional, helplessness, codependency, spiral]
 schema_version: "3.3"
+vad_estimate: {valence: -0.7, arousal: 0.35, dominance: 0.0}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

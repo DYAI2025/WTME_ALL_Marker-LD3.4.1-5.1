@@ -41,3 +41,11 @@ scoring:
 window:
   messages: 30
 compositionality: deterministic
+vad_estimate:
+  valence: -0.65
+  arousal: 0.85
+  dominance: 0.4
+effect_on_state:
+  trust: -0.45
+  conflict: 0.6
+  deesc: -0.3

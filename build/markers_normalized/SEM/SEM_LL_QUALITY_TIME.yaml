@@ -41,3 +41,11 @@ composed_of:
     utterances: 10
   min_hits: 2
 compositionality: deterministic
+vad_estimate:
+  valence: 0.5
+  arousal: 0.4
+  dominance: 0.5
+effect_on_state:
+  trust: 0.35
+  conflict: -0.2
+  deesc: 0.25

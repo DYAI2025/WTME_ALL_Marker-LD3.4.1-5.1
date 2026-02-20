@@ -25,3 +25,5 @@ examples:
   - You're right, that was my mistake. I'm sorry.
   - Let's both explain our side.
 tags: [atomic, v3.3, projection, blame]
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.45, conflict: 0.6, deesc: -0.3}

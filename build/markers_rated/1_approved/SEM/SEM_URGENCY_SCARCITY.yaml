@@ -13,8 +13,7 @@ activation:
 examples:
   positive:
   - Du musst dich bis heute Abend entscheiden, sonst ist das Angebot weg.
-  - Wenn die Überweisung nicht in der nächsten Stunde ankommt, verliere ich 
-    meinen Platz.
+  - Wenn die Überweisung nicht in der nächsten Stunde ankommt, verliere ich meinen Platz.
   - Antworte bitte sofort, mein Akku ist fast leer!
   - Das ist eine einmalige Chance, die nie wieder kommt!
   - Der Arzt operiert nur, wenn die Zahlung sofort eingeht.
@@ -27,13 +26,11 @@ examples:
   - Handle jetzt, denk später nach!
   - Jede Sekunde zählt.
   - Die Auktion endet gleich, das ist unsere letzte Chance.
-  - Ich habe nur ein kurzes Zeitfenster mit Internetempfang, ich brauche deine 
-    Antwort jetzt.
+  - Ich habe nur ein kurzes Zeitfenster mit Internetempfang, ich brauche deine Antwort jetzt.
   - Der Rabatt gilt nur noch für eine Stunde.
   - Wenn wir das jetzt nicht klären, ist die Tür für immer zu.
   - Ich brauche eine Entscheidung, ja oder nein, sofort.
-  - Ich stehe kurz vor dem Abschluss, aber die letzte Zahlung muss heute 
-    erfolgen.
+  - Ich stehe kurz vor dem Abschluss, aber die letzte Zahlung muss heute erfolgen.
   - Zögere nicht, sonst könnte es zu spät sein.
   - In fünf Minuten ist mein Angebot weg, dann gibt es keine Chance mehr!
   - Ich bin gleich offline, bitte entscheide dich sofort!
@@ -56,3 +53,5 @@ tags:
 composed_of:
 - ATO_PLACEHOLDER
 compositionality: deterministic
+vad_estimate: {valence: -0.7, arousal: 0.9, dominance: 0.75}
+effect_on_state: {trust: -0.5, conflict: 0.6, deesc: -0.35}

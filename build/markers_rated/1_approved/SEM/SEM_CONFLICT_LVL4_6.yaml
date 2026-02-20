@@ -18,23 +18,18 @@ scoring:
   weight: 1.2
 examples:
   positive:
-  - Wenn du das noch einmal machst, sorgt jeder dafür, dass du total blamiert 
-    dastehst!
-  - Echt peinlich, wie du dich hier aufführst – niemand wird dich noch ernst 
-    nehmen.
+  - Wenn du das noch einmal machst, sorgt jeder dafür, dass du total blamiert dastehst!
+  - Echt peinlich, wie du dich hier aufführst – niemand wird dich noch ernst nehmen.
   - Du hast es vermasselt, also übernimm die Konsequenzen.
   - Glaub ja nicht, dass ich das ungestraft hinnehme.
   - Solche Fehler verzeihe ich nicht – das wirst du bereuen.
   - Ich werde dafür sorgen, dass alle wissen, wer hier schuld ist.
   - Das nächste Mal gehst du schlimmer baden, versprochen.
-  - Meinetwegen kannst du dein Gesicht verlieren, aber bleib mir hier aus dem 
-    Weg.
+  - Meinetwegen kannst du dein Gesicht verlieren, aber bleib mir hier aus dem Weg.
   - Ich lasse dich vor allen Leuten schlecht dastehen.
   - Du wirst deine Taten noch büßen müssen.
-  - Wenn du nicht aufhörst, werde ich dafür sorgen, dass du deine Lektion 
-    lernst.
-  - Du hast es dir selbst zuzuschreiben, wenn du jetzt die Konsequenzen tragen 
-    musst.
+  - Wenn du nicht aufhörst, werde ich dafür sorgen, dass du deine Lektion lernst.
+  - Du hast es dir selbst zuzuschreiben, wenn du jetzt die Konsequenzen tragen musst.
   - Niemand wird dir helfen, wenn du so weitermachst.
   - Ich habe dich bei der Polizei angezeigt, du wirst das noch bereuen!
   - Ich habe es allen gesagt, was für ein verficktes Arschloch du bist!
@@ -53,3 +48,5 @@ tags:
 - escalation
 - lvl4-6
 compositionality: deterministic
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

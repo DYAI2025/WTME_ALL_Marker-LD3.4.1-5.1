@@ -61,5 +61,13 @@ semiotic:
   level: pragmatic
   object: "criticism_attack"
   interpretant: "effect_on_state: {conflict: +0.25, trust: -0.2}"
+vad_estimate:
+  valence: -0.5
+  arousal: 0.8
+  dominance: 0.6
+effect_on_state:
+  trust: -0.3
+  conflict: 0.4
+  deesc: -0.2
 metadata:
   label: Kritik-Attacke

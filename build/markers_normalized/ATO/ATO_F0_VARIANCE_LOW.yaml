@@ -36,5 +36,13 @@ tags:
 - audio
 - prosody
 rating: 1
+vad_estimate:
+  valence: -0.75
+  arousal: 0.35
+  dominance: 0.0
+effect_on_state:
+  trust: -0.1
+  conflict: 0.1
+  deesc: -0.05
 metadata:
   modality: audio

@@ -262,7 +262,7 @@ def normalize_marker(data, filename, tier):
                    "detect_class", "criteria", "gating_conflict", "policy",
                    "absence_sets", "emit", "evidence_capture", "fire_when",
                    "semiotic", "temperature_semantics", "meta_logic",
-                   "compositionality"]:
+                   "compositionality", "vad_estimate", "effect_on_state"]:
         val = data.get(field)
         if val is not None:
             normalized[field] = val

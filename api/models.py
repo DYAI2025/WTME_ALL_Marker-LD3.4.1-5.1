@@ -112,6 +112,42 @@ class ConversationResponse(BaseModel):
     meta: AnalyzeMeta
 
 
+class VADPoint(BaseModel):
+    valence: float
+    arousal: float
+    dominance: float
+
+
+class UEDVariability(BaseModel):
+    valence: float
+    arousal: float
+
+
+class UEDMetrics(BaseModel):
+    home_base: VADPoint
+    variability: UEDVariability
+    instability: UEDVariability
+    rise_rate: float
+    recovery_rate: float
+    density: float
+
+
+class StateIndices(BaseModel):
+    trust: float
+    conflict: float
+    deesc: float
+    contributing_markers: int
+
+
+class DynamicsResponse(BaseModel):
+    markers: list[ConversationMarker]
+    message_vad: list[VADPoint]
+    ued_metrics: UEDMetrics | None = None
+    state_indices: StateIndices
+    temporal_patterns: list[TemporalPattern] = []
+    meta: AnalyzeMeta
+
+
 class MarkerDetail(BaseModel):
     id: str
     layer: Layer

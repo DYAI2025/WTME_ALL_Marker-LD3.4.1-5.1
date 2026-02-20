@@ -39,3 +39,5 @@ metadata:
   repair_log:
   - {rule: "R06", note: "Nur composed_of beibehalten", date: "2025-08-29"}
 compositionality: deterministic
+vad_estimate: {valence: -0.65, arousal: 0.45, dominance: 0.0}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

@@ -2,20 +2,18 @@ id: ATO_PITCH_SPREAD_WIDE
 family: ATO
 description: ''
 notes: ''
-id: ATO_PITCH_SPREAD_WIDE
-family: ATO
-description: ''
-notes: ''
 examples:
   positive:
-    - "(Spricht mit stark variierender Tonhöhe)"
-    - "(Stimme klingt sehr ausdrucksstark)"
-    - "(Deutliche Betonung einzelner Wörter)"
-    - "(Spricht mit hoher und tiefer Stimme abwechselnd)"
-    - "(Stimme klingt sehr lebhaft und dynamisch)"
-    - "(Betont Emotionen durch die Stimmlage)"
-    - "(Spricht mit viel Energie in der Stimme)"
-    - "(Stimme klingt sehr aufgeregt oder enthusiastisch)"
-    - "(Spricht mit vielen Höhen und Tiefen)"
-    - "(Stimme klingt sehr dramatisch)"
+  - "(Spricht mit stark variierender Tonhöhe)"
+  - "(Stimme klingt sehr ausdrucksstark)"
+  - "(Deutliche Betonung einzelner Wörter)"
+  - "(Spricht mit hoher und tiefer Stimme abwechselnd)"
+  - "(Stimme klingt sehr lebhaft und dynamisch)"
+  - "(Betont Emotionen durch die Stimmlage)"
+  - "(Spricht mit viel Energie in der Stimme)"
+  - "(Stimme klingt sehr aufgeregt oder enthusiastisch)"
+  - "(Spricht mit vielen Höhen und Tiefen)"
+  - "(Stimme klingt sehr dramatisch)"
   negative: []
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

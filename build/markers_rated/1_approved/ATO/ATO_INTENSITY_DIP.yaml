@@ -35,3 +35,5 @@ examples:
 tags: [atomic, audio, prosody]
 metadata:
   modality: audio
+vad_estimate: {valence: -0.15, arousal: 0.35, dominance: 0.3}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

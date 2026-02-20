@@ -39,3 +39,5 @@ metadata:
   - {rule: "R07", note: "1-ATO gerechtfertigt", date: "2025-08-29"}
   - {rule: "R06", note: "Nur ein Strukturblock belassen", date: "2025-08-29"}
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

@@ -19,8 +19,7 @@ examples:
   - Ohne dich fühle ich mich komplett verloren.
   - Ich kann nicht ohne dich atmen.
   - Jeder Gedanke dreht sich nur um dich.
-  - Also das ist erstaunlich, wie gut du darin bist. Sowas bewundere ich ja 
-    sehr.
+  - Also das ist erstaunlich, wie gut du darin bist. Sowas bewundere ich ja sehr.
   - Du bist ziemlich clever, das mag ich an dir!
   - Selten jemanden mit soviel Verstand und Schönheit in einem gesehen.
   - Ich könnte stundenlang an deinen Lippen hänkungen.
@@ -38,3 +37,5 @@ tags:
 composed_of:
 - ATO_PLACEHOLDER
 compositionality: deterministic
+vad_estimate: {valence: 0.5, arousal: 0.65, dominance: 0.55}
+effect_on_state: {trust: 0.15, conflict: 0.0, deesc: 0.1}

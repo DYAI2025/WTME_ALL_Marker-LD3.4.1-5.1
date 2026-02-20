@@ -38,3 +38,5 @@ metadata:
   repair_log:
   - {rule: "R07", note: "1-ATO gerechtfertigt", date: "2025-08-29"}
 compositionality: deterministic
+vad_estimate: {valence: 0.45, arousal: 0.1, dominance: 0.35}
+effect_on_state: {trust: 0.35, conflict: -0.3, deesc: 0.4}

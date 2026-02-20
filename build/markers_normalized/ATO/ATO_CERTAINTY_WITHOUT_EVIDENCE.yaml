@@ -45,6 +45,14 @@ tags:
 - certainty
 - evidence
 rating: 1
+vad_estimate:
+  valence: 0.2
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.25
+  conflict: -0.1
+  deesc: 0.15
 metadata:
   neg_examples:
   - "Ich denke, es könnte stimmen, aber wir brauchen Daten."

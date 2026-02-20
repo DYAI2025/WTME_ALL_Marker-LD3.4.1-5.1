@@ -41,3 +41,5 @@ metadata:
   - "Sie war auf einer Weiterbildung, die ihr viel gebracht hat."
   - "Der Fix ist wirklich temporär, wir ersetzen ihn nächste Woche."
 tags: [humor, ambiguity, quotes, grice_manner, atomic, v33]
+vad_estimate: {valence: 0.0, arousal: 0.6, dominance: 0.3}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

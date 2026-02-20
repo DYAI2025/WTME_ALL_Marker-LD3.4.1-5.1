@@ -45,3 +45,5 @@ tags: [semantic, family, child, resistance, defensive]
 detect_class: "D"
 criteria: "Kombination aus Kinderrolle und defensiven Reaktionsmustern"
 updated_at: "2025-08-19T10:30:00Z"
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

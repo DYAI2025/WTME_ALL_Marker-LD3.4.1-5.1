@@ -11,8 +11,7 @@ composed_of:
 - ATO_DEFINITION_NEGATION
 - ATO_TRUTH_FEEL
 policy:
-  require_co_sem: [SEM_RELATION_OVER_PERSONA, SEM_LIMINAL_FIELD_PRESENCE, 
-      SEM_SACRALIZATION_BINDING]
+  require_co_sem: [SEM_RELATION_OVER_PERSONA, SEM_LIMINAL_FIELD_PRESENCE, SEM_SACRALIZATION_BINDING]
 examples:
   positive:
   - "keine Definition + fühlt sich wahr an"
@@ -34,3 +33,5 @@ examples:
   - Lass uns gemeinsam eine Loesung finden.
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

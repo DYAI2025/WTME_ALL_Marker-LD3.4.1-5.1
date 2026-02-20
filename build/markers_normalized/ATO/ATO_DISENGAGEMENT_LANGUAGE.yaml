@@ -68,5 +68,13 @@ tags:
 - withdrawal
 - language
 rating: 1
+vad_estimate:
+  valence: -0.75
+  arousal: 0.2
+  dominance: 0.1
+effect_on_state:
+  trust: -0.25
+  conflict: 0.2
+  deesc: -0.15
 metadata:
   maintainer: "marker-bot"

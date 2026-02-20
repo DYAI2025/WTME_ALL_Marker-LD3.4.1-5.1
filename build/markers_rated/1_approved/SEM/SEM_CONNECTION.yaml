@@ -18,8 +18,7 @@ scoring:
   weight: 1.2
 examples:
   positive:
-  - Das ist wirklich schön mit dir zu sprechen, das hatte ich lange nicht mehr 
-    mit jemanden
+  - Das ist wirklich schön mit dir zu sprechen, das hatte ich lange nicht mehr mit jemanden
   - Wir hängen irgendwie zusammen, Alter.
   - Unsere Freundschaft bedeutet mir viel.
   - Ich brauch das Band, das uns verbindet.
@@ -69,3 +68,5 @@ tags:
 - rapport
 - bonding
 compositionality: deterministic
+vad_estimate: {valence: 0.3, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.2, conflict: -0.15, deesc: 0.2}

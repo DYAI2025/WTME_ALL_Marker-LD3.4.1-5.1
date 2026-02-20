@@ -36,3 +36,5 @@ examples:
   - Ich muss noch tanken.
   - Die Besprechung ist im Konferenzraum.
 compositionality: deterministic
+vad_estimate: {valence: 0.4, arousal: 0.35, dominance: 0.5}
+effect_on_state: {trust: 0.3, conflict: -0.25, deesc: 0.3}

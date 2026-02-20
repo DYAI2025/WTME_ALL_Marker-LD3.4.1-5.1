@@ -36,7 +36,8 @@ tags: [semantic, defense, affect_isolation]
 metadata:
   justification: "SEM mit 1 ATO + Kontextregel (Affekt-Abwesenheit) gemäß LD3.4 zulässig."
   repair_log:
-  - {rule: "R06", note: "Sekundäre Pattern-Regeln entfernt, nur composed_of behalten",
-    date: "2025-08-29"}
+  - {rule: "R06", note: "Sekundäre Pattern-Regeln entfernt, nur composed_of behalten", date: "2025-08-29"}
   - {rule: "R07", note: "1-ATO-Semantik mit justification abgesichert", date: "2025-08-29"}
 compositionality: deterministic
+vad_estimate: {valence: -0.55, arousal: 0.1, dominance: 0.1}
+effect_on_state: {trust: -0.25, conflict: 0.2, deesc: -0.15}

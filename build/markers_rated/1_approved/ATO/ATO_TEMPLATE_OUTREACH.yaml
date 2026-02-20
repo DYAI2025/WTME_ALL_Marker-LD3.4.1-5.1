@@ -5,14 +5,14 @@ version: 1.0
 languages: [en]
 meaning: "Generic template phrases used in automated outreach — fits any repo/commit/project"
 patterns:
-  - type: regex
-    value: "(?i)(how'?s the project coming along)"
-  - type: regex
-    value: "(?i)(your recent commit:\\s)"
-  - type: regex
-    value: "(?i)(Hi\\s+\\w+!\\s+I'?ve been (looking|checking))"
-  - type: regex
-    value: "(?i)(if you (want|need) to chat)"
+- type: regex
+  value: "(?i)(how'?s the project coming along)"
+- type: regex
+  value: "(?i)(your recent commit:\\s)"
+- type: regex
+  value: "(?i)(Hi\\s+\\w+!\\s+I'?ve been (looking|checking))"
+- type: regex
+  value: "(?i)(if you (want|need) to chat)"
 examples:
   positive:
   - "How's the project coming along?"
@@ -26,3 +26,5 @@ examples:
   - "Your recent PR has a failing CI check on the linting step"
   - "Want to chat about the API design in issue #42?"
 tags: [atomic, bot-detection, spam, github]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

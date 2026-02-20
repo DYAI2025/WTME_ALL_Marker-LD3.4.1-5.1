@@ -4,8 +4,7 @@ class: semantic
 version: 1.0
 languages: [de]
 meaning: "Task-Turns dominieren gegenüber Beziehungs-/Emotionssprache"
-formula: "Task_Turns / Total_Turns >= 0.6 AND (ATO_AFFECT_FLAT >= 0.5 OR ATO_COURTESY_FORMAL
-  >= 0.5)"
+formula: "Task_Turns / Total_Turns >= 0.6 AND (ATO_AFFECT_FLAT >= 0.5 OR ATO_COURTESY_FORMAL >= 0.5)"
 inputs:
   counters:
   - ATO_AFFECT_FLAT
@@ -76,3 +75,5 @@ examples:
   - "Traurig heute."
   - "Feiern wir?"
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

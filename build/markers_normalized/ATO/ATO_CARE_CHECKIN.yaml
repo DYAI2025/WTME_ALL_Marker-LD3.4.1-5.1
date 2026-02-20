@@ -44,6 +44,14 @@ tags:
 - care
 - support
 rating: 1
+vad_estimate:
+  valence: 0.3
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.3
+  conflict: -0.25
+  deesc: 0.3
 metadata:
   neg_examples:
   - "Mach einfach weiter, wir haben keine Zeit zum Plaudern."

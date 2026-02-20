@@ -39,3 +39,11 @@ composed_of:
 activation:
   rule: "ANY 2 IN 3 messages"
 compositionality: deterministic
+vad_estimate:
+  valence: 0.0
+  arousal: 0.6
+  dominance: 0.3
+effect_on_state:
+  trust: -0.1
+  conflict: 0.1
+  deesc: -0.05

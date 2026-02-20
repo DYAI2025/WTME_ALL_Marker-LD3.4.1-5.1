@@ -1,10 +1,8 @@
 id: SEM_FRIENDZONE_DYNAMICS
 frame:
-  signal: Kombination aus intensiver Fürsorge, Support-Angeboten und emotionalem
-    Rückzug.
+  signal: Kombination aus intensiver Fürsorge, Support-Angeboten und emotionalem Rückzug.
   concept: Einseitige romantische Investition (Friendzone-Dynamik)
-  pragmatics: Versuch, Nähe herzustellen, gefolgt von Selbstschutz bei 
-    ausbleibender romantischer Erwiderung.
+  pragmatics: Versuch, Nähe herzustellen, gefolgt von Selbstschutz bei ausbleibender romantischer Erwiderung.
   narrative: unrequited_investment
 composed_of:
 - ATO_CARE_CHECKIN
@@ -17,23 +15,15 @@ scoring:
   weight: 1.3
 examples:
   positive:
-  - Hey, wie geht’s dir heute? Hoffe, alles ist gut. Bin immer hier, falls du 
-    reden möchtest.
-  - Mach dir keinen Stress, ich weiß, du hast viel zu tun. Sag einfach Bescheid,
-    wenn was ist.
-  - Ich hab das Gefühl, du schreibst in letzter Zeit weniger. Ist alles okay bei
-    dir?
-  - Ich bin immer für dich da, aber ich hab gemerkt, dass ich vielleicht etwas 
-    Abstand brauche.
-  - Ich hoffe, dein Tag war gut. Falls nicht, denk dran, dass du jederzeit 
-    anrufen kannst. Aber kein Druck.
+  - Hey, wie geht’s dir heute? Hoffe, alles ist gut. Bin immer hier, falls du reden möchtest.
+  - Mach dir keinen Stress, ich weiß, du hast viel zu tun. Sag einfach Bescheid, wenn was ist.
+  - Ich hab das Gefühl, du schreibst in letzter Zeit weniger. Ist alles okay bei dir?
+  - Ich bin immer für dich da, aber ich hab gemerkt, dass ich vielleicht etwas Abstand brauche.
+  - Ich hoffe, dein Tag war gut. Falls nicht, denk dran, dass du jederzeit anrufen kannst. Aber kein Druck.
   negative:
-  - Hey, wie geht’s dir heute? Hoffe, alles ist gut. Bin manchmal hier, falls du
-    reden möchtest.
-  - Mach dir wenige Stress, ich weiß, du hast viel zu tun. Sag einfach Bescheid,
-    wenn was ist.
-  - Ich bin manchmal für dich da, aber ich hab gemerkt, dass ich vielleicht 
-    etwas Abstand brauche.
+  - Hey, wie geht’s dir heute? Hoffe, alles ist gut. Bin manchmal hier, falls du reden möchtest.
+  - Mach dir wenige Stress, ich weiß, du hast viel zu tun. Sag einfach Bescheid, wenn was ist.
+  - Ich bin manchmal für dich da, aber ich hab gemerkt, dass ich vielleicht etwas Abstand brauche.
   - Ich finde, wir sollten das in Ruhe besprechen.
   - Das ist ein guter Punkt, den du da machst.
   - Ich verstehe deine Perspektive.
@@ -44,3 +34,5 @@ tags:
 - unrequited
 - dynamic
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

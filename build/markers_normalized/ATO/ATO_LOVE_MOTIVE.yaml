@@ -44,3 +44,11 @@ tags:
 - motiv
 - valenz
 rating: 1
+vad_estimate:
+  valence: 0.6
+  arousal: 0.65
+  dominance: 0.25
+effect_on_state:
+  trust: 0.35
+  conflict: -0.2
+  deesc: 0.25

@@ -18,13 +18,10 @@ examples:
   positive:
   - "Chat: 'Lass uns nur wir zwei essen gehen' + 'Ich will einen Abend ohne Handy'."
   - "Gespräch beim Paarcoaching mit zwei Quality-Time-Bitten hintereinander."
-  - "Audio-Log: 'Nur wir beide am Samstag' gefolgt von 'Block dir bitte den Abend
-    nur für uns'."
+  - "Audio-Log: 'Nur wir beide am Samstag' gefolgt von 'Block dir bitte den Abend nur für uns'."
   - "Planungsgespräch, in dem 'ungeteilte Aufmerksamkeit' zweimal eingefordert wird."
-  - "Turnfolge: 'Lass uns spazieren gehen' und kurz danach 'Ich will mehr gemeinsame
-    Zeit'."
-  - "Paar schreibt: 'Quality Time' und 'Nur wir zwei ohne Termine' innerhalb von zehn
-    Äußerungen."
+  - "Turnfolge: 'Lass uns spazieren gehen' und kurz danach 'Ich will mehr gemeinsame Zeit'."
+  - "Paar schreibt: 'Quality Time' und 'Nur wir zwei ohne Termine' innerhalb von zehn Äußerungen."
   - "Terminkalender-Abstimmung mit zwei Nennungen von 'Abend nur für uns'."
   - "Video-Call: 'Ich brauche einen Tag zu zweit' und 'lass uns Sonntag blocken'."
   - "Nachrichtenkette: 'Ohne Handy' + 'Ich will, dass es nur um uns geht'."
@@ -38,3 +35,5 @@ examples:
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
 compositionality: deterministic
+vad_estimate: {valence: 0.5, arousal: 0.4, dominance: 0.5}
+effect_on_state: {trust: 0.35, conflict: -0.2, deesc: 0.25}

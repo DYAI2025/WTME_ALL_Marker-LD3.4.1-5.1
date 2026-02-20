@@ -55,5 +55,13 @@ semiotic:
   - "symmetrie"
   - "kühl"
   interpretant: "effect_on_state: {sync: +0.12, affekt: cool}"
+vad_estimate:
+  valence: 0.0
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0
 metadata:
   label: Symmetrie kühl

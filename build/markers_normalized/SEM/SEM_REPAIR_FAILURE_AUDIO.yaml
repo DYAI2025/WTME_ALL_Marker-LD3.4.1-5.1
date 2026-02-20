@@ -44,5 +44,13 @@ composed_of:
 scoring:
   base: 0.72
 compositionality: deterministic
+vad_estimate:
+  valence: 0.45
+  arousal: 0.1
+  dominance: 0.35
+effect_on_state:
+  trust: 0.35
+  conflict: -0.3
+  deesc: 0.4
 metadata:
   type: SEM

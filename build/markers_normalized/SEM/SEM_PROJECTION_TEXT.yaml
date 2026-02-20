@@ -39,6 +39,14 @@ scoring:
   base: 1.4
   weight: 1.1
 compositionality: deterministic
+vad_estimate:
+  valence: 0.0
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0
 metadata:
   justification: "1 ATO plus Sequenzregel (Selbstmarkierung → Vorwurf)."
   repair_log:

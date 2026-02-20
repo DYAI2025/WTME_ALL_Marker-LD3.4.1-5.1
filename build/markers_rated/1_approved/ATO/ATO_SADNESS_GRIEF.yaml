@@ -89,3 +89,5 @@ metadata:
   created: "2026-02-12"
   author: "DYAI Emotional Semantics Collection"
   purpose: "Basic emotional pattern detection for sadness and grief"
+vad_estimate: {valence: -0.8, arousal: 0.15, dominance: 0.05}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

@@ -22,10 +22,8 @@ examples:
   - So kann es nichtmehr weitergehen, ich kann auch einfach nicht mehr.
   - Es ist Zeit, einen Schlussstrich zu ziehen.
   - Ich denke, wir sollten uns trennen.
-  - Sich zu lieben heißt nicht, dass man auch zusammen leben kann, ich möchte 
-    nicht mehr so weitermachen.
-  - Ich glaube, es ist besser, wenn wir uns auf unsere eigenen Wege 
-    konzentrieren.
+  - Sich zu lieben heißt nicht, dass man auch zusammen leben kann, ich möchte nicht mehr so weitermachen.
+  - Ich glaube, es ist besser, wenn wir uns auf unsere eigenen Wege konzentrieren.
   - Ich habe das Gefühl, dass wir uns auseinandergelebt haben.
   - Es tut mir leid, aber ich denke, es ist das Beste für uns beide.
   - Ich möchte nicht länger in dieser Beziehung bleiben.
@@ -46,3 +44,5 @@ tags:
 - breakup
 - boundary
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

@@ -45,3 +45,5 @@ examples:
   - "Ich bin traurig. – Ich auch. – Lass uns das zusammen angehen."
   - "Das belastet mich. – Mich auch. – Was hilft uns jetzt?"
 compositionality: deterministic
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

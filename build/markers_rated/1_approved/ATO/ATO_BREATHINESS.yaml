@@ -47,3 +47,5 @@ metadata:
   - "[Flüsterlaut ohne Tongebung (reines Whispering)]"
   - "[Falsett, aber klar geführt ohne Atemgeräusch]"
 tags: [voice_quality, audio, atomic]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

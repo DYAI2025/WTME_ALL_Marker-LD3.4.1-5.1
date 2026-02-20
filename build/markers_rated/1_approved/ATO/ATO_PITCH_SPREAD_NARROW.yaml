@@ -2,20 +2,18 @@ id: ATO_PITCH_SPREAD_NARROW
 family: ATO
 description: ''
 notes: ''
-id: ATO_PITCH_SPREAD_NARROW
-family: ATO
-description: ''
-notes: ''
 examples:
   positive:
-    - "(Spricht monoton)"
-    - "(Stimme klingt flach und ausdruckslos)"
-    - "(Keine Variation in der Tonhöhe)"
-    - "(Spricht mit gleichbleibender Stimmlage)"
-    - "(Stimme klingt leise und gedämpft)"
-    - "(Keine Betonung in der Sprache)"
-    - "(Spricht ohne Emotionen in der Stimme)"
-    - "(Stimme klingt kraftlos)"
-    - "(Spricht sehr ruhig und gleichmäßig)"
-    - "(Stimme klingt wie ein Summen)"
+  - "(Spricht monoton)"
+  - "(Stimme klingt flach und ausdruckslos)"
+  - "(Keine Variation in der Tonhöhe)"
+  - "(Spricht mit gleichbleibender Stimmlage)"
+  - "(Stimme klingt leise und gedämpft)"
+  - "(Keine Betonung in der Sprache)"
+  - "(Spricht ohne Emotionen in der Stimme)"
+  - "(Stimme klingt kraftlos)"
+  - "(Spricht sehr ruhig und gleichmäßig)"
+  - "(Stimme klingt wie ein Summen)"
   negative: []
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

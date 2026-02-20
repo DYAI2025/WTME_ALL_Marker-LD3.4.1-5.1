@@ -51,5 +51,7 @@ examples:
 negatives:
 - "Wir planen ein **spontanes** Meeting."         # neutral
 tags: [discourse]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}
 
 

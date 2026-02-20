@@ -27,3 +27,5 @@ examples:
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: [surveillance, control, atomic]
+vad_estimate: {valence: -0.05, arousal: 0.4, dominance: 0.7}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

@@ -19,8 +19,7 @@ examples:
   - "Gespräch: 'Komm her, ich will dich umarmen' + 'Lass uns Hand halten'."
   - "Abend-Check-in mit zwei klaren Wünschen nach körperlicher Nähe."
   - "Voice-Note: 'Ich brauche deine Nähe' gefolgt von 'Können wir kuscheln?'."
-  - "Chat: 'Deine Umarmung tut mir gut' und kurz danach 'Ich fühle mich durch Berührung
-    verbunden'."
+  - "Chat: 'Deine Umarmung tut mir gut' und kurz danach 'Ich fühle mich durch Berührung verbunden'."
   - "Paartherapie-Sitzung mit mehrfacher Betonung von Umarmungen."
   - "Nachricht: 'Ich liebe es, wenn du meine Hand hältst' + 'Komm näher zu mir'."
   - "Morgenroutine im Tagebuch: zweimalige Erwähnung von Kuscheln."
@@ -36,3 +35,5 @@ examples:
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
   - Ich moechte verstehen, was du meinst.
 compositionality: deterministic
+vad_estimate: {valence: 0.5, arousal: 0.4, dominance: 0.5}
+effect_on_state: {trust: 0.35, conflict: -0.2, deesc: 0.25}

@@ -50,3 +50,5 @@ tags: [atomic, gottman, criticism, conflict, destructive]
 detect_class:
 criteria:
 updated_at: "2025-08-19T10:30:00Z"
+vad_estimate: {valence: -0.5, arousal: 0.8, dominance: 0.6}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

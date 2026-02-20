@@ -61,5 +61,13 @@ semiotic:
   level: pragmatic
   object: "romantic_signal"
   interpretant: "effect_on_state: {intimacy: +0.25, trust: +0.1}"
+vad_estimate:
+  valence: 0.3
+  arousal: 0.3
+  dominance: 0.5
+effect_on_state:
+  trust: 0.2
+  conflict: -0.15
+  deesc: 0.2
 metadata:
   label: Direktes romantisches Signal

@@ -23,3 +23,5 @@ examples:
   - Alles in Ordnung bei mir.
   - Ich fuehle mich heute ruhig und gelassen.
   - Das ueberrascht mich, aber es ist okay.
+vad_estimate: {valence: -0.5, arousal: 0.4, dominance: 0.15}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

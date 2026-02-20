@@ -39,3 +39,5 @@ examples:
   - Alles in Ordnung bei mir.
   - Ich fuehle mich heute ruhig und gelassen.
 tags: [ato, guilt, appeal]
+vad_estimate: {valence: 0.25, arousal: 0.4, dominance: 0.3}
+effect_on_state: {trust: 0.3, conflict: -0.25, deesc: 0.3}

@@ -21,3 +21,5 @@ examples:
   - Let's find a solution together.
   - I've noticed we think differently about this.
   - I want to understand what you mean.
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

@@ -1,0 +1,255 @@
+{
+  "corpus": "eval/gold_corpus.jsonl",
+  "total_chunks": 1543,
+  "threshold": 0.3,
+  "wall_time_s": 94.8,
+  "engine_time_ms": 94690.0,
+  "speaker_vad": {
+    "Person_A": {
+      "count": 40743,
+      "avg_valence": 0.0256,
+      "avg_arousal": 0.1657,
+      "avg_dominance": 0.2318,
+      "std_valence": 0.154,
+      "std_arousal": 0.1831
+    },
+    "Person_B": {
+      "count": 58292,
+      "avg_valence": 0.0527,
+      "avg_arousal": 0.1728,
+      "avg_dominance": 0.2392,
+      "std_valence": 0.1993,
+      "std_arousal": 0.1909
+    },
+    "Person_C": {
+      "count": 269,
+      "avg_valence": -0.017,
+      "avg_arousal": 0.1808,
+      "avg_dominance": 0.232,
+      "std_valence": 0.2403,
+      "std_arousal": 0.1944
+    }
+  },
+  "ued_aggregated": {
+    "count": 1534,
+    "mean_home_base": {
+      "valence": 0.0387,
+      "arousal": 0.1767,
+      "dominance": 0.2465
+    },
+    "mean_variability": {
+      "valence": 0.1693,
+      "arousal": 0.1806
+    },
+    "mean_instability": {
+      "valence": 0.1207,
+      "arousal": 0.182
+    },
+    "mean_density": 0.2014,
+    "mean_rise_rate": 0.0316,
+    "mean_recovery_rate": 0.354
+  },
+  "state_trends": {
+    "trust": {
+      "early": 0.6362,
+      "late": 0.5981,
+      "delta": -0.0382
+    },
+    "conflict": {
+      "early": -0.271,
+      "late": -0.1764,
+      "delta": 0.0947
+    },
+    "deesc": {
+      "early": 0.7721,
+      "late": 0.723,
+      "delta": -0.0491
+    }
+  },
+  "lang_comparison": {
+    "de": {
+      "total_messages": 98684,
+      "nonzero_messages": 48533,
+      "avg_valence": 0.0415,
+      "avg_arousal": 0.1698,
+      "avg_dominance": 0.2362,
+      "std_valence": 0.1822,
+      "std_arousal": 0.1877,
+      "detection_density": 0.4918
+    },
+    "en": {
+      "total_messages": 620,
+      "nonzero_messages": 308,
+      "avg_valence": 0.0125,
+      "avg_arousal": 0.1806,
+      "avg_dominance": 0.2253,
+      "std_valence": 0.2548,
+      "std_arousal": 0.1999,
+      "detection_density": 0.4968
+    }
+  },
+  "hotspots_lowest_valence": [
+    {
+      "chunk_id": "de_1054",
+      "msg_idx": 80,
+      "valence": -0.85,
+      "arousal": 0.55,
+      "lang": "de",
+      "snippet": "Und enttäuscht"
+    },
+    {
+      "chunk_id": "de_1395",
+      "msg_idx": 22,
+      "valence": -0.85,
+      "arousal": 0.55,
+      "lang": "de",
+      "snippet": "Sehr enttäuscht"
+    },
+    {
+      "chunk_id": "de_0055",
+      "msg_idx": 20,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Uah hab grad n bisl tränen in den augen"
+    },
+    {
+      "chunk_id": "de_0105",
+      "msg_idx": 51,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Viel geredet und geweint die letzte Zeit das nimmt dann meinen Hals in Anspruch"
+    },
+    {
+      "chunk_id": "de_0178",
+      "msg_idx": 32,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Was tut dir leid ?"
+    },
+    {
+      "chunk_id": "de_0284",
+      "msg_idx": 51,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Das ist halt die Frage. Woher Weißt du dass es Verlust ist"
+    },
+    {
+      "chunk_id": "de_0501",
+      "msg_idx": 39,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Das ist unabhängig von allem Schmerz dieser materiellen Welt. Es ist fa und fühl"
+    },
+    {
+      "chunk_id": "de_0502",
+      "msg_idx": 43,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Viel leid leider"
+    },
+    {
+      "chunk_id": "de_0520",
+      "msg_idx": 22,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Klingt nach sehnscheideentzündung. Ist so innerlich der Schmerz ?"
+    },
+    {
+      "chunk_id": "de_0554",
+      "msg_idx": 32,
+      "valence": -0.8,
+      "arousal": 0.15,
+      "lang": "de",
+      "snippet": "Sie versucht zu weinen 😂😂😂"
+    }
+  ],
+  "hotspots_highest_arousal": [
+    {
+      "chunk_id": "de_0023",
+      "msg_idx": 28,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "bin total genervt davon oh man.. -_-"
+    },
+    {
+      "chunk_id": "de_0023",
+      "msg_idx": 37,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "man das nervt mich grade"
+    },
+    {
+      "chunk_id": "de_0033",
+      "msg_idx": 11,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "Gab wenig Ärger"
+    },
+    {
+      "chunk_id": "de_0065",
+      "msg_idx": 40,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "bin genervt."
+    },
+    {
+      "chunk_id": "de_0088",
+      "msg_idx": 16,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "Ok. Das wirkt jetzt etwas so, als wärst du sauer auf mich."
+    },
+    {
+      "chunk_id": "de_0108",
+      "msg_idx": 10,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "Bist du noch sauer?"
+    },
+    {
+      "chunk_id": "de_0131",
+      "msg_idx": 15,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "Bist du sauer auf mich?"
+    },
+    {
+      "chunk_id": "de_0150",
+      "msg_idx": 32,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "Bist du jetzt sauer?"
+    },
+    {
+      "chunk_id": "de_0150",
+      "msg_idx": 37,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "sauer ist das falsche wort"
+    },
+    {
+      "chunk_id": "de_0161",
+      "msg_idx": 25,
+      "valence": -0.7,
+      "arousal": 1.0,
+      "lang": "de",
+      "snippet": "Also ist so von sich selbst genervt, weil sie keine Pläne hat. Du hast sie nur d"
+    }
+  ]
+}

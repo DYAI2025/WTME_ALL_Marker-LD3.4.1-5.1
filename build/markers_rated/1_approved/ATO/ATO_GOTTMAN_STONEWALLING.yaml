@@ -50,3 +50,5 @@ tags: [atomic, gottman, stonewalling, conflict, withdrawal]
 detect_class:
 criteria:
 updated_at: "2025-08-19T10:30:00Z"
+vad_estimate: {valence: -0.65, arousal: 0.7, dominance: 0.5}
+effect_on_state: {trust: -0.45, conflict: 0.5, deesc: -0.3}

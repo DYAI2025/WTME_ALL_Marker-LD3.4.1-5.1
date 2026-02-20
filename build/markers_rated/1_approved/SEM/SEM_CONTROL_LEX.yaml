@@ -37,3 +37,5 @@ examples:
   - Ich verstehe, warum du das so siehst.
   - Danke, dass du mir das sagst. Ich denke darueber nach.
 compositionality: deterministic
+vad_estimate: {valence: -0.05, arousal: 0.4, dominance: 0.7}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

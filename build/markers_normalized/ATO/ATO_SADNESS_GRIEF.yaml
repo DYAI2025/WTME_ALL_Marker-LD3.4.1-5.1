@@ -99,6 +99,14 @@ tags:
 - melancholy
 - v3.4
 rating: 1
+vad_estimate:
+  valence: -0.8
+  arousal: 0.15
+  dominance: 0.05
+effect_on_state:
+  trust: -0.1
+  conflict: 0.1
+  deesc: -0.05
 metadata:
   created: "2026-02-12"
   author: "DYAI Emotional Semantics Collection"

@@ -59,5 +59,13 @@ semiotic:
   level: pragmatic
   object: "physical_touch"
   interpretant: "effect_on_state: {intimacy: +0.2, affection: +0.2}"
+vad_estimate:
+  valence: 0.2
+  arousal: 0.4
+  dominance: 0.5
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0
 metadata:
   label: Physischer Touch (Love Language)

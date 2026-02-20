@@ -43,3 +43,11 @@ composed_of:
 window:
   messages: 2
 compositionality: deterministic
+vad_estimate:
+  valence: -0.65
+  arousal: 0.7
+  dominance: 0.5
+effect_on_state:
+  trust: -0.45
+  conflict: 0.5
+  deesc: -0.3

@@ -51,3 +51,5 @@ metadata:
     status: "draft"
     author: "auto_gpt"
     created: "2025-07-25T21:17:00Z"
+vad_estimate: {valence: 0.2, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.25, conflict: -0.1, deesc: 0.15}

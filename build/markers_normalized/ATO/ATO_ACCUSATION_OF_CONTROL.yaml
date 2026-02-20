@@ -50,3 +50,11 @@ tags:
 - control
 - atomic
 rating: 1
+vad_estimate:
+  valence: -0.75
+  arousal: 0.95
+  dominance: 1.0
+effect_on_state:
+  trust: -0.45
+  conflict: 0.6
+  deesc: -0.3

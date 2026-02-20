@@ -25,3 +25,5 @@ examples:
   - I want to understand what you mean.
   - That sounds like an important topic for you.
 tags: [atomic, v3.3, auto-generated]
+vad_estimate: {valence: -0.1, arousal: 0.3, dominance: 0.25}
+effect_on_state: {trust: 0.25, conflict: -0.1, deesc: 0.15}

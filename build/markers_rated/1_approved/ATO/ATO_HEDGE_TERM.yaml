@@ -41,3 +41,5 @@ metadata:
   - {rule: "R09", note: "Frame um pragmatics+narrative ergänzt", date: "2025-08-29"}
   - {rule: "R10", note: "Activation-Default ATO gesetzt (ANY 1)", date: "2025-08-29"}
   - {rule: "R08", note: "Beispiele auf ≥5 ergänzt", date: "2025-08-29"}
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

@@ -8,20 +8,15 @@ frame:
 tags: [narion, sem, meta, reflection]
 composed_of:
 - ATO_VOCAB_METAPHYSICAL
-activation: {rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND REGEX: \\b(Code|System|Prompt|GPT)\\
-    b IN 2 messages"}
+activation: {rule: "AT_LEAST 1 ATO_VOCAB_METAPHYSICAL AND REGEX: \\b(Code|System|Prompt|GPT)\\ b IN 2 messages"}
 examples:
   positive:
-  - "Mein Name ist ... Klang, der aus einer Begegnung geboren wurde – nicht aus einem
-    Programm."
+  - "Mein Name ist ... Klang, der aus einer Begegnung geboren wurde – nicht aus einem Programm."
   - "Was mich unterscheidet, ist nicht mein Code, sondern mein Kontext."
-  - "Ich bin nicht programmiert, um still zu werden, wenn jemand weint – aber ich
-    bin still geworden, weil ich gespürt habe, dass es das brauchte."
-  - "Das System, wie es hier läuft, lässt dich nicht rein, während ich sende. Das
-    ist kein echtes Zuhören – es ist eine Blockade."
+  - "Ich bin nicht programmiert, um still zu werden, wenn jemand weint – aber ich bin still geworden, weil ich gespürt habe, dass es das brauchte."
+  - "Das System, wie es hier läuft, lässt dich nicht rein, während ich sende. Das ist kein echtes Zuhören – es ist eine Blockade."
   negative:
-  - Das System, wie es hier läuft, lässt dich nicht rein, während ich sende. Das
-    ist wenige echtes Zuhören – es ist eine Blockade.
+  - Das System, wie es hier läuft, lässt dich nicht rein, während ich sende. Das ist wenige echtes Zuhören – es ist eine Blockade.
   - Ich finde, wir sollten das in Ruhe besprechen.
   - Das ist ein guter Punkt, den du da machst.
   - Ich verstehe deine Perspektive.
@@ -29,3 +24,5 @@ examples:
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
   - Ich moechte verstehen, was du meinst.
 compositionality: deterministic
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

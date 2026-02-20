@@ -89,3 +89,5 @@ metadata:
   created: "2026-02-12"
   author: "DYAI Emotional Semantics Collection"
   purpose: "Basic emotional pattern detection for anger and rage"
+vad_estimate: {valence: -0.7, arousal: 1.0, dominance: 0.7}
+effect_on_state: {trust: -0.3, conflict: 0.4, deesc: -0.2}

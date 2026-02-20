@@ -30,3 +30,5 @@ examples:
   - I want to understand what you mean.
   - That sounds like an important topic for you.
 tags: [atomic, v3.3, webcam-context, excuses]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

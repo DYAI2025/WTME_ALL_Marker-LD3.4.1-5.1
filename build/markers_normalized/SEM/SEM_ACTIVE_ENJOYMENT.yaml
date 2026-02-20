@@ -42,3 +42,11 @@ composed_of:
 activation:
   rule: "BOTH IN 1 message"
 compositionality: contextual
+vad_estimate:
+  valence: 0.6
+  arousal: 0.5
+  dominance: 0.5
+effect_on_state:
+  trust: 0.2
+  conflict: -0.15
+  deesc: 0.2

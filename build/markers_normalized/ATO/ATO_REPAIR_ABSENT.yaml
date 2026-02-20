@@ -82,5 +82,13 @@ semiotic:
   - "fehlend"
   - "reparatur"
   interpretant: "effect_on_state: {deesc: -0.1, conflict: +0.05}"
+vad_estimate:
+  valence: 0.3
+  arousal: 0.2
+  dominance: 0.35
+effect_on_state:
+  trust: 0.35
+  conflict: -0.3
+  deesc: 0.4
 metadata:
   label: Reparatur fehlt nach Spike

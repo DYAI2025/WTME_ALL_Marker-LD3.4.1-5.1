@@ -41,3 +41,5 @@ metadata:
   - "Der ursprüngliche Plan fällt weg, wir beginnen bei Null."
   - "Ich habe meinen ersten Eindruck revidiert, nachdem wir mehr Fakten hatten."
   - "Wir setzen den Fokus nicht auf den Startpunkt, sondern auf das Endergebnis."
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

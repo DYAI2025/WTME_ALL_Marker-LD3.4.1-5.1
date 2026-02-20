@@ -45,3 +45,5 @@ metadata:
   - "Wir sehen dann, ob es klappt – kein Versprechen."
   - "Ich helfe nur, wenn Zeit übrig ist."
   - "Ich halte mir das offen, ohne Termin."
+vad_estimate: {valence: 0.2, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.25, conflict: -0.1, deesc: 0.15}

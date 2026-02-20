@@ -61,5 +61,13 @@ semiotic:
   level: semantic
   object: "anger_expression"
   interpretant: "effect_on_state: {conflict: +0.2, deesc: -0.2}"
+vad_estimate:
+  valence: -0.7
+  arousal: 1.0
+  dominance: 0.7
+effect_on_state:
+  trust: 0.0
+  conflict: 0.0
+  deesc: 0.0
 metadata:
   label: Wut

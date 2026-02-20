@@ -29,13 +29,13 @@ examples:
   - "I'm closing off completely. As you wish, we'll just exist in separate bubbles."
   negative:
   - I want to shut down now. Whatever you want to say, I'm done listening.
-  - I can't deal with this. I'm feeling not much right now, partially checked 
-    out.
-  - I choose not to deal with this. I'm feeling nothing right now, completely 
-    checked out.
+  - I can't deal with this. I'm feeling not much right now, partially checked out.
+  - I choose not to deal with this. I'm feeling nothing right now, completely checked out.
   - I see it differently, but I respect your view.
   - I want to be honest with you, even though it's hard.
   - You're right, that was my mistake. I'm sorry.
   - Let's both explain our side.
 tags: [semantic, v3.3, stonewalling]
 compositionality: deterministic
+vad_estimate: {valence: -0.65, arousal: 0.7, dominance: 0.5}
+effect_on_state: {trust: -0.45, conflict: 0.5, deesc: -0.3}

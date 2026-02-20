@@ -30,3 +30,5 @@ examples:
   - Das ist ein guter Punkt, den du da machst.
   - Ich verstehe deine Perspektive.
   - Lass uns gemeinsam eine Loesung finden.
+vad_estimate: {valence: -0.2, arousal: 0.5, dominance: 0.3}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

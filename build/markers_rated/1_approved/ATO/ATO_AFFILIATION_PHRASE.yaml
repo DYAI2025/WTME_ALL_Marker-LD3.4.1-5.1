@@ -51,3 +51,5 @@ examples:
   - Hast du die E-Mail gelesen?
   - Ich muss noch tanken.
   - Die Besprechung ist im Konferenzraum.
+vad_estimate: {valence: 0.3, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.2, conflict: -0.15, deesc: 0.2}

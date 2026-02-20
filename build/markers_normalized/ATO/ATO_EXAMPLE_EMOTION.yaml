@@ -39,3 +39,11 @@ tags:
 - emotion
 - self-blame
 rating: 1
+vad_estimate:
+  valence: -0.6
+  arousal: 0.9
+  dominance: 0.45
+effect_on_state:
+  trust: -0.45
+  conflict: 0.6
+  deesc: -0.3

@@ -32,3 +32,5 @@ examples:
   - Mir ist aufgefallen, dass wir unterschiedlich denken.
   - Ich moechte verstehen, was du meinst.
   - Das klingt nach einem wichtigen Thema fuer dich.
+vad_estimate: {valence: 0.6, arousal: 0.65, dominance: 0.25}
+effect_on_state: {trust: 0.35, conflict: -0.2, deesc: 0.25}

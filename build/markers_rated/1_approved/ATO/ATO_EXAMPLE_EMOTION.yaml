@@ -28,3 +28,5 @@ examples:
   - Das klingt nach einem wichtigen Thema fuer dich.
 tags: [atomic, emotion, self-blame]
 schema_version: "3.4"
+vad_estimate: {valence: -0.6, arousal: 0.9, dominance: 0.45}
+effect_on_state: {trust: -0.45, conflict: 0.6, deesc: -0.3}

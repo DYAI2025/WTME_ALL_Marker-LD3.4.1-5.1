@@ -97,6 +97,8 @@ class MarkerDef:
     multiplier: float = 1.0
     detect_class: str | None = None
     compositionality: str | None = None  # deterministic | contextual | emergent
+    vad_estimate: dict | None = None        # {valence, arousal, dominance}
+    effect_on_state: dict | None = None     # {trust, conflict, deesc}
 
 
 @dataclass
@@ -121,6 +123,7 @@ class Detection:
     family: str | None = None
     multiplier: float | None = None
     message_indices: list[int] = field(default_factory=list)
+    vad: dict | None = None                 # copied from MarkerDef.vad_estimate
 
 
 class MarkerEngine:
@@ -272,6 +275,8 @@ class MarkerEngine:
             multiplier=data.get("ld5_multiplier", 1.0),
             detect_class=data.get("detect_class"),
             compositionality=data.get("compositionality"),
+            vad_estimate=data.get("vad_estimate"),
+            effect_on_state=data.get("effect_on_state"),
         )
 
     def _compile_pattern(self, raw: str, flags: list[str]) -> re.Pattern | None:
@@ -335,13 +340,15 @@ class MarkerEngine:
                     # they are noise on their own but valuable as SEM inputs
                     if not include_context_only and "context_only" in mdef.tags:
                         continue
-                    detections.append(Detection(
+                    det = Detection(
                         marker_id=mdef.id,
                         layer="ATO",
                         confidence=round(confidence, 3),
                         description=mdef.description,
                         matches=matches,
-                    ))
+                    )
+                    det.vad = mdef.vad_estimate
+                    detections.append(det)
 
         return detections
 
@@ -485,13 +492,15 @@ class MarkerEngine:
                     confidence = max(0.0, min(1.0, confidence + mod_sum))
 
             if confidence >= threshold and contributing_matches:
-                detections.append(Detection(
+                det = Detection(
                     marker_id=mdef.id,
                     layer="SEM",
                     confidence=round(confidence, 3),
                     description=mdef.description,
                     matches=contributing_matches,
-                ))
+                )
+                det.vad = mdef.vad_estimate
+                detections.append(det)
 
         return detections
 
@@ -867,6 +876,31 @@ class MarkerEngine:
             mema_dets = self.detect_mema(clu_dets, flat_sem, flat_ato, threshold)
             all_detections.extend(mema_dets)
 
+        # ── VAD aggregation per message ──
+        from .dynamics import compute_ued_metrics, compute_state_indices
+
+        message_vad = []
+        for msg_idx, msg in enumerate(messages):
+            msg_dets = [d for d in flat_ato + flat_sem if msg_idx in d.message_indices]
+            vads = [d.vad for d in msg_dets if d.vad]
+            if vads:
+                avg_v = sum(v["valence"] for v in vads) / len(vads)
+                avg_a = sum(v["arousal"] for v in vads) / len(vads)
+                avg_d = sum(v["dominance"] for v in vads) / len(vads)
+                message_vad.append({
+                    "valence": round(avg_v, 3),
+                    "arousal": round(avg_a, 3),
+                    "dominance": round(avg_d, 3),
+                })
+            else:
+                message_vad.append({"valence": 0.0, "arousal": 0.0, "dominance": 0.0})
+
+        # UED metrics (need at least 3 messages)
+        ued_metrics = compute_ued_metrics(message_vad) if len(message_vad) >= 3 else None
+
+        # State indices from effect_on_state
+        state_indices = compute_state_indices(flat_ato + flat_sem, self.markers)
+
         # Temporal patterns
         temporal = self._extract_temporal_patterns(flat_ato + flat_sem, len(messages))
 
@@ -874,6 +908,9 @@ class MarkerEngine:
         return {
             "detections": all_detections,
             "temporal_patterns": temporal,
+            "message_vad": message_vad,
+            "ued_metrics": ued_metrics,
+            "state_indices": state_indices,
             "timing_ms": round(elapsed, 2),
         }
 

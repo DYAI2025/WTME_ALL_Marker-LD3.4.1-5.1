@@ -5,12 +5,12 @@ version: 1.0
 languages: [en]
 meaning: "Offering vague expertise or warning about challenges without any concrete technical detail"
 patterns:
-  - type: regex
-    value: "(?i)\\b(happy to (bounce ideas|chat|help out|discuss)|challenges around (scaling|complexity|architecture))\\b"
-  - type: regex
-    value: "(?i)\\b(you might hit some.{0,20}challenges)\\b"
-  - type: regex
-    value: "(?i)(with the complexity you.{0,10}adding)"
+- type: regex
+  value: "(?i)\\b(happy to (bounce ideas|chat|help out|discuss)|challenges around (scaling|complexity|architecture))\\b"
+- type: regex
+  value: "(?i)\\b(you might hit some.{0,20}challenges)\\b"
+- type: regex
+  value: "(?i)(with the complexity you.{0,10}adding)"
 examples:
   positive:
   - "you might hit some interesting challenges around scaling"
@@ -24,3 +24,5 @@ examples:
   - "Happy to help debug the webpack config — I had the same issue with MV3 HMR"
   - "Consider using a connection pool to handle the scaling concern in your DB layer"
 tags: [atomic, bot-detection, spam, github]
+vad_estimate: {valence: 0.0, arousal: 0.3, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

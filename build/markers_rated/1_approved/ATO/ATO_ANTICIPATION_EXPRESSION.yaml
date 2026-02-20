@@ -112,3 +112,5 @@ scoring:
   decay: 0.0
   formula: "linear"
 schema_version: "3.2"
+vad_estimate: {valence: 0.2, arousal: 0.4, dominance: 0.5}
+effect_on_state: {trust: 0.0, conflict: 0.0, deesc: 0.0}

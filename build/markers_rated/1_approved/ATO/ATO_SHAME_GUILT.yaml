@@ -89,3 +89,5 @@ metadata:
   created: "2026-02-12"
   author: "DYAI Emotional Semantics Collection"
   purpose: "Basic emotional pattern detection for shame and guilt"
+vad_estimate: {valence: -0.65, arousal: 0.45, dominance: 0.0}
+effect_on_state: {trust: -0.1, conflict: 0.1, deesc: -0.05}

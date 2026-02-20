@@ -64,3 +64,11 @@ tags:
 - depression
 - crisis
 rating: 1
+vad_estimate:
+  valence: -0.7
+  arousal: 0.25
+  dominance: 0.15
+effect_on_state:
+  trust: -0.1
+  conflict: 0.1
+  deesc: -0.05

@@ -35,3 +35,11 @@ tags:
 - clarify
 - question
 rating: 2
+vad_estimate:
+  valence: -0.2
+  arousal: 0.5
+  dominance: 0.3
+effect_on_state:
+  trust: -0.1
+  conflict: 0.1
+  deesc: -0.05

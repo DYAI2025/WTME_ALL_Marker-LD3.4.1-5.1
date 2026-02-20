@@ -89,3 +89,5 @@ metadata:
   created: "2026-02-12"
   author: "DYAI Emotional Semantics Collection"
   purpose: "Basic emotional pattern detection for loneliness and isolation"
+vad_estimate: {valence: -0.55, arousal: 0.1, dominance: 0.1}
+effect_on_state: {trust: -0.25, conflict: 0.2, deesc: -0.15}

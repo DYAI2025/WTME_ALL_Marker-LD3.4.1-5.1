@@ -50,3 +50,11 @@ scoring:
   base: 0.55
   weight: 1.05
 compositionality: deterministic
+vad_estimate:
+  valence: 0.45
+  arousal: 0.2
+  dominance: 0.5
+effect_on_state:
+  trust: 0.35
+  conflict: -0.3
+  deesc: 0.4

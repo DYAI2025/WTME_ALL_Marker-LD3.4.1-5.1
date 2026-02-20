@@ -41,6 +41,14 @@ tags:
 - attribution
 - blame
 rating: 1
+vad_estimate:
+  valence: -0.5
+  arousal: 0.8
+  dominance: 0.6
+effect_on_state:
+  trust: -0.45
+  conflict: 0.6
+  deesc: -0.3
 metadata:
   neg_examples:
   - "Er hat wenig geschlafen, deswegen wirkt er heute langsamer."

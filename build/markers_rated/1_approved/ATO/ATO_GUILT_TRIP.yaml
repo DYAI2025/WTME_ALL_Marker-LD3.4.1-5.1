@@ -30,3 +30,5 @@ examples:
   - Ich fuehle mich unwohl dabei und moechte darueber reden.
   - Ich verstehe, warum du das so siehst.
   - Danke, dass du mir das sagst. Ich denke darueber nach.
+vad_estimate: {valence: -0.85, arousal: 0.55, dominance: 0.1}
+effect_on_state: {trust: -0.5, conflict: 0.6, deesc: -0.35}
