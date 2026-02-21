@@ -45,6 +45,7 @@ class ConversationRequest(BaseModel):
         description="Layers to detect",
     )
     threshold: float = Field(default=0.5, ge=0.0, le=1.0)
+    persona_token: str | None = Field(None, description="Persona token for persistent profiling (Pro tier)")
 
 
 class MarkerQuery(BaseModel):
@@ -96,6 +97,7 @@ class ConversationMarker(BaseModel):
     family: str | None = None
     multiplier: float | None = None
     matches: list[PatternMatch] = []
+    frame: dict[str, Any] | None = None
 
 
 class TemporalPattern(BaseModel):
@@ -144,6 +146,28 @@ class EmotionScore(BaseModel):
     scores: dict[str, float]   # {ANGER: 0.12, JOY: 0.45, ...}
     dominant: str              # "JOY"
     dominant_score: float      # 0.45
+    prosody: dict[str, float] | None = None  # 17 structural features
+
+
+class SpeakerDelta(BaseModel):
+    speaker: str
+    delta_v: float
+    delta_a: float
+    baseline_v: float
+    baseline_a: float
+    shift: str | None = None  # "repair" | "escalation" | "volatility"
+
+
+class SpeakerSummary(BaseModel):
+    message_count: int
+    baseline_final: VADPoint
+    valence_mean: float
+    valence_range: float
+
+
+class SpeakerBaselines(BaseModel):
+    speakers: dict[str, SpeakerSummary]
+    per_message_delta: list[SpeakerDelta | None]
 
 
 class DynamicsResponse(BaseModel):
@@ -152,7 +176,9 @@ class DynamicsResponse(BaseModel):
     message_emotions: list[EmotionScore | None] = []
     ued_metrics: UEDMetrics | None = None
     state_indices: StateIndices
+    speaker_baselines: SpeakerBaselines | None = None
     temporal_patterns: list[TemporalPattern] = []
+    persona_session: "PersonaSessionSummary | None" = None
     meta: AnalyzeMeta
 
 
@@ -196,3 +222,58 @@ class HealthResponse(BaseModel):
     version: str = "5.1-LD5"
     markers_loaded: int
     uptime_seconds: float
+
+
+# --- Persona Models (Pro Tier) ---
+
+class SpeakerEWMAState(BaseModel):
+    valence: float
+    arousal: float
+    dominance: float
+    message_count: int = 0
+    sessions_seen: int = 0
+
+
+class Episode(BaseModel):
+    id: str
+    type: str  # escalation_cluster | repair_trend | withdrawal_phase | rupture | stabilization
+    session: int
+    duration_messages: int
+    markers_involved: list[str] = []
+    vad_delta: dict[str, float] = {}
+    state_at_entry: dict[str, float] = {}
+    state_at_exit: dict[str, float] = {}
+
+
+class PredictionReservoir(BaseModel):
+    shift_counts: dict[str, int] = {}
+    shift_prior: dict[str, float] = {}
+    shift_given_valence_quartile: dict[str, dict[str, float]] = {}
+    top_transition_pairs: list[list] = []
+
+
+class PersonaStats(BaseModel):
+    session_count: int
+    total_messages: int
+    first_session: str
+    last_session: str
+
+
+class PersonaCreateResponse(BaseModel):
+    token: str
+    created_at: str
+
+
+class PredictionResponse(BaseModel):
+    token: str
+    session_count: int
+    predictions: PredictionReservoir | None = None
+    confidence: str = "insufficient_data"  # "low" | "medium" | "high" | "insufficient_data"
+
+
+class PersonaSessionSummary(BaseModel):
+    session_number: int
+    warm_start_applied: bool
+    new_episodes: list[Episode] = []
+    state_snapshot: dict[str, float] = {}
+    prediction_available: bool = False

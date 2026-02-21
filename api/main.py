@@ -22,6 +22,7 @@ from pathlib import Path
 from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 
 from .auth import load_api_keys, verify_api_key
 from .config import settings
@@ -37,18 +38,30 @@ from .models import (
     DynamicsResponse,
     EmotionScore,
     EngineConfig,
+    Episode,
     HealthResponse,
     Layer,
     MarkerDetail,
     MarkerListResponse,
     PatternMatch,
+    PersonaCreateResponse,
+    PersonaSessionSummary,
+    PredictionReservoir,
+    PredictionResponse,
+    SpeakerBaselines,
+    SpeakerDelta,
+    SpeakerSummary,
     StateIndices,
     TemporalPattern,
     UEDMetrics,
     VADPoint,
 )
+from .personas import PersonaStore
 
 _start_time = time.time()
+
+
+persona_store = PersonaStore()
 
 
 @asynccontextmanager
@@ -77,6 +90,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Serve static assets (neutral_insights.json, etc.)
+app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
 
 
 # ---------------------------------------------------------------------------
@@ -201,10 +217,28 @@ async def analyze_dynamics(
 
     Returns VAD trajectories per message, UED metrics (home base, variability,
     rise/recovery rate), and relationship state indices (trust/conflict/deesc).
+
+    If persona_token is provided (Pro tier), loads persona profile for warm-start
+    and accumulates session data into the profile.
     """
     messages = [{"role": m.role, "text": m.text} for m in req.messages]
     layers = [l.value for l in req.layers]
-    result = engine.analyze_conversation(messages, layers=layers, threshold=req.threshold)
+
+    # Persona warm-start
+    persona = None
+    warm_start = None
+    if req.persona_token:
+        try:
+            persona = persona_store.get(req.persona_token)
+        except ValueError:
+            raise HTTPException(status_code=404, detail="Invalid persona token")
+        if persona is None:
+            raise HTTPException(status_code=404, detail="Persona not found")
+        warm_start = persona_store.extract_warm_start(persona)
+
+    result = engine.analyze_conversation(
+        messages, layers=layers, threshold=req.threshold, warm_start=warm_start
+    )
 
     markers = [
         ConversationMarker(
@@ -223,6 +257,7 @@ async def analyze_dynamics(
                 )
                 for m in d.matches
             ],
+            frame=getattr(engine.markers.get(d.marker_id), 'frame', None) or None,
         )
         for d in result["detections"]
     ]
@@ -254,10 +289,50 @@ async def analyze_dynamics(
     # Prosody-based emotion scores per message
     raw_emotions = result.get("message_emotions", [])
     message_emotions = [
-        EmotionScore(scores=e.scores, dominant=e.dominant, dominant_score=e.dominant_score)
+        EmotionScore(
+            scores=e.scores, dominant=e.dominant, dominant_score=e.dominant_score,
+            prosody=getattr(e, 'prosody', None),
+        )
         if e is not None else None
         for e in raw_emotions
     ]
+
+    # Speaker baselines (Polygraph principle)
+    sb_raw = result.get("speaker_baselines")
+    speaker_baselines = None
+    if sb_raw:
+        speakers = {}
+        for role, info in sb_raw.get("speakers", {}).items():
+            bf = info.get("baseline_final", {})
+            speakers[role] = SpeakerSummary(
+                message_count=info["message_count"],
+                baseline_final=VADPoint(
+                    valence=bf.get("valence", 0),
+                    arousal=bf.get("arousal", 0),
+                    dominance=bf.get("dominance", 0),
+                ),
+                valence_mean=info["valence_mean"],
+                valence_range=info["valence_range"],
+            )
+        deltas = []
+        for d in sb_raw.get("per_message_delta", []):
+            if d is None:
+                deltas.append(None)
+            else:
+                deltas.append(SpeakerDelta(**d))
+        speaker_baselines = SpeakerBaselines(speakers=speakers, per_message_delta=deltas)
+
+    # Persona accumulation (Pro tier)
+    persona_session_summary = None
+    if persona:
+        summary = persona_store.accumulate_session(persona, messages, result)
+        persona_session_summary = PersonaSessionSummary(
+            session_number=summary["session_number"],
+            warm_start_applied=summary["warm_start_applied"],
+            new_episodes=[Episode(**ep) for ep in summary["new_episodes"]],
+            state_snapshot=summary["state_snapshot"],
+            prediction_available=summary["prediction_available"],
+        )
 
     return DynamicsResponse(
         markers=sorted(markers, key=lambda m: (-m.confidence, m.id)),
@@ -265,13 +340,103 @@ async def analyze_dynamics(
         message_emotions=message_emotions,
         ued_metrics=ued_metrics,
         state_indices=state_indices,
+        speaker_baselines=speaker_baselines,
         temporal_patterns=temporal,
+        persona_session=persona_session_summary,
         meta=AnalyzeMeta(
             processing_ms=result["timing_ms"],
             text_length=sum(len(m.text) for m in req.messages),
             markers_detected=len(markers),
             layers_scanned=layers,
         ),
+    )
+
+
+# ---------------------------------------------------------------------------
+# POST /v1/personas — Create blank persona (Pro tier)
+# ---------------------------------------------------------------------------
+
+@app.post("/v1/personas", response_model=PersonaCreateResponse)
+async def create_persona(api_key: str = Depends(verify_api_key)):
+    """Create a new blank persona profile. Returns a UUID token for future sessions."""
+
+    persona = persona_store.create()
+    return PersonaCreateResponse(token=persona["token"], created_at=persona["created_at"])
+
+
+# ---------------------------------------------------------------------------
+# GET /v1/personas/{token} — Get full persona profile
+# ---------------------------------------------------------------------------
+
+@app.get("/v1/personas/{token}")
+async def get_persona(token: str, api_key: str = Depends(verify_api_key)):
+    """Get the full persona profile by token."""
+
+    try:
+        persona = persona_store.get(token)
+    except ValueError:
+        raise HTTPException(status_code=404, detail="Invalid persona token")
+    if persona is None:
+        raise HTTPException(status_code=404, detail="Persona not found")
+    return persona
+
+
+# ---------------------------------------------------------------------------
+# DELETE /v1/personas/{token} — Delete persona
+# ---------------------------------------------------------------------------
+
+@app.delete("/v1/personas/{token}")
+async def delete_persona(token: str, api_key: str = Depends(verify_api_key)):
+    """Delete a persona profile permanently."""
+
+    try:
+        deleted = persona_store.delete(token)
+    except ValueError:
+        raise HTTPException(status_code=404, detail="Invalid persona token")
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Persona not found")
+    return {"status": "deleted", "token": token}
+
+
+# ---------------------------------------------------------------------------
+# GET /v1/personas/{token}/predict — Shift prediction from reservoir
+# ---------------------------------------------------------------------------
+
+@app.get("/v1/personas/{token}/predict", response_model=PredictionResponse)
+async def predict_persona(token: str, api_key: str = Depends(verify_api_key)):
+    """Get shift predictions from the persona's accumulated data."""
+
+    try:
+        persona = persona_store.get(token)
+    except ValueError:
+        raise HTTPException(status_code=404, detail="Invalid persona token")
+    if persona is None:
+        raise HTTPException(status_code=404, detail="Persona not found")
+
+    session_count = persona.get("stats", {}).get("session_count", 0)
+    predictions_data = persona.get("predictions", {})
+    total_shifts = sum(predictions_data.get("shift_counts", {}).values())
+
+    if total_shifts < 5:
+        return PredictionResponse(
+            token=token,
+            session_count=session_count,
+            predictions=None,
+            confidence="insufficient_data",
+        )
+
+    if session_count >= 10:
+        confidence = "high"
+    elif session_count >= 5:
+        confidence = "medium"
+    else:
+        confidence = "low"
+
+    return PredictionResponse(
+        token=token,
+        session_count=session_count,
+        predictions=PredictionReservoir(**predictions_data),
+        confidence=confidence,
     )
 
 
@@ -403,6 +568,17 @@ async def health():
 async def playground():
     """Serve the interactive marker playground."""
     html_path = Path(__file__).parent / "static" / "playground.html"
+    return HTMLResponse(content=html_path.read_text(encoding="utf-8"))
+
+
+# ---------------------------------------------------------------------------
+# GET /analysis — Analysis UI (intuitive emotion dynamics)
+# ---------------------------------------------------------------------------
+
+@app.get("/analysis", response_class=HTMLResponse)
+async def analysis():
+    """Serve the intuitive analysis UI for emotion dynamics and marker interpretation."""
+    html_path = Path(__file__).parent / "static" / "analysis.html"
     return HTMLResponse(content=html_path.read_text(encoding="utf-8"))
 
 

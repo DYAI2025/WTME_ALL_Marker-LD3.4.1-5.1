@@ -14,6 +14,7 @@ class Settings(BaseSettings):
     registry_path: str = str(
         Path(__file__).resolve().parent.parent / "build" / "markers_normalized" / "marker_registry.json"
     )
+    personas_dir: str = str(Path(__file__).resolve().parent.parent / "personas")
 
     # Auth
     api_keys_file: str = str(Path(__file__).resolve().parent / "api_keys.json")

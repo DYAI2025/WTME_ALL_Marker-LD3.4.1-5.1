@@ -931,6 +931,7 @@ class MarkerEngine:
         messages: list[dict],
         layers: list[str] | None = None,
         threshold: float = 0.5,
+        warm_start: dict[str, dict[str, float]] | None = None,
     ) -> dict:
         """
         Analyze a conversation (multiple messages) with temporal tracking.
@@ -1043,6 +1044,9 @@ class MarkerEngine:
         # State indices from effect_on_state
         state_indices = compute_state_indices(flat_ato + flat_sem, self.markers)
 
+        # ── Per-speaker baseline (Polygraph principle) ──
+        speaker_baselines = self._compute_speaker_baselines(messages, message_vad, warm_start=warm_start)
+
         # Temporal patterns
         temporal = self._extract_temporal_patterns(flat_ato + flat_sem, len(messages))
 
@@ -1054,7 +1058,105 @@ class MarkerEngine:
             "message_emotions": message_emotions,
             "ued_metrics": ued_metrics,
             "state_indices": state_indices,
+            "speaker_baselines": speaker_baselines,
             "timing_ms": round(elapsed, 2),
+        }
+
+    @staticmethod
+    def _compute_speaker_baselines(
+        messages: list[dict],
+        message_vad: list[dict],
+        warm_start: dict[str, dict[str, float]] | None = None,
+    ) -> dict:
+        """
+        Per-speaker baseline computation (Polygraph principle).
+
+        For each speaker, tracks a running EWMA baseline of their VAD values.
+        Detects significant deviations (shifts) from baseline — the signal
+        isn't the absolute value but the DELTA from their own norm.
+
+        If warm_start is provided (from persona profile), pre-seeds speaker
+        EWMA baselines so the first message already computes a meaningful delta.
+
+        Returns per-speaker stats + per-message deltas.
+        """
+        alpha = 0.3  # EWMA smoothing — lower = more stable baseline
+        speaker_history: dict[str, list[float]] = {}
+        speaker_ewma: dict[str, dict[str, float]] = {}  # running baseline
+        per_message_delta: list[dict | None] = []
+
+        # Pre-seed from warm_start (persona profile EWMA)
+        if warm_start:
+            for role, seed in warm_start.items():
+                speaker_ewma[role] = {
+                    "valence": seed.get("valence", 0),
+                    "arousal": seed.get("arousal", 0),
+                    "dominance": seed.get("dominance", 0),
+                }
+                speaker_history[role] = []
+
+        for idx, msg in enumerate(messages):
+            role = msg.get("role", "?")
+            vad = message_vad[idx] if idx < len(message_vad) else None
+
+            if not vad or (vad["valence"] == 0 and vad["arousal"] == 0 and vad["dominance"] == 0):
+                per_message_delta.append(None)
+                continue
+
+            v, a, d = vad["valence"], vad["arousal"], vad["dominance"]
+
+            if role not in speaker_ewma:
+                # First message from this speaker: initialize baseline
+                speaker_ewma[role] = {"valence": v, "arousal": a, "dominance": d}
+                speaker_history[role] = [v]
+                per_message_delta.append({
+                    "speaker": role,
+                    "delta_v": 0.0, "delta_a": 0.0,
+                    "baseline_v": v, "baseline_a": a,
+                    "shift": None,
+                })
+                continue
+
+            bl = speaker_ewma[role]
+            dv = round(v - bl["valence"], 3)
+            da = round(a - bl["arousal"], 3)
+
+            # Classify shift
+            shift = None
+            if dv > 0.18 and bl["valence"] < 0.0:
+                shift = "repair"  # positive shift from negative baseline
+            elif dv < -0.25 and bl["valence"] > -0.1:
+                shift = "escalation"  # negative shift from neutral/positive baseline
+            elif abs(dv) > 0.3:
+                shift = "volatility"  # large swing either direction
+
+            per_message_delta.append({
+                "speaker": role,
+                "delta_v": dv, "delta_a": da,
+                "baseline_v": round(bl["valence"], 3),
+                "baseline_a": round(bl["arousal"], 3),
+                "shift": shift,
+            })
+
+            # Update EWMA baseline
+            bl["valence"] = round(bl["valence"] * (1 - alpha) + v * alpha, 3)
+            bl["arousal"] = round(bl["arousal"] * (1 - alpha) + a * alpha, 3)
+            bl["dominance"] = round(bl["dominance"] * (1 - alpha) + d * alpha, 3)
+            speaker_history.setdefault(role, []).append(v)
+
+        # Summary per speaker
+        speakers = {}
+        for role, hist in speaker_history.items():
+            speakers[role] = {
+                "message_count": len(hist),
+                "baseline_final": speaker_ewma.get(role, {}),
+                "valence_mean": round(sum(hist) / len(hist), 3) if hist else 0,
+                "valence_range": round(max(hist) - min(hist), 3) if hist else 0,
+            }
+
+        return {
+            "speakers": speakers,
+            "per_message_delta": per_message_delta,
         }
 
     def _extract_temporal_patterns(
